@@ -102,6 +102,20 @@ const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' 
         <span id="r-verdict-txt">{esc(initials.verdict.text)}</span>
       </div>
 
+      {initials.doc && (
+        <div class="doc-block">
+          <div class="doc-title">{initials.doc.title}</div>
+          {initials.doc.fields?.map((f) => (
+            <div class="doc-f"><span>{f.label}</span><b>{f.value}</b></div>
+          ))}
+          {initials.doc.rows?.map((r) => (
+            <div class="doc-r"><span class="doc-rn">{r.name}</span>{r.detail && <span class="doc-d">{r.detail}</span>}<b>{r.value}</b></div>
+          ))}
+          {initials.doc.total && <div class="doc-t"><span>{initials.doc.total.label}</span><b>{initials.doc.total.value}</b></div>}
+          {initials.doc.footnote && <div class="doc-note">{initials.doc.footnote}</div>}
+        </div>
+      )}
+
       <div class="action-bar">
         <button class="action" type="button" data-act="save">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg>

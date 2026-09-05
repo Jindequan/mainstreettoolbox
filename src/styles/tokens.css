@@ -377,3 +377,16 @@ footer.site { padding: 44px 0 56px; color: var(--ink-2); font-size: var(--fs-400
 }
 .industry-hero.tall .industry-hero-bg { height: 400px; }
 .industry-hero > *:not(.industry-hero-bg) { position: relative; z-index: 1; }
+
+/* ---------- 18. 文档型工具输出块 ---------- */
+.doc-block { margin-top: 14px; border: 1px solid var(--line); border-radius: var(--r-s); background: var(--paper); padding: 12px 14px; }
+.doc-title { font: 640 0.95rem var(--font-display); color: var(--ink); margin-bottom: 8px; }
+.doc-f { display: flex; justify-content: space-between; font-size: 13px; color: var(--ink2); padding: 2px 0; }
+.doc-f b { color: var(--ink); font-weight: 600; }
+.doc-r { display: flex; align-items: baseline; gap: 8px; padding: 4px 0; font-size: 13.5px; border-bottom: 1px dotted var(--line); }
+.doc-r:last-of-type { border-bottom: 0; }
+.doc-rn { font-weight: 500; color: var(--ink); }
+.doc-d { flex: 1; font-size: 12px; color: var(--ink3); }
+.doc-r b { margin-left: auto; font-variant-numeric: tabular-nums; }
+.doc-t { display: flex; justify-content: space-between; margin-top: 8px; padding-top: 8px; border-top: 2px solid var(--ink); font: 640 1rem var(--font-display); }
+.doc-note { font-size: 11px; color: var(--ink3); margin-top: 8px; }

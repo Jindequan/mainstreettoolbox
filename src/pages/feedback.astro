@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const endpoint = import.meta.env.PUBLIC_FORM_ENDPOINT as string | undefined;
+---
+<BaseLayout
+  title="Feedback & Tool Requests — Main Street Toolbox"
+  description="Tell us which tool your business needs that we haven't built — feedback and tool requests go straight into the build list."
+  path="/feedback/"
+>
+  <section class="section" style="padding-bottom:12px">
+    <div class="container" style="max-width:44rem">
+      <span class="eyebrow">Feedback & requests</span>
+      <h1 style="font-size:var(--fs-800);margin:12px 0 8px">Tell us what your business needs.</h1>
+      <p style="color:var(--ink-2);font-size:1.0625rem">
+        Missing a tool? Hate how one works? Want a template for your trade? Say it here — every request is read,
+        and popular requests get built. Most tools on this site started as somebody's complaint.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:16px">
+    <div class="container">
+      <div class="card card-pad form-card">
+        <h2 style="font-size:var(--fs-600);margin-bottom:16px">Your message</h2>
+        {endpoint ? (
+          <form action={endpoint} method="POST">
+            <div class="field"><label for="f-email">Email (optional — only if you want a reply)</label><input class="input" id="f-email" name="email" type="email" /></div>
+            <div class="field">
+              <label for="f-type">What's this about?</label>
+              <select class="input" id="f-type" name="type">
+                <option>Request a new tool</option>
+                <option>Something works wrong</option>
+                <option>Improve an existing tool</option>
+                <option>New trade / industry</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field"><label for="f-msg">Your message</label><textarea id="f-msg" name="message" placeholder="What do you run, and what do you need?" required></textarea></div>
+            <button class="btn btn-primary" type="submit" style="width:100%">Send feedback</button>
+            <p class="form-note">Read by a human, replied to if you leave an email. No newsletter, no spam.</p>
+          </form>
+        ) : (
+          <div>
+            <p style="color:var(--ink-2)">Email us at
+              <a href="mailto:hello@mainstreettoolbox.com?subject=Feedback%20%2F%20tool%20request">hello@mainstreettoolbox.com</a>
+              — requests go straight into the build list.</p>
+            <p class="form-note">Read by a human. No newsletter, no spam.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

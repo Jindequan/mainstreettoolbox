@@ -61,6 +61,25 @@ if (bootEl) {
         }
       }
 
+      if (res.doc) {
+        const doc = res.doc;
+        let host = document.getElementById('r-doc');
+        if (!host) {
+          host = document.createElement('div');
+          host.id = 'r-doc';
+          host.className = 'doc-block';
+          document.getElementById('r-verdict')!.before(host);
+        }
+        let html = `<div class="doc-title">${doc.title}</div>`;
+        (doc.fields ?? []).forEach((f) => { html += `<div class="doc-f"><span>${f.label}</span><b>${f.value}</b></div>`; });
+        (doc.rows ?? []).forEach((r) => { html += `<div class="doc-r"><span class="doc-rn">${r.name}</span>${r.detail ? `<span class="doc-d">${r.detail}</span>` : ''}<b>${r.value}</b></div>`; });
+        if (doc.total) html += `<div class="doc-t"><span>${doc.total.label}</span><b>${doc.total.value}</b></div>`;
+        if (doc.footnote) html += `<div class="doc-note">${doc.footnote}</div>`;
+        host.innerHTML = html;
+      } else {
+        document.getElementById('r-doc')?.remove();
+      }
+
       const v = res.verdict;
       const box = $('#r-verdict')!;
       box.className = `verdict ${v.level}`;

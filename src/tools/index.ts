@@ -15,6 +15,16 @@ import lawnMowing from './lawn-mowing-price-calculator';
 import contractorRate from './contractor-hourly-rate-calculator';
 import boothCommission from './booth-rent-commission-calculator';
 import retailMarkup from './retail-markup-calculator';
+import cleaningChecklist from './cleaning-checklist-builder';
+import cleaningInvoice from './cleaning-invoice-generator';
+import lawnEstimate from './lawn-care-estimate-generator';
+import mulchCalc from './mulch-calculator';
+import workOrder from './work-order-generator';
+import materialCost from './material-cost-estimator';
+import priceList from './service-price-list-builder';
+import receiptGen from './receipt-generator';
+import inventorySheet from './inventory-count-sheet';
+import discountProfit from './discount-profit-calculator';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -32,6 +42,16 @@ export const TOOLS: RegisteredTool[] = [
   contractorRate,
   boothCommission,
   retailMarkup,
+  cleaningChecklist,
+  cleaningInvoice,
+  lawnEstimate,
+  mulchCalc,
+  workOrder,
+  materialCost,
+  priceList,
+  receiptGen,
+  inventorySheet,
+  discountProfit,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);

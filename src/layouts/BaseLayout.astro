@@ -6,6 +6,7 @@ const { title, description, path = '/', bodyClass = '' } = Astro.props;
 const canonical = new URL(path, Astro.site);
 const plausible = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
 const gsc = import.meta.env.PUBLIC_GSC_TOKEN;
+const ga = import.meta.env.PUBLIC_GA_ID;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +24,13 @@ const gsc = import.meta.env.PUBLIC_GSC_TOKEN;
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   {plausible && <script defer data-domain={plausible} src="https://plausible.io/js/script.js"></script>}
+  {ga && <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}></script>}
+  {ga && <script is:inline define:vars={{ gaId: ga }}>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', gaId, { client_storage: 'none' });
+  </script>}
 </head>
 <body class={bodyClass}>
   <nav class="nav">
@@ -43,7 +51,7 @@ const gsc = import.meta.env.PUBLIC_GSC_TOKEN;
         <p style="margin-top:10px;max-width:20rem">Free calculators for Main Street, not Wall Street. Independent, ad-free, and built for small shops.</p>
       </div>
       <div><h4>Trades</h4><a href="/restaurant">Restaurant</a><a href="/tools">All tools</a><a href="/services">Get help</a></div>
-      <div><h4>Company</h4><a href="/pricing">Pricing</a><a href="/services">Concierge setup</a></div>
+      <div><h4>Company</h4><a href="/pricing">Pricing</a><a href="/services">Concierge setup</a><a href="/feedback">Feedback & tool requests</a></div>
       <div><h4>Legal</h4><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/affiliate-disclosure">Affiliate disclosure</a></div>
     </div>
     <div class="container"><p class="foot-note">© {new Date().getFullYear()} Main Street Toolbox. Numbers are estimates for guidance only — not financial, legal or tax advice.</p></div>

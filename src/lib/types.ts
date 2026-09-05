@@ -61,11 +61,21 @@ export interface GaugeSpec {
   unit?: string;              // '%' 等
 }
 
+/** 文档型工具的输出（发票/工单/清单/价目表等）——渲染进结果卡并随打印输出 */
+export interface DocSpec {
+  title: string;
+  fields?: { label: string; value: string }[];
+  rows?: { name: string; detail?: string; value: string }[];
+  total?: { label: string; value: string };
+  footnote?: string;
+}
+
 export interface EngineResult {
   primary: { label: string; value: string };
   secondary?: { label: string; value: string }[];
   gauge?: GaugeSpec;
   verdict: { level: 'ok' | 'warn' | 'bad' | 'info'; text: string };
+  doc?: DocSpec;
 }
 
 export type Row = Record<string, string | number>;
