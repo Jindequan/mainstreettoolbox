@@ -1,15 +1,6 @@
 // E-Doc 文档型工具引擎——清单 / 发票 / 工单 / 收据 / 价目表 / 盘点 / 折扣算术
 import { money, num, type EngineResult, type Row } from '../lib/types';
 
-const docTotal = (rows: Row[], costKey: string, qtyKey?: string) => {
-  let sum = 0;
-  for (const r of rows) {
-    const q = qtyKey ? num(r[qtyKey] as string) : 1;
-    sum += num(r[costKey] as string) * (qtyKey ? q : 1);
-  }
-  return sum;
-};
-
 /** Cleaning Checklist Builder */
 export function calcChecklist(values: Record<string, string>, rows: Row[], params: any): EngineResult {
   const tasks = rows.filter((r) => String(r.task ?? '').trim() !== '');
@@ -72,8 +63,8 @@ export function calcPriceList(values: Record<string, string>, rows: Row[], param
 }
 
 /** Inventory Count Sheet */
-export function calcInventory(values: Record<string, string>, rows: Row[], params: any): EngineResult {
-  const rowsV = rows.map((r) => ({ ...r, value: num(r.qty as string) * num(r.unitCost as string) }));
+export function calcInventory(_values: Record<string, string>, rows: Row[], params: any): EngineResult {
+  const rowsV: (Row & { value: number })[] = rows.map((r) => ({ ...r, value: num(r.qty as string) * num(r.unitCost as string) }));
   const total = rowsV.reduce((s, r) => s + r.value, 0);
   const copy = params.copy as Record<string, string>;
   return {

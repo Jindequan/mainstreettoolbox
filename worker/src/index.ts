@@ -8,8 +8,11 @@ export interface Env {
   ALLOW_ORIGIN: string;
 }
 
-const SLUGS = new Set([
+// 站点全部可上报 slug —— 必须覆盖 src/tools 注册表全部工具 + menu-maker。
+// 防漂移：worker/src/slugs.test.ts 会对照 TOOLS 校验本清单。
+export const SLUGS = new Set([
   'menu-maker',
+  // restaurant
   'menu-pricing-calculator',
   'food-cost-percentage-calculator',
   'menu-engineering-matrix',
@@ -20,6 +23,26 @@ const SLUGS = new Set([
   'recipe-scaler',
   'prime-cost-calculator',
   'profit-margin-calculator',
+  // cleaning
+  'cleaning-estimate-calculator',
+  'cleaning-checklist-builder',
+  'cleaning-invoice-generator',
+  // lawn
+  'lawn-mowing-price-calculator',
+  'lawn-care-estimate-generator',
+  'mulch-calculator',
+  // construction
+  'contractor-hourly-rate-calculator',
+  'material-cost-estimator',
+  'work-order-generator',
+  // salon
+  'booth-rent-commission-calculator',
+  'service-price-list-builder',
+  'receipt-generator',
+  // retail
+  'retail-markup-calculator',
+  'inventory-count-sheet',
+  'discount-profit-calculator',
 ]);
 
 const cors = (origin: string, extra: Record<string, string> = {}) => ({
@@ -56,7 +79,7 @@ export default {
       const h = await ipHash(req);
       await env.DB.prepare(
         `INSERT INTO hits (day, slug, iphash, n) VALUES (?1, ?2, ?3, 1)
-         ON CONFLICT(day, slug, iphash) DO UPDATE SET n = n + 1`,
+         ON CONFLICT(day, slug, iphash) DO UPDATE SET n = MIN(n + 1, 25)`,
       ).bind(day, slug, h).run();
       return json({ ok: true }, origin);
     }

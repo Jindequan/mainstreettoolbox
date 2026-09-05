@@ -6,8 +6,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="The professional menu workbench: build your full menu dataset, run menu engineering analysis (Kasavana-Smith), auto-fit typesetting on Letter/A4, export print-grade PDF, PNG, CSV and JSON. Free, no signup."
   path="/menu-maker/"
 >
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script is:inline src="/vendor/html2canvas.min.js" defer></script>
 
   <div class="app">
     <aside class="side">
@@ -129,51 +128,51 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .side{border-right:1px solid var(--line);background:var(--card);padding:20px;overflow-y:auto;position:sticky;top:0;max-height:100vh}
     .proto{font-size:12px;color:var(--amber);font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
     .tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:14px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:4px}
-    .tab{height:34px;border:0;border-radius:7px;background:none;font:600 13px "Inter";color:var(--ink2);cursor:pointer}
+    .tab{height:34px;border:0;border-radius:7px;background:none;font:600 13px "Inter";color:var(--ink-2);cursor:pointer}
     .tab.sel{background:var(--green);color:#FDFBF4}
     .flabel{display:block;font-weight:600;font-size:13px;margin:12px 0 6px}
-    .finput{width:100%;height:40px;padding:0 12px;border:1.5px solid var(--line2);border-radius:var(--r-s);background:#fff;color:var(--ink);font:500 14px "Inter";outline:0}
+    .finput{width:100%;height:40px;padding:0 12px;border:1.5px solid var(--line-2);border-radius:var(--r-s);background:#fff;color:var(--ink);font:500 14px "Inter";outline:0}
     .finput:focus{border-color:var(--green);box-shadow:0 0 0 3px var(--green-tint)}
     select.finput{appearance:auto}
     .row2{display:grid;grid-template-columns:1fr 130px;gap:10px}
     .section-block{border:1px solid var(--line);border-radius:var(--r-m);padding:12px;margin-top:12px;background:var(--paper)}
     .sec-head{display:flex;gap:6px;margin-bottom:8px;align-items:center}
-    .sec-head input{flex:1;height:36px;padding:0 10px;border:1.5px solid var(--line2);border-radius:8px;background:#fff;font:600 14px "Inter";color:var(--ink);outline:0}
+    .sec-head input{flex:1;height:36px;padding:0 10px;border:1.5px solid var(--line-2);border-radius:8px;background:#fff;font:600 14px "Inter";color:var(--ink);outline:0}
     .sec-head input:focus{border-color:var(--green)}
-    .mv{border:1px solid var(--line2);background:#fff;border-radius:6px;width:24px;height:24px;font-size:10px;color:var(--ink2);cursor:pointer;line-height:1}
+    .mv{border:1px solid var(--line-2);background:#fff;border-radius:6px;width:24px;height:24px;font-size:10px;color:var(--ink-2);cursor:pointer;line-height:1}
     .mv:hover{color:var(--green);border-color:var(--green)}
     .dish{border-bottom:1px dashed var(--line);padding:8px 0}
     .dish .l1{display:flex;gap:6px}
     .dish .dn{flex:1;min-width:0}
-    .dish input{height:34px;padding:0 9px;border:1.5px solid var(--line2);border-radius:8px;background:#fff;font:500 13px "Inter";color:var(--ink);outline:0;width:100%}
+    .dish input{height:34px;padding:0 9px;border:1.5px solid var(--line-2);border-radius:8px;background:#fff;font:500 13px "Inter";color:var(--ink);outline:0;width:100%}
     .dish input:focus{border-color:var(--green)}
     .dish .pw{width:64px;flex:none}
     .dish .cw{width:64px;flex:none}
     .dish .sw2{width:52px;flex:none}
     .dish .dd{margin-top:6px;font:400 12px "Inter"}
-    .dish .l2{display:flex;gap:10px;margin-top:6px;align-items:center;font-size:11px;color:var(--ink2)}
+    .dish .l2{display:flex;gap:10px;margin-top:6px;align-items:center;font-size:11px;color:var(--ink-2)}
     .dish .l2 label{display:flex;align-items:center;gap:3px;cursor:pointer}
     .dish .l2 .fc-note{margin-left:auto;font-variant-numeric:tabular-nums}
     .fc-ok{color:var(--ok)}.fc-warn{color:var(--warn)}.fc-bad{color:var(--bad)}
-    .rm{border:0;background:none;color:var(--ink3);cursor:pointer;font-size:14px;padding:0 2px}
+    .rm{border:0;background:none;color:var(--ink-3);cursor:pointer;font-size:14px;padding:0 2px}
     .rm:hover{color:var(--bad)}
-    .add{width:100%;height:34px;border:1.5px dashed var(--line2);border-radius:8px;background:none;color:var(--ink2);font:500 13px "Inter";cursor:pointer;margin-top:8px}
+    .add{width:100%;height:34px;border:1.5px dashed var(--line-2);border-radius:8px;background:none;color:var(--ink-2);font:500 13px "Inter";cursor:pointer;margin-top:8px}
     .add:hover{border-color:var(--green);color:var(--green)}
-    .reset{border:0;background:none;color:var(--ink3);font:500 12px "Inter";cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+    .reset{border:0;background:none;color:var(--ink-3);font:500 12px "Inter";cursor:pointer;text-decoration:underline;text-underline-offset:3px}
     .reset:hover{color:var(--ink)}
     .csv-box{margin-top:14px;border:1px solid var(--line);border-radius:var(--r-m);padding:10px 12px;background:var(--paper)}
-    .csv-box summary{cursor:pointer;font-weight:600;font-size:13px;color:var(--ink2)}
-    .csv-hint{font-size:12px;color:var(--ink3);margin:8px 0}
+    .csv-box summary{cursor:pointer;font-weight:600;font-size:13px;color:var(--ink-2)}
+    .csv-hint{font-size:12px;color:var(--ink-3);margin:8px 0}
     .csv-hint code{background:#fff;border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:11px}
-    .csv-box textarea{width:100%;min-height:90px;border:1.5px solid var(--line2);border-radius:8px;padding:8px;font:400 12px/1.5 "Inter";resize:vertical;outline:0}
+    .csv-box textarea{width:100%;min-height:90px;border:1.5px solid var(--line-2);border-radius:8px;padding:8px;font:400 12px/1.5 "Inter";resize:vertical;outline:0}
     .csv-box textarea:focus{border-color:var(--green)}
     /* 分析 */
     .an-sum{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:4px 0 12px}
     .an-card{border:1px solid var(--line);border-radius:10px;background:var(--paper);padding:10px 12px}
-    .an-card b{display:block;font:640 1.3rem var(--font-display);color:var(--green2);font-variant-numeric:tabular-nums}
-    .an-card span{font-size:11px;color:var(--ink2)}
+    .an-card b{display:block;font:640 1.3rem var(--font-display);color:var(--green-2);font-variant-numeric:tabular-nums}
+    .an-card span{font-size:11px;color:var(--ink-2)}
     .an-table{width:100%;border-collapse:collapse;font-size:12px}
-    .an-table th{font:600 10px "Inter";letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);text-align:left;padding:4px 6px;border-bottom:1px solid var(--line)}
+    .an-table th{font:600 10px "Inter";letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);text-align:left;padding:4px 6px;border-bottom:1px solid var(--line)}
     .an-table td{padding:6px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
     .an-class{font-size:10px;font-weight:700;border-radius:999px;padding:2px 8px;letter-spacing:.03em}
     .an-class.star{background:var(--ok-tint);color:var(--ok)}
@@ -182,25 +181,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .an-class.dog{background:var(--bad-tint);color:var(--bad)}
     .an-rec{margin-top:12px}
     .an-rec li{margin-bottom:6px}
-    .an-note{font-size:11px;color:var(--ink3);margin-top:10px}
+    .an-note{font-size:11px;color:var(--ink-3);margin-top:10px}
     /* 版本 */
     .btn-mini{height:36px;padding:0 12px;border-radius:8px;border:1.5px solid var(--green);background:var(--green);color:#FDFBF4;font:600 12px "Inter";cursor:pointer}
-    .btn-mini:hover{background:var(--green2)}
+    .btn-mini:hover{background:var(--green-2)}
     .v-row{display:flex;align-items:center;gap:8px;padding:7px 2px;border-bottom:1px solid var(--line);font-size:12px}
     .v-row b{font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-    .v-row .when{color:var(--ink3);font-size:11px;white-space:nowrap}
+    .v-row .when{color:var(--ink-3);font-size:11px;white-space:nowrap}
     .v-row button{border:0;background:none;color:var(--green);font:600 11px "Inter";cursor:pointer;padding:2px 4px}
-    .v-row button.del{color:var(--ink3)}
+    .v-row button.del{color:var(--ink-3)}
     .v-row button:hover{text-decoration:underline}
     /* 预览 */
     .preview{padding:28px;display:flex;flex-direction:column;align-items:center;overflow:auto}
     .toolbar{display:flex;gap:8px;align-items:center;margin-bottom:18px;flex-wrap:wrap;justify-content:center}
     .btn-print,.btn-png{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:var(--r-s);font:600 13px "Inter";cursor:pointer;border:1.5px solid transparent}
     .btn-print{background:var(--green);color:#FDFBF4}
-    .btn-print:hover{background:var(--green2)}
-    .btn-png{background:#fff;color:var(--ink);border-color:var(--line2)}
-    .btn-png:hover{border-color:var(--ink2)}
-    .hint{font-size:12px;color:var(--ink3);margin-left:8px;font-variant-numeric:tabular-nums}
+    .btn-print:hover{background:var(--green-2)}
+    .btn-png{background:#fff;color:var(--ink);border-color:var(--line-2)}
+    .btn-png:hover{border-color:var(--ink-2)}
+    .hint{font-size:12px;color:var(--ink-3);margin-left:8px;font-variant-numeric:tabular-nums}
     .paper-wrap{width:100%;max-width:620px}
     .paper{
       --fit:1;
@@ -252,10 +251,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .t-rustic .dl-price{font-weight:800;font-size:.93em}
     .t-rustic .dl-desc{font-size:.8em;color:#7c6a52;line-height:1.35}
     .t-rustic .mark{font-size:.7em;color:var(--accent);vertical-align:super}
-    .footnote{margin-top:1em;padding-top:.6em;border-top:1px solid var(--line);font-size:.72em;color:var(--ink3);font-family:var(--font-ui)}
+    .footnote{margin-top:1em;padding-top:.6em;border-top:1px solid var(--line);font-size:.72em;color:var(--ink-3);font-family:var(--font-ui)}
     /* 模板选择 */
     .tpl-row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
-    .tpl{border:1.5px solid var(--line2);border-radius:var(--r-s);background:#fff;cursor:pointer;padding:7px;text-align:left}
+    .tpl{border:1.5px solid var(--line-2);border-radius:var(--r-s);background:#fff;cursor:pointer;padding:7px;text-align:left}
     .tpl:hover{border-color:var(--green)}
     .tpl.sel{border-color:var(--green);box-shadow:0 0 0 3px var(--green-tint)}
     .tpl .thumb{height:34px;border-radius:5px;border:1px solid var(--line);margin-bottom:4px;overflow:hidden;position:relative}
@@ -264,7 +263,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .tpl.t-classic .thumb{color:#7A5C2E}.tpl.t-modern .thumb{color:#1E5B3E}.tpl.t-rustic .thumb{color:#8C4A2F}
     .tpl b{font-size:11px;font-weight:600}
     .swatches{display:flex;gap:8px;margin-top:6px}
-    .sw{width:28px;height:28px;border-radius:8px;border:2px solid transparent;cursor:pointer;outline:1.5px solid var(--line2)}
+    .sw{width:28px;height:28px;border-radius:8px;border:2px solid transparent;cursor:pointer;outline:1.5px solid var(--line-2)}
     .sw.sel{border-color:#fff;outline:2px solid var(--ink)}
     @media (max-width:960px){
       .app{grid-template-columns:1fr}
@@ -283,6 +282,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <script>
     // ============ Menu Workbench — 数据/方法论/排印 ============
+    import { beaconUse } from '../scripts/stats';
+
     interface Dish { id: string; n: string; d: string; p: string; cost: string; sold: string; v: boolean; gf: boolean; sp: boolean }
     interface Section { id: string; name: string; dishes: Dish[] }
     interface MenuState {
@@ -290,6 +291,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       sections: Section[];
     }
     const uid = () => Math.random().toString(36).slice(2, 9);
+    // "使用"语义与工具页一致：首次改动记一次（每会话）
+    let counted = false;
+    const countUse = () => { if (!counted) { counted = true; beaconUse('menu-maker'); } };
     const SAMPLE: MenuState = {
       name: 'The Copper Skillet', tag: 'American kitchen · est. 2019',
       template: 't-classic', accent: '#1E5B3E', paperSize: 'letter',
@@ -337,7 +341,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     }
 
     const state: MenuState = normalize(load() ?? SAMPLE);
-    const esc = (s: unknown) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    // esc 同时转义引号 —— 这些值会插进 value="..." 属性上下文
+    const esc = (s: unknown) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     const money = (v: number) => '$' + (Math.round(v * 100) / 100).toFixed(2);
     const num = (v: unknown) => { const n = parseFloat(String(v ?? '').replace(/[^0-9.\-]/g, '')); return Number.isFinite(n) ? n : 0; };
     const paper = document.getElementById('paper')!;
@@ -503,13 +508,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </tr>`).join('')}
           </tbody>
         </table>
-        ${a.recs.length ? `<div class="an-rec"><b style="font-size:13px">This week's moves</b><ul style="margin:6px 0 0 16px;font-size:12.5px;color:var(--ink2)">${a.recs.map((r) => `<li>${r}</li>`).join('')}</ul></div>` : ''}
+        ${a.recs.length ? `<div class="an-rec"><b style="font-size:13px">This week's moves</b><ul style="margin:6px 0 0 16px;font-size:12.5px;color:var(--ink-2)">${a.recs.map((r) => `<li>${r}</li>`).join('')}</ul></div>` : ''}
         <p class="an-note">Method: Kasavana–Smith menu engineering — contribution margin vs weighted average, popularity vs 70% threshold. Items need price, cost and weekly sales to enter the model.</p>`;
     }
 
     // —— 输入绑定（事件委托）——
     const side = document.querySelector('.side')!;
     side.addEventListener('input', (e) => {
+      countUse();
       const t = e.target as HTMLInputElement;
       const dishEl = t.closest('.dish') as HTMLElement | null;
       if (dishEl) {
@@ -526,8 +532,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         renderMenu(); renderAnalysis(); save(); return;
       }
       if (t.dataset.secK) { state.sections[+ (t.closest('.section-block') as HTMLElement).dataset.sec!].name = t.value; renderMenu(); save(); return; }
-      if (t.id === 'i-name') { state.name = t.value; renderMenu(); save(); return; }
-      if (t.id === 'i-tag') { state.tag = t.value; renderMenu(); save(); return; }
+      // i-name / i-tag 由下方直接监听器处理（此处不再重复绑定）
     });
     side.addEventListener('click', (e) => {
       const el = e.target as HTMLElement;
@@ -566,8 +571,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       state.sections.push({ id: uid(), name: 'New section', dishes: [{ id: uid(), n: '', d: '', p: '', cost: '', sold: '', v: false, gf: false, sp: false }] });
       renderForm(); renderMenu(); save();
     });
-    document.getElementById('i-name')!.addEventListener('input', (e) => { state.name = (e.target as HTMLInputElement).value; renderMenu(); save(); });
-    document.getElementById('i-tag')!.addEventListener('input', (e) => { state.tag = (e.target as HTMLInputElement).value; renderMenu(); save(); });
+    document.getElementById('i-name')!.addEventListener('input', (e) => { countUse(); state.name = (e.target as HTMLInputElement).value; renderMenu(); save(); });
+    document.getElementById('i-tag')!.addEventListener('input', (e) => { countUse(); state.tag = (e.target as HTMLInputElement).value; renderMenu(); save(); });
 
     document.getElementById('tpl-row')!.addEventListener('click', (e) => {
       const b = (e.target as HTMLElement).closest('.tpl') as HTMLElement | null;
@@ -587,9 +592,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     });
     document.querySelectorAll('.tab').forEach((tab) => tab.addEventListener('click', () => {
       document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('sel', t === tab));
-      (document.getElementById('tab-content') as HTMLElement).hidden = tab.dataset.tab !== 'content';
-      (document.getElementById('tab-analysis') as HTMLElement).hidden = tab.dataset.tab !== 'analysis';
-      if (tab.dataset.tab === 'analysis') renderAnalysis();
+      const cur = (tab as HTMLElement).dataset.tab;
+      (document.getElementById('tab-content') as HTMLElement).hidden = cur !== 'content';
+      (document.getElementById('tab-analysis') as HTMLElement).hidden = cur !== 'analysis';
+      if (cur === 'analysis') renderAnalysis();
     }));
     document.getElementById('reset')!.addEventListener('click', () => {
       Object.assign(state, structuredClone(SAMPLE));
@@ -602,7 +608,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       if (!raw) return;
       const isNum = (c?: string) => c !== undefined && c.trim() !== '' && Number.isFinite(num(c));
       for (const line of raw.split('\n')) {
-        const cells = line.split(',').map((c) => c.trim());
+        // 单元格去首尾引号（电子表格复制出的 "a, b" 形式）
+        const cells = line.split(',').map((c) => c.trim().replace(/^"+|"+$/g, ''));
         if (cells.length < 2 || cells.every((c) => c === '')) continue;
         // 从右吸附 sold / cost / price
         let sold = '', cost = '', price = '';
@@ -678,8 +685,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       (document.getElementById('i-name') as HTMLInputElement).value = state.name;
       (document.getElementById('i-tag') as HTMLInputElement).value = state.tag;
       (document.getElementById('paper-size') as HTMLSelectElement).value = state.paperSize;
-      document.querySelectorAll('.tpl').forEach((t) => t.classList.toggle('sel', t.dataset.t === state.template));
-      document.querySelectorAll('.sw').forEach((x) => x.classList.toggle('sel', x.dataset.c === state.accent));
+      document.querySelectorAll('.tpl').forEach((t) => t.classList.toggle('sel', (t as HTMLElement).dataset.t === state.template));
+      document.querySelectorAll('.sw').forEach((x) => x.classList.toggle('sel', (x as HTMLElement).dataset.c === state.accent));
     }
 
     // —— 导出 ——

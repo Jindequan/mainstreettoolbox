@@ -13,6 +13,7 @@ export interface FieldDef {
   min?: number;
   max?: number;
   step?: number;
+  unit?: string;           // 滑杆数值标签单位（默认 '%'；如英寸 '"'）
   options?: { value: string; label: string }[];
   placeholder?: string;
 }

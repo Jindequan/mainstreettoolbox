@@ -71,7 +71,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <style is:global>
     .head { padding: 36px 24px 10px; }
     .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
-    .head .sub { color: var(--ink2); font-size: 1.0625rem; }
+    .head .sub { color: var(--ink-2); font-size: 1.0625rem; }
     .closer { max-width: 560px; padding-bottom: 40px; }
     .tips-block { margin-top: 18px; }
     .tips-block label { display: block; font-weight: 600; margin-bottom: 8px; }
@@ -81,7 +81,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       padding: 4px 14px; box-shadow: var(--shadow-1);
     }
     .tips-input:focus-within { box-shadow: 0 0 0 4px var(--green-tint); }
-    .tips-input span { font: 640 2rem var(--font-display); color: var(--ink2); }
+    .tips-input span { font: 640 2rem var(--font-display); color: var(--ink-2); }
     .tips-input input {
       flex: 1; min-width: 0; border: 0; outline: 0; background: none;
       font: 640 2.6rem var(--font-display); color: var(--ink); padding: 6px 0;
@@ -89,8 +89,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     }
     .presets { display: flex; gap: 8px; margin-top: 14px; }
     .preset {
-      flex: 1; height: 38px; border: 1.5px solid var(--line2); border-radius: 999px;
-      background: var(--card); font: 600 13px "Inter"; color: var(--ink2); cursor: pointer;
+      flex: 1; height: 38px; border: 1.5px solid var(--line-2); border-radius: 999px;
+      background: var(--card); font: 600 13px "Inter"; color: var(--ink-2); cursor: pointer;
     }
     .preset:hover { border-color: var(--green); color: var(--green); }
     .balance { margin-top: 18px; }
@@ -98,7 +98,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     .balance-bar div { height: 100%; background: var(--green); transition: width .18s ease; }
     .balance-bar.over div { background: var(--bad); }
     .balance-bar.under div { background: var(--amber); }
-    .balance-txt { font-size: 13px; color: var(--ink2); margin-top: 6px; }
+    .balance-txt { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
     .balance-txt.ok b { color: var(--ok); }
     .role-card {
       display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px;
@@ -106,35 +106,35 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       padding: 14px 16px; margin-top: 12px; box-shadow: var(--shadow-1);
     }
     .role-left { display: grid; grid-template-columns: minmax(0, 1fr) 64px 56px; gap: 8px; align-content: start; }
-    .role-left .rl { grid-column: 1 / -1; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink3); }
+    .role-left .rl { grid-column: 1 / -1; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
     .role-left input {
-      height: 40px; padding: 0 10px; border: 1.5px solid var(--line2); border-radius: var(--r-s);
+      height: 40px; padding: 0 10px; border: 1.5px solid var(--line-2); border-radius: var(--r-s);
       background: #fff; color: var(--ink); font: 500 14px "Inter"; outline: 0; width: 100%; min-width: 0;
     }
     .role-left input:focus { border-color: var(--green); }
     .role-left .rm {
-      grid-column: 1 / -1; justify-self: start; border: 0; background: none; color: var(--ink3);
+      grid-column: 1 / -1; justify-self: start; border: 0; background: none; color: var(--ink-3);
       font-size: 12px; cursor: pointer; padding: 0; text-decoration: underline; text-underline-offset: 3px;
     }
     .role-left .rm:hover { color: var(--bad); }
     .role-right { text-align: right; align-self: center; }
-    .role-right .each { font: 640 1.7rem var(--font-display); color: var(--green2); font-variant-numeric: tabular-nums; line-height: 1.1; }
-    .role-right .lbl { font-size: 11.5px; color: var(--ink3); }
-    .role-right .pool { font-size: 12.5px; color: var(--ink2); margin-top: 2px; font-variant-numeric: tabular-nums; }
+    .role-right .each { font: 640 1.7rem var(--font-display); color: var(--green-2); font-variant-numeric: tabular-nums; line-height: 1.1; }
+    .role-right .lbl { font-size: 11.5px; color: var(--ink-3); }
+    .role-right .pool { font-size: 12.5px; color: var(--ink-2); margin-top: 2px; font-variant-numeric: tabular-nums; }
     .add-role {
-      width: 100%; height: 44px; margin-top: 12px; border: 1.5px dashed var(--line2); border-radius: var(--r-m);
-      background: none; color: var(--ink2); font: 500 14px "Inter"; cursor: pointer;
+      width: 100%; height: 44px; margin-top: 12px; border: 1.5px dashed var(--line-2); border-radius: var(--r-m);
+      background: none; color: var(--ink-2); font: 500 14px "Inter"; cursor: pointer;
     }
     .add-role:hover { border-color: var(--green); color: var(--green); }
     .actions { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
     .act {
       flex: 1; min-width: 160px; height: 46px; border-radius: var(--r-s); cursor: pointer;
-      border: 1.5px solid var(--line2); background: var(--card); color: var(--ink); font: 600 14px "Inter";
+      border: 1.5px solid var(--line-2); background: var(--card); color: var(--ink); font: 600 14px "Inter";
     }
     .act:hover { border-color: var(--green); color: var(--green); }
     .act.primary { background: var(--green); border-color: var(--green); color: #FDFBF4; }
-    .act.primary:hover { background: var(--green2); color: #FDFBF4; }
-    .fineprint { font-size: 12px; color: var(--ink3); margin-top: 14px; line-height: 1.5; }
+    .act.primary:hover { background: var(--green-2); color: #FDFBF4; }
+    .fineprint { font-size: 12px; color: var(--ink-3); margin-top: 14px; line-height: 1.5; }
     @media print {
       body::before, .nav, .head .crumbs, .presets, .add-role, .actions, footer.site, .prose, .fineprint, .rm { display: none !important; }
       body { background: #fff; }
@@ -145,12 +145,18 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   <script>
     // —— Tip-out 打烊分账：角色卡即结果 ——
+    import { beaconUse } from '../../scripts/stats';
+
     interface Role { id: string; label: string; pct: number; people: number }
     const uid = () => Math.random().toString(36).slice(2, 8);
     const money = (v: number) => '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    const esc = (s: unknown) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const num = (v: unknown) => { const n = parseFloat(String(v ?? '').replace(/[^0-9.]/g, '')); return Number.isFinite(n) ? n : 0; };
+    // esc 同时转义引号 —— 会插进 value="..." 属性上下文
+    const esc = (s: unknown) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    // 首次改动记一次使用（每会话），与工具页 runtime 语义一致
+    let counted = false;
+    const countUse = () => { if (!counted) { counted = true; beaconUse('tip-out-calculator'); } };
 
-    const COLORS = ['#1E5B3E', '#B45309', '#2F4A6B', '#7A2E2E', '#3B2A1E'];
     let roles: Role[] = [
       { id: uid(), label: 'Servers', pct: 70, people: 3 },
       { id: uid(), label: 'Bussers', pct: 20, people: 2 },
@@ -194,8 +200,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       try { localStorage.setItem('mst-tipout', JSON.stringify({ total: (document.getElementById('total') as HTMLInputElement).value, roles })); } catch {}
     }
 
-    document.getElementById('total')!.addEventListener('input', render);
+    document.getElementById('total')!.addEventListener('input', () => { countUse(); render(); });
     document.getElementById('roles')!.addEventListener('input', (e) => {
+      countUse();
       const t = e.target as HTMLInputElement;
       if (!t.dataset.k) return;
       const r = roles[+t.dataset.i!];
@@ -225,7 +232,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     });
     document.getElementById('do-print')!.addEventListener('click', () => window.print());
     document.getElementById('do-copy')!.addEventListener('click', () => {
-      const total = parseFloat((document.getElementById('total') as HTMLInputElement).value) || 0;
+      const total = num((document.getElementById('total') as HTMLInputElement).value);
       const lines = roles.map((r) => {
         const pool = (total * r.pct) / 100;
         return `${r.label || 'Role'} ${r.pct}% — ${money(pool)} pool, ${money(r.people > 0 ? pool / r.people : 0)} each (${r.people})`;

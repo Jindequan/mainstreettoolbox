@@ -1,6 +1,6 @@
 import type { RegisteredTool } from '../../lib/types';
 import { calcMenuPrice } from '../../engines/price';
-import { num } from '../../lib/types';
+import { num, type Compute } from '../../lib/types';
 
 const params = {
   primaryLabel: 'Suggested menu price',

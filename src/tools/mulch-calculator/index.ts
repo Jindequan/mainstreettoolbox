@@ -1,6 +1,5 @@
 import type { RegisteredTool } from '../../lib/types';
 import { num } from '../../lib/types';
-import { calcContractorRate } from '../../engines/quote';
 
 export default {
   slug: 'mulch-calculator',
@@ -12,7 +11,7 @@ export default {
   result: { label: 'Mulch needed' },
   fields: [
     { id: 'area', label: 'Bed area', kind: 'number', default: 200, hint: 'square feet' },
-    { id: 'depth', label: 'Depth', kind: 'slider', default: 3, min: 1, max: 6, step: 0.5, hint: 'inches — 3" is standard' },
+    { id: 'depth', label: 'Depth', kind: 'slider', default: 3, min: 1, max: 6, step: 0.5, unit: '"', hint: 'inches — 3" is standard' },
     {
       id: 'bagSize', label: 'Bag size', kind: 'select', default: '2',
       options: [

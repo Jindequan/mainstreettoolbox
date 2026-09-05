@@ -2,7 +2,7 @@
 // 工具页通用模板 — 产品设计-v1.1 §3.1 的 15 条交互规格在此落地
 import BaseLayout from './BaseLayout.astro';
 import type { RegisteredTool } from '../lib/types';
-import { defaultValues } from '../tools';
+import { defaultValues, TOOLS } from '../tools';
 
 interface Props { tool: RegisteredTool; }
 const { tool } = Astro.props;
@@ -10,10 +10,14 @@ const { tool } = Astro.props;
 const industryName = tool.industry.charAt(0).toUpperCase() + tool.industry.slice(1);
 const heroImg = `/images/${tool.industry}.jpg`;
 const initials = tool.compute(defaultValues(tool), tool.rows?.preset ?? [], tool.params);
+// related 里的 slug 可能属于其他行业 —— 按注册表查真实路径，不能拼当前行业前缀
+const relatedTools = tool.related
+  .map((s) => TOOLS.find((t) => t.slug === s))
+  .filter((t): t is RegisteredTool => t !== undefined);
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const g = initials.gauge;
-const gaugePct = (v: number) => ((v - (g!.min)) / (g!.max - g!.min)) * 100;
+const gaugePct = (v: number) => Math.min(100, Math.max(0, ((v - (g!.min)) / (g!.max - (g!.min))) * 100));
 const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' }[t] ?? 'ℹ');
 ---
 <BaseLayout title={tool.title} description={tool.description} path={`/${tool.industry}/${tool.slug}/`} bodyClass="has-mbar">
@@ -22,7 +26,7 @@ const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' 
     <div class="container tool-head">
       <p class="crumbs"><a href="/">Home</a> / <a href={`/${tool.industry}`}>{industryName}</a> / <b style="color:var(--ink)">{tool.name}</b></p>
       <h1>{tool.name}</h1>
-      <p class="sub">{tool.tagline} <span class="use-count" data-uses-for={tool.slug} hidden style="color:var(--ink3)">·</span></p>
+      <p class="sub">{tool.tagline} <span class="use-count" data-uses-for={tool.slug} hidden style="color:var(--ink-3)">·</span></p>
     </div>
   </div>
 
@@ -55,9 +59,9 @@ const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' 
             <>
               <div class="slider-head">
                 <label for={`f-${f.id}`} style="font-weight:600;margin:0">{f.label}{f.hint && <span class="hint">{f.hint}</span>}</label>
-                <span class="slider-val" id={`v-${f.id}`}>{f.default}%</span>
+                <span class="slider-val" id={`v-${f.id}`}>{f.default}{f.unit ?? '%'}</span>
               </div>
-              <input type="range" id={`f-${f.id}`} data-field={f.id} data-kind={f.kind} min={f.min} max={f.max} step={f.step} value={f.default} />
+              <input type="range" id={`f-${f.id}`} data-field={f.id} data-kind={f.kind} data-unit={f.unit ?? '%'} min={f.min} max={f.max} step={f.step} value={f.default} />
             </>
           ) : (
             <>
@@ -103,7 +107,7 @@ const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' 
       </div>
 
       {initials.doc && (
-        <div class="doc-block">
+        <div class="doc-block" id="r-doc">
           <div class="doc-title">{initials.doc.title}</div>
           {initials.doc.fields?.map((f) => (
             <div class="doc-f"><span>{f.label}</span><b>{f.value}</b></div>
@@ -150,8 +154,8 @@ const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' 
     <Fragment set:html={tool.explain} />
     <h2>Next steps</h2>
     <p>Keep going with these tools — they build on this calculation:
-      {tool.related.map((s, i) => (
-        <>{i > 0 && (i === tool.related.length - 1 ? ' and ' : ', ')}<a href={`/${tool.industry}/${s}/`}>{s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())}</a></>
+      {relatedTools.map((rt, i) => (
+        <>{i > 0 && (i === relatedTools.length - 1 ? ' and ' : ', ')}<a href={`/${rt.industry}/${rt.slug}/`}>{rt.name}</a></>
       ))}.
       When your prices look right, print the menu with the <a href="/menu-maker/">Menu Maker</a> — free templates,
       PDF & PNG. Want us to set the whole system up for you? <a href="/services">Ask about concierge setup</a>.</p>
@@ -168,8 +172,8 @@ const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' 
     <div class="container">
       <div class="section-head" style="margin-bottom:0;padding-top:28px"><h2 style="font-size:1.2rem">Related tools</h2></div>
       <div class="related-grid">
-        {tool.related.map((s) => (
-          <a href={`/${tool.industry}/${s}/`}>{s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())}</a>
+        {relatedTools.map((rt) => (
+          <a href={`/${rt.industry}/${rt.slug}/`}>{rt.name}</a>
         ))}
       </div>
     </div>

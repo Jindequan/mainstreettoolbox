@@ -1,6 +1,6 @@
 // E4 分账引擎 — tip-out / booth-rent / consignment 等"按规则分钱"类工具
 import { clamp, money, num, type EngineResult, type Row } from '../lib/types';
-import { makeGauge2 } from './quote';
+import { makeGauge } from './price';
 
 export interface SplitRole { label: string; pct: number; people: number }
 
@@ -43,7 +43,7 @@ export function calcTipOut(values: Record<string, string>, rows: Row[], params: 
   };
 }
 
-/** T3 menu-engineering-matrix — 四象限分类（全班平均线法） */
+/** T3 menu-engineering-matrix — Kasavana–Smith 四象限分类（销量加权 CM + 70% 人气阈值，与 /menu-maker、定制页同法） */
 export function calcMenuMatrix(rows: Row[], params: any): EngineResult {
   const copy = params.copy as Record<string, string>;
   const items = rows
@@ -53,7 +53,7 @@ export function calcMenuMatrix(rows: Row[], params: any): EngineResult {
       cost: num(r.cost as string),
       sold: num(r.sold as string),
     }))
-    .filter((i) => i.name !== '' && i.price > 0);
+    .filter((i) => i.name !== '' && i.price > 0 && i.sold > 0 && i.price - i.cost !== 0);
 
   if (items.length < 2) {
     return {
@@ -63,16 +63,18 @@ export function calcMenuMatrix(rows: Row[], params: any): EngineResult {
     };
   }
 
-  const margins = items.map((i) => i.price - i.cost);
-  const avgMargin = margins.reduce((a, b) => a + b, 0) / margins.length;
-  const avgPop = items.reduce((s, i) => s + i.sold, 0) / items.length;
+  const totalSold = items.reduce((s, i) => s + i.sold, 0);
+  const weightedCM = totalSold > 0
+    ? items.reduce((s, i) => s + (i.price - i.cost) * i.sold, 0) / totalSold : 0;
+  const thr = (100 / items.length) * 0.7;
 
   const counts = { star: 0, plowhorse: 0, puzzle: 0, dog: 0 };
   for (const i of items) {
-    const m = i.price - i.cost;
-    if (m >= avgMargin && i.sold >= avgPop) counts.star++;
-    else if (m < avgMargin && i.sold >= avgPop) counts.plowhorse++;
-    else if (m >= avgMargin && i.sold < avgPop) counts.puzzle++;
+    const cm = i.price - i.cost;
+    const mix = (i.sold / totalSold) * 100;
+    if (cm >= weightedCM && mix >= thr) counts.star++;
+    else if (cm < weightedCM && mix >= thr) counts.plowhorse++;
+    else if (cm >= weightedCM && mix < thr) counts.puzzle++;
     else counts.dog++;
   }
 
@@ -148,7 +150,7 @@ export function calcBoothVsCommission(values: Record<string, string>, params: an
       { label: 'Commission nets', value: money(commNet) + '/mo' },
       { label: 'Rent as % of sales', value: rentShare.toFixed(0) + '% (guideline 15–25%)' },
     ],
-    gauge: makeGauge2(clamp(rentShare, 0, 60), 0, 60, [15, 25]),
+    gauge: makeGauge(clamp(rentShare, 0, 60), 0, 60, [15, 25]),
     verdict: { level, text },
   };
 }

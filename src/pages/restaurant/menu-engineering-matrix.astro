@@ -57,12 +57,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <style is:global>
     .head { padding: 36px 24px 8px; }
     .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
-    .head .sub { color: var(--ink2); }
+    .head .sub { color: var(--ink-2); }
     .bench { max-width: 960px; padding-bottom: 24px; }
     .sum { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 14px; }
     .sum .c { border: 1px solid var(--line); border-radius: var(--r-s); background: var(--card); padding: 10px 12px; }
-    .sum .c b { display: block; font: 640 1.25rem var(--font-display); color: var(--green2); font-variant-numeric: tabular-nums; }
-    .sum .c span { font-size: 11px; color: var(--ink2); }
+    .sum .c b { display: block; font: 640 1.25rem var(--font-display); color: var(--green-2); font-variant-numeric: tabular-nums; }
+    .sum .c span { font-size: 11px; color: var(--ink-2); }
     .chart-wrap { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-m); padding: 14px; }
     #chart { width: 100%; height: auto; display: block; }
     .legend { display: flex; gap: 16px; justify-content: center; margin-top: 8px; font-size: 12px; }
@@ -74,7 +74,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     .t-row { display: grid; grid-template-columns: minmax(0, 1.6fr) 90px 90px 64px 96px 34px; gap: 0; border-bottom: 1px solid var(--line); align-items: center; }
     .t-row:last-child { border-bottom: 0; }
     .t-row > * { padding: 9px 10px; }
-    .t-row.head { background: var(--paper-2); font: 600 10.5px "Inter"; letter-spacing: .08em; text-transform: uppercase; color: var(--ink3); }
+    .t-row.head { background: var(--paper-2); font: 600 10.5px "Inter"; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
     .t-row input {
       width: 100%; border: 0; background: none; outline: 0; color: var(--ink);
       font: 500 14px "Inter"; height: 100%; min-width: 0; font-variant-numeric: tabular-nums;
@@ -87,14 +87,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     .cls.plowhorse { background: var(--warn-tint); color: var(--warn); }
     .cls.puzzle { background: #E8EDF6; color: #2F4A6B; }
     .cls.dog { background: var(--bad-tint); color: var(--bad); }
-    .cls.na { background: var(--paper-2); color: var(--ink3); }
-    .t-row .rm { border: 0; background: none; color: var(--ink3); cursor: pointer; font-size: 15px; }
+    .cls.na { background: var(--paper-2); color: var(--ink-3); }
+    .t-row .rm { border: 0; background: none; color: var(--ink-3); cursor: pointer; font-size: 15px; }
     .t-row .rm:hover { color: var(--bad); }
-    .add { width: 100%; height: 42px; margin-top: 10px; border: 1.5px dashed var(--line2); border-radius: var(--r-m); background: none; color: var(--ink2); font: 500 13.5px "Inter"; cursor: pointer; }
+    .add { width: 100%; height: 42px; margin-top: 10px; border: 1.5px dashed var(--line-2); border-radius: var(--r-m); background: none; color: var(--ink-2); font: 500 13.5px "Inter"; cursor: pointer; }
     .add:hover { border-color: var(--green); color: var(--green); }
     .rec { margin-top: 16px; }
-    .rec ul { margin: 8px 0 0 18px; font-size: 13.5px; color: var(--ink2); display: grid; gap: 6px; }
-    .an-note { font-size: 11.5px; color: var(--ink3); margin-top: 10px; }
+    .rec ul { margin: 8px 0 0 18px; font-size: 13.5px; color: var(--ink-2); display: grid; gap: 6px; }
+    .an-note { font-size: 11.5px; color: var(--ink-3); margin-top: 10px; }
     @media (max-width: 720px) {
       .t-row { grid-template-columns: minmax(0, 1fr) 64px 64px; }
       .t-row > :nth-child(1) { grid-column: 1 / -1; border-bottom: 1px dashed var(--line); }
@@ -107,10 +107,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </style>
 
   <script>
+    import { beaconUse } from '../../scripts/stats';
+
     interface Dish { id: string; n: string; p: string; cost: string; sold: string }
     const uid = () => Math.random().toString(36).slice(2, 8);
     const num = (v: unknown) => { const n = parseFloat(String(v ?? '').replace(/[^0-9.\-]/g, '')); return Number.isFinite(n) ? n : 0; };
     const money = (v: number) => '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    // 首次改动记一次使用（每会话），与工具页 runtime 语义一致
+    let counted = false;
+    const countUse = () => { if (!counted) { counted = true; beaconUse('menu-engineering-matrix'); } };
 
     let dishes: Dish[] = [
       { id: uid(), n: 'Classic burger', p: '16', cost: '5.20', sold: '120' },
@@ -126,20 +131,23 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     const CLASS_LABEL: Record<string, string> = { star: '★ STAR', plowhorse: 'PLOW', puzzle: '◆ PUZZLE', dog: 'DOG', na: '—' };
 
+    interface Item extends Dish { cm: number; fc: number; soldN: number; mix: number; cls: string }
     function analyze() {
-      const items = dishes.map((d) => ({ ...d, cm: num(d.p) - num(d.cost), fc: num(d.p) > 0 ? (num(d.cost) / num(d.p)) * 100 : 0, soldN: num(d.sold) }));
-      const valid = items.filter((i) => i.n.trim() && i.cm !== 0 && i.soldN > 0);
+      const items: Item[] = dishes.map((d) => ({ ...d, cm: num(d.p) - num(d.cost), fc: num(d.p) > 0 ? (num(d.cost) / num(d.p)) * 100 : 0, soldN: num(d.sold), mix: 0, cls: 'na' }));
+      const valid = items.filter((i) => i.n.trim() !== '' && i.cm !== 0 && i.soldN > 0);
       const totalSold = valid.reduce((s, i) => s + i.soldN, 0);
       const wcm = totalSold > 0 ? valid.reduce((s, i) => s + i.cm * i.soldN, 0) / totalSold : 0;
       const thr = valid.length > 0 ? (100 / valid.length) * 0.7 : 0;
       for (const i of items) {
         i.mix = totalSold > 0 ? (i.soldN / totalSold) * 100 : 0;
-        i.cls = !valid.includes(i as never) || i.soldN <= 0 || i.cm === 0 ? 'na'
+        i.cls = !valid.includes(i) || i.soldN <= 0 || i.cm === 0 ? 'na'
           : i.cm >= wcm && i.mix >= thr ? 'star'
           : i.cm < wcm && i.mix >= thr ? 'plowhorse'
           : i.cm >= wcm ? 'puzzle' : 'dog';
       }
-      return { items, valid, wcm, thr, blendedFC: totalSold > 0 ? valid.reduce((s, i) => s + num(i.cost) * i.soldN, 0) / (totalSold && valid.reduce((s, i) => s + num(i.p) * i.soldN, 0)) * 100 : 0 };
+      const sales = valid.reduce((s, i) => s + num(i.p) * i.soldN, 0);
+      const blendedFC = sales > 0 ? valid.reduce((s, i) => s + num(i.cost) * i.soldN, 0) / sales * 100 : 0;
+      return { items, valid, wcm, thr, blendedFC };
     }
 
     function drawChart(a: ReturnType<typeof analyze>) {
@@ -170,7 +178,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           let lx = px + 10, anchor = 'start';
           if (lx + tw > W - 16) { lx = px - 10; anchor = 'end'; }
           s += `<circle cx="${px}" cy="${py}" r="7" fill="${color}" fill-opacity=".85" stroke="#26231B" stroke-width="1"/>`;
-          s += `<text x="${lx}" y="${py + 4}" text-anchor="${anchor}" font-size="11" fill="#26231B">${i.n.slice(0, 18)}</text>`;
+          s += `<text x="${lx}" y="${py + 4}" text-anchor="${anchor}" font-size="11" fill="#26231B">${esc(i.n.slice(0, 18))}</text>`;
         }
       }
       // 轴
@@ -206,9 +214,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
       const recs: string[] = [];
       const byClass = (c: string) => a.items.filter((i) => i.cls === c);
-      for (const i of byClass('plowhorse')) recs.push(`<b>${i.n}</b> sells but earns only ${money(i.cm)} — a $1 price move is worth about <b>${money(i.soldN * 1)}/wk</b>.`);
-      for (const i of byClass('dog')) recs.push(`<b>${i.n}</b> is a Dog — retire it or rework the plate before the next print run.`);
-      for (const i of byClass('puzzle')) recs.push(`<b>${i.n}</b> earns ${money(i.cm)} but rarely sells — feature it on the menu's hot zone.`);
+      for (const i of byClass('plowhorse')) recs.push(`<b>${esc(i.n)}</b> sells but earns only ${money(i.cm)} — a $1 price move is worth about <b>${money(i.soldN * 1)}/wk</b>.`);
+      for (const i of byClass('dog')) recs.push(`<b>${esc(i.n)}</b> is a Dog — retire it or rework the plate before the next print run.`);
+      for (const i of byClass('puzzle')) recs.push(`<b>${esc(i.n)}</b> earns ${money(i.cm)} but rarely sells — feature it on the menu's hot zone.`);
       (document.getElementById('rec') as HTMLElement).innerHTML = recs.length
         ? `<b style="font-size:13.5px">Moves for this week</b><ul>${recs.slice(0, 5).map((r) => `<li>${r}</li>`).join('')}</ul>`
         : '';
@@ -218,6 +226,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     const esc = (s: unknown) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     document.getElementById('tbl')!.addEventListener('input', (e) => {
+      countUse();
       const t = e.target as HTMLInputElement;
       if (t.dataset.i !== undefined && t.dataset.k) {
         dishes[+t.dataset.i][t.dataset.k as 'n'] = t.value;

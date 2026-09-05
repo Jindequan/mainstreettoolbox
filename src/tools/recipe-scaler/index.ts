@@ -1,5 +1,4 @@
 import type { RegisteredTool } from '../../lib/types';
-import { num } from '../../lib/types';
 import { calcScaler } from '../../engines/split';
 
 export default {

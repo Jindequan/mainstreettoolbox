@@ -68,7 +68,7 @@ export const byIndustry = (industry: string): RegisteredTool[] => TOOLS.filter((
 export const INDUSTRY_META: Record<string, { name: string; path: string; live: boolean; blurb: string }> = {
   restaurant: { name: 'Restaurant', path: '/restaurant', live: true, blurb: 'Pricing, tips, costs and margins' },
   cleaning: { name: 'Cleaning', path: '/cleaning', live: true, blurb: 'Quotes & estimates' },
-  lawn: { name: 'Lawn Care', path: '/lawn-care', live: true, blurb: 'Pricing by lot size' },
+  lawn: { name: 'Lawn Care', path: '/lawn', live: true, blurb: 'Pricing by lot size' },
   construction: { name: 'Construction', path: '/construction', live: true, blurb: 'Rates & bids' },
   salon: { name: 'Salon & Barber', path: '/salon', live: true, blurb: 'Rent vs commission' },
   retail: { name: 'Retail', path: '/retail', live: true, blurb: 'Margin & markdowns' },

@@ -1,6 +1,6 @@
 // 工具页客户端运行时：实时计算 / 标尺与诊断更新 / 行管理 / URL 与草稿持久化
 // 规格来源：docs/产品设计-v1.1.md §3.1（15 条交互规格）
-import { COMPUTES } from '../engines/computes';
+import { bySlug } from '../tools';
 import type { EngineResult } from '../lib/types';
 import { beaconUse } from './stats';
 
@@ -8,11 +8,13 @@ const $ = <T extends HTMLElement = HTMLElement>(sel: string): T | null => docume
 const bootEl = $('#tool-boot');
 if (bootEl) {
   const { slug } = JSON.parse(bootEl.textContent ?? '{}') as { slug: string };
-  const compute = COMPUTES[slug];
+  // 唯一计算来源 = 工具注册表里的 compute（与 SSR 首屏渲染同源，防漂移）
+  const tool = bySlug(slug);
+  const compute = tool?.compute;
+  const params = tool?.params ?? {};
   const form = $<HTMLFormElement>('.tool-form');
 
   if (compute && form) {
-    const params = JSON.parse(bootEl.textContent ?? '{}').params ?? {};
 
     const collect = (): { values: Record<string, string>; rows: Record<string, string>[] } => {
       const values: Record<string, string> = {};
@@ -30,6 +32,8 @@ if (bootEl) {
 
     // —— 渲染 ——
     const iconFor = (lvl: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' }[lvl] ?? 'ℹ');
+    const esc = (s: string) => s
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
     const render = (res: EngineResult) => {
       $('#r-primary')!.textContent = res.primary.value;
@@ -70,11 +74,11 @@ if (bootEl) {
           host.className = 'doc-block';
           document.getElementById('r-verdict')!.before(host);
         }
-        let html = `<div class="doc-title">${doc.title}</div>`;
-        (doc.fields ?? []).forEach((f) => { html += `<div class="doc-f"><span>${f.label}</span><b>${f.value}</b></div>`; });
-        (doc.rows ?? []).forEach((r) => { html += `<div class="doc-r"><span class="doc-rn">${r.name}</span>${r.detail ? `<span class="doc-d">${r.detail}</span>` : ''}<b>${r.value}</b></div>`; });
-        if (doc.total) html += `<div class="doc-t"><span>${doc.total.label}</span><b>${doc.total.value}</b></div>`;
-        if (doc.footnote) html += `<div class="doc-note">${doc.footnote}</div>`;
+        let html = `<div class="doc-title">${esc(doc.title)}</div>`;
+        (doc.fields ?? []).forEach((f) => { html += `<div class="doc-f"><span>${esc(f.label)}</span><b>${esc(f.value)}</b></div>`; });
+        (doc.rows ?? []).forEach((r) => { html += `<div class="doc-r"><span class="doc-rn">${esc(r.name)}</span>${r.detail ? `<span class="doc-d">${esc(r.detail)}</span>` : ''}<b>${esc(r.value)}</b></div>`; });
+        if (doc.total) html += `<div class="doc-t"><span>${esc(doc.total.label)}</span><b>${esc(doc.total.value)}</b></div>`;
+        if (doc.footnote) html += `<div class="doc-note">${esc(doc.footnote)}</div>`;
         host.innerHTML = html;
       } else {
         document.getElementById('r-doc')?.remove();
@@ -107,7 +111,7 @@ if (bootEl) {
       const slider = t.closest('input[data-kind="slider"]') as HTMLInputElement | null;
       if (slider) {
         const lbl = document.getElementById('v-' + slider.dataset.field);
-        if (lbl) lbl.textContent = slider.value + '%';
+        if (lbl) lbl.textContent = slider.value + (slider.dataset.unit ?? '%');
       }
       debounced();
     });

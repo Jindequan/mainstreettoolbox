@@ -10,7 +10,7 @@ export function gaugeVerdict(
   copy: Record<string, string>,
   fmt: (v: number) => string = (v) => pct(v),
 ): { level: 'ok' | 'warn' | 'bad'; text: string } {
-  const [lo, hi] = b.healthy;
+  const [, hi] = b.healthy;
   if (value <= hi) return { level: 'ok', text: copy.ok.replace('{v}', fmt(value)) };
   if (value <= b.warnUpTo) return { level: 'warn', text: copy.warn.replace('{v}', fmt(value)) };
   return { level: 'bad', text: copy.bad.replace('{v}', fmt(value)) };
@@ -65,7 +65,7 @@ export function calcFoodCostPct(values: Record<string, string>, params: any): En
     primary: { label: params.primaryLabel as string, value: price > 0 ? pct(fc) : '—' },
     secondary: [
       { label: 'Cost', value: money(cost) },
-      { label: price > 0 ? 'Price' : 'Price', value: money(price) },
+      { label: 'Price', value: money(price) },
       { label: 'Price that fixes it', value: money(fixPrice) + ` (at ${hi}%)` },
     ],
     gauge: makeGauge(clamp(fc, 15, 50), 15, 50, b.healthy),
@@ -77,7 +77,8 @@ export function calcFoodCostPct(values: Record<string, string>, params: any): En
 export function calcMarkupMargin(values: Record<string, string>, params: any): EngineResult {
   const cost = num(values.cost);
   const mode = values.mode || 'markup';
-  const rate = clamp(num(values.rate), 0, 95) / 100;
+  // markup 以成本为基数，可远超 100%（零售 keystone=100%）；margin 占价格，必须 <100%
+  const rate = (mode === 'markup' ? clamp(num(values.rate), 0, 1000) : clamp(num(values.rate), 0, 95)) / 100;
   let price: number, markup: number, margin: number;
   if (mode === 'markup') {
     price = cost * (1 + rate);
@@ -114,7 +115,7 @@ export function calcBreakEven(values: Record<string, string>, params: any): Engi
   const coversPerDay = ticket > 0 ? revenue / ticket / 30.4 : 0;
   const b = params.benchmarks as { coversOk: number; coversWarn: number };
   const copy = params.copy as Record<string, string>;
-  let verdict = { level: 'ok', text: copy.ok.replace('{c}', Math.ceil(coversPerDay).toString()) };
+  let verdict: EngineResult['verdict'] = { level: 'ok', text: copy.ok.replace('{c}', Math.ceil(coversPerDay).toString()) };
   if (coversPerDay > b.coversWarn) verdict = { level: 'bad', text: copy.bad.replace('{c}', Math.ceil(coversPerDay).toString()) };
   else if (coversPerDay > b.coversOk) verdict = { level: 'warn', text: copy.warn.replace('{c}', Math.ceil(coversPerDay).toString()) };
   return {
@@ -192,7 +193,7 @@ export function calcProfitMargin(values: Record<string, string>, params: any): E
   const margin = revenue > 0 ? (net / revenue) * 100 : 0;
   const b = params.benchmarks as { healthy: [number, number]; warnUpTo: number; warnLow: number };
   const copy = params.copy as Record<string, string>;
-  let level: 'ok' | 'warn' | 'bad';
+  let level: 'ok' | 'warn' | 'bad' | 'info';
   let text: string;
   if (revenue <= 0) { level = 'info'; text = copy.info; }
   else if (net < 0) { level = 'bad'; text = copy.bad.replace('{v}', money(net)); }

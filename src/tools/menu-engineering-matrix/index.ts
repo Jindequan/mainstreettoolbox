@@ -37,7 +37,7 @@ export default {
       needMore: 'Add at least two dishes (with price, cost and sales count) to classify your menu.',
     },
   },
-  compute: (values, rows, p) => calcMenuMatrix(rows, p),
+  compute: (_values, rows, p) => calcMenuMatrix(rows, p),
   explain: `
     <p>Menu engineering classifies every dish on two axes: <b>margin</b> (price minus plate cost) and
     <b>popularity</b> (how often it sells). The comparison line is your own menu's average — not an industry
