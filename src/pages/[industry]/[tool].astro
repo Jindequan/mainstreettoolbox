@@ -1,0 +1,12 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro';
+import { TOOLS, BESPOKE_SLUGS } from '../../tools';
+
+export function getStaticPaths() {
+  return TOOLS.filter((tool) => !BESPOKE_SLUGS.has(tool.slug))
+    .map((tool) => ({ params: { industry: tool.industry, tool: tool.slug }, props: { tool } }));
+}
+
+const { tool } = Astro.props;
+---
+<ToolLayout tool={tool} />

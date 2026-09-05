@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { byIndustry, INDUSTRY_META } from '../../tools';
+
+export function getStaticPaths() {
+  return Object.keys(INDUSTRY_META)
+    .filter((id) => INDUSTRY_META[id].live)
+    .map((id) => ({ params: { industry: id } }));
+}
+
+const { industry } = Astro.params;
+const meta = INDUSTRY_META[industry!];
+const tools = byIndustry(industry!);
+const heroImg = `/images/${industry}.jpg`;
+---
+<BaseLayout
+  title={`Free ${meta.name} Calculators & Tools — Main Street Toolbox`}
+  description={`Free ${meta.name.toLowerCase()} tools: ${tools.map((t) => t.name).join(', ')} and more. Instant, free, no signup.`}
+  path={`${meta.path}/`}
+>
+  <div class="industry-hero tall">
+    <div class="industry-hero-bg" style={`background-image:linear-gradient(rgba(250,247,240,.82), rgba(250,247,240,.06)), url('${heroImg}')`}></div>
+    <section class="section" style="padding-bottom:20px">
+      <div class="container">
+        <span class="eyebrow">{meta.name}</span>
+        <h1 style="font-size:var(--fs-800);margin:12px 0 6px">Free {meta.name} calculators & tools</h1>
+        <p style="color:var(--ink-2);max-width:38rem">{tools.length} tools that answer the questions you actually face — pricing, costs, quotes and margins. Type your numbers, get the answer.</p>
+      </div>
+    </section>
+  </div>
+
+  <section class="section" style="padding-top:12px">
+    <div class="container">
+      <div class="most-list">
+        {industry === 'restaurant' && (
+          <a class="most-row" href="/menu-maker/">
+            <b>Menu Maker</b><span class="tag" style="border:none;background:none;padding:0">design a printable menu — templates, PDF & PNG</span>
+            <span class="use">free · no signup</span>
+          </a>
+        )}
+        {tools.map((t) => (
+          <a class="most-row" href={`/${t.industry}/${t.slug}/`}>
+            <b>{t.name}</b><span class="tag" style="border:none;background:none;padding:0">{t.tagline}</span>
+            <span class="use">free · no signup</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="container explain" style="padding-top:8px">
+    <h2>More on the workbench</h2>
+    <p>Every tool here runs in your browser — no account, nothing stored on our servers. If you run a {meta.name.toLowerCase()} business and want a tool we haven't built yet, <a href="/services">tell us what you'd need</a> — early input goes straight into the build list.</p>
+  </section>
+</BaseLayout>

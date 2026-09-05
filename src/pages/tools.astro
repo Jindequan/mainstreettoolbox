@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { TOOLS, INDUSTRY_META, byIndustry } from '../tools';
+---
+<BaseLayout
+  title="All Tools — Main Street Toolbox"
+  description="Every free Main Street Toolbox calculator, grouped by trade. Restaurant tools live now; cleaning, lawn care, construction, salon and retail on the way."
+  path="/tools/"
+>
+  <section class="section" style="padding-bottom:24px">
+    <div class="container">
+      <span class="eyebrow">The full toolbox</span>
+      <h1 style="font-size:var(--fs-800);margin:12px 0 6px">All tools</h1>
+      <p style="color:var(--ink-2);max-width:36rem">Every calculator is free, instant, and works without an account. New trades are added as they're built — restaurant first.</p>
+    </div>
+  </section>
+
+  {Object.entries(INDUSTRY_META).map(([id, meta]) => {
+    const tools = byIndustry(id);
+    if (tools.length === 0) {
+      return (
+        <section class="section" style="padding-top:20px">
+          <div class="container">
+            <div class="section-head"><h2 style="font-size:1.2rem">{meta.name}</h2><span class="soon-badge">Coming soon</span></div>
+            <p style="color:var(--ink-2);font-size:var(--fs-500)">{meta.blurb}.</p>
+          </div>
+        </section>
+      );
+    }
+    return (
+      <section class="section" style="padding-top:20px">
+        <div class="container">
+          <div class="section-head"><h2 style="font-size:1.2rem">{meta.name}</h2><a href={meta.path}>Trade page →</a></div>
+          <div class="most-list">
+            {id === 'restaurant' && (
+              <a class="most-row" href="/menu-maker/">
+                <b>Menu Maker</b><span class="tag" style="border:none;background:none;padding:0">design a printable menu — templates, PDF & PNG</span>
+              </a>
+            )}
+            {tools.map((t) => (
+              <a class="most-row" href={`/${t.industry}/${t.slug}/`}>
+                <b>{t.name}</b><span class="tag" style="border:none;background:none;padding:0">{t.tagline}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  })}
+</BaseLayout>

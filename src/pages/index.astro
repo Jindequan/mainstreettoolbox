@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { TOOLS, INDUSTRY_META, byIndustry } from '../tools';
+
+const liveTools = TOOLS.length;
+---
+<BaseLayout
+  title="Main Street Toolbox — Free tools for people who actually run the place"
+  description="Free calculators for restaurant owners, cleaners, crews and corner shops. Type your numbers, get the answer, get back to work. No signup, no ads."
+  path="/"
+>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Free forever · No signup · No ads</span>
+        <h1>The toolbox for people who <em>actually run the place.</em></h1>
+        <p class="hero-sub">Calculators for restaurant owners, cleaners, crews and corner shops. Type your numbers, get the answer, get back to work.</p>
+        <div class="searchbar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" placeholder="Search tools — try “tip out” or “food cost”" id="tool-search" aria-label="Search tools" />
+        </div>
+        <div class="hot-chips">
+          <a class="chip" href="/menu-maker/" style="border-color:var(--green);color:var(--green);font-weight:600">Menu Maker — design & print</a>
+          {TOOLS.slice(0, 3).map((t) => <a class="chip" href={`/${t.industry}/${t.slug}/`}>{t.name}</a>)}
+        </div>
+      </div>
+
+      <div class="card mini-tool" aria-label="Live example: tip out calculator">
+        <div class="mini-title"><span>Tip Out Calculator</span><span style="color:var(--green)">● live</span></div>
+        <div class="mini-row">
+          <input id="m-tips" inputmode="decimal" value="847" aria-label="Tips this week" />
+          <input id="m-servers" inputmode="numeric" value="3" aria-label="Servers" />
+        </div>
+        <div class="mini-answer">
+          <div class="num" id="m-out">$197.63</div>
+          <div class="lbl">to each of <b id="m-n">3</b> servers <span style="color:var(--ink-3)">— after a 70 / 20 / 10 split</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="trust">
+    <div class="container trust-in">
+      <span><b>No signup</b> — every tool works instantly</span>
+      <span><b>No ads</b> — your numbers stay yours</span>
+      <span><b>Mobile-first</b> — built for the walk-in cooler, not the desk</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2>Pick your trade</h2><a href="/tools">All tools →</a></div>
+      <div class="trades">
+        {Object.entries(INDUSTRY_META).map(([id, meta]) => (
+          meta.live ? (
+            <a class="trade" href={meta.path}>
+              <span><b>{meta.name}</b><span>{byIndustry(id).length} tools · {meta.blurb}</span></span>
+              <span class="go">→</span>
+            </a>
+          ) : (
+            <span class="trade soon" aria-disabled="true">
+              <span><b>{meta.name}</b><span>{meta.blurb}</span></span>
+              <span class="soon-badge">Soon</span>
+            </span>
+          )
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section most" style="border-top:1px solid var(--line)">
+    <div class="container">
+      <div class="section-head"><h2>The essentials</h2><a href="/tools">See all →</a></div>
+      <div class="most-list" data-stats-sort>
+        <a class="most-row" href="/menu-maker/" data-stats-slug="menu-maker">
+          <span class="most-rank">1</span><b>Menu Maker</b><span class="tag">Restaurant</span>
+          <span class="use" data-uses-for="menu-maker" hidden></span>
+        </a>
+        {TOOLS.slice(0, 4).map((t) => (
+          <a class="most-row" href={`/${t.industry}/${t.slug}/`} data-stats-slug={t.slug}>
+            <span class="most-rank">·</span><b>{t.name}</b><span class="tag">Restaurant</span>
+            <span class="use" data-uses-for={t.slug} hidden></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const tips = document.getElementById('m-tips') as HTMLInputElement;
+    const n = document.getElementById('m-servers') as HTMLInputElement;
+    const update = () => {
+      const t = parseFloat(String(tips.value).replace(/[^0-9.]/g, '')) || 0;
+      const c = Math.max(1, parseInt(n.value) || 1);
+      document.getElementById('m-n')!.textContent = String(c);
+      document.getElementById('m-out')!.textContent =
+        '$' + ((t * 0.7) / c).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    };
+    tips.addEventListener('input', update);
+    n.addEventListener('input', update);
+  </script>
+</BaseLayout>

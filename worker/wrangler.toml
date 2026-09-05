@@ -1,0 +1,13 @@
+name = "mst-stats"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+
+# D1 免费额度: 100k writes/day, 5M reads/day —— 对本站流量绰绰有余, 零成本零运维
+[[d1_databases]]
+binding = "DB"
+database_name = "mst-stats"
+database_id = "REPLACE_AFTER_d1_create"
+
+[vars]
+# 生产域名 + 本地预览, 逗号分隔
+ALLOW_ORIGIN = "https://mainstreettoolbox.com,http://localhost:4399"

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="1" y="1" width="30" height="30" rx="8" fill="#FAF7F0" stroke="#26231B" stroke-width="2"/>
+  <rect x="5" y="5" width="22" height="22" rx="5" fill="url(#awn)"/>
+  <defs>
+    <pattern id="awn" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#F6EFE0"/>
+      <rect width="3" height="8" fill="#1E5B3E"/>
+      <rect x="4" width="2" height="8" fill="#B45309"/>
+    </pattern>
+  </defs>
+</svg>

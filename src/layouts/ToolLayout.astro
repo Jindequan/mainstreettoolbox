@@ -1,0 +1,184 @@
+---
+// 工具页通用模板 — 产品设计-v1.1 §3.1 的 15 条交互规格在此落地
+import BaseLayout from './BaseLayout.astro';
+import type { RegisteredTool } from '../lib/types';
+import { defaultValues } from '../tools';
+
+interface Props { tool: RegisteredTool; }
+const { tool } = Astro.props;
+
+const industryName = tool.industry.charAt(0).toUpperCase() + tool.industry.slice(1);
+const heroImg = `/images/${tool.industry}.jpg`;
+const initials = tool.compute(defaultValues(tool), tool.rows?.preset ?? [], tool.params);
+
+const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const g = initials.gauge;
+const gaugePct = (v: number) => ((v - (g!.min)) / (g!.max - g!.min)) * 100;
+const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' }[t] ?? 'ℹ');
+---
+<BaseLayout title={tool.title} description={tool.description} path={`/${tool.industry}/${tool.slug}/`} bodyClass="has-mbar">
+  <div class="industry-hero">
+    <div class="industry-hero-bg" style={`background-image:linear-gradient(rgba(250,247,240,.82), rgba(250,247,240,.06)), url('${heroImg}')`}></div>
+    <div class="container tool-head">
+      <p class="crumbs"><a href="/">Home</a> / <a href={`/${tool.industry}`}>{industryName}</a> / <b style="color:var(--ink)">{tool.name}</b></p>
+      <h1>{tool.name}</h1>
+      <p class="sub">{tool.tagline} <span class="use-count" data-uses-for={tool.slug} hidden style="color:var(--ink3)">·</span></p>
+    </div>
+  </div>
+
+  <main class="container tool-grid">
+    <form class="card card-pad tool-form" onsubmit="return false" aria-label="Calculator inputs">
+      {tool.rows && (
+        <div class="field">
+          <label>{tool.rows.label}{tool.rows.hint && <span class="hint">{tool.rows.hint}</span>}</label>
+          <div id="rows-list" data-rows={tool.rows.id}>
+            {tool.rows.preset.map((row) => (
+              <div class="ing-row" data-row>
+                {tool.rows!.columns.map((c) => (
+                  c.kind === 'text'
+                    ? <input class="input" type="text" data-col={c.id} data-kind="text" value={String(row[c.id] ?? '')} placeholder={c.placeholder} aria-label={c.label} />
+                    : c.kind === 'money'
+                      ? <div class="money-wrap" data-kind="money"><input class="input" type="text" inputmode="decimal" data-col={c.id} data-kind="money" value={String(row[c.id] ?? '')} placeholder={c.placeholder} aria-label={c.label} /></div>
+                      : <input class="input" type="text" inputmode="decimal" data-col={c.id} data-kind="number" value={String(row[c.id] ?? '')} placeholder={c.placeholder} aria-label={c.label} />
+                ))}
+                {tool.rows!.removable !== false && <button class="icon-btn" type="button" data-remove aria-label="Remove">×</button>}
+              </div>
+            ))}
+          </div>
+          {tool.rows.addable !== false && <button class="add-row" type="button" id="add-row">{tool.rows.addLabel}</button>}
+        </div>
+      )}
+
+      {tool.fields.map((f) => (
+        <div class="field" style={f.kind === 'slider' ? 'margin-top:22px' : ''}>
+          {f.kind === 'slider' ? (
+            <>
+              <div class="slider-head">
+                <label for={`f-${f.id}`} style="font-weight:600;margin:0">{f.label}{f.hint && <span class="hint">{f.hint}</span>}</label>
+                <span class="slider-val" id={`v-${f.id}`}>{f.default}%</span>
+              </div>
+              <input type="range" id={`f-${f.id}`} data-field={f.id} data-kind={f.kind} min={f.min} max={f.max} step={f.step} value={f.default} />
+            </>
+          ) : (
+            <>
+              <label for={`f-${f.id}`}>{f.label}{f.hint && <span class="hint">{f.hint}</span>}</label>
+              {f.kind === 'select' ? (
+                <select class="input" id={`f-${f.id}`} data-field={f.id} data-kind={f.kind}>
+                  {f.options!.map((o) => <option value={o.value} selected={o.value === f.default}>{o.label}</option>)}
+                </select>
+              ) : f.kind === 'money' ? (
+                <div class="money-wrap"><input class="input" id={`f-${f.id}`} data-field={f.id} data-kind={f.kind} type="text" inputmode="decimal" value={f.default !== undefined ? String(f.default) : ''} placeholder={f.placeholder} /></div>
+              ) : (
+                <input class="input" id={`f-${f.id}`} data-field={f.id} data-kind={f.kind} type="text" inputmode={f.kind === 'number' ? 'decimal' : 'text'} value={f.default !== undefined ? String(f.default) : ''} placeholder={f.placeholder} />
+              )}
+            </>
+          )}
+        </div>
+      ))}
+    </form>
+
+    <aside class="card result-card" aria-live="polite">
+      <div class="result-lbl">{initials.primary.label}</div>
+      <div class="result-num" id="r-primary">{initials.primary.value}</div>
+      <div class="result-sub" id="r-secondary">
+        {initials.secondary?.map((s, i) => (
+          <>{i > 0 && ' · '}<span>{s.label} <b>{s.value}</b></span></>
+        ))}
+      </div>
+
+      {g && (
+        <div class="gauge">
+          <div class="gauge-scale" aria-hidden="true">
+            <span class="zone-ok" style={`left:${gaugePct(g.healthy![0])}%;width:${gaugePct(g.healthy![1]) - gaugePct(g.healthy![0])}%`}></span>
+            <span class="marker" id="g-marker" style={`left:calc(${gaugePct(g.value)}% - 2px)`}></span>
+          </div>
+          <div class="gauge-labels">
+            <span>{g.min}{g.unit ?? ''}</span><span>your number lands here</span><span>{g.max}{g.unit ?? ''}</span>
+          </div>
+        </div>
+      )}
+      <div class={`verdict ${initials.verdict.level}`} id="r-verdict" data-level={initials.verdict.level}>
+        <span id="r-verdict-icon">{favicon(initials.verdict.level)}</span>
+        <span id="r-verdict-txt">{esc(initials.verdict.text)}</span>
+      </div>
+
+      <div class="action-bar">
+        <button class="action" type="button" data-act="save">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg>
+          Save
+        </button>
+        <button class="action" type="button" data-act="email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
+          Email
+        </button>
+        <button class="action" type="button" data-act="print" onclick="window.print()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          Print
+        </button>
+        <button class="action" type="button" data-act="copy">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+          Copy link
+        </button>
+      </div>
+    </aside>
+  </main>
+
+  <div class="m-bar" aria-hidden="true">
+    <div>
+      <div class="num" id="m-primary">{initials.primary.value}</div>
+      <div class="lbl" id="m-label">{initials.primary.label.toLowerCase()}</div>
+    </div>
+    <button class="btn btn-primary btn-sm" onclick="document.querySelector('.result-card').scrollIntoView({behavior:'smooth'})">Details</button>
+  </div>
+
+  <section class="container explain">
+    <h2>What this number means</h2>
+    <Fragment set:html={tool.explain} />
+    <h2>Next steps</h2>
+    <p>Keep going with these tools — they build on this calculation:
+      {tool.related.map((s, i) => (
+        <>{i > 0 && (i === tool.related.length - 1 ? ' and ' : ', ')}<a href={`/${tool.industry}/${s}/`}>{s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())}</a></>
+      ))}.
+      When your prices look right, print the menu with the <a href="/menu-maker/">Menu Maker</a> — free templates,
+      PDF & PNG. Want us to set the whole system up for you? <a href="/services">Ask about concierge setup</a>.</p>
+  </section>
+
+  <section class="container faq">
+    <h2>Questions owners ask</h2>
+    {tool.faq.map((f) => (
+      <details><summary>{f.q}</summary><p>{f.a}</p></details>
+    ))}
+  </section>
+
+  <section class="related">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:0;padding-top:28px"><h2 style="font-size:1.2rem">Related tools</h2></div>
+      <div class="related-grid">
+        {tool.related.map((s) => (
+          <a href={`/${tool.industry}/${s}/`}>{s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <script type="application/json" id="tool-boot" set:html={JSON.stringify({ slug: tool.slug, params: tool.params })} />
+  <script src="../scripts/toolRuntime.ts"></script>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: tool.faq.map((f) => ({
+      '@type': 'Question', name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: tool.name,
+    url: new URL(`/${tool.industry}/${tool.slug}/`, Astro.site).toString(),
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  })} />
+</BaseLayout>

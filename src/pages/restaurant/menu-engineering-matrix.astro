@@ -1,0 +1,242 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Menu Engineering Matrix — See which dishes carry the menu | Main Street Toolbox"
+  description="Enter your dishes with price, plate cost and weekly sales. A live quadrant chart classifies every item as Star, Plowhorse, Puzzle or Dog using the Kasavana–Smith method, with actions per dish."
+  path="/restaurant/menu-engineering-matrix/"
+>
+  <div class="industry-hero">
+    <div class="industry-hero-bg" style="background-image:linear-gradient(rgba(250,247,240,.82), rgba(250,247,240,.06)), url('/images/restaurant.jpg')"></div>
+    <div class="container head">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/restaurant">Restaurant</a> / <b style="color:var(--ink)">Menu Engineering Matrix</b></p>
+    <h1>Which dishes carry the menu?</h1>
+    <p class="sub">Type the week's numbers — the chart sorts your menu into stars, workhorses and dead weight.</p>
+  </div>
+
+  </div>
+
+  <main class="container bench">
+    <div class="sum" id="sum"></div>
+
+    <div class="chart-wrap">
+      <svg id="chart" viewBox="0 0 560 400" role="img" aria-label="Menu engineering quadrant chart"></svg>
+      <div class="legend">
+        <span class="k star">★ Stars</span><span class="k plowhorse">Plowhorses</span>
+        <span class="k puzzle">◆ Puzzles</span><span class="k dog">Dogs</span>
+      </div>
+    </div>
+
+    <h2 class="tbl-head">This week's numbers</h2>
+    <div class="tbl" id="tbl"></div>
+    <button class="add" id="add" type="button">+ Add dish</button>
+
+    <div class="rec" id="rec"></div>
+  </main>
+
+  <section class="container prose">
+    <h2>How to read the chart</h2>
+    <p>The horizontal line is your menu's <b>average contribution margin</b> (price − plate cost); the vertical
+    line is the <b>popularity threshold</b> — 70% of an even share, the standard Kasavana–Smith cutoff. Every
+    dish lands in one of four quadrants, and each quadrant has exactly one right move:</p>
+    <table>
+      <thead><tr><th>Quadrant</th><th>Margin</th><th>Sales</th><th>The move</th></tr></thead>
+      <tbody>
+        <tr><td>★ Star</td><td>High</td><td>High</td><td>Protect it — keep quality, feature it, test small price ups</td></tr>
+        <tr><td>Plowhorse</td><td>Low</td><td>High</td><td>Raise price gently — demand is already proven</td></tr>
+        <tr><td>◆ Puzzle</td><td>High</td><td>Low</td><td>Sell it harder — menu placement, server push, better name</td></tr>
+        <tr><td>Dog</td><td>Low</td><td>Low</td><td>Retire it — free the prep time and inventory</td></tr>
+      </tbody>
+    </table>
+    <h2>Related tools</h2>
+    <p>Price a single dish: <a href="/restaurant/menu-pricing-calculator/">Menu Pricing Calculator</a>. Check one
+    dish fast: <a href="/restaurant/food-cost-percentage-calculator/">Food Cost %</a>. Put the re-priced menu on
+    paper: <a href="/menu-maker/">Menu Maker</a>.</p>
+  </section>
+
+  <style is:global>
+    .head { padding: 36px 24px 8px; }
+    .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
+    .head .sub { color: var(--ink2); }
+    .bench { max-width: 960px; padding-bottom: 24px; }
+    .sum { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 14px; }
+    .sum .c { border: 1px solid var(--line); border-radius: var(--r-s); background: var(--card); padding: 10px 12px; }
+    .sum .c b { display: block; font: 640 1.25rem var(--font-display); color: var(--green2); font-variant-numeric: tabular-nums; }
+    .sum .c span { font-size: 11px; color: var(--ink2); }
+    .chart-wrap { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-m); padding: 14px; }
+    #chart { width: 100%; height: auto; display: block; }
+    .legend { display: flex; gap: 16px; justify-content: center; margin-top: 8px; font-size: 12px; }
+    .k::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+    .k.star::before { background: var(--ok); } .k.plowhorse::before { background: var(--warn); }
+    .k.puzzle::before { background: #2F4A6B; } .k.dog::before { background: var(--bad); }
+    .tbl-head { font-size: var(--fs-600); margin: 22px 0 10px; }
+    .tbl { border: 1px solid var(--line); border-radius: var(--r-m); overflow: hidden; background: var(--card); }
+    .t-row { display: grid; grid-template-columns: minmax(0, 1.6fr) 90px 90px 64px 96px 34px; gap: 0; border-bottom: 1px solid var(--line); align-items: center; }
+    .t-row:last-child { border-bottom: 0; }
+    .t-row > * { padding: 9px 10px; }
+    .t-row.head { background: var(--paper-2); font: 600 10.5px "Inter"; letter-spacing: .08em; text-transform: uppercase; color: var(--ink3); }
+    .t-row input {
+      width: 100%; border: 0; background: none; outline: 0; color: var(--ink);
+      font: 500 14px "Inter"; height: 100%; min-width: 0; font-variant-numeric: tabular-nums;
+    }
+    .t-row input:focus { background: var(--green-tint); }
+    .t-row .num { text-align: right; }
+    .t-row input[type="text"] { font-weight: 500; }
+    .t-row .cls { font-size: 10px; font-weight: 700; border-radius: 999px; padding: 3px 0; text-align: center; letter-spacing: .03em; }
+    .cls.star { background: var(--ok-tint); color: var(--ok); }
+    .cls.plowhorse { background: var(--warn-tint); color: var(--warn); }
+    .cls.puzzle { background: #E8EDF6; color: #2F4A6B; }
+    .cls.dog { background: var(--bad-tint); color: var(--bad); }
+    .cls.na { background: var(--paper-2); color: var(--ink3); }
+    .t-row .rm { border: 0; background: none; color: var(--ink3); cursor: pointer; font-size: 15px; }
+    .t-row .rm:hover { color: var(--bad); }
+    .add { width: 100%; height: 42px; margin-top: 10px; border: 1.5px dashed var(--line2); border-radius: var(--r-m); background: none; color: var(--ink2); font: 500 13.5px "Inter"; cursor: pointer; }
+    .add:hover { border-color: var(--green); color: var(--green); }
+    .rec { margin-top: 16px; }
+    .rec ul { margin: 8px 0 0 18px; font-size: 13.5px; color: var(--ink2); display: grid; gap: 6px; }
+    .an-note { font-size: 11.5px; color: var(--ink3); margin-top: 10px; }
+    @media (max-width: 720px) {
+      .t-row { grid-template-columns: minmax(0, 1fr) 64px 64px; }
+      .t-row > :nth-child(1) { grid-column: 1 / -1; border-bottom: 1px dashed var(--line); }
+      .t-row .h-cost, .t-row .h-sold { display: none; }
+      .t-row > .cls { grid-column: 2 / 4; }
+      .t-row .rm { position: absolute; }
+      .t-row { position: relative; }
+      .t-row .rm { top: 8px; right: 8px; }
+    }
+  </style>
+
+  <script>
+    interface Dish { id: string; n: string; p: string; cost: string; sold: string }
+    const uid = () => Math.random().toString(36).slice(2, 8);
+    const num = (v: unknown) => { const n = parseFloat(String(v ?? '').replace(/[^0-9.\-]/g, '')); return Number.isFinite(n) ? n : 0; };
+    const money = (v: number) => '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    let dishes: Dish[] = [
+      { id: uid(), n: 'Classic burger', p: '16', cost: '5.20', sold: '120' },
+      { id: uid(), n: 'Cobb salad', p: '14', cost: '3.80', sold: '55' },
+      { id: uid(), n: 'Ribeye special', p: '32', cost: '14', sold: '40' },
+      { id: uid(), n: 'Veggie pasta', p: '15', cost: '7.50', sold: '18' },
+      { id: uid(), n: 'Skillet cookie', p: '9', cost: '2.20', sold: '85' },
+    ];
+    try {
+      const saved = JSON.parse(localStorage.getItem('mst-matrix') ?? 'null');
+      if (saved?.dishes?.length) dishes = saved.dishes;
+    } catch {}
+
+    const CLASS_LABEL: Record<string, string> = { star: '★ STAR', plowhorse: 'PLOW', puzzle: '◆ PUZZLE', dog: 'DOG', na: '—' };
+
+    function analyze() {
+      const items = dishes.map((d) => ({ ...d, cm: num(d.p) - num(d.cost), fc: num(d.p) > 0 ? (num(d.cost) / num(d.p)) * 100 : 0, soldN: num(d.sold) }));
+      const valid = items.filter((i) => i.n.trim() && i.cm !== 0 && i.soldN > 0);
+      const totalSold = valid.reduce((s, i) => s + i.soldN, 0);
+      const wcm = totalSold > 0 ? valid.reduce((s, i) => s + i.cm * i.soldN, 0) / totalSold : 0;
+      const thr = valid.length > 0 ? (100 / valid.length) * 0.7 : 0;
+      for (const i of items) {
+        i.mix = totalSold > 0 ? (i.soldN / totalSold) * 100 : 0;
+        i.cls = !valid.includes(i as never) || i.soldN <= 0 || i.cm === 0 ? 'na'
+          : i.cm >= wcm && i.mix >= thr ? 'star'
+          : i.cm < wcm && i.mix >= thr ? 'plowhorse'
+          : i.cm >= wcm ? 'puzzle' : 'dog';
+      }
+      return { items, valid, wcm, thr, blendedFC: totalSold > 0 ? valid.reduce((s, i) => s + num(i.cost) * i.soldN, 0) / (totalSold && valid.reduce((s, i) => s + num(i.p) * i.soldN, 0)) * 100 : 0 };
+    }
+
+    function drawChart(a: ReturnType<typeof analyze>) {
+      const svg = document.getElementById('chart') as unknown as { innerHTML: string };
+      const W = 560, H = 400, P = 44;
+      const maxCM = Math.max(4, ...a.valid.map((i) => i.cm)) * 1.1;
+      const maxMix = Math.max(8, ...a.valid.map((i) => i.mix)) * 1.15;
+      const X = (v: number) => P + (v / maxMix) * (W - P - 16);
+      const Y = (v: number) => H - P - (v / maxCM) * (H - P - 20);
+      let s = '';
+      // 网格与象限中线
+      s += `<rect x="${P}" y="16" width="${W - P - 16}" height="${H - P - 20}" fill="#FFFDF8" stroke="#E8E1D0"/>`;
+      if (a.valid.length) {
+        const cx = X(a.thr), cy = Y(a.wcm);
+        s += `<line x1="${cx}" y1="16" x2="${cx}" y2="${H - P}" stroke="#9A9078" stroke-dasharray="5 4"/>`;
+        s += `<line x1="${P}" y1="${cy}" x2="${W - 16}" y2="${cy}" stroke="#9A9078" stroke-dasharray="5 4"/>`;
+        // 象限标签
+        const lab = (x: number, y: number, t: string, c: string) => `<text x="${x}" y="${y}" font-size="12" font-weight="700" fill="${c}" opacity=".75">${t}</text>`;
+        s += lab(cx + 10, 34, '★ STARS', '#1A7F4B');
+        s += lab(P + 10, 34, 'PUZZLES ◆', '#2F4A6B');
+        s += lab(cx + 10, H - P - 10, 'PLOWHORSES', '#B54708');
+        s += lab(P + 10, H - P - 10, 'DOGS', '#B42318');
+        for (const i of a.valid) {
+          const color = i.cls === 'star' ? '#1A7F4B' : i.cls === 'plowhorse' ? '#B54708' : i.cls === 'puzzle' ? '#2F4A6B' : '#B42318';
+          const px = X(i.mix), py = Y(i.cm);
+          const tw = i.n.slice(0, 18).length * 6.2;
+          // 标签放右侧；靠右缘放不下时翻到点的左侧，避免与自身圆点/边界冲突
+          let lx = px + 10, anchor = 'start';
+          if (lx + tw > W - 16) { lx = px - 10; anchor = 'end'; }
+          s += `<circle cx="${px}" cy="${py}" r="7" fill="${color}" fill-opacity=".85" stroke="#26231B" stroke-width="1"/>`;
+          s += `<text x="${lx}" y="${py + 4}" text-anchor="${anchor}" font-size="11" fill="#26231B">${i.n.slice(0, 18)}</text>`;
+        }
+      }
+      // 轴
+      s += `<text x="${W - 16}" y="${H - 14}" text-anchor="end" font-size="11" fill="#6E6553">menu mix % →</text>`;
+      s += `<text x="14" y="26" font-size="11" fill="#6E6553">margin $ →</text>`;
+      svg.innerHTML = s;
+    }
+
+    function render() {
+      const a = analyze();
+      const counts = { star: 0, plowhorse: 0, puzzle: 0, dog: 0 } as Record<string, number>;
+      a.items.forEach((i) => { if (i.cls !== 'na') counts[i.cls]++; });
+      (document.getElementById('sum') as HTMLElement).innerHTML = `
+        <div class="c"><b>${a.blendedFC ? a.blendedFC.toFixed(1) + '%' : '—'}</b><span>blended food cost</span></div>
+        <div class="c"><b>${a.wcm ? money(a.wcm) : '—'}</b><span>avg contribution margin</span></div>
+        <div class="c"><b>${a.thr ? a.thr.toFixed(1) + '%' : '—'}</b><span>popularity threshold</span></div>
+        <div class="c"><b>${counts.star}★ ${counts.plowhorse}P ${counts.puzzle}◆ ${counts.dog}D</b><span>quadrant mix</span></div>`;
+
+      (document.getElementById('tbl') as HTMLElement).innerHTML = `
+        <div class="t-row head"><span>Dish</span><span class="num">Price</span><span class="num h-cost">Cost</span><span class="num h-sold">Sold/wk</span><span style="text-align:center">Verdict</span><span></span></div>
+        ${dishes.map((d, i) => {
+          const item = a.items[i];
+          return `
+          <div class="t-row">
+            <input type="text" value="${esc(d.n)}" data-i="${i}" data-k="n" placeholder="Dish name" aria-label="Dish name">
+            <input type="text" class="num" value="${esc(d.p)}" data-i="${i}" data-k="p" inputmode="decimal" placeholder="0.00" aria-label="Price">
+            <input type="text" class="num" value="${esc(d.cost)}" data-i="${i}" data-k="cost" inputmode="decimal" placeholder="0.00" aria-label="Cost">
+            <input type="text" class="num" value="${esc(d.sold)}" data-i="${i}" data-k="sold" inputmode="numeric" placeholder="0" aria-label="Sold per week">
+            <span class="cls ${item.cls}">${CLASS_LABEL[item.cls]}</span>
+            <button class="rm" data-rm="${d.id}" type="button" title="Remove">×</button>
+          </div>`;
+        }).join('')}`;
+
+      const recs: string[] = [];
+      const byClass = (c: string) => a.items.filter((i) => i.cls === c);
+      for (const i of byClass('plowhorse')) recs.push(`<b>${i.n}</b> sells but earns only ${money(i.cm)} — a $1 price move is worth about <b>${money(i.soldN * 1)}/wk</b>.`);
+      for (const i of byClass('dog')) recs.push(`<b>${i.n}</b> is a Dog — retire it or rework the plate before the next print run.`);
+      for (const i of byClass('puzzle')) recs.push(`<b>${i.n}</b> earns ${money(i.cm)} but rarely sells — feature it on the menu's hot zone.`);
+      (document.getElementById('rec') as HTMLElement).innerHTML = recs.length
+        ? `<b style="font-size:13.5px">Moves for this week</b><ul>${recs.slice(0, 5).map((r) => `<li>${r}</li>`).join('')}</ul>`
+        : '';
+      drawChart(a);
+      try { localStorage.setItem('mst-matrix', JSON.stringify({ dishes })); } catch {}
+    }
+
+    const esc = (s: unknown) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    document.getElementById('tbl')!.addEventListener('input', (e) => {
+      const t = e.target as HTMLInputElement;
+      if (t.dataset.i !== undefined && t.dataset.k) {
+        dishes[+t.dataset.i][t.dataset.k as 'n'] = t.value;
+        render();
+      }
+    });
+    document.getElementById('tbl')!.addEventListener('click', (e) => {
+      const b = (e.target as HTMLElement).closest('[data-rm]') as HTMLElement | null;
+      if (b && dishes.length > 1) {
+        dishes = dishes.filter((d) => d.id !== b.dataset.rm);
+        render();
+      }
+    });
+    document.getElementById('add')!.addEventListener('click', () => {
+      dishes.push({ id: uid(), n: '', p: '', cost: '', sold: '' });
+      render();
+      const inputs = document.querySelectorAll('#tbl input[type="text"]');
+      (inputs[inputs.length - 5] as HTMLInputElement)?.focus();
+    });
+    render();
+  </script>
+</BaseLayout>

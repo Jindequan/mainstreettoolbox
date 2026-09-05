@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Food Cost Percentage Calculator — Check a dish in 15 seconds | Main Street Toolbox"
+  description="One question: is this dish priced right? Enter plate cost and menu price, get the food cost percentage, the verdict against the 28–35% band, and the price that fixes it."
+  path="/restaurant/food-cost-percentage-calculator/"
+>
+  <div class="industry-hero">
+    <div class="industry-hero-bg" style="background-image:linear-gradient(rgba(250,247,240,.82), rgba(250,247,240,.06)), url('/images/restaurant.jpg')"></div>
+    <div class="container head">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/restaurant">Restaurant</a> / <b style="color:var(--ink)">Food Cost %</b></p>
+    <h1>Is this dish priced right?</h1>
+    <p class="sub">Two numbers in, one honest answer out — in 15 seconds.</p>
+  </div>
+
+  </div>
+
+  <main class="container check">
+    <div class="pair">
+      <div class="in">
+        <label for="cost">Plate costs you</label>
+        <div class="box"><span>$</span><input id="cost" type="text" inputmode="decimal" value="4.90" /></div>
+      </div>
+      <div class="in">
+        <label for="price">You charge</label>
+        <div class="box"><span>$</span><input id="price" type="text" inputmode="decimal" value="16.95" /></div>
+      </div>
+    </div>
+
+    <div class="answer" data-level="ok" aria-live="polite">
+      <div class="pct" id="fc">28.9%</div>
+      <div class="word" id="word">healthy</div>
+    </div>
+
+    <div class="band">
+      <div class="band-scale">
+        <div class="zone"></div>
+        <div class="pin" id="pin"></div>
+      </div>
+      <div class="band-labels"><span>15%</span><span>band 28–35%</span><span>50%</span></div>
+    </div>
+
+    <div class="fix" id="fix"></div>
+  </main>
+
+  <section class="container prose">
+    <h2>What the answer means</h2>
+    <p>Food cost percentage is the share of the menu price that goes to ingredients. Full-service restaurants
+    run <b>28–35%</b>; quick service runs a few points lower. A number creeping up week over week is a supplier
+    or portion problem — the fastest fix is usually price, not quality.</p>
+    <p>When the verdict is "tight" or "danger", the fix line above shows the menu price that brings this dish
+    back inside the band at a 30% target. Change the price, watch the band, decide.</p>
+    <h2>Related tools</h2>
+    <p>Setting a new price from scratch: <a href="/restaurant/menu-pricing-calculator/">Menu Pricing
+    Calculator</a>. Checking the whole menu at once: <a href="/restaurant/menu-engineering-matrix/">Menu
+    Engineering Matrix</a>. Printing the result: <a href="/menu-maker/">Menu Maker</a>.</p>
+  </section>
+
+  <style is:global>
+    .head { padding: 36px 24px 8px; }
+    .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
+    .head .sub { color: var(--ink2); }
+    .check { max-width: 640px; padding-bottom: 32px; }
+    .pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; margin-top: 18px; }
+    .in { min-width: 0; }
+    .in label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 7px; }
+    .in .box {
+      display: flex; align-items: center; gap: 2px; border: 2px solid var(--line2);
+      border-radius: var(--r-m); background: var(--card); padding: 2px 14px; min-width: 0;
+    }
+    .in .box:focus-within { border-color: var(--green); box-shadow: 0 0 0 4px var(--green-tint); }
+    .in .box span { font: 640 1.5rem var(--font-display); color: var(--ink3); }
+    .in .box input {
+      flex: 1; min-width: 0; border: 0; outline: 0; background: none;
+      font: 640 1.9rem var(--font-display); color: var(--ink); padding: 8px 0;
+      font-variant-numeric: tabular-nums;
+    }
+    .answer {
+      margin-top: 22px; border-radius: var(--r-l); padding: 26px 24px; text-align: center;
+      background: var(--ok-tint); border: 1px solid var(--ok);
+    }
+    .answer[data-level="ok"]   { background: var(--ok-tint); border-color: var(--ok); }
+    .answer[data-level="warn"] { background: var(--warn-tint); border-color: var(--warn); }
+    .answer[data-level="bad"]  { background: var(--bad-tint); border-color: var(--bad); }
+    .answer .pct { font: 640 4.2rem/1 var(--font-display); font-variant-numeric: tabular-nums; }
+    .answer[data-level="ok"] .pct { color: var(--ok); }
+    .answer[data-level="warn"] .pct { color: var(--warn); }
+    .answer[data-level="bad"] .pct { color: var(--bad); }
+    .answer .word { font: 600 15px "Inter"; letter-spacing: .14em; text-transform: uppercase; margin-top: 8px; color: var(--ink2); }
+    .band { margin-top: 18px; }
+    .band-scale { position: relative; height: 12px; border-radius: 6px; background: var(--bad-tint); }
+    .band-scale .zone { position: absolute; top: 0; bottom: 0; left: 37.1%; width: 20%; background: var(--ok-tint); border-inline: 1px solid var(--ok); }
+    .band-scale .pin { position: absolute; top: -4px; bottom: -4px; width: 4px; border-radius: 2px; background: var(--ink); transition: left .18s ease; }
+    .band-labels { display: flex; justify-content: space-between; font-size: 12px; color: var(--ink3); margin-top: 6px; }
+    .fix {
+      margin-top: 16px; padding: 12px 16px; border-radius: var(--r-s); font-size: 14.5px;
+      background: var(--paper-2); border: 1px dashed var(--line2); color: var(--ink2); min-height: 20px;
+    }
+    .fix b { color: var(--ink); }
+    @media (max-width: 480px) { .pair { grid-template-columns: minmax(0, 1fr); } }
+  </style>
+
+  <script>
+    const costEl = document.getElementById('cost') as HTMLInputElement;
+    const priceEl = document.getElementById('price') as HTMLInputElement;
+    const num = (v: string) => { const n = parseFloat(v.replace(/[^0-9.]/g, '')); return Number.isFinite(n) ? n : 0; };
+
+    function calc() {
+      const cost = num(costEl.value), price = num(priceEl.value);
+      const fc = price > 0 ? (cost / price) * 100 : 0;
+      const box = document.querySelector('.answer') as HTMLElement;
+      const pct = document.getElementById('fc')!;
+      const word = document.getElementById('word')!;
+      const pin = document.getElementById('pin')!;
+      const fix = document.getElementById('fix')!;
+
+      if (price <= 0 || cost <= 0) {
+        box.dataset.level = 'ok'; pct.textContent = '—'; word.textContent = 'enter both numbers';
+        pin.style.left = '0%'; fix.textContent = '';
+        return;
+      }
+      pct.textContent = fc.toFixed(1) + '%';
+      const pos = Math.min(100, Math.max(0, ((fc - 15) / 35) * 100));
+      pin.style.left = `calc(${pos}% - 2px)`;
+
+      let level: string, wordTxt: string, fixHtml: string;
+      if (fc <= 35) { level = 'ok'; wordTxt = fc < 20 ? 'very low — check the plate matches' : 'healthy'; fixHtml = 'Inside the 28–35% band full-service restaurants run at.'; }
+      else if (fc <= 40) { level = 'warn'; wordTxt = 'tight'; fixHtml = `Above the 35% ceiling. Priced at <b>$${(cost / 0.30).toFixed(2).replace(/\.00$/, '')}</b> this dish returns to a 30% food cost.`; }
+      else { level = 'bad'; wordTxt = 'danger'; fixHtml = `Ingredients eat ${fc.toFixed(0)}¢ of every dollar. You need about <b>$${(cost / 0.30).toFixed(2)}</b> for a 30% food cost — or re-plate this dish.`; }
+      box.dataset.level = level; word.textContent = wordTxt; fix.innerHTML = fixHtml;
+    }
+    [costEl, priceEl].forEach((el) => el.addEventListener('input', calc));
+    calc();
+  </script>
+</BaseLayout>

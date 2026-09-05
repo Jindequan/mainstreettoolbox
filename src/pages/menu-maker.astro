@@ -1,0 +1,709 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Free Menu Maker — Menu Engineering + Printable Templates, No Signup | Main Street Toolbox"
+  description="The professional menu workbench: build your full menu dataset, run menu engineering analysis (Kasavana-Smith), auto-fit typesetting on Letter/A4, export print-grade PDF, PNG, CSV and JSON. Free, no signup."
+  path="/menu-maker/"
+>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <div class="app">
+    <aside class="side">
+      <div class="proto">Menu Workbench</div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab sel" data-tab="content" type="button">Menu content</button>
+        <button class="tab" data-tab="analysis" type="button">Engineering analysis</button>
+      </div>
+
+      <!-- ============ Tab 1: 内容编辑 ============ -->
+      <div id="tab-content">
+        <label class="flabel" for="i-name">Restaurant name</label>
+        <input class="finput" id="i-name" />
+        <label class="flabel" for="i-tag">Tagline</label>
+        <input class="finput" id="i-tag" />
+
+        <div class="row2">
+          <div>
+            <label class="flabel" for="tpl-row">Template</label>
+            <div class="tpl-row" id="tpl-row">
+              <button class="tpl t-classic sel" data-t="t-classic" type="button"><div class="thumb"></div><b>Classic</b></button>
+              <button class="tpl t-modern" data-t="t-modern" type="button"><div class="thumb"></div><b>Modern</b></button>
+              <button class="tpl t-rustic" data-t="t-rustic" type="button"><div class="thumb"></div><b>Rustic</b></button>
+            </div>
+          </div>
+          <div>
+            <label class="flabel" for="paper-size">Paper</label>
+            <select class="finput" id="paper-size">
+              <option value="letter">Letter 8.5×11</option>
+              <option value="a4">A4</option>
+              <option value="half">Half-letter 5.5×8.5</option>
+            </select>
+          </div>
+        </div>
+
+        <label class="flabel">Accent color</label>
+        <div class="swatches" id="swatches">
+          <div class="sw sel" data-c="#1E5B3E" style="background:#1E5B3E"></div>
+          <div class="sw" data-c="#7A2E2E" style="background:#7A2E2E"></div>
+          <div class="sw" data-c="#2F4A6B" style="background:#2F4A6B"></div>
+          <div class="sw" data-c="#B45309" style="background:#B45309"></div>
+          <div class="sw" data-c="#3B2A1E" style="background:#3B2A1E"></div>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:16px">
+          <label class="flabel" style="margin:0">Your menu</label>
+          <button class="reset" id="reset" type="button">Reset example</button>
+        </div>
+        <div id="sections"></div>
+        <button class="add" id="add-section" type="button">+ Add section</button>
+
+        <details class="csv-box">
+          <summary>Bulk import — paste CSV</summary>
+          <p class="csv-hint">One dish per line: <code>Section, Name, Description, Price, FoodCost, Sold/wk</code> — Price/FoodCost/Sold are optional, and descriptions may contain commas (numeric columns are read from the right). Paste straight from any spreadsheet.</p>
+          <textarea id="csv-in" placeholder="Mains, Skillet Burger, Two patties & cheddar, 16, 4.90, 120"></textarea>
+          <button class="add" id="csv-go" type="button">Import into menu</button>
+        </details>
+      </div>
+
+      <!-- ============ Tab 2: 菜单工程分析 ============ -->
+      <div id="tab-analysis" hidden>
+        <div id="analysis-body"></div>
+      </div>
+
+      <!-- ============ 版本管理 ============ -->
+      <div class="versions">
+        <label class="flabel" style="margin:14px 0 6px">Versions</label>
+        <div style="display:flex;gap:6px">
+          <input class="finput" id="v-name" placeholder="e.g. Fall menu v2" style="flex:1;height:36px" />
+          <button class="btn-mini" id="v-save" type="button">Save</button>
+        </div>
+        <div id="v-list"></div>
+      </div>
+    </aside>
+
+    <main class="preview">
+      <div class="toolbar">
+        <button class="btn-print" id="btn-print" type="button">Print / Save PDF</button>
+        <button class="btn-png" id="btn-png" type="button">PNG</button>
+        <button class="btn-png" id="btn-json" type="button">Export JSON</button>
+        <label class="btn-png" for="json-in" style="margin:0">Import JSON</label>
+        <input type="file" id="json-in" accept="application/json" hidden />
+        <span class="hint" id="fit-note">auto-fit: 100%</span>
+      </div>
+      <div class="paper-wrap">
+        <div class="paper t-classic" id="paper" style="--accent:#1E5B3E">
+          <div class="m-name" id="p-name"></div>
+          <div class="m-tag" id="p-tag"></div>
+          <div class="rule" id="p-rule"><span>✦</span></div>
+          <div class="accent-band" id="p-band" hidden></div>
+          <div class="menu-body" id="p-body"></div>
+          <div class="footnote" id="p-footnote" hidden></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <section class="container explain">
+    <h2>A workbench, not a form</h2>
+    <p>This is the same discipline a menu consultant runs, in one place: <b>your full menu as data</b> (sections,
+    items, descriptions, prices, plate costs, sales mix), <b>menu engineering analysis</b> using the
+    Kasavana–Smith method your food-cost consultant uses (menu mix, contribution margin, 70% popularity
+    threshold), and <b>auto-fit typesetting</b> that re-flows the page as the menu grows — so a 40-item menu
+    still comes out balanced instead of spilling onto a second page.</p>
+    <p>Everything is portable: import dishes by pasting CSV from any spreadsheet, export the whole menu as JSON,
+    and keep named versions (Fall menu, Brunch, Catering) with one-click restore. Nothing is locked in — your
+    menu data belongs to you.</p>
+    <h2>The professional loop</h2>
+    <p>Cost your plates with the <a href="/restaurant/food-cost-percentage-calculator/">Food Cost Percentage
+    Calculator</a>, set prices with the <a href="/restaurant/menu-pricing-calculator/">Menu Pricing
+    Calculator</a>, check which dishes deserve promotion with the <a
+    href="/restaurant/menu-engineering-matrix/">Menu Engineering Matrix</a>, then typeset and print here. When
+    supplier prices move, update the costs here and the analysis tells you exactly which items to reprice.</p>
+  </section>
+
+  <style is:global>
+    .app{display:grid;grid-template-columns:420px 1fr;min-height:70vh}
+    .side{border-right:1px solid var(--line);background:var(--card);padding:20px;overflow-y:auto;position:sticky;top:0;max-height:100vh}
+    .proto{font-size:12px;color:var(--amber);font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+    .tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:14px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:4px}
+    .tab{height:34px;border:0;border-radius:7px;background:none;font:600 13px "Inter";color:var(--ink2);cursor:pointer}
+    .tab.sel{background:var(--green);color:#FDFBF4}
+    .flabel{display:block;font-weight:600;font-size:13px;margin:12px 0 6px}
+    .finput{width:100%;height:40px;padding:0 12px;border:1.5px solid var(--line2);border-radius:var(--r-s);background:#fff;color:var(--ink);font:500 14px "Inter";outline:0}
+    .finput:focus{border-color:var(--green);box-shadow:0 0 0 3px var(--green-tint)}
+    select.finput{appearance:auto}
+    .row2{display:grid;grid-template-columns:1fr 130px;gap:10px}
+    .section-block{border:1px solid var(--line);border-radius:var(--r-m);padding:12px;margin-top:12px;background:var(--paper)}
+    .sec-head{display:flex;gap:6px;margin-bottom:8px;align-items:center}
+    .sec-head input{flex:1;height:36px;padding:0 10px;border:1.5px solid var(--line2);border-radius:8px;background:#fff;font:600 14px "Inter";color:var(--ink);outline:0}
+    .sec-head input:focus{border-color:var(--green)}
+    .mv{border:1px solid var(--line2);background:#fff;border-radius:6px;width:24px;height:24px;font-size:10px;color:var(--ink2);cursor:pointer;line-height:1}
+    .mv:hover{color:var(--green);border-color:var(--green)}
+    .dish{border-bottom:1px dashed var(--line);padding:8px 0}
+    .dish .l1{display:flex;gap:6px}
+    .dish .dn{flex:1;min-width:0}
+    .dish input{height:34px;padding:0 9px;border:1.5px solid var(--line2);border-radius:8px;background:#fff;font:500 13px "Inter";color:var(--ink);outline:0;width:100%}
+    .dish input:focus{border-color:var(--green)}
+    .dish .pw{width:64px;flex:none}
+    .dish .cw{width:64px;flex:none}
+    .dish .sw2{width:52px;flex:none}
+    .dish .dd{margin-top:6px;font:400 12px "Inter"}
+    .dish .l2{display:flex;gap:10px;margin-top:6px;align-items:center;font-size:11px;color:var(--ink2)}
+    .dish .l2 label{display:flex;align-items:center;gap:3px;cursor:pointer}
+    .dish .l2 .fc-note{margin-left:auto;font-variant-numeric:tabular-nums}
+    .fc-ok{color:var(--ok)}.fc-warn{color:var(--warn)}.fc-bad{color:var(--bad)}
+    .rm{border:0;background:none;color:var(--ink3);cursor:pointer;font-size:14px;padding:0 2px}
+    .rm:hover{color:var(--bad)}
+    .add{width:100%;height:34px;border:1.5px dashed var(--line2);border-radius:8px;background:none;color:var(--ink2);font:500 13px "Inter";cursor:pointer;margin-top:8px}
+    .add:hover{border-color:var(--green);color:var(--green)}
+    .reset{border:0;background:none;color:var(--ink3);font:500 12px "Inter";cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+    .reset:hover{color:var(--ink)}
+    .csv-box{margin-top:14px;border:1px solid var(--line);border-radius:var(--r-m);padding:10px 12px;background:var(--paper)}
+    .csv-box summary{cursor:pointer;font-weight:600;font-size:13px;color:var(--ink2)}
+    .csv-hint{font-size:12px;color:var(--ink3);margin:8px 0}
+    .csv-hint code{background:#fff;border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:11px}
+    .csv-box textarea{width:100%;min-height:90px;border:1.5px solid var(--line2);border-radius:8px;padding:8px;font:400 12px/1.5 "Inter";resize:vertical;outline:0}
+    .csv-box textarea:focus{border-color:var(--green)}
+    /* 分析 */
+    .an-sum{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:4px 0 12px}
+    .an-card{border:1px solid var(--line);border-radius:10px;background:var(--paper);padding:10px 12px}
+    .an-card b{display:block;font:640 1.3rem var(--font-display);color:var(--green2);font-variant-numeric:tabular-nums}
+    .an-card span{font-size:11px;color:var(--ink2)}
+    .an-table{width:100%;border-collapse:collapse;font-size:12px}
+    .an-table th{font:600 10px "Inter";letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);text-align:left;padding:4px 6px;border-bottom:1px solid var(--line)}
+    .an-table td{padding:6px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+    .an-class{font-size:10px;font-weight:700;border-radius:999px;padding:2px 8px;letter-spacing:.03em}
+    .an-class.star{background:var(--ok-tint);color:var(--ok)}
+    .an-class.plowhorse{background:var(--warn-tint);color:var(--warn)}
+    .an-class.puzzle{background:#E8EDF6;color:#2F4A6B}
+    .an-class.dog{background:var(--bad-tint);color:var(--bad)}
+    .an-rec{margin-top:12px}
+    .an-rec li{margin-bottom:6px}
+    .an-note{font-size:11px;color:var(--ink3);margin-top:10px}
+    /* 版本 */
+    .btn-mini{height:36px;padding:0 12px;border-radius:8px;border:1.5px solid var(--green);background:var(--green);color:#FDFBF4;font:600 12px "Inter";cursor:pointer}
+    .btn-mini:hover{background:var(--green2)}
+    .v-row{display:flex;align-items:center;gap:8px;padding:7px 2px;border-bottom:1px solid var(--line);font-size:12px}
+    .v-row b{font-weight:600;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .v-row .when{color:var(--ink3);font-size:11px;white-space:nowrap}
+    .v-row button{border:0;background:none;color:var(--green);font:600 11px "Inter";cursor:pointer;padding:2px 4px}
+    .v-row button.del{color:var(--ink3)}
+    .v-row button:hover{text-decoration:underline}
+    /* 预览 */
+    .preview{padding:28px;display:flex;flex-direction:column;align-items:center;overflow:auto}
+    .toolbar{display:flex;gap:8px;align-items:center;margin-bottom:18px;flex-wrap:wrap;justify-content:center}
+    .btn-print,.btn-png{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:var(--r-s);font:600 13px "Inter";cursor:pointer;border:1.5px solid transparent}
+    .btn-print{background:var(--green);color:#FDFBF4}
+    .btn-print:hover{background:var(--green2)}
+    .btn-png{background:#fff;color:var(--ink);border-color:var(--line2)}
+    .btn-png:hover{border-color:var(--ink2)}
+    .hint{font-size:12px;color:var(--ink3);margin-left:8px;font-variant-numeric:tabular-nums}
+    .paper-wrap{width:100%;max-width:620px}
+    .paper{
+      --fit:1;
+      width:100%;background:#fff;box-shadow:var(--shadow-2);padding:7% 8%;overflow:hidden;display:flex;flex-direction:column;
+      font-size:calc(15px * var(--fit));
+    }
+    .paper.p-letter{aspect-ratio:8.5/11}
+    .paper.p-a4{aspect-ratio:210/297}
+    .paper.p-half{aspect-ratio:5.5/8.5;max-width:420px}
+    /* 模板（em 制 — 随 --fit 整体缩放） */
+    .paper .m-name{font-family:var(--font-display)}
+    .paper.t-classic{font-family:var(--font-display);color:#2A2520}
+    .t-classic .m-name{text-align:center;font-size:2.3em;font-weight:640;letter-spacing:.02em;margin:.1em 0 .05em}
+    .t-classic .m-tag{text-align:center;font-style:italic;font-size:.95em;color:#7d7466;margin-bottom:.7em}
+    .t-classic .rule{display:flex;align-items:center;gap:10px;margin:0 0 1.1em;color:#7A5C2E}
+    .t-classic .rule::before,.t-classic .rule::after{content:"";flex:1;height:1px;background:currentColor;opacity:.45}
+    .t-classic .rule span{font-size:1em}
+    .t-classic .menu-body{column-count:2;column-gap:2.2em;flex:1}
+    .t-classic .sec{break-inside:avoid;margin-bottom:1.2em}
+    .t-classic .sec-name{text-align:center;font-size:1em;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:.7em}
+    .t-classic .dishline{margin-bottom:.7em}
+    .t-classic .dl-top{display:flex;align-items:baseline;gap:.4em}
+    .t-classic .dl-name{font-weight:600;font-size:.97em}
+    .t-classic .dl-leader{flex:1;border-bottom:1.5px dotted #b9ad97;transform:translateY(-3px)}
+    .t-classic .dl-price{font-size:.97em;font-weight:600}
+    .t-classic .dl-desc{font-size:.8em;color:#7d7466;font-style:italic;margin-top:.1em;line-height:1.35}
+    .t-classic .mark{font-size:.7em;color:var(--accent);vertical-align:super}
+    .paper.t-modern{font-family:var(--font-ui);color:#20241f}
+    .t-modern .m-name{font-size:2.1em;font-weight:700;letter-spacing:-.02em;margin:0 0 .1em}
+    .t-modern .m-tag{font-size:.87em;color:#68705f;margin-bottom:.9em}
+    .t-modern .accent-band{height:.5em;border-radius:.25em;background:var(--accent);margin-bottom:1.3em}
+    .t-modern .menu-body{flex:1;display:flex;flex-direction:column;gap:1.2em}
+    .t-modern .sec-name{font-size:.8em;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:.6em;margin-bottom:.5em}
+    .t-modern .sec-name::after{content:"";flex:1;height:1px;background:#E4E2D8}
+    .t-modern .dishline{display:flex;justify-content:space-between;align-items:baseline;gap:.8em;padding:.3em 0}
+    .t-modern .dl-wrap{min-width:0}
+    .t-modern .dl-name{font-weight:600;font-size:.93em}
+    .t-modern .dl-desc{font-size:.8em;color:#77806e;margin-top:.1em}
+    .t-modern .dl-price{font-weight:700;font-size:.93em;font-variant-numeric:tabular-nums}
+    .t-modern .mark{font-size:.7em;color:var(--accent);vertical-align:super}
+    .paper.t-rustic{font-family:var(--font-display);background:linear-gradient(#fffdf6,#fbf3e4);color:#3B2A1E;border:1px solid #e7d9c2}
+    .t-rustic .m-name{text-align:center;font-size:2.1em;font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin:.1em 0 .1em}
+    .t-rustic .m-tag{text-align:center;font-size:.85em;letter-spacing:.28em;text-transform:uppercase;color:#8a6c4d;margin-bottom:.9em}
+    .t-rustic .menu-body{flex:1}
+    .t-rustic .sec-name{font-size:1.05em;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:.2em;margin:.9em 0 .5em;display:inline-block}
+    .t-rustic .dishline{margin-bottom:.6em}
+    .t-rustic .dl-top{display:flex;justify-content:space-between;gap:.7em}
+    .t-rustic .dl-name{font-weight:700;font-size:.93em}
+    .t-rustic .dl-price{font-weight:800;font-size:.93em}
+    .t-rustic .dl-desc{font-size:.8em;color:#7c6a52;line-height:1.35}
+    .t-rustic .mark{font-size:.7em;color:var(--accent);vertical-align:super}
+    .footnote{margin-top:1em;padding-top:.6em;border-top:1px solid var(--line);font-size:.72em;color:var(--ink3);font-family:var(--font-ui)}
+    /* 模板选择 */
+    .tpl-row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+    .tpl{border:1.5px solid var(--line2);border-radius:var(--r-s);background:#fff;cursor:pointer;padding:7px;text-align:left}
+    .tpl:hover{border-color:var(--green)}
+    .tpl.sel{border-color:var(--green);box-shadow:0 0 0 3px var(--green-tint)}
+    .tpl .thumb{height:34px;border-radius:5px;border:1px solid var(--line);margin-bottom:4px;overflow:hidden;position:relative}
+    .tpl .thumb::before{content:"";position:absolute;left:20%;right:20%;top:6px;height:4px;border-radius:2px;background:currentColor;opacity:.85}
+    .tpl .thumb::after{content:"";position:absolute;left:12%;right:12%;top:15px;height:2px;background:currentColor;opacity:.35;box-shadow:0 5px 0 currentColor}
+    .tpl.t-classic .thumb{color:#7A5C2E}.tpl.t-modern .thumb{color:#1E5B3E}.tpl.t-rustic .thumb{color:#8C4A2F}
+    .tpl b{font-size:11px;font-weight:600}
+    .swatches{display:flex;gap:8px;margin-top:6px}
+    .sw{width:28px;height:28px;border-radius:8px;border:2px solid transparent;cursor:pointer;outline:1.5px solid var(--line2)}
+    .sw.sel{border-color:#fff;outline:2px solid var(--ink)}
+    @media (max-width:960px){
+      .app{grid-template-columns:1fr}
+      .side{position:static;max-height:none;border-right:0;border-bottom:1px solid var(--line)}
+      .preview{padding:18px}
+    }
+    @media print{
+      body::before,.nav,.side,.toolbar,.hint,footer.site,.explain{display:none!important}
+      .app{display:block}
+      .preview{padding:0;overflow:visible}
+      .paper-wrap{max-width:none;width:100%}
+      .paper{box-shadow:none;border:none;border-radius:0;min-height:96vh}
+      @page{margin:0.45in}
+    }
+  </style>
+
+  <script>
+    // ============ Menu Workbench — 数据/方法论/排印 ============
+    interface Dish { id: string; n: string; d: string; p: string; cost: string; sold: string; v: boolean; gf: boolean; sp: boolean }
+    interface Section { id: string; name: string; dishes: Dish[] }
+    interface MenuState {
+      name: string; tag: string; template: string; accent: string; paperSize: 'letter' | 'a4' | 'half';
+      sections: Section[];
+    }
+    const uid = () => Math.random().toString(36).slice(2, 9);
+    const SAMPLE: MenuState = {
+      name: 'The Copper Skillet', tag: 'American kitchen · est. 2019',
+      template: 't-classic', accent: '#1E5B3E', paperSize: 'letter',
+      sections: [
+        { id: uid(), name: 'Starters', dishes: [
+          { id: uid(), n: 'Cast-iron cornbread', d: 'Honey butter, flaky salt', p: '6', cost: '1.45', sold: '95', v: true, gf: false, sp: false },
+          { id: uid(), n: 'Tomato bisque', d: 'Grilled cheddar croutons', p: '8', cost: '2.10', sold: '70', v: true, gf: true, sp: false },
+          { id: uid(), n: 'Fried green tomatoes', d: 'Buttermilk ranch, bacon jam', p: '9', cost: '2.85', sold: '38', v: false, gf: false, sp: false },
+        ]},
+        { id: uid(), name: 'Mains', dishes: [
+          { id: uid(), n: 'The Skillet Burger', d: 'Two patties, smoked cheddar, pickles, brioche', p: '16', cost: '4.90', sold: '180', v: false, gf: false, sp: false },
+          { id: uid(), n: 'Buttermilk fried chicken', d: 'Mashed potatoes, country gravy', p: '18', cost: '5.40', sold: '120', v: false, gf: false, sp: true },
+          { id: uid(), n: 'Pan-roasted trout', d: 'Brown butter, almonds, seasonal veg', p: '22', cost: '9.80', sold: '45', v: false, gf: true, sp: false },
+          { id: uid(), n: 'Vegetable pot pie', d: 'Root vegetables, puff pastry lid', p: '15', cost: '3.60', sold: '30', v: true, gf: false, sp: false },
+        ]},
+        { id: uid(), name: 'Desserts', dishes: [
+          { id: uid(), n: 'Skillet cookie', d: 'Vanilla bean ice cream, salted caramel', p: '9', cost: '2.20', sold: '85', v: true, gf: false, sp: false },
+          { id: uid(), n: 'Seasonal fruit crumble', d: 'Oat topping, whipped cream', p: '8', cost: '1.75', sold: '40', v: true, gf: false, sp: false },
+        ]},
+      ],
+    };
+
+    /** 字段迁移：任何旧版本/外部导入的状态补齐缺失字段，保证 workbench 数据完整 */
+    function normalize(s: Partial<MenuState> | null | undefined): MenuState {
+      const base = structuredClone(SAMPLE);
+      if (!s || typeof s !== 'object') return base;
+      const out = { ...base, ...s } as MenuState;
+      out.sections = (Array.isArray(s.sections) ? s.sections : base.sections).map((sec: any) => ({
+        id: typeof sec?.id === 'string' ? sec.id : uid(),
+        name: typeof sec?.name === 'string' ? sec.name : '',
+        dishes: (Array.isArray(sec?.dishes) ? sec.dishes : []).map((d: any) => ({
+          id: typeof d?.id === 'string' ? d.id : uid(),
+          n: typeof d?.n === 'string' ? d.n : '',
+          d: typeof d?.d === 'string' ? d.d : '',
+          p: d?.p != null ? String(d.p) : '',
+          cost: d?.cost != null ? String(d.cost) : '',
+          sold: d?.sold != null ? String(d.sold) : '',
+          v: !!d?.v, gf: !!d?.gf, sp: !!d?.sp,
+        })),
+      }));
+      if (!out.sections.length) out.sections = base.sections;
+      out.template = typeof out.template === 'string' ? out.template : base.template;
+      out.paperSize = (['letter', 'a4', 'half'] as const).includes(out.paperSize as any) ? out.paperSize : 'letter';
+      return out;
+    }
+
+    const state: MenuState = normalize(load() ?? SAMPLE);
+    const esc = (s: unknown) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const money = (v: number) => '$' + (Math.round(v * 100) / 100).toFixed(2);
+    const num = (v: unknown) => { const n = parseFloat(String(v ?? '').replace(/[^0-9.\-]/g, '')); return Number.isFinite(n) ? n : 0; };
+    const paper = document.getElementById('paper')!;
+    const FC_HEALTHY = 32;   // 单品 food cost 健康线（28–35 中值）
+    const FC_BAD = 40;
+
+    // —— Kasavana–Smith 菜单工程 ——
+    function analyze(state: MenuState) {
+      const items = state.sections.flatMap((s) => s.dishes.map((d) => ({ ...d, section: s.name })));
+      const withSales = items.filter((i) => num(i.sold) > 0 && num(i.p) > 0);
+      const totalSold = withSales.reduce((s, i) => s + num(i.sold), 0);
+      const weightedCM = totalSold > 0
+        ? withSales.reduce((s, i) => s + (num(i.p) - num(i.cost)) * num(i.sold), 0) / totalSold : 0;
+      const blendedFC = totalSold > 0
+        ? withSales.reduce((s, i) => s + num(i.cost) * num(i.sold), 0) / withSales.reduce((s, i) => s + num(i.p) * num(i.sold), 0) * 100 : 0;
+      const popThreshold = withSales.length > 0 ? (100 / withSales.length) * 0.7 : 0;
+      const rows = withSales.map((i) => {
+        const mix = (num(i.sold) / totalSold) * 100;
+        const cm = num(i.p) - num(i.cost);
+        const fc = num(i.cost) / num(i.p) * 100;
+        const cls = cm >= weightedCM && mix >= popThreshold ? 'star'
+          : cm < weightedCM && mix >= popThreshold ? 'plowhorse'
+          : cm >= weightedCM ? 'puzzle' : 'dog';
+        return { ...i, mix, cm, fc, cls };
+      });
+      const counts = {
+        star: rows.filter((r) => r.cls === 'star').length,
+        plowhorse: rows.filter((r) => r.cls === 'plowhorse').length,
+        puzzle: rows.filter((r) => r.cls === 'puzzle').length,
+        dog: rows.filter((r) => r.cls === 'dog').length,
+      };
+      // 建议：高 FC 的 reprice 目标 = cost / 30%；Plowhorse 建议 +$1
+      const recs: string[] = [];
+      for (const r of rows) {
+        if (r.fc > FC_BAD) {
+          const target = num(r.cost) / 0.30;
+          recs.push(`<b>${esc(r.n)}</b> runs ${r.fc.toFixed(0)}% food cost — reprice to about <b>${money(target)}</b> (30% target) or re-plate it.`);
+        } else if (r.cls === 'plowhorse') {
+          recs.push(`<b>${esc(r.n)}</b> sells well but earns ${money(r.cm)} a plate — a $1 increase adds roughly <b>${money(num(r.sold))}</b>/wk at this volume.`);
+        }
+      }
+      if (counts.dog > 0) recs.push(`${counts.dog} Dog item${counts.dog > 1 ? 's' : ''} earn below-average margin <em>and</em> below-threshold sales — retire, rework, or re-price before reprinting.`);
+      return { items, rows, counts, blendedFC, weightedCM, popThreshold, recs, totalSold };
+    }
+
+    // —— 渲染：菜单纸 ——
+    function renderMenu() {
+      document.getElementById('p-name')!.textContent = state.name;
+      document.getElementById('p-tag')!.textContent = state.tag;
+      paper.className = `paper ${state.template} p-${state.paperSize}`;
+      paper.style.setProperty('--accent', state.accent);
+      document.getElementById('p-rule')!.hidden = state.template !== 't-classic';
+      document.getElementById('p-band')!.hidden = state.template !== 't-modern';
+
+      let usedTags = { v: false, gf: false, sp: false };
+      (document.getElementById('p-body') as HTMLElement).innerHTML = state.sections.map((sec) => `
+        <div class="sec">
+          <div class="sec-name">${esc(sec.name)}</div>
+          ${sec.dishes.filter((d) => d.n.trim() !== '').map((d) => {
+            const marks = (d.v ? '<span class="mark">V</span>' : '') + (d.gf ? '<span class="mark">GF</span>' : '') + (d.sp ? '<span class="mark">✳</span>' : '');
+            if (d.v) usedTags.v = true; if (d.gf) usedTags.gf = true; if (d.sp) usedTags.sp = true;
+            return `
+            <div class="dishline">
+              <div class="dl-top">
+                <span class="dl-name">${esc(d.n)}${marks}</span>
+                <span class="dl-leader"></span>
+                <span class="dl-price">${d.p === '' ? '' : money(num(d.p))}</span>
+              </div>
+              ${d.d ? `<div class="dl-desc">${esc(d.d)}</div>` : ''}
+            </div>`;
+          }).join('')}
+        </div>`).join('');
+
+      const fn = document.getElementById('p-footnote') as HTMLElement;
+      const notes = [usedTags.v && 'V — vegetarian', usedTags.gf && 'GF — gluten-free', usedTags.sp && '✳ — spicy'].filter(Boolean);
+      fn.hidden = notes.length === 0;
+      fn.textContent = notes.join('   ·   ');
+      fit();
+    }
+
+    // —— 自动排印：内容溢出则整体降字阶，直到放得下 ——
+    function fit() {
+      paper.style.setProperty('--fit', '1');
+      let scale = 1;
+      for (let i = 0; i < 14; i++) {
+        if (paper.scrollHeight <= paper.clientHeight + 2) break;
+        scale = Math.round((scale - 0.045) * 1000) / 1000;
+        paper.style.setProperty('--fit', String(scale));
+        if (scale <= 0.5) break;
+      }
+      const note = document.getElementById('fit-note');
+      if (note) note.textContent = scale < 1 ? `auto-fit: ${Math.round(scale * 100)}% type` : 'auto-fit: 100%';
+    }
+
+    // —— 渲染：编辑器 ——
+    function dishRow(d: Dish, si: number, di: number) {
+      const fc = num(d.p) > 0 ? (num(d.cost) / num(d.p)) * 100 : 0;
+      const fcCls = fc > FC_BAD ? 'fc-bad' : fc > FC_HEALTHY ? 'fc-warn' : 'fc-ok';
+      const fcText = num(d.p) > 0 && num(d.cost) > 0 ? `${fc.toFixed(0)}% FC` : '';
+      return `
+      <div class="dish" data-si="${si}" data-di="${di}">
+        <div class="l1">
+          <input class="dn" value="${esc(d.n)}" data-k="n" placeholder="Dish name">
+          <div class="pw"><input value="${esc(d.p)}" data-k="p" placeholder="Price" inputmode="decimal"></div>
+          <div class="cw"><input value="${esc(d.cost)}" data-k="cost" placeholder="Cost" inputmode="decimal"></div>
+          <button class="rm" data-rm="1" title="Remove" type="button">×</button>
+        </div>
+        <div class="l1">
+          <input class="dd" value="${esc(d.d || '')}" data-k="d" placeholder="Description (optional)">
+          <div class="sw2"><input value="${esc(d.sold)}" data-k="sold" placeholder="Sold/wk" inputmode="numeric" title="Units sold per week — feeds menu engineering"></div>
+        </div>
+        <div class="l2">
+          <label><input type="checkbox" data-k="v" ${d.v ? 'checked' : ''}>V</label>
+          <label><input type="checkbox" data-k="gf" ${d.gf ? 'checked' : ''}>GF</label>
+          <label><input type="checkbox" data-k="sp" ${d.sp ? 'checked' : ''}>✳ spicy</label>
+          <span class="fc-note ${fcCls}">${fcText}</span>
+          <button class="mv" data-mv="-1" title="Move up" type="button">▲</button>
+          <button class="mv" data-mv="1" title="Move down" type="button">▼</button>
+        </div>
+      </div>`;
+    }
+
+    function renderForm() {
+      (document.getElementById('sections') as HTMLElement).innerHTML = state.sections.map((sec, si) => `
+        <div class="section-block" data-sec="${si}">
+          <div class="sec-head">
+            <button class="mv" data-sec-mv="-1" title="Move section up" type="button">▲</button>
+            <button class="mv" data-sec-mv="1" title="Move section down" type="button">▼</button>
+            <input value="${esc(sec.name)}" data-sec-k="name" placeholder="Section name">
+            <button class="rm" data-sec-rm="1" title="Remove section" type="button">✕</button>
+          </div>
+          ${sec.dishes.map((d, di) => dishRow(d, si, di)).join('')}
+          <button class="add" data-add-dish="${si}" type="button">+ Add dish</button>
+        </div>`).join('');
+      renderAnalysis();
+    }
+
+    // —— 渲染：分析面板 ——
+    function renderAnalysis() {
+      const a = analyze(state);
+      const host = document.getElementById('analysis-body') as HTMLElement;
+      if (a.rows.length === 0) {
+        host.innerHTML = `<p class="an-note">Enter <b>cost</b> and <b>sold/wk</b> on your dishes to unlock menu engineering — the analysis runs live as you type.</p>`;
+        return;
+      }
+      host.innerHTML = `
+        <div class="an-sum">
+          <div class="an-card"><b>${a.blendedFC.toFixed(1)}%</b><span>blended food cost (sales-weighted)</span></div>
+          <div class="an-card"><b>${money(a.weightedCM)}</b><span>avg contribution margin / item sold</span></div>
+          <div class="an-card"><b>${a.popThreshold.toFixed(1)}%</b><span>popularity threshold (70% rule, ${a.rows.length} items)</span></div>
+          <div class="an-card"><b>${a.counts.star}★ ${a.counts.plowhorse}P ${a.counts.puzzle}◆ ${a.counts.dog}D</b><span>stars / plowhorses / puzzles / dogs</span></div>
+        </div>
+        <table class="an-table">
+          <thead><tr><th>Dish</th><th>FC%</th><th>CM</th><th>Mix%</th><th>Class</th></tr></thead>
+          <tbody>
+            ${a.rows.map((r) => `
+              <tr>
+                <td>${esc(r.n)}</td>
+                <td class="${r.fc > FC_BAD ? 'fc-bad' : r.fc > FC_HEALTHY ? 'fc-warn' : 'fc-ok'}">${r.fc.toFixed(0)}%</td>
+                <td>${money(r.cm)}</td>
+                <td>${r.mix.toFixed(1)}%</td>
+                <td><span class="an-class ${r.cls}">${r.cls}</span></td>
+              </tr>`).join('')}
+          </tbody>
+        </table>
+        ${a.recs.length ? `<div class="an-rec"><b style="font-size:13px">This week's moves</b><ul style="margin:6px 0 0 16px;font-size:12.5px;color:var(--ink2)">${a.recs.map((r) => `<li>${r}</li>`).join('')}</ul></div>` : ''}
+        <p class="an-note">Method: Kasavana–Smith menu engineering — contribution margin vs weighted average, popularity vs 70% threshold. Items need price, cost and weekly sales to enter the model.</p>`;
+    }
+
+    // —— 输入绑定（事件委托）——
+    const side = document.querySelector('.side')!;
+    side.addEventListener('input', (e) => {
+      const t = e.target as HTMLInputElement;
+      const dishEl = t.closest('.dish') as HTMLElement | null;
+      if (dishEl) {
+        const d = state.sections[+dishEl.dataset.si!].dishes[+dishEl.dataset.di!];
+        if (t.type === 'checkbox') (d as unknown as Record<string, boolean>)[t.dataset.k!] = t.checked;
+        else (d as unknown as Record<string, string>)[t.dataset.k!] = t.value;
+        const di = +dishEl.dataset.di!, si = +dishEl.dataset.si!;
+        // 只刷新该行的 FC 注释，避免重绘输入框打断输入
+        const fresh = dishRow(state.sections[si].dishes[di], si, di);
+        const tmp = document.createElement('div'); tmp.innerHTML = fresh;
+        const note = tmp.querySelector('.fc-note') as HTMLElement;
+        const live = dishEl.querySelector('.fc-note') as HTMLElement;
+        if (note && live) { live.className = note.className; live.textContent = note.textContent; }
+        renderMenu(); renderAnalysis(); save(); return;
+      }
+      if (t.dataset.secK) { state.sections[+ (t.closest('.section-block') as HTMLElement).dataset.sec!].name = t.value; renderMenu(); save(); return; }
+      if (t.id === 'i-name') { state.name = t.value; renderMenu(); save(); return; }
+      if (t.id === 'i-tag') { state.tag = t.value; renderMenu(); save(); return; }
+    });
+    side.addEventListener('click', (e) => {
+      const el = e.target as HTMLElement;
+      const dishEl = el.closest('.dish') as HTMLElement | null;
+      if (el.dataset.rm && dishEl) {
+        const sec = state.sections[+dishEl.dataset.si!];
+        if (sec.dishes.length > 1) { sec.dishes.splice(+dishEl.dataset.di!, 1); renderForm(); renderMenu(); save(); }
+        return;
+      }
+      if (el.dataset.addDish !== undefined) {
+        state.sections[+el.dataset.addDish].dishes.push({ id: uid(), n: '', d: '', p: '', cost: '', sold: '', v: false, gf: false, sp: false });
+        renderForm(); renderMenu(); save(); return;
+      }
+      const mv = el.closest('[data-mv]') as HTMLElement | null;
+      if (mv && dishEl) {
+        const si = +dishEl.dataset.si!, di = +dishEl.dataset.di!, dir = +mv.dataset.mv!;
+        const arr = state.sections[si].dishes;
+        const j = di + dir;
+        if (j >= 0 && j < arr.length) { [arr[di], arr[j]] = [arr[j], arr[di]]; renderForm(); renderMenu(); save(); }
+        return;
+      }
+      const secMv = el.closest('[data-sec-mv]') as HTMLElement | null;
+      if (secMv) {
+        const si = +(secMv.closest('.section-block') as HTMLElement).dataset.sec!; const dir = +secMv.dataset.secMv!;
+        const j = si + dir;
+        if (j >= 0 && j < state.sections.length) { [state.sections[si], state.sections[j]] = [state.sections[j], state.sections[si]]; renderForm(); renderMenu(); save(); }
+        return;
+      }
+      if (el.dataset.secRm) {
+        const block = el.closest('.section-block') as HTMLElement;
+        if (state.sections.length > 1) { state.sections.splice(+block.dataset.sec!, 1); renderForm(); renderMenu(); save(); }
+        return;
+      }
+    });
+    document.getElementById('add-section')!.addEventListener('click', () => {
+      state.sections.push({ id: uid(), name: 'New section', dishes: [{ id: uid(), n: '', d: '', p: '', cost: '', sold: '', v: false, gf: false, sp: false }] });
+      renderForm(); renderMenu(); save();
+    });
+    document.getElementById('i-name')!.addEventListener('input', (e) => { state.name = (e.target as HTMLInputElement).value; renderMenu(); save(); });
+    document.getElementById('i-tag')!.addEventListener('input', (e) => { state.tag = (e.target as HTMLInputElement).value; renderMenu(); save(); });
+
+    document.getElementById('tpl-row')!.addEventListener('click', (e) => {
+      const b = (e.target as HTMLElement).closest('.tpl') as HTMLElement | null;
+      if (!b) return;
+      document.querySelectorAll('.tpl').forEach((t) => t.classList.toggle('sel', t === b));
+      state.template = b.dataset.t!; renderMenu(); save();
+    });
+    document.getElementById('swatches')!.addEventListener('click', (e) => {
+      const s = (e.target as HTMLElement).closest('.sw') as HTMLElement | null;
+      if (!s) return;
+      document.querySelectorAll('.sw').forEach((x) => x.classList.toggle('sel', x === s));
+      state.accent = s.dataset.c!; renderMenu(); save();
+    });
+    document.getElementById('paper-size')!.addEventListener('change', (e) => {
+      state.paperSize = (e.target as HTMLSelectElement).value as MenuState['paperSize'];
+      renderMenu(); save();
+    });
+    document.querySelectorAll('.tab').forEach((tab) => tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('sel', t === tab));
+      (document.getElementById('tab-content') as HTMLElement).hidden = tab.dataset.tab !== 'content';
+      (document.getElementById('tab-analysis') as HTMLElement).hidden = tab.dataset.tab !== 'analysis';
+      if (tab.dataset.tab === 'analysis') renderAnalysis();
+    }));
+    document.getElementById('reset')!.addEventListener('click', () => {
+      Object.assign(state, structuredClone(SAMPLE));
+      syncStaticInputs(); renderForm(); renderMenu(); save();
+    });
+
+    // —— CSV 批量导入（健壮解析：数字从右往左吸附，描述可含逗号）——
+    document.getElementById('csv-go')!.addEventListener('click', () => {
+      const raw = (document.getElementById('csv-in') as HTMLTextAreaElement).value.trim();
+      if (!raw) return;
+      const isNum = (c?: string) => c !== undefined && c.trim() !== '' && Number.isFinite(num(c));
+      for (const line of raw.split('\n')) {
+        const cells = line.split(',').map((c) => c.trim());
+        if (cells.length < 2 || cells.every((c) => c === '')) continue;
+        // 从右吸附 sold / cost / price
+        let sold = '', cost = '', price = '';
+        if (isNum(cells[cells.length - 1])) sold = cells.pop()!.trim();
+        if (isNum(cells[cells.length - 1])) cost = cells.pop()!.trim();
+        if (isNum(cells[cells.length - 1])) price = cells.pop()!.trim();
+        if (cells.length < 2) continue;
+        const sec = cells.shift()!;
+        const name = cells.shift()!;
+        const desc = cells.join(', ');
+        let section = state.sections.find((s) => s.name.toLowerCase() === sec.toLowerCase());
+        if (!section) { section = { id: uid(), name: sec, dishes: [] }; state.sections.push(section); }
+        section.dishes.push({ id: uid(), n: name, d: desc, p: price, cost, sold, v: false, gf: false, sp: false });
+      }
+      (document.getElementById('csv-in') as HTMLTextAreaElement).value = '';
+      renderForm(); renderMenu(); save();
+    });
+
+    // —— JSON 导入/导出 ——
+    document.getElementById('btn-json')!.addEventListener('click', () => {
+      const a = document.createElement('a');
+      a.download = (state.name || 'menu').toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-menu.json';
+      a.href = URL.createObjectURL(new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' }));
+      a.click();
+    });
+    document.getElementById('json-in')!.addEventListener('change', (e) => {
+      const file = (e.target as HTMLInputElement).files?.[0];
+      if (!file) return;
+      file.text().then((txt) => {
+        try {
+          const imported = JSON.parse(txt);
+          if (imported.sections && imported.name !== undefined) {
+            Object.assign(state, normalize(imported));
+            syncStaticInputs(); renderForm(); renderMenu(); save();
+          }
+        } catch { window.alert('That file is not a valid menu export.'); }
+      });
+    });
+
+    // —— 版本管理 ——
+    const versions = () => { try { return JSON.parse(localStorage.getItem('mst-menu-versions') ?? '[]') as { name: string; ts: number; state: MenuState }[]; } catch { return []; } };
+    const saveVersions = (v: ReturnType<typeof versions>) => { try { localStorage.setItem('mst-menu-versions', JSON.stringify(v.slice(0, 12))); } catch {} };
+    function renderVersions() {
+      (document.getElementById('v-list') as HTMLElement).innerHTML = versions().map((v, i) => `
+        <div class="v-row">
+          <b>${esc(v.name)}</b><span class="when">${new Date(v.ts).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+          <button data-restore="${i}" type="button">Restore</button>
+          <button class="del" data-vdel="${i}" type="button">✕</button>
+        </div>`).join('') || '<p class="an-note" style="margin:8px 0 0">No saved versions yet — save before a price change and you can always go back.</p>';
+    }
+    document.getElementById('v-save')!.addEventListener('click', () => {
+      const nameInput = document.getElementById('v-name') as HTMLInputElement;
+      const name = nameInput.value.trim() || `Version ${versions().length + 1}`;
+      const list = versions();
+      list.unshift({ name, ts: Date.now(), state: structuredClone(state) });
+      saveVersions(list); nameInput.value = ''; renderVersions();
+    });
+    document.getElementById('v-list')!.addEventListener('click', (e) => {
+      const el = e.target as HTMLElement;
+      if (el.dataset.restore !== undefined) {
+        const v = versions()[+el.dataset.restore];
+        if (v) { Object.assign(state, normalize(v.state)); syncStaticInputs(); renderForm(); renderMenu(); save(); }
+      }
+      if (el.dataset.vdel !== undefined) {
+        const list = versions(); list.splice(+el.dataset.vdel, 1); saveVersions(list); renderVersions();
+      }
+    });
+
+    // —— 持久化 & 恢复 ——
+    function save() { try { localStorage.setItem('mst-menu', JSON.stringify(state)); } catch {} }
+    function load(): MenuState | null { try { const r = localStorage.getItem('mst-menu'); return r ? JSON.parse(r) : null; } catch { return null; } }
+    function syncStaticInputs() {
+      (document.getElementById('i-name') as HTMLInputElement).value = state.name;
+      (document.getElementById('i-tag') as HTMLInputElement).value = state.tag;
+      (document.getElementById('paper-size') as HTMLSelectElement).value = state.paperSize;
+      document.querySelectorAll('.tpl').forEach((t) => t.classList.toggle('sel', t.dataset.t === state.template));
+      document.querySelectorAll('.sw').forEach((x) => x.classList.toggle('sel', x.dataset.c === state.accent));
+    }
+
+    // —— 导出 ——
+    document.getElementById('btn-print')!.addEventListener('click', () => window.print());
+    document.getElementById('btn-png')!.addEventListener('click', () => {
+      const w = window as unknown as { html2canvas?: (el: HTMLElement, o?: object) => Promise<HTMLCanvasElement> };
+      if (!w.html2canvas) { window.alert('PNG export needs a moment to load — try again.'); return; }
+      w.html2canvas(paper, { scale: 2, backgroundColor: '#ffffff', useCORS: true }).then((c) => {
+        const a = document.createElement('a');
+        a.download = (state.name || 'menu').toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-menu.png';
+        a.href = c.toDataURL('image/png');
+        a.click();
+      });
+    });
+
+    // —— 启动 ——
+    (document.getElementById('paper-size') as HTMLSelectElement).value = state.paperSize;
+    document.getElementById('i-name')!.setAttribute('value', state.name);
+    document.getElementById('i-tag')!.setAttribute('value', state.tag);
+    syncStaticInputs();
+    renderForm();
+    renderMenu();
+    renderVersions();
+    // 首帧字体加载后重排一次
+    document.fonts?.ready.then(() => fit());
+  </script>
+</BaseLayout>

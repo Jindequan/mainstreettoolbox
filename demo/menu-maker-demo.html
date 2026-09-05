@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Maker — prototype · Main Street Toolbox</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<style>
+:root{
+  --paper:#FAF7F0; --card:#FFFDF8; --ink:#26231B; --ink2:#6E6553; --ink3:#9A9078;
+  --line:#E8E1D0; --line2:#D9D0BB; --green:#1E5B3E; --green2:#164931; --amber:#B45309;
+  --r-s:10px; --r-m:14px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 "Inter",-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";display:block;height:6px;background:repeating-linear-gradient(90deg,var(--green) 0 14px,#F6EFE0 14px 28px,var(--amber) 28px 42px,#F6EFE0 42px 56px)}
+.app{display:grid;grid-template-columns:380px 1fr;min-height:calc(100vh - 6px)}
+/* ---- 左侧表单 ---- */
+.side{border-right:1px solid var(--line);background:var(--card);padding:20px;overflow-y:auto;max-height:calc(100vh - 6px);position:sticky;top:6px}
+.brand{display:flex;align-items:center;gap:10px;font:640 1.1rem "Fraunces",serif;margin-bottom:4px}
+.brand .mark{width:22px;height:22px;border-radius:6px;border:1.5px solid var(--ink);background:repeating-linear-gradient(90deg,var(--green) 0 4px,#F6EFE0 4px 8px,var(--amber) 8px 12px,#F6EFE0 12px 16px)}
+.proto{font-size:12px;color:var(--amber);font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
+.flabel{display:block;font-weight:600;font-size:13px;margin:14px 0 6px}
+.finput,.ftext{width:100%;height:42px;padding:0 12px;border:1.5px solid var(--line2);border-radius:var(--r-s);background:#fff;color:var(--ink);font:500 14px "Inter";outline:0}
+.finput:focus,.ftext:focus{border-color:var(--green);box-shadow:0 0 0 3px #E5EDE3}
+.ftext{height:auto;min-height:38px;resize:vertical;padding:8px 12px}
+.section-block{border:1px solid var(--line);border-radius:var(--r-m);padding:12px;margin-top:14px;background:var(--paper)}
+.section-head{display:flex;gap:8px;margin-bottom:8px}
+.section-head input{flex:1;height:36px;padding:0 10px;border:1.5px solid var(--line2);border-radius:8px;background:#fff;font:600 14px "Inter";color:var(--ink);outline:0}
+.dish{display:grid;grid-template-columns:1fr 74px;gap:6px;margin-bottom:6px}
+.dish .dn,.dish .dp{height:34px;padding:0 9px;border:1.5px solid var(--line2);border-radius:8px;background:#fff;font:500 13px "Inter";color:var(--ink);outline:0;width:100%}
+.dish .dn:focus,.dish .dp:focus{border-color:var(--green)}
+.dish .dd{grid-column:1/-1;height:30px;padding:0 9px;border:1.5px dashed var(--line2);border-radius:8px;background:none;font:400 12px "Inter";color:var(--ink2);outline:0}
+.dish .rm{border:0;background:none;color:var(--ink3);cursor:pointer;font-size:15px;padding:0 4px}
+.dish .rm:hover{color:#B42318}
+.add{width:100%;height:34px;border:1.5px dashed var(--line2);border-radius:8px;background:none;color:var(--ink2);font:500 13px "Inter";cursor:pointer}
+.add:hover{border-color:var(--green);color:var(--green)}
+/* 模板选择 */
+.tpl-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:6px}
+.tpl{border:1.5px solid var(--line2);border-radius:var(--r-s);background:#fff;cursor:pointer;padding:8px;text-align:left}
+.tpl:hover{border-color:var(--green)}
+.tpl.sel{border-color:var(--green);box-shadow:0 0 0 3px #E5EDE3}
+.tpl .thumb{height:52px;border-radius:6px;border:1px solid var(--line);margin-bottom:6px;overflow:hidden;position:relative}
+.tpl .thumb::before{content:"";position:absolute;left:20%;right:20%;top:8px;height:5px;border-radius:2px;background:currentColor;opacity:.85}
+.tpl .thumb::after{content:"";position:absolute;left:12%;right:12%;top:22px;height:2px;background:currentColor;opacity:.3;box-shadow:0 7px 0 currentColor,0 14px 0 currentColor;opacity:.35}
+.tpl.t-classic .thumb{color:#7A5C2E}
+.tpl.t-modern .thumb{color:#1E5B3E}
+.tpl.t-rustic .thumb{color:#8C4A2F}
+.tpl b{font-size:12px;font-weight:600;display:block}
+.tpl span{font-size:11px;color:var(--ink3)}
+/* 色板 */
+.swatches{display:flex;gap:8px;margin-top:6px}
+.sw{width:30px;height:30px;border-radius:8px;border:2px solid transparent;cursor:pointer;outline:1.5px solid var(--line2)}
+.sw.sel{border-color:#fff;outline:2px solid var(--ink)}
+/* ---- 右侧预览 ---- */
+.preview{padding:28px;display:flex;flex-direction:column;align-items:center;overflow:auto}
+.toolbar{display:flex;gap:8px;align-items:center;margin-bottom:18px}
+.toolbar .tpl-row{margin:0;grid-template-columns:repeat(3,1fr);width:auto}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:var(--r-s);font:600 13px "Inter";cursor:pointer;border:1.5px solid transparent}
+.btn-print{background:var(--green);color:#FDFBF4}
+.btn-print:hover{background:var(--green2)}
+.btn-png{background:#fff;color:var(--ink);border-color:var(--line2)}
+.btn-png:hover{border-color:var(--ink2)}
+.hint{font-size:12px;color:var(--ink3);margin-left:8px}
+/* ---- 纸张 ---- */
+.paper-wrap{width:100%;max-width:620px}
+.paper{
+  width:100%;aspect-ratio:8.5/11;background:#fff;box-shadow:0 2px 4px rgb(38 35 27/.08),0 24px 48px -24px rgb(38 35 27/.25);
+  padding:7% 8%;overflow:hidden;display:flex;flex-direction:column;
+}
+/* T1 Classic: 衬线、居中、双栏、点线引导 */
+.paper.t-classic{font-family:"Fraunces",serif;color:#2A2520}
+.t-classic .m-name{text-align:center;font-size:34px;font-weight:640;letter-spacing:.02em;margin:6px 0 2px}
+.t-classic .m-tag{text-align:center;font-style:italic;font-size:14px;color:#7d7466;margin-bottom:10px}
+.t-classic .rule{display:flex;align-items:center;gap:10px;margin:0 0 16px;color:#7A5C2E}
+.t-classic .rule::before,.t-classic .rule::after{content:"";flex:1;height:1px;background:currentColor;opacity:.45}
+.t-classic .rule span{font-size:15px}
+.t-classic .menu-body{column-count:2;column-gap:34px;flex:1}
+.t-classic .sec{break-inside:avoid;margin-bottom:18px}
+.t-classic .sec-name{text-align:center;font-size:15px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.t-classic .dishline{margin-bottom:10px}
+.t-classic .dl-top{display:flex;align-items:baseline;gap:6px}
+.t-classic .dl-name{font-weight:600;font-size:14.5px}
+.t-classic .dl-leader{flex:1;border-bottom:1.5px dotted #b9ad97;transform:translateY(-3px)}
+.t-classic .dl-price{font-size:14.5px;font-weight:600}
+.t-classic .dl-desc{font-size:12px;color:#7d7466;font-style:italic;margin-top:2px;line-height:1.35}
+/* T2 Modern: 无衬线、左对齐、色块题头 */
+.paper.t-modern{font-family:"Inter",sans-serif;color:#20241f}
+.t-modern .m-name{font-size:32px;font-weight:700;letter-spacing:-.02em;margin:0 0 2px}
+.t-modern .m-tag{font-size:13px;color:#68705f;margin-bottom:14px}
+.t-modern .accent-band{height:8px;border-radius:4px;background:var(--accent);margin-bottom:20px}
+.t-modern .menu-body{flex:1;display:flex;flex-direction:column;gap:18px}
+.t-modern .sec-name{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.t-modern .sec-name::after{content:"";flex:1;height:1px;background:#E4E2D8}
+.t-modern .dishline{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:5px 0}
+.t-modern .dl-name{font-weight:600;font-size:14px}
+.t-modern .dl-desc{font-size:12px;color:#77806e;margin-top:1px}
+.t-modern .dl-price{font-weight:700;font-size:14px;font-variant-numeric:tabular-nums}
+.t-modern .sec{margin-bottom:4px}
+/* T3 Rustic: 木板/牛皮纸、粗衬线、边框卡 */
+.paper.t-rustic{font-family:"Fraunces",serif;background:linear-gradient(#fffdf6,#fbf3e4);color:#3B2A1E;border:1px solid #e7d9c2}
+.t-rustic .frame{border:2.5px solid var(--accent);border-radius:6px;flex:1;padding:20px 22px;display:flex;flex-direction:column}
+.t-rustic .m-name{text-align:center;font-size:32px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin:2px 0 2px}
+.t-rustic .m-tag{text-align:center;font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:#8a6c4d;margin-bottom:14px}
+.t-rustic .menu-body{flex:1}
+.t-rustic .sec-name{font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:3px;margin:14px 0 8px;display:inline-block}
+.t-rustic .dishline{margin-bottom:9px}
+.t-rustic .dl-top{display:flex;justify-content:space-between;gap:10px}
+.t-rustic .dl-name{font-weight:700;font-size:14px}
+.t-rustic .dl-price{font-weight:800;font-size:14px}
+.t-rustic .dl-desc{font-size:12px;color:#7c6a52;line-height:1.35}
+/* 打印 */
+@media print{
+  body::before,.side,.toolbar,.hint{display:none!important}
+  .app{display:block}
+  .preview{padding:0;overflow:visible}
+  .paper-wrap{max-width:none;width:100%}
+  .paper{aspect-ratio:auto;width:100%;min-height:100vh;box-shadow:none;border:none;border-radius:0}
+  @page{size:letter;margin:0.4in}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><span class="mark"></span>Main Street Toolbox</div>
+    <div class="proto">Menu Maker · prototype</div>
+
+    <label class="flabel">Restaurant name</label>
+    <input class="finput" id="i-name" value="The Copper Skillet">
+    <label class="flabel">Tagline</label>
+    <input class="finput" id="i-tag" value="American kitchen · est. 2019">
+
+    <label class="flabel">Template</label>
+    <div class="tpl-row" id="tpl-row">
+      <button class="tpl t-classic sel" data-t="t-classic"><div class="thumb"></div><b>Classic</b><span>serif · 2-column</span></button>
+      <button class="tpl t-modern" data-t="t-modern"><div class="thumb"></div><b>Modern</b><span>clean · 1-column</span></button>
+      <button class="tpl t-rustic" data-t="t-rustic"><div class="thumb"></div><b>Rustic</b><span>framed · warm</span></button>
+    </div>
+
+    <label class="flabel">Accent color</label>
+    <div class="swatches" id="swatches">
+      <div class="sw sel" data-c="#1E5B3E" style="background:#1E5B3E"></div>
+      <div class="sw" data-c="#7A2E2E" style="background:#7A2E2E"></div>
+      <div class="sw" data-c="#2F4A6B" style="background:#2F4A6B"></div>
+      <div class="sw" data-c="#B45309" style="background:#B45309"></div>
+      <div class="sw" data-c="#3B2A1E" style="background:#3B2A1E"></div>
+    </div>
+
+    <div id="sections"></div>
+  </aside>
+
+  <main class="preview">
+    <div class="toolbar">
+      <div class="tpl-row" style="display:none"></div>
+      <button class="btn btn-print" onclick="window.print()">Print / Save PDF</button>
+      <button class="btn btn-png" id="btn-png">Download PNG</button>
+      <span class="hint">Letter 8.5×11 — print-quality output</span>
+    </div>
+    <div class="paper-wrap">
+      <div class="paper t-classic" id="paper" style="--accent:#1E5B3E">
+        <div class="m-name" id="p-name"></div>
+        <div class="m-tag" id="p-tag"></div>
+        <div class="rule" id="p-rule"><span>✦</span></div>
+        <div class="accent-band" id="p-band" hidden></div>
+        <div class="menu-body" id="p-body"></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+const state = {
+  name: 'The Copper Skillet',
+  tag: 'American kitchen · est. 2019',
+  template: 't-classic',
+  accent: '#1E5B3E',
+  sections: [
+    { name: 'Starters', dishes: [
+      { n: 'Cast-iron cornbread', d: 'Honey butter, flaky salt', p: 6 },
+      { n: 'Tomato bisque', d: 'Grilled cheddar croutons', p: 8 },
+      { n: 'Fried green tomatoes', d: 'Buttermilk ranch, bacon jam', p: 9 },
+    ]},
+    { name: 'Mains', dishes: [
+      { n: 'The Skillet Burger', d: 'Two patties, smoked cheddar, pickles, brioche', p: 16 },
+      { n: 'Buttermilk fried chicken', d: 'Mashed potatoes, country gravy', p: 18 },
+      { n: 'Pan-roasted trout', d: 'Brown butter, almonds, seasonal veg', p: 22 },
+      { n: 'Vegetable pot pie', d: 'Root vegetables, puff pastry lid', p: 15 },
+    ]},
+    { name: 'Desserts', dishes: [
+      { n: 'Skillet cookie', d: 'Vanilla bean ice cream, salted caramel', p: 9 },
+      { n: 'Seasonal fruit crumble', d: 'Oat topping, whipped cream', p: 8 },
+    ]},
+  ],
+};
+
+const paper = document.getElementById('paper');
+const esc = (s) => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const money = (v) => '$' + (Math.round(v*100)/100).toFixed(2);
+
+function renderMenu(){
+  document.getElementById('p-name').textContent = state.name;
+  document.getElementById('p-tag').textContent = state.tag;
+  paper.className = 'paper ' + state.template;
+  paper.style.setProperty('--accent', state.accent);
+  document.getElementById('p-rule').hidden = state.template !== 't-classic';
+  document.getElementById('p-band').hidden = state.template !== 't-modern';
+
+  const body = document.getElementById('p-body');
+  body.innerHTML = state.sections.map(sec => `
+    <div class="sec">
+      <div class="sec-name">${esc(sec.name)}</div>
+      ${sec.dishes.map(d => `
+        <div class="dishline">
+          <div class="dl-top">
+            <span class="dl-name">${esc(d.n)}</span>
+            <span class="dl-leader"></span>
+            <span class="dl-price">${d.p === '' || d.p == null ? '' : money(+d.p)}</span>
+          </div>
+          <div class="dl-desc">${esc(d.d || '')}</div>
+        </div>`).join('')}
+    </div>`).join('');
+}
+
+function renderForm(){
+  const host = document.getElementById('sections');
+  host.innerHTML = state.sections.map((sec, si) => `
+    <div class="section-block">
+      <div class="section-head">
+        <input value="${esc(sec.name)}" data-si="${si}" data-k="name" placeholder="Section name">
+      </div>
+      ${sec.dishes.map((d, di) => `
+        <div class="dish">
+          <input class="dn" value="${esc(d.n)}" data-si="${si}" data-di="${di}" data-k="n" placeholder="Dish name">
+          <div style="display:flex;gap:4px">
+            <input class="dp" value="${d.p}" data-si="${si}" data-di="${di}" data-k="p" placeholder="0.00" inputmode="decimal">
+            <button class="rm" data-rm-si="${si}" data-rm-di="${di}" title="Remove">×</button>
+          </div>
+          <input class="dd" value="${esc(d.d || '')}" data-si="${si}" data-di="${di}" data-k="d" placeholder="Short description (optional)">
+        </div>`).join('')}
+      <button class="add" data-add="${si}">+ Add dish</button>
+    </div>`).join('');
+}
+
+document.getElementById('i-name').addEventListener('input', e => { state.name = e.target.value; renderMenu(); });
+document.getElementById('i-tag').addEventListener('input', e => { state.tag = e.target.value; renderMenu(); });
+
+document.getElementById('tpl-row').addEventListener('click', e => {
+  const b = e.target.closest('.tpl'); if (!b) return;
+  document.querySelectorAll('.tpl').forEach(t => t.classList.toggle('sel', t === b));
+  state.template = b.dataset.t; renderMenu();
+});
+
+document.getElementById('swatches').addEventListener('click', e => {
+  const s = e.target.closest('.sw'); if (!s) return;
+  document.querySelectorAll('.sw').forEach(x => x.classList.toggle('sel', x === s));
+  state.accent = s.dataset.c; renderMenu();
+});
+
+document.getElementById('sections').addEventListener('input', e => {
+  const t = e.target;
+  if (t.dataset.k && t.dataset.si !== undefined) {
+    if (t.dataset.di !== undefined) state.sections[+t.dataset.si].dishes[+t.dataset.di][t.dataset.k] = t.value;
+    else state.sections[+t.dataset.si][t.dataset.k] = t.value;
+    renderMenu();
+  }
+});
+document.getElementById('sections').addEventListener('click', e => {
+  const add = e.target.closest('[data-add]');
+  const rm = e.target.closest('[data-rm-si]');
+  if (add) { state.sections[+add.dataset.add].dishes.push({ n:'', d:'', p:'' }); renderForm(); renderMenu(); }
+  if (rm) {
+    const sec = state.sections[+rm.dataset.rmSi];
+    if (sec.dishes.length > 1) { sec.dishes.splice(+rm.dataset.rmDi, 1); renderForm(); renderMenu(); }
+  }
+});
+
+document.getElementById('btn-png').addEventListener('click', () => {
+  html2canvas(paper, { scale: 2, backgroundColor: '#ffffff', useCORS: true })
+    .then(c => {
+      const a = document.createElement('a');
+      a.download = (state.name || 'menu').toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-menu.png';
+      a.href = c.toDataURL('image/png');
+      a.click();
+    })
+    .catch(() => alert('PNG export failed — try Print / Save PDF instead.'));
+});
+
+renderForm();
+renderMenu();
+</script>
+</body>
+</html>

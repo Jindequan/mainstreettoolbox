@@ -1,0 +1,246 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Tip Out Calculator — Split tips at shift close, free | Main Street Toolbox"
+  description="Type your total tips, get every role's share and per-person amount instantly. Preset splits, a 100% balance bar, and a printable close-out sheet. Free, no signup."
+  path="/restaurant/tip-out-calculator/"
+>
+  <div class="industry-hero">
+    <div class="industry-hero-bg" style="background-image:linear-gradient(rgba(250,247,240,.82), rgba(250,247,240,.06)), url('/images/restaurant.jpg')"></div>
+    <div class="container head">
+    <p class="crumbs"><a href="/">Home</a> / <a href="/restaurant">Restaurant</a> / <b style="color:var(--ink)">Tip Out Calculator</b></p>
+    <h1>Close out the tips.</h1>
+    <p class="sub">The shift-end split, done in one screen — every role's money, live. No signup.</p>
+  </div>
+
+  </div>
+
+  <main class="container closer">
+    <!-- 第一步：你手里唯一的数字 -->
+    <div class="tips-block">
+      <label for="total">Total tips tonight</label>
+      <div class="tips-input">
+        <span>$</span>
+        <input id="total" type="text" inputmode="decimal" value="847" autocomplete="off" />
+      </div>
+    </div>
+
+    <!-- 常用分法，一键应用 -->
+    <div class="presets">
+      <button class="preset" data-split="70,20,10" type="button">70 / 20 / 10</button>
+      <button class="preset" data-split="80,20" type="button">80 / 20</button>
+      <button class="preset" data-split="equal" type="button">Equal</button>
+    </div>
+
+    <!-- 100% 配平条 -->
+    <div class="balance">
+      <div class="balance-bar"><div id="bar-fill"></div></div>
+      <div class="balance-txt" id="balance-txt">Split: <b>100%</b> ✓</div>
+    </div>
+
+    <!-- 角色卡：卡片本身即结果 -->
+    <div id="roles"></div>
+    <button class="add-role" id="add-role" type="button">+ Add a role</button>
+
+    <!-- 动作条 -->
+    <div class="actions">
+      <button class="act primary" id="do-print" type="button">Print close-out sheet</button>
+      <button class="act" id="do-copy" type="button">Copy numbers</button>
+    </div>
+    <p class="fineprint">Counts as percentages of collected tips. Managers can't take a share of a mandatory pool (FLSA) — check your state's rules.</p>
+  </main>
+
+  <section class="container prose">
+    <h2>Why these numbers</h2>
+    <p>Most full-service houses pass <b>20–30% of tips</b> to support roles — bussers, barbacks, runners, hosts.
+    The exact split should match who actually moved the service, and it should be written in your house policy
+    <b>before</b> the shift, not negotiated after. This sheet is the close-out: screenshot it, print it, pin it
+    where the count happens.</p>
+    <h2>Print the close-out sheet</h2>
+    <p>"Print close-out sheet" produces a one-page record — date, total tips, each role's pool and per-person
+    amount — the version you hand to whoever counts the drawer. For a PDF, choose "Save as PDF" in the print
+    dialog.</p>
+    <h2>Related tools</h2>
+    <p>Setting base pay instead? <a href="/restaurant/labor-cost-calculator/">Labor Cost Calculator</a> shows what
+    an employee really costs. Checking whether tonight's volume paid the rent? <a
+    href="/restaurant/break-even-calculator/">Break-Even Calculator</a>. Printing the new menu with these
+    roles on it? <a href="/menu-maker/">Menu Maker</a>.</p>
+  </section>
+
+  <style is:global>
+    .head { padding: 36px 24px 10px; }
+    .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
+    .head .sub { color: var(--ink2); font-size: 1.0625rem; }
+    .closer { max-width: 560px; padding-bottom: 40px; }
+    .tips-block { margin-top: 18px; }
+    .tips-block label { display: block; font-weight: 600; margin-bottom: 8px; }
+    .tips-input {
+      display: flex; align-items: center; gap: 4px;
+      border: 2px solid var(--green); border-radius: var(--r-m); background: var(--card);
+      padding: 4px 14px; box-shadow: var(--shadow-1);
+    }
+    .tips-input:focus-within { box-shadow: 0 0 0 4px var(--green-tint); }
+    .tips-input span { font: 640 2rem var(--font-display); color: var(--ink2); }
+    .tips-input input {
+      flex: 1; min-width: 0; border: 0; outline: 0; background: none;
+      font: 640 2.6rem var(--font-display); color: var(--ink); padding: 6px 0;
+      font-variant-numeric: tabular-nums;
+    }
+    .presets { display: flex; gap: 8px; margin-top: 14px; }
+    .preset {
+      flex: 1; height: 38px; border: 1.5px solid var(--line2); border-radius: 999px;
+      background: var(--card); font: 600 13px "Inter"; color: var(--ink2); cursor: pointer;
+    }
+    .preset:hover { border-color: var(--green); color: var(--green); }
+    .balance { margin-top: 18px; }
+    .balance-bar { height: 12px; border-radius: 6px; background: var(--line); overflow: hidden; display: flex; }
+    .balance-bar div { height: 100%; background: var(--green); transition: width .18s ease; }
+    .balance-bar.over div { background: var(--bad); }
+    .balance-bar.under div { background: var(--amber); }
+    .balance-txt { font-size: 13px; color: var(--ink2); margin-top: 6px; }
+    .balance-txt.ok b { color: var(--ok); }
+    .role-card {
+      display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px;
+      border: 1px solid var(--line); border-radius: var(--r-m); background: var(--card);
+      padding: 14px 16px; margin-top: 12px; box-shadow: var(--shadow-1);
+    }
+    .role-left { display: grid; grid-template-columns: minmax(0, 1fr) 64px 56px; gap: 8px; align-content: start; }
+    .role-left .rl { grid-column: 1 / -1; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--ink3); }
+    .role-left input {
+      height: 40px; padding: 0 10px; border: 1.5px solid var(--line2); border-radius: var(--r-s);
+      background: #fff; color: var(--ink); font: 500 14px "Inter"; outline: 0; width: 100%; min-width: 0;
+    }
+    .role-left input:focus { border-color: var(--green); }
+    .role-left .rm {
+      grid-column: 1 / -1; justify-self: start; border: 0; background: none; color: var(--ink3);
+      font-size: 12px; cursor: pointer; padding: 0; text-decoration: underline; text-underline-offset: 3px;
+    }
+    .role-left .rm:hover { color: var(--bad); }
+    .role-right { text-align: right; align-self: center; }
+    .role-right .each { font: 640 1.7rem var(--font-display); color: var(--green2); font-variant-numeric: tabular-nums; line-height: 1.1; }
+    .role-right .lbl { font-size: 11.5px; color: var(--ink3); }
+    .role-right .pool { font-size: 12.5px; color: var(--ink2); margin-top: 2px; font-variant-numeric: tabular-nums; }
+    .add-role {
+      width: 100%; height: 44px; margin-top: 12px; border: 1.5px dashed var(--line2); border-radius: var(--r-m);
+      background: none; color: var(--ink2); font: 500 14px "Inter"; cursor: pointer;
+    }
+    .add-role:hover { border-color: var(--green); color: var(--green); }
+    .actions { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+    .act {
+      flex: 1; min-width: 160px; height: 46px; border-radius: var(--r-s); cursor: pointer;
+      border: 1.5px solid var(--line2); background: var(--card); color: var(--ink); font: 600 14px "Inter";
+    }
+    .act:hover { border-color: var(--green); color: var(--green); }
+    .act.primary { background: var(--green); border-color: var(--green); color: #FDFBF4; }
+    .act.primary:hover { background: var(--green2); color: #FDFBF4; }
+    .fineprint { font-size: 12px; color: var(--ink3); margin-top: 14px; line-height: 1.5; }
+    @media print {
+      body::before, .nav, .head .crumbs, .presets, .add-role, .actions, footer.site, .prose, .fineprint, .rm { display: none !important; }
+      body { background: #fff; }
+      .closer { max-width: none; }
+      .role-card { break-inside: avoid; }
+    }
+  </style>
+
+  <script>
+    // —— Tip-out 打烊分账：角色卡即结果 ——
+    interface Role { id: string; label: string; pct: number; people: number }
+    const uid = () => Math.random().toString(36).slice(2, 8);
+    const money = (v: number) => '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const esc = (s: unknown) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    const COLORS = ['#1E5B3E', '#B45309', '#2F4A6B', '#7A2E2E', '#3B2A1E'];
+    let roles: Role[] = [
+      { id: uid(), label: 'Servers', pct: 70, people: 3 },
+      { id: uid(), label: 'Bussers', pct: 20, people: 2 },
+      { id: uid(), label: 'Bar', pct: 10, people: 1 },
+    ];
+
+    function render() {
+      const total = parseFloat((document.getElementById('total') as HTMLInputElement).value.replace(/[^0-9.]/g, '')) || 0;
+      const sum = roles.reduce((s, r) => s + r.pct, 0);
+      const host = document.getElementById('roles') as HTMLElement;
+      host.innerHTML = roles.map((r, i) => {
+        const pool = (total * r.pct) / 100;
+        const each = r.people > 0 ? pool / r.people : 0;
+        return `
+        <div class="role-card" data-i="${i}">
+          <div class="role-left">
+            <span class="rl">Role ${i + 1}</span>
+            <input value="${esc(r.label)}" data-k="label" data-i="${i}" placeholder="Servers / Bar / Runner…" aria-label="Role name">
+            <input value="${r.pct}" data-k="pct" data-i="${i}" inputmode="decimal" aria-label="Percent of tips" placeholder="%">
+            <input value="${r.people}" data-k="people" data-i="${i}" inputmode="numeric" aria-label="People" placeholder="#">
+            <button class="rm" data-rm="${r.id}" type="button" ${roles.length > 1 ? '' : 'hidden'}>Remove role</button>
+          </div>
+          <div class="role-right">
+            <div class="each">${money(each)}</div>
+            <div class="lbl">each</div>
+            <div class="pool">${money(pool)} pool</div>
+          </div>
+        </div>`;
+      }).join('');
+
+      // 配平条：分段 + 状态
+      const bar = document.getElementById('bar-fill') as HTMLElement;
+      bar.style.width = Math.min(100, sum) + '%';
+      const barBox = bar.parentElement as HTMLElement;
+      barBox.className = 'balance-bar' + (sum === 100 ? '' : sum > 100 ? ' over' : ' under');
+      const txt = document.getElementById('balance-txt') as HTMLElement;
+      if (sum === 100) { txt.className = 'balance-txt ok'; txt.innerHTML = 'Split: <b>100%</b> ✓ every dollar accounted for'; }
+      else if (sum < 100) { txt.className = 'balance-txt'; txt.innerHTML = `Split: <b>${sum}%</b> — ${(100 - sum)}% of tips unclaimed`; }
+      else { txt.className = 'balance-txt'; txt.innerHTML = `Split: <b>${sum}%</b> — paying out ${sum - 100}% more than collected`; }
+
+      try { localStorage.setItem('mst-tipout', JSON.stringify({ total: (document.getElementById('total') as HTMLInputElement).value, roles })); } catch {}
+    }
+
+    document.getElementById('total')!.addEventListener('input', render);
+    document.getElementById('roles')!.addEventListener('input', (e) => {
+      const t = e.target as HTMLInputElement;
+      if (!t.dataset.k) return;
+      const r = roles[+t.dataset.i!];
+      if (t.dataset.k === 'label') r.label = t.value;
+      else if (t.dataset.k === 'pct') r.pct = Math.max(0, parseFloat(t.value) || 0);
+      else r.people = Math.max(0, parseInt(t.value) || 0);
+      render();
+    });
+    document.getElementById('roles')!.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('[data-rm]') as HTMLElement | null;
+      if (!btn) return;
+      roles = roles.filter((r) => r.id !== btn.dataset.rm);
+      render();
+    });
+    document.querySelectorAll('.preset').forEach((b) => b.addEventListener('click', () => {
+      const s = (b as HTMLElement).dataset.split!;
+      roles = s === 'equal'
+        ? [{ id: uid(), label: 'Everyone', pct: 100, people: Math.max(1, roles.reduce((n, r) => n + r.people, 0)) }]
+        : s.split(',').map((p, i) => ({ id: uid(), label: ['Servers', 'Support', 'Bar'][i] ?? `Role ${i + 1}`, pct: +p, people: roles[i]?.people ?? 1 }));
+      render();
+    }));
+    document.getElementById('add-role')!.addEventListener('click', () => {
+      roles.push({ id: uid(), label: '', pct: 0, people: 1 });
+      render();
+      const inputs = document.querySelectorAll('.role-left input[data-k="label"]');
+      (inputs[inputs.length - 1] as HTMLInputElement).focus();
+    });
+    document.getElementById('do-print')!.addEventListener('click', () => window.print());
+    document.getElementById('do-copy')!.addEventListener('click', () => {
+      const total = parseFloat((document.getElementById('total') as HTMLInputElement).value) || 0;
+      const lines = roles.map((r) => {
+        const pool = (total * r.pct) / 100;
+        return `${r.label || 'Role'} ${r.pct}% — ${money(pool)} pool, ${money(r.people > 0 ? pool / r.people : 0)} each (${r.people})`;
+      });
+      navigator.clipboard?.writeText(`Tip out — total ${money(total)}\n` + lines.join('\n')).catch(() => {});
+    });
+
+    // 草稿恢复
+    try {
+      const d = JSON.parse(localStorage.getItem('mst-tipout') ?? 'null') as { total?: string; roles?: Role[] } | null;
+      if (d?.roles?.length) {
+        roles = d.roles;
+        (document.getElementById('total') as HTMLInputElement).value = d.total ?? '847';
+      }
+    } catch {}
+    render();
+  </script>
+</BaseLayout>

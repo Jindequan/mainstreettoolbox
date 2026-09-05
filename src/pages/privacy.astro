@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const updated = 'September 5, 2026';
+---
+<BaseLayout title="Privacy Policy — Main Street Toolbox" description="Main Street Toolbox privacy policy: calculators run entirely in your browser; we collect no personal data unless you ask us to contact you." path="/privacy/">
+  <div class="prose">
+    <h1>Privacy Policy</h1>
+    <p style="color:var(--ink-3);font-size:var(--fs-400)">Last updated {updated}</p>
+    <h2>The short version</h2>
+    <p>Your calculations never leave your device. Every calculator on Main Street Toolbox runs entirely in your
+    browser — the numbers you type are not sent to, stored on, or seen by our servers.</p>
+    <h2>What we collect</h2>
+    <ul>
+      <li><b>Anonymous usage counts.</b> We use cookieless, privacy-first analytics (Plausible) to count page views and tool usage. No cookies, no personal identifiers, no cross-site tracking.</li>
+      <li><b>Local drafts.</b> If you save a calculation, it is stored in your own browser's local storage. Clearing your browser data clears it.</li>
+      <li><b>What you send us.</b> If you contact us or request a concierge setup, we receive what you choose to send (name, email, business details) and use it only to respond and deliver that work.</li>
+    </ul>
+    <h2>What we never do</h2>
+    <ul>
+      <li>We do not run advertising or third-party ad trackers.</li>
+      <li>We do not sell or share personal information.</li>
+      <li>We do not require an account to use any calculator.</li>
+    </ul>
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:hello@mainstreettoolbox.com">hello@mainstreettoolbox.com</a>.</p>
+  </div>
+</BaseLayout>

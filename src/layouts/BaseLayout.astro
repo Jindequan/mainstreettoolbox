@@ -1,0 +1,53 @@
+---
+import '../styles/tokens.css';
+
+interface Props { title: string; description: string; path?: string; bodyClass?: string; }
+const { title, description, path = '/', bodyClass = '' } = Astro.props;
+const canonical = new URL(path, Astro.site);
+const plausible = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
+const gsc = import.meta.env.PUBLIC_GSC_TOKEN;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <meta name="generator" content={Astro.generator} />
+  {gsc && <meta name="google-site-verification" content={gsc} />}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  {plausible && <script defer data-domain={plausible} src="https://plausible.io/js/script.js"></script>}
+</head>
+<body class={bodyClass}>
+  <nav class="nav">
+    <div class="container nav-in">
+      <a class="logo" href="/"><span class="logo-mark"></span>Main Street Toolbox</a>
+      <div class="nav-links">
+        <a href="/tools">Tools</a>
+        <a href="/services">Get help</a>
+        <a href="/pricing" class="btn btn-secondary btn-sm">Pricing</a>
+      </div>
+    </div>
+  </nav>
+  <slot />
+  <footer class="site">
+    <div class="container foot-grid">
+      <div>
+        <a class="logo" href="/"><span class="logo-mark"></span>Main Street Toolbox</a>
+        <p style="margin-top:10px;max-width:20rem">Free calculators for Main Street, not Wall Street. Independent, ad-free, and built for small shops.</p>
+      </div>
+      <div><h4>Trades</h4><a href="/restaurant">Restaurant</a><a href="/tools">All tools</a><a href="/services">Get help</a></div>
+      <div><h4>Company</h4><a href="/pricing">Pricing</a><a href="/services">Concierge setup</a></div>
+      <div><h4>Legal</h4><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/affiliate-disclosure">Affiliate disclosure</a></div>
+    </div>
+    <div class="container"><p class="foot-note">© {new Date().getFullYear()} Main Street Toolbox. Numbers are estimates for guidance only — not financial, legal or tax advice.</p></div>
+  </footer>
+  <script src="../scripts/stats.ts"></script>
+</body>
+</html>
