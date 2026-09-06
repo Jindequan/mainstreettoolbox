@@ -6,8 +6,8 @@ export default {
   industry: 'salon',
   name: 'Service Price List Builder',
   tagline: 'A typeset price list, not a Word doc. No signup.',
-  title: 'Service Price List Builder — Free printable price lists for salons',
-  description: 'Build a clean, typeset price list for your salon or barbershop — services with times and prices, ready to print for the front desk or your socials. Free, no signup.',
+  title: 'Service Price List Builder — Free Printable Price Lists',
+  description: 'Build a clean, typeset price list for your salon or barbershop — services, times and prices, ready to print. Free, no signup.',
   result: { label: 'Your price list' },
   fields: [
     { id: 'salonName', label: 'Business name', kind: 'text', default: 'My Salon', placeholder: 'Salon / barbershop name' },

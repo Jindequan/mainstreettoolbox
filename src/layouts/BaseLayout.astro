@@ -17,6 +17,14 @@ const ga = import.meta.env.PUBLIC_GA_ID;
   <meta name="description" content={description} />
   {!noIndex && <link rel="canonical" href={canonical} />}
   {noIndex && <meta name="robots" content="noindex" />}
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Main Street Toolbox" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="sitemap" href="/sitemap-index.xml" />
   <meta name="generator" content={Astro.generator} />
