@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const updated = 'September 2026';
+---
+<BaseLayout
+  title="What's a Healthy Food Cost Percentage? Restaurant Benchmarks — Main Street Toolbox"
+  description="Food cost percentage benchmarks: 28–35% for full-service restaurants, 25–30% for quick service. How to calculate it per dish and blended, why it creeps up, and the four ways to pull it back down."
+  path="/guides/food-cost-percentage/"
+>
+  <div class="prose">
+    <p class="eyebrow">Pricing guide · {updated}</p>
+    <h1>What's a healthy food cost percentage?</h1>
+    <p><b>The short answer:</b> full-service restaurants run <b>28–35%</b>, quick-service spots a few points
+    lower at <b>25–30%</b>. Above 35% your margin is thin; above 40% the dish is barely paying for its own
+    ingredients. The number itself is easy — what matters is watching it move.</p>
+
+    <h2>How to calculate it</h2>
+    <p>Per dish: <b>plate cost ÷ menu price</b>. A dish that costs $4.90 to plate and sells for $16.95 runs
+    28.9% — healthy. Blended (whole-menu) food cost is total ingredient spend ÷ total food sales over a period,
+    usually tracked weekly against purchases.</p>
+    <p>Both matter. The per-dish number tells you which menu items to reprice; the blended number tells you
+    whether portioning, waste or supplier prices are drifting. A menu creeping from 31% to 36% over a quarter
+    is a supplier price rise or a portion problem waiting to be found — and the fix is usually price, not
+    quality.</p>
+
+    <table>
+      <thead><tr><th>Food cost %</th><th>What it usually means</th></tr></thead>
+      <tbody>
+        <tr><td>Under 28%</td><td>Room to invest in quality or portions — or you're underpriced for your market</td></tr>
+        <tr><td>28–35%</td><td>Typical for full-service; the target band</td></tr>
+        <tr><td>35–40%</td><td>Tight — reprice top sellers before cutting quality</td></tr>
+        <tr><td>Over 40%</td><td>Danger — the dish loses money at scale; reprice or re-plate now</td></tr>
+      </tbody>
+    </table>
+
+    <h2>The four levers, in order of speed</h2>
+    <p><b>1. Reprice.</b> The fastest lever. Even a $1 move on a top seller changes blended food cost more than
+    weeks of waste tracking. Menu engineering tells you <em>which</em> dishes can take the increase: plowhorses
+    (popular, lower margin) absorb price rises best because demand is already proven.</p>
+    <p><b>2. Re-plate.</b> Same price, cheaper cost structure — swap a premium component, resize the garnish,
+    rework the plate. This is the move for high-margin-but-slow puzzles and for dogs you don't want to kill.</p>
+    <p><b>3. Re-negotiate or re-spec ingredients.</b> Supplier prices move quarterly; a $0.20/lb jump on your
+    core protein flows straight into every plate that uses it. Track the top ten ingredients that drive 80% of
+    your cost.</p>
+    <p><b>4. Control waste and portions.</b> The slowest lever but the compounding one — scales at the line,
+    spec cards per dish, and a weekly count. This is also where the 28–35% band quietly breaks: portions drift
+    up two grams at a time.</p>
+
+    <h2>Run the numbers</h2>
+    <p>Check a single dish in 15 seconds with the <a href="/restaurant/food-cost-percentage-calculator/">Food
+    Cost Percentage Calculator</a> — it also shows the price that brings a dish back to a 30% target. Setting a
+    price from scratch? The <a href="/restaurant/menu-pricing-calculator/">Menu Pricing Calculator</a> works
+    backwards from ingredient costs. Then classify the whole menu into Stars, Plowhorses, Puzzles and Dogs with
+    the <a href="/restaurant/menu-engineering-matrix/">Menu Engineering Matrix</a> and print the repriced menu
+    with the <a href="/menu-maker/">Menu Maker</a>.</p>
+
+    <h2>Questions owners ask</h2>
+    <div class="faq">
+      <details><summary>Is food cost the same as COGS?</summary><p>Food cost percentage is your food COGS as a share of food sales. Full COGS for a restaurant also includes paper, to-go packaging and sometimes bar product — keep food cost as its own line so the kitchen number stays clean.</p></details>
+      <details><summary>Should I calculate it per dish or blended?</summary><p>Both, for different jobs. Per dish tells you what to reprice or re-plate; blended (purchases ÷ food sales, weekly) tells you if operations are drifting. A healthy blended number with one dish at 45% means your mix is subsidizing a loser.</p></details>
+      <details><summary>How often should I recalculate?</summary><p>Blended weekly (it's a purchases report, not an inventory), per-dish every time a supplier price or a menu price moves. Most operators who get burned skipped a quarter.</p></details>
+      <details><summary>Does a low food cost mean I'm winning?</summary><p>Not necessarily. Under 25% often means you're overpriced for the market (slowing traffic) or under-portioning (hurting reviews). The band is a health check, not a high-score — the goal is margin dollars, not the lowest percentage.</p></details>
+    </div>
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Is food cost the same as COGS?', acceptedAnswer: { '@type': 'Answer', text: 'Food cost percentage is food COGS as a share of food sales; full restaurant COGS also includes paper, packaging and bar product.' } },
+      { '@type': 'Question', name: 'Should I calculate it per dish or blended?', acceptedAnswer: { '@type': 'Answer', text: 'Both: per dish tells you what to reprice; blended weekly purchases ÷ food sales tells you if operations are drifting.' } },
+      { '@type': 'Question', name: 'How often should I recalculate?', acceptedAnswer: { '@type': 'Answer', text: 'Blended weekly; per dish whenever a supplier price or menu price moves.' } },
+      { '@type': 'Question', name: 'Does a low food cost mean I am winning?', acceptedAnswer: { '@type': 'Answer', text: 'Not necessarily — under 25% often signals overpricing or under-portions. The goal is margin dollars, not the lowest percentage.' } },
+    ],
+  })} />
+</BaseLayout>

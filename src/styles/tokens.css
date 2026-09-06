@@ -322,10 +322,13 @@ footer.site { padding: 44px 0 56px; color: var(--ink-2); font-size: var(--fs-400
 }
 
 /* ---------- 14. Print — 干净 one-pager ---------- */
+/* 打印落款：屏幕上隐藏，仅打印时显示（发票/工单等纸面即传播位） */
+.print-credit { display: none; text-align: center; font-size: 10px; color: #9A9078; margin-top: 14px; letter-spacing: .02em; }
 @media print {
   body::before, .nav, .crumbs, .action-bar, .tool-form, footer.site, .related, .faq, .next-steps { display: none !important; }
   body { background: #fff; }
   .result-card { position: static; box-shadow: none; }
+  .print-credit { display: block !important; }
 }
 
 /* ---------- 15. 生产扩展（M1） ---------- */

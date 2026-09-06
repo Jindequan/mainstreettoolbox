@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const updated = 'September 2026';
+---
+<BaseLayout
+  title="Booth Rent vs Commission: The Real Math for Stylists (2026) — Main Street Toolbox"
+  description="Booth rent vs commission compared: typical splits (you keep 50–60%), booth rent ranges, the 15–25% rent guideline, and the exact sales number where renting starts winning."
+  path="/guides/booth-rent-vs-commission/"
+>
+  <div class="prose">
+    <p class="eyebrow">Career math · {updated}</p>
+    <h1>Booth rent vs commission: which pays you more?</h1>
+    <p><b>The short answer:</b> with a typical 55% commission split, booth rent beats commission once your
+    service sales pass roughly <b>rent ÷ 0.45 per month</b> — about $2,700/month in sales for a $1,200 booth.
+    Below that line, commission pays more. The catch is everything the line doesn't show: supplies, taxes, and
+    slow weeks.</p>
+
+    <h2>The two structures, honestly</h2>
+    <p><b>Commission:</b> the salon keeps a split (typically 40–50%, so you keep 50–60%) and covers rent,
+    water, electricity, front desk, product and laundry. Your money is smooth — a slow week is a smaller
+    paycheck, not a loss.</p>
+    <p><b>Booth rent:</b> a flat weekly or monthly fee ($400–1,200+/mo depending on market and salon), and you
+    keep every dollar of service revenue. You also buy your own color and product, do your own laundry and
+    books, and pay the rent in a slow week all the same.</p>
+
+    <h2>The 15–25% rule</h2>
+    <p>The working guideline: <b>rent should run 15–25% of your service revenue.</b> A $1,200 booth needs
+    roughly $5,000–8,000 in monthly service sales to stay inside it. Above 25%, only a very loyal rebooked
+    book makes renting work — negotiate the rent or keep building on commission first.</p>
+
+    <h2>Your break-even line</h2>
+    <p>Commission nets you <b>sales × your split</b>. Renting nets you <b>sales − rent</b>. Setting them equal
+    gives the crossover: <b>sales* = rent ÷ (1 − your split)</b>.</p>
+    <table>
+      <thead><tr><th>Booth rent</th><th>Crossover at 55% split</th><th>Crossover at 60% split</th></tr></thead>
+      <tbody>
+        <tr><td>$800/mo</td><td>$1,778/mo sales (~$410/wk)</td><td>$2,000/mo sales (~$460/wk)</td></tr>
+        <tr><td>$1,000/mo</td><td>$2,222/mo sales (~$515/wk)</td><td>$2,500/mo sales (~$580/wk)</td></tr>
+        <tr><td>$1,200/mo</td><td>$2,667/mo sales (~$615/wk)</td><td>$3,000/mo sales (~$695/wk)</td></tr>
+      </tbody>
+    </table>
+    <p>Pass the line consistently for three months before you switch — one strong month is a schedule
+    anomaly, not a book.</p>
+
+    <h2>What the math leaves out</h2>
+    <p><b>Self-employment tax and benefits</b> (both structures are usually IC now, but renters feel it
+    first), <b>product and supply costs</b> (color alone can run 5–8% of service sales), <b>no-paycheck
+    weeks</b>, and <b>the rebook rate</b> — a book that's 80%+ rebooked is the real qualification for going
+    independent. Renting with a walk-in-dependent book is renting risk.</p>
+
+    <h2>Run it with your numbers</h2>
+    <p>The <a href="/salon/booth-rent-commission-calculator/">Booth Rent vs Commission Calculator</a> compares
+    both paths from your weekly sales, your split and the rent quote — including the 15–25% check. When you
+    have a price list of your own, build it with the
+    <a href="/salon/service-price-list-builder/">Service Price List Builder</a>, and take payments with a clean
+    <a href="/salon/receipt-generator/">Receipt Generator</a>.</p>
+
+    <h2>Questions stylists ask</h2>
+    <div class="faq">
+      <details><summary>How much is booth rent on average?</summary><p>$400–1,200+/month depending on market, salon and whether product is included. Judge any quote against the 15–25%-of-revenue guideline, not against other stylists' rents.</p></details>
+      <details><summary>What commission split should a new stylist expect?</summary><p>New stylists commonly start keeping 40–50%, moving toward 60% with a proven book. Splits above 60% usually come with fewer salon-provided supports — compare the whole package, not the split.</p></details>
+      <details><summary>Do tips change the comparison?</summary><p>No — tips follow you under both structures. Keep the comparison to service revenue, and keep tips out of the qualification math entirely.</p></details>
+      <details><summary>When should I NOT rent even if the math works?</summary><p>When your book isn't rebooked. Renting converts a stable paycheck into a business with fixed costs; an 80%+ rebook rate is the practical threshold most owners quote.</p></details>
+    </div>
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How much is booth rent on average?', acceptedAnswer: { '@type': 'Answer', text: 'Typically $400–1,200+ per month depending on market and salon; judge any quote against the 15–25%-of-revenue guideline.' } },
+      { '@type': 'Question', name: 'What commission split should a new stylist expect?', acceptedAnswer: { '@type': 'Answer', text: 'New stylists commonly keep 40–50%, moving toward 60% with a proven book.' } },
+      { '@type': 'Question', name: 'Do tips change the comparison?', acceptedAnswer: { '@type': 'Answer', text: 'No — tips follow you under both structures; keep the comparison to service revenue only.' } },
+      { '@type': 'Question', name: 'When should I NOT rent even if the math works?', acceptedAnswer: { '@type': 'Answer', text: 'When your book is not heavily rebooked — renting adds fixed costs, so an 80%+ rebook rate is the practical threshold.' } },
+    ],
+  })} />
+</BaseLayout>

@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const updated = 'September 2026';
+---
+<BaseLayout
+  title="How Much to Charge for House Cleaning (2026 Pricing Guide) — Main Street Toolbox"
+  description="House cleaning prices in 2026: what to charge by home size, clean type and frequency — with benchmark ranges, first-clean premiums and the loyalty discount math for recurring clients."
+  path="/guides/house-cleaning-prices/"
+>
+  <div class="prose">
+    <p class="eyebrow">Pricing guide · {updated}</p>
+    <h1>How much should you charge for house cleaning?</h1>
+    <p><b>The short answer:</b> a standard clean of a typical 3-bed, 2-bath home runs <b>$110–140</b> in most US
+    markets, deep cleans run <b>40–50% higher</b>, and you should quote by the job — not the hour. Below are the
+    benchmark bands, what moves them, and how to turn a first-time clean into a recurring book.</p>
+
+    <h2>Benchmark prices by clean type</h2>
+    <table>
+      <thead><tr><th>Clean type</th><th>Typical range (US)</th><th>Time for one cleaner</th></tr></thead>
+      <tbody>
+        <tr><td>Standard / maintenance clean</td><td>$90–150</td><td>2.5–4 hrs</td></tr>
+        <tr><td>Deep clean (first-time or seasonal)</td><td>$150–250</td><td>4–6 hrs</td></tr>
+        <tr><td>Move-out clean</td><td>$180–338</td><td>5–8 hrs</td></tr>
+      </tbody>
+    </table>
+    <p>Bathrooms move the price more than bedrooms — scrubbing a bathroom is the slowest work in the house. A
+    working formula many cleaners use: a base visit fee plus a per-bedroom charge plus a larger per-bathroom
+    charge, then multiply by the clean type.</p>
+
+    <h2>What moves your number up or down</h2>
+    <p><b>Up:</b> first-time cleans (build-up), pets, deep-cleaning add-ons (oven, fridge, windows), high-cost
+    metros (NYC, SF, Seattle run 20–40% above the bands), and homes over 2,000 sq ft.</p>
+    <p><b>Down (deliberately):</b> recurring clients. Weekly clients commonly pay <b>15–20% less per visit</b> —
+    they skip the build-up work and give you predictable income. Biweekly sits between at roughly 10% off.
+    That's not a discount you're giving away; it's buying schedule density.</p>
+
+    <h2>Hourly or by the job?</h2>
+    <p>Quote <b>by the job</b>. Hourly quotes punish you for getting faster and make clients watch the clock.
+    Price the job from your own hourly floor: if you need $45/hr and the home takes 3 hours, the quote is $135 —
+    whatever the market band says. The band tells you if you're in range; your floor tells you if you're
+    profitable.</p>
+
+    <h2>Price it in 20 seconds</h2>
+    <p>The <a href="/cleaning/cleaning-estimate-calculator/">Cleaning Estimate Calculator</a> does this formula
+    live — enter rooms, clean type and frequency, and it returns a quote range plus the estimated hours, with
+    the loyalty discount built in for recurring clients. When the quote's accepted, turn it into paper with the
+    <a href="/cleaning/cleaning-invoice-generator/">Cleaning Invoice Generator</a> and standardize the visit with
+    the <a href="/cleaning/cleaning-checklist-builder/">Checklist Builder</a>.</p>
+
+    <h2>Questions cleaners ask</h2>
+    <div class="faq">
+      <details><summary>How much should a first-time clean cost?</summary><p>Price first cleans as a deep clean — typically 40–50% above your standard rate. Even a "clean" home has years of build-up in the places maintenance cleans skip: baseboards, door frames, inside appliances, vents. One deep first clean, then maintenance pricing after, is the standard playbook.</p></details>
+      <details><summary>What's a fair discount for weekly clients?</summary><p>15–20% off the per-visit price is the common band. They cost you less time per visit (no build-up) and zero scheduling gaps — the discount pays for itself in density. Biweekly clients typically get around 10%.</p></details>
+      <details><summary>How do I quote a move-out clean?</summary><p>Move-outs are quoted close to deep-clean rates and up, because the scope is everything: inside appliances, cabinets, closets, baseboards — and the deadline is a lease inspection. Quote from a checklist, not a walkthrough, so nothing is "surprise" scope.</p></details>
+      <details><summary>Should I charge extra for pets?</summary><p>Most cleaners add $15–30 per visit for heavy pet homes (hair, dander, accidents) or build it into the base. Whatever you do, price it before the first visit — pet work is the most commonly underquoted scope in the trade.</p></details>
+    </div>
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How much should a first-time clean cost?', acceptedAnswer: { '@type': 'Answer', text: 'Price first cleans as a deep clean — typically 40–50% above your standard rate, because maintenance-clean homes still have build-up in baseboards, appliance interiors and vents.' } },
+      { '@type': 'Question', name: "What's a fair discount for weekly clients?", acceptedAnswer: { '@type': 'Answer', text: '15–20% off the per-visit price is the common band; biweekly clients typically get around 10%.' } },
+      { '@type': 'Question', name: 'How do I quote a move-out clean?', acceptedAnswer: { '@type': 'Answer', text: 'Quote move-outs at deep-clean rates and up, from a written checklist covering inside appliances, cabinets and baseboards, since the lease inspection sets the scope.' } },
+      { '@type': 'Question', name: 'Should I charge extra for pets?', acceptedAnswer: { '@type': 'Answer', text: 'Most cleaners add $15–30 per visit for heavy pet homes or build it into the base price before the first visit.' } },
+    ],
+  })} />
+</BaseLayout>

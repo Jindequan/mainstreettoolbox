@@ -11,7 +11,7 @@ export default {
   result: { label: 'Better for you' },
   fields: [
     { id: 'weeklySales', label: 'Your weekly sales', kind: 'money', default: 2000, hint: 'services only, before tips' },
-    { id: 'commissionPct', label: 'Salon commission keeps', kind: 'slider', default: 45, min: 25, max: 70, step: 1, hint: 'typical is 40–60%' },
+    { id: 'commissionPct', label: 'Commission you keep', kind: 'slider', default: 55, min: 25, max: 80, step: 1, hint: 'stylists typically keep 50–60%' },
     { id: 'boothRent', label: 'Booth rent / month', kind: 'money', default: 1200 },
   ],
   params: {
