@@ -28,12 +28,13 @@ export function calcCleaningEstimate(values: Record<string, string>, params: any
 
 /** Lawn Mowing Price — 面积×地形×频率 → 单次/月度 */
 export function calcMowingPrice(values: Record<string, string>, params: any): EngineResult {
-  const sqft = clamp(num(values.lotSize), 500, 100000);
+  const sqft = clamp(num(values.lotSize), 500, 200000);
   const terrainMult: Record<string, number> = { flat: 1, slope: 1.15, steep: 1.3 };
-  let visit = sqft * params.ratePerSqft * (terrainMult[values.terrain] ?? 1);
+  // 2026-09 校准:基础费(出车/装填)+面积费率。HousecallPro/GreenPal/HomeGuide 2026:均价 ~$50,主流 $30–85,<¼ac 周割 $41–65,¼–½ac $49–120,每英亩周服务 $60–100
+  let visit = (params.base + sqft * params.ratePerSqft) * (terrainMult[values.terrain] ?? 1);
   const freq = values.frequency ?? 'weekly';
-  if (freq === 'biweekly') visit *= 1.15;
-  if (freq === 'onetime') visit *= 1.3;
+  if (freq === 'biweekly') visit *= 1.25;
+  if (freq === 'onetime') visit *= 1.4;
   const visitsPerMonth = freq === 'weekly' ? 4.33 : freq === 'biweekly' ? 2.17 : 1;
   const perVisit = Math.round(visit);
   const monthly = perVisit * visitsPerMonth;
@@ -50,7 +51,7 @@ export function calcMowingPrice(values: Record<string, string>, params: any): En
       { label: 'Per season (8 months)', value: money(monthly * 8) },
       { label: 'Rate', value: `$${(perVisit / sqft).toFixed(3)} / sq ft` },
     ],
-    gauge: makeGauge(clamp(perVisit, 20, 120), 20, 120, b.healthy),
+    gauge: makeGauge(clamp(perVisit, 20, 150), 20, 150, b.healthy),
     verdict: { level, text },
   };
 }

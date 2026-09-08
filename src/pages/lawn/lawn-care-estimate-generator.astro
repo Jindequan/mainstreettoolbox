@@ -1,0 +1,346 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Lawn Care Estimate Generator — Free Printable Estimate Template | Main Street Toolbox"
+  description="Build a printable lawn care estimate template: itemized services, monthly total, season note and signature lines your client can sign on the spot. Free, no signup."
+  path="/lawn/lawn-care-estimate-generator/"
+>
+  <div class="industry-hero">
+    <div class="industry-hero-bg" style="background-image:linear-gradient(rgba(250,247,240,.85), rgba(250,247,240,.06)), url('/images/lawn.jpg')"></div>
+    <div class="container head">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/lawn">Lawn Care</a> / <b style="color:var(--ink)">Lawn Care Estimate Generator</b></p>
+      <h1>Lawn Care Estimate Generator</h1>
+      <p class="sub">A one-page estimate your client signs on the hood of the truck — itemized lines, monthly total, signature lines. Print it free.</p>
+    </div>
+  </div>
+
+  <main class="container builder">
+    <!-- 左:填表 -->
+    <section class="form-col" aria-label="Estimate details">
+      <div class="card card-pad">
+        <h2 class="step-lbl"><span>1</span> Who's it for</h2>
+        <div class="meta-grid">
+          <div class="field">
+            <label for="client">Client or property name</label>
+            <input id="client" type="text" placeholder="e.g. The Hendersons — 42 Maple Dr" autocomplete="off" />
+          </div>
+          <div class="field">
+            <label for="date">Date</label>
+            <input id="date" type="text" placeholder="e.g. Sep 12" autocomplete="off" />
+          </div>
+        </div>
+
+        <h2 class="step-lbl"><span>2</span> Services quoted</h2>
+        <div class="rows-head">
+          <span class="rh-service">Service</span>
+          <span class="rh-detail">Detail</span>
+          <span class="rh-amount">Monthly $</span>
+        </div>
+        <div id="rows"></div>
+        <button class="add-row" id="add-row" type="button">+ Add service</button>
+
+        <h2 class="step-lbl"><span>3</span> Notes on the sheet</h2>
+        <div class="field">
+          <label for="notes">Terms &amp; notes (shows at the bottom of the estimate)</label>
+          <input id="notes" type="text" value="Estimate valid for 30 days. Season runs roughly April–November." autocomplete="off" />
+        </div>
+        <p class="fineprint">Tip: quote the <b>monthly</b> number — one predictable payment reads simpler than a menu of per-visit prices. Keep the per-visit math in the detail column.</p>
+      </div>
+    </section>
+
+    <!-- 右:所见即所得的报价单 -->
+    <aside class="sheet-col">
+      <div class="sheet-wrap">
+        <div class="sheet" id="sheet">
+          <div class="sheet-brand">LAWN CARE SERVICE ESTIMATE</div>
+          <div class="sheet-meta">
+            <div><span>Prepared for</span><b id="s-client">—</b></div>
+            <div><span>Date</span><b id="s-date">—</b></div>
+          </div>
+          <table class="sheet-table">
+            <thead><tr><th>Service</th><th>Detail</th><th class="amt">Monthly</th></tr></thead>
+            <tbody id="s-rows"></tbody>
+            <tfoot><tr class="total-row"><td colspan="2">Monthly total</td><td class="amt" id="s-total">$0.00</td></tr></tfoot>
+          </table>
+          <div class="sheet-notes" id="s-notes"></div>
+          <div class="sheet-sign">
+            <div><i></i><span>Client signature / date</span></div>
+            <div><i></i><span>Contractor signature / date</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="act primary" id="do-print" type="button">Print estimate</button>
+        <button class="act" id="do-copy" type="button">Copy numbers</button>
+      </div>
+      <p class="fineprint">Print two copies — the client signs one, you keep one. A signed estimate is the cheapest contract you will ever hold.</p>
+    </aside>
+  </main>
+
+  <section class="container prose">
+    <h2>What goes into a lawn care estimate</h2>
+    <p>Seven things, on one page: your client or property name, the date, each <b>service as its own line</b>
+    with the frequency written in the detail ("weekly mowing", "shrub trimming — monthly"), the
+    <b>monthly total</b>, the season length (April–November covers most of the country), how long the quote is
+    valid — 30 days is standard — and <b>signature lines</b> for both sides. This generator prints all seven.</p>
+
+    <h2>Monthly beats per-visit</h2>
+    <p>A season has 4-visit months and 5-visit months; monthly billing smooths both and reads as simpler to
+    the client. Put the per-visit math in the detail column ("per visit $45 × 4.3") so the number stays
+    transparent. Extras like mulch or leaf cleanup go on <b>separate lines</b> — never folded into the mowing
+    price — so upsells stay visible.</p>
+
+    <h2>Price the lines before you write them</h2>
+    <p>Not sure what to charge per line? The <a href="/lawn/lawn-mowing-price-calculator/">Lawn Mowing Cost
+    Calculator</a> prices mowing by lot size, terrain and frequency against 2026 rates; the
+    <a href="/lawn/mulch-calculator/">Mulch Calculator</a> handles beds in bags or yards. Working out what your
+    season income needs to cover? The <a href="/lawn/contractor-hourly-rate-calculator/">Contractor Hourly Rate
+    Calculator</a> runs your target income backward into an hourly floor.</p>
+
+    <h2>Is an estimate a contract?</h2>
+    <p>A signed estimate functions like a lightweight agreement: it records scope and price, and it's evidence
+    of the deal if a dispute ever lands somewhere official. For season-long work, keep the start and end dates
+    in the notes so both sides know when service — and billing — pauses for winter.</p>
+  </section>
+
+  <section class="container faq">
+    <h2>Questions owners ask</h2>
+    <details><summary>What should be included in a lawn care estimate?</summary><p>Your business name and the client or property name, the date, each service as its own line with the frequency in the detail, a monthly total, the season length, how long the estimate is valid — 30 days is standard — and signature lines for both sides.</p></details>
+    <details><summary>Should lawn care be quoted per visit or monthly?</summary><p>Monthly. It smooths your income across the 4-visit and 5-visit months and reads as simpler to the client. Keep the per-visit equivalent on the estimate for transparency.</p></details>
+    <details><summary>How do I price extras like mulch or leaf removal?</summary><p>As separate lines on the same estimate — never folded into the mowing price. It keeps the base price clean and makes upsells visible.</p></details>
+    <details><summary>Is an estimate a contract?</summary><p>A signed estimate functions like a lightweight agreement: it records scope and price, and courts generally treat it as evidence of the deal. For season-long work, add start and end dates to the notes so both sides know when it renews.</p></details>
+  </section>
+
+  <section class="related">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:0;padding-top:28px"><h2 style="font-size:1.2rem">Related tools</h2></div>
+      <div class="related-grid">
+        <a href="/lawn/lawn-mowing-price-calculator/">Lawn Mowing Cost Calculator</a>
+        <a href="/cleaning/cleaning-invoice-generator/">Cleaning Invoice Generator</a>
+        <a href="/lawn/contractor-hourly-rate-calculator/">Contractor Hourly Rate Calculator</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What should be included in a lawn care estimate?', acceptedAnswer: { '@type': 'Answer', text: 'Your business name and the client or property name, the date, each service as its own line with the frequency in the detail, a monthly total, the season length, how long the estimate is valid — 30 days is standard — and signature lines for both sides.' } },
+      { '@type': 'Question', name: 'Should lawn care be quoted per visit or monthly?', acceptedAnswer: { '@type': 'Answer', text: 'Monthly. It smooths your income across the 4-visit and 5-visit months and reads as simpler to the client. Keep the per-visit equivalent on the estimate for transparency.' } },
+      { '@type': 'Question', name: 'How do I price extras like mulch or leaf removal?', acceptedAnswer: { '@type': 'Answer', text: 'As separate lines on the same estimate — never folded into the mowing price. It keeps the base price clean and makes upsells visible.' } },
+      { '@type': 'Question', name: 'Is an estimate a contract?', acceptedAnswer: { '@type': 'Answer', text: 'A signed estimate functions like a lightweight agreement: it records scope and price, and courts generally treat it as evidence of the deal. For season-long work, add start and end dates to the notes so both sides know when it renews.' } },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Lawn Care Estimate Generator',
+    url: new URL('/lawn/lawn-care-estimate-generator/', Astro.site).toString(),
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  })} />
+
+  <style is:global>
+    .head { padding: 36px 24px 10px; }
+    .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
+    .head .sub { color: var(--ink-2); font-size: 1.0625rem; max-width: 38rem; }
+    .builder {
+      display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 20px;
+      align-items: start; padding-bottom: 44px; margin-top: 18px;
+    }
+    .step-lbl {
+      display: flex; align-items: center; gap: 9px;
+      font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+      color: var(--ink-3); margin: 22px 0 10px;
+    }
+    .step-lbl:first-child { margin-top: 0; }
+    .step-lbl span {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 21px; height: 21px; border-radius: 50%;
+      background: var(--green-tint); color: var(--green-2); font-size: 11.5px; font-weight: 700;
+    }
+    .meta-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 10px; }
+    .field label { display: block; font: 600 13px "Inter"; color: var(--ink-2); margin-bottom: 6px; }
+    .field input {
+      width: 100%; height: 44px; padding: 0 12px; border: 1.5px solid var(--line-2); border-radius: var(--r-s);
+      background: #fff; color: var(--ink); font: 500 14px "Inter"; outline: 0; min-width: 0;
+    }
+    .field input:focus { border-color: var(--green); }
+    .rows-head, .est-row {
+      display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.2fr) 96px; gap: 8px;
+    }
+    .rows-head { font: 700 11px "Inter"; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3); padding: 0 2px 6px; }
+    .rows-head .rh-amount { text-align: right; }
+    .est-row {
+      border: 1.5px solid var(--line); border-radius: var(--r-m); background: var(--card);
+      padding: 10px; margin-bottom: 8px;
+    }
+    .est-row input {
+      height: 40px; padding: 0 10px; border: 1.5px solid var(--line-2); border-radius: var(--r-s);
+      background: #fff; color: var(--ink); font: 500 14px "Inter"; outline: 0; width: 100%; min-width: 0;
+    }
+    .est-row input:focus { border-color: var(--green); }
+    .est-row .amt-wrap { display: flex; align-items: center; gap: 2px; }
+    .est-row .amt-wrap i { font: 600 14px "Inter"; color: var(--ink-3); font-style: normal; }
+    .est-row .rm {
+      grid-column: 1 / -1; justify-self: start; border: 0; background: none; color: var(--ink-3);
+      font-size: 12px; cursor: pointer; padding: 0; text-decoration: underline; text-underline-offset: 3px;
+    }
+    .est-row .rm:hover { color: var(--bad); }
+    .add-row {
+      width: 100%; height: 44px; margin-top: 4px; border: 1.5px dashed var(--line-2); border-radius: var(--r-m);
+      background: none; color: var(--ink-2); font: 500 14px "Inter"; cursor: pointer;
+    }
+    .add-row:hover { border-color: var(--green); color: var(--green); }
+    .sheet-col { position: sticky; top: 76px; }
+    .sheet-wrap { border-radius: var(--r-m); box-shadow: var(--shadow-2); background: #fff; padding: 6px; }
+    .sheet { border: 1.5px solid var(--line); border-radius: var(--r-s); padding: 22px 20px 18px; background: #fff; }
+    .sheet-brand { font: 700 15px var(--font-display); letter-spacing: .12em; color: var(--ink); }
+    .sheet-meta { display: grid; gap: 4px; margin: 14px 0 12px; }
+    .sheet-meta span { display: inline-block; min-width: 92px; font: 600 10.5px "Inter"; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+    .sheet-meta b { font: 600 13.5px "Inter"; color: var(--ink); }
+    .sheet-table { border-collapse: collapse; width: 100%; }
+    .sheet-table th { font: 700 10.5px "Inter"; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3); text-align: left; border-bottom: 1.5px solid var(--ink); padding: 0 0 6px; }
+    .sheet-table th.amt, .sheet-table td.amt { text-align: right; font-variant-numeric: tabular-nums; }
+    .sheet-table td { font: 500 13px "Inter"; color: var(--ink); padding: 7px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .sheet-table td.det { color: var(--ink-3); font-size: 12px; padding-top: 8px; }
+    .sheet-table .total-row td { border-bottom: 0; border-top: 2px solid var(--ink); font: 700 13.5px "Inter"; padding-top: 9px; }
+    .sheet-table .total-row .amt { font: 700 15px var(--font-display); }
+    .sheet-notes { font: 400 11.5px/1.55 "Inter"; color: var(--ink-3); margin: 12px 0 0; }
+    .sheet-sign { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 26px; }
+    .sheet-sign i { display: block; border-bottom: 1.5px solid var(--ink-2); height: 26px; }
+    .sheet-sign span { display: block; font: 500 10px "Inter"; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-3); margin-top: 5px; }
+    .actions { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+    .act {
+      flex: 1; min-width: 130px; height: 46px; border-radius: var(--r-s); cursor: pointer;
+      border: 1.5px solid var(--line-2); background: var(--card); color: var(--ink); font: 600 14px "Inter";
+    }
+    .act:hover { border-color: var(--green); color: var(--green); }
+    .act.primary { background: var(--green); border-color: var(--green); color: #FDFBF4; }
+    .act.primary:hover { background: var(--green-2); color: #FDFBF4; }
+    .fineprint { font-size: 12px; color: var(--ink-3); margin-top: 12px; line-height: 1.5; }
+    @media (max-width: 880px) {
+      .builder { grid-template-columns: minmax(0, 1fr); }
+      .sheet-col { position: static; }
+    }
+    @media (max-width: 480px) {
+      .meta-grid { grid-template-columns: minmax(0, 1fr); }
+      .rows-head { display: none; }
+      .est-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+      .est-row .svc { grid-column: 1 / -1; }
+    }
+    @media print {
+      .nav, .industry-hero, .form-col, .actions, .prose, .faq, .related, footer.site, .fineprint { display: none !important; }
+      body { background: #fff; }
+      .builder { display: block; margin: 0; padding: 0; }
+      .sheet-col { position: static; }
+      .sheet-wrap { box-shadow: none; padding: 0; border-radius: 0; }
+      .sheet { border: 0; padding: 0; }
+    }
+  </style>
+
+  <script>
+    // —— Lawn Care Estimate Generator：行项目 + 所见即所得报价单 ——
+    import { beaconUse } from '../../scripts/stats';
+
+    const money = (v: number) => '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    const uid = () => Math.random().toString(36).slice(2, 8);
+
+    interface Line { id: string; service: string; detail: string; amount: string }
+    let lines: Line[] = [
+      { id: uid(), service: 'Weekly mowing', detail: 'per visit $45 × 4.3', amount: '193' },
+      { id: uid(), service: 'Edging & string trimming', detail: 'included weekly', amount: '45' },
+      { id: uid(), service: 'Shrub trimming', detail: 'monthly', amount: '60' },
+    ];
+    let counted = false;
+    const countUse = () => { if (!counted) { counted = true; beaconUse('lawn-care-estimate-generator'); } };
+
+    function renderSheet() {
+      const client = (document.getElementById('client') as HTMLInputElement).value.trim();
+      const date = (document.getElementById('date') as HTMLInputElement).value.trim();
+      const notes = (document.getElementById('notes') as HTMLInputElement).value.trim();
+      let total = 0;
+      const sheetRows = lines
+        .filter((l) => l.service.trim() !== '' && (parseFloat(l.amount) || 0) > 0)
+        .map((l) => { total += parseFloat(l.amount) || 0; return `<tr><td>${esc(l.service)}</td><td class="det">${esc(l.detail)}</td><td class="amt">${money(parseFloat(l.amount) || 0)}</td></tr>`; })
+        .join('');
+      (document.getElementById('s-rows') as HTMLElement).innerHTML =
+        sheetRows || `<tr><td colspan="3" style="color:var(--ink-3);border-bottom:0">Add your first service on the left</td></tr>`;
+      (document.getElementById('s-total') as HTMLElement).textContent = money(total);
+      (document.getElementById('s-client') as HTMLElement).textContent = client || '—';
+      (document.getElementById('s-date') as HTMLElement).textContent = date || '—';
+      (document.getElementById('s-notes') as HTMLElement).textContent = notes;
+
+      try {
+        localStorage.setItem('mst-lawn-estimate', JSON.stringify({
+          client, date, notes, lines,
+        }));
+      } catch {}
+    }
+
+    // 行区域只在增删/恢复时重建——输入时整表 innerHTML 重建会丢焦点
+    function renderRows() {
+      const rows = document.getElementById('rows') as HTMLElement;
+      rows.innerHTML = lines.map((l, i) => `
+        <div class="est-row" data-i="${i}">
+          <input class="svc" value="${esc(l.service)}" data-k="service" data-id="${l.id}" placeholder="Weekly mowing" aria-label="Service name">
+          <input value="${esc(l.detail)}" data-k="detail" data-id="${l.id}" placeholder="per visit / monthly" aria-label="Detail">
+          <div class="amt-wrap"><i>$</i><input inputmode="decimal" value="${esc(l.amount)}" data-k="amount" data-id="${l.id}" placeholder="0.00" aria-label="Monthly amount"></div>
+          <button class="rm" data-rm="${l.id}" type="button" ${lines.length > 1 ? '' : 'hidden'}>Remove line</button>
+        </div>`).join('');
+    }
+    function render() { renderRows(); renderSheet(); }
+
+    document.getElementById('rows')!.addEventListener('input', (e) => {
+      const t = e.target as HTMLInputElement;
+      if (!t.dataset.k) return;
+      const line = lines.find((l) => l.id === t.dataset.id);
+      if (!line) return;
+      line[t.dataset.k as 'service' | 'detail' | 'amount'] = t.value;
+      countUse(); renderSheet();
+    });
+    document.getElementById('rows')!.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLElement>('[data-rm]');
+      if (!btn) return;
+      lines = lines.filter((l) => l.id !== btn.dataset.rm);
+      countUse(); render();
+    });
+    document.getElementById('add-row')!.addEventListener('click', () => {
+      lines.push({ id: uid(), service: '', detail: '', amount: '' });
+      countUse(); render();
+      const inputs = document.querySelectorAll<HTMLInputElement>('.est-row input.svc');
+      (inputs[inputs.length - 1] as HTMLInputElement).focus();
+    });
+    for (const id of ['client', 'date', 'notes']) {
+      document.getElementById(id)!.addEventListener('input', () => { countUse(); renderSheet(); });
+    }
+    document.getElementById('do-print')!.addEventListener('click', () => window.print());
+    document.getElementById('do-copy')!.addEventListener('click', () => {
+      let total = 0;
+      const rows = lines
+        .filter((l) => l.service.trim() && (parseFloat(l.amount) || 0) > 0)
+        .map((l) => { total += parseFloat(l.amount) || 0; return `- ${l.service} (${l.detail || '—'}) — ${money(parseFloat(l.amount) || 0)}/mo`; });
+      navigator.clipboard?.writeText(`Lawn care estimate${(document.getElementById('client') as HTMLInputElement).value ? ' — ' + (document.getElementById('client') as HTMLInputElement).value : ''}\n${rows.join('\n')}\nMonthly total: ${money(total)}`).catch(() => {});
+    });
+
+    // 草稿恢复;无草稿时日期预填今天
+    try {
+      const d = JSON.parse(localStorage.getItem('mst-lawn-estimate') ?? 'null') as
+        { client?: string; date?: string; notes?: string; lines?: Line[] } | null;
+      if (d?.lines?.length) {
+        lines = d.lines.filter((l) => l && typeof l === 'object').map((l) => ({ id: l.id || uid(), service: String(l.service ?? ''), detail: String(l.detail ?? ''), amount: String(l.amount ?? '') }));
+        (document.getElementById('client') as HTMLInputElement).value = d.client ?? '';
+        (document.getElementById('date') as HTMLInputElement).value = d.date ?? '';
+        (document.getElementById('notes') as HTMLInputElement).value = d.notes ?? 'Estimate valid for 30 days. Season runs roughly April–November.';
+      } else {
+        (document.getElementById('date') as HTMLInputElement).value =
+          new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      }
+    } catch {}
+    render();
+  </script>
+</BaseLayout>

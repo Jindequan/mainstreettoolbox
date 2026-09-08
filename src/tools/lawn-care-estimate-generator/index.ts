@@ -6,8 +6,8 @@ export default {
   industry: 'lawn',
   name: 'Lawn Care Estimate Generator',
   tagline: 'A season quote on one page. No signup.',
-  title: 'Lawn Care Estimate Generator — Free printable quotes',
-  description: 'Build a printable lawn care estimate: mowing, edging, cleanups as line items with a monthly and season total your client can sign. Free, no signup.',
+  title: 'Lawn Care Estimate Generator — Free Printable Estimate Template | Main Street Toolbox',
+  description: 'Build a printable lawn care estimate template: itemized services, monthly total, season note and signature lines your client can sign on the spot. Free, no signup.',
   result: { label: 'Monthly total' },
   fields: [
     { id: 'client', label: 'Client name', kind: 'text', default: '', placeholder: 'Client or property name' },
@@ -45,8 +45,10 @@ export default {
     <p>Print two copies: the client signs one, you keep one. A signed estimate is the cheapest contract you will
     ever hold.</p>`,
   faq: [
+    { q: 'What should be included in a lawn care estimate?', a: 'Your business name and the client or property name, the date, each service as its own line with the frequency in the detail (weekly mowing, monthly shrub trimming), a monthly total, the season length, how long the estimate is valid — 30 days is standard — and signature lines for both sides.' },
     { q: 'Should lawn care be quoted per visit or monthly?', a: 'Monthly. It smooths your income across the 4-visit and 5-visit months and reads as simpler to the client. Keep the per-visit equivalent on the estimate for transparency.' },
     { q: 'How do I price extras like mulch or leaf removal?', a: 'As separate lines on the same estimate — never folded into the mowing price. It keeps the base price clean and makes upsells visible.' },
+    { q: 'Is an estimate a contract?', a: 'A signed estimate functions like a lightweight agreement: it records scope and price, and courts generally treat it as evidence of the deal. For season-long work, add start and end dates to the notes so both sides know when it renews.' },
   ],
-  related: ['lawn-mowing-price-calculator', 'contractor-hourly-rate-calculator', 'cleaning-invoice-generator'],
+  related: ['lawn-mowing-price-calculator', 'cleaning-invoice-generator', 'contractor-hourly-rate-calculator'],
 } as RegisteredTool;

@@ -1,0 +1,339 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Lawn Mowing Cost Calculator — Free Price Tool | Main Street Toolbox"
+  description="How much to charge for lawn mowing: enter lot size, terrain and frequency for a per-visit, monthly and season price against 2026 US rates. Free, instant, no signup."
+  path="/lawn/lawn-mowing-price-calculator/"
+>
+  <div class="industry-hero">
+    <div class="industry-hero-bg" style="background-image:linear-gradient(rgba(250,247,240,.85), rgba(250,247,240,.06)), url('/images/lawn.jpg')"></div>
+    <div class="container head">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/lawn">Lawn Care</a> / <b style="color:var(--ink)">Lawn Mowing Cost Calculator</b></p>
+      <h1>Lawn Mowing Cost Calculator</h1>
+      <p class="sub">Size, terrain, frequency — get the price per mow, per month and per season against what crews actually book in 2026. Free, no signup.</p>
+    </div>
+  </div>
+
+  <main class="container builder">
+    <!-- 左:这块地长什么样 -->
+    <section class="job card card-pad" aria-label="Describe the lawn">
+      <h2 class="step-lbl"><span>1</span> Lot size</h2>
+      <div class="size-row">
+        <div class="size-input">
+          <input id="lotsize" type="text" inputmode="numeric" value="6,000" autocomplete="off" aria-label="Lot size in square feet" />
+          <span class="unit">sq ft</span>
+        </div>
+        <div class="acres" id="acres-out">≈ 0.14 acres</div>
+      </div>
+      <div class="size-chips">
+        <button class="schip" data-sqft="4000" type="button">Small · 4k</button>
+        <button class="schip" data-sqft="6000" type="button">Medium · 6k</button>
+        <button class="schip" data-sqft="12000" type="button">Large · 12k</button>
+        <button class="schip" data-sqft="21780" type="button">½ acre</button>
+        <button class="schip" data-sqft="43560" type="button">1 acre</button>
+      </div>
+
+      <h2 class="step-lbl"><span>2</span> Terrain</h2>
+      <div class="terrain-chips" role="radiogroup" aria-label="Terrain">
+        <button class="chip" data-terrain="flat" type="button" aria-pressed="true">
+          <b>Flat, open</b><span> straightforward passes</span>
+        </button>
+        <button class="chip" data-terrain="slope" type="button" aria-pressed="false">
+          <b>Some slopes</b><span> slower, +15%</span>
+        </button>
+        <button class="chip" data-terrain="steep" type="button" aria-pressed="false">
+          <b>Steep &amp; obstacles</b><span> trimmer work, +30%</span>
+        </button>
+      </div>
+
+      <h2 class="step-lbl" id="freq-lbl"><span>3</span> How often</h2>
+      <div class="freq-seg" role="radiogroup" aria-labelledby="freq-lbl">
+        <button class="seg" data-freq="weekly" type="button" aria-pressed="true">Weekly</button>
+        <button class="seg" data-freq="biweekly" type="button" aria-pressed="false">Every 2 weeks</button>
+        <button class="seg" data-freq="onetime" type="button" aria-pressed="false">One-time</button>
+      </div>
+      <p class="freq-note" id="freq-note" hidden>First cuts on overgrown lots carry a one-time premium — quote the regular weekly rate from visit two.</p>
+    </section>
+
+    <!-- 右:报价卡 -->
+    <aside class="quote card" aria-live="polite">
+      <div class="quote-body card-pad">
+        <div class="job-line" id="job-line">0.14 acres · flat · weekly</div>
+        <div class="result-lbl">Price per mow</div>
+        <div class="quote-num" id="r-visit">$40</div>
+        <div class="quote-subs" id="r-subs">
+          <span>Per month <b>$173.20 (weekly)</b></span>
+          <span>Per season (8 months) <b>$1,385.60</b></span>
+          <span>Rate <b>$0.007 / sq ft</b></span>
+        </div>
+        <div class="gauge">
+          <div class="gauge-scale" aria-hidden="true">
+            <span class="zone-ok" style="left:7.7%;width:42.3%"></span>
+            <span class="marker" id="g-marker" style="left:calc(15.4% - 2px)"></span>
+          </div>
+          <div class="gauge-labels"><span>$20</span><span>your price lands here</span><span>$150</span></div>
+        </div>
+        <div class="verdict info" data-level="info"><span>ℹ</span> <span id="r-verdict">$40 per mow sits inside the typical $30–85 residential band.</span></div>
+        <div class="actions">
+          <button class="act primary" id="do-copy" type="button">Copy quote</button>
+          <a class="act" href="/lawn/lawn-care-estimate-generator/">Make it an estimate →</a>
+        </div>
+        <p class="fineprint">2026 residential band: $30–85 per mow, about $50 average. Wide-open acreage prices per acre ($60–100 weekly); obstacles and gates push any lot up a tier.</p>
+      </div>
+    </aside>
+  </main>
+
+  <section class="container prose">
+    <h2>2026 US lawn mowing prices</h2>
+    <p>The national average sits near <b>$50 per mow</b>, with most residential visits between <b>$30 and $85</b>.
+    Size drives the range, terrain and drive time decide which end you land on.</p>
+    <table>
+      <thead><tr><th>Lawn size</th><th>Typical weekly rate (2026)</th><th>One-time / first cut</th></tr></thead>
+      <tbody>
+        <tr><td>Under ¼ acre (~10,000 sq ft)</td><td>$41–65</td><td>add 30–50%</td></tr>
+        <tr><td>¼–½ acre (10,900–21,800 sq ft)</td><td>$49–120</td><td>add 30–50%</td></tr>
+        <tr><td>1 acre+</td><td>$60–100 per acre</td><td>add 30–50%</td></tr>
+        <tr><td>Hourly equivalent</td><td>$60–150 per hour</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <h2>How to price a mowing job</h2>
+    <p>Start with a <b>base that pays the truck</b> — loading, drive time, unloading, roughly $20–30 no matter
+    the lawn. Add the area at <b>about ¼¢ per square foot</b> for flat ground, then let terrain push it:
+    slopes and fence lines cost 15–30% more time. Weekly clients pay the base rate; every-2-weeks cuts come
+    <b>~25% heavier</b>, so each one prices higher even though the month totals less.</p>
+    <p>The pricing rule that keeps mowing profitable: <b>sell the season, bill per visit</b>. A $40 weekly
+    account is $1,385 of season income on a route you already drive — a one-time $55 cut two towns over often
+    pays less per hour once the drive counts.</p>
+
+    <h2>Overgrown lots are a different job</h2>
+    <p>A lawn that's gone two or three weeks past ankle height needs double-passing, string-trimming and
+    bagging — quote it as a <b>one-time reset at +30–50%</b>, then quote the regular weekly rate from the
+    second visit. Clients accept a reset price when you explain it once; they resent discovering it inside a
+    recurring price.</p>
+
+    <h2>Turn the number into paperwork</h2>
+    <p>The <a href="/lawn/lawn-care-estimate-generator/">Lawn Care Estimate Generator</a> turns this price into a
+    one-page estimate with service lines, the monthly total and signature lines — free and printable. Pricing
+    your own hour first? The <a href="/lawn/contractor-hourly-rate-calculator/">Contractor Hourly Rate
+    Calculator</a> works backward from the income you need. Quoting mulch beds while you're on site? The
+    <a href="/lawn/mulch-calculator/">Mulch Calculator</a> gives bags and yards on the spot.</p>
+  </section>
+
+  <section class="container faq">
+    <h2>Questions owners ask</h2>
+    <details><summary>How much should I charge to mow a lawn?</summary><p>Most residential mows land between $30 and $85 per visit in 2026, averaging around $50. Small flat lots under 5,000 sq ft can go lower; large or steep properties justify $75 and up.</p></details>
+    <details><summary>How much is lawn mowing per acre?</summary><p>Per-acre mowing runs $60–100 per acre for weekly service and $80–150 per acre biweekly, since each cut comes heavier. Wide-open acreage prices lower per acre than obstacle-filled grounds.</p></details>
+    <details><summary>Is it better to charge weekly or per cut?</summary><p>Sell the season, bill per visit. A weekly agreement at a slightly lower per-cut price beats one-time cuts because the route density pays your drive time.</p></details>
+    <details><summary>How do I price overgrown lots?</summary><p>Treat a first mow on an overgrown lot as a one-time reset: add 30–50% for the extra passes and string-trimming, then quote the regular weekly rate from the second visit.</p></details>
+    <details><summary>How often should lawns be mowed?</summary><p>Weekly in spring, every 1–2 weeks in summer depending on rain and growth, and biweekly in fall. Never cut more than a third of the grass blade in one pass — that rule is what drives the calendar.</p></details>
+  </section>
+
+  <section class="related">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:0;padding-top:28px"><h2 style="font-size:1.2rem">Related tools</h2></div>
+      <div class="related-grid">
+        <a href="/lawn/lawn-care-estimate-generator/">Lawn Care Estimate Generator</a>
+        <a href="/lawn/mulch-calculator/">Mulch Calculator</a>
+        <a href="/lawn/contractor-hourly-rate-calculator/">Contractor Hourly Rate Calculator</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How much should I charge to mow a lawn?', acceptedAnswer: { '@type': 'Answer', text: 'Most residential mows land between $30 and $85 per visit in 2026, averaging around $50. Small flat lots under 5,000 sq ft can go lower; large or steep properties justify $75 and up.' } },
+      { '@type': 'Question', name: 'How much is lawn mowing per acre?', acceptedAnswer: { '@type': 'Answer', text: 'Per-acre mowing runs $60–100 per acre for weekly service and $80–150 per acre biweekly. Wide-open acreage prices lower per acre than obstacle-filled grounds.' } },
+      { '@type': 'Question', name: 'Is it better to charge weekly or per cut?', acceptedAnswer: { '@type': 'Answer', text: 'Sell the season, bill per visit. A weekly agreement at a slightly lower per-cut price beats one-time cuts because the route density pays your drive time.' } },
+      { '@type': 'Question', name: 'How do I price overgrown lots?', acceptedAnswer: { '@type': 'Answer', text: 'Treat a first mow on an overgrown lot as a one-time reset: add 30–50% for the extra passes and string-trimming, then quote the regular weekly rate from the second visit.' } },
+      { '@type': 'Question', name: 'How often should lawns be mowed?', acceptedAnswer: { '@type': 'Answer', text: 'Weekly in spring, every 1–2 weeks in summer depending on rain and growth, and biweekly in fall. Never cut more than a third of the grass blade in one pass.' } },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Lawn Mowing Cost Calculator',
+    url: new URL('/lawn/lawn-mowing-price-calculator/', Astro.site).toString(),
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  })} />
+
+  <style is:global>
+    .head { padding: 36px 24px 10px; }
+    .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
+    .head .sub { color: var(--ink-2); font-size: 1.0625rem; max-width: 38rem; }
+    .builder {
+      display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 20px;
+      align-items: start; padding-bottom: 44px; margin-top: 18px;
+    }
+    .step-lbl {
+      display: flex; align-items: center; gap: 9px;
+      font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+      color: var(--ink-3); margin: 22px 0 10px;
+    }
+    .step-lbl:first-child { margin-top: 0; }
+    .step-lbl span {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 21px; height: 21px; border-radius: 50%;
+      background: var(--green-tint); color: var(--green-2); font-size: 11.5px; font-weight: 700;
+    }
+    .size-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .size-input {
+      display: flex; align-items: baseline; gap: 8px;
+      border: 2px solid var(--green); border-radius: var(--r-m); background: var(--card);
+      padding: 4px 14px; box-shadow: var(--shadow-1);
+    }
+    .size-input:focus-within { box-shadow: 0 0 0 4px var(--green-tint); }
+    .size-input input {
+      width: 9ch; border: 0; outline: 0; background: none;
+      font: 640 2.1rem var(--font-display); color: var(--ink); padding: 6px 0;
+      font-variant-numeric: tabular-nums;
+    }
+    .size-input .unit { font: 600 14px "Inter"; color: var(--ink-3); }
+    .acres { font: 600 13.5px "Inter"; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+    .size-chips { display: flex; gap: 7px; margin-top: 10px; flex-wrap: wrap; }
+    .schip {
+      height: 32px; padding: 0 12px; border: 1.5px solid var(--line-2); border-radius: 999px;
+      background: var(--card); font: 600 12.5px "Inter"; color: var(--ink-2); cursor: pointer;
+    }
+    .schip:hover { border-color: var(--green); color: var(--green); }
+    .terrain-chips { display: grid; gap: 8px; }
+    .chip {
+      display: grid; gap: 2px; text-align: left; cursor: pointer;
+      border: 1.5px solid var(--line-2); border-radius: var(--r-m);
+      background: var(--card); padding: 11px 14px;
+    }
+    .chip b { font: 600 14.5px "Inter"; color: var(--ink); }
+    .chip span { font-size: 12.5px; color: var(--ink-3); }
+    .chip[aria-pressed="true"] { border-color: var(--green); background: var(--green-tint); box-shadow: var(--shadow-1); }
+    .chip[aria-pressed="true"] span { color: var(--ink-2); }
+    .freq-seg { display: flex; border: 1.5px solid var(--line-2); border-radius: var(--r-m); overflow: hidden; background: var(--card); }
+    .seg {
+      flex: 1; height: 42px; border: 0; background: none; cursor: pointer;
+      font: 600 13.5px "Inter"; color: var(--ink-2); border-right: 1.5px solid var(--line);
+    }
+    .seg:last-child { border-right: 0; }
+    .seg[aria-pressed="true"] { background: var(--green); color: #FDFBF4; }
+    .freq-note { font-size: 12.5px; color: var(--ink-3); margin-top: 8px; }
+    .quote { position: sticky; top: 76px; box-shadow: var(--shadow-2); border-radius: var(--r-m); }
+    .job-line { font: 600 12px "Inter"; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 10px; }
+    .quote-num { font: 640 clamp(2.1rem, 5vw, 2.8rem)/1.1 var(--font-display); color: var(--green-2); font-variant-numeric: tabular-nums; margin-top: 2px; }
+    .quote-subs { display: grid; gap: 4px; margin-top: 10px; font-size: 13.5px; color: var(--ink-2); }
+    .quote-subs b { color: var(--ink); font-variant-numeric: tabular-nums; }
+    .quote .verdict { margin-top: 14px; }
+    .quote .verdict.info { background: var(--paper-2); color: var(--ink-2); }
+    .actions { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+    .act {
+      flex: 1; min-width: 130px; height: 46px; border-radius: var(--r-s); cursor: pointer;
+      border: 1.5px solid var(--line-2); background: var(--card); color: var(--ink); font: 600 14px "Inter";
+      display: inline-flex; align-items: center; justify-content: center; text-decoration: none;
+    }
+    .act:hover { border-color: var(--green); color: var(--green); }
+    .act.primary { background: var(--green); border-color: var(--green); color: #FDFBF4; }
+    .act.primary:hover { background: var(--green-2); color: #FDFBF4; }
+    .fineprint { font-size: 12px; color: var(--ink-3); margin-top: 12px; line-height: 1.5; }
+    @media (max-width: 880px) {
+      .builder { grid-template-columns: minmax(0, 1fr); }
+      .quote { position: static; }
+    }
+  </style>
+
+  <script>
+    // —— Lawn Mowing Cost Calculator：与 engines/quote.ts calcMowingPrice 同一套数学 ——
+    import { beaconUse } from '../../scripts/stats';
+
+    const money = (v: number) => '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const BASE = 25, RATE = 0.0025;
+    const TERRAIN_MULT: Record<string, number> = { flat: 1, slope: 1.15, steep: 1.3 };
+    const TERRAIN_NAME: Record<string, string> = { flat: 'flat', slope: 'some slopes', steep: 'steep & obstacles' };
+    const FREQ_MULT: Record<string, number> = { weekly: 1, biweekly: 1.25, onetime: 1.4 };
+    const FREQ_VISITS: Record<string, number> = { weekly: 4.33, biweekly: 2.17, onetime: 1 };
+    const FREQ_NAME: Record<string, string> = { weekly: 'weekly', biweekly: 'every 2 weeks', onetime: 'one-time' };
+
+    const state = { sqft: 6000, terrain: 'flat', freq: 'weekly' };
+    let counted = false;
+    const countUse = () => { if (!counted) { counted = true; beaconUse('lawn-mowing-price-calculator'); } };
+    const fmtInt = (v: number) => v.toLocaleString('en-US');
+
+    function render() {
+      const sqft = state.sqft;
+      let visit = (BASE + sqft * RATE) * (TERRAIN_MULT[state.terrain] ?? 1);
+      visit *= FREQ_MULT[state.freq] ?? 1;
+      const perVisit = Math.round(visit);
+      const monthly = perVisit * (FREQ_VISITS[state.freq] ?? 1);
+
+      document.getElementById('job-line')!.textContent =
+        `${(sqft / 43560).toFixed(2)} acres · ${TERRAIN_NAME[state.terrain]} · ${FREQ_NAME[state.freq]}`;
+      document.getElementById('r-visit')!.textContent = '$' + fmtInt(perVisit);
+      (document.getElementById('r-subs') as HTMLElement).innerHTML =
+        `<span>Per month <b>${money(monthly)}${state.freq !== 'onetime' ? ` (${state.freq})` : ''}</b></span>` +
+        `<span>Per season (8 months) <b>${money(monthly * 8)}</b></span>` +
+        `<span>Rate <b>$${(perVisit / sqft).toFixed(3)} / sq ft</b></span>`;
+
+      const pct = Math.min(100, Math.max(0, ((perVisit - 20) / (150 - 20)) * 100));
+      (document.getElementById('g-marker') as HTMLElement).style.left = `calc(${pct}% - 2px)`;
+
+      const v = document.getElementById('r-verdict') as HTMLElement;
+      if (perVisit < 30) { v.textContent = `${'$' + fmtInt(perVisit)} is below the usual $30–85 band — you may be undercutting your own drive time.`; }
+      else if (perVisit > 120) { v.textContent = `${'$' + fmtInt(perVisit)} is above the common band — fine for estates, a hard sell for standard lots.`; }
+      else { v.textContent = `${'$' + fmtInt(perVisit)} per mow sits inside the typical $30–85 residential band.`; }
+
+      document.getElementById('acres-out')!.textContent = `≈ ${(sqft / 43560).toFixed(2)} acres`;
+      document.querySelectorAll<HTMLElement>('.terrain-chips .chip').forEach((c) =>
+        c.setAttribute('aria-pressed', String(c.dataset.terrain === state.terrain)));
+      document.querySelectorAll<HTMLElement>('.freq-seg .seg').forEach((s) =>
+        s.setAttribute('aria-pressed', String(s.dataset.freq === state.freq)));
+      (document.getElementById('freq-note') as HTMLElement).hidden = state.freq !== 'onetime';
+
+      try { localStorage.setItem('mst-mowing-price', JSON.stringify(state)); } catch {}
+    }
+
+    const lotInput = document.getElementById('lotsize') as HTMLInputElement;
+    lotInput.addEventListener('input', () => {
+      const n = parseInt(lotInput.value.replace(/[^0-9]/g, ''), 10);
+      state.sqft = Number.isFinite(n) ? Math.min(200000, Math.max(500, n)) : 500;
+      countUse(); render();
+    });
+    lotInput.addEventListener('blur', () => { lotInput.value = fmtInt(state.sqft); });
+    lotInput.addEventListener('focus', () => { lotInput.value = String(state.sqft); });
+
+    document.querySelector('.size-chips')!.addEventListener('click', (e) => {
+      const chip = (e.target as HTMLElement).closest<HTMLElement>('.schip');
+      if (!chip) return;
+      state.sqft = Number(chip.dataset.sqft);
+      lotInput.value = fmtInt(state.sqft);
+      countUse(); render();
+    });
+    document.querySelector('.terrain-chips')!.addEventListener('click', (e) => {
+      const chip = (e.target as HTMLElement).closest<HTMLElement>('.chip');
+      if (!chip) return;
+      state.terrain = chip.dataset.terrain!;
+      countUse(); render();
+    });
+    document.querySelector('.freq-seg')!.addEventListener('click', (e) => {
+      const seg = (e.target as HTMLElement).closest<HTMLElement>('.seg');
+      if (!seg) return;
+      state.freq = seg.dataset.freq!;
+      countUse(); render();
+    });
+    document.getElementById('do-copy')!.addEventListener('click', () => {
+      const visit = (document.getElementById('r-visit') as HTMLElement).textContent;
+      const job = (document.getElementById('job-line') as HTMLElement).textContent;
+      navigator.clipboard?.writeText(`Lawn mowing quote — ${job}\nPrice per mow: ${visit}\nFrom mainstreettoolbox.com — free lawn care calculators`).catch(() => {});
+    });
+
+    try {
+      const d = JSON.parse(localStorage.getItem('mst-mowing-price') ?? 'null') as typeof state | null;
+      if (d && ['flat', 'slope', 'steep'].includes(d.terrain) && ['weekly', 'biweekly', 'onetime'].includes(d.freq)) {
+        state.terrain = d.terrain; state.freq = d.freq;
+        state.sqft = Math.min(200000, Math.max(500, Math.round(Number(d.sqft) || 6000)));
+      }
+    } catch {}
+    lotInput.value = fmtInt(state.sqft);
+    render();
+  </script>
+</BaseLayout>
