@@ -54,5 +54,5 @@ export default {
     { q: 'What is keystone pricing?', a: 'Keystone is the old retail rule of doubling the wholesale cost: buy at $12, ticket it at $24. It is a 100% markup but only a 50% margin — the other half covers rent, payroll and shrink. It works when turns are slow and value is hard to compare; it fails on commodity items customers can price-check.' },
     { q: 'How deep can I discount and still profit?', a: 'A 50%-margin item survives a 20% discount only if volume rises about 67%. Check the margin first, the volume second — most clearance loses money twice: once on the discount, once on the space it holds.' },
   ],
-  related: ['food-cost-percentage-calculator', 'profit-margin-calculator', 'break-even-calculator', 'menu-pricing-calculator'],
+  related: ['retail-math-calculator', 'food-cost-percentage-calculator', 'profit-margin-calculator', 'break-even-calculator', 'menu-pricing-calculator'],
 } as RegisteredTool;

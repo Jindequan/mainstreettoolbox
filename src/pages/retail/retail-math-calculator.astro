@@ -1,0 +1,395 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Retail Math Calculator & Cheat Sheet — Free | Main Street Toolbox"
+  description="Retail math, live: price from cost, markup ⇄ margin, markdown check, sell-through and break-even — plus a printable one-page cheat sheet. Free, no signup."
+  path="/retail/retail-math-calculator/"
+>
+  <div class="industry-hero">
+    <div class="industry-hero-bg" style="background-image:linear-gradient(rgba(250,247,240,.85), rgba(250,247,240,.06)), url('/images/retail.jpg')"></div>
+    <div class="container head">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/retail">Retail</a> / <b style="color:var(--ink)">Retail Math Calculator</b></p>
+      <h1>Retail Math Calculator</h1>
+      <p class="sub">The formulas a shop runs on — price, markup, margin, markdown, sell-through, break-even — all live. Print the cheat sheet for the stockroom wall.</p>
+    </div>
+  </div>
+
+  <main class="container workbench">
+    <!-- 1 · 价格三角 -->
+    <section class="mod card card-pad" aria-label="Price from cost">
+      <h2 class="mod-lbl"><span>1</span> Price from cost</h2>
+      <div class="flds">
+        <div class="fld"><label for="p-cost">Cost</label><div class="money"><i>$</i><input id="p-cost" inputmode="decimal" value="10" /></div></div>
+        <div class="fld"><label for="p-mode">I know the</label>
+          <select id="p-mode">
+            <option value="markup" selected>Markup %</option>
+            <option value="margin">Margin %</option>
+            <option value="price">Price</option>
+          </select>
+        </div>
+        <div class="fld"><label for="p-val" id="p-val-lbl">Markup %</label><input id="p-val" inputmode="decimal" value="100" /></div>
+      </div>
+      <div class="outs">
+        <div class="out big"><span>Shelf price</span><b id="p-price">$20.00</b></div>
+        <div class="out"><span>Profit / unit</span><b id="p-profit">$10.00</b></div>
+        <div class="out"><span>Markup</span><b id="p-markup">100%</b></div>
+        <div class="out"><span>Margin</span><b id="p-margin">50%</b></div>
+      </div>
+      <p class="mod-note" id="p-note"></p>
+    </section>
+
+    <!-- 2 · Markdown 体检 -->
+    <section class="mod card card-pad" aria-label="Markdown check">
+      <h2 class="mod-lbl"><span>2</span> Markdown check</h2>
+      <div class="flds">
+        <div class="fld"><label for="m-cost">Cost</label><div class="money"><i>$</i><input id="m-cost" inputmode="decimal" value="10" /></div></div>
+        <div class="fld"><label for="m-orig">Ticket price</label><div class="money"><i>$</i><input id="m-orig" inputmode="decimal" value="20" /></div></div>
+        <div class="fld"><label for="m-off">Discount %</label><input id="m-off" inputmode="decimal" value="20" /></div>
+      </div>
+      <div class="outs">
+        <div class="out big"><span>Sale price</span><b id="m-sale">$16.00</b></div>
+        <div class="out"><span>Margin at sale</span><b id="m-margin">37.5%</b></div>
+        <div class="out wide"><span>Units to hold profit</span><b id="m-lift">+67%</b></div>
+      </div>
+      <p class="mod-note" id="m-note">A 50% margin survives a 20% cut only if volume rises 67% — run it when the shelf is full and traffic is up.</p>
+    </section>
+
+    <!-- 3 · 售罄率 -->
+    <section class="mod card card-pad" aria-label="Sell-through">
+      <h2 class="mod-lbl"><span>3</span> Sell-through</h2>
+      <div class="flds">
+        <div class="fld"><label for="s-recv">Units received</label><input id="s-recv" inputmode="numeric" value="120" /></div>
+        <div class="fld"><label for="s-sold">Units sold</label><input id="s-sold" inputmode="numeric" value="78" /></div>
+        <div class="fld"><label for="s-weeks">Weeks on shelf</label><input id="s-weeks" inputmode="decimal" value="4" /></div>
+      </div>
+      <div class="outs">
+        <div class="out big"><span>Sell-through</span><b id="s-pct">65%</b></div>
+        <div class="out"><span>Per week</span><b id="s-rate">19.5 units</b></div>
+        <div class="out"><span>Weeks of stock left</span><b id="s-left">2.2</b></div>
+      </div>
+      <p class="mod-note" id="s-note"></p>
+    </section>
+
+    <!-- 4 · 保本点 -->
+    <section class="mod card card-pad" aria-label="Break-even">
+      <h2 class="mod-lbl"><span>4</span> Break-even</h2>
+      <div class="flds">
+        <div class="fld"><label for="b-fixed">Fixed costs / month</label><div class="money"><i>$</i><input id="b-fixed" inputmode="decimal" value="3200" /></div></div>
+        <div class="fld"><label for="b-price">Avg price</label><div class="money"><i>$</i><input id="b-price" inputmode="decimal" value="20" /></div></div>
+        <div class="fld"><label for="b-cost">Unit cost</label><div class="money"><i>$</i><input id="b-cost" inputmode="decimal" value="12" /></div></div>
+      </div>
+      <div class="outs">
+        <div class="out big"><span>Units to break even</span><b id="b-units">400</b></div>
+        <div class="out"><span>Revenue to break even</span><b id="b-rev">$8,000.00</b></div>
+        <div class="out"><span>Per day (open 26)</span><b id="b-day">≈ 15.4 units</b></div>
+      </div>
+      <p class="mod-note" id="b-note"></p>
+    </section>
+
+    <!-- Cheat sheet CTA -->
+    <section class="cheat-cta card card-pad">
+      <h2>Print the cheat sheet</h2>
+      <p>One page, all the formulas, your numbers filled in — price and margin conversions, the keystone table,
+      markdown, sell-through, turnover, GMROI and break-even. Pin it inside the stockroom door.</p>
+      <button class="act primary" id="do-print" type="button">Print cheat sheet (PDF)</button>
+    </section>
+  </main>
+
+  <!-- 打印专用:一页 cheat sheet -->
+  <div class="cheatsheet" id="cheatsheet" aria-hidden="true">
+    <div class="cs-brand">RETAIL MATH — CHEAT SHEET</div>
+    <div class="cs-cols">
+      <div>
+        <h3>Price · markup · margin</h3>
+        <p>price = cost × (1 + markup%)</p>
+        <p>price = cost ÷ (1 − margin%)</p>
+        <p>markup% = (price − cost) ÷ cost</p>
+        <p>margin% = (price − cost) ÷ price</p>
+        <p>margin% = markup% ÷ (100% + markup%)</p>
+        <table>
+          <thead><tr><th>Cost</th><th>Keystone</th><th>Margin</th></tr></thead>
+          <tbody>
+            <tr><td>$5</td><td>$10</td><td>50%</td></tr>
+            <tr><td>$12</td><td>$24</td><td>50%</td></tr>
+            <tr><td>$25</td><td>$50</td><td>50%</td></tr>
+          </tbody>
+        </table>
+        <h3>Markdown</h3>
+        <p>markdown% = (ticket − sale) ÷ ticket</p>
+        <p>lift to hold profit = discount ÷ (margin − discount)</p>
+      </div>
+      <div>
+        <h3>Stock</h3>
+        <p>sell-through = sold ÷ received</p>
+        <p>turnover = COGS ÷ avg inventory (cost)</p>
+        <p>GMROI = gross margin $ ÷ avg inventory cost</p>
+        <h3>Break-even</h3>
+        <p>units = fixed costs ÷ (price − unit cost)</p>
+        <h3>Your numbers today</h3>
+        <p id="cs-yours" style="white-space:pre-line"></p>
+      </div>
+    </div>
+    <div class="cs-foot">mainstreettoolbox.com/retail/retail-math-calculator — free calculators for small shops</div>
+  </div>
+
+  <section class="container prose">
+    <h2>The four numbers retail runs on</h2>
+    <p>Cost, price, markup, margin — and two conversions between them. <b>Markup works from cost</b>
+    (price = cost × (1 + markup)); <b>margin works from price</b> (price = cost ÷ (1 − margin)). They are the
+    same dollars seen from two ends: a $10 cost ticketed at $20 is a 100% markup and a 50% margin. The classic
+    mistake is quoting "a 20% margin" for a 20% markup — that's actually a 16.7% margin, and rent doesn't care
+    which one you meant.</p>
+    <p>Keystone — doubling cost — is the traditional floor for gifts, décor and apparel. Groceries and
+    hardware run far lower and live on turns. Know your category before you set the percentage.</p>
+
+    <h2>Is the stock moving?</h2>
+    <p><b>Sell-through</b> reads the buy: units sold ÷ units received. Seasonal goods aiming for roughly
+    40–60% by mid-season and 70–80%+ by season end exit without heavy markdowns. <b>Turnover</b> reads the
+    year: COGS ÷ average inventory at cost — how many times the shelf empties and refills. <b>GMROI</b> merges
+    the two: margin dollars per inventory dollar. When sell-through stalls, the Markdown module above tells
+    you what the discount will really cost — check it <em>before</em> printing the sale signs.</p>
+
+    <h2>Go deeper per formula</h2>
+    <p>The <a href="/retail/retail-markup-calculator/">Retail Markup Calculator</a> works the price triangle in
+    depth; the <a href="/retail/discount-profit-calculator/">Discount Profit Calculator</a> shows what a sale
+    must sell to pay for itself; the <a href="/retail/profit-margin-calculator/">Profit Margin Calculator</a>
+    reads the whole month; and the <a href="/restaurant/break-even-calculator/">Break-Even Calculator</a>
+    plans the full year. Counting the stock itself? The <a href="/retail/inventory-count-sheet/">Inventory
+    Count Sheet</a> prints free.</p>
+  </section>
+
+  <section class="container faq">
+    <h2>Questions owners ask</h2>
+    <details><summary>What is retail math?</summary><p>The set of formulas retailers use to price and buy: cost-to-price conversions (markup and margin), markdown math, sell-through, inventory turnover, GMROI and break-even. It is arithmetic, but the ratios — not the adding — are what decide whether a shop makes money.</p></details>
+    <details><summary>What is the difference between retail math and basic math?</summary><p>Basic math is the arithmetic itself; retail math is the specific ratios retailers run constantly — markup vs margin, units vs dollars, stock vs sales. Two people can both do basic math and still price a $10 cost at $12 thinking it is a "20% margin" when it is a 20% markup and a 16.7% margin.</p></details>
+    <details><summary>How do I calculate retail price from cost?</summary><p>From a markup: price = cost × (1 + markup). From a margin: price = cost ÷ (1 − margin). A $10 item at a 100% markup and at a 50% margin both land at $20. The Retail Markup Calculator works this problem in depth.</p></details>
+    <details><summary>What is a good sell-through rate?</summary><p>For seasonal goods, roughly 40–60% by mid-season and 70–80%+ by season end is the usual target — enough to exit the season without heavy markdowns. Below that, the buy was too deep; far above, you likely sold out early and left sales on the table.</p></details>
+    <details><summary>What is GMROI?</summary><p>Gross Margin Return on Inventory Investment: gross margin dollars ÷ average inventory cost. It answers "how many dollars of margin does each inventory dollar earn per year" — many independent shops aim for roughly $2.50–$3.00 or better, but the number only means something against your own trend and category.</p></details>
+    <details><summary>How deep can I discount and still profit?</summary><p>A 50%-margin item survives a 20% discount only if unit volume rises about 67%. The Markdown module above shows the lift your own margin needs — check it before the sale, not during it.</p></details>
+  </section>
+
+  <section class="related">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:0;padding-top:28px"><h2 style="font-size:1.2rem">Related tools</h2></div>
+      <div class="related-grid">
+        <a href="/retail/retail-markup-calculator/">Retail Markup Calculator</a>
+        <a href="/retail/discount-profit-calculator/">Discount Profit Calculator</a>
+        <a href="/retail/profit-margin-calculator/">Profit Margin Calculator</a>
+        <a href="/retail/inventory-count-sheet/">Inventory Count Sheet</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is retail math?', acceptedAnswer: { '@type': 'Answer', text: 'The set of formulas retailers use to price and buy: cost-to-price conversions (markup and margin), markdown math, sell-through, inventory turnover, GMROI and break-even.' } },
+      { '@type': 'Question', name: 'What is the difference between retail math and basic math?', acceptedAnswer: { '@type': 'Answer', text: 'Basic math is the arithmetic; retail math is the specific ratios retailers run constantly — markup vs margin, units vs dollars, stock vs sales. A 20% markup on a $10 cost is a 16.7% margin, not a 20% margin.' } },
+      { '@type': 'Question', name: 'How do I calculate retail price from cost?', acceptedAnswer: { '@type': 'Answer', text: 'From a markup: price = cost × (1 + markup). From a margin: price = cost ÷ (1 − margin). A $10 item at a 100% markup and at a 50% margin both land at $20.' } },
+      { '@type': 'Question', name: 'What is a good sell-through rate?', acceptedAnswer: { '@type': 'Answer', text: 'For seasonal goods, roughly 40–60% by mid-season and 70–80%+ by season end is the usual target — enough to exit the season without heavy markdowns.' } },
+      { '@type': 'Question', name: 'What is GMROI?', acceptedAnswer: { '@type': 'Answer', text: 'Gross Margin Return on Inventory Investment: gross margin dollars ÷ average inventory cost — how many dollars of margin each inventory dollar earns per year. Many independent shops aim for roughly $2.50–$3.00 or better.' } },
+      { '@type': 'Question', name: 'How deep can I discount and still profit?', acceptedAnswer: { '@type': 'Answer', text: 'A 50%-margin item survives a 20% discount only if unit volume rises about 67%. Check the lift your own margin needs before running the sale.' } },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Retail Math Calculator',
+    url: new URL('/retail/retail-math-calculator/', Astro.site).toString(),
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  })} />
+
+  <style is:global>
+    .head { padding: 36px 24px 10px; }
+    .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
+    .head .sub { color: var(--ink-2); font-size: 1.0625rem; max-width: 40rem; }
+    .workbench {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;
+      padding-bottom: 44px; margin-top: 18px; max-width: 74rem;
+    }
+    .mod-lbl {
+      display: flex; align-items: center; gap: 9px;
+      font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+      color: var(--ink-3); margin-bottom: 14px;
+    }
+    .mod-lbl span {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 21px; height: 21px; border-radius: 50%;
+      background: var(--green-tint); color: var(--green-2); font-size: 11.5px; font-weight: 700;
+    }
+    .flds { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+    .fld label { display: block; font: 600 11.5px "Inter"; color: var(--ink-3); margin-bottom: 5px; }
+    .fld input, .fld select {
+      width: 100%; height: 40px; padding: 0 9px; border: 1.5px solid var(--line-2); border-radius: var(--r-s);
+      background: #fff; color: var(--ink); font: 500 14px "Inter"; outline: 0; min-width: 0;
+    }
+    .fld input:focus, .fld select:focus { border-color: var(--green); }
+    .money { display: flex; align-items: center; }
+    .money i { font: 600 13px "Inter"; color: var(--ink-3); font-style: normal; margin-right: 2px; }
+    .money input { padding-left: 0 !important; }
+    .outs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+    .out { border-top: 2px solid var(--line); padding-top: 8px; }
+    .out span { display: block; font: 600 10.5px "Inter"; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3); }
+    .out b { display: block; font: 640 1.05rem var(--font-display); color: var(--ink); font-variant-numeric: tabular-nums; margin-top: 2px; }
+    .out.big { grid-column: span 1; }
+    .out.big b { color: var(--green-2); font-size: 1.5rem; }
+    .out.wide b { color: var(--green-2); }
+    .mod-note { font-size: 12.5px; color: var(--ink-3); margin-top: 10px; line-height: 1.5; }
+    .mod-note.warn { color: #7C3A09; background: var(--warn-tint); border-radius: var(--r-s); padding: 8px 10px; }
+    .cheat-cta { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: center; background: var(--paper-2); }
+    .cheat-cta h2 { font: 640 1.3rem var(--font-display); color: var(--ink); margin-bottom: 6px; }
+    .cheat-cta p { font-size: 13.5px; color: var(--ink-2); line-height: 1.55; }
+    .act {
+      height: 46px; padding: 0 22px; border-radius: var(--r-s); cursor: pointer; white-space: nowrap;
+      border: 1.5px solid var(--line-2); background: var(--card); color: var(--ink); font: 600 14px "Inter";
+    }
+    .act.primary { background: var(--green); border-color: var(--green); color: #FDFBF4; }
+    .act.primary:hover { background: var(--green-2); }
+    .cheatsheet { display: none; }
+    @media (max-width: 920px) {
+      .workbench { grid-template-columns: minmax(0, 1fr); }
+      .cheat-cta { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (max-width: 460px) {
+      .flds, .outs { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+      .fld:first-child { grid-column: 1 / -1; }
+    }
+    @media print {
+      .nav, .industry-hero, .workbench, .prose, .faq, .related, footer.site { display: none !important; }
+      body { background: #fff; }
+      .cheatsheet { display: block; margin: 10mm 12mm; }
+      .cs-brand { font: 700 17px var(--font-display); letter-spacing: .12em; color: #111; border-bottom: 2px solid #111; padding-bottom: 8px; }
+      .cs-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 12px; }
+      .cs-cols h3 { font: 700 11px "Inter"; letter-spacing: .08em; text-transform: uppercase; color: #111; margin: 10px 0 6px; }
+      .cs-cols p { font: 500 12px "Inter"; color: #222; margin-bottom: 4px; }
+      .cs-cols table { border-collapse: collapse; margin-top: 6px; }
+      .cs-cols th, .cs-cols td { border: 1px solid #999; font: 500 11px "Inter"; padding: 4px 8px; text-align: left; }
+      .cs-cols th { background: #f2f0ea; }
+      .cs-foot { margin-top: 14px; font: 500 10px "Inter"; color: #666; border-top: 1px solid #ccc; padding-top: 6px; }
+    }
+  </style>
+
+  <script>
+    // —— Retail Math Calculator：四模块实时演算（静态输入，只更新输出，不重建 DOM） ——
+    import { beaconUse } from '../../scripts/stats';
+
+    const money = (v: number) => '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const $id = (s: string) => document.getElementById(s) as HTMLInputElement;
+    const num = (el: HTMLInputElement) => { const n = parseFloat(el.value.replace(/[^0-9.]/g, '')); return Number.isFinite(n) ? n : 0; };
+    let counted = false;
+    const countUse = () => { if (!counted) { counted = true; beaconUse('retail-math-calculator'); } };
+
+    function calcPrice() {
+      const cost = num($id('p-cost'));
+      const mode = ($id('p-mode') as unknown as HTMLSelectElement).value;
+      const v = num($id('p-val'));
+      let price = 0;
+      if (mode === 'markup') price = cost * (1 + v / 100);
+      else if (mode === 'margin') price = v < 100 ? cost / (1 - v / 100) : 0;
+      else price = v;
+      const profit = price - cost;
+      const markup = cost > 0 ? (profit / cost) * 100 : 0;
+      const margin = price > 0 ? (profit / price) * 100 : 0;
+      ($id('p-price') as HTMLElement).textContent = money(price);
+      ($id('p-profit') as HTMLElement).textContent = money(profit);
+      ($id('p-markup') as HTMLElement).textContent = `${markup.toFixed(1)}%`;
+      ($id('p-margin') as HTMLElement).textContent = `${margin.toFixed(1)}%`;
+      return { cost, price, profit, markup, margin };
+    }
+
+    function calcMarkdown() {
+      const cost = num($id('m-cost')), orig = num($id('m-orig')), off = num($id('m-off'));
+      const sale = orig * (1 - Math.min(100, off) / 100);
+      const baseMargin = orig > 0 ? ((orig - cost) / orig) * 100 : 0;
+      const saleMargin = sale > 0 ? ((sale - cost) / sale) * 100 : 0;
+      const note = document.getElementById('m-note') as HTMLElement;
+      if (baseMargin <= off) {
+        ($id('m-sale') as HTMLElement).textContent = money(sale);
+        ($id('m-margin') as HTMLElement).textContent = `${saleMargin.toFixed(1)}%`;
+        ($id('m-lift') as HTMLElement).textContent = '—';
+        note.textContent = `A ${off}% discount on a ${baseMargin.toFixed(1)}% margin loses money on every unit — no volume can make it up.`;
+        note.className = 'mod-note warn';
+      } else {
+        const lift = (off / (baseMargin - off)) * 100;
+        ($id('m-sale') as HTMLElement).textContent = money(sale);
+        ($id('m-margin') as HTMLElement).textContent = `${saleMargin.toFixed(1)}%`;
+        ($id('m-lift') as HTMLElement).textContent = `+${lift.toFixed(0)}%`;
+        note.textContent = `A ${baseMargin.toFixed(0)}% margin survives a ${off}% cut only if volume rises ${lift.toFixed(0)}% — run it when the shelf is full and traffic is up.`;
+        note.className = 'mod-note';
+      }
+      return { sale, saleMargin, off, baseMargin };
+    }
+
+    function calcSellThrough() {
+      const recv = num($id('s-recv')), sold = num($id('s-sold')), weeks = Math.max(0.5, num($id('s-weeks')));
+      const pct = recv > 0 ? (sold / recv) * 100 : 0;
+      const rate = sold / weeks;
+      const left = rate > 0 ? (recv - sold) / rate : 0;
+      ($id('s-pct') as HTMLElement).textContent = `${pct.toFixed(0)}%`;
+      ($id('s-rate') as HTMLElement).textContent = `${rate.toFixed(1)} units`;
+      ($id('s-left') as HTMLElement).textContent = recv > sold ? left.toFixed(1) : '—';
+      const note = document.getElementById('s-note') as HTMLElement;
+      if (recv > 0 && sold > recv) { note.textContent = 'Sold more than received — check for transfers or miscounts in the intake.'; note.className = 'mod-note warn'; }
+      else if (pct >= 70) { note.textContent = 'Healthy pace for seasonal goods — you should exit the season without heavy markdowns.'; note.className = 'mod-note'; }
+      else if (pct >= 40) { note.textContent = 'Mid-season range. Watch it weekly — below ~40% by mid-season is where markdowns start.'; note.className = 'mod-note'; }
+      else { note.textContent = 'Slow — the buy may be too deep. Plan the markdown while the margin can still absorb it.'; note.className = 'mod-note warn'; }
+      return { pct, rate, left };
+    }
+
+    function calcBreakEven() {
+      const fixed = num($id('b-fixed')), price = num($id('b-price')), uc = num($id('b-cost'));
+      const unitMargin = price - uc;
+      const units = unitMargin > 0 ? Math.ceil(fixed / unitMargin) : Infinity;
+      ($id('b-units') as HTMLElement).textContent = Number.isFinite(units) ? units.toLocaleString('en-US') : '—';
+      ($id('b-rev') as HTMLElement).textContent = Number.isFinite(units) ? money(units * price) : '—';
+      ($id('b-day') as HTMLElement).textContent = Number.isFinite(units) ? `≈ ${(units / 26).toFixed(1)} units` : '—';
+      const note = document.getElementById('b-note') as HTMLElement;
+      if (!Number.isFinite(units)) { note.textContent = `At $${price} price against $${uc} unit cost, every sale loses ${money(uc - price)} — price above unit cost to have a break-even.`; note.className = 'mod-note warn'; }
+      else { note.textContent = `${units.toLocaleString('en-US')} units a month covers ${money(fixed)} of fixed costs; every unit past that earns ${money(unitMargin)}.`; note.className = 'mod-note'; }
+    }
+
+    function renderAll() {
+      const p = calcPrice(), m = calcMarkdown(), s = calcSellThrough();
+      calcBreakEven();
+      (document.getElementById('cs-yours') as HTMLElement).textContent =
+        `cost ${money(p.cost)} → price ${money(p.price)} (markup ${p.markup.toFixed(0)}%, margin ${p.margin.toFixed(0)}%)\n` +
+        `${m.off}% off ${money(p.price)} → ${money(m.sale)} · lift +${(m.baseMargin > m.off ? ((m.off / (m.baseMargin - m.off)) * 100).toFixed(0) : '—')}%\n` +
+        `sell-through ${s.pct.toFixed(0)}% · break-even ${($id('b-units') as HTMLElement).textContent} units/mo`;
+      try {
+        localStorage.setItem('mst-retail-math', JSON.stringify({
+          pc: $id('p-cost').value, pm: ($id('p-mode') as HTMLSelectElement).value, pv: $id('p-val').value,
+          mc: $id('m-cost').value, mo: $id('m-orig').value, mf: $id('m-off').value,
+          sr: $id('s-recv').value, ss: $id('s-sold').value, sw: $id('s-weeks').value,
+          bf: $id('b-fixed').value, bp: $id('b-price').value, bc: $id('b-cost').value,
+        }));
+      } catch {}
+    }
+
+    const IDS = ['p-cost', 'p-mode', 'p-val', 'm-cost', 'm-orig', 'm-off', 's-recv', 's-sold', 's-weeks', 'b-fixed', 'b-price', 'b-cost'];
+    for (const id of IDS) {
+      document.getElementById(id)!.addEventListener('input', () => { countUse(); renderAll(); });
+      document.getElementById(id)!.addEventListener('change', () => { countUse(); renderAll(); });
+    }
+    $id('p-mode').addEventListener('change', () => {
+      ($id('p-val-lbl') as HTMLElement).textContent = ($id('p-mode') as HTMLSelectElement).value === 'markup' ? 'Markup %'
+        : ($id('p-mode') as HTMLSelectElement).value === 'margin' ? 'Margin %' : 'Price $';
+    });
+    document.getElementById('do-print')!.addEventListener('click', () => window.print());
+
+    // 草稿恢复
+    try {
+      const d = JSON.parse(localStorage.getItem('mst-retail-math') ?? 'null') as Record<string, string> | null;
+      if (d) {
+        const map: Record<string, string> = { 'p-cost': d.pc, 'p-mode': d.pm, 'p-val': d.pv, 'm-cost': d.mc, 'm-orig': d.mo, 'm-off': d.mf, 's-recv': d.sr, 's-sold': d.ss, 's-weeks': d.sw, 'b-fixed': d.bf, 'b-price': d.bp, 'b-cost': d.bc };
+        for (const [id, v] of Object.entries(map)) if (v !== undefined && v !== null) $id(id).value = v;
+        ($id('p-val-lbl') as HTMLElement).textContent = ($id('p-mode') as HTMLSelectElement).value === 'markup' ? 'Markup %'
+          : ($id('p-mode') as HTMLSelectElement).value === 'margin' ? 'Margin %' : 'Price $';
+      }
+    } catch {}
+    renderAll();
+  </script>
+</BaseLayout>

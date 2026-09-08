@@ -25,6 +25,7 @@ import priceList from './service-price-list-builder';
 import receiptGen from './receipt-generator';
 import inventorySheet from './inventory-count-sheet';
 import discountProfit from './discount-profit-calculator';
+import retailMath from './retail-math-calculator';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -52,6 +53,7 @@ export const TOOLS: RegisteredTool[] = [
   receiptGen,
   inventorySheet,
   discountProfit,
+  retailMath,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);
@@ -64,6 +66,7 @@ export const BESPOKE_SLUGS: ReadonlySet<string> = new Set([
   'cleaning-estimate-calculator',
   'lawn-mowing-price-calculator',
   'lawn-care-estimate-generator',
+  'retail-math-calculator',
 ]);
 
 export const byIndustry = (industry: string): RegisteredTool[] => TOOLS.filter((t) => t.industry === industry);

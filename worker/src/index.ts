@@ -41,6 +41,7 @@ export const SLUGS = new Set([
   'receipt-generator',
   // retail
   'retail-markup-calculator',
+  'retail-math-calculator',
   'inventory-count-sheet',
   'discount-profit-calculator',
 ]);
