@@ -1,0 +1,366 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="House Cleaning Cost Calculator — Free Estimate Tool | Main Street Toolbox"
+  description="Price a house cleaning job in 20 seconds: standard, deep clean or move-out, by bedrooms and bathrooms. Live range against 2026 US prices, hours and hourly rate. Free, no signup."
+  path="/cleaning/cleaning-estimate-calculator/"
+>
+  <div class="industry-hero">
+    <div class="industry-hero-bg" style="background-image:linear-gradient(rgba(250,247,240,.85), rgba(250,247,240,.06)), url('/images/cleaning.jpg')"></div>
+    <div class="container head">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/cleaning">Cleaning</a> / <b style="color:var(--ink)">House Cleaning Cost Calculator</b></p>
+      <h1>House Cleaning Cost Calculator</h1>
+      <p class="sub">Standard, deep or move-out — count the rooms, see the range cleaners actually book. Free, no signup.</p>
+    </div>
+  </div>
+
+  <main class="container builder">
+    <!-- 左：这份活是什么样的 -->
+    <section class="job card card-pad" aria-label="Describe the cleaning job">
+      <h2 class="step-lbl"><span>1</span> The clean</h2>
+      <div class="type-chips" role="radiogroup" aria-label="Type of clean">
+        <button class="chip" data-type="standard" type="button" aria-pressed="true">
+          <b>Standard clean</b><span>Maintenance — the regular tidy-up</span>
+        </button>
+        <button class="chip" data-type="deep" type="button" aria-pressed="false">
+          <b>Deep clean</b><span>First clean, build-up, baseboards &amp; grout</span>
+        </button>
+        <button class="chip" data-type="moveout" type="button" aria-pressed="false">
+          <b>Move-out clean</b><span>Empty home, handback-ready, cabinets inside</span>
+        </button>
+      </div>
+
+      <h2 class="step-lbl"><span>2</span> The home</h2>
+      <div class="rooms">
+        <div class="room" data-room="bedrooms">
+          <span class="room-lbl">Bedrooms</span>
+          <div class="stepper">
+            <button type="button" data-step="-1" aria-label="Fewer bedrooms">−</button>
+            <output id="beds-out" aria-live="polite">3</output>
+            <button type="button" data-step="1" aria-label="More bedrooms">+</button>
+          </div>
+        </div>
+        <div class="room" data-room="bathrooms">
+          <span class="room-lbl">Bathrooms</span>
+          <div class="stepper">
+            <button type="button" data-step="-1" aria-label="Fewer bathrooms">−</button>
+            <output id="baths-out" aria-live="polite">2</output>
+            <button type="button" data-step="1" aria-label="More bathrooms">+</button>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="step-lbl" id="freq-lbl"><span>3</span> How often</h2>
+      <div class="freq-seg" role="radiogroup" aria-labelledby="freq-lbl">
+        <button class="seg" data-freq="onetime" type="button" aria-pressed="true">One-time</button>
+        <button class="seg" data-freq="biweekly" type="button" aria-pressed="false">Every 2 weeks</button>
+        <button class="seg" data-freq="weekly" type="button" aria-pressed="false">Weekly</button>
+      </div>
+      <p class="freq-note" id="freq-note" hidden>Move-outs are one-time jobs — frequency pricing doesn't apply.</p>
+    </section>
+
+    <!-- 右：报价卡 -->
+    <aside class="quote card" aria-live="polite">
+      <div class="quote-body card-pad">
+        <div class="job-line" id="job-line">3 bed · 2 bath · standard clean · one-time</div>
+        <div class="result-lbl">Suggested quote</div>
+        <div class="quote-range" id="r-range">$153.00 – $195.50</div>
+        <div class="quote-subs" id="r-subs">
+          <span>Estimated time <b>4.8 hrs for a team of one</b></span>
+          <span>Works out to <b>$35.42 / hour</b></span>
+        </div>
+        <div class="gauge">
+          <div class="gauge-scale" aria-hidden="true">
+            <span class="zone-ok" style="left:9.1%;width:79.5%"></span>
+            <span class="marker" id="g-marker" style="left:calc(25% - 2px)"></span>
+          </div>
+          <div class="gauge-labels"><span>$60</span><span>your quote lands here</span><span>$500</span></div>
+        </div>
+        <div class="verdict info" data-level="info"><span>ℹ</span> <span id="r-verdict">2026 US pricing for a standard clean runs $100–450 per visit — land inside that band unless the home is unusual. The loyalty discount for recurring clients is already built in.</span></div>
+        <div class="actions">
+          <button class="act primary" id="do-print" type="button">Print estimate</button>
+          <button class="act" id="do-copy" type="button">Copy quote</button>
+        </div>
+        <p class="fineprint">Range covers typical homes in normal condition. Heavy build-up, pets or premium markets move the number — walk the home when you can.</p>
+      </div>
+      <div class="print-head" id="print-head" hidden>
+        <div class="ph-brand">Cleaning estimate</div>
+        <div class="ph-meta" id="ph-meta"></div>
+      </div>
+      <div class="print-credit">Made with mainstreettoolbox.com — free calculators for small businesses</div>
+    </aside>
+  </main>
+
+  <section class="container prose">
+    <h2>2026 US house cleaning prices</h2>
+    <p>Benchmarks below are the national ranges cleaners are actually booking this year. Coastal metros run
+    30–50% above them; small-town markets a little under. Price by the job, sanity-check against the hourly.</p>
+    <table>
+      <thead><tr><th>Clean type</th><th>Typical US range (2026)</th><th>3 bed / 2 bath</th></tr></thead>
+      <tbody>
+        <tr><td>Standard clean</td><td>$120–280 per visit</td><td>~$180 average</td></tr>
+        <tr><td>Deep clean</td><td>$200–450</td><td>$200–400</td></tr>
+        <tr><td>Move-out clean</td><td>$200–600</td><td>$250–450</td></tr>
+        <tr><td>Hourly, per cleaner</td><td>$25–80</td><td>$30–50 common</td></tr>
+      </tbody>
+    </table>
+
+    <h2>How cleaners price a house</h2>
+    <p>Three methods survive contact with real clients: <b>flat price by the job</b> (what this calculator
+    does — by rooms and clean type), <b>hourly</b> (best when condition is unknown — set your floor at your
+    target wage plus supplies), and <b>by square footage</b> (about $0.08–$0.15 per sq ft residential). Whichever
+    you quote from, the number on paper should be the job price — clients don't renegotiate mid-clean.</p>
+    <p>Two rules keep flat pricing profitable: quote <b>deep and first-time cleans about 50% over</b> your
+    standard rate (build-up is slow work), and never discount the first clean — discount the <em>recurring</em>
+    one, where the savings are real because there's no build-up to redo.</p>
+
+    <h2>The move-out clean, done right</h2>
+    <p>A move-out clean is a deep clean of an empty home, plus the parts normal cleans skip: <b>inside every
+    cabinet, drawer and closet</b>, appliances inside and behind, doors and door frames, light fixtures, and
+    walls spot-cleaned. It's priced at or above a deep clean — the client is often reclaiming a $500–1,500
+    security deposit, so a $250–450 quote that secures it is an easy sale. Put the checklist in writing:
+    the <a href="/cleaning/cleaning-checklist-builder/">Cleaning Checklist Builder</a> prints one per property,
+    and the <a href="/cleaning/cleaning-invoice-generator/">Invoice Generator</a> turns the finished walk-through
+    into a same-day invoice.</p>
+
+    <h2>Recurring clients are the business</h2>
+    <p>One-time cleans fill gaps; weekly and biweekly clients pay the rent. Offer <b>15–20% off the per-visit
+    price</b> for the commitment — you save the build-up work and the scheduling scramble. When you're ready to
+    publish your rates, the <a href="/salon/service-price-list-builder/">Service Price List Builder</a> prints a
+    clean one-page price sheet, and the <a href="/restaurant/break-even-calculator/">Break-Even Calculator</a>
+    tells you how many cleans a week the insurance and supplies are covered.</p>
+  </section>
+
+  <section class="container faq">
+    <h2>Questions owners ask</h2>
+    <details><summary>How much does house cleaning cost in 2026?</summary><p>A standard clean runs $120–280 per visit for most homes, with one-time cleans averaging $174–256. Hourly rates are $25–80 per cleaner. Deep cleans run $200–450 and move-out cleans $200–600. Coastal metros price 30–50% above the national band.</p></details>
+    <details><summary>How much should I charge to clean a 3-bed, 2-bath house?</summary><p>A standard one-time clean typically lands $150–200 and takes about 5 hours for one cleaner. Deep cleans and first-time cleans run about 50% higher because of build-up.</p></details>
+    <details><summary>How much should a move-out cleaning cost?</summary><p>Move-out cleans run $200–600 for an average home. You're cleaning an empty house, but the checklist is a deep clean plus inside cabinets, closets and appliances — and clients are often reclaiming part of a $500–1,500 security deposit, so price the value, not just the hours.</p></details>
+    <details><summary>What's the difference between a deep clean and a standard clean?</summary><p>A standard clean maintains: surfaces, floors, bathrooms, kitchen wipe-down. A deep clean resets: baseboards, grout, inside appliances, fixtures, corners and build-up. That's why it takes roughly 40–50% longer and prices about 50% higher.</p></details>
+    <details><summary>Should I quote by the hour or by the job?</summary><p>Quote by the job. Hourly quotes punish you for getting faster and make the client watch the clock. Price the job from your own hourly floor — this calculator shows both numbers.</p></details>
+  </section>
+
+  <section class="related">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:0;padding-top:28px"><h2 style="font-size:1.2rem">Related tools</h2></div>
+      <div class="related-grid">
+        <a href="/cleaning/cleaning-checklist-builder/">Cleaning Checklist Builder</a>
+        <a href="/cleaning/cleaning-invoice-generator/">Cleaning Invoice Generator</a>
+        <a href="/salon/service-price-list-builder/">Service Price List Builder</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How much does house cleaning cost in 2026?', acceptedAnswer: { '@type': 'Answer', text: 'A standard clean runs $120–280 per visit for most homes, with one-time cleans averaging $174–256. Hourly rates are $25–80 per cleaner. Deep cleans run $200–450 and move-out cleans $200–600. Coastal metros price 30–50% above the national band.' } },
+      { '@type': 'Question', name: 'How much should I charge to clean a 3-bed, 2-bath house?', acceptedAnswer: { '@type': 'Answer', text: 'A standard one-time clean typically lands $150–200 and takes about 5 hours for one cleaner. Deep cleans and first-time cleans run about 50% higher because of build-up.' } },
+      { '@type': 'Question', name: 'How much should a move-out cleaning cost?', acceptedAnswer: { '@type': 'Answer', text: 'Move-out cleans run $200–600 for an average home, including inside cabinets, closets and appliances. Clients are often reclaiming part of a $500–1,500 security deposit.' } },
+      { '@type': 'Question', name: 'What\'s the difference between a deep clean and a standard clean?', acceptedAnswer: { '@type': 'Answer', text: 'A standard clean maintains surfaces, floors, bathrooms and kitchen. A deep clean resets baseboards, grout, inside appliances and fixtures — about 40–50% longer and priced about 50% higher.' } },
+      { '@type': 'Question', name: 'Should I quote by the hour or by the job?', acceptedAnswer: { '@type': 'Answer', text: 'Quote by the job. Hourly quotes punish you for getting faster and make the client watch the clock. Price the job from your own hourly floor.' } },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'House Cleaning Cost Calculator',
+    url: new URL('/cleaning/cleaning-estimate-calculator/', Astro.site).toString(),
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  })} />
+
+  <style is:global>
+    .head { padding: 36px 24px 10px; }
+    .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
+    .head .sub { color: var(--ink-2); font-size: 1.0625rem; max-width: 38rem; }
+    .builder {
+      display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 20px;
+      align-items: start; padding-bottom: 44px; margin-top: 18px;
+    }
+    .step-lbl {
+      display: flex; align-items: center; gap: 9px;
+      font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+      color: var(--ink-3); margin: 22px 0 10px;
+    }
+    .step-lbl:first-child { margin-top: 0; }
+    .step-lbl span {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 21px; height: 21px; border-radius: 50%;
+      background: var(--green-tint); color: var(--green-2); font-size: 11.5px; font-weight: 700;
+    }
+    .type-chips { display: grid; gap: 8px; }
+    .chip {
+      display: grid; gap: 2px; text-align: left; cursor: pointer;
+      border: 1.5px solid var(--line-2); border-radius: var(--r-m);
+      background: var(--card); padding: 11px 14px;
+    }
+    .chip b { font: 600 14.5px "Inter"; color: var(--ink); }
+    .chip span { font-size: 12.5px; color: var(--ink-3); }
+    .chip[aria-pressed="true"] { border-color: var(--green); background: var(--green-tint); box-shadow: var(--shadow-1); }
+    .chip[aria-pressed="true"] span { color: var(--ink-2); }
+    .rooms { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
+    .room {
+      display: flex; align-items: center; justify-content: space-between; gap: 8px; min-width: 0;
+      border: 1.5px solid var(--line-2); border-radius: var(--r-m); background: var(--card); padding: 10px 10px;
+    }
+    .room-lbl { font: 600 13.5px "Inter"; color: var(--ink); }
+    .stepper { display: flex; align-items: center; gap: 2px; }
+    .stepper button {
+      width: 32px; height: 34px; border-radius: var(--r-s); border: 1.5px solid var(--line-2);
+      background: #fff; color: var(--ink); font: 600 17px "Inter"; cursor: pointer; line-height: 1;
+    }
+    .stepper button:hover { border-color: var(--green); color: var(--green); }
+    .stepper button:disabled { opacity: .35; cursor: default; }
+    .stepper output { min-width: 30px; text-align: center; font: 640 1.2rem var(--font-display); color: var(--ink); font-variant-numeric: tabular-nums; }
+    .freq-seg { display: flex; border: 1.5px solid var(--line-2); border-radius: var(--r-m); overflow: hidden; background: var(--card); }
+    .freq-seg.dim { opacity: .45; pointer-events: none; }
+    .seg {
+      flex: 1; height: 42px; border: 0; background: none; cursor: pointer;
+      font: 600 13.5px "Inter"; color: var(--ink-2); border-right: 1.5px solid var(--line);
+    }
+    .seg:last-child { border-right: 0; }
+    .seg[aria-pressed="true"] { background: var(--green); color: #FDFBF4; }
+    .freq-note { font-size: 12.5px; color: var(--ink-3); margin-top: 8px; }
+    .quote { position: sticky; top: 76px; box-shadow: var(--shadow-2); border-radius: var(--r-m); }
+    .job-line { font: 600 12px "Inter"; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 10px; }
+    .quote-range { font: 640 clamp(1.7rem, 4vw, 2.15rem)/1.15 var(--font-display); color: var(--green-2); font-variant-numeric: tabular-nums; margin-top: 2px; }
+    .quote-subs { display: grid; gap: 4px; margin-top: 10px; font-size: 13.5px; color: var(--ink-2); }
+    .quote-subs b { color: var(--ink); font-variant-numeric: tabular-nums; }
+    .quote .verdict { margin-top: 14px; }
+    .quote .verdict.info { background: var(--paper-2); color: var(--ink-2); }
+    .actions { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+    .act {
+      flex: 1; min-width: 130px; height: 46px; border-radius: var(--r-s); cursor: pointer;
+      border: 1.5px solid var(--line-2); background: var(--card); color: var(--ink); font: 600 14px "Inter";
+    }
+    .act:hover { border-color: var(--green); color: var(--green); }
+    .act.primary { background: var(--green); border-color: var(--green); color: #FDFBF4; }
+    .act.primary:hover { background: var(--green-2); color: #FDFBF4; }
+    .fineprint { font-size: 12px; color: var(--ink-3); margin-top: 12px; line-height: 1.5; }
+    .print-head, .print-credit { display: none; }
+    @media (max-width: 880px) {
+      .builder { grid-template-columns: minmax(0, 1fr); }
+      .quote { position: static; }
+    }
+    @media (max-width: 420px) {
+      .rooms { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media print {
+      .nav, .industry-hero, .job, .actions, .prose, .faq, .related, footer.site, .fineprint { display: none !important; }
+      body { background: #fff; }
+      .builder { display: block; margin: 0; padding: 0; }
+      .quote { box-shadow: none; border: 0; position: static; }
+      .quote-body { display: none; }
+      .print-head { display: block !important; margin: 0 24px; border-bottom: 2px solid var(--ink); padding-bottom: 10px; }
+      .ph-brand { font: 700 20px var(--font-display); color: var(--ink); }
+      .ph-meta { font: 500 13px "Inter"; color: var(--ink-2); margin-top: 4px; white-space: pre-line; }
+      .print-credit { display: block; margin: 18px 24px; font-size: 11px; color: var(--ink-3); }
+    }
+  </style>
+
+  <script>
+    // —— House Cleaning Cost Calculator：与 engines/quote.ts calcCleaningEstimate 同一套数学 ——
+    import { beaconUse } from '../../scripts/stats';
+
+    const money = (v: number) => '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const RATES = { base: 50, bed: 20, bath: 30 };
+    const TYPE_MULT: Record<string, number> = { standard: 1, deep: 1.5, moveout: 1.5 };
+    const TYPE_PHRASE: Record<string, string> = { standard: 'a standard clean', deep: 'a deep clean', moveout: 'a move-out clean' };
+    const TYPE_NAME: Record<string, string> = { standard: 'standard clean', deep: 'deep clean', moveout: 'move-out clean' };
+    const FREQ_MULT: Record<string, number> = { onetime: 1, weekly: 0.82, biweekly: 0.9 };
+    const FREQ_NAME: Record<string, string> = { onetime: 'one-time', weekly: 'weekly', biweekly: 'every 2 weeks' };
+
+    const state = { type: 'standard', beds: 3, baths: 2, freq: 'onetime' };
+    let counted = false;
+    const countUse = () => { if (!counted) { counted = true; beaconUse('cleaning-estimate-calculator'); } };
+
+    function render() {
+      const base = RATES.base + state.beds * RATES.bed + state.baths * RATES.bath;
+      const est = base * (TYPE_MULT[state.type] ?? 1) * (state.type === 'moveout' ? 1 : (FREQ_MULT[state.freq] ?? 1));
+      const hours = (1.5 + state.beds * 0.6 + state.baths * 0.75) * (state.type === 'standard' ? 1 : 1.4);
+      const low = est * 0.9, high = est * 1.15;
+
+      const jobLine = `${state.beds} bed · ${state.baths} bath · ${TYPE_NAME[state.type]} · ${state.type === 'moveout' ? 'one-time' : FREQ_NAME[state.freq]}`;
+      document.getElementById('job-line')!.textContent = jobLine;
+      document.getElementById('r-range')!.textContent = `${money(low)} – ${money(high)}`;
+      (document.getElementById('r-subs') as HTMLElement).innerHTML =
+        `<span>Estimated time <b>${hours.toFixed(1)} hrs for a team of one</b></span>` +
+        `<span>Works out to <b>${money(est / hours)} / hour</b></span>`;
+
+      const pct = Math.min(100, Math.max(0, ((est - 60) / (500 - 60)) * 100));
+      (document.getElementById('g-marker') as HTMLElement).style.left = `calc(${pct}% - 2px)`;
+      (document.getElementById('r-verdict') as HTMLElement).textContent =
+        `2026 US pricing for ${TYPE_PHRASE[state.type]} runs $100–450 per visit — land inside that band unless the home is unusual. The loyalty discount for recurring clients is already built in.`;
+
+      document.getElementById('beds-out')!.textContent = String(state.beds);
+      document.getElementById('baths-out')!.textContent = String(state.baths);
+      document.querySelectorAll<HTMLElement>('.type-chips .chip').forEach((c) =>
+        c.setAttribute('aria-pressed', String(c.dataset.type === state.type)));
+      document.querySelectorAll<HTMLElement>('.freq-seg .seg').forEach((s) =>
+        s.setAttribute('aria-pressed', String(s.dataset.freq === state.freq)));
+      const freqBox = document.querySelector('.freq-seg') as HTMLElement;
+      freqBox.classList.toggle('dim', state.type === 'moveout');
+      (document.getElementById('freq-note') as HTMLElement).hidden = state.type !== 'moveout';
+
+      (document.getElementById('ph-meta') as HTMLElement).textContent =
+        `Date: ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}\n` +
+        `Job: ${jobLine}\nSuggested quote: ${money(low)} – ${money(high)}\n` +
+        `Estimated time: ${hours.toFixed(1)} hrs (team of one) · ${money(est / hours)}/hr\nEstimate only — final price confirmed after walkthrough.`;
+
+      document.querySelectorAll<HTMLElement>('.room').forEach((room) => {
+        const key = (room.dataset.room === 'bedrooms' ? 'beds' : 'baths') as 'beds' | 'baths';
+        const max = room.dataset.room === 'bedrooms' ? 10 : 6;
+        const btns = room.querySelectorAll<HTMLButtonElement>('[data-step]');
+        btns[0].disabled = state[key] === 0;
+        btns[1].disabled = state[key] === max;
+      });
+
+      try { localStorage.setItem('mst-cleaning-estimate', JSON.stringify(state)); } catch {}
+    }
+
+    document.querySelector('.type-chips')!.addEventListener('click', (e) => {
+      const chip = (e.target as HTMLElement).closest<HTMLElement>('.chip');
+      if (!chip) return;
+      state.type = chip.dataset.type!;
+      countUse(); render();
+    });
+    document.querySelector('.freq-seg')!.addEventListener('click', (e) => {
+      const seg = (e.target as HTMLElement).closest<HTMLElement>('.seg');
+      if (!seg) return;
+      state.freq = seg.dataset.freq!;
+      countUse(); render();
+    });
+      document.querySelectorAll<HTMLElement>('.room').forEach((room) => {
+        const key = (room.dataset.room === 'bedrooms' ? 'beds' : 'baths') as 'beds' | 'baths';
+        const max = room.dataset.room === 'bedrooms' ? 10 : 6;
+        room.addEventListener('click', (e) => {
+          const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-step]');
+          if (!btn) return;
+          const v = state[key] + Number(btn.dataset.step);
+          if (v < 0 || v > max) return;
+          state[key] = v;
+          countUse(); render();
+        });
+      });
+    document.getElementById('do-print')!.addEventListener('click', () => window.print());
+    document.getElementById('do-copy')!.addEventListener('click', () => {
+      const range = (document.getElementById('r-range') as HTMLElement).textContent;
+      const job = (document.getElementById('job-line') as HTMLElement).textContent;
+      navigator.clipboard?.writeText(`Cleaning estimate — ${job}\nSuggested quote: ${range}\nFrom mainstreettoolbox.com — free cleaning calculators`).catch(() => {});
+    });
+
+    try {
+      const d = JSON.parse(localStorage.getItem('mst-cleaning-estimate') ?? 'null') as typeof state | null;
+      if (d && ['standard', 'deep', 'moveout'].includes(d.type) && ['onetime', 'weekly', 'biweekly'].includes(d.freq)) {
+        state.type = d.type; state.freq = d.freq;
+        state.beds = Math.min(10, Math.max(0, Math.round(Number(d.beds) || 3)));
+        state.baths = Math.min(6, Math.max(0, Math.round(Number(d.baths) || 2)));
+      }
+    } catch {}
+    render();
+  </script>
+</BaseLayout>

@@ -61,6 +61,7 @@ export const BESPOKE_SLUGS: ReadonlySet<string> = new Set([
   'tip-out-calculator',
   'food-cost-percentage-calculator',
   'menu-engineering-matrix',
+  'cleaning-estimate-calculator',
 ]);
 
 export const byIndustry = (industry: string): RegisteredTool[] => TOOLS.filter((t) => t.industry === industry);

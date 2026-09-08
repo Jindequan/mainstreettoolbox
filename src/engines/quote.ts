@@ -6,22 +6,23 @@ import { makeGauge } from './price';
 export function calcCleaningEstimate(values: Record<string, string>, params: any): EngineResult {
   const beds = clamp(num(values.bedrooms), 0, 10);
   const baths = clamp(num(values.bathrooms), 0, 6);
-  const typeMult: Record<string, number> = { standard: 1, deep: 1.5, moveout: 1.4 };
+  // 2026-09 核准:move-out 与 deep 同倍率(空屋但含柜内/家电/门窗;Angi/HireAHelper/Tidy 2026 区间均 ≥ deep)
+  const typeMult: Record<string, number> = { standard: 1, deep: 1.5, moveout: 1.5 };
+  const typePhrase: Record<string, string> = { standard: 'a standard clean', deep: 'a deep clean', moveout: 'a move-out clean' };
   const freqMult: Record<string, number> = { onetime: 1, weekly: 0.82, biweekly: 0.9 };
   const base = params.rates.base + beds * params.rates.bed + baths * params.rates.bath;
   const est = base * (typeMult[values.type] ?? 1) * (values.type === 'moveout' ? 1 : (freqMult[values.freq] ?? 1));
   const hours = (1.5 + beds * 0.6 + baths * 0.75) * (values.type === 'standard' ? 1 : 1.4);
   const low = est * 0.9, high = est * 1.15;
   const copy = params.copy as Record<string, string>;
-  const freqLabel: Record<string, string> = { onetime: 'one-time', weekly: 'weekly', biweekly: 'biweekly' };
   return {
     primary: { label: params.primaryLabel as string, value: `${money(low)} – ${money(high)}` },
     secondary: [
       { label: 'Estimated time', value: `${hours.toFixed(1)} hrs for a team of one` },
       { label: 'Per hour', value: money(est / hours) },
     ],
-    gauge: makeGauge(clamp(est, 60, 350), 60, 350, params.healthyBand as [number, number]),
-    verdict: { level: 'info', text: copy.info.replace('{type}', values.type ?? 'standard').replace('{f}', freqLabel[values.freq ?? 'onetime'] ?? 'one-time') },
+    gauge: makeGauge(clamp(est, 60, 500), 60, 500, params.healthyBand as [number, number]),
+    verdict: { level: 'info', text: copy.info.replace('{type}', typePhrase[values.type ?? 'standard'] ?? 'a standard clean') },
   };
 }
 

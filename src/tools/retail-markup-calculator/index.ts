@@ -28,6 +28,11 @@ export default {
   },
   compute: (values, _rows, p) => calcMarkupMargin(values, p),
   explain: `
+    <p><b>How to calculate retail price from cost — the two formulas:</b> working from a markup,
+    <b>price = cost × (1 + markup%)</b>. Working from a margin, <b>price = cost ÷ (1 − margin%)</b>.
+    Markup starts at what you paid and adds up; margin starts at the price and asks what share is profit.
+    On a $10 cost, a 100% markup and a 50% margin land on the same $19.99-ish shelf price — two roads,
+    one destination, and this calculator drives both.</p>
     <p>Retail lives on markup — but survives on margin. <b>Keystone pricing</b> (doubling wholesale cost) is the
     traditional floor for independent shops: a 100% markup, which is a 50% margin before rent. Gift and
     specialty often run higher; groceries and hardware run far lower and make it up in turns.</p>
@@ -43,8 +48,10 @@ export default {
       </tbody>
     </table>`,
   faq: [
+    { q: 'How do I calculate retail price from cost?', a: 'Two ways. From a markup: price = cost × (1 + markup). A $10 item at a 100% markup prices at $20. From a margin: price = cost ÷ (1 − margin). The same $20 price is a 50% margin, because $10 of it is profit. Use markup when you think in add-ons, margin when you plan around profit.' },
     { q: 'What markup should a small retailer use?', a: 'Keystone (100% markup, 50% margin) is the traditional starting point for gifts, décor and apparel. Convenience and grocery categories run 15–35% margins and survive on volume — know your category before you set the percentage.' },
     { q: 'Why is my margin half my markup?', a: 'Because margin compares profit to the price, not the cost. Doubling a $10 cost makes $10 profit on a $20 price — 100% markup, 50% margin. Every percentage point of margin needs more than two points of markup as costs rise.' },
+    { q: 'What is keystone pricing?', a: 'Keystone is the old retail rule of doubling the wholesale cost: buy at $12, ticket it at $24. It is a 100% markup but only a 50% margin — the other half covers rent, payroll and shrink. It works when turns are slow and value is hard to compare; it fails on commodity items customers can price-check.' },
     { q: 'How deep can I discount and still profit?', a: 'A 50%-margin item survives a 20% discount only if volume rises about 67%. Check the margin first, the volume second — most clearance loses money twice: once on the discount, once on the space it holds.' },
   ],
   related: ['food-cost-percentage-calculator', 'profit-margin-calculator', 'break-even-calculator', 'menu-pricing-calculator'],
