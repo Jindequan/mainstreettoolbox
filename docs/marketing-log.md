@@ -28,3 +28,8 @@
 | 2026-09-06 | Hacker News | maker 首评（反馈引导） | 同上 | ✅ 已发布 |
 | 2026-09-06 | Reddit | r/SideProject 发帖 | reddit.com/r/SideProject/comments/1w8loew | ✅ 发布成功（created=t3_1w8loew） |
 | 2026-09-06 | Product Hunt | 尝试 launch 向导 | /launch | ⛔ Cloudflare+上传墙，转人工 |
+| 2026-09-09 | 站内 | **GA 修复**：Vercel env 补 PUBLIC_GA_ID + 重部署 | 全站 | ✅ gtag 已注入（此前从未采集） |
+| 2026-09-09 | Reddit | r/cleaningbusiness 答题：1200sqft 沙龙定价 | comments/1waarzx | ✅ 上线（纯价值无链接，遵守 No-Self-Promo 规则） |
+| 2026-09-09 | Reddit | r/cleaningbusiness 答题：加拿大办公室清洁定价 | comments/1wa5bny | ✅ 上线（同上） |
+| 2026-09-09 | Reddit | r/cleaningbusiness 答题：deep clean 加项 vs 打包 | comments/1w9975o | ✅ 上线（同上） |
+| 2026-09-09 | 站内 | cleaning invoice template guide 上线 | /guides/cleaning-invoice-template/ | ✅ 交易意图内容第 4 篇 |
