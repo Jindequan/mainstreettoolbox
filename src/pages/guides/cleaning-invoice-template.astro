@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const updated = 'September 2026';
+---
+<BaseLayout
+  title="Free Cleaning Invoice Template (Printable, Fill-In) — Main Street Toolbox"
+  description="What a cleaning invoice needs in 2026: line-item format, payment terms that actually get you paid, recurring vs one-time examples — plus a free generator that prints a clean one-page invoice, no signup."
+  path="/guides/cleaning-invoice-template/"
+>
+  <div class="prose">
+    <p class="eyebrow">Template & guide · {updated}</p>
+    <h1>Cleaning invoice template: what to include (and what gets you paid faster)</h1>
+    <p><b>The short answer:</b> a one-page invoice with your business name, the client, the date, each service
+    as its own priced line, and payment terms at the bottom. No software needed. Below is the exact line-item
+    format, the payment terms that actually work, and a <a href="/cleaning/cleaning-invoice-generator/">free
+    invoice generator</a> if you'd rather fill in blanks than build a document.</p>
+
+    <h2>The template</h2>
+    <table>
+      <thead><tr><th>Section</th><th>What goes in it</th></tr></thead>
+      <tbody>
+        <tr><td>Your header</td><td>Business name, phone, email. Logo optional — a clean text header is fine.</td></tr>
+        <tr><td>Client block</td><td>Client name and the service address (they differ for landlords and property managers).</td></tr>
+        <tr><td>Date + invoice #</td><td>Invoice # can just be the date plus a sequence (0912-01). Needed for your own bookkeeping.</td></tr>
+        <tr><td>Service lines</td><td>Each task as its own line with its own price — never one line that says "cleaning".</td></tr>
+        <tr><td>Total + terms</td><td>Total due, and when: "Due on receipt" or "Net 15".</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Why line items matter more than the total</h2>
+    <p>An invoice that reads <b>"Cleaning — $200"</b> invites scope arguments and price shopping. The same clean
+    itemized — <i>Recurring clean $95 · Inside oven $35 · Inside fridge $30 · Pet hair add-on $25 · Interior
+    windows $15</i> — reads as work, not as a number to negotiate. Clients who can see the parts rarely dispute
+    the whole.</p>
+    <p>Line items also become your service record. For recurring clients, next month's invoice is the same
+    document with a new date — and if a client questions a charge in March, you have February on paper.</p>
+
+    <h2>Payment terms that actually get you paid</h2>
+    <p><b>One-time and first-time cleans:</b> "Due on receipt" is the norm in residential cleaning. You were in
+    their home today; people pay the same week when the invoice is itemized and professional.</p>
+    <p><b>Recurring residential:</b> same — invoice after each visit, or monthly for the month ahead if the
+    client prefers predictability.</p>
+    <p><b>Commercial clients:</b> they run on Net 15/Net 30 and will pay late regardless — invoice on the 1st
+    for the month's visits and put the due date in a specific format ("Due by March 15") rather than "Net 30".
+    Specific dates get paid faster than relative ones.</p>
+
+    <h2>Make one in 30 seconds</h2>
+    <p>The <a href="/cleaning/cleaning-invoice-generator/">Cleaning Invoice Generator</a> builds this exact
+    layout in your browser — enter the client, add your service lines, and print or save as PDF. Nothing is
+    uploaded or stored; no account, no watermark. Price the job first with the
+    <a href="/guides/house-cleaning-prices/">cleaning pricing guide</a> or the
+    <a href="/cleaning/cleaning-estimate-calculator/">estimate calculator</a>, and standardize the visit with
+    the <a href="/cleaning/cleaning-checklist-builder/">checklist builder</a>.</p>
+
+    <h2>Questions cleaners ask</h2>
+    <div class="faq">
+      <details><summary>Should a cleaning invoice include tax?</summary><p>Depends on your state: some states tax residential cleaning services, others don't, and a few tax only commercial. Check your state's rule once, then either add a tax line or note "tax not applicable". Getting this wrong is a fix-later problem, not a stop-everything problem.</p></details>
+      <details><summary>Do I need invoice software?</summary><p>No. A clean one-page template you fill and print covers most residential and small-commercial needs. Software starts paying off when you need automatic recurring invoices and card payment links — usually past 15–20 recurring clients.</p></details>
+      <details><summary>What if the client refuses to pay?</summary><p>Send one polite reminder at 7 days with the invoice attached, one firmer note at 14, then a final notice at 30 stating next steps. For residential amounts, small claims court is the realistic backstop. The best protection is upstream: itemized quotes and payment terms agreed in writing before the first visit.</p></details>
+      <details><summary>Invoice before or after the clean?</summary><p>After, for one-time and residential — invoice on completion, same day. For recurring commercial, invoice on a fixed schedule (the 1st) for that month's visits. First-time commercial clients sometimes expect a deposit — 50% before the first clean is reasonable and common.</p></details>
+    </div>
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Should a cleaning invoice include tax?', acceptedAnswer: { '@type': 'Answer', text: 'It depends on the state: some tax residential cleaning, some only commercial. Check once, then add a tax line or note tax not applicable.' } },
+      { '@type': 'Question', name: 'Do I need invoice software?', acceptedAnswer: { '@type': 'Answer', text: 'No — a clean one-page template covers most needs. Software pays off past roughly 15–20 recurring clients.' } },
+      { '@type': 'Question', name: 'What if the client refuses to pay?', acceptedAnswer: { '@type': 'Answer', text: 'Reminders at 7, 14 and 30 days, then small claims for residential amounts; the best protection is itemized terms agreed before the first visit.' } },
+      { '@type': 'Question', name: 'Invoice before or after the clean?', acceptedAnswer: { '@type': 'Answer', text: 'After, same day, for one-time and residential; recurring commercial is invoiced on a fixed monthly schedule, and first-time commercial clients commonly pay a 50% deposit.' } },
+    ],
+  })} />
+</BaseLayout>
