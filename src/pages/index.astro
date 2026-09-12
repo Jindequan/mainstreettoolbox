@@ -142,4 +142,23 @@ const searchIndex = [
     });
     document.addEventListener('click', (e) => { if (!e.target.closest('.search-wrap')) pop.classList.remove('open'); });
   </script>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Main Street Toolbox',
+    url: new URL('/', Astro.site).toString(),
+    logo: new URL('/favicon.svg', Astro.site).toString(),
+    description: 'Free calculators for small service businesses — restaurants, cleaning companies, lawn care crews, contractors, salons and retail shops. No signup, no ads.',
+    sameAs: [
+      'https://ko-fi.com/devinjin',
+      'https://github.com/Jindequan',
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Main Street Toolbox',
+    url: new URL('/', Astro.site).toString(),
+  })} />
 </BaseLayout>

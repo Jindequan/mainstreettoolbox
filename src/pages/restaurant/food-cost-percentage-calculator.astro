@@ -57,6 +57,34 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     Engineering Matrix</a>. Printing the result: <a href="/menu-maker/">Menu Maker</a>.</p>
   </section>
 
+  <section class="container faq">
+    <h2>Questions owners ask</h2>
+    <details><summary>How do I calculate food cost percentage?</summary><p>Divide what the plate costs you by what you charge, times 100. A dish costing $4.90 that sells for $16.95 has a food cost of about 29%.</p></details>
+    <details><summary>Is there a free food cost calculator app?</summary><p>You do not need one — this calculator runs in the browser on any phone or tablet: nothing to download, no account, no subscription. It loads fast enough to check a price mid-service, and you can add it to your home screen like an app.</p></details>
+    <details><summary>Is lower food cost always better?</summary><p>Not always. Chasing 20% by shrinking portions can hurt reviews and repeat visits. A stable 30% with strong sales beats a wobbly 24% with unhappy guests.</p></details>
+    <details><summary>Should I use weekly COGS instead of a single dish?</summary><p>Both views matter. Single-dish checks catch recipe problems; a weekly COGS-to-sales percentage catches theft, waste and supplier creep. This calculator handles the dish view.</p></details>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I calculate food cost percentage?', acceptedAnswer: { '@type': 'Answer', text: 'Divide what the plate costs you by what you charge, times 100. A dish costing $4.90 that sells for $16.95 has a food cost of about 29%.' } },
+      { '@type': 'Question', name: 'Is there a free food cost calculator app?', acceptedAnswer: { '@type': 'Answer', text: 'You do not need one — this calculator runs in the browser on any phone or tablet: nothing to download, no account, no subscription.' } },
+      { '@type': 'Question', name: 'Is lower food cost always better?', acceptedAnswer: { '@type': 'Answer', text: 'Not always. Chasing 20% by shrinking portions can hurt reviews and repeat visits. A stable 30% with strong sales beats a wobbly 24% with unhappy guests.' } },
+      { '@type': 'Question', name: 'Should I use weekly COGS instead of a single dish?', acceptedAnswer: { '@type': 'Answer', text: 'Both views matter. Single-dish checks catch recipe problems; a weekly COGS-to-sales percentage catches theft, waste and supplier creep.' } },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Food Cost Percentage Calculator',
+    url: new URL('/restaurant/food-cost-percentage-calculator/', Astro.site).toString(),
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  })} />
+
   <style is:global>
     .head { padding: 36px 24px 8px; }
     .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }

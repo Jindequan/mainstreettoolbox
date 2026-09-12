@@ -54,6 +54,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     paper: <a href="/menu-maker/">Menu Maker</a>.</p>
   </section>
 
+  <section class="container faq">
+    <h2>Questions owners ask</h2>
+    <details><summary>What is menu engineering?</summary><p>A method from restaurant economics that scores every dish on profitability and popularity, then prescribes an action per class: protect Stars, reprice Plowhorses, reposition Puzzles, retire Dogs.</p></details>
+    <details><summary>What sales period should I enter?</summary><p>Any representative period works — a typical week or a full month. What matters is that every dish uses the same period, because popularity is compared against your own average.</p></details>
+    <details><summary>A dish is a Plowhorse. Should I just raise the price?</summary><p>Usually yes, in small steps. Plowhorses already have proven demand; a modest price increase typically survives. Watch sales for two weeks after the change and stop if volume drops sharply.</p></details>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is menu engineering?', acceptedAnswer: { '@type': 'Answer', text: 'A method from restaurant economics that scores every dish on profitability and popularity, then prescribes an action per class: protect Stars, reprice Plowhorses, reposition Puzzles, retire Dogs.' } },
+      { '@type': 'Question', name: 'What sales period should I enter?', acceptedAnswer: { '@type': 'Answer', text: 'Any representative period works — a typical week or a full month. Every dish should use the same period, because popularity is compared against your own average.' } },
+      { '@type': 'Question', name: 'A dish is a Plowhorse. Should I just raise the price?', acceptedAnswer: { '@type': 'Answer', text: 'Usually yes, in small steps. Plowhorses have proven demand; a modest increase typically survives. Watch sales for two weeks and stop if volume drops sharply.' } },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Menu Engineering Matrix',
+    url: new URL('/restaurant/menu-engineering-matrix/', Astro.site).toString(),
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  })} />
+
   <style is:global>
     .head { padding: 36px 24px 8px; }
     .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }

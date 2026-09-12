@@ -68,6 +68,32 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     roles on it? <a href="/menu-maker/">Menu Maker</a>.</p>
   </section>
 
+  <section class="container faq">
+    <h2>Questions owners ask</h2>
+    <details><summary>What is a typical tip out percentage?</summary><p>For full-service dining, servers commonly keep 70–80% of tips and pass 20–30% to support staff. Busy bar programs often tip out 5–10% of alcohol sales to the bar instead of a share of tips.</p></details>
+    <details><summary>Should tip out be based on tips or on sales?</summary><p>Tips-based splits divide what was actually collected — simplest and most transparent. Sales-based splits (e.g. 3% of the server's sales) push risk onto servers but guarantee support staff earn on busy and slow days alike.</p></details>
+    <details><summary>Can managers be part of a tip pool?</summary><p>In the US, federal law bars employers — including managers and supervisors — from keeping a share of a mandatory tip pool under the FLSA. Always check current federal and state rules for your exact setup.</p></details>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is a typical tip out percentage?', acceptedAnswer: { '@type': 'Answer', text: 'For full-service dining, servers commonly keep 70–80% of tips and pass 20–30% to support staff. Busy bar programs often tip out 5–10% of alcohol sales to the bar instead.' } },
+      { '@type': 'Question', name: 'Should tip out be based on tips or on sales?', acceptedAnswer: { '@type': 'Answer', text: 'Tips-based splits divide what was actually collected — simplest and most transparent. Sales-based splits (e.g. 3% of server sales) guarantee support staff earn on busy and slow days alike.' } },
+      { '@type': 'Question', name: 'Can managers be part of a tip pool?', acceptedAnswer: { '@type': 'Answer', text: 'In the US, federal law bars employers — including managers and supervisors — from keeping a share of a mandatory tip pool under the FLSA. Check current federal and state rules for your setup.' } },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Tip Out Calculator',
+    url: new URL('/restaurant/tip-out-calculator/', Astro.site).toString(),
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  })} />
+
   <style is:global>
     .head { padding: 36px 24px 10px; }
     .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
