@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const updated = 'September 2026';
+---
+<BaseLayout
+  title="Post Construction Cleaning Rates: How to Price Cleanup Jobs (2026) — Main Street Toolbox"
+  description="Post construction cleaning rates explained: per-sq-ft benchmarks by phase, how to bid residential vs commercial new builds, what to include in the estimate, and the traps that eat the margin."
+  path="/guides/post-construction-cleaning-rates/"
+>
+  <div class="prose">
+    <p class="eyebrow">Pricing guide · {updated}</p>
+    <h1>How much should post construction cleaning cost?</h1>
+    <p><b>The short answer:</b> post-construction cleanup typically runs <b>$0.15–0.50 per sq ft</b> for
+    residential new builds and light commercial, with heavy commercial and multi-phase jobs above that. A
+    2,000 sq ft new home commonly lands <b>$400–900</b> depending on debris level and finish quality. The
+    spread is the phases — "post construction clean" means three different jobs to three different people,
+    and the bid is wrong until you know which one they're buying.</p>
+
+    <h2>The three phases (and who pays for each)</h2>
+    <table>
+      <thead><tr><th>Phase</th><th>What it is</th><th>Typical share</th></tr></thead>
+      <tbody>
+        <tr><td>Rough / heavy clean</td><td>Debris removal, stickers and tape, dust everywhere, sweep-out</td><td>~30% of the bid</td></tr>
+        <tr><td>Final clean</td><td>The real clean: windows, fixtures, floors, cabinets in/out, baths to hotel standard</td><td>~55%</td></tr>
+        <tr><td>Touch-up / punch</td><td>Re-clean after the punch walk generates scuffs and dust trails</td><td>~15%</td></tr>
+      </tbody>
+    </table>
+    <p>The classic margin-killer: the GC says "one clean" and means all three. Get the phases in writing, price
+    each as its own line, and make touch-ups a <b>capped</b> visit rate — not unlimited free returns.</p>
+
+    <h2>Benchmarks by project type</h2>
+    <table>
+      <thead><tr><th>Project</th><th>Typical US rate</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td>New residential (single family)</td><td>$0.15–0.30 / sq ft</td><td>2,000 sq ft → $400–600</td></tr>
+        <tr><td>Custom estate / high finish</td><td>$0.25–0.50 / sq ft</td><td>5,000 sq ft → $1,250–2,500</td></tr>
+        <tr><td>Light commercial / office buildout</td><td>$0.20–0.40 / sq ft</td><td>5,000 sq ft → $1,000–2,000</td></tr>
+        <tr><td>Multi-family units</td><td>$150–400 / unit</td><td>20 units → $3,000–8,000</td></tr>
+        <tr><td>Hotels (per room, final phase)</td><td>$65–120 / room</td><td>123 rooms → $8,000–14,800</td></tr>
+      </tbody>
+    </table>
+    <p>Finish level moves you inside the band more than size does. Marble and natural stone, glass everywhere,
+    detailed millwork, painted-shut stickers on a hundred windows — that's top-of-band work at bottom-of-band
+    speed. Walk the site before bidding; photos lie.</p>
+
+    <h2>What the estimate must include</h2>
+    <p><b>Access reality:</b> power, water, working HVAC, and no trades inside. Every day you clean around
+    electricians is a change order — put it in the contract before it happens, not after.</p>
+    <p><b>Debris definition:</b> whose job is the leftover drywall chunks and paint cans? If it's yours, the
+    dump run goes in the bid. If it's the GC's, say so in writing.</p>
+    <p><b>Window count:</b> stickers on every pane at move-in inspection is a new-construction specialty —
+    price per pane if the glazing package is big, not as a flat line.</p>
+    <p><b>Payment terms:</b> milestone invoicing (deposit, per-phase, final on punch approval). Never carry a
+    multi-week cleanup on a net-30 promise from someone you just met.</p>
+
+    <h2>Price the job</h2>
+    <p>For a rough number in 30 seconds, run the
+    <a href="/cleaning/cleaning-estimate-calculator/">Cleaning Estimate Calculator</a> at move-out depth as a
+    floor, then add the construction premium for debris and phases. When the bid is accepted, the
+    <a href="/cleaning/cleaning-invoice-generator/">invoice generator</a> prints phase-by-phase billing, and
+    the <a href="/cleaning/cleaning-checklist-builder/">checklist builder</a> keeps the punch list honest
+    between your crew and the site supervisor.</p>
+
+    <h2>Questions cleaners ask</h2>
+    <div class="faq">
+      <details><summary>What is post construction cleaning?</summary><p>The specialized cleaning after a build or renovation: debris removal, sticker/adhesive removal, construction dust from every surface (including ducts, vents and light fixtures), and a finish-level clean that gets the space to move-in or inspection standard. It needs different equipment, insurance and patience from a maintenance clean.</p></details>
+      <details><summary>How do you price construction cleanup?</summary><p>Per square foot for the space, split across the phases actually contracted, with premiums for finish level and debris. Verify with a labor-hours estimate at your crew rate — if the sq ft number and the hours number disagree by more than 20%, one of them is wrong.</p></details>
+      <details><summary>How much more should I charge than a regular deep clean?</summary><p>Commonly 50–100% over your deep-clean rate for the same space: construction dust is in everything (windows, vents, cabinet interiors, floor grout), stickers take real time, and the punch-list dynamic means you're cleaning to an inspector's standard, not a homeowner's.</p></details>
+      <details><summary>Do I need special insurance for post construction work?</summary><p>Check the GC's requirements before bidding — many require a COI naming them, and some sites require workers comp even for solo cleaners. It's a paperwork day, not a price problem, but only if you find out before the bid.</p></details>
+    </div>
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is post construction cleaning?', acceptedAnswer: { '@type': 'Answer', text: 'Specialized cleaning after a build or renovation: debris removal, sticker removal, construction dust from every surface including vents and fixtures, and a finish-level clean to move-in standard.' } },
+      { '@type': 'Question', name: 'How do you price construction cleanup?', acceptedAnswer: { '@type': 'Answer', text: 'Per square foot split across contracted phases, with premiums for finish level and debris; verify with a labor-hours estimate at your crew rate.' } },
+      { '@type': 'Question', name: 'How much more should I charge than a regular deep clean?', acceptedAnswer: { '@type': 'Answer', text: 'Commonly 50–100% over deep-clean rates, because construction dust reaches everything and punch-list standards are stricter.' } },
+      { '@type': 'Question', name: 'Do I need special insurance for post construction work?', acceptedAnswer: { '@type': 'Answer', text: 'Many GCs require a COI naming them and some sites require workers comp — confirm requirements before bidding.' } },
+    ],
+  })} />
+</BaseLayout>

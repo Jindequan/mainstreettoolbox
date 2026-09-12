@@ -17,6 +17,9 @@ import boothCommission from './booth-rent-commission-calculator';
 import retailMarkup from './retail-markup-calculator';
 import cleaningChecklist from './cleaning-checklist-builder';
 import cleaningInvoice from './cleaning-invoice-generator';
+import pressureWashing from './pressure-washing-price-calculator';
+import windowCleaning from './window-cleaning-price-calculator';
+import junkRemoval from './junk-removal-estimator';
 import lawnEstimate from './lawn-care-estimate-generator';
 import mulchCalc from './mulch-calculator';
 import workOrder from './work-order-generator';
@@ -45,6 +48,9 @@ export const TOOLS: RegisteredTool[] = [
   retailMarkup,
   cleaningChecklist,
   cleaningInvoice,
+  pressureWashing,
+  windowCleaning,
+  junkRemoval,
   lawnEstimate,
   mulchCalc,
   workOrder,

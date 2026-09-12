@@ -33,7 +33,13 @@ export default {
     <p>So the rate is worked backwards: take-home you want, grossed up for taxes, plus twelve months of
     overhead (insurance, truck, tools, licenses), divided by <b>real billable hours</b>. A $60,000 target with
     25 billable hours and $800 of overhead needs about <b>$69 an hour</b> — not $30.</p>
-    <p>That rate is the floor for every bid. Jobs below it are you paying for the privilege of working.</p>`,
+    <p>That rate is the floor for every bid. Jobs below it are you paying for the privilege of working.</p>
+    <p><b>Handymen, read this twice:</b> the same math decides handyman rates, and the US market runs
+    <b>$50–85/hour</b> in most metros (California and coastal cities higher, rural lower) — but self-employed
+    handymen carry their own payroll taxes, insurance and tool wear, so the sticker rate is not take-home.
+    Small-job specialists can charge above the band because nobody else wants a two-hour job; that
+    inconvenience premium is real pricing power. Run your own numbers below — the honest hourly rate is
+    usually 30–50% higher than what neighbors charge.</p>`,
   faq: [
     { q: 'How many billable hours does a solo contractor really get?', a: 'Twenty to twenty-five is realistic for most trades — the rest of a 40-hour week goes to quotes, supply runs, site cleanup and driving. Anyone budgeting 40 billable hours is planning to work for free half the time.' },
     { q: 'What counts as overhead?', a: 'Everything that bills whether or not you worked: insurance, truck payment and fuel, tool replacement, licenses and permits, accounting, phone. Monthly it, and the calculator spreads it across your billable hours.' },

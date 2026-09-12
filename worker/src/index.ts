@@ -27,6 +27,9 @@ export const SLUGS = new Set([
   'cleaning-estimate-calculator',
   'cleaning-checklist-builder',
   'cleaning-invoice-generator',
+  'pressure-washing-price-calculator',
+  'window-cleaning-price-calculator',
+  'junk-removal-estimator',
   // lawn
   'lawn-mowing-price-calculator',
   'lawn-care-estimate-generator',
