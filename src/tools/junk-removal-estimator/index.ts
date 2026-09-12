@@ -40,7 +40,7 @@ export default {
   params: {
     primaryLabel: 'Suggested quote',
     copy: {
-      info: 'US junk removal runs $130–380 per cubic yard is wrong math — the industry prices in fractions of a truck: ¼ load $150–250, ½ load $250–420, full load $500–800. A job minimum of $100–150 is standard.',
+      info: 'The industry prices junk removal in fractions of a truck, not cubic yards: ¼ load $150–250, ½ load $250–420, full load $500–800, with a $100–150 job minimum. Quote the fraction, confirm it on site before loading.',
     },
   },
   compute: (values, _rows, p) => {
