@@ -40,6 +40,9 @@
 | 2026-09-12 | 站内 | 3 新工具上线：pressure washing / window cleaning / junk removal | /cleaning/*-calculator/ | ✅ 49 页构建 |
 | 2026-09-12 | 站内 | post-construction cleaning rates guide（搜索+Reddit 双重信号） | /guides/post-construction-cleaning-rates/ | ✅ 下批：snow removal/painting/catering |
 | 2026-09-12 | 站内 | T1 优化：contractor 页补 handyman 定价段（10+ 关键词变体） | /construction/contractor-hourly-rate-calculator/ | ✅ |
+| 2026-09-12 | 站内 | T1 优化：food-cost 页 FAQ 补 "free app" 场景（4 变体词簇） | /restaurant/food-cost-percentage-calculator/ | ✅ 注意：该页 FAQ 为 JS 渲染，非 JS 爬虫不可见 |
+| 2026-09-12 | 站内 | T1 优化：price-list-builder 跨行业泛化文案（service price list template 词簇） | /salon/service-price-list-builder/ | ✅ |
+| 2026-09-12 | IndexNow | 重提 2 个 T1 更新页 | api.indexnow.org | 200 OK |
 
 ### 巡检结论 2026-09-12
 - **0 条评论（纪律执行）**：11 帖过筛无合格目标——已答 2 帖排除；其余为经验分享/取消政策/消费者投诉/薪酬（非服务定价）/竞品调研/非领域话题。不硬凑。

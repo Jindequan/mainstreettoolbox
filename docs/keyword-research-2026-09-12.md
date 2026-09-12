@@ -61,9 +61,9 @@ Seeds: 33, from site inventory (25 tools / 6 industries + new-vertical probes). 
 > ⚠️ 自 2026-09-12 起所有新选题必须过 [worth-doing-bar.md](./worth-doing-bar.md) 四道闸（需求深度 / SERP 增量 / 数字有出处 / 直接价值测试）。autocomplete 有词 ≠ 值得做。
 
 1. ✅ 建 3 个新工具 + 1 篇 guide（本轮——方向过闸，但 junk-removal 出现草稿语病上线事故，闸门由此设立）
-2. T1 页面优化（cleaning estimate 标题已由并行会话完成；contractor 页 handyman 段已加）
-3. tools 页 + 行业页入口更新；IndexNow 提交全部新 URL
-4. worker 白名单同步 3 个新 slug（slugs.test.ts 会强制）
+2. ✅ T1 页面优化全部完成（cleaning estimate 标题 / contractor handyman 段 / food-cost app FAQ / price-list 跨行业泛化——均已上线 + IndexNow 重提）
+3. ✅ tools 页 + 行业页入口为注册表自动生成，3 新工具已挂链；IndexNow 已提交（4 新 URL + 2 个 T1 更新页均 200/ALL_OK）
+4. ✅ worker 白名单已同步 3 个新 slug（slugs.test.ts 3/3 通过）
 5. 下批：snow removal（10 月前）与 painting **先补基准数字的来源再动手**；catering 待查
 6. GSC 验证短名单词的实际展现（2-3 周后复查）
 7. 每月重跑 harvest，diff 新增词；下批清单每季度按闸门重审
