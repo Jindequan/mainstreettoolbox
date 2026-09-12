@@ -7,10 +7,10 @@ export default {
   name: 'Service Price List Builder',
   tagline: 'A typeset price list, not a Word doc. No signup.',
   title: 'Service Price List Builder — Free Printable Price Lists',
-  description: 'Build a clean, typeset price list for your salon or barbershop — services, times and prices, ready to print. Free, no signup.',
+  description: 'Build a clean, typeset price list for any service business — salon, cleaning, lawn care or contracting. Services, times and prices, ready to print. Free, no signup.',
   result: { label: 'Your price list' },
   fields: [
-    { id: 'salonName', label: 'Business name', kind: 'text', default: 'My Salon', placeholder: 'Salon / barbershop name' },
+    { id: 'salonName', label: 'Business name', kind: 'text', default: 'My Business', placeholder: 'Your business name' },
   ],
   rows: {
     id: 'services',
@@ -32,7 +32,7 @@ export default {
     primaryLabel: 'Services on the list',
     copy: {
       info: 'Print for the front desk, post on your socials, or save as PDF for your booking page.',
-      footnote: 'Prices may vary by hair length and density. Ask at consultation.',
+      footnote: 'Prices may vary by job size and complexity. Ask for a final quote.',
     },
   },
   compute: (values, rows, p) => calcPriceList(values, rows, p),
@@ -40,10 +40,14 @@ export default {
     <p>A typeset price list does quiet work every day: it answers the phone question, sets the anchor before the
     consultation, and quietly says "this is a professional operation". The layout pairs each service with its
     time — clients read time as honesty, and you get shorter consultations.</p>
+    <p>The same builder works for any service trade — cleaning, lawn care, contracting, pet grooming: swap the
+    preset rows for your own services and print. Any business that quotes by the job instead of by the hour
+    gets the same benefit: prices that are seen before they are discussed.</p>
     <p>Print one for the station mirror and export the same list for your booking page. Reprint whenever you
     change prices — an outdated list is worse than no list.</p>`,
   faq: [
     { q: 'Should I put prices on my website?', a: 'Yes. Hiding prices ("consultations only") filters out price-sensitive clients but also reads as evasive. A published range with "final quote at consultation" converts better than mystery.' },
+    { q: 'Can I use this as a cleaning or lawn care price list template?', a: 'Yes. The presets are salon examples — replace them with your own services, minutes and prices, and print. The layout, typesetting and PDF export are the same for every trade.' },
     { q: 'How do I raise prices without losing clients?', a: 'New list, new season, grandfather nobody silently — announce two weeks ahead, raise the underpriced services most, and keep the increase under 10% per year for loyal regulars.' },
   ],
   related: ['booth-rent-commission-calculator', 'tip-out-calculator', 'labor-cost-calculator'],

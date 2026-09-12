@@ -31,6 +31,7 @@ export default {
     that brings this dish back inside the healthy band — before you touch a single recipe.</p>`,
   faq: [
     { q: 'How do I calculate food cost percentage?', a: 'Divide what the plate costs you by what you charge, times 100. A dish costing $4.90 that sells for $16.95 has a food cost of about 29%.' },
+    { q: 'Is there a free food cost calculator app?', a: 'You do not need one — this calculator runs in the browser on any phone or tablet: nothing to download, no account, no subscription. It loads fast enough to check a price mid-service, and you can add it to your home screen like an app.' },
     { q: 'Is lower food cost always better?', a: 'Not always. Chasing 20% by shrinking portions can hurt reviews and repeat visits. A stable 30% with strong sales beats a wobbly 24% with unhappy guests.' },
     { q: 'Should I use weekly COGS instead of a single dish?', a: 'Both views matter. Single-dish checks catch recipe problems; a weekly COGS-to-sales percentage catches theft, waste and supplier creep. This calculator handles the dish view.' },
   ],
