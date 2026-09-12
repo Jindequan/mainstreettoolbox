@@ -41,6 +41,10 @@
 | 2026-09-12 | 站内 | post-construction cleaning rates guide（搜索+Reddit 双重信号） | /guides/post-construction-cleaning-rates/ | ✅ 下批：snow removal/painting/catering |
 | 2026-09-12 | 站内 | T1 优化：contractor 页补 handyman 定价段（10+ 关键词变体） | /construction/contractor-hourly-rate-calculator/ | ✅ |
 
+### 巡检结论 2026-09-12
+- **0 条评论（纪律执行）**：11 帖过筛无合格目标——已答 2 帖排除；其余为经验分享/取消政策/消费者投诉/薪酬（非服务定价）/竞品调研/非领域话题。不硬凑。
+- IndexNow 无待提交项（白天已提交 4 个新 URL 并验证 ALL_OK）。
+
 ### 巡检结论 2026-09-11
 - 答 2 条（上限 3 内）；跳过：员工薪酬帖（领域边缘+措辞混乱）、客户生病取消帖（非定价）、2 个竞品调研帖（不碰）、酒类保险（非领域）、草坪设备（非定价）。
 - **选题信号**：新建工程清洁（post-construction）两周内出现 3 次（酒店投标、post-construction 专创业夫妻、住宅新建）→ 潜在 guide 选题："How to bid post-construction cleaning"。
