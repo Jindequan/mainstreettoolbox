@@ -36,6 +36,10 @@
 | 2026-09-10 | Reddit | 巡检：扫描完成、锁定 2 目标后浏览器通道断连 | — | ⛔ 本轮未发帖（次日恢复执行） |
 | 2026-09-11 | Reddit | 巡检答题：3500sqft 美术馆商业报价（艺术品环境溢价角度） | comments/1wbqmzc | ✅ 上线（纯价值无链接） |
 | 2026-09-11 | Reddit | 巡检答题：123 房新建酒店投标（per-room 锚点 $65-120 + 里程碑付款） | comments/1wbbujk（t1_p95m6wn） | ✅ 上线（前两次被限流静默吞掉，等 6 分钟后走 /api/comment 成功） |
+| 2026-09-12 | 站内 | **关键词研究**：Google+Bing 采集 7142 词 → 报告 | docs/keyword-research-2026-09-12.md | ✅ T2 新工具选题确认 |
+| 2026-09-12 | 站内 | 3 新工具上线：pressure washing / window cleaning / junk removal | /cleaning/*-calculator/ | ✅ 49 页构建 |
+| 2026-09-12 | 站内 | post-construction cleaning rates guide（搜索+Reddit 双重信号） | /guides/post-construction-cleaning-rates/ | ✅ 下批：snow removal/painting/catering |
+| 2026-09-12 | 站内 | T1 优化：contractor 页补 handyman 定价段（10+ 关键词变体） | /construction/contractor-hourly-rate-calculator/ | ✅ |
 
 ### 巡检结论 2026-09-11
 - 答 2 条（上限 3 内）；跳过：员工薪酬帖（领域边缘+措辞混乱）、客户生病取消帖（非定价）、2 个竞品调研帖（不碰）、酒类保险（非领域）、草坪设备（非定价）。
