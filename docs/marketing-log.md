@@ -43,6 +43,7 @@
 | 2026-09-12 | 站内 | T1 优化：food-cost 页 FAQ 补 "free app" 场景（4 变体词簇） | /restaurant/food-cost-percentage-calculator/ | ✅ 注意：该页 FAQ 为 JS 渲染，非 JS 爬虫不可见 |
 | 2026-09-12 | 站内 | T1 优化：price-list-builder 跨行业泛化文案（service price list template 词簇） | /salon/service-price-list-builder/ | ✅ |
 | 2026-09-12 | IndexNow | 重提 2 个 T1 更新页 | api.indexnow.org | 200 OK |
+| 2026-09-12 | 站内 | **GEO 基线审计**（四层漏斗实测）+ 4 项 quick wins 上线：restaurant 3 定制页服务端 FAQ+schema（此前 FAQ 是死数据）、首页 Organization/WebSite schema、llms.txt、robots.txt AI 爬虫显式配置 | docs/geo-baseline-2026-09-12.md | ✅ GEO ~42→~48；10 月中旬 compare |
 
 ### 巡检结论 2026-09-12
 - **0 条评论（纪律执行）**：11 帖过筛无合格目标——已答 2 帖排除；其余为经验分享/取消政策/消费者投诉/薪酬（非服务定价）/竞品调研/非领域话题。不硬凑。
