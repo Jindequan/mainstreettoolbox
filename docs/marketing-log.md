@@ -46,6 +46,9 @@
 | 2026-09-12 | 站内 | **GEO 基线审计**（四层漏斗实测）+ 4 项 quick wins 上线：restaurant 3 定制页服务端 FAQ+schema（此前 FAQ 是死数据）、首页 Organization/WebSite schema、llms.txt、robots.txt AI 爬虫显式配置 | docs/geo-baseline-2026-09-12.md | ✅ GEO ~42→~48；10 月中旬 compare |
 | 2026-09-13 | 运营循环 | 第 1 轮：snow removal 闸 3 基准研究（10 来源交叉，5 档区间 ≥2 源）→ 全闸通过进构建队列 | docs/benchmarks-snow-removal.md | ✅ GSC 本轮不可读（显示器不可用），已记状态文件 |
 
+### 外联回复 2026-09-13
+- **Neal（Can We Launch）来信**：经 Show HN 帖子扫站，报 3 项。核实：① GA cookieless 已配置（client_storage none），对方称有 2 个持久 cookie —— 已回信索要 cookie 名复现；② LCP 4.4s / 图片权重**属实** → hero 图已压 ~20%；③ www 双主机**属实** → vercel.json www→apex 308 已上线验证。已回信：澄清+通报修复+婉拒付费报告。**信号：Show HN 渠道带来首个深度外联。**
+
 ### 巡检结论 2026-09-12
 - **0 条评论（纪律执行）**：11 帖过筛无合格目标——已答 2 帖排除；其余为经验分享/取消政策/消费者投诉/薪酬（非服务定价）/竞品调研/非领域话题。不硬凑。
 - IndexNow 无待提交项（白天已提交 4 个新 URL 并验证 ALL_OK）。
