@@ -33,12 +33,25 @@ const ga = import.meta.env.PUBLIC_GA_ID;
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   {plausible && <script defer data-domain={plausible} src="https://plausible.io/js/script.js"></script>}
-  {ga && <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}></script>}
   {ga && <script is:inline define:vars={{ gaId: ga }}>
+    // 延迟加载 GA：首次交互后才注入 gtag.js（Can We Launch 审计 2026-09-14：
+    // 加载即追踪请求 + client_storage:none 下仍现 _ga cookie —— 交互前根本不加载脚本，两个问题同时消失）
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', gaId, { client_storage: 'none' });
+    let gaStarted = false;
+    const startGa = () => {
+      if (gaStarted) return;
+      gaStarted = true;
+      gaEvents.forEach((e) => window.removeEventListener(e, startGa, { passive: true }));
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', gaId, { client_storage: 'none' });
+    };
+    const gaEvents = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
+    gaEvents.forEach((e) => window.addEventListener(e, startGa, { passive: true }));
   </script>}
 </head>
 <body class={bodyClass}>
