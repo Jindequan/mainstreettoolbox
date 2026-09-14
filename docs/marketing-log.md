@@ -45,6 +45,7 @@
 | 2026-09-12 | IndexNow | 重提 2 个 T1 更新页 | api.indexnow.org | 200 OK |
 | 2026-09-12 | 站内 | **GEO 基线审计**（四层漏斗实测）+ 4 项 quick wins 上线：restaurant 3 定制页服务端 FAQ+schema（此前 FAQ 是死数据）、首页 Organization/WebSite schema、llms.txt、robots.txt AI 爬虫显式配置 | docs/geo-baseline-2026-09-12.md | ✅ GEO ~42→~48；10 月中旬 compare |
 | 2026-09-13 | 运营循环 | 第 1 轮：snow removal 闸 3 基准研究（10 来源交叉，5 档区间 ≥2 源）→ 全闸通过进构建队列 | docs/benchmarks-snow-removal.md | ✅ GSC 本轮不可读（显示器不可用），已记状态文件 |
+| 2026-09-14 | 站内 | 运营循环第 2 轮：**Snow Removal Pricing Calculator 上线**（第 27 个工具，挂 lawn）；per-push 三档/seasonal/hourly 全走 ≥2 源基准，问题式 H3 + 来源化 FAQ | /lawn/snow-removal-pricing-calculator/ | ✅ 生产冒烟全绿 + IndexNow 200；GSC 连续 2 天不可读 |
 
 ### 外联回复 2026-09-13
 - **Neal（Can We Launch）来信**：经 Show HN 帖子扫站，报 3 项。核实：① GA cookieless 已配置（client_storage none），对方称有 2 个持久 cookie —— 已回信索要 cookie 名复现；② LCP 4.4s / 图片权重**属实** → hero 图已压 ~20%；③ www 双主机**属实** → vercel.json www→apex 308 已上线验证。已回信：澄清+通报修复+婉拒付费报告。**信号：Show HN 渠道带来首个深度外联。**
