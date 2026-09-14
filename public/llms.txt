@@ -30,6 +30,7 @@
 - [Contractor Hourly Rate Calculator](https://mainstreettoolbox.com/construction/contractor-hourly-rate-calculator/): The hourly rate a contractor must charge to cover wages, taxes, overhead and target profit — includes handyman and state variations.
 - [Lawn Mowing Price Calculator](https://mainstreettoolbox.com/lawn/lawn-mowing-price-calculator/): Prices mowing jobs by lawn size, frequency and trim work against US averages.
 - [Mulch Calculator](https://mainstreettoolbox.com/lawn/mulch-calculator/): Cubic yards of mulch needed for an area and depth, with bag-count conversion.
+- [Snow Removal Pricing Calculator](https://mainstreettoolbox.com/lawn/snow-removal-pricing-calculator/): Prices snow removal per push by driveway size, as a seasonal contract or hourly — with 2026 US ranges and contract trigger-depth guidance.
 - [Service Price List Builder](https://mainstreettoolbox.com/salon/service-price-list-builder/): Builds a typeset, printable price list for any service business — salon, cleaning, lawn care or contracting.
 - [Retail Math Calculator](https://mainstreettoolbox.com/retail/retail-math-calculator/): Markup, margin, markdown, sell-through, GMROI and break-even modules with a printable cheat sheet.
 

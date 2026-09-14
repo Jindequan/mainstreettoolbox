@@ -29,6 +29,7 @@ import receiptGen from './receipt-generator';
 import inventorySheet from './inventory-count-sheet';
 import discountProfit from './discount-profit-calculator';
 import retailMath from './retail-math-calculator';
+import snowRemoval from './snow-removal-pricing-calculator';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -60,6 +61,7 @@ export const TOOLS: RegisteredTool[] = [
   inventorySheet,
   discountProfit,
   retailMath,
+  snowRemoval,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);

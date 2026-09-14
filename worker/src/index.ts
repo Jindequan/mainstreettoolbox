@@ -34,6 +34,7 @@ export const SLUGS = new Set([
   'lawn-mowing-price-calculator',
   'lawn-care-estimate-generator',
   'mulch-calculator',
+  'snow-removal-pricing-calculator',
   // construction
   'contractor-hourly-rate-calculator',
   'material-cost-estimator',
