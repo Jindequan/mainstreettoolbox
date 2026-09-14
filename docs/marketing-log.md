@@ -75,3 +75,7 @@
 - **选题信号**：recurring client profitability 今天同日两帖（亏损识别+单客户亏损指标）→ 潜在 guide："How to know when a recurring client is unprofitable"（清洁行业经营指标方向，站点还没有经营类内容）。
 - **部署备注**：磁石页 /benchmarks/service-pricing-2026/ 已提交 IndexNow 但**页面 404**——Vercel 当日 100 部署额度耗尽，等 UTC 重置（北京 8 点）后 git 自动部署生效，届时需重提 IndexNow。
 - **Cleanfax pitch**：全文已备（docs/outbox-cleanfax.md），Gmail compose 渲染 3 次失败（网络）→ 明日重发。
+
+### 外联鉴定 2026-09-15（用户转来的"外链"邮件）
+- **LaunchKiwi "DR 51 dofollow 换 badge" 邀请 → 拒绝归档**。核实：站点 0 产品/0 投票/0 listing，自报 79k 月访问与 DR 均不可验证，唯一业务=卖链接（link farm 模式）。放 badge = 互惠链接（Google link scheme 明文覆盖），且给空壳站导流。
+- 教训已固化进 link-building-playbook.md 路径 2：目录验收清单四条（真实 listing 非空、不卖 dofollow、不要求回链 badge、自报数字需独立佐证）。
