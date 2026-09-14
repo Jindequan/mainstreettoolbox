@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const updated = 'September 2026';
+---
+<BaseLayout
+  title="2026 Service Business Pricing Benchmarks (Sourced) — Main Street Toolbox"
+  description="Pricing benchmarks for small service businesses in 2026: cleaning, pressure washing, window cleaning, junk removal, restaurants, salons, lawn care — with sources, so you can cite them."
+  path="/benchmarks/service-pricing-2026/"
+>
+  <div class="prose" style="max-width:52rem">
+    <p class="eyebrow">Reference · {updated}</p>
+    <h1>2026 pricing benchmarks for small service businesses</h1>
+    <p>One page, every benchmark band we publish, with its source. Built for two audiences: owners who want
+    to sanity-check a quote in one scroll, and writers/editors who need a citable number. Where a band comes
+    from our own guide synthesis we say so; where it comes from named industry sources, they're listed.
+    Ranges are US markets unless noted.</p>
+
+    <h2>Cleaning & home services</h2>
+    <table>
+      <thead><tr><th>Service</th><th>2026 benchmark</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>House cleaning, standard</td><td>$90–150 per visit</td><td>MTB guide synthesis</td></tr>
+        <tr><td>House cleaning, deep</td><td>$150–250 per visit</td><td>MTB guide synthesis</td></tr>
+        <tr><td>House cleaning, move-out</td><td>$180–338 per visit</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Pressure washing, driveway/concrete</td><td>$0.12–0.25 / sq ft</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Pressure washing, house siding</td><td>$0.30–0.50 / sq ft</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Pressure washing, wood deck/fence</td><td>$0.50–0.85 / sq ft</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Window cleaning, outside only</td><td>$4–8 per pane</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Window cleaning, in + out</td><td>$8–12 per pane (min $150–200)</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Gutter cleaning, 1-story</td><td>$0.95–1.75 / linear ft</td><td>Angi; CrewNest calculator</td></tr>
+        <tr><td>Gutter cleaning, 2-story</td><td>$1.00–2.50 / linear ft</td><td>Angi; CrewNest calculator</td></tr>
+        <tr><td>Gutter cleaning, typical job</td><td>$120–230 total</td><td>Angi; CrewNest calculator</td></tr>
+        <tr><td>Junk removal, ⅛ truck (~1.5 yd³)</td><td>$100–180</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Junk removal, ¼ truck (~3 yd³)</td><td>$150–250</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Junk removal, ½ truck (~6 yd³)</td><td>$250–420</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Junk removal, full truck (~12 yd³)</td><td>$500–800</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Post-construction clean, residential</td><td>$0.15–0.30 / sq ft</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Post-construction, estate/high finish</td><td>$0.25–0.50 / sq ft</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Post-construction, hotels (final phase)</td><td>$65–120 / room</td><td>MTB guide synthesis</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Restaurants & bars</h2>
+    <table>
+      <thead><tr><th>Metric</th><th>2026 benchmark</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Food cost %, full-service</td><td>28–35%</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Food cost %, quick-service</td><td>25–30%</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Labor % of revenue, full-service</td><td>25–35%</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Pour cost, total beverage program</td><td>18–24% (avg ~20%)</td><td>Backbar; DoorDash; PuriMax</td></tr>
+        <tr><td>Pour cost, spirits</td><td>15–22%</td><td>MAJC; Bevspot; Buyers Edge</td></tr>
+        <tr><td>Pour cost, draft beer</td><td>20–28%</td><td>MAJC; Restaurants Canada</td></tr>
+        <tr><td>Pour cost, wine by the glass</td><td>28–40%</td><td>MAJC; Buyers Edge</td></tr>
+        <tr><td>Tip-out to support roles</td><td>20–30% of tips</td><td>MTB guide synthesis</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Lawn care</h2>
+    <table>
+      <thead><tr><th>Service</th><th>2026 benchmark</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Aeration only</td><td>$15–30 / 1,000 sq ft</td><td>LawnStarter; Angi; LawnSite forum rates</td></tr>
+        <tr><td>Aeration + overseeding</td><td>$30–80 / 1,000 sq ft</td><td>HomeGuide; CountBricks; forum rates</td></tr>
+        <tr><td>Full fall program (seed+fert+lime)</td><td>$80–180 / 1,000 sq ft</td><td>CountBricks; premium-operator rates</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Salon & barber</h2>
+    <table>
+      <thead><tr><th>Metric</th><th>2026 benchmark</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Booth rent as % of revenue (guideline)</td><td>15–25%</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Booth rent, typical range</td><td>$400–1,200+ / month</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Commission split, new stylists keep</td><td>40–50% (toward 60% with book)</td><td>MTB guide synthesis</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Retail</h2>
+    <table>
+      <thead><tr><th>Rule</th><th>2026 benchmark</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Keystone pricing</td><td>100% markup = 50% margin</td><td>MTB guide synthesis</td></tr>
+        <tr><td>Units needed after a 20% discount</td><td>~+67% volume at 50% margin</td><td>MTB guide (discount math)</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Citing this page</h2>
+    <p>If you quote a band, attribute it as shown in the Source column. "MTB guide synthesis" means the range
+    was compiled from multiple industry discussions and operator reports in the linked guide —
+    <a href="/guides/house-cleaning-prices/">cleaning</a>,
+    <a href="/guides/post-construction-cleaning-rates/">post-construction</a>,
+    <a href="/guides/food-cost-percentage/">food cost</a>,
+    <a href="/guides/booth-rent-vs-commission/">booth rent</a> — rather than from a single named survey.
+    Ranges move; this page is re-checked quarterly, last on {updated}.</p>
+
+    <h2>Run your own numbers</h2>
+    <p>Every band above has a matching free calculator: <a href="/cleaning/cleaning-estimate-calculator/">cleaning estimates</a>,
+    <a href="/cleaning/pressure-washing-price-calculator/">pressure washing</a>,
+    <a href="/cleaning/window-cleaning-price-calculator/">window cleaning</a>,
+    <a href="/cleaning/junk-removal-estimator/">junk removal</a>,
+    <a href="/restaurant/food-cost-percentage-calculator/">food cost</a>,
+    <a href="/salon/booth-rent-commission-calculator/">booth rent vs commission</a>,
+    <a href="/lawn/snow-removal-pricing-calculator/">snow removal</a>, and more on the
+    <a href="/tools/">all tools page</a>.</p>
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: '2026 Service Business Pricing Benchmarks',
+    description: 'Pricing benchmark bands for small US service businesses: cleaning, pressure washing, window cleaning, gutter cleaning, junk removal, post-construction cleaning, restaurant food/labor/pour cost, lawn care, salon economics, retail markup.',
+    url: 'https://mainstreettoolbox.com/benchmarks/service-pricing-2026/',
+    keywords: ['pricing benchmarks', 'service business', 'cleaning prices', 'food cost', 'pour cost', '2026'],
+    creator: { '@type': 'Organization', name: 'Main Street Toolbox', url: 'https://mainstreettoolbox.com' },
+    temporalCoverage: '2026',
+  })} />
+</BaseLayout>
