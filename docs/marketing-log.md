@@ -58,3 +58,8 @@
 - 答 2 条（上限 3 内）；跳过：员工薪酬帖（领域边缘+措辞混乱）、客户生病取消帖（非定价）、2 个竞品调研帖（不碰）、酒类保险（非领域）、草坪设备（非定价）。
 - **选题信号**：新建工程清洁（post-construction）两周内出现 3 次（酒店投标、post-construction 专创业夫妻、住宅新建）→ 潜在 guide 选题："How to bid post-construction cleaning"。
 - **操作经验**：old.reddit 连续快速发评会触发 RATELIMIT（约 6 分钟冷却），DOM click 静默失败即限流征兆；正确姿势是 fetch POST /api/comment（带 uh modhash + api_type=json），返回可验证的 t1_id。
+
+### R2 执行 2026-09-14（找词 → 验证 → 闸门）
+- **T1 上线**：cleaning-checklist-builder 重定位为 "Deep Cleaning Checklist Generator — By Room"（承接 35+ 变体簇：by room/printable/move-out），预设换成 12 行深度清洁 by-room 任务，FAQ 补 deep vs move-out 区分；price-list-builder FAQ 补 handyman 换行示例（6 个常见服务+价锚）。IndexNow 已提 2 URL（200）。
+- **闸 3 研究完成**（WebSearch ≥2 源）：pour cost 18–24% 总体+分品类（Backbar/DoorDash/MAJC/Bevspot）✅ 全闸过、候选池首位；gutter $0.95–2.50/lf 分楼层（Angi/CrewNest）✅ 数字齐、闸 2 需差异化；aeration 组合 $30–80/千sqft（HomeGuide/CountBricks/论坛）✅ 全闸过+秋季窗口；bakery **闸 2 不过**（免费工具已扎堆）→ 观察。
+- 结果已写入 运营循环-状态.md 候选池；循环下一主线（painting 研究）不受影响。
