@@ -47,7 +47,7 @@ export default {
     change prices — an outdated list is worse than no list.</p>`,
   faq: [
     { q: 'Should I put prices on my website?', a: 'Yes. Hiding prices ("consultations only") filters out price-sensitive clients but also reads as evasive. A published range with "final quote at consultation" converts better than mystery.' },
-    { q: 'Can I use this as a cleaning or lawn care price list template?', a: 'Yes. The presets are salon examples — replace them with your own services, minutes and prices, and print. The layout, typesetting and PDF export are the same for every trade.' },
+    { q: 'Can I use this as a cleaning, lawn care or handyman price list template?', a: 'Yes — replace the preset rows with your own services. For a handyman list, think in job bundles rather than hours: TV mounting $75–125, faucet replacement $100–175, furniture assembly $60–100 per item, drywall patch $75–150, gutter clearing $120–220. A printable one-page handyman price list filters the "how much for a quick job" calls before they reach your phone.' },
     { q: 'How do I raise prices without losing clients?', a: 'New list, new season, grandfather nobody silently — announce two weeks ahead, raise the underpriced services most, and keep the increase under 10% per year for loyal regulars.' },
   ],
   related: ['booth-rent-commission-calculator', 'tip-out-calculator', 'labor-cost-calculator'],
