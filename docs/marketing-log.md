@@ -63,3 +63,8 @@
 - **T1 上线**：cleaning-checklist-builder 重定位为 "Deep Cleaning Checklist Generator — By Room"（承接 35+ 变体簇：by room/printable/move-out），预设换成 12 行深度清洁 by-room 任务，FAQ 补 deep vs move-out 区分；price-list-builder FAQ 补 handyman 换行示例（6 个常见服务+价锚）。IndexNow 已提 2 URL（200）。
 - **闸 3 研究完成**（WebSearch ≥2 源）：pour cost 18–24% 总体+分品类（Backbar/DoorDash/MAJC/Bevspot）✅ 全闸过、候选池首位；gutter $0.95–2.50/lf 分楼层（Angi/CrewNest）✅ 数字齐、闸 2 需差异化；aeration 组合 $30–80/千sqft（HomeGuide/CountBricks/论坛）✅ 全闸过+秋季窗口；bakery **闸 2 不过**（免费工具已扎堆）→ 观察。
 - 结果已写入 运营循环-状态.md 候选池；循环下一主线（painting 研究）不受影响。
+
+### 外链与 Neal 回信 2026-09-14
+- **Neal 第 2 封回信**（高质量技术信）：重扫确认 _ga + _ga_3XXDEY44GG 持久 cookie 属实，并给出双假设排查法。我方核实：单 tag、config 位置正确（他的两个常规病因都不成立）→ 直接上根治修复：**GA 改为首次交互后注入**（加载即追踪请求 + cookie 写入两个 finding 同时消失）。已部署（Vercel CLI 撞当日上限，走 git 自动部署验证中）。已回信：核实结果 + 修复说明 + 请他重扫确认 + 明确致谢。
+- **关系价值**：Neal 是站长/工具圈内容作者，一次专业互动 = 潜在自然提及。这是 link-building playbook「路径 3：关系网络」的首个活案例。
+- **新文档**：docs/link-building-playbook.md —— 五条白帽路径（编辑 pitch / 目录提交 / 关系网络 / 基准数据引用磁石页 / broken link），磁石页《Service Business Pricing Benchmarks 2026》优先级提升。
