@@ -68,3 +68,10 @@
 - **Neal 第 2 封回信**（高质量技术信）：重扫确认 _ga + _ga_3XXDEY44GG 持久 cookie 属实，并给出双假设排查法。我方核实：单 tag、config 位置正确（他的两个常规病因都不成立）→ 直接上根治修复：**GA 改为首次交互后注入**（加载即追踪请求 + cookie 写入两个 finding 同时消失）。已部署（Vercel CLI 撞当日上限，走 git 自动部署验证中）。已回信：核实结果 + 修复说明 + 请他重扫确认 + 明确致谢。
 - **关系价值**：Neal 是站长/工具圈内容作者，一次专业互动 = 潜在自然提及。这是 link-building playbook「路径 3：关系网络」的首个活案例。
 - **新文档**：docs/link-building-playbook.md —— 五条白帽路径（编辑 pitch / 目录提交 / 关系网络 / 基准数据引用磁石页 / broken link），磁石页《Service Business Pricing Benchmarks 2026》优先级提升。
+
+### 巡检结论 2026-09-14（夜轮）
+- **答 2 条**：① Quote HELP（2307sqft/4猫/never-cleaned：$375 首次=顶格偏低可上探 $450-500，**全场没人问 $240/月对应的频率**——biweekly $120/次远低于市场 $150-220，这是我的增量点）；② 亏损老客户识别（4h 新帖仅 1 评：revenue per labor hour 跟踪法 + 半年工时复测 + 涨价过渡结构）→ t1_p9r3a31。零链接纯价值。
+- 跳过：3 个竞品调研帖、2 个内容帖（非求助）、新手获客帖（非定价）、保险/草坪投诉（非领域）。
+- **选题信号**：recurring client profitability 今天同日两帖（亏损识别+单客户亏损指标）→ 潜在 guide："How to know when a recurring client is unprofitable"（清洁行业经营指标方向，站点还没有经营类内容）。
+- **部署备注**：磁石页 /benchmarks/service-pricing-2026/ 已提交 IndexNow 但**页面 404**——Vercel 当日 100 部署额度耗尽，等 UTC 重置（北京 8 点）后 git 自动部署生效，届时需重提 IndexNow。
+- **Cleanfax pitch**：全文已备（docs/outbox-cleanfax.md），Gmail compose 渲染 3 次失败（网络）→ 明日重发。
