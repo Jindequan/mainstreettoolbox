@@ -6,8 +6,8 @@ export default {
   industry: 'construction',
   name: 'Material Cost Estimator',
   tagline: 'Materials with waste, priced right. No signup.',
-  title: 'Material Cost Estimator — Free tool with waste factor',
-  description: 'List your materials with quantities and unit costs, add a waste factor, and get the true material budget for the job — printable for your records.',
+  title: 'Material Cost Calculator — Free Estimator with Waste Factor',
+  description: 'List your materials with quantities and unit costs, add a waste factor, and get the true material budget for the job — a free material cost calculator, printable for your records.',
   result: { label: 'Material budget' },
   fields: [
     { id: 'wastePct', label: 'Waste factor', kind: 'slider', default: 10, min: 0, max: 30, step: 1, hint: 'cuts, breaks, mistakes — 10% typical' },
