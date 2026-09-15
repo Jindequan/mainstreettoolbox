@@ -47,6 +47,7 @@
 | 2026-09-13 | 运营循环 | 第 1 轮：snow removal 闸 3 基准研究（10 来源交叉，5 档区间 ≥2 源）→ 全闸通过进构建队列 | docs/benchmarks-snow-removal.md | ✅ GSC 本轮不可读（显示器不可用），已记状态文件 |
 | 2026-09-14 | 站内 | 运营循环第 2 轮：**Snow Removal Pricing Calculator 上线**（第 27 个工具，挂 lawn）；per-push 三档/seasonal/hourly 全走 ≥2 源基准，问题式 H3 + 来源化 FAQ | /lawn/snow-removal-pricing-calculator/ | ✅ 生产冒烟全绿 + IndexNow 200；GSC 连续 2 天不可读 |
 | 2026-09-15 | 运营循环 | 第 3 轮：**GSC 通道打通（IAB+browser-use）**，首份全量数据：3mo 527 展现/0 点击/排名 73.6/181 查询词 → 词形对齐批次上线（material-cost 与 menu-pricing 两页 title 吸收实测词形） | 状态机数据日志 | ✅ 生产冒烟 + IndexNow 200；读数方法已固化进规则 |
+| 2026-09-15 | 站内 | **Recipe Cost Calculator 工作台上线**（第 28 个工具，用户指令「为中小企业做真东西」）：菜单利润链核心件；食材行→单份成本→目标成本率售价；可打印成本卡+本地草稿 | /restaurant/recipe-cost-calculator/ | ✅ 生产冒烟全绿 + IndexNow 200；需求三重验证（词库 12+ 变体/GSC menu 词 25+ 展现/MarketMan $249/mo） |
 
 ### 外联回复 2026-09-13
 - **Neal（Can We Launch）来信**：经 Show HN 帖子扫站，报 3 项。核实：① GA cookieless 已配置（client_storage none），对方称有 2 个持久 cookie —— 已回信索要 cookie 名复现；② LCP 4.4s / 图片权重**属实** → hero 图已压 ~20%；③ www 双主机**属实** → vercel.json www→apex 308 已上线验证。已回信：澄清+通报修复+婉拒付费报告。**信号：Show HN 渠道带来首个深度外联。**
