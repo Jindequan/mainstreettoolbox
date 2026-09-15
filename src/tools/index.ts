@@ -30,6 +30,7 @@ import inventorySheet from './inventory-count-sheet';
 import discountProfit from './discount-profit-calculator';
 import retailMath from './retail-math-calculator';
 import snowRemoval from './snow-removal-pricing-calculator';
+import recipeCost from './recipe-cost-calculator';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -62,6 +63,7 @@ export const TOOLS: RegisteredTool[] = [
   discountProfit,
   retailMath,
   snowRemoval,
+  recipeCost,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);
@@ -75,6 +77,7 @@ export const BESPOKE_SLUGS: ReadonlySet<string> = new Set([
   'lawn-mowing-price-calculator',
   'lawn-care-estimate-generator',
   'retail-math-calculator',
+  'recipe-cost-calculator',
 ]);
 
 export const byIndustry = (industry: string): RegisteredTool[] => TOOLS.filter((t) => t.industry === industry);

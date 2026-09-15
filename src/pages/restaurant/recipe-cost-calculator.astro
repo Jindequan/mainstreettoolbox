@@ -1,0 +1,370 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Recipe Cost Calculator — Free Tool with Cost per Serving | Main Street Toolbox"
+  description="Enter ingredients with quantities and unit costs to get total recipe cost, cost per serving and the menu price for your target food cost percentage. Free, no signup, saves on your device."
+  path="/restaurant/recipe-cost-calculator/"
+>
+  <div class="industry-hero">
+    <div class="industry-hero-bg" style="background-image:linear-gradient(rgba(250,247,240,.82), rgba(250,247,240,.06)), url('/images/restaurant.jpg')"></div>
+    <div class="container head">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/restaurant">Restaurant</a> / <b style="color:var(--ink)">Recipe Cost</b></p>
+      <h1>Recipe Cost Calculator</h1>
+      <p class="sub">Cost the plate before you price it — ingredients in, cost per serving and the menu price out.</p>
+    </div>
+  </div>
+
+  <main class="container work">
+    <!-- 左：填表 -->
+    <section class="form-col" aria-label="Recipe details">
+      <div class="card card-pad">
+        <h2 class="step-lbl"><span>1</span> The recipe</h2>
+        <div class="meta-grid">
+          <div class="field">
+            <label for="rname">Recipe name</label>
+            <input id="rname" type="text" value="House burger &amp; fries" autocomplete="off" />
+          </div>
+          <div class="field">
+            <label for="servings">Servings the recipe yields</label>
+            <input id="servings" type="text" inputmode="decimal" value="1" autocomplete="off" />
+          </div>
+          <div class="field">
+            <label for="target">Target food cost %</label>
+            <select id="target">
+              <option value="25">25%</option>
+              <option value="28">28%</option>
+              <option value="30" selected>30%</option>
+              <option value="32">32%</option>
+              <option value="35">35%</option>
+            </select>
+          </div>
+        </div>
+
+        <h2 class="step-lbl"><span>2</span> Ingredients</h2>
+        <div class="rows-head">
+          <span class="rh-name">Ingredient</span>
+          <span class="rh-qty">Qty</span>
+          <span class="rh-unit">Unit</span>
+          <span class="rh-cost">Cost / unit $</span>
+          <span class="rh-line">Line $</span>
+          <span class="rh-x"></span>
+        </div>
+        <div id="rows"></div>
+        <button class="add-row" id="add-row" type="button">+ Add ingredient</button>
+        <p class="fineprint">Cost what goes on the plate. Most operators pad a few percent for trim and waste — a slightly high cost makes a safer price than an optimistic one.</p>
+      </div>
+    </section>
+
+    <!-- 右：结果 + 打印卡 -->
+    <aside class="out-col">
+      <div class="card answer-card" aria-live="polite">
+        <div class="ans-row big">
+          <span>Cost per serving</span>
+          <b id="out-per">$5.30</b>
+        </div>
+        <div class="ans-row">
+          <span>Total recipe cost</span>
+          <b id="out-total">$5.30</b>
+        </div>
+        <div class="ans-row">
+          <span id="out-price-lbl">Menu price at 30%</span>
+          <b id="out-price">$17.65</b>
+        </div>
+        <div class="ans-note" id="out-note">Price = cost per serving ÷ target food cost. Most full-service restaurants run 28–35%.</div>
+        <div class="ans-links">
+          <a href="/restaurant/food-cost-percentage-calculator/">Check the % on a live dish →</a>
+          <a href="/restaurant/menu-engineering-matrix/">Rank it against the menu →</a>
+        </div>
+        <div class="ans-actions">
+          <button class="btn-primary" id="print-btn" type="button">Print cost card</button>
+          <button class="btn-ghost" id="reset-btn" type="button">Reset example</button>
+        </div>
+        <p class="save-hint" id="save-hint">Saved on this device automatically.</p>
+      </div>
+
+      <!-- 打印专用成本卡（屏幕上隐藏） -->
+      <div class="cost-sheet" id="cost-sheet">
+        <div class="sheet-brand">RECIPE COST CARD</div>
+        <div class="sheet-meta">
+          <div><span>Recipe</span><b id="s-name">—</b></div>
+          <div><span>Date</span><b id="s-date">—</b></div>
+          <div><span>Servings</span><b id="s-servings">—</b></div>
+        </div>
+        <table>
+          <thead><tr><th>Ingredient</th><th>Qty</th><th>Unit</th><th>Cost/unit</th><th>Line cost</th></tr></thead>
+          <tbody id="s-rows"></tbody>
+        </table>
+        <div class="sheet-totals">
+          <div><span>Total recipe cost</span><b id="s-total">—</b></div>
+          <div><span>Cost per serving</span><b id="s-per">—</b></div>
+          <div><span id="s-price-lbl">Menu price at 30%</span><b id="s-price">—</b></div>
+        </div>
+        <div class="sheet-foot">Costed with mainstreettoolbox.com — free restaurant calculators</div>
+      </div>
+    </aside>
+  </main>
+
+  <section class="container prose">
+    <h2>What the numbers mean</h2>
+    <h3>How do I calculate the cost of a recipe?</h3>
+    <p>Each ingredient line costs <b>quantity × unit cost</b>, the recipe total is the sum of the lines, and
+    dividing by the yield gives <b>cost per serving</b>. A burger built from a $2.40 patty, a $0.65 bun, $1.35 of
+    cheese and toppings and $0.90 of potatoes and fryer oil costs <b>$5.30 per serving</b> — before anyone has
+    priced the menu.</p>
+    <h3>How do I turn cost per serving into a menu price?</h3>
+    <p><b>Menu price = cost per serving ÷ target food cost percentage.</b> That $5.30 plate needs $17.65 at a 30%
+    target, $18.93 at 28%, $15.14 at 35%. Choose the target first — the price is arithmetic.</p>
+    <h3>Recipe cost, food cost percentage, prime cost — which one do I watch?</h3>
+    <p>Recipe cost tells you what a dish costs to make. Food cost percentage tells you whether the menu price
+    protects it — check any single dish with the <a href="/restaurant/food-cost-percentage-calculator/">Food Cost
+    Percentage Calculator</a>. Prime cost adds labor to the plate and decides whether the whole restaurant works;
+    the <a href="/restaurant/prime-cost-calculator/">Prime Cost Calculator</a> runs that view.</p>
+    <table>
+      <thead><tr><th>Step</th><th>Formula</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td>Line cost</td><td>qty × unit cost</td><td>1 × $2.40 patty</td></tr>
+        <tr><td>Recipe cost</td><td>sum of lines</td><td>$5.30</td></tr>
+        <tr><td>Cost per serving</td><td>recipe cost ÷ servings</td><td>$5.30 ÷ 1</td></tr>
+        <tr><td>Menu price</td><td>cost per serving ÷ target %</td><td>$5.30 ÷ 0.30 = $17.65</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="container faq">
+    <h2>Questions owners ask</h2>
+    <details><summary>How do I calculate the cost of a recipe?</summary><p>Multiply each ingredient line by the quantity used and its unit cost, sum the lines, then divide by the number of servings the recipe yields. That is your cost per serving — the plate cost behind the menu price.</p></details>
+    <details><summary>Is there a free recipe cost calculator app?</summary><p>You do not need one — this calculator runs in the browser on any phone or tablet: nothing to download, no account, no subscription. Your recipe saves on this device and the cost card prints or saves to PDF from the browser.</p></details>
+    <details><summary>What is the difference between recipe cost and food cost percentage?</summary><p>Recipe cost is the dollars on the plate; food cost percentage is that cost divided by the menu price. Costing tells you what a dish costs to make — the percentage tells you whether the price protects it.</p></details>
+    <details><summary>Should I pad the recipe cost for waste?</summary><p>Yes — most operators add a few percent for trim loss, spillage and comps, or cost prepped weights instead of purchased weights. A slightly padded cost makes a safer price than an optimistic one.</p></details>
+  </section>
+
+  <section class="related">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:0;padding-top:28px"><h2 style="font-size:1.2rem">Related tools</h2></div>
+      <div class="related-grid">
+        <a href="/restaurant/menu-pricing-calculator/">Menu Pricing Calculator</a>
+        <a href="/restaurant/food-cost-percentage-calculator/">Food Cost Percentage Calculator</a>
+        <a href="/restaurant/menu-engineering-matrix/">Menu Engineering Matrix</a>
+        <a href="/restaurant/recipe-scaler/">Recipe Scaler</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I calculate the cost of a recipe?', acceptedAnswer: { '@type': 'Answer', text: 'Multiply each ingredient line by the quantity used and its unit cost, sum the lines, then divide by the number of servings the recipe yields. That is your cost per serving.' } },
+      { '@type': 'Question', name: 'Is there a free recipe cost calculator app?', acceptedAnswer: { '@type': 'Answer', text: 'You do not need one — this calculator runs in the browser on any phone or tablet: nothing to download, no account, no subscription. The cost card prints or saves to PDF.' } },
+      { '@type': 'Question', name: 'What is the difference between recipe cost and food cost percentage?', acceptedAnswer: { '@type': 'Answer', text: 'Recipe cost is the dollars on the plate; food cost percentage is that cost divided by the menu price. Costing tells you what a dish costs to make — the percentage tells you whether the price protects it.' } },
+      { '@type': 'Question', name: 'Should I pad the recipe cost for waste?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — most operators add a few percent for trim loss, spillage and comps, or cost prepped weights instead of purchased weights.' } },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Recipe Cost Calculator',
+    url: new URL('/restaurant/recipe-cost-calculator/', Astro.site).toString(),
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  })} />
+
+  <style is:global>
+    .head { padding: 36px 24px 8px; }
+    .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
+    .head .sub { color: var(--ink-2); }
+    .work { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px; padding-top: 8px; padding-bottom: 40px; align-items: start; }
+    .step-lbl { display: flex; align-items: center; gap: 9px; font-size: 1.02rem; margin: 18px 0 10px; }
+    .step-lbl span { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--ink); color: var(--paper); font-size: 13px; font-weight: 600; flex: none; }
+    .meta-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
+    .field label { display: block; font-size: 13px; font-weight: 600; color: var(--ink-2); margin-bottom: 5px; }
+    .field input, .field select { width: 100%; min-width: 0; border: 1.5px solid var(--line-2); border-radius: var(--r-m); background: var(--card); padding: 9px 12px; font: 500 15px var(--font-body, inherit); color: var(--ink); }
+    .field input:focus, .field select:focus { outline: 0; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+    .rows-head, .ing-row { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(0, .7fr) minmax(0, .9fr) minmax(0, 1fr) minmax(0, .9fr) 28px; gap: 8px; align-items: center; }
+    .rows-head { font-size: 12px; font-weight: 600; color: var(--ink-3); text-transform: uppercase; letter-spacing: .04em; margin-top: 6px; padding: 0 2px; }
+    .ing-row { margin-top: 8px; }
+    .ing-row input { width: 100%; min-width: 0; border: 1.5px solid var(--line-2); border-radius: var(--r-s); background: var(--card); padding: 8px 10px; font: 500 14.5px var(--font-body, inherit); color: var(--ink); }
+    .ing-row input:focus { outline: 0; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+    .ing-row .line-cost { font: 640 14.5px var(--font-display); font-variant-numeric: tabular-nums; text-align: right; color: var(--ink-2); padding-right: 4px; min-width: 0; }
+    .ing-row .rm { display: grid; place-items: center; width: 28px; height: 28px; border: 0; border-radius: var(--r-s); background: none; color: var(--ink-3); cursor: pointer; font-size: 16px; }
+    .ing-row .rm:hover { background: var(--bad-tint); color: var(--bad); }
+    .add-row { margin-top: 10px; border: 1.5px dashed var(--line-2); background: none; border-radius: var(--r-m); padding: 9px 14px; font: 600 14px var(--font-body, inherit); color: var(--ink-2); cursor: pointer; }
+    .add-row:hover { border-color: var(--green); color: var(--green); }
+    .fineprint { font-size: 13px; color: var(--ink-3); margin-top: 12px; line-height: 1.5; }
+    .answer-card { position: sticky; top: 16px; padding: 20px 22px; }
+    .ans-row { display: flex; justify-content: space-between; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; color: var(--ink-2); }
+    .ans-row b { font: 640 1.15rem var(--font-display); font-variant-numeric: tabular-nums; color: var(--ink); }
+    .ans-row.big { padding: 4px 0 10px; }
+    .ans-row.big span { font-weight: 600; color: var(--ink); }
+    .ans-row.big b { font-size: 2.3rem; color: var(--green); }
+    .ans-note { font-size: 13px; color: var(--ink-3); line-height: 1.5; padding: 10px 0 4px; }
+    .ans-links { display: grid; gap: 6px; font-size: 13.5px; }
+    .ans-links a { color: var(--ink-2); text-decoration: underline; text-underline-offset: 3px; }
+    .ans-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+    .btn-primary { border: 0; border-radius: var(--r-m); background: var(--ink); color: var(--paper); font: 600 14.5px var(--font-body, inherit); padding: 11px 14px; cursor: pointer; }
+    .btn-primary:hover { opacity: .9; }
+    .btn-ghost { border: 1.5px solid var(--line-2); border-radius: var(--r-m); background: none; color: var(--ink-2); font: 600 14.5px var(--font-body, inherit); padding: 11px 14px; cursor: pointer; }
+    .btn-ghost:hover { border-color: var(--ink-3); color: var(--ink); }
+    .save-hint { font-size: 12px; color: var(--ink-3); margin-top: 10px; text-align: center; }
+    .cost-sheet { display: none; }
+    @media (max-width: 860px) {
+      .work { grid-template-columns: minmax(0, 1fr); }
+      .answer-card { position: static; }
+      .meta-grid { grid-template-columns: minmax(0, 1fr); }
+      .rows-head, .ing-row { grid-template-columns: minmax(0, 1.8fr) minmax(0, .7fr) minmax(0, .8fr) minmax(0, 1fr) 28px; }
+      .rows-head .rh-line, .ing-row .line-cost { display: none; }
+    }
+    @media print {
+      .industry-hero, .nav, .crumbs, .form-col, .prose, .faq, .related, footer.site, .fineprint, .ans-links, .ans-actions, .save-hint { display: none !important; }
+      .work { display: block; padding: 0; }
+      .out-col { width: 100%; }
+      .answer-card { display: none; }
+      .cost-sheet { display: block; font: 500 13px/1.45 var(--font-body, "Inter", serif); color: #111; padding: 24px 8px; }
+      .sheet-brand { font: 700 15px var(--font-display, inherit); letter-spacing: .12em; border-bottom: 2px solid #111; padding-bottom: 8px; margin-bottom: 12px; }
+      .sheet-meta { display: flex; gap: 28px; margin-bottom: 12px; }
+      .sheet-meta span { display: block; font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: .05em; }
+      .sheet-meta b { font-size: 14px; }
+      .cost-sheet table { width: 100%; border-collapse: collapse; }
+      .cost-sheet th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #555; border-bottom: 1px solid #999; padding: 6px 8px 6px 0; }
+      .cost-sheet td { border-bottom: 1px solid #ddd; padding: 6px 8px 6px 0; font-variant-numeric: tabular-nums; }
+      .sheet-totals { margin-top: 14px; display: grid; gap: 6px; }
+      .sheet-totals div { display: flex; justify-content: space-between; max-width: 300px; margin-left: auto; }
+      .sheet-totals b { font-variant-numeric: tabular-nums; }
+      .sheet-foot { margin-top: 18px; font-size: 11px; color: #888; border-top: 1px solid #ddd; padding-top: 8px; }
+    }
+  </style>
+
+  <script>
+    import { beaconUse } from '../../scripts/stats';
+
+    type Ing = { name: string; qty: string; unit: string; unitCost: string };
+    const EXAMPLE: Ing[] = [
+      { name: 'Burger patty, 8 oz', qty: '1', unit: 'each', unitCost: '2.40' },
+      { name: 'Brioche bun', qty: '1', unit: 'each', unitCost: '0.65' },
+      { name: 'Cheddar, sauce & toppings', qty: '1', unit: 'each', unitCost: '1.35' },
+      { name: 'Potatoes & fryer oil', qty: '1', unit: 'each', unitCost: '0.90' },
+    ];
+    const KEY = 'mst-recipe-cost';
+    const money = (n: number) => '$' + (Math.round(n * 100) / 100).toFixed(2);
+    const num = (v: string) => { const n = parseFloat(String(v).replace(/[^0-9.]/g, '')); return Number.isFinite(n) ? n : 0; };
+
+    let counted = false;
+    const countUse = () => { if (!counted) { counted = true; beaconUse('recipe-cost-calculator'); } };
+
+    const rowsEl = document.getElementById('rows')!;
+    let data: Ing[] = [];
+
+    function renderRows() {
+      rowsEl.innerHTML = '';
+      data.forEach((ing, i) => {
+        const row = document.createElement('div');
+        row.className = 'ing-row';
+        row.innerHTML = `
+          <input type="text" data-k="name" value="${ing.name.replace(/"/g, '&quot;')}" placeholder="Ingredient" autocomplete="off" />
+          <input type="text" inputmode="decimal" data-k="qty" value="${ing.qty}" placeholder="1" autocomplete="off" />
+          <input type="text" data-k="unit" value="${ing.unit}" placeholder="each" autocomplete="off" />
+          <input type="text" inputmode="decimal" data-k="unitCost" value="${ing.unitCost}" placeholder="0.00" autocomplete="off" />
+          <div class="line-cost"></div>
+          <button class="rm" type="button" aria-label="Remove ingredient">×</button>`;
+        row.querySelectorAll('input').forEach((inp) => {
+          inp.addEventListener('input', () => {
+            (data[i] as unknown as Record<string, string>)[inp.dataset.k!] = (inp as HTMLInputElement).value;
+            countUse(); calc(); save();
+          });
+        });
+        row.querySelector('.rm')!.addEventListener('click', () => {
+          data.splice(i, 1); countUse(); renderRows(); calc(); save();
+        });
+        rowsEl.appendChild(row);
+      });
+    }
+
+    function save() {
+      const state = {
+        name: (document.getElementById('rname') as HTMLInputElement).value,
+        servings: (document.getElementById('servings') as HTMLInputElement).value,
+        target: (document.getElementById('target') as HTMLSelectElement).value,
+        rows: data,
+      };
+      try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { /* 隐私模式等场景静默 */ }
+    }
+
+    function restore(): boolean {
+      try {
+        const raw = localStorage.getItem(KEY);
+        if (!raw) return false;
+        const s = JSON.parse(raw);
+        if (!Array.isArray(s.rows) || s.rows.length === 0) return false;
+        (document.getElementById('rname') as HTMLInputElement).value = s.name ?? '';
+        (document.getElementById('servings') as HTMLInputElement).value = s.servings ?? '1';
+        (document.getElementById('target') as HTMLSelectElement).value = s.target ?? '30';
+        data = s.rows;
+        return true;
+      } catch { return false; }
+    }
+
+    function calc() {
+      const servings = Math.max(1, num((document.getElementById('servings') as HTMLInputElement).value) || 1);
+      const target = Math.max(5, Math.min(90, num((document.getElementById('target') as HTMLSelectElement).value) || 30)) / 100;
+
+      let total = 0;
+      const lineEls = rowsEl.querySelectorAll('.ing-row');
+      data.forEach((ing, i) => {
+        const line = num(ing.qty) * num(ing.unitCost);
+        total += line;
+        const el = lineEls[i]?.querySelector('.line-cost');
+        if (el) el.textContent = line > 0 ? money(line) : '—';
+      });
+
+      const per = total / servings;
+      const price = target > 0 ? per / target : 0;
+      const priceLbl = `Menu price at ${Math.round(target * 100)}%`;
+      document.getElementById('out-per')!.textContent = money(per);
+      document.getElementById('out-total')!.textContent = money(total);
+      document.getElementById('out-price')!.textContent = price > 0 ? money(price) : '—';
+      document.getElementById('out-price-lbl')!.textContent = priceLbl;
+
+      // 打印卡镜像
+      document.getElementById('s-name')!.textContent = (document.getElementById('rname') as HTMLInputElement).value || '—';
+      document.getElementById('s-date')!.textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      document.getElementById('s-servings')!.textContent = String(servings);
+      const tbody = document.getElementById('s-rows')!;
+      tbody.innerHTML = data.map((ing) => {
+        const line = num(ing.qty) * num(ing.unitCost);
+        return `<tr><td>${escapeHtml(ing.name)}</td><td>${escapeHtml(ing.qty)}</td><td>${escapeHtml(ing.unit)}</td><td>${escapeHtml(ing.unitCost)}</td><td>${line > 0 ? money(line) : '—'}</td></tr>`;
+      }).join('');
+      document.getElementById('s-total')!.textContent = money(total);
+      document.getElementById('s-per')!.textContent = money(per);
+      document.getElementById('s-price-lbl')!.textContent = priceLbl;
+      document.getElementById('s-price')!.textContent = price > 0 ? money(price) : '—';
+    }
+
+    function escapeHtml(s: string): string {
+      return s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] as string));
+    }
+
+    document.getElementById('add-row')!.addEventListener('click', () => {
+      data.push({ name: '', qty: '', unit: '', unitCost: '' });
+      countUse(); renderRows(); calc(); save();
+      const inputs = rowsEl.querySelectorAll(`.ing-row:nth-child(${data.length}) input`);
+      (inputs[0] as HTMLInputElement | undefined)?.focus();
+    });
+    ['rname', 'servings'].forEach((id) => {
+      document.getElementById(id)!.addEventListener('input', () => { countUse(); calc(); save(); });
+    });
+    document.getElementById('target')!.addEventListener('change', () => { countUse(); calc(); save(); });
+    document.getElementById('print-btn')!.addEventListener('click', () => window.print());
+    document.getElementById('reset-btn')!.addEventListener('click', () => {
+      (document.getElementById('rname') as HTMLInputElement).value = 'House burger & fries';
+      (document.getElementById('servings') as HTMLInputElement).value = '1';
+      (document.getElementById('target') as HTMLSelectElement).value = '30';
+      data = EXAMPLE.map((x) => ({ ...x }));
+      renderRows(); calc(); save();
+    });
+
+    if (!restore()) data = EXAMPLE.map((x) => ({ ...x }));
+    renderRows(); calc();
+  </script>
+</BaseLayout>

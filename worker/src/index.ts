@@ -23,6 +23,7 @@ export const SLUGS = new Set([
   'recipe-scaler',
   'prime-cost-calculator',
   'profit-margin-calculator',
+  'recipe-cost-calculator',
   // cleaning
   'cleaning-estimate-calculator',
   'cleaning-checklist-builder',

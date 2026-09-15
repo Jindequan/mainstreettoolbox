@@ -18,6 +18,7 @@
 - [Menu Maker](https://mainstreettoolbox.com/menu-maker/): Design a printable restaurant menu from templates; export as PDF or PNG.
 - [Food Cost Percentage Calculator](https://mainstreettoolbox.com/restaurant/food-cost-percentage-calculator/): Enter plate cost and menu price; returns food cost percentage against the 28–35% healthy band and the price that fixes a high number.
 - [Menu Pricing Calculator](https://mainstreettoolbox.com/restaurant/menu-pricing-calculator/): Set menu prices from target food cost percentage per dish.
+- [Recipe Cost Calculator](https://mainstreettoolbox.com/restaurant/recipe-cost-calculator/): Costs a dish from ingredients, quantities and unit costs — total recipe cost, cost per serving and the menu price for a target food cost percentage; printable cost card.
 - [Menu Engineering Matrix](https://mainstreettoolbox.com/restaurant/menu-engineering-matrix/): Scores every dish on profitability and popularity; classifies Stars, Plowhorses, Puzzles and Dogs with an action per class.
 - [Tip Out Calculator](https://mainstreettoolbox.com/restaurant/tip-out-calculator/): Splits the tip pool across servers and support staff by percentage shares; printable summary sheet.
 - [Prime Cost Calculator](https://mainstreettoolbox.com/restaurant/prime-cost-calculator/): Combines food cost plus labor cost as a share of sales — the number that decides if a restaurant is viable.
