@@ -81,3 +81,9 @@
 ### 外联鉴定 2026-09-15（用户转来的"外链"邮件）
 - **LaunchKiwi "DR 51 dofollow 换 badge" 邀请 → 拒绝归档**。核实：站点 0 产品/0 投票/0 listing，自报 79k 月访问与 DR 均不可验证，唯一业务=卖链接（link farm 模式）。放 badge = 互惠链接（Google link scheme 明文覆盖），且给空壳站导流。
 - 教训已固化进 link-building-playbook.md 路径 2：目录验收清单四条（真实 listing 非空、不卖 dofollow、不要求回链 badge、自报数字需独立佐证）。
+
+### 巡检结论 2026-09-15
+- **0 条评论（纪律执行）**：11 帖过筛无合格目标——4 个竞品调研帖（quote 流程/效率工具调研连发）、3 个经验征集帖（非求助）、客户冲突、保险、草坪投诉均非定价求助。昨日已答的亏损客户帖评论 2→24（我们的回答在持续曝光）。
+- **选题信号强化**：Post-Construction 主题 24h 内再次出现（本月第 4 次）——昨日上线的 post-construction guide 选题再次验证押对。
+- **磁石页生效**：/benchmarks/service-pricing-2026/ 部署验证 200，IndexNow 重提 200 ✅（昨日 Vercel 限额遗留清完）。
+- **Cleanfax 仍排队**：Gmail 今日整页未渲染（bodyLen=0，网络级），pitch 在 outbox 备好，网络稳定即发。
