@@ -102,3 +102,7 @@
 - **0 条评论（纪律执行）**：11 帖过筛无合格目标——经营困境帖（21 评饱和）、lead 转化帖（非定价）、4 个竞品调研/征集帖、客户冲突、非领域。亏损客户帖持续曝光中。
 - **选题信号**：post-construction 征集帖第 5 次出现；lead 转化（"有 lead 关不掉"）首次出现——若再现可考虑报价转化向内容。
 - **⚠️ Google 会话过期**：浏览器里 jindeq52 与 jindeqhk52 均显示 Signed out——Cleanfax 发送被阻（outbox 已备）。**需用户重新登录两个账号**（Gmail=jindeq52；GA/GSC=jindeqhk52），否则数据读数与邮件渠道全部暂停。
+
+### Cleanfax 发送尝试 2026-09-16（登录恢复后）
+- 用户已重新登录 Google。Gmail 会话恢复 ✅，但 compose 界面在 IAB 里连续多轮渲染失败（收件人可由 URL 预填、正文编辑器间歇消失）。pitch 全文在 docs/outbox-cleanfax.md。
+- 处置：不再硬磕。**选项 A**：用户在自己 Chrome 打开 Gmail 粘贴发送（30 秒）；**选项 B**：IAB 网络状态好的窗口重试。
