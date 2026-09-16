@@ -88,3 +88,12 @@
 - **选题信号强化**：Post-Construction 主题 24h 内再次出现（本月第 4 次）——昨日上线的 post-construction guide 选题再次验证押对。
 - **磁石页生效**：/benchmarks/service-pricing-2026/ 部署验证 200，IndexNow 重提 200 ✅（昨日 Vercel 限额遗留清完）。
 - **Cleanfax 仍排队**：Gmail 今日整页未渲染（bodyLen=0，网络级），pitch 在 outbox 备好，网络稳定即发。
+
+### 词形对准 2026-09-16（SERP 反向工程，回应用户"排名降/0 点击"）
+- **诊断**：GSC 只显示已有展现的词（后视镜）——真正的缺口是"有搜索需求但我们词形没覆盖"的词。四词族 SERP 侦察发现全部是"有功能、无词形"错配：
+  - menu-pricing ← "recipe cost / plate cost calculator"（title+description 已对准）
+  - tip-out ← "tip pool / tip sharing"（title+description 已对准；**bespoke 页 title 独立于工具 def，已单独修复**——教训：BESPOKE 页的 SEO 元数据在 pages/ 下，不在 tools/ def 里）
+  - break-even ← "covers per day"（title 已对准）
+  - labor-cost ← "labor cost percentage"（title+description 已对准）
+- **功能级 gap**：tip pool 按工时/点数/销售额分（竞品 eTip/ShiftFlow 模式）→ 记入候选池，下次工具迭代项。
+- 全部零逻辑改动，53 页构建，部署验证中。
