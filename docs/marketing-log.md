@@ -97,3 +97,8 @@
   - labor-cost ← "labor cost percentage"（title+description 已对准）
 - **功能级 gap**：tip pool 按工时/点数/销售额分（竞品 eTip/ShiftFlow 模式）→ 记入候选池，下次工具迭代项。
 - 全部零逻辑改动，53 页构建，部署验证中。
+
+### 巡检结论 2026-09-16
+- **0 条评论（纪律执行）**：11 帖过筛无合格目标——经营困境帖（21 评饱和）、lead 转化帖（非定价）、4 个竞品调研/征集帖、客户冲突、非领域。亏损客户帖持续曝光中。
+- **选题信号**：post-construction 征集帖第 5 次出现；lead 转化（"有 lead 关不掉"）首次出现——若再现可考虑报价转化向内容。
+- **⚠️ Google 会话过期**：浏览器里 jindeq52 与 jindeqhk52 均显示 Signed out——Cleanfax 发送被阻（outbox 已备）。**需用户重新登录两个账号**（Gmail=jindeq52；GA/GSC=jindeqhk52），否则数据读数与邮件渠道全部暂停。
