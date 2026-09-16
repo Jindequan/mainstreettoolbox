@@ -6,7 +6,7 @@ export default {
   industry: 'restaurant',
   name: 'Restaurant Break-Even Calculator',
   tagline: 'Know your nightly number. No signup.',
-  title: 'Restaurant Break-Even Calculator — Free tool',
+  title: 'Restaurant Break-Even Calculator — Covers Per Day, Free',
   description: 'Enter monthly fixed costs, average ticket and variable cost percentage to see how many covers you need per night to break even. Free, instant, no signup.',
   result: { label: 'Covers needed per day' },
   fields: [

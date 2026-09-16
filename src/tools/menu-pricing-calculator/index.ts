@@ -22,8 +22,8 @@ export default {
   industry: 'restaurant',
   name: 'Menu Pricing Calculator',
   tagline: 'Price your dish in 30 seconds. No signup.',
-  title: 'Menu Price Calculator — Free Menu Pricing Tool for Restaurants',
-  description: 'Enter your ingredient costs and target food cost percentage to get a menu price that protects your margin — a free menu price and menu cost calculator for restaurants. No signup.',
+  title: 'Recipe Cost & Menu Price Calculator — Free Tool for Restaurants',
+  description: 'Enter ingredient costs and target food cost % to get a menu price that protects margin — a free recipe cost, plate cost and menu cost calculator for restaurants. No signup.',
   result: { label: 'Suggested menu price', sub: 'Plate cost {cost} · You keep {keep} a plate' },
   fields: [
     { id: 'targetPct', label: 'Target food cost %', kind: 'slider', default: 30, min: 15, max: 45, step: 0.5, hint: 'typical is 28–35%' },

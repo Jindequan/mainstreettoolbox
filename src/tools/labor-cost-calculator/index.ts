@@ -6,8 +6,8 @@ export default {
   industry: 'restaurant',
   name: 'Labor Cost Calculator',
   tagline: 'What an employee really costs you. No signup.',
-  title: 'Labor Cost Calculator — Free tool for restaurants',
-  description: 'See the fully loaded cost of an employee — wage plus payroll taxes and benefits — and labor cost as a percentage of revenue. Free, instant, no signup.',
+  title: 'Labor Cost Percentage Calculator — Free Tool for Restaurants',
+  description: 'The labor cost percentage formula made simple: see fully loaded employee cost (wage + payroll taxes + benefits) and labor cost as a percentage of revenue. Free, instant, no signup.',
   result: { label: 'Loaded cost / hour' },
   fields: [
     { id: 'wage', label: 'Hourly wage', kind: 'money', default: 18 },
