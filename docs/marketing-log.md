@@ -107,3 +107,10 @@
 ### Cleanfax 发送尝试 2026-09-16（登录恢复后）
 - 用户已重新登录 Google。Gmail 会话恢复 ✅，但 compose 界面在 IAB 里连续多轮渲染失败（收件人可由 URL 预填、正文编辑器间歇消失）。pitch 全文在 docs/outbox-cleanfax.md。
 - 处置：不再硬磕。**选项 A**：用户在自己 Chrome 打开 Gmail 粘贴发送（30 秒）；**选项 B**：IAB 网络状态好的窗口重试。
+
+### 巡检结论 2026-09-17（PH launch 日）
+- **⚠️ PH launch 状态（最优先）**：launch 15:01 生效，21:31 检查时 **1 票 0 评**——首评因 **PH 会话过期**（Sign in 按钮）未能自动发出，黄金 6 小时已过。**需用户重新登录 PH**，登录后我立即发首评（文本已备）并接管评论 24h。
+- **答 1 条**：big box 商店 post-construction 报价（22h，2 评未饱和）——Tractor Supply $5,000 交叉验证（$0.15-0.30/sqft 带 → $3-6k 区间）、三阶段分列报价法、touchup day 封顶陷阱、书面 exclusions。✅ 上线确认。
+- 第 2 条（First client failure：视频报价防御+事后补救）内容已写好但连遇 RATELIMIT（8 分钟冷却升级）→ **放弃发送，内容留存**（观点可复用）。
+- 跳过：WhatsApp 流程帖、Jobber 软件调研、$170K 经验分享、lead gen 招标、非定价旧帖。
+- **信号**：post-construction 主题**第 6 次**出现（big box 投价求助）——已有 guide+磁石页承接，选题完全押中。
