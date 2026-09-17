@@ -32,6 +32,7 @@ import retailMath from './retail-math-calculator';
 import snowRemoval from './snow-removal-pricing-calculator';
 import recipeCost from './recipe-cost-calculator';
 import pourCost from './pour-cost-calculator';
+import aeration from './aeration-and-overseeding-calculator';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -66,6 +67,7 @@ export const TOOLS: RegisteredTool[] = [
   snowRemoval,
   recipeCost,
   pourCost,
+  aeration,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);
