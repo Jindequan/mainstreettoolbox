@@ -86,7 +86,7 @@ const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' 
       <div class="result-num" id="r-primary">{initials.primary.value}</div>
       <div class="result-sub" id="r-secondary">
         {initials.secondary?.map((s, i) => (
-          <>{i > 0 && ' · '}<span>{s.label} <b>{s.value}</b></span></>
+          <>{i > 0 && ' · '}<span class="rs-pair">{s.label} <b>{s.value}</b></span></>
         ))}
       </div>
 

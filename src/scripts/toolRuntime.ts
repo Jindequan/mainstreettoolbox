@@ -45,7 +45,9 @@ if (bootEl) {
       sub.textContent = '';
       (res.secondary ?? []).forEach((s, i) => {
         if (i > 0) sub.appendChild(document.createTextNode(' · '));
+        // 与 ToolLayout SSR 一致：每对整体 nowrap，断行只落在对与对之间（防数值孤儿化）
         const span = document.createElement('span');
+        span.className = 'rs-pair';
         span.textContent = `${s.label} `;
         const b = document.createElement('b');
         b.textContent = s.value;

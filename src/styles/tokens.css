@@ -249,6 +249,8 @@ details.adv .field { margin-top: 14px; }
 .result-num { font-family: var(--font-display); font-weight: 640; font-size: var(--fs-num); line-height: 1.05; margin: 6px 0 2px; font-variant-numeric: tabular-nums; }
 .result-sub { color: var(--ink-2); font-size: var(--fs-400); }
 .result-sub b { color: var(--ink); }
+/* 每个「标签+数值」对整体不断行 —— 断行只发生在对与对之间的分隔点，防美元数字孤儿化 */
+.result-sub .rs-pair { white-space: nowrap; }
 
 /* 基准标尺 */
 .gauge { margin-top: 18px; }
@@ -340,7 +342,7 @@ footer.site { padding: 44px 0 56px; color: var(--ink-2); font-size: var(--fs-400
 }
 
 /* ---------- 15. 生产扩展（M1） ---------- */
-.prose { max-width: 46rem; padding: 40px 24px 64px; }
+.prose { max-width: 46rem; margin-inline: auto; padding: 40px 24px 64px; }
 .prose h1 { font-size: var(--fs-800); margin-bottom: 8px; }
 .prose h2 { font-size: var(--fs-700); margin: 26px 0 10px; }
 .prose p { color: var(--ink-2); margin-bottom: 12px; }

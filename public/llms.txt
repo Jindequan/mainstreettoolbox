@@ -4,7 +4,7 @@
 
 ## Docs
 
-- [Home](https://mainstreettoolbox.com/): Overview of all 34 free tools with a live search box; the fastest way to find the right calculator.
+- [Home](https://mainstreettoolbox.com/): Overview of all 35 free tools with a live search box; the fastest way to find the right calculator.
 - [All Tools](https://mainstreettoolbox.com/tools/): Every calculator grouped by trade with one-line descriptions of what each answers.
 - [Restaurant tools](https://mainstreettoolbox.com/restaurant/): Food cost, menu pricing, menu engineering, tip out, prime cost and labor calculators for restaurant owners.
 - [Cleaning tools](https://mainstreettoolbox.com/cleaning/): House cleaning estimates, pressure washing and window cleaning pricing, junk removal, invoices and checklists.
@@ -35,6 +35,7 @@
 - [Junk Removal Estimator](https://mainstreettoolbox.com/cleaning/junk-removal-estimator/): Estimates junk removal pricing by truck-load fractions, the way operators actually quote.
 - [Cleaning Invoice Generator](https://mainstreettoolbox.com/cleaning/cleaning-invoice-generator/): Creates a cleaning-industry invoice with line items and payment terms; printable PDF.
 - [Deep Cleaning Checklist Generator](https://mainstreettoolbox.com/cleaning/cleaning-checklist-builder/): Builds a printable deep cleaning checklist by room, or a move-out checklist; free, nothing stored.
+- [Gutter Cleaning Price Calculator](https://mainstreettoolbox.com/cleaning/gutter-cleaning-price-calculator/): Prices gutter cleaning by linear feet and story height — $0.95–1.75/ft one-story, $1.00–2.50 two-story — with yearly plan spend and gutter-guard guidance.
 - [Painting Estimate Calculator](https://mainstreettoolbox.com/construction/painting-estimate-calculator/): Three-tier interior and exterior painting quotes (budget, standard, premium) with labor rates, material fees and a printable estimate.
 - [Material Cost Estimator](https://mainstreettoolbox.com/construction/material-cost-estimator/): Materials with quantities, unit costs and a waste factor; the true material budget, printable.
 - [Work Order Generator](https://mainstreettoolbox.com/construction/work-order-generator/): Creates a printable work order with tasks, hours and labor cost — a one-page scope agreement.
@@ -62,7 +63,7 @@
 
 ## Key Facts
 
-- 34 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
+- 35 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
 - US pricing benchmarks throughout; target market is United States small businesses
 - Every tool works instantly with no signup, no account and no ads
 - Independent, single-developer project; pricing benchmarks sourced from industry data and cross-checked guides
