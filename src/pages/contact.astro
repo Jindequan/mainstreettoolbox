@@ -1,87 +1,107 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const endpoint = import.meta.env.PUBLIC_FORM_ENDPOINT as string | undefined;
+const services = [
+  {
+    icon: '🏭',
+    title: 'Storefront page design',
+    desc: 'A clean, fast one-page site for your shop — your services, your prices, your photos. Built to look trustworthy and rank in local search.',
+  },
+  {
+    icon: '🪪',
+    title: 'Business card design',
+    desc: 'A card customers keep, not toss. Print-ready, on-brand, and matched to the rest of how your business looks.',
+  },
+  {
+    icon: '⚙️',
+    title: 'Custom tools & SaaS',
+    desc: 'A calculator, quote builder, or booking flow built around how you actually work. Yours alone, on your own domain.',
+  },
+  {
+    icon: '💡',
+    title: 'Tech consulting',
+    desc: 'Straight answers about websites, software and automation — what is worth paying for, and what is not. One call or ongoing.',
+  },
+];
 ---
 
 <BaseLayout
-  title="Contact Us — Main Street Toolbox"
-  description="Get in touch with Devin — I help businesses with storefront pages, business cards, SaaS development, and technical consulting."
+  title="Contact — get help with your business — Main Street Toolbox"
+  description="I build storefront pages, business cards, custom calculators and SaaS tools for small shops. Email me and get a straight answer within 48 hours."
   path="/contact/"
 >
-  <!-- Hero Section -->
-  <section class="section" style="padding-bottom:12px">
-    <div class="container" style="max-width:44rem">
-      <span class="eyebrow">Get in touch</span>
-      <h1 style="font-size:var(--fs-800);margin:12px 0 8px">I'm Devin, and I can help you grow your business.</h1>
-      <p style="color:var(--ink-2);font-size:1.0625rem">
-        Whether you need a professional storefront page, a business card that makes an impression, a custom SaaS system, or just some technical advice — I'm here to help.
+  <section class="section" style="padding-bottom:8px">
+    <div class="container contact-wrap">
+      <span class="eyebrow">Beyond the free tools</span>
+      <h1 style="font-size:var(--fs-800);margin:12px 0 10px">The tools are free. I can also just build it for you.</h1>
+      <p style="color:var(--ink-2);font-size:1.0625rem;max-width:40rem">
+        If a calculator on this site got you halfway, I can take you the rest of the way —
+        a real page for your shop, a card that looks right, or a tool made exactly for your trade.
       </p>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="section" style="padding-top:24px;padding-bottom:40px">
-    <div class="container">
-      <h2 style="text-align:center;font-size:var(--fs-600);margin-bottom:32px">What I can do for you</h2>
-      <div class="services-grid">
-        <!-- Service 1: Storefront Page -->
-        <div class="service-card">
-          <div class="service-icon">🎨</div>
-          <h3>Storefront Page Design</h3>
-          <p>Professional, SEO-optimized storefront page that makes your business look trustworthy and modern. Perfect for local shops, service businesses, and more.</p>
-        </div>
-
-        <!-- Service 2: Business Card Design -->
-        <div class="service-card">
-          <div class="service-icon">📇</div>
-          <h3>Business Card Design</h3>
-          <p>Stand out from the competition with a business card that reflects your brand. High-quality designs that make an immediate impression.</p>
-        </div>
-
-        <!-- Service 3: SaaS Development -->
-        <div class="service-card">
-          <div class="service-icon">🚀</div>
-          <h3>SaaS Development</h3>
-          <p>From zero to one — I build custom SaaS systems tailored to your business needs. Automate your workflows, impress your customers, and scale efficiently.</p>
-        </div>
-
-        <!-- Service 4: Technical Consulting -->
-        <div class="service-card">
-          <div class="service-icon">💡</div>
-          <h3>Technical Consulting</h3>
-          <p>Not sure if an idea is feasible? Got a technical question? I can help you evaluate projects, provide technical roadmaps, or answer your questions one-on-one.</p>
-        </div>
+  <section class="section" style="padding-top:20px;padding-bottom:8px">
+    <div class="container contact-wrap">
+      <div class="svc-grid">
+        {services.map((s) => (
+          <div class="svc-card">
+            <div class="svc-icon" aria-hidden="true">{s.icon}</div>
+            <h2>{s.title}</h2>
+            <p>{s.desc}</p>
+          </div>
+        ))}
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section" style="padding-top:24px">
-    <div class="container" style="max-width:600px">
-      <div class="card card-pad form-card">
-        <h2 style="font-size:var(--fs-600);margin-bottom:20px">Let's talk</h2>
-        <p style="color:var(--ink-2);margin-bottom:20px">
-          Fill in your details below and I'll get back to you within 24-48 hours. No spam, no newsletters — just helpful conversations.
+  <section class="section" style="padding-top:24px;padding-bottom:56px">
+    <div class="container contact-wrap">
+      <div class="card card-pad contact-box">
+        <h2 style="font-size:var(--fs-600);margin:0 0 8px">How to reach me</h2>
+        <p style="color:var(--ink-2);margin:0 0 20px">
+          Email tells me you're serious, so email is all there is. Tell me your trade and what you need —
+          you'll get a real reply from a real person within 48 hours.
         </p>
-
         <a
-          href="mailto:feedback@mainstreettoolbox.com?subject=Contact%20from%20mainstreettoolbox.com&body=Name:%0A%0AEmail:%0A%0AWhat%20service%20are%20you%20interested%20in%3F%0A%0AYour%20message:%0A"
-          class="btn btn-primary"
-          style="display:inline-block;width:100%;text-align:center"
+          href="mailto:feedback@mainstreettoolbox.com?subject=I%20need%20help%20with%20my%20business&body=Hi%20Devin%2C%0A%0AMy%20business%20(a%20little%20about%20it):%20%0AWhat%20I%20need%20help%20with:%20%0A%0AThanks!"
+          class="btn btn-primary contact-btn"
         >
-          📧 Send me a message
+          <span>📧 Email Devin</span>
+          <span class="cb-mail">feedback@mainstreettoolbox.com</span>
         </a>
-
-        <div style="margin-top:24px;padding-top:24px;border-top:1px solid var(--ink-2)">
-          <p style="color:var(--ink-2);margin-bottom:12px">Or reach me directly:</p>
-          <a href="mailto:feedback@mainstreettoolbox.com" style="color:var(--primary);text-decoration:underline">
-            feedback@mainstreettoolbox.com
-          </a>
-        </div>
-
-        <p class="form-note" style="margin-top:20px">I'm Devin — I help businesses with storefront pages, business cards, SaaS systems, and technical consulting.</p>
+        <p class="form-note">
+          Free estimates for any project. No newsletters, no spam — your address is used to reply, that's it.
+        </p>
       </div>
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .contact-wrap { max-width: 52rem; }
+  .svc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  @media (max-width: 620px) {
+    .svc-grid { grid-template-columns: 1fr; }
+  }
+  .svc-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 20px;
+  }
+  .svc-card h2 {
+    font-family: var(--font-display);
+    font-size: var(--fs-600);
+    margin: 10px 0 6px;
+  }
+  .svc-card p { color: var(--ink-2); font-size: var(--fs-400); margin: 0; line-height: 1.55; }
+  .svc-icon { font-size: 1.6rem; line-height: 1; }
+  .contact-box { max-width: 34rem; }
+  .contact-btn { display: flex; flex-direction: column; gap: 3px; height: auto; padding: 13px 16px; }
+  .cb-mail { font-size: 0.92em; font-weight: 500; overflow-wrap: anywhere; }
+</style>

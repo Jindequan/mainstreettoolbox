@@ -19,7 +19,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <main class="container workbench">
     <!-- Mode toggle -->
     <section class="mod card card-pad" aria-label="Painting mode">
-      <h2 class="mod-lbl"><span>Mode</span></h2>
+      <h2 class="mod-lbl"><span>1</span> Mode</h2>
       <div class="mode-toggle">
         <label class="mode-option">
           <input type="radio" name="paintMode" value="interior" checked />
@@ -38,7 +38,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     <!-- 1 · 面积输入 -->
     <section class="mod card card-pad" aria-label="Painting area">
-      <h2 class="mod-lbl"><span>1</span> Painting area</h2>
+      <h2 class="mod-lbl"><span>2</span> Painting area</h2>
       <div class="flds">
         <div class="fld">
           <label for="p-interior">Interior sq ft</label>
@@ -59,7 +59,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     <!-- 2 · Per sqft rate -->
     <section class="mod card card-pad" aria-label="Per sqft rate">
-      <h2 class="mod-lbl"><span>2</span> Per square foot rate</h2>
+      <h2 class="mod-lbl"><span>3</span> Per square foot rate</h2>
       <div class="flds">
         <div class="fld">
           <label for="p-rate">Per sqft</label>
@@ -74,7 +74,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     <!-- 3 · Labor rate -->
     <section class="mod card card-pad" aria-label="Labor rate">
-      <h2 class="mod-lbl"><span>3</span> Labor rate</h2>
+      <h2 class="mod-lbl"><span>4</span> Labor rate</h2>
       <div class="flds">
         <div class="fld">
           <label for="p-labor">Per hour</label>
@@ -89,7 +89,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     <!-- 4 · Material fee (optional) -->
     <section class="mod card card-pad" aria-label="Material fee">
-      <h2 class="mod-lbl"><span>4</span> Material fee <span class="optional">(optional)</span></h2>
+      <h2 class="mod-lbl"><span>5</span> Material fee <span class="optional">(optional)</span></h2>
       <div class="flds">
         <div class="fld">
           <label for="p-material">Material cost per sqft</label>
@@ -104,7 +104,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     <!-- 5 · 输出：三档报价 -->
     <section class="mod card card-pad output-section" aria-label="Estimate results">
-      <h2 class="mod-lbl"><span>5</span> Estimate results</h2>
+      <h2 class="mod-lbl"><span>6</span> Estimate results</h2>
       <div class="quote-tier budget">
         <h3>Budget</h3>
         <div class="quote-row">
@@ -173,6 +173,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <button class="act primary" id="do-print" type="button">Print estimate (PDF)</button>
     </section>
   </main>
+
+  <p class="tool-contact-cta" style="padding:0 24px;max-width:74rem;margin-left:auto;margin-right:auto;text-align:left">Want it done for you? I build pages, cards &amp; custom tools for your trade — <a href="/contact">email me</a>.</p>
 
   <!-- 打印专用：报价单 -->
   <div class="estimate-sheet" id="estimate-sheet" aria-hidden="true">
@@ -378,35 +380,46 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       const standardMultiplier = 1.0; // $2.50–$3.50/sqft range center
       const premiumMultiplier = 1.4; // $3.50–$5.00+/sqft range center
 
-      // Calculate totals for each tier
+      // Base prices per tier (fees are added below for every tier)
       const budgetInterior = interiorSqft * (baseRate * budgetMultiplier);
       const budgetExterior = exteriorSqft * (baseRate * budgetMultiplier);
-      const budgetTotal = budgetInterior + budgetExterior;
 
       const standardInterior = interiorSqft * baseRate;
       const standardExterior = exteriorSqft * baseRate;
-      const standardTotal = standardInterior + standardExterior;
 
       const premiumInterior = interiorSqft * (baseRate * premiumMultiplier);
       const premiumExterior = exteriorSqft * (baseRate * premiumMultiplier);
-      const premiumTotal = premiumInterior + premiumExterior;
 
-      // Apply labor and material fees (added to standard tier for simplicity)
-      const standardInteriorWithFees = standardInterior + (interiorSqft * laborRate / interiorSpeed) + (interiorSqft * materialRate);
-      const standardExteriorWithFees = standardExterior + (exteriorSqft * laborRate / exteriorSpeed) + (exteriorSqft * materialRate);
+      // Labor and material fees apply to every tier — the multiplier prices the finish
+      // level, not the hours, so tiers stay monotonic (budget < standard < premium)
+      const interiorLabor = interiorSqft * laborRate / interiorSpeed;
+      const exteriorLabor = exteriorSqft * laborRate / exteriorSpeed;
+      const interiorMaterial = interiorSqft * materialRate;
+      const exteriorMaterial = exteriorSqft * materialRate;
+
+      const budgetInteriorWithFees = budgetInterior + interiorLabor + interiorMaterial;
+      const budgetExteriorWithFees = budgetExterior + exteriorLabor + exteriorMaterial;
+      const budgetTotal = budgetInteriorWithFees + budgetExteriorWithFees;
+
+      const standardInteriorWithFees = standardInterior + interiorLabor + interiorMaterial;
+      const standardExteriorWithFees = standardExterior + exteriorLabor + exteriorMaterial;
       const standardTotalWithFees = standardInteriorWithFees + standardExteriorWithFees;
 
+      const premiumInteriorWithFees = premiumInterior + interiorLabor + interiorMaterial;
+      const premiumExteriorWithFees = premiumExterior + exteriorLabor + exteriorMaterial;
+      const premiumTotal = premiumInteriorWithFees + premiumExteriorWithFees;
+
       // Output
-      outputs.qb.interior.textContent = formatMoney(budgetInterior);
-      outputs.qb.exterior.textContent = formatMoney(budgetExterior);
+      outputs.qb.interior.textContent = formatMoney(budgetInteriorWithFees);
+      outputs.qb.exterior.textContent = formatMoney(budgetExteriorWithFees);
       outputs.qb.total.textContent = formatMoney(budgetTotal);
 
-      outputs.qs.interior.textContent = formatMoney(standardInterior);
-      outputs.qs.exterior.textContent = formatMoney(standardExterior);
+      outputs.qs.interior.textContent = formatMoney(standardInteriorWithFees);
+      outputs.qs.exterior.textContent = formatMoney(standardExteriorWithFees);
       outputs.qs.total.textContent = formatMoney(standardTotalWithFees);
 
-      outputs.qp.interior.textContent = formatMoney(premiumInterior);
-      outputs.qp.exterior.textContent = formatMoney(premiumExterior);
+      outputs.qp.interior.textContent = formatMoney(premiumInteriorWithFees);
+      outputs.qp.exterior.textContent = formatMoney(premiumExteriorWithFees);
       outputs.qp.total.textContent = formatMoney(premiumTotal);
 
       // Update estimate sheet
@@ -415,14 +428,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       document.getElementById('es-interior').textContent = interiorSqft;
       document.getElementById('es-exterior').textContent = exteriorSqft;
       document.getElementById('es-total-area').textContent = interiorSqft + exteriorSqft;
-      document.getElementById('es-bi').textContent = formatMoney(budgetInterior);
-      document.getElementById('es-be').textContent = formatMoney(budgetExterior);
+      document.getElementById('es-bi').textContent = formatMoney(budgetInteriorWithFees);
+      document.getElementById('es-be').textContent = formatMoney(budgetExteriorWithFees);
       document.getElementById('es-b-total').textContent = formatMoney(budgetTotal);
       document.getElementById('es-si').textContent = formatMoney(standardInteriorWithFees);
       document.getElementById('es-se').textContent = formatMoney(standardExteriorWithFees);
       document.getElementById('es-s-total').textContent = formatMoney(standardTotalWithFees);
-      document.getElementById('es-pi').textContent = formatMoney(premiumInterior);
-      document.getElementById('es-pe').textContent = formatMoney(premiumExterior);
+      document.getElementById('es-pi').textContent = formatMoney(premiumInteriorWithFees);
+      document.getElementById('es-pe').textContent = formatMoney(premiumExteriorWithFees);
       document.getElementById('es-p-total').textContent = formatMoney(premiumTotal);
     }
 
@@ -435,15 +448,99 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       radio.addEventListener('change', calculate);
     });
 
-    // Print handler
+    // Print handler — the estimate sheet is print-only via CSS (@media print)
     document.getElementById('do-print').addEventListener('click', () => {
-      const sheet = document.getElementById('estimate-sheet');
-      sheet.classList.remove('hidden');
       window.print();
-      sheet.classList.add('hidden');
     });
 
     // Initial calculation
     calculate();
   </script>
+
+  <style is:global>
+    .head { padding: 36px 24px 10px; }
+    .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
+    .head .sub { color: var(--ink-2); font-size: 1.0625rem; max-width: 40rem; }
+    .workbench {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start;
+      padding-bottom: 44px; margin-top: 18px; max-width: 74rem;
+    }
+    .mod-lbl {
+      display: flex; align-items: center; gap: 9px;
+      font-size: 12px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+      color: var(--ink-3); margin-bottom: 14px;
+    }
+    .mod-lbl span {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 21px; height: 21px; border-radius: 50%;
+      background: var(--green-tint); color: var(--green-2); font-size: 11.5px; font-weight: 700;
+    }
+    .mod-lbl .optional { background: none; width: auto; height: auto; font-weight: 500; letter-spacing: .02em; text-transform: none; color: var(--ink-3); }
+    .mode-toggle { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+    .mode-option { position: relative; display: block; cursor: pointer; }
+    .mode-option input { position: absolute; opacity: 0; }
+    .mode-option span {
+      display: flex; align-items: center; justify-content: center; height: 40px;
+      border: 1.5px solid var(--line-2); border-radius: var(--r-s); background: #fff;
+      color: var(--ink); font: 500 13.5px var(--font-ui);
+    }
+    .mode-option input:checked + span { border-color: var(--green); background: var(--green-tint); color: var(--green-2); font-weight: 600; }
+    .flds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .fld label { display: block; font: 600 11.5px var(--font-ui); color: var(--ink-3); margin-bottom: 5px; }
+    .fld input {
+      width: 100%; height: 40px; padding: 0 9px; border: 1.5px solid var(--line-2); border-radius: var(--r-s);
+      background: #fff; color: var(--ink); font: 500 14px var(--font-ui); outline: 0; min-width: 0;
+    }
+    .fld input:focus { border-color: var(--green); }
+    .money { display: flex; align-items: center; }
+    .money i { font: 600 13px var(--font-ui); color: var(--ink-3); font-style: normal; margin-right: 2px; }
+    .note { display: block; font-size: 12.5px; color: var(--ink-3); margin-top: 8px; line-height: 1.5; }
+    .quote-tier { border: 1px solid var(--line); border-radius: var(--r-s); background: #fff; padding: 12px 14px; margin-bottom: 10px; }
+    .quote-tier:last-child { margin-bottom: 0; }
+    .quote-tier h3 { font: 700 11px var(--font-ui); letter-spacing: .08em; text-transform: uppercase; margin: 0 0 8px; }
+    .quote-tier.budget h3 { color: var(--ok); }
+    .quote-tier.standard h3 { color: var(--amber); }
+    .quote-tier.premium h3 { color: var(--green-2); }
+    .quote-row { display: flex; justify-content: space-between; align-items: baseline; padding: 4px 0; font: 500 13.5px var(--font-ui); color: var(--ink-2); }
+    .quote-row.total { border-top: 1px dashed var(--line-2); margin-top: 4px; padding-top: 8px; font-weight: 600; color: var(--ink); }
+    .quote-row .price { font: 640 1.05rem var(--font-display); color: var(--ink); font-variant-numeric: tabular-nums; }
+    .quote-row.total .price { color: var(--green-2); }
+    .info-box { grid-column: 1 / -1; }
+    .info-box h2 { font: 640 1.15rem var(--font-display); color: var(--ink); margin: 0 0 8px; }
+    .info-box p, .info-box li { font-size: 14px; color: var(--ink-2); line-height: 1.6; }
+    .info-box ul { padding-left: 20px; margin: 8px 0; }
+    .cheat-cta { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: center; background: var(--paper-2); }
+    .cheat-cta h2 { font: 640 1.3rem var(--font-display); color: var(--ink); margin: 0 0 6px; }
+    .cheat-cta p { font-size: 13.5px; color: var(--ink-2); line-height: 1.55; margin: 0; }
+    .act {
+      height: 46px; padding: 0 22px; border-radius: var(--r-s); cursor: pointer; white-space: nowrap;
+      border: 1.5px solid var(--line-2); background: var(--card); color: var(--ink); font: 600 14px var(--font-ui);
+    }
+    .act.primary { background: var(--green); border-color: var(--green); color: #FDFBF4; }
+    .act.primary:hover { background: var(--green-2); }
+    .estimate-sheet { display: none; }
+    @media (max-width: 920px) {
+      .workbench { grid-template-columns: minmax(0, 1fr); }
+      .cheat-cta { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (max-width: 460px) {
+      .flds { grid-template-columns: minmax(0, 1fr); }
+      .mode-toggle { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media print {
+      .nav, .industry-hero, .workbench, .prose, .faq, .related, footer.site { display: none !important; }
+      body { background: #fff; }
+      .estimate-sheet { display: block !important; margin: 10mm 12mm; font-family: var(--font-ui); color: #111; }
+      .es-brand { font: 700 17px var(--font-display); letter-spacing: .12em; color: #111; border-bottom: 2px solid #111; padding-bottom: 8px; }
+      .es-meta { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 10px; }
+      .es-meta p { font: 500 12px var(--font-ui); color: #222; margin: 0; }
+      .es-tiers { margin-top: 14px; }
+      .es-tiers h3 { font: 700 11px var(--font-ui); letter-spacing: .08em; text-transform: uppercase; color: #111; margin: 12px 0 4px; }
+      .es-row { display: flex; justify-content: space-between; font: 500 12px var(--font-ui); color: #222; padding: 3px 0; border-bottom: 1px solid #eee; }
+      .es-row.total { font-weight: 700; border-bottom: 2px solid #111; }
+      .es-footer { margin-top: 14px; font: 500 10px var(--font-ui); color: #666; border-top: 1px solid #ccc; padding-top: 6px; }
+      .es-footer p { margin: 0 0 4px; }
+      .es-brand-small { margin-top: 10px; font: 500 10px var(--font-ui); color: #666; }
+    }
+  </style>
 </BaseLayout>

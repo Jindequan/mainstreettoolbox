@@ -312,7 +312,11 @@ footer.site { padding: 44px 0 56px; color: var(--ink-2); font-size: var(--fs-400
   .trades { grid-template-columns: 1fr 1fr; }
   .tool-grid { grid-template-columns: minmax(0, 1fr); }
   .result-card { position: static; }
+  .nav-in { height: auto; min-height: 56px; flex-wrap: wrap; gap: 8px 14px; padding: 8px 24px; }
+  .logo { white-space: nowrap; min-width: 0; font-size: 1.05rem; }
   .nav-links a:not(.btn) { display: none; }
+  .nav-links { gap: 10px; margin-left: auto; }
+  .nav-links .btn { padding: 0 12px; }
   .trust-in { flex-direction: column; gap: 8px; align-items: center; }
   .foot-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -324,8 +328,10 @@ footer.site { padding: 44px 0 56px; color: var(--ink-2); font-size: var(--fs-400
 /* ---------- 14. Print — 干净 one-pager ---------- */
 /* 打印落款：屏幕上隐藏，仅打印时显示（发票/工单等纸面即传播位） */
 .print-credit { display: none; text-align: center; font-size: 10px; color: #9A9078; margin-top: 14px; letter-spacing: .02em; }
+.tool-contact-cta { font-size: var(--fs-400); color: var(--ink-2); text-align: center; margin: 14px 0 0; }
+.tool-contact-cta a { color: var(--green); font-weight: 600; text-decoration: underline; }
 @media print {
-  body::before, .nav, .crumbs, .action-bar, .tool-form, footer.site, .related, .faq, .next-steps { display: none !important; }
+  body::before, .nav, .crumbs, .action-bar, .tool-form, footer.site, .related, .faq, .next-steps, .tool-contact-cta { display: none !important; }
   body { background: #fff; }
   .result-card { position: static; box-shadow: none; }
   .print-credit { display: block !important; }
