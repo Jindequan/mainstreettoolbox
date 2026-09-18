@@ -42,17 +42,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <div class="flds">
         <div class="fld">
           <label for="p-interior">Interior sq ft</label>
-          <div class="money">
-            <i>$</i>
-            <input id="p-interior" type="number" min="0" step="100" value="1000" />
-          </div>
+          <input id="p-interior" type="number" min="0" step="100" value="1000" />
         </div>
         <div class="fld">
           <label for="p-exterior">Exterior sq ft</label>
-          <div class="money">
-            <i>$</i>
-            <input id="p-exterior" type="number" min="0" step="100" value="1000" />
-          </div>
+          <input id="p-exterior" type="number" min="0" step="100" value="1000" />
         </div>
       </div>
     </section>
@@ -77,12 +71,20 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <h2 class="mod-lbl"><span>4</span> Labor rate</h2>
       <div class="flds">
         <div class="fld">
-          <label for="p-labor">Per hour</label>
+          <label for="p-labor-int">Interior, per hour</label>
           <div class="money">
             <i>$</i>
-            <input id="p-labor" type="number" min="0" step="1" value="30" />
+            <input id="p-labor-int" type="number" min="0" step="1" value="30" />
           </div>
-          <small class="note">Default: $30/hour (interior) / $50/hour (exterior). Adjust by location.</small>
+          <small class="note">Typical: $20–50/hour interior</small>
+        </div>
+        <div class="fld">
+          <label for="p-labor-ext">Exterior, per hour</label>
+          <div class="money">
+            <i>$</i>
+            <input id="p-labor-ext" type="number" min="0" step="1" value="50" />
+          </div>
+          <small class="note">Typical: $40–75/hour exterior</small>
         </div>
       </div>
     </section>
@@ -350,7 +352,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       interior: document.getElementById('p-interior'),
       exterior: document.getElementById('p-exterior'),
       rate: document.getElementById('p-rate'),
-      labor: document.getElementById('p-labor'),
+      laborInt: document.getElementById('p-labor-int'),
+      laborExt: document.getElementById('p-labor-ext'),
       material: document.getElementById('p-material')
     };
 
@@ -368,8 +371,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       const interiorSqft = parseFloat(inputs.interior.value) || 0;
       const exteriorSqft = parseFloat(inputs.exterior.value) || 0;
       const baseRate = parseFloat(inputs.rate.value) || 0;
-      const laborRate = parseFloat(inputs.labor.value) || 0;
+      const laborIntRate = parseFloat(inputs.laborInt.value) || 0;
+      const laborExtRate = parseFloat(inputs.laborExt.value) || 0;
       const materialRate = parseFloat(inputs.material.value) || 0;
+
+      // Mode gates which areas are priced — an unselected area contributes $0 everywhere
+      const mode = document.querySelector('input[name="paintMode"]:checked').value;
+      const effInterior = mode === 'exterior' ? 0 : interiorSqft;
+      const effExterior = mode === 'interior' ? 0 : exteriorSqft;
 
       // Labor speed (sqft per hour)
       const interiorSpeed = 12; // derived from $30/hour ÷ $2.50/sqft
@@ -381,21 +390,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       const premiumMultiplier = 1.4; // $3.50–$5.00+/sqft range center
 
       // Base prices per tier (fees are added below for every tier)
-      const budgetInterior = interiorSqft * (baseRate * budgetMultiplier);
-      const budgetExterior = exteriorSqft * (baseRate * budgetMultiplier);
+      const budgetInterior = effInterior * (baseRate * budgetMultiplier);
+      const budgetExterior = effExterior * (baseRate * budgetMultiplier);
 
-      const standardInterior = interiorSqft * baseRate;
-      const standardExterior = exteriorSqft * baseRate;
+      const standardInterior = effInterior * baseRate;
+      const standardExterior = effExterior * baseRate;
 
-      const premiumInterior = interiorSqft * (baseRate * premiumMultiplier);
-      const premiumExterior = exteriorSqft * (baseRate * premiumMultiplier);
+      const premiumInterior = effInterior * (baseRate * premiumMultiplier);
+      const premiumExterior = effExterior * (baseRate * premiumMultiplier);
 
       // Labor and material fees apply to every tier — the multiplier prices the finish
       // level, not the hours, so tiers stay monotonic (budget < standard < premium)
-      const interiorLabor = interiorSqft * laborRate / interiorSpeed;
-      const exteriorLabor = exteriorSqft * laborRate / exteriorSpeed;
-      const interiorMaterial = interiorSqft * materialRate;
-      const exteriorMaterial = exteriorSqft * materialRate;
+      const interiorLabor = effInterior * laborIntRate / interiorSpeed;
+      const exteriorLabor = effExterior * laborExtRate / exteriorSpeed;
+      const interiorMaterial = effInterior * materialRate;
+      const exteriorMaterial = effExterior * materialRate;
 
       const budgetInteriorWithFees = budgetInterior + interiorLabor + interiorMaterial;
       const budgetExteriorWithFees = budgetExterior + exteriorLabor + exteriorMaterial;
@@ -423,11 +432,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       outputs.qp.total.textContent = formatMoney(premiumTotal);
 
       // Update estimate sheet
+      const modeLabels = { interior: 'Interior only', exterior: 'Exterior only', both: 'Interior + exterior' };
       document.getElementById('es-date').textContent = new Date().toLocaleDateString();
-      document.getElementById('es-mode').textContent = document.querySelector('input[name="paintMode"]:checked').value;
-      document.getElementById('es-interior').textContent = interiorSqft;
-      document.getElementById('es-exterior').textContent = exteriorSqft;
-      document.getElementById('es-total-area').textContent = interiorSqft + exteriorSqft;
+      document.getElementById('es-mode').textContent = modeLabels[mode];
+      document.getElementById('es-interior').textContent = effInterior;
+      document.getElementById('es-exterior').textContent = effExterior;
+      document.getElementById('es-total-area').textContent = effInterior + effExterior;
       document.getElementById('es-bi').textContent = formatMoney(budgetInteriorWithFees);
       document.getElementById('es-be').textContent = formatMoney(budgetExteriorWithFees);
       document.getElementById('es-b-total').textContent = formatMoney(budgetTotal);

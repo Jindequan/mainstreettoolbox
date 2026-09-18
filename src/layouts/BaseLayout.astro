@@ -79,6 +79,24 @@ const ga = import.meta.env.PUBLIC_GA_ID;
     </div>
     <div class="container"><p class="foot-note">© {new Date().getFullYear()} Main Street Toolbox. Numbers are estimates for guidance only — not financial, legal or tax advice.</p></div>
   </footer>
+  {ga && <script is:inline>
+    // 转化漏斗测量：mailto 点击=咨询意向、/contact 导航=漏斗上沿。
+    // GA 懒加载下 gtag() 已同步定义，事件先入 dataLayer 队列，gtag.js 加载后回放。
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest ? e.target.closest('a[href^="mailto:"]') : null;
+      if (!a || typeof gtag !== 'function') return;
+      var loc = a.classList.contains('contact-btn') ? 'contact_page'
+        : a.closest('.result-card') ? 'tool_result_card'
+        : 'other';
+      gtag('event', 'contact_email_click', { link_location: loc });
+    }, { passive: true });
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest ? e.target.closest('a[href="/contact"], a[href="/contact/"]') : null;
+      if (!a || typeof gtag !== 'function') return;
+      var loc = a.closest('.nav') ? 'nav' : a.closest('footer') ? 'footer' : 'in_page';
+      gtag('event', 'contact_page_nav', { link_location: loc });
+    }, { passive: true });
+  </script>}
   <script src="../scripts/stats.ts"></script>
 </body>
 </html>

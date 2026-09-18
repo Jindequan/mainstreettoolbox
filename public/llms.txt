@@ -4,14 +4,15 @@
 
 ## Docs
 
-- [Home](https://mainstreettoolbox.com/): Overview of all 26 free tools with a live search box; the fastest way to find the right calculator.
+- [Home](https://mainstreettoolbox.com/): Overview of all 34 free tools with a live search box; the fastest way to find the right calculator.
 - [All Tools](https://mainstreettoolbox.com/tools/): Every calculator grouped by trade with one-line descriptions of what each answers.
 - [Restaurant tools](https://mainstreettoolbox.com/restaurant/): Food cost, menu pricing, menu engineering, tip out, prime cost and labor calculators for restaurant owners.
 - [Cleaning tools](https://mainstreettoolbox.com/cleaning/): House cleaning estimates, pressure washing and window cleaning pricing, junk removal, invoices and checklists.
-- [Construction tools](https://mainstreettoolbox.com/construction/): Contractor hourly rates, material cost estimates and printable work orders.
-- [Lawn care tools](https://mainstreettoolbox.com/lawn/): Mowing prices, full lawn-care estimates and a mulch quantity calculator.
+- [Construction tools](https://mainstreettoolbox.com/construction/): Contractor hourly rates, material cost estimates, painting estimates and printable work orders.
+- [Lawn care tools](https://mainstreettoolbox.com/lawn/): Mowing prices, full lawn-care estimates, mulch, snow removal and aeration calculators.
 - [Salon tools](https://mainstreettoolbox.com/salon/): Service price list builder, booth rent vs commission calculator and receipt generator.
 - [Retail tools](https://mainstreettoolbox.com/retail/): Retail math, markup, discount profit and inventory count tools for independent shops.
+- [2026 Pricing Benchmarks](https://mainstreettoolbox.com/benchmarks/service-pricing-2026/): Sourced benchmark bands for every trade, built to be cited.
 
 ## Tools
 
@@ -22,6 +23,10 @@
 - [Pour Cost Calculator](https://mainstreettoolbox.com/restaurant/pour-cost-calculator/): Checks any drink against its pour cost band — spirits 15–22%, draft beer 20–28%, wine 28–40% — and shows the menu price that fixes a high pour.
 - [Menu Engineering Matrix](https://mainstreettoolbox.com/restaurant/menu-engineering-matrix/): Scores every dish on profitability and popularity; classifies Stars, Plowhorses, Puzzles and Dogs with an action per class.
 - [Tip Out Calculator](https://mainstreettoolbox.com/restaurant/tip-out-calculator/): Splits the tip pool across servers and support staff by percentage shares; printable summary sheet.
+- [Labor Cost Calculator](https://mainstreettoolbox.com/restaurant/labor-cost-calculator/): Fully loaded employee cost (wage + payroll taxes + benefits) and labor cost as a percentage of revenue.
+- [Markup vs Margin Calculator](https://mainstreettoolbox.com/restaurant/markup-vs-margin-calculator/): Converts between markup and margin and shows the menu price each produces.
+- [Recipe Scaler](https://mainstreettoolbox.com/restaurant/recipe-scaler/): Scales a recipe from any serving count to any other; printable for a catering prep list.
+- [Restaurant Profit Margin Calculator](https://mainstreettoolbox.com/restaurant/profit-margin-calculator/): Monthly revenue and costs in; true net profit, margin percentage and annualized profit out.
 - [Prime Cost Calculator](https://mainstreettoolbox.com/restaurant/prime-cost-calculator/): Combines food cost plus labor cost as a share of sales — the number that decides if a restaurant is viable.
 - [Break-Even Calculator](https://mainstreettoolbox.com/restaurant/break-even-calculator/): Sales volume needed to cover fixed and variable costs for a restaurant.
 - [House Cleaning Cost Calculator](https://mainstreettoolbox.com/cleaning/cleaning-estimate-calculator/): Prices standard, deep and move-out cleans by bedrooms and bathrooms against 2026 US ranges.
@@ -29,13 +34,23 @@
 - [Window Cleaning Price Calculator](https://mainstreettoolbox.com/cleaning/window-cleaning-price-calculator/): Prices window cleaning per pane or per job for residential and small commercial work.
 - [Junk Removal Estimator](https://mainstreettoolbox.com/cleaning/junk-removal-estimator/): Estimates junk removal pricing by truck-load fractions, the way operators actually quote.
 - [Cleaning Invoice Generator](https://mainstreettoolbox.com/cleaning/cleaning-invoice-generator/): Creates a cleaning-industry invoice with line items and payment terms; printable PDF.
+- [Deep Cleaning Checklist Generator](https://mainstreettoolbox.com/cleaning/cleaning-checklist-builder/): Builds a printable deep cleaning checklist by room, or a move-out checklist; free, nothing stored.
+- [Painting Estimate Calculator](https://mainstreettoolbox.com/construction/painting-estimate-calculator/): Three-tier interior and exterior painting quotes (budget, standard, premium) with labor rates, material fees and a printable estimate.
+- [Material Cost Estimator](https://mainstreettoolbox.com/construction/material-cost-estimator/): Materials with quantities, unit costs and a waste factor; the true material budget, printable.
+- [Work Order Generator](https://mainstreettoolbox.com/construction/work-order-generator/): Creates a printable work order with tasks, hours and labor cost — a one-page scope agreement.
 - [Contractor Hourly Rate Calculator](https://mainstreettoolbox.com/construction/contractor-hourly-rate-calculator/): The hourly rate a contractor must charge to cover wages, taxes, overhead and target profit — includes handyman and state variations.
 - [Lawn Mowing Price Calculator](https://mainstreettoolbox.com/lawn/lawn-mowing-price-calculator/): Prices mowing jobs by lawn size, frequency and trim work against US averages.
+- [Lawn Care Estimate Generator](https://mainstreettoolbox.com/lawn/lawn-care-estimate-generator/): Builds a full lawn-care estimate line by line — mowing, trim, edging, cleanup, fertilization — with US pricing bands and a printable quote.
 - [Mulch Calculator](https://mainstreettoolbox.com/lawn/mulch-calculator/): Cubic yards of mulch needed for an area and depth, with bag-count conversion.
 - [Snow Removal Pricing Calculator](https://mainstreettoolbox.com/lawn/snow-removal-pricing-calculator/): Prices snow removal per push by driveway size, as a seasonal contract or hourly — with 2026 US ranges and contract trigger-depth guidance.
 - [Aeration and Overseeding Calculator](https://mainstreettoolbox.com/lawn/aeration-and-overseeding-calculator/): Prices fall aeration and overseeding by lawn size — aeration alone $15–30 per 1,000 sq ft, the combination $35–80 — with double-pass and stop-fee guidance.
 - [Service Price List Builder](https://mainstreettoolbox.com/salon/service-price-list-builder/): Builds a typeset, printable price list for any service business — salon, cleaning, lawn care or contracting.
+- [Booth Rent vs Commission Calculator](https://mainstreettoolbox.com/salon/booth-rent-commission-calculator/): Weekly sales, commission split and booth rent in; which pay structure leaves more in your pocket out.
+- [Receipt Generator](https://mainstreettoolbox.com/salon/receipt-generator/): Generates a clean printable receipt for services rendered — client, services, amounts, total.
 - [Retail Math Calculator](https://mainstreettoolbox.com/retail/retail-math-calculator/): Markup, margin, markdown, sell-through, GMROI and break-even modules with a printable cheat sheet.
+- [Retail Markup Calculator](https://mainstreettoolbox.com/retail/retail-markup-calculator/): Wholesale cost to shelf price — markup vs margin, profit per unit, margin protection before a discount.
+- [Discount Profit Calculator](https://mainstreettoolbox.com/retail/discount-profit-calculator/): Enter your margin and planned discount; see how much more you must sell just to break even.
+- [Inventory Count Sheet](https://mainstreettoolbox.com/retail/inventory-count-sheet/): Stock counting with prices attached — item × quantity × unit cost totals live; prints for the stockroom.
 
 ## Guides
 
@@ -47,7 +62,7 @@
 
 ## Key Facts
 
-- 26 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
+- 34 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
 - US pricing benchmarks throughout; target market is United States small businesses
 - Every tool works instantly with no signup, no account and no ads
 - Independent, single-developer project; pricing benchmarks sourced from industry data and cross-checked guides
@@ -56,5 +71,6 @@
 ## Contact
 
 - Website: https://mainstreettoolbox.com
+- Work with us (storefront pages, business cards, custom tools): https://mainstreettoolbox.com/contact/
 - Support the project: https://ko-fi.com/devinjin
 - Feedback: https://mainstreettoolbox.com/feedback/

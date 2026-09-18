@@ -331,7 +331,9 @@ footer.site { padding: 44px 0 56px; color: var(--ink-2); font-size: var(--fs-400
 .tool-contact-cta { font-size: var(--fs-400); color: var(--ink-2); text-align: center; margin: 14px 0 0; }
 .tool-contact-cta a { color: var(--green); font-weight: 600; text-decoration: underline; }
 @media print {
-  body::before, .nav, .crumbs, .action-bar, .tool-form, footer.site, .related, .faq, .next-steps, .tool-contact-cta { display: none !important; }
+  body::before, .nav, .crumbs, .action-bar, .tool-form, footer.site, .related, .faq, .next-steps, .tool-contact-cta, .m-bar { display: none !important; }
+  .industry-hero { padding: 0 0 10px !important; min-height: 0 !important; }
+  .industry-hero-bg { display: none !important; }
   body { background: #fff; }
   .result-card { position: static; box-shadow: none; }
   .print-credit { display: block !important; }
