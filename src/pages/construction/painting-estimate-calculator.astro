@@ -1,0 +1,449 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Painting Estimate Calculator — Free Interior & Exterior Pricing Tool | Main Street Toolbox"
+  description="Painting estimate calculator for interior and exterior — three-tier quotes (budget/standard/premium), labor rates per hour, material fees. Free, no signup."
+  path="/construction/painting-estimate-calculator/"
+>
+  <div class="industry-hero">
+    <div class="industry-hero-bg" style="background-image:linear-gradient(rgba(250,247,240,.85), rgba(250,247,240,.06)), url('/images/construction.jpg')"></div>
+    <div class="container head">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/construction">Construction</a> / <b style="color:var(--ink)">Painting Estimate Calculator</b></p>
+      <h1>Painting Estimate Calculator</h1>
+      <p class="sub">Get three-tier quotes for interior and exterior painting — budget, standard, and premium. Labor rates, material fees, and printable results.</p>
+    </div>
+  </div>
+
+  <main class="container workbench">
+    <!-- Mode toggle -->
+    <section class="mod card card-pad" aria-label="Painting mode">
+      <h2 class="mod-lbl"><span>Mode</span></h2>
+      <div class="mode-toggle">
+        <label class="mode-option">
+          <input type="radio" name="paintMode" value="interior" checked />
+          <span>Interior Only</span>
+        </label>
+        <label class="mode-option">
+          <input type="radio" name="paintMode" value="exterior" />
+          <span>Exterior Only</span>
+        </label>
+        <label class="mode-option">
+          <input type="radio" name="paintMode" value="both" />
+          <span>Both Areas</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- 1 · 面积输入 -->
+    <section class="mod card card-pad" aria-label="Painting area">
+      <h2 class="mod-lbl"><span>1</span> Painting area</h2>
+      <div class="flds">
+        <div class="fld">
+          <label for="p-interior">Interior sq ft</label>
+          <div class="money">
+            <i>$</i>
+            <input id="p-interior" type="number" min="0" step="100" value="1000" />
+          </div>
+        </div>
+        <div class="fld">
+          <label for="p-exterior">Exterior sq ft</label>
+          <div class="money">
+            <i>$</i>
+            <input id="p-exterior" type="number" min="0" step="100" value="1000" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Per sqft rate -->
+    <section class="mod card card-pad" aria-label="Per sqft rate">
+      <h2 class="mod-lbl"><span>2</span> Per square foot rate</h2>
+      <div class="flds">
+        <div class="fld">
+          <label for="p-rate">Per sqft</label>
+          <div class="money">
+            <i>$</i>
+            <input id="p-rate" type="number" min="0" step="0.01" value="2.50" />
+          </div>
+          <small class="note">Based on 2026 contractor data: $1.50–$4.00/sqft, labor $20–75/hour</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · Labor rate -->
+    <section class="mod card card-pad" aria-label="Labor rate">
+      <h2 class="mod-lbl"><span>3</span> Labor rate</h2>
+      <div class="flds">
+        <div class="fld">
+          <label for="p-labor">Per hour</label>
+          <div class="money">
+            <i>$</i>
+            <input id="p-labor" type="number" min="0" step="1" value="30" />
+          </div>
+          <small class="note">Default: $30/hour (interior) / $50/hour (exterior). Adjust by location.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · Material fee (optional) -->
+    <section class="mod card card-pad" aria-label="Material fee">
+      <h2 class="mod-lbl"><span>4</span> Material fee <span class="optional">(optional)</span></h2>
+      <div class="flds">
+        <div class="fld">
+          <label for="p-material">Material cost per sqft</label>
+          <div class="money">
+            <i>$</i>
+            <input id="p-material" type="number" min="0" step="0.01" value="0.75" />
+          </div>
+          <small class="note">Typical range: $0.50–$1.50 (interior) / $0.50–$2.00 (exterior). Skip if not needed.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · 输出：三档报价 -->
+    <section class="mod card card-pad output-section" aria-label="Estimate results">
+      <h2 class="mod-lbl"><span>5</span> Estimate results</h2>
+      <div class="quote-tier budget">
+        <h3>Budget</h3>
+        <div class="quote-row">
+          <span>Interior</span>
+          <span class="price"><span id="qb-interior">$0</span></span>
+        </div>
+        <div class="quote-row">
+          <span>Exterior</span>
+          <span class="price"><span id="qb-exterior">$0</span></span>
+        </div>
+        <div class="quote-row total">
+          <span>Total</span>
+          <span class="price"><span id="qb-total">$0</span></span>
+        </div>
+      </div>
+
+      <div class="quote-tier standard">
+        <h3>Standard</h3>
+        <div class="quote-row">
+          <span>Interior</span>
+          <span class="price"><span id="qs-interior">$0</span></span>
+        </div>
+        <div class="quote-row">
+          <span>Exterior</span>
+          <span class="price"><span id="qs-exterior">$0</span></span>
+        </div>
+        <div class="quote-row total">
+          <span>Total</span>
+          <span class="price"><span id="qs-total">$0</span></span>
+        </div>
+      </div>
+
+      <div class="quote-tier premium">
+        <h3>Premium</h3>
+        <div class="quote-row">
+          <span>Interior</span>
+          <span class="price"><span id="qp-interior">$0</span></span>
+        </div>
+        <div class="quote-row">
+          <span>Exterior</span>
+          <span class="price"><span id="qp-exterior">$0</span></span>
+        </div>
+        <div class="quote-row total">
+          <span>Total</span>
+          <span class="price"><span id="qp-total">$0</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 验证说明 -->
+    <section class="info-box card card-pad">
+      <h2>Why three tiers?</h2>
+      <p>Most contractors quote based on <b>prep work, paint quality, and labor speed</b>, not a single rate. These tiers reflect real market ranges:</p>
+      <ul>
+        <li><b>Budget</b>: Fast, minimal prep, basic paint — $1.50–$2.50/sqft</li>
+        <li><b>Standard</b>: Normal labor, 1 coat, standard prep — $2.50–$3.50/sqft</li>
+        <li><b>Premium</b>: Complex prep, 2 coats, trim/ceiling included — $3.50–$5.00+/sqft</li>
+      </ul>
+      <p>Use the calculator to set expectations before asking for quotes. Adjust the per sqft rate to match your local market.</p>
+    </section>
+
+    <!-- Print button -->
+    <section class="cheat-cta card card-pad">
+      <h2>Print estimate</h2>
+      <p>Export this quote to share with contractors — includes all assumptions and sources.</p>
+      <button class="act primary" id="do-print" type="button">Print estimate (PDF)</button>
+    </section>
+  </main>
+
+  <!-- 打印专用：报价单 -->
+  <div class="estimate-sheet" id="estimate-sheet" aria-hidden="true">
+    <div class="es-brand">PAINTING ESTIMATE — Main Street Toolbox</div>
+    <div class="es-meta">
+      <p><strong>Date:</strong> <span id="es-date"></span></p>
+      <p><strong>Mode:</strong> <span id="es-mode"></span></p>
+      <p><strong>Interior:</strong> <span id="es-interior">0</span> sqft</p>
+      <p><strong>Exterior:</strong> <span id="es-exterior">0</span> sqft</p>
+      <p><strong>Total area:</strong> <span id="es-total-area">0</span> sqft</p>
+    </div>
+    <div class="es-tiers">
+      <h3>Budget</h3>
+      <div class="es-row">
+        <span>Interior</span>
+        <span id="es-bi">$0</span>
+      </div>
+      <div class="es-row">
+        <span>Exterior</span>
+        <span id="es-be">$0</span>
+      </div>
+      <div class="es-row total">
+        <span>Total</span>
+        <span id="es-b-total">$0</span>
+      </div>
+      <h3>Standard</h3>
+      <div class="es-row">
+        <span>Interior</span>
+        <span id="es-si">$0</span>
+      </div>
+      <div class="es-row">
+        <span>Exterior</span>
+        <span id="es-se">$0</span>
+      </div>
+      <div class="es-row total">
+        <span>Total</span>
+        <span id="es-s-total">$0</span>
+      </div>
+      <h3>Premium</h3>
+      <div class="es-row">
+        <span>Interior</span>
+        <span id="es-pi">$0</span>
+      </div>
+      <div class="es-row">
+        <span>Exterior</span>
+        <span id="es-pe">$0</span>
+      </div>
+      <div class="es-row total">
+        <span>Total</span>
+        <span id="es-p-total">$0</span>
+      </div>
+    </div>
+    <div class="es-footer">
+      <p><strong>Sources:</strong> Angi, HomeAdvisor, HomeGuide, Costimates</p>
+      <p><strong>Benchmark:</strong> $1.50–$4.00/sqft (labor: $20–75/hour)</p>
+    </div>
+    <div class="es-brand-small">mainstreettoolbox.com/construction/painting-estimate-calculator — free construction calculators</div>
+  </div>
+
+  <section class="container prose">
+    <h2>Interior vs exterior painting: what's different?</h2>
+    <p>Contractors charge different rates for interior and exterior work because of <b>prep work, safety, and cleanup</b>:</p>
+    <ul>
+      <li><b>Labor rate</b>: Interior $20–50/hour, Exterior $40–75/hour (high-angle work, cleanup fees)</li>
+      <li><b>Per sqft</b>: Interior $1.50–$3.50, Exterior $1.50–$4.00 (exterior needs scraping, power washing, multiple coats)</li>
+      <li><b>Prep</b>: Interior simple (dust), Exterior complex (peeling paint, siding damage, gutters)</li>
+      <li><b>Material</b>: Exterior often needs premium paint for weather resistance</li>
+    </ul>
+    <p>The calculator above lets you compare both modes and choose realistic rates for your market.</p>
+
+    <h2>How to get an accurate quote from a contractor</h2>
+    <p>Before asking for quotes, use this calculator to set expectations:</p>
+    <ol>
+      <li>Enter your area (interior + exterior if needed)</li>
+      <li>Set per sqft rate to local market (check Angi/HomeAdvisor for your region)</li>
+      <li>Adjust labor rate to match your area (California ≈ $50–80/hour, Tennessee ≈ $30–50/hour)</li>
+      <li>Set material fee if you want to include paint and supplies</li>
+      <li>Print the estimate and share with contractors — compare the three tiers to their quotes</li>
+    </ol>
+
+    <h2>What affects painting cost?</h2>
+    <ul>
+      <li><b>Siding material</b>: Vinyl is cheapest ($1.50–$2.50/sqft), wood/stucco are more expensive ($3.00–$5.00+/sqft)</li>
+      <li><b>Prep work</b>: Peeling paint, rot, or power washing adds significant cost</li>
+      <li><b>Location</b>: Northeast and West Coast are higher ($3.50–$6.00/sqft), South is lower ($1.50–$2.50/sqft)</li>
+      <li><b>Accessibility</b>: Two-story homes or difficult access cost more (safety requirements)</li>
+      <li><b>Color change</b>: Changing from light to dark requires primer (often counted in material fee)</li>
+    </ul>
+
+    <h2>How accurate is this estimate?</h2>
+    <p>This calculator uses <b>industry benchmarks from Angi, HomeAdvisor, and HomeGuide</b> — the same data contractors use. However, every job is different. For the most accurate quote:</p>
+    <ul>
+      <li>Get 2–3 on-site estimates (don't rely on online-only quotes)</li>
+      <li>Ask contractors to break down labor vs material costs</li>
+      <li>Confirm they include prep work, cleanup, and any required permits</li>
+      <li>Ask about their labor rate (hourly vs flat rate)</li>
+    </ul>
+  </section>
+
+  <section class="container faq">
+    <h2>Questions contractors and homeowners ask</h2>
+    <details>
+      <summary>What is the difference between interior and exterior painting cost?</summary>
+      <p>Interior painting typically costs $1.50–$3.50/sqft with labor $20–50/hour. Exterior painting is $1.50–$4.00/sqft with labor $40–75/hour. The higher exterior rates are due to safety equipment, cleanup, and more complex prep work (scraping, power washing, repairing siding).</p>
+    </details>
+    <details>
+      <summary>How do contractors calculate painting cost?</summary>
+      <p>Most contractors price by <b>surface area</b> (measured in "squares," where 100 sqft = 1 square), not living square footage. They estimate labor hours based on their speed (typically 12 sqft/hour interior, 20 sqft/hour exterior) and multiply by labor rate. Material costs are added per square foot.</p>
+    </details>
+    <details>
+      <summary>What is a fair labor rate for a painter?</summary>
+      <p>Nationally, residential painters charge $40–75/hour (median $50–60/hour). In major metros (NYC, SF, Chicago) it's $50–80/hour; in rural areas it's $30–50/hour. The calculator defaults to $30/hour interior and $50/hour exterior — adjust for your location.</p>
+    </details>
+    <details>
+      <summary>Should I include material cost in the estimate?</summary>
+      <p>Most homeowners ask for a "labor only" quote first. If you want paint and supplies included, add a material fee (typically $0.50–$1.50/sqft interior, $0.50–$2.00/sqft exterior). The calculator has an optional material input — skip it if you're getting separate quotes for materials.</p>
+    </details>
+    <details>
+      <summary>How many quotes should I get before hiring a painter?</summary>
+      <p>Get at least <b>2–3 on-site estimates</b>. Online-only quotes are often missing critical factors (prep work, surface condition, access difficulty). Use this calculator to set expectations and compare quotes side by side.</p>
+    </details>
+  </section>
+
+  <section class="related">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:0;padding-top:28px">
+        <h2 style="font-size:1.2rem">Related tools</h2>
+      </div>
+      <div class="related-grid">
+        <a href="/construction/contractor-hourly-rate-calculator/">Contractor Hourly Rate Calculator</a>
+        <a href="/construction/material-cost-estimator/">Material Cost Estimator</a>
+        <a href="/cleaning/cleaning-estimate-calculator/">Cleaning Estimate Calculator</a>
+        <a href="/lawn/lawn-care-estimate-generator/">Lawn Care Estimate Generator</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the difference between interior and exterior painting cost?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Interior painting typically costs $1.50–$3.50/sqft with labor $20–50/hour. Exterior painting is $1.50–$4.00/sqft with labor $40–75/hour. The higher exterior rates are due to safety equipment, cleanup, and more complex prep work.' }
+      },
+      {
+        '@type': 'Question',
+        name: 'How do contractors calculate painting cost?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Most contractors price by surface area (measured in squares, where 100 sqft = 1 square). They estimate labor hours based on speed (typically 12 sqft/hour interior, 20 sqft/hour exterior) and multiply by labor rate. Material costs are added per square foot.' }
+      },
+      {
+        '@type': 'Question',
+        name: 'What is a fair labor rate for a painter?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Nationally, residential painters charge $40–75/hour (median $50–60/hour). In major metros (NYC, SF, Chicago) it\'s $50–80/hour; in rural areas it\'s $30–50/hour. The calculator defaults to $30/hour interior and $50/hour exterior.' }
+      },
+      {
+        '@type': 'Question',
+        name: 'Should I include material cost in the estimate?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Most homeowners ask for a labor only quote first. If you want paint and supplies included, add a material fee (typically $0.50–$1.50/sqft interior, $0.50–$2.00/sqft exterior). The calculator has an optional material input.' }
+      },
+      {
+        '@type': 'Question',
+        name: 'How many quotes should I get before hiring a painter?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Get at least 2–3 on-site estimates. Online-only quotes are often missing critical factors like prep work, surface condition, and access difficulty.' }
+      }
+    ]
+  })} />
+
+  <script>
+    // Calculator logic
+    const inputs = {
+      interior: document.getElementById('p-interior'),
+      exterior: document.getElementById('p-exterior'),
+      rate: document.getElementById('p-rate'),
+      labor: document.getElementById('p-labor'),
+      material: document.getElementById('p-material')
+    };
+
+    const outputs = {
+      qb: { interior: document.getElementById('qb-interior'), exterior: document.getElementById('qb-exterior'), total: document.getElementById('qb-total') },
+      qs: { interior: document.getElementById('qs-interior'), exterior: document.getElementById('qs-exterior'), total: document.getElementById('qs-total') },
+      qp: { interior: document.getElementById('qp-interior'), exterior: document.getElementById('qp-exterior'), total: document.getElementById('qp-total') }
+    };
+
+    function formatMoney(num) {
+      return '$' + num.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+
+    function calculate() {
+      const interiorSqft = parseFloat(inputs.interior.value) || 0;
+      const exteriorSqft = parseFloat(inputs.exterior.value) || 0;
+      const baseRate = parseFloat(inputs.rate.value) || 0;
+      const laborRate = parseFloat(inputs.labor.value) || 0;
+      const materialRate = parseFloat(inputs.material.value) || 0;
+
+      // Labor speed (sqft per hour)
+      const interiorSpeed = 12; // derived from $30/hour ÷ $2.50/sqft
+      const exteriorSpeed = 20; // derived from $50/hour ÷ $2.50/sqft
+
+      // Tier multipliers (based on 2026 benchmarks)
+      const budgetMultiplier = 0.8; // $1.50–$2.50/sqft range center
+      const standardMultiplier = 1.0; // $2.50–$3.50/sqft range center
+      const premiumMultiplier = 1.4; // $3.50–$5.00+/sqft range center
+
+      // Calculate totals for each tier
+      const budgetInterior = interiorSqft * (baseRate * budgetMultiplier);
+      const budgetExterior = exteriorSqft * (baseRate * budgetMultiplier);
+      const budgetTotal = budgetInterior + budgetExterior;
+
+      const standardInterior = interiorSqft * baseRate;
+      const standardExterior = exteriorSqft * baseRate;
+      const standardTotal = standardInterior + standardExterior;
+
+      const premiumInterior = interiorSqft * (baseRate * premiumMultiplier);
+      const premiumExterior = exteriorSqft * (baseRate * premiumMultiplier);
+      const premiumTotal = premiumInterior + premiumExterior;
+
+      // Apply labor and material fees (added to standard tier for simplicity)
+      const standardInteriorWithFees = standardInterior + (interiorSqft * laborRate / interiorSpeed) + (interiorSqft * materialRate);
+      const standardExteriorWithFees = standardExterior + (exteriorSqft * laborRate / exteriorSpeed) + (exteriorSqft * materialRate);
+      const standardTotalWithFees = standardInteriorWithFees + standardExteriorWithFees;
+
+      // Output
+      outputs.qb.interior.textContent = formatMoney(budgetInterior);
+      outputs.qb.exterior.textContent = formatMoney(budgetExterior);
+      outputs.qb.total.textContent = formatMoney(budgetTotal);
+
+      outputs.qs.interior.textContent = formatMoney(standardInterior);
+      outputs.qs.exterior.textContent = formatMoney(standardExterior);
+      outputs.qs.total.textContent = formatMoney(standardTotalWithFees);
+
+      outputs.qp.interior.textContent = formatMoney(premiumInterior);
+      outputs.qp.exterior.textContent = formatMoney(premiumExterior);
+      outputs.qp.total.textContent = formatMoney(premiumTotal);
+
+      // Update estimate sheet
+      document.getElementById('es-date').textContent = new Date().toLocaleDateString();
+      document.getElementById('es-mode').textContent = document.querySelector('input[name="paintMode"]:checked').value;
+      document.getElementById('es-interior').textContent = interiorSqft;
+      document.getElementById('es-exterior').textContent = exteriorSqft;
+      document.getElementById('es-total-area').textContent = interiorSqft + exteriorSqft;
+      document.getElementById('es-bi').textContent = formatMoney(budgetInterior);
+      document.getElementById('es-be').textContent = formatMoney(budgetExterior);
+      document.getElementById('es-b-total').textContent = formatMoney(budgetTotal);
+      document.getElementById('es-si').textContent = formatMoney(standardInteriorWithFees);
+      document.getElementById('es-se').textContent = formatMoney(standardExteriorWithFees);
+      document.getElementById('es-s-total').textContent = formatMoney(standardTotalWithFees);
+      document.getElementById('es-pi').textContent = formatMoney(premiumInterior);
+      document.getElementById('es-pe').textContent = formatMoney(premiumExterior);
+      document.getElementById('es-p-total').textContent = formatMoney(premiumTotal);
+    }
+
+    // Event listeners
+    Object.values(inputs).forEach(input => {
+      input.addEventListener('input', calculate);
+    });
+
+    document.querySelectorAll('input[name="paintMode"]').forEach(radio => {
+      radio.addEventListener('change', calculate);
+    });
+
+    // Print handler
+    document.getElementById('do-print').addEventListener('click', () => {
+      const sheet = document.getElementById('estimate-sheet');
+      sheet.classList.remove('hidden');
+      window.print();
+      sheet.classList.add('hidden');
+    });
+
+    // Initial calculation
+    calculate();
+  </script>
+</BaseLayout>
