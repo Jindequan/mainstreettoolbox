@@ -12,6 +12,73 @@ const { industry } = Astro.params;
 const meta = INDUSTRY_META[industry!];
 const tools = byIndustry(industry!);
 const heroImg = `/images/${industry}.jpg`;
+
+// 枢纽页独特内容：每行业 2026 定价速览（全部带源，与 /benchmarks/ 同口径——薄枢纽是 GSC 覆盖率诊断出的收录障碍）
+const HUB_CONTENT: Record<string, { intro: string; bands: [string, string, string][]; more: string }> = {
+  cleaning: {
+    intro: "What cleaning companies actually charge in 2026, from sourced industry data — use the bands to sanity-check any quote before you set your own.",
+    bands: [
+      ["Standard clean, per visit", "$120–280", "HomeGuide; Housecall Pro"],
+      ["Deep clean, per visit", "$200–450", "Eufy; Angi; HomeGuide"],
+      ["Move-out clean, per visit", "$200–600", "HireAHelper; HomeGuide"],
+      ["Pressure washing, per sq ft", "$0.12–0.85", "Surface-dependent; MTB guide synthesis"],
+      ["Gutter cleaning, per linear ft", "$0.95–2.50", "One to two-story (Angi; CrewNest)"],
+    ],
+    more: "Deep-dive numbers: <a href=\"/guides/house-cleaning-prices/\">house cleaning prices guide</a> and the <a href=\"/benchmarks/service-pricing-2026/\">full 2026 benchmarks page</a>.",
+  },
+  lawn: {
+    intro: "Lawn care pricing in 2026 — mowing is a volume game priced per visit, and the seasonal add-ons are where the margin lives.",
+    bands: [
+      ["Mowing, standard yard, per visit", "$40–60", "GreenPal; LawnStarter"],
+      ["Mowing, large yard, per visit", "$60–85", "GreenPal upper band"],
+      ["Leaf cleanup, 1/4 acre", "$160–290", "LawnStarter; Angi"],
+      ["Aeration only, per 1,000 sq ft", "$15–30", "LawnStarter; Angi; LawnSite operators"],
+      ["Snow removal, per push", "$30–75", "By driveway size (LawnLove; CrewNest; Thumbtack)"],
+    ],
+    more: "Season pricing and contract structures: <a href=\"/benchmarks/service-pricing-2026/\">2026 benchmarks</a>.",
+  },
+  construction: {
+    intro: "Contractor pricing in 2026 — quotes are built from labor hours plus materials, and these are the bands the industry works from.",
+    bands: [
+      ["Interior painting, per sq ft", "$1.50–3.50", "Angi; HomeAdvisor; HomeGuide"],
+      ["Exterior painting, per sq ft", "$1.50–4.00", "Angi; HomeAdvisor; HomeGuide"],
+      ["Painting labor, per hour", "$20–75", "Interior low, exterior high (Angi; Costimates)"],
+      ["Handyman job bundles", "$75–175", "TV mount to drywall patch (MTB guide synthesis)"],
+    ],
+    more: "Full construction bands: <a href=\"/benchmarks/service-pricing-2026/\">2026 benchmarks page</a>.",
+  },
+  restaurant: {
+    intro: "Restaurant margins in 2026 — the numbers that decide whether a menu item or a whole dining room makes money.",
+    bands: [
+      ["Food cost %, full-service", "28–35%", "Industry standard; MTB Food Cost guide"],
+      ["Food cost %, quick-service", "25–30%", "Industry standard"],
+      ["Labor % of revenue", "25–35%", "Full-service; industry standard"],
+      ["Pour cost, spirits / draft / wine", "15–22% / 20–28% / 28–40%", "MAJC; Bevspot; Buyers Edge"],
+    ],
+    more: "How to fix a high number: <a href=\"/guides/food-cost-percentage/\">food cost guide</a> and the <a href=\"/benchmarks/service-pricing-2026/\">2026 benchmarks</a>.",
+  },
+  salon: {
+    intro: "Salon and barber pricing in 2026 — service menu anchors plus the booth-rent-versus-commission math that decides a stylist's take-home.",
+    bands: [
+      ["Women's cut & finish", "$45–95", "SalonsRated; StyleSeat"],
+      ["Single-process color", "$80–200", "SalonsRated; Yelp"],
+      ["Partial highlights", "$60–150", "SalonsRated"],
+      ["Booth rent, per month", "$400–1,200+", "MTB guide synthesis"],
+      ["Commission keep, new stylists", "40–50%", "Toward 60% with an established book"],
+    ],
+    more: "The pay-structure math: <a href=\"/guides/booth-rent-vs-commission/\">booth rent vs commission guide</a>.",
+  },
+  retail: {
+    intro: "Retail pricing rules that never go out of date — the two arithmetic facts behind every markup and every sale.",
+    bands: [
+      ["Keystone pricing", "100% markup = 50% margin", "Arithmetic rule"],
+      ["20% discount at 50% margin", "~+67% volume to break even", "Discount math"],
+      ["Typical retail margin range", "25–50%", "Category-dependent; MTB guide synthesis"],
+    ],
+    more: "Work the numbers: <a href=\"/retail/retail-math-calculator/\">retail math calculator</a>.",
+  },
+};
+const hub = HUB_CONTENT[industry!];
 ---
 <BaseLayout
   title={`Free ${meta.name} Calculators & Tools — Main Street Toolbox`}
@@ -47,6 +114,22 @@ const heroImg = `/images/${industry}.jpg`;
       </div>
     </div>
   </section>
+
+  {hub && (
+    <section class="container explain" style="padding-top:8px">
+      <h2>{meta.name} pricing, quick answers (2026)</h2>
+      <p>{hub.intro}</p>
+      <table>
+        <thead><tr><th>Service / metric</th><th>2026 band</th><th>Source</th></tr></thead>
+        <tbody>
+          {hub.bands.map(([svc, band, src]) => (
+            <tr><td>{svc}</td><td><b>{band}</b></td><td style="color:var(--ink-2)">{src}</td></tr>
+          ))}
+        </tbody>
+      </table>
+      <p set:html={hub.more} />
+    </section>
+  )}
 
   <section class="container explain" style="padding-top:8px">
     <h2>More on the workbench</h2>
