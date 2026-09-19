@@ -151,3 +151,26 @@ your own voice, plus a print-ready PDF.
 Written for solo operators and small crews — cleaning, lawn care, contractors, trades.
 Not legal advice; templates are starting points.
 ```
+
+---
+
+## 产品 6：Calculator Spreadsheet Bundle（$15）
+
+**Title**
+```
+8 Business Calculators in Excel — Food Cost, Tip Out, Pour Cost, Break-even
+```
+
+**Description**
+```
+The formulas behind our free calculators — now living in your own spreadsheet.
+
+8 editable calculators, one per tab: Food Cost % (+ the price that fixes a high number),
+Menu Pricing, Tip Pool Split, Pour Cost (per-pour cost & target menu price), Restaurant
+Break-even (covers per day), Markup↔Margin converter, Discount Reality Check (+67% rule),
+and Booth Rent vs Commission for stylists.
+
+Edit the shaded inputs — everything computes live. Every result carries the 2026 US
+healthy band for its trade. Same math as the free tools at mainstreettoolbox.com,
+now yours to keep, customize and share with your bookkeeper.
+```
