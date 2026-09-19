@@ -34,6 +34,7 @@ import recipeCost from './recipe-cost-calculator';
 import pourCost from './pour-cost-calculator';
 import aeration from './aeration-and-overseeding-calculator';
 import gutterCleaning from './gutter-cleaning-price-calculator';
+import leafRemoval from './leaf-removal-cost-calculator';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -70,6 +71,7 @@ export const TOOLS: RegisteredTool[] = [
   pourCost,
   aeration,
   gutterCleaning,
+  leafRemoval,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);

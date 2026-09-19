@@ -4,7 +4,7 @@
 
 ## Docs
 
-- [Home](https://mainstreettoolbox.com/): Overview of all 35 free tools with a live search box; the fastest way to find the right calculator.
+- [Home](https://mainstreettoolbox.com/): Overview of all 36 free tools with a live search box; the fastest way to find the right calculator.
 - [All Tools](https://mainstreettoolbox.com/tools/): Every calculator grouped by trade with one-line descriptions of what each answers.
 - [Restaurant tools](https://mainstreettoolbox.com/restaurant/): Food cost, menu pricing, menu engineering, tip out, prime cost and labor calculators for restaurant owners.
 - [Cleaning tools](https://mainstreettoolbox.com/cleaning/): House cleaning estimates, pressure washing and window cleaning pricing, junk removal, invoices and checklists.
@@ -45,6 +45,7 @@
 - [Mulch Calculator](https://mainstreettoolbox.com/lawn/mulch-calculator/): Cubic yards of mulch needed for an area and depth, with bag-count conversion.
 - [Snow Removal Pricing Calculator](https://mainstreettoolbox.com/lawn/snow-removal-pricing-calculator/): Prices snow removal per push by driveway size, as a seasonal contract or hourly — with 2026 US ranges and contract trigger-depth guidance.
 - [Aeration and Overseeding Calculator](https://mainstreettoolbox.com/lawn/aeration-and-overseeding-calculator/): Prices fall aeration and overseeding by lawn size — aeration alone $15–30 per 1,000 sq ft, the combination $35–80 — with double-pass and stop-fee guidance.
+- [Leaf Removal Cost Calculator](https://mainstreettoolbox.com/lawn/leaf-removal-cost-calculator/): Prices fall leaf cleanup by yard size — 1/4 acre $160–290 up to 1 acre $400–925 — cross-checked against your crew hours and rate, with minimum-charge guidance.
 - [Service Price List Builder](https://mainstreettoolbox.com/salon/service-price-list-builder/): Builds a typeset, printable price list for any service business — salon, cleaning, lawn care or contracting.
 - [Booth Rent vs Commission Calculator](https://mainstreettoolbox.com/salon/booth-rent-commission-calculator/): Weekly sales, commission split and booth rent in; which pay structure leaves more in your pocket out.
 - [Receipt Generator](https://mainstreettoolbox.com/salon/receipt-generator/): Generates a clean printable receipt for services rendered — client, services, amounts, total.
@@ -63,7 +64,7 @@
 
 ## Key Facts
 
-- 35 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
+- 36 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
 - US pricing benchmarks throughout; target market is United States small businesses
 - Every tool works instantly with no signup, no account and no ads
 - Independent, single-developer project; pricing benchmarks sourced from industry data and cross-checked guides
