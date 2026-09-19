@@ -114,3 +114,9 @@
 - 第 2 条（First client failure：视频报价防御+事后补救）内容已写好但连遇 RATELIMIT（8 分钟冷却升级）→ **放弃发送，内容留存**（观点可复用）。
 - 跳过：WhatsApp 流程帖、Jobber 软件调研、$170K 经验分享、lead gen 招标、非定价旧帖。
 - **信号**：post-construction 主题**第 6 次**出现（big box 投价求助）——已有 guide+磁石页承接，选题完全押中。
+
+### 巡检结论 2026-09-19（PH launch 结束后）
+- **PH launch 复盘（窗口 09-17 15:01 → 09-18 15:01 已关闭）**：最终 1 票 0 评。教训入档：① launch 守护动作不能依赖"用户回消息触发"（会话被巡检抢占+用户未触发=动作丢失）；② Google/PH 会话过期是高概率事件，大动作前必须先验会话；③ 未来 launch 类动作用独立定时任务（非定时会话内创建）自动执行。产品页仍在（1 票），不再补救首评。
+- **答 2 条**：① recurring client profitability（本月主题第 3 次！复用上次被限流的内容适配发出）→ t1_parjo72；② Jobber 数百客户涨价策略（分层涨幅+grandfather 锁价期权+流失电话预案——竞品只答了 API 技术，我答策略）→ t1_parlsiz。零链接纯价值。
+- 跳过：定价策略内容帖、新手泛求助、裁员帖、WhatsApp 流程帖、motel（非领域）。
+- **主题热度确认**："recurring client profitability / 涨价执行" 已成为 r/cleaningbusiness 的常青痛点（本周 3-4 帖）→ **guide 选题升级为高优先**："How to reprice recurring cleaning clients"（数字全有：工时跟踪法、涨价过渡结构、grandfather 机制——三次回答的合集就是一篇 guide）。
