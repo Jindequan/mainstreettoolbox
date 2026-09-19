@@ -128,3 +128,26 @@ Check the free interactive version of any band on mainstreettoolbox.com.
 ```
 
 **上架注意**：定价 $12；商品图可用 PDF 封面（docs/kofi-files/benchmarks-db/2026-pricing-benchmarks.pdf 第 1 页截图）
+
+---
+
+## 产品 5：Client Communication Kit（$7）
+
+**Title**
+```
+Client Communication Kit — 6 Proven Scripts (PDF + Editable DOCX)
+```
+
+**Description**
+```
+The six messages every service business fumbles: the follow-up that revives dead quotes,
+the price-increase letter that keeps regulars, the review request that actually gets sent,
+the 3-step late-payment nudge, the graceful quote-declined reply, and the phone script
+that stops margin leaking on "how much to just…" calls.
+
+Copy, replace the {{placeholders}}, send. Includes an editable DOCX so you can drop in
+your own voice, plus a print-ready PDF.
+
+Written for solo operators and small crews — cleaning, lawn care, contractors, trades.
+Not legal advice; templates are starting points.
+```
