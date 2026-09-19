@@ -131,7 +131,7 @@ Check the free interactive version of any band on mainstreettoolbox.com.
 
 ---
 
-## 产品 5：Client Communication Kit（$7）
+## 产品 5：Client Communication Kit（$5，2026-09-19 审计降价：内容通用性是六品中最弱的）
 
 **Title**
 ```
@@ -174,3 +174,27 @@ Edit the shaded inputs — everything computes live. Every result carries the 20
 healthy band for its trade. Same math as the free tools at mainstreettoolbox.com,
 now yours to keep, customize and share with your bookkeeper.
 ```
+
+
+---
+
+## 产品 7：⭐ Full Library Bundle（$29，2026-09-19 审计新增）
+
+**Title**
+```
+Complete Template Library — 53 Sourced Benchmarks, 8 Calculators, 3 Price Lists & Scripts
+```
+
+**Description**
+```
+Everything in the shop in one purchase — for the owner who'd rather buy once:
+
+- 2026 Pricing Benchmarks Database (PDF + filterable Excel, 53 bands, raw per-source
+  numbers, confidence grades, quarterly refreshes)
+- Calculator Spreadsheet Bundle (8 editable calculators with 2026 healthy bands built in)
+- 3 trade price list templates: auto detailing, dog grooming, handyman (PDF + Excel)
+- Client Communication Kit: 6 scripts (PDF + editable DOCX)
+
+Individually $42. Bundle: $29 — own the whole library, including future Edition 1 updates.
+```
+（交付 = 7 个产品文件一次打包上传为一个商品；Ko-fi 支持单商品多文件）

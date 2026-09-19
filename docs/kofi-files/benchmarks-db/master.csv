@@ -1,54 +1,54 @@
-Trade,Item,Unit,Low,High,Notes,Sources,Confidence
-Cleaning & Home Services,"House cleaning, standard",$ per visit,120,280,"3 bed/2 bath typical ~$135–180, avg ~$180",HomeGuide; Housecall Pro; Thumbtack (one-time $174–256),★★★ Multi-source verified
-Cleaning & Home Services,"House cleaning, deep",$ per visit,200,450,First-time/seasonal; quote ~50% over standard,Eufy; Angi; HomeGuide,★★★ Multi-source verified
-Cleaning & Home Services,"House cleaning, move-out",$ per visit,200,600,Typical $250–450 for 3b2b,HireAHelper; HomeGuide; Angi,★★★ Multi-source verified
-Cleaning & Home Services,"House cleaning, hourly",$ per cleaner/hr,25,80,"Use as floor check, quote flat by the job",HomeGuide; CottageCare,★★★ Multi-source verified
-Cleaning & Home Services,"Pressure washing, driveway/concrete",$ per sq ft,0.12,0.25,Flat concrete at low end,Synthesis in MTB Pressure Washing guide,★★ Named sources / synthesis
-Cleaning & Home Services,"Pressure washing, house siding",$ per sq ft,0.3,0.5,,Synthesis in MTB Pressure Washing guide,★★ Named sources / synthesis
-Cleaning & Home Services,"Pressure washing, wood deck/fence",$ per sq ft,0.5,0.85,Delicate wood at top of range,Synthesis in MTB Pressure Washing guide,★★ Named sources / synthesis
-Cleaning & Home Services,"Window cleaning, outside only",$ per pane,4,8,Job minimum $150–200 typical,Synthesis in MTB Window Cleaning guide,★★ Named sources / synthesis
-Cleaning & Home Services,"Window cleaning, in + out",$ per pane,8,12,Job minimum $150–200 typical,Synthesis in MTB Window Cleaning guide,★★ Named sources / synthesis
-Cleaning & Home Services,"Gutter cleaning, 1-story",$ per linear ft,0.95,1.75,,Angi; CrewNest calculator,★★★ Multi-source verified
-Cleaning & Home Services,"Gutter cleaning, 2-story",$ per linear ft,1.0,2.5,,Angi; CrewNest calculator,★★★ Multi-source verified
-Cleaning & Home Services,"Gutter cleaning, 3-story",$ per linear ft,2.25,3.5,,CrewNest; CleanPro Gutter Cleaning,★★★ Multi-source verified
-Cleaning & Home Services,"Gutter cleaning, typical whole job (150–200 ft)",$ per job,100,320,Most homes carry 150–200 ft of gutter,HomeGuide; Modernize,★★★ Multi-source verified
-Cleaning & Home Services,"Junk removal, 1/8 truck (~1.5 yd³)",$ per load,100,180,Job minimum $100–150,Synthesis in MTB Junk Removal guide,★★ Named sources / synthesis
-Cleaning & Home Services,"Junk removal, 1/4 truck (~3 yd³)",$ per load,150,250,,Synthesis in MTB Junk Removal guide,★★ Named sources / synthesis
-Cleaning & Home Services,"Junk removal, 1/2 truck (~6 yd³)",$ per load,250,420,,Synthesis in MTB Junk Removal guide,★★ Named sources / synthesis
-Cleaning & Home Services,"Junk removal, full truck (~12 yd³)",$ per load,500,800,,Synthesis in MTB Junk Removal guide,★★ Named sources / synthesis
-Cleaning & Home Services,"Post-construction clean, residential",$ per sq ft,0.15,0.3,,Synthesis in MTB Post-Construction guide,★★ Named sources / synthesis
-Cleaning & Home Services,"Post-construction, estate/high finish",$ per sq ft,0.25,0.5,,Synthesis in MTB Post-Construction guide,★★ Named sources / synthesis
-Cleaning & Home Services,"Post-construction, hotels (final phase)",$ per room,65,120,,Synthesis in MTB Post-Construction guide,★★ Named sources / synthesis
-Snow Removal,"Per push, small driveway (1–2 cars)",$ per push,30,40,LawnLove $30–70; CrewNest $35–75; Thumbtack ~$35; Jobber $25–75; Reddit ~$30,LawnLove; CrewNest; Thumbtack; Jobber; operator reports,★★★ Multi-source verified
-Snow Removal,"Per push, medium driveway (2–3 cars)",$ per push,40,60,InvoiceFly up to $150 by length,Thumbtack; InvoiceFly; LawnLove,★★★ Multi-source verified
-Snow Removal,"Per push, large/long driveway (150 ft+)",$ per push,55,75,Long/sloped can go higher,Thumbtack; CrewNest; InvoiceFly,★★★ Multi-source verified
-Snow Removal,"Seasonal contract, residential",$ per season,350,700,Angi $300–700; steep/large lots can exceed,InvoiceFly; Angi; LawnLove,★★★ Multi-source verified
-Snow Removal,"Hourly (odd jobs, walkways)",$ per hour,40,75,TaskRabbit national avg ~$41,TaskRabbit; Jobber; LawnLove,★★★ Multi-source verified
-Snow Removal,Commercial per push/event,$ per event,150,500,Small-lot full service $75–200,CrewNest; Angi,★★ Named sources / synthesis
-Lawn & Garden,Aeration only,"$ per 1,000 sq ft",15,30,Contractors report $15–20,LawnStarter; Angi; LawnSite operator rates,★★★ Multi-source verified
-Lawn & Garden,Aeration + overseeding,"$ per 1,000 sq ft",30,80,"Standard seed rate ~3 lb/1,000 sq ft",HomeGuide; CountBricks; operator reports,★★★ Multi-source verified
-Lawn & Garden,Full fall program (seed+fert+lime),"$ per 1,000 sq ft",80,180,Premium operator programs,CountBricks; operator rates,★★ Named sources / synthesis
-Lawn & Garden,"Leaf removal, 1/6 acre",$ per visit,115,185,,LawnStarter (2026 table),★★★ Multi-source verified
-Lawn & Garden,"Leaf removal, 1/4 acre",$ per visit,160,290,"Angi: 5,000–10,000 sq ft yards $200–500",LawnStarter; Angi,★★★ Multi-source verified
-Lawn & Garden,"Leaf removal, 1/2 acre",$ per visit,230,475,,LawnStarter (2026 table),★★★ Multi-source verified
-Lawn & Garden,"Leaf removal, 3/4 acre",$ per visit,305,550,,LawnStarter (2026 table); interpolated top,★★★ Multi-source verified
-Lawn & Garden,"Leaf removal, 1 acre",$ per visit,400,925,,LawnStarter (2026 table),★★★ Multi-source verified
-Lawn & Garden,Leaf crew rate,$ per crew-hour,40,75,2-hour minimum standard; late-season one-offs $250–400,Angi; LawnStarter; GreenPal,★★★ Multi-source verified
-Construction,Interior painting,$ per sq ft,1.5,3.5,Materials + labor; default 1 coat,Angi; HomeAdvisor; HomeGuide,★★★ Multi-source verified
-Construction,Interior painting labor,$ per hour,20,50,,Angi; HomeAdvisor; Costimates,★★★ Multi-source verified
-Construction,Exterior painting,$ per sq ft,1.5,4.0,"Prep (scraping, power wash) drives top end",Angi; HomeAdvisor; HomeGuide,★★★ Multi-source verified
-Construction,Exterior painting labor,$ per hour,40,75,"Higher than interior (height, cleanup)",Angi; HomeAdvisor; Costimates,★★★ Multi-source verified
-Construction,Paint material,$ per sq ft,0.5,2.0,Interior $0.50–1.50; exterior $0.50–2.00,Angi; HomeAdvisor,★★ Named sources / synthesis
-Restaurants & Bars,"Food cost %, full-service",% of sales,28,35,Industry-standard band,Industry standard; MTB Food Cost guide,★★ Named sources / synthesis
-Restaurants & Bars,"Food cost %, quick-service",% of sales,25,30,,Industry standard; MTB Food Cost guide,★★ Named sources / synthesis
-Restaurants & Bars,"Labor % of revenue, full-service",% of sales,25,35,,Industry standard; MTB guides,★★ Named sources / synthesis
-Restaurants & Bars,"Pour cost, total beverage program",% of sales,18,24,Average ~20%,Backbar; DoorDash; PuriMax,★★★ Multi-source verified
-Restaurants & Bars,"Pour cost, spirits",% of sales,15,22,,MAJC; Bevspot; Buyers Edge,★★★ Multi-source verified
-Restaurants & Bars,"Pour cost, draft beer",% of sales,20,28,,MAJC; Restaurants Canada,★★★ Multi-source verified
-Restaurants & Bars,"Pour cost, wine by the glass",% of sales,28,40,,MAJC; Buyers Edge,★★★ Multi-source verified
-Restaurants & Bars,Tip-out to support roles,% of tips,20,30,,Synthesis in MTB Tip-Out guide,★★ Named sources / synthesis
-Salon & Barber,"Booth rent, typical",$ per month,400,1200,High-end markets exceed,Synthesis in MTB Booth Rent guide,★ Guideline
-Salon & Barber,Booth rent as % of revenue,% of revenue,15,25,Guideline ceiling before commission wins,Synthesis in MTB Booth Rent guide,★ Guideline
-Salon & Barber,"Commission split, new stylists keep",% of revenue,40,50,Toward 60% with established book,Synthesis in MTB Booth Rent guide,★ Guideline
-Retail (math rules),Keystone pricing,markup vs margin,100,50,100% markup = 50% margin (definition),Arithmetic rule,◆ Math rule
-Retail (math rules),Volume needed after 20% discount,% more units,67,67,"At a 50% margin, ~+67% volume to break even on the discount",Arithmetic (discount math),◆ Math rule
+Trade,Item,Unit,Low,High,What each source publishes (raw),Notes,Sources,Confidence
+Cleaning & Home Services,"House cleaning, standard",$ per visit,120,280,HomeGuide $120–280 · Housecall Pro $120–280 · Thumbtack one-time $174–256,"3 bed/2 bath typical ~$135–180, avg ~$180",HomeGuide; Housecall Pro; Thumbtack (one-time $174–256),★★★ Multi-source verified
+Cleaning & Home Services,"House cleaning, deep",$ per visit,200,450,Eufy $200–450 · Angi $180–375 · HomeGuide $230–600,First-time/seasonal; quote ~50% over standard,Eufy; Angi; HomeGuide,★★★ Multi-source verified
+Cleaning & Home Services,"House cleaning, move-out",$ per visit,200,600,HireAHelper $200–600 · HomeGuide $150–500 · Angi $120–420,Typical $250–450 for 3b2b,HireAHelper; HomeGuide; Angi,★★★ Multi-source verified
+Cleaning & Home Services,"House cleaning, hourly",$ per cleaner/hr,25,80,HomeGuide $25–75 · CottageCare $30–60 · LeadDuo $40–80,"Use as floor check, quote flat by the job",HomeGuide; CottageCare,★★★ Multi-source verified
+Cleaning & Home Services,"Pressure washing, driveway/concrete",$ per sq ft,0.12,0.25,—,Flat concrete at low end,Synthesis in MTB Pressure Washing guide,★★ Named sources / synthesis
+Cleaning & Home Services,"Pressure washing, house siding",$ per sq ft,0.3,0.5,—,,Synthesis in MTB Pressure Washing guide,★★ Named sources / synthesis
+Cleaning & Home Services,"Pressure washing, wood deck/fence",$ per sq ft,0.5,0.85,—,Delicate wood at top of range,Synthesis in MTB Pressure Washing guide,★★ Named sources / synthesis
+Cleaning & Home Services,"Window cleaning, outside only",$ per pane,4,8,—,Job minimum $150–200 typical,Synthesis in MTB Window Cleaning guide,★★ Named sources / synthesis
+Cleaning & Home Services,"Window cleaning, in + out",$ per pane,8,12,—,Job minimum $150–200 typical,Synthesis in MTB Window Cleaning guide,★★ Named sources / synthesis
+Cleaning & Home Services,"Gutter cleaning, 1-story",$ per linear ft,0.95,1.75,Angi $0.95–1.75 · CrewNest $1.00–1.50 · HomeGuide $0.75–2.00,,Angi; CrewNest calculator,★★★ Multi-source verified
+Cleaning & Home Services,"Gutter cleaning, 2-story",$ per linear ft,1.0,2.5,Angi $1.00–1.85 · CrewNest $1.50–2.25 · MyQuoteIQ $1.25–1.85,,Angi; CrewNest calculator,★★★ Multi-source verified
+Cleaning & Home Services,"Gutter cleaning, 3-story",$ per linear ft,2.25,3.5,CrewNest $2.25–3.50 · CleanPro $1.40–3.45,,CrewNest; CleanPro Gutter Cleaning,★★★ Multi-source verified
+Cleaning & Home Services,"Gutter cleaning, typical whole job (150–200 ft)",$ per job,100,320,HomeGuide $100–275 · Modernize $128–320,Most homes carry 150–200 ft of gutter,HomeGuide; Modernize,★★★ Multi-source verified
+Cleaning & Home Services,"Junk removal, 1/8 truck (~1.5 yd³)",$ per load,100,180,—,Job minimum $100–150,Synthesis in MTB Junk Removal guide,★★ Named sources / synthesis
+Cleaning & Home Services,"Junk removal, 1/4 truck (~3 yd³)",$ per load,150,250,—,,Synthesis in MTB Junk Removal guide,★★ Named sources / synthesis
+Cleaning & Home Services,"Junk removal, 1/2 truck (~6 yd³)",$ per load,250,420,—,,Synthesis in MTB Junk Removal guide,★★ Named sources / synthesis
+Cleaning & Home Services,"Junk removal, full truck (~12 yd³)",$ per load,500,800,—,,Synthesis in MTB Junk Removal guide,★★ Named sources / synthesis
+Cleaning & Home Services,"Post-construction clean, residential",$ per sq ft,0.15,0.3,—,,Synthesis in MTB Post-Construction guide,★★ Named sources / synthesis
+Cleaning & Home Services,"Post-construction, estate/high finish",$ per sq ft,0.25,0.5,—,,Synthesis in MTB Post-Construction guide,★★ Named sources / synthesis
+Cleaning & Home Services,"Post-construction, hotels (final phase)",$ per room,65,120,—,,Synthesis in MTB Post-Construction guide,★★ Named sources / synthesis
+Snow Removal,"Per push, small driveway (1–2 cars)",$ per push,30,40,LawnLove $30–70 · CrewNest $35–75 · Thumbtack ~$35 · Jobber $25–75 · operator ~$30,LawnLove $30–70; CrewNest $35–75; Thumbtack ~$35; Jobber $25–75; Reddit ~$30,LawnLove; CrewNest; Thumbtack; Jobber; operator reports,★★★ Multi-source verified
+Snow Removal,"Per push, medium driveway (2–3 cars)",$ per push,40,60,Thumbtack ~$40 · InvoiceFly $50–150 by length · LawnLove upper band,InvoiceFly up to $150 by length,Thumbtack; InvoiceFly; LawnLove,★★★ Multi-source verified
+Snow Removal,"Per push, large/long driveway (150 ft+)",$ per push,55,75,Thumbtack ~$60 (150 ft) · CrewNest to $75 · InvoiceFly to $150,Long/sloped can go higher,Thumbtack; CrewNest; InvoiceFly,★★★ Multi-source verified
+Snow Removal,"Seasonal contract, residential",$ per season,350,700,InvoiceFly $350–700 · Angi $300–700,Angi $300–700; steep/large lots can exceed,InvoiceFly; Angi; LawnLove,★★★ Multi-source verified
+Snow Removal,"Hourly (odd jobs, walkways)",$ per hour,40,75,TaskRabbit ~$41 avg · Jobber $25–75 · LawnLove $25–75,TaskRabbit national avg ~$41,TaskRabbit; Jobber; LawnLove,★★★ Multi-source verified
+Snow Removal,Commercial per push/event,$ per event,150,500,CrewNest $150–500+ · Angi $75–200 small-lot,Small-lot full service $75–200,CrewNest; Angi,★★ Named sources / synthesis
+Lawn & Garden,Aeration only,"$ per 1,000 sq ft",15,30,LawnSite operators $15–20 · HomeGuide/Angi whole-job $75–206,Contractors report $15–20,LawnStarter; Angi; LawnSite operator rates,★★★ Multi-source verified
+Lawn & Garden,Aeration + overseeding,"$ per 1,000 sq ft",30,80,Operators $35–40 (standard seed) · Green Lawn Fertilizing ~$85 full-service,"Standard seed rate ~3 lb/1,000 sq ft",HomeGuide; CountBricks; operator reports,★★★ Multi-source verified
+Lawn & Garden,Full fall program (seed+fert+lime),"$ per 1,000 sq ft",80,180,—,Premium operator programs,CountBricks; operator rates,★★ Named sources / synthesis
+Lawn & Garden,"Leaf removal, 1/6 acre",$ per visit,115,185,LawnStarter 2026 table $115–185,,LawnStarter (2026 table),★★★ Multi-source verified
+Lawn & Garden,"Leaf removal, 1/4 acre",$ per visit,160,290,LawnStarter $160–290 · Angi $200–500 (5–10k sq ft yards),"Angi: 5,000–10,000 sq ft yards $200–500",LawnStarter; Angi,★★★ Multi-source verified
+Lawn & Garden,"Leaf removal, 1/2 acre",$ per visit,230,475,LawnStarter 2026 table $230–475,,LawnStarter (2026 table),★★★ Multi-source verified
+Lawn & Garden,"Leaf removal, 3/4 acre",$ per visit,305,550,LawnStarter $305+ (table); upper interpolated,,LawnStarter (2026 table); interpolated top,★★★ Multi-source verified
+Lawn & Garden,"Leaf removal, 1 acre",$ per visit,400,925,LawnStarter 2026 table to $925,,LawnStarter (2026 table),★★★ Multi-source verified
+Lawn & Garden,Leaf crew rate,$ per crew-hour,40,75,Angi ~$60 mid · LawnStarter $40–75 · GreenPal $75–150 w/ 2-hr min,2-hour minimum standard; late-season one-offs $250–400,Angi; LawnStarter; GreenPal,★★★ Multi-source verified
+Construction,Interior painting,$ per sq ft,1.5,3.5,Angi $1.50–3.50 · HomeAdvisor $1.50–3.50 · HomeGuide $1.50–3.50,Materials + labor; default 1 coat,Angi; HomeAdvisor; HomeGuide,★★★ Multi-source verified
+Construction,Interior painting labor,$ per hour,20,50,Angi $20–50 · HomeAdvisor $30–60 · Costimates $20–50,,Angi; HomeAdvisor; Costimates,★★★ Multi-source verified
+Construction,Exterior painting,$ per sq ft,1.5,4.0,Angi $1.50–4.00 · HomeAdvisor $1.50–4.00 · HomeGuide $1.50–4.00,"Prep (scraping, power wash) drives top end",Angi; HomeAdvisor; HomeGuide,★★★ Multi-source verified
+Construction,Exterior painting labor,$ per hour,40,75,Angi $40–75 · HomeAdvisor $30–60 · Costimates $50–60,"Higher than interior (height, cleanup)",Angi; HomeAdvisor; Costimates,★★★ Multi-source verified
+Construction,Paint material,$ per sq ft,0.5,2.0,Interior $0.50–1.50 · Exterior $0.50–2.00 (Angi/HomeAdvisor),Interior $0.50–1.50; exterior $0.50–2.00,Angi; HomeAdvisor,★★ Named sources / synthesis
+Restaurants & Bars,"Food cost %, full-service",% of sales,28,35,—,Industry-standard band,Industry standard; MTB Food Cost guide,★★ Named sources / synthesis
+Restaurants & Bars,"Food cost %, quick-service",% of sales,25,30,—,,Industry standard; MTB Food Cost guide,★★ Named sources / synthesis
+Restaurants & Bars,"Labor % of revenue, full-service",% of sales,25,35,—,,Industry standard; MTB guides,★★ Named sources / synthesis
+Restaurants & Bars,"Pour cost, total beverage program",% of sales,18,24,—,Average ~20%,Backbar; DoorDash; PuriMax,★★★ Multi-source verified
+Restaurants & Bars,"Pour cost, spirits",% of sales,15,22,—,,MAJC; Bevspot; Buyers Edge,★★★ Multi-source verified
+Restaurants & Bars,"Pour cost, draft beer",% of sales,20,28,—,,MAJC; Restaurants Canada,★★★ Multi-source verified
+Restaurants & Bars,"Pour cost, wine by the glass",% of sales,28,40,—,,MAJC; Buyers Edge,★★★ Multi-source verified
+Restaurants & Bars,Tip-out to support roles,% of tips,20,30,—,,Synthesis in MTB Tip-Out guide,★★ Named sources / synthesis
+Salon & Barber,"Booth rent, typical",$ per month,400,1200,—,High-end markets exceed,Synthesis in MTB Booth Rent guide,★ Guideline
+Salon & Barber,Booth rent as % of revenue,% of revenue,15,25,—,Guideline ceiling before commission wins,Synthesis in MTB Booth Rent guide,★ Guideline
+Salon & Barber,"Commission split, new stylists keep",% of revenue,40,50,—,Toward 60% with established book,Synthesis in MTB Booth Rent guide,★ Guideline
+Retail (math rules),Keystone pricing,markup vs margin,100,50,Definition,100% markup = 50% margin (definition),Arithmetic rule,◆ Math rule
+Retail (math rules),Volume needed after 20% discount,% more units,67,67,Definition,"At a 50% margin, ~+67% volume to break even on the discount",Arithmetic (discount math),◆ Math rule
