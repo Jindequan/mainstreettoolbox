@@ -37,3 +37,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://mainstreettoolbox.com/sitemap-index.xml
+
+# paid delivery pages (unlisted)
+Disallow: /d/
