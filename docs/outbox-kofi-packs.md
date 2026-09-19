@@ -198,3 +198,27 @@ Everything in the shop in one purchase — for the owner who'd rather buy once:
 Individually $42. Bundle: $29 — own the whole library, including future Edition 1 updates.
 ```
 （交付 = 7 个产品文件一次打包上传为一个商品；Ko-fi 支持单商品多文件）
+
+---
+
+## 产品 8-10：价目表模板家族扩展（各 $5，2026-09-19 新增）
+
+### 产品 8：House Cleaning Price List Template
+```
+House Cleaning Price List Template — Print-Ready PDF + Editable
+```
+5 rows anchored to verified 2026 bands (standard $180 / recurring $150 / deep $325 / move-out $400 / hourly $50 — HomeGuide, Eufy, HireAHelper, CottageCare). Files: `docs/kofi-files/pack-cleaning/`
+
+### 产品 9：Lawn Care Price List Template
+```
+Lawn Care Price List Template — Mowing, Leaf Cleanup, Aeration (PDF + Excel)
+```
+6 rows (mowing small/standard/large $40/$50/$70, biweekly $60, leaf $225, aeration+seed $55/ksqft — GreenPal, LawnStarter, Angi, Jobber, Housecall Pro). Files: `docs/kofi-files/pack-lawn-care/`
+
+### 产品 10：Photography Price List Template
+```
+Photography Price List Template — Weddings & Portraits (PDF + Editable)
+```
+4 rows (portrait $275, wedding 6hr $3,000, wedding 8hr $4,500, extra hour $500 — The Knot, Bark.com). Files: `docs/kofi-files/pack-photography/`
+
+> 家族策略：每包锚定一个行业的搜索词簇（photography 535 词簇/枪手 R3 数据），10-Pack 是广度款，单品是深访款，互不蚕食。
