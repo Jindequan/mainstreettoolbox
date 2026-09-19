@@ -94,3 +94,37 @@ https://mainstreettoolbox.com/salon/service-price-list-builder/?trade=handyman
 - [ ] 三个产品互设 "you might also like"
 
 注：文案里故意保留免费工具链接——免费版是获客漏斗，付费版是省时间的产品；两者吃的是同一词族的两种意图（先免后付的信任路径已被 10-Pack 验证）。
+
+---
+
+## 产品 4：2026 Pricing Benchmarks Database（$12）⭐ 旗舰
+
+**Title**
+```
+2026 Service Business Pricing Benchmarks — 53 Sourced Bands (PDF + Excel)
+```
+
+**Description**
+```
+Every pricing band a small service business needs, with its sources — stop guessing,
+start quoting with numbers you can defend.
+
+53 benchmark bands across 7 trades: house cleaning, pressure washing, window & gutter
+cleaning, junk removal, post-construction, snow removal, lawn care & leaf cleanup,
+painting, restaurant food & pour costs, salon booth rent, and retail margin math.
+
+Every row shows:
+- The band (low–high, 2026 US national)
+- The named sources behind it (Angi, HomeGuide, LawnStarter, Thumbtack, Jobber,
+  CrewNest and 25+ more)
+- A confidence grade: ★★★ multi-source verified · ★★ named sources · ★ guideline
+  · ◆ math rule
+
+Formats: print-ready PDF (7 sections + method + license) and a filterable Excel
+workbook. Last verified September 2026.
+
+Nothing here is manufactured: if we couldn't source it, it isn't in the database.
+Check the free interactive version of any band on mainstreettoolbox.com.
+```
+
+**上架注意**：定价 $12；商品图可用 PDF 封面（docs/kofi-files/benchmarks-db/2026-pricing-benchmarks.pdf 第 1 页截图）
