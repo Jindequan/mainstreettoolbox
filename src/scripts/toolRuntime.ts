@@ -156,8 +156,33 @@ if (bootEl) {
       return p.toString();
     };
 
+    const applyPresetRows = (rows: Record<string, string | number>[]) => {
+      const list = $('#rows-list');
+      const template = list?.querySelector<HTMLElement>('[data-row]');
+      if (!list || !template) return;
+      list.innerHTML = '';
+      rows.forEach((r) => {
+        const clone = template.cloneNode(true) as HTMLElement;
+        clone.querySelectorAll<HTMLInputElement>('input').forEach((i) => {
+          i.value = r[i.dataset.col!] !== undefined ? String(r[i.dataset.col!]) : '';
+        });
+        list.appendChild(clone);
+      });
+    };
+
     const restore = () => {
       const p = new URLSearchParams(location.search);
+      // ?trade=<key>：行业预设切换（SEO 词形承接，keyword-research R3）。意图明确，优先于草稿。
+      const trade = p.get('trade');
+      const presets = tool.rows?.presets;
+      if (trade && presets?.[trade]) {
+        applyPresetRows(presets[trade]);
+        document.querySelectorAll<HTMLInputElement>('[data-field]').forEach((el) => {
+          const key = 'f.' + el.dataset.field!;
+          if (p.has(key)) el.value = p.get(key)!;
+        });
+        return;
+      }
       const fromUrl = Array.from(p.keys()).length > 0;
       document.querySelectorAll<HTMLInputElement>('[data-field]').forEach((el) => {
         const key = 'f.' + el.dataset.field!;
@@ -171,20 +196,7 @@ if (bootEl) {
           document.querySelectorAll<HTMLInputElement>('[data-field]').forEach((el) => {
             if (d.values[el.dataset.field!] !== undefined) el.value = d.values[el.dataset.field!];
           });
-          if (d.rows?.length) {
-            const list = $('#rows-list');
-            const template = list?.querySelector<HTMLElement>('[data-row]');
-            if (list && template) {
-              list.innerHTML = '';
-              d.rows.forEach((r) => {
-                const clone = template.cloneNode(true) as HTMLElement;
-                clone.querySelectorAll<HTMLInputElement>('input').forEach((i) => {
-                  i.value = r[i.dataset.col!] !== undefined ? String(r[i.dataset.col!]) : '';
-                });
-                list.appendChild(clone);
-              });
-            }
-          }
+          if (d.rows?.length) applyPresetRows(d.rows);
         } catch { /* 草稿损坏则忽略 */ }
       }
     };

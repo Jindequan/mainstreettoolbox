@@ -24,6 +24,8 @@ export interface RowsDef {
   hint?: string;
   columns: { id: string; label: string; kind: 'text' | 'money' | 'number'; placeholder?: string; value?: string | number }[];
   preset: Record<string, string | number>[];
+  // 行业预设切换：?trade=<key> 时 toolRuntime 用对应行集替换默认 preset（SEO 词形承接，见 keyword-research R3）
+  presets?: Record<string, Record<string, string | number>[]>;
   addLabel: string;
   removable?: boolean;   // 默认 true；false 则隐藏删除按钮（行数固定的场景）
   addable?: boolean;     // 默认 true；false 则不显示 add 按钮
