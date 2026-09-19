@@ -222,3 +222,21 @@ Photography Price List Template — Weddings & Portraits (PDF + Editable)
 4 rows (portrait $275, wedding 6hr $3,000, wedding 8hr $4,500, extra hour $500 — The Knot, Bark.com). Files: `docs/kofi-files/pack-photography/`
 
 > 家族策略：每包锚定一个行业的搜索词簇（photography 535 词簇/枪手 R3 数据），10-Pack 是广度款，单品是深访款，互不蚕食。
+
+---
+
+## 产品 11-12：价目表家族补完（各 $5，2026-09-19 第二批）
+
+### 产品 11：Salon Price List Template
+```
+Salon Price List Template — Cuts, Color, Highlights (PDF + Editable)
+```
+8 rows sourced to SalonsRated/StyleSeat/Yelp 2026 tables (women's cut $70, men's $40, kids' $25, blowout $45, single-process $120, partial highlights $100, full highlights $200, beard trim $12). Files: `docs/kofi-files/pack-salon/`
+
+### 产品 12：Catering Price List Template
+```
+Catering Price List Template — Per-Person Pricing by Service Style (PDF + Excel)
+```
+5 rows (drop-off $30, buffet $50, plated $60, corporate full-service $110, bar add-on $30 — WeddingWire 2026). Files: `docs/kofi-files/pack-catering/`
+
+> **家族补完**：价目表家族现有 8 个行业 + 10-Pack 广度款。模板词簇的搜索面基本覆盖完毕。后续扩品转 T1（开业包/政府资源编译），不再加价目表。
