@@ -7,7 +7,7 @@ export default {
   name: 'Service Price List Builder',
   tagline: 'A typeset price list, not a Word doc. No signup.',
   title: 'Free Price List Template — Printable Generator for Any Service Business',
-  description: 'Free printable price list template for any service business — auto detailing, dog grooming, handyman, salon, cleaning or lawn care. Services, times and prices, ready to print. No signup.',
+  description: 'Free printable price list template for any service business — auto detailing, dog grooming, handyman, tutoring, salon, cleaning or lawn care. Services, times and prices, ready to print. No signup.',
   result: { label: 'Your price list' },
   fields: [
     { id: 'salonName', label: 'Business name', kind: 'text', default: 'My Business', placeholder: 'Your business name' },
@@ -53,6 +53,12 @@ export default {
         { service: 'Drywall patch', duration: 90, price: 110 },
         { service: 'Gutter clearing', duration: 120, price: 170 },
       ],
+      // tutoring 来源（2026-09-20）：TutorCruncher（NYC 数学 $55–65 / LA $50–60）+ Tutorbase 2026 全国 $40–80 + wise.live/Legacy（SAT/ACT $50–100+）
+      tutoring: [
+        { service: 'Math tutoring (per hour)', duration: 60, price: 55 },
+        { service: 'Reading & writing (per hour)', duration: 60, price: 45 },
+        { service: 'SAT / ACT test prep (per hour)', duration: 60, price: 75 },
+      ],
     },
     addLabel: '+ Add service',
   },
@@ -76,6 +82,7 @@ export default {
       <li><a href="/salon/service-price-list-builder/?trade=detailing">Auto detailing price list template</a> — exterior, interior, full detail, wax, headlight restore (HomeGuide; BGI; Thumbtack)</li>
       <li><a href="/salon/service-price-list-builder/?trade=grooming">Dog grooming price list template</a> — by dog size, de-shedding, nail trim (HomeGuide; Adopt-a-Pet; QC Pet Studies)</li>
       <li><a href="/salon/service-price-list-builder/?trade=handyman">Handyman price list template</a> — job bundles, not hours</li>
+      <li><a href="/salon/service-price-list-builder/?trade=tutoring">Tutoring price list template</a> — per-hour rates by subject (TutorCruncher; Tutorbase; wise.live)</li>
       <li>Salon &amp; barbershop (this page's default preset) — cut, color, beard, blow-dry</li>
     </ul>
     <p>Print one for the front desk and export the same list for your booking page. Reprint whenever you
@@ -83,7 +90,7 @@ export default {
   faq: [
     { q: 'Should I put prices on my website?', a: 'Yes. Hiding prices ("consultations only") filters out price-sensitive clients but also reads as evasive. A published range with "final quote at consultation" converts better than mystery.' },
     { q: 'Can I use this as a handyman price list template?', a: 'Yes — open the handyman preset: TV mounting $100, faucet replacement $135, furniture assembly $80 per item, drywall patch $110, gutter clearing $170 (2026 US job-bundle rates). Think in job bundles rather than hours — a printable one-page handyman price list filters the "how much for a quick job" calls before they reach your phone.' },
-    { q: 'Can I use this for auto detailing or dog grooming?', a: 'Yes — both have ready presets with 2026 US rates: detailing from exterior wash ($120) to full detail ($225) (HomeGuide; BGI; Thumbtack), grooming from bath & brush ($45 small dog) to full groom large ($100) (HomeGuide; Adopt-a-Pet; QC Pet Studies). Swap rows for your own menu and print.' },
+    { q: 'Can I use this for auto detailing, dog grooming or tutoring?', a: 'Yes — all three have ready presets with 2026 US rates: detailing from exterior wash ($120) to full detail ($225) (HomeGuide; BGI; Thumbtack), grooming from bath & brush ($45 small dog) to full groom large ($100) (HomeGuide; Adopt-a-Pet; QC Pet Studies), and tutoring from math ($55/hour) to SAT prep ($75/hour) (TutorCruncher; Tutorbase). Swap rows for your own menu and print.' },
     { q: 'How do I raise prices without losing clients?', a: 'New list, new season, grandfather nobody silently — announce two weeks ahead, raise the underpriced services most, and keep the increase under 10% per year for loyal regulars.' },
   ],
   related: ['booth-rent-commission-calculator', 'tip-out-calculator', 'labor-cost-calculator'],
