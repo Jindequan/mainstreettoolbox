@@ -1,5 +1,4 @@
-<!doctype html><html><head><meta charset="utf-8"><style>
-@page { size: Letter; margin: 18mm; }
+<!doctype html><html><head><meta charset="utf-8"><style>@page { size: Letter; margin: 18mm; }
 body { font-family: Georgia, serif; color: #1a1a1a; }
 .hd { text-align:center; border-bottom: 3px double #1a1a1a; padding-bottom: 14px; margin-bottom: 22px; }
 .biz { font-size: 30px; letter-spacing: .12em; margin: 0 0 6px; }
@@ -7,13 +6,37 @@ body { font-family: Georgia, serif; color: #1a1a1a; }
 table { width: 100%; border-collapse: collapse; margin-top: 8px; }
 td, th { padding: 11px 6px; border-bottom: 1px solid #ccc; font-size: 14.5px; }
 th { text-align: left; letter-spacing: .14em; font-size: 11px; color: #555; border-bottom: 2px solid #1a1a1a; }
-.price { text-align: right; font-weight: bold; width: 100px; }
-.dur { color: #666; width: 110px; }
+.price { text-align: right; font-weight: bold; width: 90px; }
+.dur { color: #666; width: 90px; }
+.src { font-size: 10.5px; color: #6E6553; }
 .note { margin-top: 26px; font-size: 11px; color: #666; text-align: center; }
 .foot { margin-top: 30px; text-align:center; font-size: 10px; color: #999; letter-spacing:.06em; }
-</style></head><body>
+.p2 { page-break-before: always; }
+.p2 h2, .p3 h2 { font-size: 17px; color: #1E5B3E; border-bottom: 2px solid #1E5B3E; padding-bottom: 4px; margin: 0 0 12px; }
+.p2 table td, .p2 table th { font-size: 12px; padding: 8px 5px; }
+.p2 .u { font-size: 10.5px; color: #6E6553; }
+.p3 { page-break-before: always; }
+.p3 h3 { font-size: 13.5px; color: #26231B; margin: 14px 0 4px; }
+.p3 p { font-size: 12px; line-height: 1.6; color: #3d382c; margin: 0 0 6px; }
+.intro { font-size: 12.5px; color: #444; line-height: 1.6; margin-bottom: 14px; }</style></head><body>
 <div class="hd"><p class="biz">Your Salon</p><p class="ttl">SALON — PRICE LIST</p></div>
-<table><tr><th>SERVICE</th><th class="d">TIME / UNIT</th><th class="p">PRICE</th></tr><tr><td>Women&#x27;s cut &amp; finish</td><td class="d">60 min</td><td class="p">$70</td></tr><tr><td>Men&#x27;s cut</td><td class="d">30 min</td><td class="p">$40</td></tr><tr><td>Kids&#x27; cut (under 12)</td><td class="d">30 min</td><td class="p">$25</td></tr><tr><td>Blowout</td><td class="d">45 min</td><td class="p">$45</td></tr><tr><td>Single-process color</td><td class="d">90 min</td><td class="p">$120</td></tr><tr><td>Partial highlights</td><td class="d">120 min</td><td class="p">$100</td></tr><tr><td>Full highlights</td><td class="d">150 min</td><td class="p">$200</td></tr><tr><td>Beard trim</td><td class="d">20 min</td><td class="p">$12</td></tr></table>
+<table><tr><th>SERVICE</th><th class="dur">TIME</th><th class="price">PRICE</th></tr><tr><td>Women&#x27;s cut &amp; finish</td><td class="dur">60 min</td><td class="price">$70</td></tr><tr><td>Men&#x27;s cut</td><td class="dur">30 min</td><td class="price">$40</td></tr><tr><td>Kids&#x27; cut (under 12)</td><td class="dur">30 min</td><td class="price">$25</td></tr><tr><td>Blowout</td><td class="dur">45 min</td><td class="price">$45</td></tr><tr><td>Single-process color</td><td class="dur">90 min</td><td class="price">$120</td></tr><tr><td>Partial highlights</td><td class="dur">120 min</td><td class="price">$100</td></tr><tr><td>Full highlights</td><td class="dur">150 min</td><td class="price">$200</td></tr><tr><td>Beard trim</td><td class="dur">20 min</td><td class="price">$12</td></tr></table>
 <p class="note">Prices for typical mid-tier salons; metro upscale markets run higher. Final quote at consultation.</p>
 <p class="foot">Made with mainstreettoolbox.com — free pricing tools for small business</p>
+
+<div class="p2">
+<h2>The numbers behind this list</h2>
+<p class="intro">Every price on the front page is anchored to published 2026 US industry data — this page shows
+where each number comes from, and how wide the market band is. Where you land inside a band is your market position,
+your costs and your call.</p>
+<table><tr><th>Service</th><th>This list</th><th>2026 US band</th><th>Sources</th></tr><tr><td>Women&#x27;s cut &amp; finish</td><td>$70</td><td>$45–95</td><td class="src">SalonsRated; StyleSeat</td></tr><tr><td>Men&#x27;s cut</td><td>$40</td><td>$30–50</td><td class="src">SalonsRated</td></tr><tr><td>Kids&#x27; cut</td><td>$25</td><td>$15–30</td><td class="src">SalonsRated</td></tr><tr><td>Blowout</td><td>$45</td><td>$20–65</td><td class="src">SalonsRated</td></tr><tr><td>Single-process color</td><td>$120</td><td>$80–200</td><td class="src">SalonsRated; Yelp</td></tr><tr><td>Partial highlights</td><td>$100</td><td>$60–150</td><td class="src">SalonsRated</td></tr><tr><td>Full highlights</td><td>$200</td><td>$125–400</td><td class="src">Yelp</td></tr><tr><td>Beard trim</td><td>$12</td><td>$9–14</td><td class="src">SalonsRated</td></tr></table>
+<p class="u">Bands are a synthesis across the named sources; individual publishers' own ranges sit above or below.
+Verified September 2026 · full database: mainstreettoolbox.com/benchmarks/service-pricing-2026/</p>
+</div>
+
+<div class="p3">
+<h2>How to work this list</h2>
+<h3>Price your chair, not the market</h3><p>Your real cost per bookable hour = (booth rent or commission target) ÷ booked hours. Services below that number are charity, and charity doesn&#x27;t buy product.</p><h3>Color is the margin engine</h3><p>Highlights take 2–3× a cut&#x27;s time — price them honestly at 2–3×. A $200 full highlight is a $70 cut with more chair time, not a luxury.</p><h3>Raise with a new menu</h3><p>Announce two weeks ahead, raise the underpriced services most, keep the increase under 10%/year for regulars.</p><h3>Commission negotiation</h3><p>New stylists keep 40–50%, moving toward 60% with a full book — that&#x27;s the standard ladder. Know your number before the lease conversation.</p><h3>Retail adds quiet revenue</h3><p>50–100% margin on retail products adds 5–10% to revenue with zero chair time.</p>
+<p class="intro" style="margin-top:16px">Free interactive calculators for this trade: <b>mainstreettoolbox.com</b> — type your numbers, get the band.</p>
+</div>
 </body></html>

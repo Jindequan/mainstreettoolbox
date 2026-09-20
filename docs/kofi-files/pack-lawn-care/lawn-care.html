@@ -1,5 +1,4 @@
-<!doctype html><html><head><meta charset="utf-8"><style>
-@page { size: Letter; margin: 18mm; }
+<!doctype html><html><head><meta charset="utf-8"><style>@page { size: Letter; margin: 18mm; }
 body { font-family: Georgia, serif; color: #1a1a1a; }
 .hd { text-align:center; border-bottom: 3px double #1a1a1a; padding-bottom: 14px; margin-bottom: 22px; }
 .biz { font-size: 30px; letter-spacing: .12em; margin: 0 0 6px; }
@@ -7,13 +6,37 @@ body { font-family: Georgia, serif; color: #1a1a1a; }
 table { width: 100%; border-collapse: collapse; margin-top: 8px; }
 td, th { padding: 11px 6px; border-bottom: 1px solid #ccc; font-size: 14.5px; }
 th { text-align: left; letter-spacing: .14em; font-size: 11px; color: #555; border-bottom: 2px solid #1a1a1a; }
-.price { text-align: right; font-weight: bold; width: 100px; }
-.dur { color: #666; width: 100px; }
+.price { text-align: right; font-weight: bold; width: 90px; }
+.dur { color: #666; width: 90px; }
+.src { font-size: 10.5px; color: #6E6553; }
 .note { margin-top: 26px; font-size: 11px; color: #666; text-align: center; }
 .foot { margin-top: 30px; text-align:center; font-size: 10px; color: #999; letter-spacing:.06em; }
-</style></head><body>
+.p2 { page-break-before: always; }
+.p2 h2, .p3 h2 { font-size: 17px; color: #1E5B3E; border-bottom: 2px solid #1E5B3E; padding-bottom: 4px; margin: 0 0 12px; }
+.p2 table td, .p2 table th { font-size: 12px; padding: 8px 5px; }
+.p2 .u { font-size: 10.5px; color: #6E6553; }
+.p3 { page-break-before: always; }
+.p3 h3 { font-size: 13.5px; color: #26231B; margin: 14px 0 4px; }
+.p3 p { font-size: 12px; line-height: 1.6; color: #3d382c; margin: 0 0 6px; }
+.intro { font-size: 12.5px; color: #444; line-height: 1.6; margin-bottom: 14px; }</style></head><body>
 <div class="hd"><p class="biz">Your Lawn Care Co.</p><p class="ttl">LAWN CARE — PRICE LIST</p></div>
-<table><tr><th>SERVICE</th><th class="d">TIME / SIZE</th><th class="p">PRICE</th></tr><tr><td>Mowing — small yard (weekly)</td><td class="d"><¼ acre</td><td class="p">$40</td></tr><tr><td>Mowing — standard yard (weekly)</td><td class="d">¼ acre</td><td class="p">$50</td></tr><tr><td>Mowing — large yard (weekly)</td><td class="d">½ acre+</td><td class="p">$70</td></tr><tr><td>Mowing — biweekly (per visit)</td><td class="d">¼ acre</td><td class="p">$60</td></tr><tr><td>Leaf cleanup</td><td class="d">¼ acre</td><td class="p">$225</td></tr><tr><td>Aeration + overseeding</td><td class="d">per 1,000 sq ft</td><td class="p">$55</td></tr></table>
-<p class="note">Weekly pricing shown; biweekly runs 15–25% more per visit (longer grass). Final quote after walkthrough.</p>
+<table><tr><th>SERVICE</th><th class="dur">TIME</th><th class="price">PRICE</th></tr><tr><td>Mowing — small yard (weekly)</td><td class="dur"><¼ acre</td><td class="price">$40</td></tr><tr><td>Mowing — standard yard (weekly)</td><td class="dur">¼ acre</td><td class="price">$50</td></tr><tr><td>Mowing — large yard (weekly)</td><td class="dur">½ acre+</td><td class="price">$70</td></tr><tr><td>Mowing — biweekly (per visit)</td><td class="dur">¼ acre</td><td class="price">$60</td></tr><tr><td>Leaf cleanup</td><td class="dur">¼ acre</td><td class="price">$225</td></tr><tr><td>Aeration + overseeding</td><td class="dur">per 1,000 sq ft</td><td class="price">$55</td></tr></table>
+<p class="note">Weekly pricing shown; biweekly runs 15–25% more per visit. Final quote after walkthrough.</p>
 <p class="foot">Made with mainstreettoolbox.com — free pricing tools for small business</p>
+
+<div class="p2">
+<h2>The numbers behind this list</h2>
+<p class="intro">Every price on the front page is anchored to published 2026 US industry data — this page shows
+where each number comes from, and how wide the market band is. Where you land inside a band is your market position,
+your costs and your call.</p>
+<table><tr><th>Service</th><th>This list</th><th>2026 US band</th><th>Sources</th></tr><tr><td>Mowing, standard</td><td>$50</td><td>$30–85, avg $50</td><td class="src">GreenPal; LawnStarter $43–70</td></tr><tr><td>Mowing, large</td><td>$70</td><td>upper band</td><td class="src">GreenPal; Jobber $50–250</td></tr><tr><td>Biweekly</td><td>$60</td><td>+15–25% per visit</td><td class="src">Housecall Pro</td></tr><tr><td>Leaf cleanup ¼ acre</td><td>$225</td><td>$160–290</td><td class="src">LawnStarter; Angi $200–500</td></tr><tr><td>Aeration + overseeding</td><td>$55</td><td>$30–80/ksqft</td><td class="src">HomeGuide; CountBricks</td></tr></table>
+<p class="u">Bands are a synthesis across the named sources; individual publishers' own ranges sit above or below.
+Verified September 2026 · full database: mainstreettoolbox.com/benchmarks/service-pricing-2026/</p>
+</div>
+
+<div class="p3">
+<h2>How to work this list</h2>
+<h3>Price the stop, not the grass</h3><p>Mowing is route economics: 12 lawns on one street at $45 each beats 4 lawns across town at $70. Density beats rate.</p><h3>Biweekly costs more per visit</h3><p>Longer grass takes longer to cut — +15–25% per visit (Housecall Pro). Say it out loud when clients ask to switch.</p><h3>Leaf cleanup: charge the job, mind the weather</h3><p>Wet leaves can double the time. Quote dry-season rates and add a weather clause for late-fall bookings.</p><h3>The stop fee</h3><p>Out-of-route jobs carry a $40–135 stop fee (LawnSite operator reports). Bundle neighbors onto one route day and the fee becomes margin.</p><h3>Pre-pay seasonal</h3><p>5–10% off for the season paid upfront — their cash, your guaranteed calendar.</p>
+<p class="intro" style="margin-top:16px">Free interactive calculators for this trade: <b>mainstreettoolbox.com</b> — type your numbers, get the band.</p>
+</div>
 </body></html>

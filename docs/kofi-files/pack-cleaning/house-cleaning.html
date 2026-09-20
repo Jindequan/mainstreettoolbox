@@ -1,19 +1,42 @@
-<!doctype html><html><head><meta charset="utf-8"><style>
-@page {{ size: Letter; margin: 18mm; }}
-body {{ font-family: Georgia, serif; color: #1a1a1a; }}
-.hd {{ text-align:center; border-bottom: 3px double #1a1a1a; padding-bottom: 14px; margin-bottom: 22px; }}
-.biz {{ font-size: 30px; letter-spacing: .12em; margin: 0 0 6px; }}
-.ttl {{ font-size: 13px; letter-spacing: .28em; color: #555; margin: 0; }}
-table {{ width: 100%; border-collapse: collapse; margin-top: 8px; }}
-td, th {{ padding: 11px 6px; border-bottom: 1px solid #ccc; font-size: 14.5px; }}
-th {{ text-align: left; letter-spacing: .14em; font-size: 11px; color: #555; border-bottom: 2px solid #1a1a1a; }}
-.price {{ text-align: right; font-weight: bold; width: 90px; }}
-.dur {{ color: #666; width: 90px; }}
-.note {{ margin-top: 26px; font-size: 11px; color: #666; text-align: center; }}
-.foot {{ margin-top: 30px; text-align:center; font-size: 10px; color: #999; letter-spacing:.06em; }}
-</style></head><body>
+<!doctype html><html><head><meta charset="utf-8"><style>@page { size: Letter; margin: 18mm; }
+body { font-family: Georgia, serif; color: #1a1a1a; }
+.hd { text-align:center; border-bottom: 3px double #1a1a1a; padding-bottom: 14px; margin-bottom: 22px; }
+.biz { font-size: 30px; letter-spacing: .12em; margin: 0 0 6px; }
+.ttl { font-size: 13px; letter-spacing: .28em; color: #555; margin: 0; }
+table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+td, th { padding: 11px 6px; border-bottom: 1px solid #ccc; font-size: 14.5px; }
+th { text-align: left; letter-spacing: .14em; font-size: 11px; color: #555; border-bottom: 2px solid #1a1a1a; }
+.price { text-align: right; font-weight: bold; width: 90px; }
+.dur { color: #666; width: 90px; }
+.src { font-size: 10.5px; color: #6E6553; }
+.note { margin-top: 26px; font-size: 11px; color: #666; text-align: center; }
+.foot { margin-top: 30px; text-align:center; font-size: 10px; color: #999; letter-spacing:.06em; }
+.p2 { page-break-before: always; }
+.p2 h2, .p3 h2 { font-size: 17px; color: #1E5B3E; border-bottom: 2px solid #1E5B3E; padding-bottom: 4px; margin: 0 0 12px; }
+.p2 table td, .p2 table th { font-size: 12px; padding: 8px 5px; }
+.p2 .u { font-size: 10.5px; color: #6E6553; }
+.p3 { page-break-before: always; }
+.p3 h3 { font-size: 13.5px; color: #26231B; margin: 14px 0 4px; }
+.p3 p { font-size: 12px; line-height: 1.6; color: #3d382c; margin: 0 0 6px; }
+.intro { font-size: 12.5px; color: #444; line-height: 1.6; margin-bottom: 14px; }</style></head><body>
 <div class="hd"><p class="biz">Your Cleaning Company</p><p class="ttl">HOUSE CLEANING — PRICE LIST</p></div>
-<table><tr><th>SERVICE</th><th class="d">TIME</th><th class="p">PRICE</th></tr><tr><td>Standard clean (per visit)</td><td class="d">210 min</td><td class="p">$180</td></tr><tr><td>Weekly recurring (per visit)</td><td class="d">180 min</td><td class="p">$150</td></tr><tr><td>Deep clean</td><td class="d">300 min</td><td class="p">$325</td></tr><tr><td>Move-out clean</td><td class="d">390 min</td><td class="p">$400</td></tr><tr><td>Hourly (per cleaner)</td><td class="d">per hr</td><td class="p">$50</td></tr></table>
+<table><tr><th>SERVICE</th><th class="dur">TIME</th><th class="price">PRICE</th></tr><tr><td>Standard clean (per visit)</td><td class="dur">210 min</td><td class="price">$180</td></tr><tr><td>Weekly recurring (per visit)</td><td class="dur">180 min</td><td class="price">$150</td></tr><tr><td>Deep clean</td><td class="dur">300 min</td><td class="price">$325</td></tr><tr><td>Move-out clean</td><td class="dur">390 min</td><td class="price">$400</td></tr><tr><td>Hourly (per cleaner)</td><td class="dur">per hr</td><td class="price">$50</td></tr></table>
 <p class="note">Prices are for typical 3 bed / 2 bath homes. First-time cleans quoted as deep cleans. Ask for a final quote.</p>
 <p class="foot">Made with mainstreettoolbox.com — free pricing tools for small business</p>
+
+<div class="p2">
+<h2>The numbers behind this list</h2>
+<p class="intro">Every price on the front page is anchored to published 2026 US industry data — this page shows
+where each number comes from, and how wide the market band is. Where you land inside a band is your market position,
+your costs and your call.</p>
+<table><tr><th>Service</th><th>This list</th><th>2026 US band</th><th>Sources</th></tr><tr><td>Standard clean</td><td>$180</td><td>$120–280</td><td class="src">HomeGuide; Housecall Pro; Thumbtack</td></tr><tr><td>Deep clean</td><td>$325</td><td>$200–450</td><td class="src">Eufy; Angi; HomeGuide</td></tr><tr><td>Move-out clean</td><td>$400</td><td>$200–600</td><td class="src">HireAHelper; HomeGuide; Angi</td></tr><tr><td>Hourly per cleaner</td><td>$50</td><td>$25–80</td><td class="src">HomeGuide; CottageCare</td></tr></table>
+<p class="u">Bands are a synthesis across the named sources; individual publishers' own ranges sit above or below.
+Verified September 2026 · full database: mainstreettoolbox.com/benchmarks/service-pricing-2026/</p>
+</div>
+
+<div class="p3">
+<h2>How to work this list</h2>
+<h3>First cleans are deep cleans</h3><p>Quote the first visit 40–50% over standard — years of build-up live in baseboards, vents and appliance interiors. Maintenance pricing starts on visit two.</p><h3>The recurring discount buys density</h3><p>15–20% off for weekly, ~10% for biweekly. You&#x27;re not giving money away — you&#x27;re eliminating the acquisition cost of every future visit.</p><h3>Bathrooms price higher than bedrooms</h3><p>Scrubbing a bathroom is the slowest work in the house. Per-bathroom charges should out-weigh per-bedroom ones.</p><h3>The hourly floor</h3><p>Your floor = (target wage + supplies) ÷ your solo speed. The band tells you if you&#x27;re in market; the floor tells you if you&#x27;re profitable.</p><h3>Market position</h3><p>Coastal metros run 30–50% above these bands; small towns a little under.</p>
+<p class="intro" style="margin-top:16px">Free interactive calculators for this trade: <b>mainstreettoolbox.com</b> — type your numbers, get the band.</p>
+</div>
 </body></html>
