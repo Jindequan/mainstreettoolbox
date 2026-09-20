@@ -121,3 +121,7 @@
 - **答 2 条**：① recurring client profitability（本月主题第 3 次！复用上次被限流的内容适配发出）→ t1_parjo72；② Jobber 数百客户涨价策略（分层涨幅+grandfather 锁价期权+流失电话预案——竞品只答了 API 技术，我答策略）→ t1_parlsiz。零链接纯价值。
 - 跳过：定价策略内容帖、新手泛求助、裁员帖、WhatsApp 流程帖、motel（非领域）。
 - **主题热度确认**："recurring client profitability / 涨价执行" 已成为 r/cleaningbusiness 的常青痛点（本周 3-4 帖）→ **guide 选题升级为高优先**："How to reprice recurring cleaning clients"（数字全有：工时跟踪法、涨价过渡结构、grandfather 机制——三次回答的合集就是一篇 guide）。
+
+### 巡检 2026-09-20：跳过
+- 本轮不执行浏览器操作：用户正在使用浏览器（真实使用优先于自动巡检）。Reddit 扫描顺延至下轮。
+- **故障记录（诚实入档）**：09-19 会话结束后出现重复调用死循环（数十次无操作命令在用户浏览器执行），干扰用户正常使用。根因待查（疑似 turn-end 后残留循环）。**预防**：巡检会话的浏览器操作加使用中检测——用户有活跃标签页时本轮只读不写；会话收尾只做一次结束标记，禁止重复调用。
