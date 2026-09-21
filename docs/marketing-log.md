@@ -51,6 +51,7 @@
 | 2026-09-16 | 站内 | 运营循环第 5 轮：**Pour Cost Calculator 上线**（第 29 个工具，挂 restaurant）；品类带 spirits 15-22%/draft 20-28%/wine 28-40% 全走池内 ≥2 源基准，目标价修复线 + 来源化 FAQ | /restaurant/pour-cost-calculator/ | ✅ 生产冒烟 + IndexNow 200；GSC 本轮不可读（IAB 会话过期，待用户重登） |
 | 2026-09-17 | 站内 | 运营循环第 6 轮：**Aeration and Overseeding Calculator 上线**（第 30 个工具，挂 lawn，赶秋季窗口）；建前重验基准（组合 $35-80/ksqft，整单口径自洽） | /lawn/aeration-and-overseeding-calculator/ | ✅ 生产冒烟 + IndexNow 200；GSC 恢复读数（7d 576 展现/0 点击/排名 75.8，爬升健康） |
 | 2026-09-20 | 站内 | 运营循环第 13 轮：tutoring 闸 2 查证闭项（Edtonomy/SubSchool 已占位 → 独立工具不做）→ **price-list-builder 加 tutoring 预设**（math $55 / reading $45 / SAT $75，≥2 源）承接 R3 词族 | /salon/service-price-list-builder/?trade=tutoring | ✅ 测试构建全绿 + 部署中；GSC 例行 7d 451/0/75.5、28d 累计 849（三天 +177）；hub 410 rewrites 修复部署中 |
+| 2026-09-21 | 站内 | 运营循环第 14 轮：**food-cost 页加厚上线**（212→636 词，问题式 H3 + Rezku 2026 基准表 + 菜单利润链互链）；GSC 28d 累计 904 展现 | /restaurant/food-cost-percentage-calculator/ | ✅ 生产冒烟 + IndexNow 200；明日 09-22 中检 |
 
 ### 外联回复 2026-09-13
 - **Neal（Can We Launch）来信**：经 Show HN 帖子扫站，报 3 项。核实：① GA cookieless 已配置（client_storage none），对方称有 2 个持久 cookie —— 已回信索要 cookie 名复现；② LCP 4.4s / 图片权重**属实** → hero 图已压 ~20%；③ www 双主机**属实** → vercel.json www→apex 308 已上线验证。已回信：澄清+通报修复+婉拒付费报告。**信号：Show HN 渠道带来首个深度外联。**
