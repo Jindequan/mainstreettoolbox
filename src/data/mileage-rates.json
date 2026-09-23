@@ -1,0 +1,17 @@
+{
+  "year": 2026,
+  "source": [
+    { "ir": "IR-2025-128", "period": "2026-01-01/2026-06-30" },
+    { "ir": "IR-2026-29", "period": "2026-07-01/2026-12-31" }
+  ],
+  "periods": [
+    { "from": "2026-01-01", "to": "2026-06-30", "rates": { "business": 0.725, "charity": 0.14, "medical": 0.205, "moving": 0.205 } },
+    { "from": "2026-07-01", "to": "2026-12-31", "rates": { "business": 0.76, "charity": 0.14, "medical": 0.235, "moving": 0.235 } }
+  ],
+  "categories": {
+    "business": "Business / self-employed",
+    "medical": "Medical",
+    "moving": "Moving (military only)",
+    "charity": "Charitable volunteer work"
+  }
+}

@@ -93,6 +93,9 @@ const searchIndex = [
           <span class="most-rank">1</span><b>Menu Maker</b><span class="tag">Restaurant</span>
           <span class="use" data-uses-for="menu-maker" hidden></span>
         </a>
+        <a class="most-row" href="/mileage-deduction-calculator/">
+          <span class="most-rank">2</span><b>2026 Mileage Deduction Calculator</b><span class="tag">Taxes</span>
+        </a>
         {TOOLS.slice(0, 4).map((t) => (
           <a class="most-row" href={`/${t.industry}/${t.slug}/`} data-stats-slug={t.slug}>
             <span class="most-rank">·</span><b>{t.name}</b><span class="tag">{INDUSTRY_META[t.industry]?.name ?? 'Tool'}</span>

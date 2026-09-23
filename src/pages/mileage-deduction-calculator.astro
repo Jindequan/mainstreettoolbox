@@ -1,0 +1,244 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const updated = 'September 2026';
+
+const faqs = [
+  {
+    q: 'What is the 2026 IRS standard mileage rate?',
+    a: 'For business driving it is 72.5 cents per mile from January 1 to June 30, 2026 and 76 cents per mile from July 1 to December 31, 2026, after an IRS mid-year increase (IR-2026-29). Medical and military moving are 20.5 cents (23.5 cents from July 1), and charitable volunteer driving is 14 cents all year.',
+  },
+  {
+    q: 'Why do I need a mileage log?',
+    a: 'The IRS requires adequate records to support a standard mileage deduction: the date of each trip, the destination, the business purpose and the miles driven. A contemporaneous log — kept as you drive — is the accepted proof; reconstructing one years later is not. This tool builds and prints exactly that record.',
+  },
+  {
+    q: 'How is this different from other mileage calculators?',
+    a: 'It resolves the rate from each trip date, so trips before and after the July 1 rate change use the correct cents. A single-rate 2026 calculator overstates first-half trips or understates second-half trips. The printable sheet also includes the odometer totals the IRS asks for.',
+  },
+  {
+    q: 'Standard mileage rate or actual expenses?',
+    a: 'The standard method multiplies business miles by the published rate — simple, no receipts for gas needed. The actual-expenses method deducts the business percentage of real costs (gas, insurance, depreciation, repairs). You cannot switch to standard from certain accelerated depreciation choices, and actual can win for expensive-to-run vehicles; run both in a year of high costs and keep the larger.',
+  },
+  {
+    q: 'Can employees claim work miles?',
+    a: 'Rules for employee business expenses depend on the current tax law — check the IRS instructions for the tax year or ask a preparer. Self-employed owners, qualifying medical travel, military moves and charitable volunteer driving are the standard cases this tool covers.',
+  },
+  {
+    q: 'Does the IRS accept a printed spreadsheet?',
+    a: 'Yes — a printed or digital log with date, destination, purpose and mileage per trip is an adequate record, especially when kept at or near the time of driving. Keep it with your tax return documents.',
+  },
+];
+
+const appSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: '2026 Mileage Deduction Calculator and Mileage Log',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Web',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  description:
+    'Free 2026 mileage log and deduction calculator. Rate resolves per trip date (72.5c Jan-Jun, 76c Jul-Dec), business/medical/moving/charity categories, IRS-acceptable printable log.',
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+<BaseLayout
+  title="2026 Mileage Deduction Calculator + Printable Mileage Log (IRS Rates) | Main Street Toolbox"
+  description="Free 2026 mileage log and deduction calculator: the rate resolves per trip date — 72.5 cents Jan–Jun and 76 cents Jul–Dec. Business, medical, moving and charity; prints an IRS-acceptable log. No signup."
+  path="/mileage-deduction-calculator/"
+>
+  <div class="tool-hero">
+    <div class="container">
+      <p class="eyebrow">Free tax tool · rates updated Jul 2026 · {updated}</p>
+      <h1>2026 mileage deduction calculator &amp; log</h1>
+      <p class="sub">
+        Log each work trip and the <b>correct IRS rate is applied by trip date</b> —
+        72.5¢/mi before July 1 and <b>76¢/mi after</b>. Then print an IRS-acceptable
+        mileage log. Free, no signup, nothing uploaded.
+      </p>
+    </div>
+  </div>
+
+  <main class="container">
+    <div id="mileageApp" class="app-grid">
+      <!-- ── Editor ── -->
+      <section class="app-editor" aria-label="Mileage log editor">
+        <div class="toolbar no-print">
+          <button id="printBtn" type="button" class="btn btn-primary">Print / Save PDF</button>
+          <button id="clearAll" type="button" class="btn btn-secondary">Clear log</button>
+        </div>
+
+        <fieldset class="card-block">
+          <legend>Business &amp; vehicle</legend>
+          <div class="field-pair">
+            <label>Business name <input data-bind="bizName" type="text" placeholder="Sunshine Cleaning Co." /></label>
+            <label>Vehicle <input data-bind="vehicle" type="text" placeholder="2022 Toyota RAV4" /></label>
+            <label>Odometer start of year <input data-bind="odoStart" inputmode="numeric" placeholder="0" /></label>
+            <label>Odometer end of year <input data-bind="odoEnd" inputmode="numeric" placeholder="0" /></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="card-block">
+          <legend>Trips</legend>
+          <div id="tripsEditor" class="trips"></div>
+          <div class="trip-actions">
+            <button id="addTrip" type="button" class="btn btn-secondary btn-sm">+ Add trip</button>
+            <button id="sampleTrips" type="button" class="btn btn-secondary btn-sm">Add 2 example trips</button>
+          </div>
+        </fieldset>
+      </section>
+
+      <!-- ── Preview ── -->
+      <aside class="app-preview no-print-layout" aria-label="Mileage log preview">
+        <div id="totalsCard" class="totals-card"></div>
+        <p class="preview-tag">Live preview — this is what prints</p>
+        <div id="doc" class="doc-sheet"></div>
+      </aside>
+    </div>
+
+    <!-- ── Explainer ── -->
+    <section class="guide">
+      <h2>About the 2026 mileage rates</h2>
+      <div class="guide-grid">
+        <div>
+          <h3>The mid-year change</h3>
+          <p>The IRS raised the 2026 standard mileage rate halfway through the year: 72.5¢ per business
+          mile for January through June, then 76¢ from July through December (IR-2026-29). A log that
+          multiplies all 2026 miles by one number is wrong for half the year — this calculator handles
+          both automatically using each trip's date.</p>
+          <h3>What records the IRS wants</h3>
+          <p>Date, destination, business purpose and mileage for each trip, plus the year's total miles
+          on the vehicle. Your printed sheet includes all of it; odometer start and end fields cover the
+          annual total.</p>
+        </div>
+        <div>
+          <h3>Standard vs actual expenses</h3>
+          <p>Standard is miles × rate with no fuel receipts to track. Actual means deducting the business
+          share of gas, insurance, repairs and depreciation. Standard is the usual winner for modest,
+          reliable vehicles; compare actual in a year of big repair bills.</p>
+          <h3>Keep it contemporaneous</h3>
+          <p>A log filled in at driving time is credible; a year-end reconstruction is the first thing
+          questioned. Add trips weekly — this page keeps your draft in the browser between visits.</p>
+        </div>
+      </div>
+      <p class="related-line">
+        Run your business numbers with the <a href="/estimate-generator/">estimate generator</a>
+        and bill clients with the <a href="/cleaning/cleaning-invoice-generator/">invoice generator</a>.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        {faqs.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify(appSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script>
+    import { initMileageApp } from '../scripts/mileageApp';
+    initMileageApp(document.getElementById('mileageApp')!);
+  </script>
+</BaseLayout>
+
+<style>
+:global(.container) { width: min(100% - 2rem, 1120px); margin-inline: auto; }
+
+.tool-hero { padding: 2.2rem 0 .6rem; }
+.tool-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 2.8rem); margin: .3rem 0 .5rem; }
+.tool-hero .sub { max-width: 46rem; color: var(--ink-2); font-size: 1.08rem; }
+.eyebrow { color: var(--green); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; }
+
+.app-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 1.6rem; align-items: start; padding: 1.2rem 0 2.5rem; }
+.app-preview { position: sticky; top: 1rem; }
+
+.toolbar { display: flex; gap: .6rem; margin-bottom: 1rem; }
+.card-block { border: 1.5px solid var(--line-2); border-radius: 10px; padding: 1rem 1.1rem 1.1rem; margin: 0 0 1rem; background: var(--card); }
+.card-block legend { font-weight: 650; font-size: .92rem; padding: 0 .35rem; }
+.field-pair { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem .9rem; }
+label { font-size: .82rem; font-weight: 600; color: var(--ink-2); display: flex; flex-direction: column; gap: .3rem; }
+input, select { font: inherit; font-weight: 400; color: var(--ink); border: 1.5px solid var(--line-2); border-radius: 7px; padding: .5rem .6rem; background: var(--paper); width: 100%; }
+input:focus, select:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px rgba(47,94,70,.12); }
+
+.trips { display: flex; flex-direction: column; gap: .6rem; margin-bottom: .7rem; }
+.trip-row { border: 1.5px solid var(--line-2); border-radius: 8px; padding: .65rem; background: var(--paper); }
+.trip-top { display: grid; grid-template-columns: 11rem 1fr 2rem; gap: .6rem; align-items: end; }
+.trip-top label { font-size: .78rem; }
+.trip-mid { margin-top: .5rem; }
+.trip-mid.fromto { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
+.trip-bot { display: grid; grid-template-columns: 8rem 1fr 1fr; gap: .5rem; margin-top: .5rem; align-items: center; }
+.trip-bot label { flex-direction: row; align-items: center; gap: .5rem; font-size: .82rem; }
+.trip-bot input { width: 100%; }
+.trip-rate { font-size: .82rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.trip-rate.warn { color: #b0493b; }
+.trip-amount { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+.in-del { border: 0; background: none; color: var(--ink-3); cursor: pointer; font-size: .85rem; height: 2rem; }
+.in-del:hover { color: #b0493b; }
+.trip-actions { display: flex; gap: .6rem; }
+
+.totals-card { text-align: center; background: var(--green); color: #fdfbf4; border-radius: 10px; padding: 1.1rem 1rem .95rem; margin-bottom: .9rem; }
+.totals-card .big { font-family: var(--font-display); font-size: 2.3rem; margin: 0; font-weight: 700; }
+.totals-card .lbl { margin: .25rem 0 0; font-size: .8rem; color: rgba(253,251,244,.8); }
+.preview-tag { font-size: .8rem; color: var(--ink-3); margin: 0 0 .5rem; text-align: center; }
+
+.doc-sheet { background: #fff; border: 1.5px solid var(--line-2); border-radius: 6px; box-shadow: 0 8px 30px rgba(38,35,27,.08); padding: 2rem; font-size: .8rem; color: #26231b; }
+.m-head { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 2px solid #2f5e46; padding-bottom: .8rem; }
+.m-biz { font-weight: 700; font-size: 1.02rem; margin: 0; }
+.m-veh { color: #6e6553; font-size: .76rem; margin: .15rem 0 0; }
+.m-head h2 { font-family: var(--font-display); margin: 0; font-size: 1.25rem; color: #2f5e46; }
+
+.m-table { width: 100%; border-collapse: collapse; margin-top: .6rem; }
+.m-table th { text-align: left; font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; color: #9a9078; border-bottom: 1.5px solid #dcd6c8; padding: .3rem .35rem; }
+.m-table td { padding: .35rem; border-bottom: 1px solid #ece7da; vertical-align: top; }
+.x-date { width: 4.6rem; white-space: nowrap; }
+.x-cat { width: 3.2rem; text-transform: capitalize; }
+.x-mi { width: 2.8rem; text-align: right; }
+.x-rate { width: 3rem; text-align: right; font-variant-numeric: tabular-nums; }
+.x-amt { width: 4.6rem; text-align: right; font-variant-numeric: tabular-nums; }
+.x-dest { display: block; font-size: .7rem; color: #9a9078; margin-top: .1rem; }
+
+.m-foot { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: .8rem; }
+.m-summary p { display: flex; justify-content: space-between; gap: .5rem; margin: .2rem 0; font-size: .76rem; }
+.m-summary .grand { font-weight: 700; border-top: 1.5px solid #26231b; padding-top: .3rem; margin-top: .35rem; }
+.m-odo p { margin: .2rem 0; font-size: .74rem; color: #26231b; }
+.m-odo .src { color: #9a9078 !important; font-size: .68rem !important; line-height: 1.4; margin-top: .5rem !important; }
+
+.guide { border-top: 1.5px solid var(--line); padding: 2rem 0 1rem; }
+.guide h2 { font-family: var(--font-display); }
+.guide-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2.5rem; }
+.guide h3 { margin: 1rem 0 .3rem; font-size: 1.02rem; }
+.guide p { color: var(--ink-2); }
+.related-line { margin-top: 1.2rem; }
+.faq details { border-bottom: 1px solid var(--line-2); padding: .6rem 0; }
+.faq summary { font-weight: 600; cursor: pointer; }
+.faq p { color: var(--ink-2); margin: .5rem 0 0; }
+
+@media print {
+  :global(nav), :global(footer), .tool-hero, .app-editor, .preview-tag, .guide, .totals-card { display: none !important; }
+  body { background: #fff !important; }
+  .app-grid { display: block; }
+  .app-preview { position: static; }
+  .doc-sheet { border: 0; box-shadow: none; border-radius: 0; padding: 0; font-size: 10pt; }
+  @page { size: letter; margin: 0.55in; }
+}
+@media (max-width: 900px) {
+  .app-grid { grid-template-columns: 1fr; }
+  .app-preview { position: static; }
+  .guide-grid, .field-pair, .m-foot { grid-template-columns: 1fr; }
+  .trip-top { grid-template-columns: 1fr 1fr; }
+  .trip-top .in-del, .trip-top > button { grid-column: 2; }
+}
+</style>
