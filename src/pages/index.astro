@@ -53,6 +53,17 @@ const searchIndex = [
     </div>
   </section>
 
+  <section class="flagship">
+    <div class="container flagship-in">
+      <div>
+        <p class="flag-eyebrow">Most popular this month</p>
+        <h2>Free Estimate Generator</h2>
+        <p>Pick your trade for realistic 2026 prices, tweak the line items, print or PDF — under 5 minutes. No signup.</p>
+      </div>
+      <a class="btn btn-primary" href="/estimate-generator/">Build an estimate →</a>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <div class="section-head"><h2>Pick your trade</h2><a href="/tools">All tools →</a></div>
@@ -161,4 +172,13 @@ const searchIndex = [
     name: 'Main Street Toolbox',
     url: new URL('/', Astro.site).toString(),
   })} />
+<style>
+.flagship { background: var(--green); color: #fdfbf4; margin: 1.4rem 0 0; }
+.flagship-in { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; padding-block: 1.6rem; }
+.flagship h2 { font-family: var(--font-display); margin: .15rem 0 .3rem; font-size: 1.6rem; color: #fdfbf4; }
+.flagship p { margin: 0; max-width: 34rem; color: rgba(253, 251, 244, .82); }
+.flag-eyebrow { font-size: .75rem !important; letter-spacing: .1em; text-transform: uppercase; color: rgba(253, 251, 244, .65) !important; }
+.flagship .btn-primary { background: #fdfbf4; color: var(--green); font-weight: 700; }
+.flagship .btn-primary:hover { background: #fff; }
+</style>
 </BaseLayout>

@@ -1,0 +1,290 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const updated = 'September 2026';
+
+const faqs = [
+  {
+    q: 'Is this estimate generator really free? No signup?',
+    a: 'Yes — add your business and client, edit the line items, and print or save as PDF. Nothing is uploaded and there is no account. Your draft is saved in your own browser so a refresh never loses it.',
+  },
+  {
+    q: 'Where do the preset prices come from?',
+    a: 'The 10 trade presets list typical 2026 US residential and small-business prices assembled from national pricing surveys and service guides. They are starting points, not quotes: every number is editable, and you should adjust for your city, your costs and the specific job.',
+  },
+  {
+    q: 'How do I turn this into a PDF?',
+    a: 'Click Print / Save PDF and choose "Save as PDF" as the printer destination. The page is formatted for US Letter — only the estimate itself prints, not the editor or website.',
+  },
+  {
+    q: 'What is the difference between an estimate and an invoice?',
+    a: 'An estimate is sent before the work to agree scope and price; an invoice requests payment afterward. Keep estimates itemized, add a validity period (30 days is standard), and turn it into an invoice once the job is approved — our invoice generator picks up from there.',
+  },
+  {
+    q: 'Should I add tax to the estimate?',
+    a: 'Rules vary by state and trade: some states tax residential services, others do not. Check your state once, then use the tax field so the client sees the all-in number. When unsure, note in the terms that tax will be added if applicable.',
+  },
+  {
+    q: 'Is a sent estimate binding?',
+    a: 'A client-signed estimate records the agreed scope and price and generally serves as evidence of the deal — it is not a full construction contract. For larger jobs, list exclusions in the notes and include both signature lines.',
+  },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Free Estimate Generator',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Web',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  description:
+    'Free, no-signup estimate generator for service businesses: 10 trades with realistic 2026 price presets, itemized lines, tax and deposit, print or PDF.',
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+<BaseLayout
+  title="Free Estimate Generator for Contractors — 10 Trades, 2026 Prices, Print/PDF | Main Street Toolbox"
+  description="Build a professional estimate in minutes: pick your trade for realistic 2026 price presets (cleaning, lawn care, salons, handyman, detailing and more), edit line items, add tax and deposit, then print or save PDF. Free, no signup."
+  path="/estimate-generator/"
+>
+  <div class="tool-hero">
+    <div class="container">
+      <p class="eyebrow">Free tool · {updated}</p>
+      <h1>Free estimate generator</h1>
+      <p class="sub">
+        Pick your trade to load realistic <b>2026 prices</b>, adjust for the job, and hand over a
+        professional estimate — print or PDF in under five minutes. No signup, nothing uploaded.
+      </p>
+    </div>
+  </div>
+
+  <main class="container">
+    <div id="estimateApp" class="app-grid">
+      <!-- ── Editor ─────────────────────────────────────────────── -->
+      <section class="app-editor" aria-label="Estimate editor">
+        <div class="toolbar no-print">
+          <button id="printBtn" type="button" class="btn btn-primary">Print / Save PDF</button>
+          <button id="newEstimate" type="button" class="btn btn-secondary">New estimate</button>
+        </div>
+
+        <fieldset class="card-block">
+          <legend>1 · Choose a trade for sample prices</legend>
+          <div id="tradeChips" class="chips"></div>
+        </fieldset>
+
+        <fieldset class="card-block">
+          <legend>2 · Your business</legend>
+          <div class="field-pair">
+            <label>Business name<input data-bind="biz.name" type="text" placeholder="Sunshine Cleaning Co." /></label>
+            <label>Phone<input data-bind="biz.phone" type="tel" placeholder="(555) 123-4567" /></label>
+            <label>Email<input data-bind="biz.email" type="email" placeholder="you@biz.com" /></label>
+            <label>Address<input data-bind="biz.address" type="text" placeholder="City, State" /></label>
+          </div>
+          <div class="logo-row">
+            <label class="logo-label">Logo (optional)
+              <input id="logoInput" type="file" accept="image/png,image/jpeg,image/webp" />
+            </label>
+            <button id="logoClear" type="button" class="btn btn-secondary btn-sm">Remove logo</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="card-block">
+          <legend>3 · Client & job</legend>
+          <div class="field-pair">
+            <label>Client name<input data-bind="client.name" type="text" placeholder="Jordan Riley" /></label>
+            <label>Client phone / email<input data-bind="client.contact" type="text" placeholder="(555) 000-0000" /></label>
+            <label>Job / project address<input data-bind="client.address" type="text" placeholder="123 Oak St" /></label>
+          </div>
+          <div class="field-pair triple">
+            <label>Estimate no.<input data-bind="estNo" type="text" /></label>
+            <label>Date<input data-bind="date" type="date" /></label>
+            <label>Valid until<input data-bind="expires" type="date" /></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="card-block">
+          <legend>4 · Items & prices</legend>
+          <div id="linesEditor" class="lines"></div>
+          <button id="addLine" type="button" class="btn btn-secondary btn-sm">+ Add item</button>
+        </fieldset>
+
+        <fieldset class="card-block">
+          <legend>5 · Totals & options</legend>
+          <div class="field-pair triple">
+            <label>Discount %<input data-bind="discountPct" type="number" min="0" step="0.5" /></label>
+            <label>Sales tax %<input data-bind="taxPct" type="number" min="0" step="0.25" /></label>
+            <label>Deposit paid $<input data-bind="deposit" type="number" min="0" step="1" /></label>
+          </div>
+          <label class="check"><input id="sigToggle" type="checkbox" checked /> Show signature lines</label>
+          <label class="block-label">Notes &amp; terms
+            <textarea data-bind="notes" rows="4"></textarea>
+          </label>
+        </fieldset>
+      </section>
+
+      <!-- ── Live preview / print document ──────────────────────── -->
+      <aside class="app-preview no-print-layout" aria-label="Estimate preview">
+        <p class="preview-tag">Live preview — this is exactly what prints</p>
+        <div id="doc" class="doc-sheet"></div>
+      </aside>
+    </div>
+
+    <!-- ── Guide ─────────────────────────────────────────────────── -->
+    <section class="guide">
+      <h2>How to write an estimate that wins the job</h2>
+      <div class="guide-grid">
+        <div>
+          <h3>Itemize everything</h3>
+          <p>One line per service with its own price — never a single "cleaning $200". Clients who can see
+          the parts rarely dispute the total, and itemized lines kill scope arguments before they start.</p>
+          <h3>Show the all-in number</h3>
+          <p>Add tax, deposit and any discounts on the estimate so the client decides on the real figure,
+          not a surprise number on invoice day.</p>
+        </div>
+        <div>
+          <h3>Put a clock on it</h3>
+          <p>"Valid for 30 days" protects you when material prices move and creates a gentle reason to
+          decide. Every preset here includes a validity date.</p>
+          <h3>Get it signed</h3>
+          <p>Print two copies on the spot — the client signs one, you keep one. A signed estimate is the
+          cheapest agreement a small business can hold.</p>
+        </div>
+      </div>
+      <p class="related-line">
+        After the job is approved, bill it with the
+        <a href="/cleaning/cleaning-invoice-generator/">invoice generator</a>; price the next job with
+        the <a href="/contractor/contractor-hourly-rate-calculator/">hourly rate calculator</a>.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        {faqs.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script>
+    import { initEstimateApp } from '../scripts/estimateApp';
+    initEstimateApp(document.getElementById('estimateApp')!);
+  </script>
+</BaseLayout>
+
+<style>
+:global(.container) { width: min(100% - 2rem, 1120px); margin-inline: auto; }
+
+.tool-hero { padding: 2.2rem 0 .6rem; }
+.tool-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 2.9rem); margin: .3rem 0 .5rem; }
+.tool-hero .sub { max-width: 44rem; color: var(--ink-2); font-size: 1.08rem; }
+.eyebrow { color: var(--green); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; }
+
+.app-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 1.6rem; align-items: start; padding: 1.2rem 0 2.5rem; }
+.app-preview { position: sticky; top: 1rem; }
+.preview-tag { font-size: .8rem; color: var(--ink-3); margin: 0 0 .5rem; text-align: center; }
+
+.toolbar { display: flex; gap: .6rem; margin-bottom: 1rem; }
+.card-block { border: 1.5px solid var(--line-2); border-radius: 10px; padding: 1rem 1.1rem 1.1rem; margin: 0 0 1rem; background: var(--card); }
+.card-block legend { font-weight: 650; font-size: .92rem; padding: 0 .35rem; color: var(--ink); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .45rem; }
+.chip { border: 1.5px solid var(--line-2); background: var(--paper); color: var(--ink-2); border-radius: 999px; padding: .38rem .85rem; font-size: .85rem; cursor: pointer; transition: all .12s; }
+.chip:hover { border-color: var(--ink-2); color: var(--ink); }
+.chip.active { background: var(--green); border-color: var(--green); color: #fdfbf4; font-weight: 600; }
+
+.field-pair { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem .9rem; }
+.field-pair.triple { grid-template-columns: 1fr 1fr 1fr; margin-top: .8rem; }
+label { font-size: .82rem; font-weight: 600; color: var(--ink-2); display: flex; flex-direction: column; gap: .3rem; }
+input, textarea { font: inherit; font-weight: 400; color: var(--ink); border: 1.5px solid var(--line-2); border-radius: 7px; padding: .5rem .6rem; background: var(--paper); width: 100%; }
+input:focus, textarea:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px rgba(47, 94, 70, .12); }
+.block-label { margin-top: .8rem; }
+.logo-row { display: flex; align-items: flex-end; gap: .8rem; margin-top: .8rem; }
+.logo-label { flex: 1; }
+.check { display: flex; align-items: center; gap: .5rem; font-size: .88rem; color: var(--ink); margin: .9rem 0 0; }
+.check input { width: auto; }
+
+.lines { display: flex; flex-direction: column; gap: .55rem; margin-bottom: .7rem; }
+.line-row { border: 1.5px solid var(--line-2); border-radius: 8px; padding: .6rem; background: var(--paper); }
+.line-main { display: grid; grid-template-columns: 2fr 1fr; gap: .5rem; }
+.line-nums { display: grid; grid-template-columns: 4.2rem 6.5rem 1fr 2rem; gap: .5rem; margin-top: .5rem; align-items: center; }
+.line-nums input { padding: .4rem .5rem; }
+.line-amount { text-align: right; font-variant-numeric: tabular-nums; font-size: .9rem; color: var(--ink); }
+.in-del { border: 0; background: none; color: var(--ink-3); cursor: pointer; font-size: .85rem; }
+.in-del:hover { color: #b0493b; }
+
+/* Document sheet */
+.doc-sheet { background: #fff; border: 1.5px solid var(--line-2); border-radius: 6px; box-shadow: 0 8px 30px rgba(38, 35, 27, .08); padding: 2.2rem; color: #26231b; font-size: .86rem; }
+.doc-head { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 2px solid #2f5e46; padding-bottom: 1rem; }
+.doc-brand { display: flex; gap: .8rem; align-items: flex-start; }
+.doc-logo { max-width: 90px; max-height: 70px; object-fit: contain; }
+.doc-biz { font-weight: 700; font-size: 1.05rem; margin: 0; }
+.doc-contact { color: #6e6553; margin: .2rem 0 0; font-size: .78rem; }
+.doc-meta { text-align: right; }
+.doc-meta h2 { font-family: var(--font-display); margin: 0 0 .35rem; font-size: 1.5rem; letter-spacing: .04em; color: #2f5e46; }
+.doc-meta p { margin: .12rem 0; font-size: .78rem; color: #6e6553; }
+.doc-meta b { color: #26231b; margin-right: .3rem; }
+.doc-client { margin: 1rem 0; }
+.doc-client .k, .doc-notes .k { font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: #9a9078; margin: 0 0 .15rem; }
+.doc-client .v { margin: 0; font-weight: 600; }
+.doc-client .v.sub { font-weight: 400; color: #6e6553; font-size: .8rem; margin-top: .15rem; }
+
+.doc-table { width: 100%; border-collapse: collapse; }
+.doc-table th { text-align: left; font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; color: #9a9078; border-bottom: 1.5px solid #dcd6c8; padding: .35rem .4rem; }
+.doc-table td { padding: .45rem .4rem; vertical-align: top; border-bottom: 1px solid #ece7da; }
+.t-qty, .t-price { text-align: center; }
+.t-amt, .t-price { text-align: right; font-variant-numeric: tabular-nums; }
+.t-qty { width: 3rem; } .t-price { width: 5rem; } .t-amt { width: 6rem; }
+.row-note { display: block; font-size: .73rem; color: #9a9078; margin-top: .1rem; }
+
+.doc-totals { margin-left: auto; width: 16rem; margin-top: .8rem; }
+.doc-totals p { display: flex; justify-content: space-between; margin: .2rem 0; font-variant-numeric: tabular-nums; }
+.doc-totals .grand { font-size: 1.02rem; font-weight: 700; border-top: 2px solid #26231b; padding-top: .35rem; margin-top: .35rem; }
+.doc-totals .balance { font-weight: 700; color: #2f5e46; }
+.doc-notes { margin-top: 1.1rem; border-top: 1px solid #ece7da; padding-top: .7rem; }
+.doc-notes p { margin: .2rem 0 0; white-space: pre-wrap; font-size: .78rem; color: #6e6553; }
+.doc-sig { display: flex; gap: 2rem; margin-top: 1.6rem; }
+.doc-sig div { flex: 1; }
+.doc-sig span { display: block; border-bottom: 1.5px solid #26231b; height: 1px; margin-top: 1.6rem; }
+.doc-sig p { font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; color: #6e6553; margin: 0; }
+
+.guide { border-top: 1.5px solid var(--line); padding: 2rem 0 1rem; }
+.guide h2 { font-family: var(--font-display); }
+.guide-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2.5rem; }
+.guide h3 { margin: 1.1rem 0 .3rem; font-size: 1.02rem; }
+.guide p { color: var(--ink-2); }
+.related-line { margin-top: 1.2rem; }
+.faq details { border-bottom: 1px solid var(--line-2); padding: .6rem 0; }
+.faq summary { font-weight: 600; cursor: pointer; }
+.faq p { color: var(--ink-2); margin: .5rem 0 0; }
+
+/* ── Print: only the document, on white US Letter ── */
+@media print {
+  :global(nav), :global(footer), .tool-hero, .app-editor, .preview-tag, .guide { display: none !important; }
+  body { background: #fff !important; }
+  .app-grid { display: block; }
+  .app-preview { position: static; }
+  .doc-sheet { border: 0; box-shadow: none; border-radius: 0; padding: 0; font-size: 11pt; }
+  @page { size: letter; margin: 0.6in; }
+}
+
+@media (max-width: 900px) {
+  .app-grid { grid-template-columns: 1fr; }
+  .app-preview { position: static; }
+  .guide-grid, .field-pair, .field-pair.triple { grid-template-columns: 1fr; }
+  .line-main { grid-template-columns: 1fr; }
+  .line-nums { grid-template-columns: 3.5rem 5.5rem 1fr 2rem; }
+}
+</style>

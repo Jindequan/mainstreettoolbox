@@ -15,6 +15,19 @@ import { INDUSTRY_META, byIndustry } from '../tools';
     </div>
   </section>
 
+  <section class="section" style="padding-top:18px">
+    <div class="container">
+      <a class="flag-card" href="/estimate-generator/">
+        <div>
+          <p class="flag-eyebrow">Most popular</p>
+          <b>Free Estimate Generator</b>
+          <p>10 trades with realistic 2026 price presets, itemized lines, tax &amp; deposit — print or PDF in minutes. No signup.</p>
+        </div>
+        <span class="go">Open tool →</span>
+      </a>
+    </div>
+  </section>
+
   {Object.entries(INDUSTRY_META).map(([id, meta]) => {
     const tools = byIndustry(id);
     if (tools.length === 0) {
@@ -60,4 +73,16 @@ import { INDUSTRY_META, byIndustry } from '../tools';
       </div>
     </div>
   </section>
+<style>
+.flag-card {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; flex-wrap: wrap;
+  border: 1.5px solid var(--green); border-radius: var(--r-m, 12px);
+  padding: 1.1rem 1.4rem; background: var(--card); text-decoration: none;
+}
+.flag-card:hover { box-shadow: 0 6px 22px rgba(47, 94, 70, .12); }
+.flag-card b { font-size: 1.15rem; font-family: var(--font-display); }
+.flag-card p { margin: .25rem 0 0; color: var(--ink-2); max-width: 38rem; }
+.flag-eyebrow { font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; color: var(--green); margin: 0; font-weight: 700; }
+.flag-card .go { color: var(--green); font-weight: 700; white-space: nowrap; }
+</style>
 </BaseLayout>

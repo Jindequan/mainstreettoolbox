@@ -1,0 +1,517 @@
+{
+ "house-cleaning": {
+  "label": "House Cleaning",
+  "terms": "Prices assume a standard home; adjust for size, condition and pets. Recurring visits billed at the agreed frequency.",
+  "items": [
+   {
+    "d": "Standard Clean (2BR/1BA)",
+    "n": "Dusting, vacuum, kitchen surfaces, bathrooms, floors",
+    "p": 120.0
+   },
+   {
+    "d": "Deep Clean (2BR/1BA)",
+    "n": "Standard + baseboards, inside appliances, fixtures",
+    "p": 220.0
+   },
+   {
+    "d": "Move-In / Move-Out",
+    "n": "Empty-home full detail, cabinets in & out",
+    "p": 250.0
+   },
+   {
+    "d": "Inside Oven",
+    "n": "Add-on",
+    "p": 35.0
+   },
+   {
+    "d": "Inside Fridge",
+    "n": "Add-on",
+    "p": 35.0
+   },
+   {
+    "d": "Interior Windows",
+    "n": "Add-on, per window",
+    "p": 8.0
+   },
+   {
+    "d": "Laundry & Folding",
+    "n": "Per load, wash + dry + fold",
+    "p": 15.0
+   },
+   {
+    "d": "Pet Hair Upgrade",
+    "n": "Heavy shedding households",
+    "p": 25.0
+   },
+   {
+    "d": "Carpet Spot Treatment",
+    "n": "Per room",
+    "p": 30.0
+   }
+  ]
+ },
+ "lawn-care-mowing": {
+  "label": "Lawn Care & Mowing",
+  "terms": "Estimate valid 30 days. Season runs roughly April\u2013November. Materials billed at cost; weather may shift visits.",
+  "items": [
+   {
+    "d": "Mow & Blow (up to 1/4 acre)",
+    "n": "Mow, clippings blown off drives & walks",
+    "p": 45.0
+   },
+   {
+    "d": "Mow & Blow (1/4 - 1/2 acre)",
+    "n": "Includes edging along walks",
+    "p": 60.0
+   },
+   {
+    "d": "Full Service (1/2 acre+)",
+    "n": "Mow, edge, trim, blow",
+    "p": 75.0
+   },
+   {
+    "d": "Edging Only",
+    "n": "Driveways, walks, beds",
+    "p": 25.0
+   },
+   {
+    "d": "Leaf Removal",
+    "n": "Per hour, two crew",
+    "p": 50.0
+   },
+   {
+    "d": "Mulch Installation",
+    "n": "Labor only; materials at cost",
+    "p": 75.0
+   },
+   {
+    "d": "Hedge & Shrub Trimming",
+    "n": "Per hour, cleanup included",
+    "p": 60.0
+   },
+   {
+    "d": "Weed Eating",
+    "n": "Fence lines, beds, obstacles",
+    "p": 30.0
+   },
+   {
+    "d": "Fertilization",
+    "n": "Per application",
+    "p": 55.0
+   },
+   {
+    "d": "Spring / Fall Cleanup",
+    "n": "Leaves, debris, bed cleanup",
+    "p": 150.0
+   }
+  ]
+ },
+ "hair-salon": {
+  "label": "Hair Salon",
+  "terms": "Prices vary by hair length and thickness; color requires a consultation. Quote valid on the day of service.",
+  "items": [
+   {
+    "d": "Women's Haircut",
+    "n": "Consult, shampoo, cut, blow-dry",
+    "p": 65.0
+   },
+   {
+    "d": "Men's Haircut",
+    "n": "Clipper or scissor cut, neckline shave",
+    "p": 40.0
+   },
+   {
+    "d": "Kids' Cut (under 12)",
+    "n": "",
+    "p": 30.0
+   },
+   {
+    "d": "Blowout",
+    "n": "Shampoo + style",
+    "p": 45.0
+   },
+   {
+    "d": "Full Color",
+    "n": "Single process, includes blowout",
+    "p": 120.0
+   },
+   {
+    "d": "Root Touch-Up",
+    "n": "Single process, regrowth only",
+    "p": 75.0
+   },
+   {
+    "d": "Balayage",
+    "n": "Hand-painted highlights + toner",
+    "p": 180.0
+   },
+   {
+    "d": "Partial Highlights",
+    "n": "",
+    "p": 110.0
+   },
+   {
+    "d": "Full Highlights",
+    "n": "",
+    "p": 150.0
+   },
+   {
+    "d": "Deep Conditioning",
+    "n": "Add-on treatment",
+    "p": 35.0
+   },
+   {
+    "d": "Occasion Styling",
+    "n": "Updo / event styling",
+    "p": 85.0
+   }
+  ]
+ },
+ "barber-shop": {
+  "label": "Barber Shop",
+  "terms": "Prices confirmed at chair; extras as listed. Walk-ins and appointments welcome.",
+  "items": [
+   {
+    "d": "Classic Cut",
+    "n": "Clipper + scissor, hot foam neck shave",
+    "p": 35.0
+   },
+   {
+    "d": "Cut + Beard Combo",
+    "n": "Haircut plus full beard sculpt",
+    "p": 50.0
+   },
+   {
+    "d": "Beard Trim & Lineup",
+    "n": "Shape, razor lineup, oil",
+    "p": 20.0
+   },
+   {
+    "d": "Hot Towel Shave",
+    "n": "Traditional straight razor",
+    "p": 40.0
+   },
+   {
+    "d": "Kids' Cut (under 12)",
+    "n": "",
+    "p": 25.0
+   },
+   {
+    "d": "Senior Cut (65+)",
+    "n": "",
+    "p": 25.0
+   },
+   {
+    "d": "Buzz Cut",
+    "n": "One guard all over, edges cleaned",
+    "p": 20.0
+   },
+   {
+    "d": "Design / Freestyle",
+    "n": "Per design, added to any cut",
+    "p": 15.0
+   },
+   {
+    "d": "Shampoo",
+    "n": "Add-on",
+    "p": 10.0
+   }
+  ]
+ },
+ "nail-salon": {
+  "label": "Nail Salon",
+  "terms": "Prices depend on nail condition and design complexity; a short consultation confirms the final price.",
+  "items": [
+   {
+    "d": "Classic Manicure",
+    "n": "Shape, cuticle care, polish",
+    "p": 30.0
+   },
+   {
+    "d": "Gel Manicure",
+    "n": "Shellac-type, 2-week wear",
+    "p": 45.0
+   },
+   {
+    "d": "Classic Pedicure",
+    "n": "Soak, scrub, callus care, polish",
+    "p": 40.0
+   },
+   {
+    "d": "Gel Pedicure",
+    "n": "Pedicure with gel polish",
+    "p": 55.0
+   },
+   {
+    "d": "Acrylic Full Set",
+    "n": "Tips or sculpted, any shape",
+    "p": 65.0
+   },
+   {
+    "d": "Acrylic Fill",
+    "n": "2-3 week backfill",
+    "p": 45.0
+   },
+   {
+    "d": "Gel-X Extensions",
+    "n": "Soft gel tip extensions",
+    "p": 75.0
+   },
+   {
+    "d": "Nail Art",
+    "n": "Per nail, hand-painted or decals",
+    "p": 5.0
+   },
+   {
+    "d": "Polish Change (Hands)",
+    "n": "No cuticle work",
+    "p": 15.0
+   },
+   {
+    "d": "Kids' Mani / Pedi",
+    "n": "Under 10, gentle polish",
+    "p": 25.0
+   }
+  ]
+ },
+ "dog-walking-pet-sitting": {
+  "label": "Dog Walking & Pet Sitting",
+  "terms": "Keys kept confidential; holiday dates may carry a surcharge. Cancellations within 24 hours may be billed.",
+  "items": [
+   {
+    "d": "Walk - 30 Minutes",
+    "n": "One household, same-gender dogs only",
+    "p": 25.0
+   },
+   {
+    "d": "Walk - 60 Minutes",
+    "n": "",
+    "p": 40.0
+   },
+   {
+    "d": "Drop-In Visit",
+    "n": "Feed, water, potty, play",
+    "p": 25.0
+   },
+   {
+    "d": "Puppy Visit",
+    "n": "Under 6 months, extra attention",
+    "p": 20.0
+   },
+   {
+    "d": "Pet Sitting (per night)",
+    "n": "Evening + morning visits at your home",
+    "p": 75.0
+   },
+   {
+    "d": "Overnight in Your Home",
+    "n": "Sitter stays 8pm-7am",
+    "p": 100.0
+   },
+   {
+    "d": "Medication Admin",
+    "n": "Pills or injections, per visit",
+    "p": 5.0
+   },
+   {
+    "d": "Nail Trim",
+    "n": "Add-on",
+    "p": 15.0
+   }
+  ]
+ },
+ "handyman-services": {
+  "label": "Handyman Services",
+  "terms": "Labor billed as quoted; parts at cost plus handling. Small jobs carry a trip charge. Estimate valid 30 days.",
+  "items": [
+   {
+    "d": "First Hour",
+    "n": "1-hour minimum, covers any small task",
+    "p": 85.0
+   },
+   {
+    "d": "Each Additional Hour",
+    "n": "",
+    "p": 65.0
+   },
+   {
+    "d": "TV Mounting",
+    "n": "Up to 75 inch, bracket installed",
+    "p": 120.0
+   },
+   {
+    "d": "Furniture Assembly",
+    "n": "Per item",
+    "p": 60.0
+   },
+   {
+    "d": "Shelf / Art Hanging",
+    "n": "Per item, anchors included",
+    "p": 20.0
+   },
+   {
+    "d": "Interior Door Install",
+    "n": "Replace slab or pre-hung",
+    "p": 95.0
+   },
+   {
+    "d": "Faucet Replacement",
+    "n": "Kitchen or bath, customer fixture",
+    "p": 110.0
+   },
+   {
+    "d": "Toilet Install",
+    "n": "Remove old, set new, new supply line",
+    "p": 150.0
+   },
+   {
+    "d": "Drywall Patch & Paint",
+    "n": "Patch up to 12 in, one coat paint",
+    "p": 85.0
+   },
+   {
+    "d": "Gutter Cleaning",
+    "n": "Single story, up to 200 linear ft",
+    "p": 125.0
+   }
+  ]
+ },
+ "auto-detailing": {
+  "label": "Auto Detailing",
+  "terms": "Prices vary by vehicle size and condition; heavy soiling and pet hair may add cost. Estimate confirmed on arrival.",
+  "items": [
+   {
+    "d": "Basic Exterior Wash",
+    "n": "Hand wash, wheels, dry, tire shine",
+    "p": 35.0
+   },
+   {
+    "d": "Wash + Interior Vacuum",
+    "n": "Exterior wash, full vacuum, dash wipe",
+    "p": 70.0
+   },
+   {
+    "d": "Full Interior Detail",
+    "n": "Shampoo carpets & seats, steam, dressing",
+    "p": 150.0
+   },
+   {
+    "d": "Full Exterior Detail",
+    "n": "Clay bar, machine polish, sealant",
+    "p": 130.0
+   },
+   {
+    "d": "Complete Detail",
+    "n": "Interior + exterior package",
+    "p": 250.0
+   },
+   {
+    "d": "Engine Bay Clean",
+    "n": "Degrease + dressing",
+    "p": 50.0
+   },
+   {
+    "d": "Headlight Restoration",
+    "n": "Per pair",
+    "p": 60.0
+   },
+   {
+    "d": "Ceramic Spray Wax",
+    "n": "6-month sealant",
+    "p": 90.0
+   },
+   {
+    "d": "Pet Hair Removal",
+    "n": "Heavy hair, add to any package",
+    "p": 40.0
+   }
+  ]
+ },
+ "photography": {
+  "label": "Photography",
+  "terms": "Retainer due to book; balance before files release. Travel beyond 25 miles billed separately. Turnaround times as noted.",
+  "items": [
+   {
+    "d": "Portrait Session",
+    "n": "1 hour, 1 location, 15 edited images",
+    "p": 250.0
+   },
+   {
+    "d": "Professional Headshots",
+    "n": "30 min, 5 retouched images",
+    "p": 175.0
+   },
+   {
+    "d": "Family Session",
+    "n": "90 min, 25 edited images",
+    "p": 325.0
+   },
+   {
+    "d": "Event Coverage",
+    "n": "Per hour, 50+ edited images per hour",
+    "p": 200.0
+   },
+   {
+    "d": "Wedding Collection",
+    "n": "8 hrs, 2 photographers, 500+ images",
+    "p": 2.0
+   },
+   {
+    "d": "Real Estate Shoot",
+    "n": "Up to 2,500 sq ft, 25 photos, 24-hr delivery",
+    "p": 225.0
+   },
+   {
+    "d": "Product Photography",
+    "n": "Per 10 items, white or lifestyle",
+    "p": 300.0
+   },
+   {
+    "d": "Extra Edited Image",
+    "n": "Add-on to any session",
+    "p": 25.0
+   }
+  ]
+ },
+ "home-tutoring": {
+  "label": "Home Tutoring",
+  "terms": "Packages paid in advance; cancellations require 24 hours' notice. Make-up sessions scheduled within the term.",
+  "items": [
+   {
+    "d": "1-on-1 Session",
+    "n": "60 minutes, any K-12 subject",
+    "p": 60.0
+   },
+   {
+    "d": "Online Session",
+    "n": "60 minutes via video call",
+    "p": 55.0
+   },
+   {
+    "d": "Small Group (per student)",
+    "n": "2-4 students, same subject",
+    "p": 35.0
+   },
+   {
+    "d": "Test Prep Package",
+    "n": "4 sessions + practice materials",
+    "p": 220.0
+   },
+   {
+    "d": "Essay Review",
+    "n": "Written feedback within 48 hrs",
+    "p": 40.0
+   },
+   {
+    "d": "Initial Assessment",
+    "n": "Skills evaluation + study plan",
+    "p": 45.0
+   },
+   {
+    "d": "Travel Surcharge",
+    "n": "Beyond 10 miles, per session",
+    "p": 10.0
+   }
+  ]
+ }
+}
