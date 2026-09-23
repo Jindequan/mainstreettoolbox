@@ -1,0 +1,207 @@
+{
+ "federal": 7.25,
+ "year": 2026,
+ "source": "Wikipedia: Minimum wage in the United States (state tables, cross-checked citations), Sep 2026",
+ "states": {
+  "Alabama": {
+   "rate": 7.25,
+   "note": "No state minimum; federal $7.25 applies to workers covered by FLSA."
+  },
+  "Alaska": {
+   "rate": 14.0,
+   "note": ""
+  },
+  "Arizona": {
+   "rate": 15.15,
+   "note": ""
+  },
+  "Arkansas": {
+   "rate": 11.0,
+   "note": ""
+  },
+  "California": {
+   "rate": 16.9,
+   "note": "$16.90 state minimum; some cities and counties set higher local rates."
+  },
+  "Colorado": {
+   "rate": 15.16,
+   "note": ""
+  },
+  "Connecticut": {
+   "rate": 16.94,
+   "note": ""
+  },
+  "Delaware": {
+   "rate": 15.0,
+   "note": ""
+  },
+  "Florida": {
+   "rate": 14.0,
+   "note": ""
+  },
+  "Georgia": {
+   "rate": 7.25,
+   "note": "State law sets $5.15; most employers are covered by the federal $7.25 minimum."
+  },
+  "Hawaii": {
+   "rate": 16.0,
+   "note": ""
+  },
+  "Idaho": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "Illinois": {
+   "rate": 15.0,
+   "note": ""
+  },
+  "Indiana": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "Iowa": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "Kansas": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "Kentucky": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "Louisiana": {
+   "rate": 7.25,
+   "note": "No state minimum; federal $7.25 applies to workers covered by FLSA."
+  },
+  "Maine": {
+   "rate": 15.1,
+   "note": ""
+  },
+  "Maryland": {
+   "rate": 15.0,
+   "note": ""
+  },
+  "Massachusetts": {
+   "rate": 15.0,
+   "note": ""
+  },
+  "Michigan": {
+   "rate": 13.73,
+   "note": ""
+  },
+  "Minnesota": {
+   "rate": 11.41,
+   "note": "$11.41 for large employers; small-employer and youth rates are lower."
+  },
+  "Mississippi": {
+   "rate": 7.25,
+   "note": "No state minimum; federal $7.25 applies to workers covered by FLSA."
+  },
+  "Missouri": {
+   "rate": 15.0,
+   "note": ""
+  },
+  "Montana": {
+   "rate": 10.85,
+   "note": ""
+  },
+  "Nebraska": {
+   "rate": 15.0,
+   "note": ""
+  },
+  "Nevada": {
+   "rate": 12.0,
+   "note": "$12.00; employers offering qualifying health insurance may apply a lower tier \u2014 verify current rules."
+  },
+  "New Hampshire": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "New Jersey": {
+   "rate": 15.92,
+   "note": "$15.92 standard; $14.20 agricultural. Seasonal/small-employer rules may differ."
+  },
+  "New Mexico": {
+   "rate": 12.0,
+   "note": ""
+  },
+  "New York": {
+   "rate": 16.0,
+   "note": ""
+  },
+  "North Carolina": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "North Dakota": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "Ohio": {
+   "rate": 11.0,
+   "note": ""
+  },
+  "Oklahoma": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "Oregon": {
+   "rate": 15.55,
+   "note": "Standard $15.55; rural counties $14.55; Portland metro $16.80."
+  },
+  "Pennsylvania": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "Rhode Island": {
+   "rate": 16.0,
+   "note": ""
+  },
+  "South Carolina": {
+   "rate": 7.25,
+   "note": "No state minimum; federal $7.25 applies to workers covered by FLSA."
+  },
+  "South Dakota": {
+   "rate": 11.85,
+   "note": ""
+  },
+  "Tennessee": {
+   "rate": 7.25,
+   "note": "No state minimum; federal $7.25 applies to workers covered by FLSA."
+  },
+  "Texas": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "Utah": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "Vermont": {
+   "rate": 14.42,
+   "note": ""
+  },
+  "Virginia": {
+   "rate": 12.77,
+   "note": ""
+  },
+  "Washington": {
+   "rate": 17.13,
+   "note": ""
+  },
+  "West Virginia": {
+   "rate": 8.75,
+   "note": ""
+  },
+  "Wisconsin": {
+   "rate": 7.25,
+   "note": ""
+  },
+  "Wyoming": {
+   "rate": 7.25,
+   "note": "State law sets $5.15; most employers are covered by the federal $7.25 minimum."
+  }
+ }
+}

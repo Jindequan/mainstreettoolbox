@@ -1,0 +1,173 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const updated = 'September 2026';
+
+const faqs = [
+  {
+    q: 'What is the minimum wage in my state in 2026?',
+    a: 'Pick your state in the calculator above for its current 2026 rate, from $7.25 in states that follow the federal floor up to $17.13 in Washington. Workers receive whichever is higher, federal or state, and some cities and counties set rates above their state.',
+  },
+  {
+    q: 'Do I get the federal or the state minimum wage?',
+    a: 'Whichever is higher and applies to your work. The federal minimum is $7.25; every state with a higher rate pays that higher rate. In states with no state minimum or a rate below $7.25, most employees of businesses covered by the Fair Labor Standards Act still receive the federal $7.25.',
+  },
+  {
+    q: 'How much is minimum wage a year full time?',
+    a: 'At 40 hours per week for 52 weeks, the federal $7.25 minimum is $15,080 before taxes. The calculator shows the full-time annual figure for every state — for example $35,630.40 at Washington’s $17.13 rate.',
+  },
+  {
+    q: 'What about tipped workers?',
+    a: 'Tipped employees have a separate, lower direct cash wage under federal rules ($2.13 per hour), provided tips bring total pay up to the full minimum; if they do not, the employer must make up the difference. Many states set a higher tipped wage, and a few require the full minimum before tips. Check your state labor office for its exact rule.',
+  },
+  {
+    q: 'Can my city pay a higher minimum than the state?',
+    a: 'Yes. Many cities and counties — for example Portland metro employers in Oregon, and numerous California cities — enforce local minimums above the state rate. When local and state rates differ, the highest applicable one is paid.',
+  },
+  {
+    q: 'Are these rates going to change?',
+    a: 'A number of states adjust their minimum automatically each January based on inflation, and others have scheduled increases under existing law. The rates shown are the ones in force in 2026; verify a January or mid-year change with your state labor department before relying on a figure next year.',
+  },
+];
+
+const appSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: '2026 Minimum Wage Calculator by State',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Web',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  description:
+    'Free 2026 minimum wage calculator by state: current federal and state rates, weekly, monthly and annual pay, city and tipped rules noted. No signup.',
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+<BaseLayout
+  title="Minimum Wage Calculator 2026 by State — Weekly & Yearly Pay | Main Street Toolbox"
+  description="Free 2026 minimum wage calculator by state: pick your state for the current rate, see weekly, monthly and yearly pay, federal vs state difference, city and tipped rules. No signup."
+  path="/minimum-wage-calculator/"
+>
+  <div class="tool-hero">
+    <div class="container">
+      <p class="eyebrow">Free tool · {updated}</p>
+      <h1>Minimum wage calculator 2026</h1>
+      <p class="sub">
+        Pick your state for the <b>current minimum wage</b>, enter your hours, and see weekly,
+        monthly and yearly pay — plus how it compares to the federal $7.25 floor. Free, no signup.
+      </p>
+    </div>
+  </div>
+
+  <main class="container">
+    <div id="minWageApp" class="app-grid">
+      <section class="app-editor" aria-label="Minimum wage calculator inputs">
+        <fieldset class="card-block">
+          <legend>Your inputs</legend>
+          <label class="block-label">State
+            <select id="stateSelect"></select>
+          </label>
+          <label class="block-label">Hours worked per week
+            <input id="hoursInput" type="number" min="0" max="100" step="1" />
+          </label>
+          <p class="hint">Change the state or hours — everything on the right updates instantly.</p>
+        </fieldset>
+
+        <div class="explain-card">
+          <h2>How US minimum wage works</h2>
+          <p>The federal minimum is <b>$7.25 per hour</b>, unchanged since 2009. States (and many
+          cities) can set a higher rate, and you are paid the <b>highest rate that applies</b> to
+          your job. In the five states with no minimum of their own, and in Georgia and Wyoming
+          where state law sits below $7.25, federally covered workers still receive $7.25.</p>
+          <p class="related">Run a job's numbers with the
+          <a href="/estimate-generator/">estimate generator</a> or work out driving deductions on
+          the <a href="/mileage-deduction-calculator/">mileage log</a>.</p>
+        </div>
+      </section>
+
+      <aside class="app-preview" aria-label="Calculation results">
+        <div id="results" class="results-card"></div>
+      </aside>
+    </div>
+
+    <section class="guide">
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        {faqs.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify(appSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script>
+    import { initMinWageApp } from '../scripts/minWageApp';
+    initMinWageApp(document.getElementById('minWageApp')!);
+  </script>
+</BaseLayout>
+
+<style>
+:global(.container) { width: min(100% - 2rem, 1120px); margin-inline: auto; }
+
+.tool-hero { padding: 2.2rem 0 .6rem; }
+.tool-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 2.8rem); margin: .3rem 0 .5rem; }
+.tool-hero .sub { max-width: 46rem; color: var(--ink-2); font-size: 1.08rem; }
+.eyebrow { color: var(--green); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; }
+
+.app-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 1.6rem; align-items:start; padding: 1.2rem 0 2.5rem; }
+.app-preview { position: sticky; top: 1rem; }
+
+.card-block { border: 1.5px solid var(--line-2); border-radius: 10px; padding: 1rem 1.1rem 1.1rem; margin: 0 0 1rem; background: var(--card); }
+.card-block legend { font-weight: 650; font-size: .92rem; padding: 0 .35rem; }
+label { font-size: .82rem; font-weight: 600; color: var(--ink-2); display: flex; flex-direction: column; gap: .3rem; }
+.block-label { margin-bottom: .8rem; }
+select, input { font: inherit; font-weight: 400; color: var(--ink); border: 1.5px solid var(--line-2); border-radius: 7px; padding: .5rem .6rem; background: var(--paper); width: 100%; }
+select:focus, input:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px rgba(47,94,70,.12); }
+.hint { font-size: .78rem; color: var(--ink-3); margin: .2rem 0 0; }
+
+.explain-card { border: 1.5px solid var(--line-2); border-radius: 10px; padding: 1rem 1.15rem; background: var(--card); }
+.explain-card h2 { font-family: var(--font-display); font-size: 1.1rem; margin: 0 0 .5rem; }
+.explain-card p { color: var(--ink-2); font-size: .9rem; margin: .4rem 0; }
+.related { font-size: .84rem !important; }
+
+.results-card { display: flex; flex-direction: column; gap: .9rem; }
+.rate-card { background: var(--green); color: #fdfbf4; border-radius: 10px; padding: 1.2rem 1.3rem; text-align: center; }
+.rate-big { font-family: var(--font-display); font-size: 2.6rem; font-weight: 700; margin: 0; }
+.rate-big span { font-size: 1rem; font-weight: 400; color: rgba(253,251,244,.75); }
+.rate-lbl { margin: .25rem 0 0; font-size: .84rem; color: rgba(253,251,244,.82); }
+
+.pay-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; }
+.pay-grid div { border: 1.5px solid var(--line-2); border-radius: 9px; padding: .7rem .6rem; text-align: center; background: var(--card); }
+.pay-grid .k { font-size: .72rem; color: var(--ink-3); margin: 0 0 .2rem; }
+.pay-grid .v { font-weight: 700; font-size: 1.05rem; margin: 0; font-variant-numeric: tabular-nums; }
+
+.extra { border: 1.5px solid var(--line-2); border-radius: 10px; padding: .8rem 1rem; background: var(--card); }
+.extra p { display: flex; justify-content: space-between; gap: 1rem; margin: .35rem 0; font-size: .84rem; color: var(--ink-2); }
+.extra b { color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.extra .hl b { color: var(--green); }
+.note { font-size: .8rem; color: var(--ink-2); border-left: 3px solid var(--green); padding: .35rem 0 .35rem .7rem; margin: .3rem 0 0; }
+
+.guide { border-top: 1.5px solid var(--line); padding: 2rem 0 1rem; }
+.guide h2 { font-family: var(--font-display); }
+.faq details { border-bottom: 1px solid var(--line-2); padding: .6rem 0; }
+.faq summary { font-weight: 600; cursor: pointer; }
+.faq p { color: var(--ink-2); margin: .5rem 0 0; }
+
+@media (max-width: 900px) {
+  .app-grid { grid-template-columns: 1fr; }
+  .app-preview { position: static; }
+  .pay-grid { grid-template-columns: 1fr; }
+}
+</style>

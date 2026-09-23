@@ -96,6 +96,9 @@ const searchIndex = [
         <a class="most-row" href="/mileage-deduction-calculator/">
           <span class="most-rank">2</span><b>2026 Mileage Deduction Calculator</b><span class="tag">Taxes</span>
         </a>
+        <a class="most-row" href="/minimum-wage-calculator/">
+          <span class="most-rank">3</span><b>Minimum Wage Calculator by State</b><span class="tag">Payroll</span>
+        </a>
         {TOOLS.slice(0, 4).map((t) => (
           <a class="most-row" href={`/${t.industry}/${t.slug}/`} data-stats-slug={t.slug}>
             <span class="most-rank">·</span><b>{t.name}</b><span class="tag">{INDUSTRY_META[t.industry]?.name ?? 'Tool'}</span>
