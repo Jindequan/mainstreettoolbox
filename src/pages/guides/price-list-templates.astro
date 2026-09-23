@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Paste the live Ko-fi product URL here after publishing the listing
+// (Ko-fi → Shop → your product → Copy link). Empty = buy button not live yet.
+const KOFI_URL = '';
+const PRICE = 5;
+const updated = 'September 2026';
+
+const industries = [
+  ['House Cleaning', 'Standard/deep clean, add-ons, windows'],
+  ['Lawn Care & Mowing', 'Mowing sizes, aeration, leaf removal'],
+  ['Hair Salon', 'Cut, color, highlights, treatments'],
+  ['Barber Shop', 'Cuts, beard, hot towel, kids'],
+  ['Nail Salon', 'Manicure, pedicure, gel, acrylic'],
+  ['Dog Walking & Pet Sitting', 'Walks, drop-ins, overnight sitting'],
+  ['Handyman', 'Repairs, mounting, small jobs by hour'],
+  ['Auto Detailing', 'Interior/exterior, wax, add-ons'],
+  ['Photography', 'Sessions, edits, prints, packages'],
+  ['Home Tutoring', 'Subjects, packages, test prep'],
+];
+---
+<BaseLayout
+  title="Small Business Price List Templates: 10 Printable Packs (PDF + Editable) — Main Street Toolbox"
+  description="10 print-ready price list templates for cleaning, lawn care, salons, pet sitting, handyman and more — realistic 2026 US sample prices, blank rows for your services, PDF plus editable CSV. Instant download, $5."
+  path="/guides/price-list-templates/"
+>
+  <div class="prose">
+    <p class="eyebrow">Done-for-you templates · {updated}</p>
+    <h1>Small business price list templates — 10 printable packs</h1>
+    <p class="lead">Stop quoting from memory. Hand every client a clean, professional price list with
+    realistic 2026 US prices already filled in — edit your business name and your prices, print or
+    send. Ten service industries covered, instant download.</p>
+
+    <div class="buy-box">
+      <div>
+        <p class="price"><span class="amt">${PRICE}</span> <span class="once">one-time · instant download</span></p>
+        <p class="formats">10-page print-ready PDF + 10 editable CSV files (Excel / Google Sheets)</p>
+      </div>
+      {KOFI_URL ? (
+        <a class="btn-primary buy-btn" href={KOFI_URL} target="_blank" rel="noopener">Get the 10-pack — ${PRICE}</a>
+      ) : (
+        <a class="btn-primary buy-btn" aria-disabled="true" href="#coming-soon">Buy link coming soon</a>
+      )}
+    </div>
+
+    <h2>What's inside: one template per business</h2>
+    <p>Each pack covers the ten-plus services customers actually ask about in that trade, priced at
+    typical 2026 US ranges, with blank rows for your signature services. Business name and
+    effective-date fields on every page, clean Letter layout that prints without fiddling.</p>
+    <div class="grid">
+      {industries.map(([name, items]) => (
+        <div class="cell">
+          <h3>{name}</h3>
+          <p>{items}</p>
+        </div>
+      ))}
+    </div>
+
+    <h2>See the templates</h2>
+    <div class="gallery">
+      <a href="/price-list-pack/qa-page1.png" target="_blank" rel="noopener">
+        <img src="/price-list-pack/qa-page1.png" alt="Printable house cleaning price list template with sample prices" width="320" height="413" loading="lazy" />
+      </a>
+      <a href="/price-list-pack/qa-page2.png" target="_blank" rel="noopener">
+        <img src="/price-list-pack/qa-page2.png" alt="Editable CSV price list template opened in a spreadsheet" width="320" height="413" loading="lazy" />
+      </a>
+      <a href="/price-list-pack/qa-page10.png" target="_blank" rel="noopener">
+        <img src="/price-list-pack/qa-page10.png" alt="Home tutoring price list template page" width="320" height="413" loading="lazy" />
+      </a>
+    </div>
+
+    <h2>How to use them</h2>
+    <ol>
+      <li><b>Print as-is:</b> open the PDF, page to your industry, print and post — sample prices are realistic, blank rows let you add your own by hand.</li>
+      <li><b>Or edit first:</b> open the matching CSV in Excel or Google Sheets, set your prices and business name, then print or save as PDF from the spreadsheet.</li>
+      <li><b>Send digitally:</b> the same file emails cleanly to clients who ask "what do you charge?" before booking.</li>
+    </ol>
+
+    <h2>Questions</h2>
+    <div class="faq">
+      <details><summary>Are the sample prices real?</summary><p>Yes — they reflect typical 2026 US residential/small-business ranges for each service. Prices vary a lot by city and neighborhood, so treat them as a starting baseline and adjust to your market rather than inventing numbers from scratch.</p></details>
+      <details><summary>What format are the files?</summary><p>A 10-page PDF (US Letter, one industry per page, print-ready) plus a ZIP of 10 CSV files — one per industry, editable in Excel, Google Sheets or any spreadsheet. Both download instantly after checkout.</p></details>
+      <details><summary>Can I add services that aren't listed?</summary><p>Every template has blank rows for exactly that. In the CSV you can add as many lines as you need; the printed pages have room for roughly five extras per page.</p></details>
+      <details><summary>Is this a subscription?</summary><p>No — one ${PRICE} payment, yours to keep and reuse across reprints and price updates. No account on this site, no renewal.</p></details>
+    </div>
+
+    <div class="final-cta" id="coming-soon">
+      <h2>Put a price list in clients' hands today</h2>
+      {KOFI_URL ? (
+        <a class="btn-primary buy-btn" href={KOFI_URL} target="_blank" rel="noopener">Get all 10 templates — ${PRICE}</a>
+      ) : (
+        <p class="note">Checkout is being switched on — meanwhile use our <a href="/tools/">free pricing tools</a>.</p>
+      )}
+    </div>
+  </div>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Small Business Price List Templates — 10 Printable Packs',
+    description: 'Ten print-ready price list templates with realistic 2026 US sample prices plus editable CSV files for service businesses.',
+    image: ['https://mainstreettoolbox.com/price-list-pack/preview-small.jpg'],
+    brand: { '@type': 'Brand', name: 'Main Street Toolbox' },
+    offers: {
+      '@type': 'Offer',
+      price: PRICE.toFixed(2),
+      priceCurrency: 'USD',
+      availability: KOFI_URL ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder',
+      url: 'https://mainstreettoolbox.com/guides/price-list-templates/',
+    },
+  })} />
+</BaseLayout>
+
+<style>
+.lead { font-size: 1.125rem; color: var(--ink-2); }
+.buy-box {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.25rem;
+  flex-wrap: wrap; margin: 1.75rem 0; padding: 1.25rem 1.5rem;
+  border: 1.5px solid var(--line-2); border-radius: var(--r-m, 12px);
+  background: var(--card);
+}
+.price { margin: 0; }
+.amt { font-family: var(--font-display); font-size: 2rem; font-weight: 700; }
+.once { color: var(--ink-2); font-size: .95rem; margin-left: .4rem; }
+.formats { margin: .25rem 0 0; font-size: .9rem; color: var(--ink-2); }
+.buy-btn { height: 52px; padding: 0 26px; font-size: 1.05rem; display: inline-flex; align-items: center; }
+.buy-btn[aria-disabled="true"] { opacity: .55; pointer-events: none; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: .9rem; margin: 1.25rem 0; }
+.cell { border: 1.5px solid var(--line-2); border-radius: var(--r-s, 8px); padding: .9rem 1rem; background: var(--card); }
+.cell h3 { margin: 0 0 .25rem; font-size: 1rem; }
+.cell p { margin: 0; font-size: .875rem; color: var(--ink-2); }
+.gallery { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.25rem 0; }
+.gallery img { border: 1.5px solid var(--line-2); border-radius: var(--r-s, 8px); display: block; }
+.final-cta { text-align: center; margin: 2.5rem 0 1rem; padding: 2rem 1rem; background: var(--card); border: 1.5px solid var(--line-2); border-radius: var(--r-m, 12px); }
+.final-cta h2 { margin-top: 0; }
+.note { color: var(--ink-2); }
+</style>
