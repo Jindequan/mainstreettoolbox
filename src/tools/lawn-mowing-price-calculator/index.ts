@@ -6,7 +6,7 @@ export default {
   industry: 'lawn',
   name: 'Lawn Mowing Cost Calculator',
   tagline: 'Price any lawn by size and terrain — per mow, month and season. No signup.',
-  title: 'Lawn Mowing Cost Calculator — Free Price Tool | Main Street Toolbox',
+  title: 'Lawn Mowing Cost & Estimate Calculator — Free Price Tool | Main Street Toolbox',
   description: 'How much to charge for lawn mowing: enter lot size, terrain and frequency for a per-visit, monthly and season price against 2026 US rates. Free, instant, no signup.',
   result: { label: 'Price per mow' },
   fields: [

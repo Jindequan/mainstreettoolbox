@@ -6,7 +6,7 @@ export default {
   industry: 'retail',
   name: 'Retail Math Calculator',
   tagline: 'Every formula the shop runs on, live — with a cheat sheet to print. No signup.',
-  title: 'Retail Math Calculator & Cheat Sheet — Free | Main Street Toolbox',
+  title: 'Retail Math Calculator — Price, Margin & Markup Cheat Sheet | Main Street Toolbox',
   description: 'Retail math, live: price from cost, markup ⇄ margin, markdown check, sell-through and break-even — plus a printable one-page cheat sheet. Free, no signup.',
   result: { label: 'Shelf price' },
   fields: [
