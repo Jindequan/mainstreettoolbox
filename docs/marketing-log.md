@@ -53,6 +53,7 @@
 | 2026-09-20 | 站内 | 运营循环第 13 轮：tutoring 闸 2 查证闭项（Edtonomy/SubSchool 已占位 → 独立工具不做）→ **price-list-builder 加 tutoring 预设**（math $55 / reading $45 / SAT $75，≥2 源）承接 R3 词族 | /salon/service-price-list-builder/?trade=tutoring | ✅ 测试构建全绿 + 部署中；GSC 例行 7d 451/0/75.5、28d 累计 849（三天 +177）；hub 410 rewrites 修复部署中 |
 | 2026-09-21 | 站内 | 运营循环第 14 轮：**food-cost 页加厚上线**（212→636 词，问题式 H3 + Rezku 2026 基准表 + 菜单利润链互链）；GSC 28d 累计 904 展现 | /restaurant/food-cost-percentage-calculator/ | ✅ 生产冒烟 + IndexNow 200；明日 09-22 中检 |
 | 2026-09-22 | 运营循环 | 第 15 轮·**两周判据中检**：判据未达（0 点击），诊断=排名 74 是唯一卡点（展现 904 健康爬升、181 查询全命中）；词形对齐第二批上线（lawn-mowing 吸收 mowing estimate 族） | 状态机中检复盘区 | ✅ 生产 + IndexNow 200；GSC 会话第 3 次过期（结构性问题已提两个方案待用户拍板） |
+| 2026-09-24 | 运营循环 | 第 16 轮·数据观察：GSC 恢复读数（用户重登），28d 1052 展现破千；**收录核对=Indexed 55 页（健康）**；09-15 词形对齐三连全部翻倍验证成功 | 状态机数据日志 | ✅ 无需改动无部署；10-06 判据日 + 10-12 月度复盘 |
 
 ### 外联回复 2026-09-13
 - **Neal（Can We Launch）来信**：经 Show HN 帖子扫站，报 3 项。核实：① GA cookieless 已配置（client_storage none），对方称有 2 个持久 cookie —— 已回信索要 cookie 名复现；② LCP 4.4s / 图片权重**属实** → hero 图已压 ~20%；③ www 双主机**属实** → vercel.json www→apex 308 已上线验证。已回信：澄清+通报修复+婉拒付费报告。**信号：Show HN 渠道带来首个深度外联。**
