@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const updated = 'September 2026';
+---
+<BaseLayout
+  title="How to Reprice Recurring Cleaning Clients (Without Losing Them) — Main Street Toolbox"
+  description="A step-by-step system for repricing recurring cleaning accounts: track real hours per client, find the creep, announce the increase with 30 days notice, tier the rise, and use grandfather locks to keep price-sensitive clients."
+  path="/guides/reprice-recurring-clients/"
+>
+  <div class="prose">
+    <p class="eyebrow">Operations guide · {updated}</p>
+    <h1>How to reprice recurring cleaning clients</h1>
+    <p><b>The short answer:</b> track actual hours per account, compare against your target hourly, announce
+    increases 30 days out with a specific date, tier the rise (underpriced accounts take more, fair ones take
+    less), and offer a grandfather lock for price-sensitive clients. Most owners who "feel" an account is bad
+    are right — but two quarters late, because creep is gradual.</p>
+
+    <h2>Step 1: catch the creep with three columns</h2>
+    <p>On your schedule sheet, keep three numbers per recurring account: <b>monthly price, actual hours worked
+    (written down at the end of each visit, not estimated), and price ÷ real hours</b>. At month end, any
+    account below your target hourly goes on the repricing list.</p>
+    <p>For solo residential work, most cleaners need <b>$45–60/hour loaded</b> to actually survive — wage,
+    taxes, insurance, supplies and drive time all come out of that number. An account that pencils at $28/hour
+    isn't a client; it's a subscription you're paying for.</p>
+
+    <h2>Step 2: know the three ways good accounts go bad</h2>
+    <table>
+      <thead><tr><th>Cause</th><th>How it happens</th><th>The tell</th></tr></thead>
+      <tbody>
+        <tr><td>Labor time drift</td><td>Same rooms, more minutes, every visit — nobody notices 8 extra minutes a week</td><td>Price ÷ real hours has slid over 2–3 months</td></tr>
+        <tr><td>Scope creep</td><td>"While you're here..." requests that never come with a price</td><td>The task list on the quote no longer matches reality</td></tr>
+        <tr><td>Drive time</td><td>20 minutes each way eats a full hour of weekly capacity</td><td>Two accounts, same price, one takes 5 hrs the other 9</td></tr>
+      </tbody>
+    </table>
+    <p>Callbacks and re-cleans are the hidden column almost nobody tracks — one free re-do can erase a month
+    of margin on a small account. Log them like any other visit. And the uncomfortable one: <b>your oldest
+    accounts are usually your worst</b>, precisely because loyalty makes you rationalize what the hours math
+    would flag immediately.</p>
+
+    <h2>Step 3: the reprice process</h2>
+    <p>A reprice is a <b>process, not a conversation</b>. The structure that works:</p>
+    <ol>
+      <li><b>Announce a pricing review</b> — not a surprise. New rate effective next quarter.</li>
+      <li><b>30 days written notice</b> with the specific date. Specific dates get paid faster and argued less than "next month".</li>
+      <li><b>The email says four things:</b> why (real costs, specifically), what (the new rate), when (the exact date), and what-if (one contact for questions).</li>
+      <li><b>Tier the increase.</b> If you're repricing at scale, don't do a flat 10%: the accounts you've been underpricing for a year take 12–15%, the fairly-priced ones take 4–5%, the overpriced ones take nothing. Same total revenue impact, half the churn risk.</li>
+      <li><b>If the gap is over ~20%, unbundle instead.</b> Keep the base price, put the extras (interior windows, fridge, pet hair) on a priced add-on list and let the client choose what their budget buys. You'll be surprised how many pick the add-ons — which tells you the account was never the problem, the scope was.</li>
+    </ol>
+
+    <h2>Step 4: the grandfather lock</h2>
+    <p>The lever almost nobody uses: offer to <b>lock the current rate for 12 months in exchange for an annual
+    commitment</b> (paid upfront or on contract). A meaningful chunk of your price-sensitive clients take it —
+    which is upfront cash for you and guaranteed retention — while the rest move to the new rate without a
+    fight.</p>
+    <p>Expect the cancellation calls in the two weeks after notices go out, not on the effective date. Have one
+    scripted concession ready (midpoint rate, or the old rate for quarterly prepay) — most callers just want to
+    feel heard once.</p>
+
+    <h2>Step 5: raise more than you think you need</h2>
+    <p>Going back for another 5% next year hurts twice. Operators who price in <b>8–10% annual steps train
+    their market</b>; the ones who do 3% train their clients to expect a fight every time. The increase funds
+    the next year's wage rise — if you skip it, you're the one paying it.</p>
+
+    <h2>Run the numbers</h2>
+    <p>Two tools carry the math: the <a href="/restaurant/labor-cost-calculator/">Labor Cost Percentage
+    Calculator</a> shows what your target hourly actually needs to be (fully loaded with taxes and benefits),
+    and the <a href="/cleaning/cleaning-estimate-calculator/">Cleaning Estimate Calculator</a> prices new
+    accounts at the correct band from day one — so the repricing list stays short. Every benchmark band on this
+    page is also on the <a href="/benchmarks/service-pricing-2026/">2026 Service Business Pricing Benchmarks</a>
+    page with sources.</p>
+
+    <h2>Questions owners ask</h2>
+    <div class="faq">
+      <details><summary>How often should I review recurring account profitability?</summary><p>Monthly on the hours column (it's three numbers, five minutes), and a full re-time of every recurring account twice a year. Scope creep is invisible month to month — the six-month mark is where it shows up in the math.</p></details>
+      <details><summary>How much notice before a price increase?</summary><p>30 days minimum for residential, 60 for commercial contracts. The notice must contain the specific effective date — "prices going up next month" creates arguments, "your new rate begins March 1" creates calendar entries.</p></details>
+      <details><summary>What's a reasonable annual increase?</summary><p>8–10% per year is the band that keeps pace with wage growth without re-arguing every year. Under 5% reads as negotiable; over 15% on a fair-priced account reads as greedy. Tier it — underpriced accounts can take 15%+ precisely because they were wrong to begin with.</p></details>
+      <details><summary>Should I ever fire a client instead of repricing?</summary><p>Yes, sometimes. If the account needs more than a 20% correction AND the client is difficult, the polite version of firing is the unbundle offer — they either accept a properly scoped price or self-select out. Don't keep an account that costs you money out of loyalty; that money is coming from your family, not from nostalgia.</p></details>
+    </div>
+  </div>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How often should I review recurring account profitability?', acceptedAnswer: { '@type': 'Answer', text: 'Monthly on the hours column, and a full re-time of every recurring account twice a year — scope creep shows up in the math by the six-month mark.' } },
+      { '@type': 'Question', name: 'How much notice before a price increase?', acceptedAnswer: { '@type': 'Answer', text: '30 days minimum for residential, 60 for commercial, always with the specific effective date stated.' } },
+      { '@type': 'Question', name: "What's a reasonable annual increase?", acceptedAnswer: { '@type': 'Answer', text: '8–10% per year keeps pace with wages without re-arguing; tier the rise so underpriced accounts take more and fair ones take less.' } },
+      { '@type': 'Question', name: 'Should I ever fire a client instead of repricing?', acceptedAnswer: { '@type': 'Answer', text: 'If the correction exceeds ~20% and the client is difficult, the unbundle offer lets them self-select out politely.' } },
+    ],
+  })} />
+</BaseLayout>
