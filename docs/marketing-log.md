@@ -144,3 +144,8 @@
 - 检测到用户浏览器停在 Google 登录账号选择页（目标 analytics authuser=1，是中检前置动作）——用户可能正在操作。
 - 本轮浏览器操作全部跳过（标签 id 反复失效 + 避免干扰用户登录流程）。Reddit 扫描顺延下轮。
 - **登录提示**：账号选择页若有 jindeqhk52 选项，直接点击即可恢复（无需密码，前提是会话未彻底过期）；若提示输密码则输入后登录。完成后中检读数自动解锁。
+
+### 内容交付 2026-09-24（"do more"指令）
+- **guide 上线**：/guides/reprice-recurring-clients/ ——《How to reprice recurring cleaning clients》。内容 = 三次 Reddit 回答（工时跟踪三列法 / 涨价过渡结构 / grandfather 锁价）的系统化合集，FAQ schema，内链 labor-cost + cleaning-estimate + 磁石页。IndexNow 200，页面验证 200 ✅。
+- **发现**：pour-cost-calculator 已由并行运营循环建成并注册（63 页构建）——候选池首位候选已交付，无需重复。
+- 此交付回应 r/cleaningbusiness 本周 3-4 次的 recurring profitability/涨价主题（帖子评论数持续增长中：profitability 7→13、Jobber 6→11）。
