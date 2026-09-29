@@ -75,3 +75,18 @@ Data: Google+Bing autocomplete, **7,598 unique terms**（39 种子，R0-R4 零�
 - **vol/CPC 绝对值：未验证**。本环境实测堵死：Google Trends API（429，出口 IP 被 Google 预标）、WordStream 免费工具（JS 墙）、Ahrefs 免费口（会话墙）。本报告所有排序依据 = autocomplete 存在性信号（dual/seedHits）+ SERP 构成实查（竞争/商业密度代理），**不含音量与 CPC**。
 - **已上线的 8 个新工具处置**：不下架（即时工具零维护成本、SERP 缺口已实查），但在拿到 vol 数据前，**T2 队列（popcorn ceiling/dumpster/mini-split/EV charger）暂停 build**，主线切「已上线词族的 GSC 展现验证」——展现是我们唯一自有且真实的 vol 源（滞后 2-3 周）。
 - **真实验证路径（待用户拍板）**：① Google Ads + Keyword Planner（15 分钟建号、不投钱也出区间值，推荐挂 jindeqhk52 与 GSC/GA 同账号）② Bing WMT 关键词研究（若 MST 已验证 BWT）③ 付费工具试用。打通后重跑本报告 shortlist 逐词回填 vol/CPC 列。
+
+## vol & KD 验证结果（2026-09-29 用户 Chrome 实操 Ahrefs Free Keyword Generator，US 区）
+
+> 路径记录：用户 Ahrefs 账号（John Anderson workspace）= Free plan，Keywords Explorer 锁定（只剩演示视频+See pricing）；**Free Keyword Generator 可用**（限额内每次给 20/117 词 + KD + Volume 带）。操作坑：提交后表格有一次渲染冻结需二次提交刷新；结果弹窗关闭后 [896,407] 坐标是 Firehose 广告 CTA（已两次误触跳转）。
+
+| 词族头词 | Volume（US/月） | KD | 判定 |
+|---|---|---|---|
+| **sod installation cost** | **>1000** | Easy | ✅ 已建工具坐实；`sod installation cost calculator` >100 Easy（直指词） |
+| **christmas light installation cost** | **>1000** | Easy | ✅ R4 季节件坐实；`cost per foot` >100 Easy（title 已吸收） |
+| **dumpster rental prices** | **>1000** | Easy | 🚀 **T2 第一位**：共 1,401 词；`20 yard dumpster rental prices near me` **>1000 Easy**、`10 yard … near me` **>1000 Easy**、`roll off` Medium >100 |
+| **popcorn ceiling removal cost** | **>1000** | Easy | ✅ T2 确认；`…cost calculator` >100 Easy（直指工具词） |
+| **mini split installation cost** | **>1000** | Easy | ✅ T2 确认；`2 zone …` >100 Easy（per-zone 族健康） |
+| ev charger installation cost / tax prep / sprinkler blowout / drywall repair / septic | 未查 | — | 免费额度与操作成本所限未跑；下次生成器额度恢复后补 |
+
+**结论**：5/5 已查词族头词全部 **>1000/月 且 KD Easy**——R4/R5 的选题判据（autocomplete 信号+SERP 缺口）与真实音量/难度**方向一致**，没有一个是autocomplete 假信号。dumpster 因 4 个 >1000 头部变体升为 T2 队首。
