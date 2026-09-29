@@ -69,3 +69,9 @@ Data: Google+Bing autocomplete, **7,598 unique terms**（39 种子，R0-R4 零�
 - **R5 特征：dual 密度全面上升**（sod 25、tax 25、concrete 30 vs R4 全场最高 16）——新垂直的 autocomplete 竞争小、双源共识词多，佐证「新词市场」窗口存在。
 - 上行市场词族首次成簇（EV/mini-split/heat pump/generator 合计 949 词）——2026 电工/暖通增量安装市场，MST electrician 段（R4 已建）是新工具的内链邻居。
 - 模板意图第三次扩簇：event planner/lash/tax prep 的 price list template 词形——price-list-builder 预设引擎继续复用（R3 4 行业→R4 tailoring→R5 三连）。
+
+## 验证状态（2026-09-29 补记，用户追问 vol & CPC 后）
+
+- **vol/CPC 绝对值：未验证**。本环境实测堵死：Google Trends API（429，出口 IP 被 Google 预标）、WordStream 免费工具（JS 墙）、Ahrefs 免费口（会话墙）。本报告所有排序依据 = autocomplete 存在性信号（dual/seedHits）+ SERP 构成实查（竞争/商业密度代理），**不含音量与 CPC**。
+- **已上线的 8 个新工具处置**：不下架（即时工具零维护成本、SERP 缺口已实查），但在拿到 vol 数据前，**T2 队列（popcorn ceiling/dumpster/mini-split/EV charger）暂停 build**，主线切「已上线词族的 GSC 展现验证」——展现是我们唯一自有且真实的 vol 源（滞后 2-3 周）。
+- **真实验证路径（待用户拍板）**：① Google Ads + Keyword Planner（15 分钟建号、不投钱也出区间值，推荐挂 jindeqhk52 与 GSC/GA 同账号）② Bing WMT 关键词研究（若 MST 已验证 BWT）③ 付费工具试用。打通后重跑本报告 shortlist 逐词回填 vol/CPC 列。
