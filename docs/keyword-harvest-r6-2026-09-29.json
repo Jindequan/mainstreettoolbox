@@ -1,0 +1,2952 @@
+{
+  "at": "2026-09-29T13:12:37.254Z",
+  "seedCount": 36,
+  "fails": [],
+  "rows": [
+    {
+      "term": "assemble furniture service near me cost",
+      "src": "bing",
+      "seeds": 2
+    },
+    {
+      "term": "assembly of furniture near me",
+      "src": "bing",
+      "seeds": 2
+    },
+    {
+      "term": "average cost for leaf clean up",
+      "src": "bing",
+      "seeds": 2
+    },
+    {
+      "term": "buy and assemble furniture",
+      "src": "bing",
+      "seeds": 2
+    },
+    {
+      "term": "dumpster rental cost",
+      "src": "bing+google",
+      "seeds": 2
+    },
+    {
+      "term": "dumpster rental cost near me",
+      "src": "bing+google",
+      "seeds": 2
+    },
+    {
+      "term": "dumpster rental prices near me",
+      "src": "bing+google",
+      "seeds": 2
+    },
+    {
+      "term": "ev charger installation cost",
+      "src": "bing+google",
+      "seeds": 2
+    },
+    {
+      "term": "ev charger installation cost at home",
+      "src": "bing+google",
+      "seeds": 2
+    },
+    {
+      "term": "ev charger installation cost near me",
+      "src": "google",
+      "seeds": 2
+    },
+    {
+      "term": "ev charger installation cost uk",
+      "src": "bing",
+      "seeds": 2
+    },
+    {
+      "term": "furniture assembler near me cost",
+      "src": "bing",
+      "seeds": 2
+    },
+    {
+      "term": "furniture assembler near me rates",
+      "src": "bing",
+      "seeds": 2
+    },
+    {
+      "term": "furniture assembly services near me cost",
+      "src": "bing",
+      "seeds": 2
+    },
+    {
+      "term": "how much to assemble furniture",
+      "src": "bing",
+      "seeds": 2
+    },
+    {
+      "term": "mini split installation cost",
+      "src": "bing+google",
+      "seeds": 2
+    },
+    {
+      "term": "mini split installation cost near me",
+      "src": "bing+google",
+      "seeds": 2
+    },
+    {
+      "term": "mini split installation cost seattle",
+      "src": "bing",
+      "seeds": 2
+    },
+    {
+      "term": "popcorn ceiling removal cost",
+      "src": "bing+google",
+      "seeds": 2
+    },
+    {
+      "term": "popcorn ceiling removal cost calculator",
+      "src": "bing+google",
+      "seeds": 2
+    },
+    {
+      "term": "tv mounting cost",
+      "src": "bing+google",
+      "seeds": 2
+    },
+    {
+      "term": "tv mounting cost near me",
+      "src": "google",
+      "seeds": 2
+    },
+    {
+      "term": "tv mounting costco",
+      "src": "google",
+      "seeds": 2
+    },
+    {
+      "term": "affordable leaf removal near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "amazon smart tv installation cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf cost calculator",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf cost estimate",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf cost installed",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf cost near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf cost per m2",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf cost per sf",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf cost per sq ft",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf cost per square foot",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf cost per square foot installed",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf cost vs sod",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf costco",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "artificial turf costco canada",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "average cost for fence replacement",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "average cost to assemble furniture",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "average cost to install a tv mount",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "average power washing prices",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost 1 bedroom",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost calculator",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost for 2 bedroom apartment",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost for 3 bedroom house",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost for 4 bedroom house",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost near me per room",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost per room",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost per sq ft",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost per square foot",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning cost uk",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning costa mesa",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning costco",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning costs per room",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning costs per room uk",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices 2025",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices in kenya",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices in nairobi",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices in south africa",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices list",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices list south africa",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices per room",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices per sq ft",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices per square foot",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "carpet cleaning prices uk",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "cheap fence repair near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "cheap tv installation near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "cost for fence replacement near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "cost of tv wall installation",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "cost of tv wall mount and installation",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "cost of tv wall mounting service",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "cost to clean and stain a deck",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "cost to install tv mount",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "cost to mount tv on wall",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "deck cleaning and staining near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "deck painting and staining near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "deck stain cost per gallon",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "deck stain services near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining companies near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining contractors near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining cost calculator",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining cost homewyse",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining cost near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining cost per hour",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining cost per m2",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining cost per sq ft",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining cost sq ft",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "deck staining services near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental - ybc home improvement",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental business for sale",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental cost 10 yard",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental cost 20 yard",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental cost estimate",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental cost estimator",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental cost near me 10 yard",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental cost per day",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental cost per month",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental cost per week",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental cost providence ri",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental costa mesa",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental costs near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental dogs",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental in woodburn",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental near me cheap",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices 10 yard",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices conroe tx",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices erie pa",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices in concord nc",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices in south carolina",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices jacksonville fl",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices los angeles",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices louisville ky",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices near me comparison",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices near me per day",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices near me per week",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices pa",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices per day",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices roanoke va",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices toledo ohio",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices wichita ks",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental prices york pa",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rental sizes",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rentals in my area",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rentals near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rentals near me availability",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rentals near me cheap",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rentals near me prices",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "dumpster rentals near me reviews",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation at home",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost australia",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost british gas",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost canberra",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost chicago",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost grant",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost in india",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost ireland",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost malaysia",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost nz",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost ontario",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost ontario canada",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost philippines",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation cost tucson",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation costs uk",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation electrician near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation grant",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation near los altos ca",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation near me companies",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation near me reviews",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation octopus energy",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation perth",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation rebate",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation requirements",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation singapore",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "ev charger installation tax credit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost for bed bugs",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost for fleas",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost for mice",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost for rats",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost for roaches",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost for spiders",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost for squirrels",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost for wasps",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost mice",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator cost rats",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator costs for bed bugs",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator costume",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "exterminator costume adult",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "fall leaf cleanup services near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "fence fixing near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "fence repair companies near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "fence repair cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "fence repair cost chain link",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "fence repair cost estimate",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "fence repair cost melbourne",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "fence repair cost near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "fence repair cost per foot",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "fence repair cost per post",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "fence repair cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "fence repair costs calculator",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "fence repair costs uk",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "flat pack assembly cost",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "flat pack assembly prices",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "flat pack assembly prices ireland",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "flat pack assembly prices uk",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "flat pack furniture assembly prices",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost average",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost calculator",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost estimate",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost estimator",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost for 1000 sq ft",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost houston",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost per pier",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost per square foot",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost slab",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair cost texas",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair costs average",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair costs dallas",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "foundation repair costs near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly at home",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly charges",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly cost calculator",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly cost near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly cost per hour",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly cost uk",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly near me reviews",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly price list",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly price list uk",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly price per hour",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly prices",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture assembly rates",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture installation cost",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture manufacturing cost",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture manufacturing cost sheet",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "furniture stores that offer assembly",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "furniture with assembly service",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost average",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost boise",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost boston",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost brevard county",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost broken spring",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost by size",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost estimate",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost factors",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost fort worth",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost houston tx",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair cost uk",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair costa mesa",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair costa mesa ca",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair costa mesa yelp",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair costco",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "garage door repair costs torsion spring",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost average",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost calculator",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost estimate",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost for 2 story house",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost houston tx",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost in maryland",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost london",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost nj",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost per foot",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost per hour",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost per hour near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning cost uk",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning costs average",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "gutter cleaning costs near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates 91360 average",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates 91360 cheap",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates 91360 coupons",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates 91360 reviews",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates detroit",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates dubai",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates dublin",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates durham",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates during audit",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates during fall",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates in georgia",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates in my area",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates nz",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates ontario",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates per hour",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates per hour ireland",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates per hour near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "house cleaning rates per square foot",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "house power washing cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "how much do power washing companies charge",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "how much does a fence replacement cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "how much does a leaf cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "how much does loose leaf cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "how much is tv wall installation",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "how much to charge for furniture assembly",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "how much to replace fence",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "how to charge for leaf cleanup",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost average",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost breakdown",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost by state",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost calculator",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost estimate",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost estimator",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost for mattress",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost near me estimate",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost near minnetonka",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost per hour",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal costa mesa",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal costco",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal costs near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices ault",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices broomfield co",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices calgary",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices fort collins",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices greeley",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices las vegas",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices list",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices los angeles",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices minneapolis",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices near me comparison",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices near me per hour",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices near me per load",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices nj",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices san diego",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "junk removal prices winnipeg",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "labor cost to stain a deck",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf clean up near me reviews",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf clean up prices near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf clean up service near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf clean up service near me reviews",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf cleanup and removal near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf cleanup companies near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf cleanup cost",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf cleanup cost per hour",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf cleanup near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf cleanup prices",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf cleanup rates",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf cleanup service near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf collection prices",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf pickup prices",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf raking prices",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal companies in my area",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal cost calculator",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal cost near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal cost per acre",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal cost per acre near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal cost per bag",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal cost per hour",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal cost per hour near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal cost per square foot",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal cost reddit",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal in my area",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal prices",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaf removal prices near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaves clean up prices",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "leaves removal service near me free estimate",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation cost average",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation cost calculator",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation cost california",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation cost for garage",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation cost for one room",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation cost labor only",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation cost massachusetts",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation cost reddit",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation costco",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation diagram",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation diy",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation guide",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation instructions",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation kit",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation labor cost",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation san diego",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation tool kit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation tool kits",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation tools",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation video",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mini split installation youtube",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost attic",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost average",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost basement",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost calculator",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost calculator guide",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost calculator tips",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost calculator tool",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost canada",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost ceiling",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost chicago",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost ct",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost estimate",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost for bathroom",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost per square foot",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost per square foot tips",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "mold remediation cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost estimate",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost for ants",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost for cockroaches",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost for house",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost for mice",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost for roaches",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost for rodents",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost for termites",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost jacksonville fl",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost near me for bed bugs",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost per month",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost per year",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pest control cost usa",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pest control costco",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pest control costs near me for bed bugs",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pest control costs near me for termites",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pest control costume",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal aurora",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal cost calgary",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal cost canada",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal cost near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal cost ontario",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal cost ottawa",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal cost per room",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal cost per square foot",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal cost toronto",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal cost uk",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal kansas city mo",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal machine",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal near me reviews",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal safety",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal service near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal spray",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal tool",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal tool rental",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal tool vacuum",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "popcorn ceiling removal tool vacuum rental",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "power washer cost",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "power washer costco",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "power washing cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "power washing cost calculator",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "power washing cost driveway",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "power washing cost for house",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "power washing cost near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "power washing cost per hour",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "power washing cost per sq ft",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "power washing cost per square feet",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "power washing cost per square foot",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "power washing costs near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "power washing costs per square foot",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "power washing prices per hour",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "power washing simulator",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices & rates",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices for commercial buildings",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices for driveways",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices in florida",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices in georgia",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices in trinidad",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices near me for decks",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices near me for driveways",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices pensacola fl",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices per hour",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices per square foot",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices per square foot commercial",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices rates",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "pressure washing prices uk",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "professional tv installation near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "rates on shipping furniture with assembly",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "residential fence repair near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "sky tv installation cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "stain my deck near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding cost calculator",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding cost edmonton",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding cost estimator",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding cost near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding cost nz",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding cost ontario",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding cost per hour",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding cost per inch",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding cost per stump",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding cost uk",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding costs near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "stump grinding costs near prescott az 86305",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "stump removal cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "stump removal cost average",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "stump removal cost calculator",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump removal cost edmonton",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump removal cost melbourne",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump removal cost near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "stump removal cost nz",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump removal cost per stump",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump removal cost perth",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump removal cost toronto",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "stump removal cost uk",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "television installation cost",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "television installation near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "tv installation cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "tv installation cost best buy",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv installation cost near me",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv installation cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv installation cost uk",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv installation costco",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv installation near me charges",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "tv installation near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "tv installation service near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "tv installer near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "tv mount installation cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "tv mount installation near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "tv mounting cost best buy",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv mounting cost labor",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv mounting cost nyc",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv mounting cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv mounting cost toronto",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv mounting cost uk",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv mounting costa mesa",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "tv mounting service price",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "tv mounting services near me cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "tv wall mounting cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "tv wall mounting installation cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water damage remediation cost",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water damage repair cost",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water damage repair cost calculator",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water damage repair cost calculator uk",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water damage repair cost iphone",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration cost calculator",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration cost guide",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration cost per square foot",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration costa mesa",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration costa mesa 24/7",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration costa mesa best",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration costa mesa ca",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration costa mesa company",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration costa mesa cost",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration costa mesa coupons",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration costa mesa near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration costa mesa yelp",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water damage restoration costa rica",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost bay area",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost calculator",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost estimator",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost home depot",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost labor only",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost lowe's",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost lowes",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost near me lowes",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost ontario",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation cost reddit",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation costco",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "water heater installation costs near me",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "what to charge for leaf clean up",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices 2026",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices australia",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices commercial",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices hawkes bay",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices in south africa",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices ireland",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices lincolnshire",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices london",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices near me",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices near me per hour",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices near me per window",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices near me reviews",
+      "src": "bing",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices nz",
+      "src": "google",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices per window",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "window cleaning prices uk",
+      "src": "bing+google",
+      "seeds": 1
+    },
+    {
+      "term": "wooden fence repair cost",
+      "src": "bing",
+      "seeds": 1
+    }
+  ]
+}
