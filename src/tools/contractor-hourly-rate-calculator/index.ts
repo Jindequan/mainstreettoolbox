@@ -39,11 +39,19 @@ export default {
     handymen carry their own payroll taxes, insurance and tool wear, so the sticker rate is not take-home.
     Small-job specialists can charge above the band because nobody else wants a two-hour job; that
     inconvenience premium is real pricing power. Run your own numbers below — the honest hourly rate is
-    usually 30–50% higher than what neighbors charge.</p>`,
+    usually 30–50% higher than what neighbors charge.</p>
+    <p><b>Electricians, same math, higher band:</b> licensing and insurance push the rate up — US
+    residential electricians bill <b>$50–100/hour</b> in most markets (HomeGuide's electrical work pricing
+    guide runs $40–100, national survey averages reach $130 for licensed masters in coastal metros), and a
+    <b>$75–125 service-call fee</b> — usually applied as the first hour — is standard practice: it prices
+    the truck roll before any work starts. Emergency and after-hours calls run $150–250 (Angi). If your
+    napkin rate lands under $50, you're pricing like a handyman while carrying an electrician's insurance
+    and license bill.</p>`,
   faq: [
     { q: 'How many billable hours does a solo contractor really get?', a: 'Twenty to twenty-five is realistic for most trades — the rest of a 40-hour week goes to quotes, supply runs, site cleanup and driving. Anyone budgeting 40 billable hours is planning to work for free half the time.' },
     { q: 'What counts as overhead?', a: 'Everything that bills whether or not you worked: insurance, truck payment and fuel, tool replacement, licenses and permits, accounting, phone. Monthly it, and the calculator spreads it across your billable hours.' },
     { q: 'Why is my material markup not in here?', a: 'Materials should be passed through at cost plus a separate markup — mixing them into your labor rate makes bids hard to compare. Price the labor here, mark materials up separately on the quote.' },
+    { q: 'How much should an electrician charge per hour?', a: 'Most residential electricians bill $50–100 per hour, with licensed masters in high-cost metros up to $130 (HomeGuide\'s electrical work pricing guide; national survey data). Charge a $75–125 service-call fee on top — typically applied as the first hour — so the truck roll is covered before work begins. Emergency calls run $150–250/hour (Angi).' },
   ],
   related: ['labor-cost-calculator', 'break-even-calculator', 'markup-vs-margin-calculator', 'profit-margin-calculator'],
 } as RegisteredTool;

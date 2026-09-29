@@ -40,10 +40,13 @@ export const SLUGS = new Set([
   'mulch-calculator',
   'snow-removal-pricing-calculator',
   'aeration-and-overseeding-calculator',
+  'christmas-light-pricing-calculator',
+  'sprinkler-blowout-cost-calculator',
   // construction
   'contractor-hourly-rate-calculator',
   'material-cost-estimator',
   'work-order-generator',
+  'drywall-repair-cost-calculator',
   // salon
   'booth-rent-commission-calculator',
   'service-price-list-builder',

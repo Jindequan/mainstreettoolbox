@@ -35,6 +35,9 @@ import pourCost from './pour-cost-calculator';
 import aeration from './aeration-and-overseeding-calculator';
 import gutterCleaning from './gutter-cleaning-price-calculator';
 import leafRemoval from './leaf-removal-cost-calculator';
+import christmasLights from './christmas-light-pricing-calculator';
+import sprinklerBlowout from './sprinkler-blowout-cost-calculator';
+import drywallRepair from './drywall-repair-cost-calculator';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -72,6 +75,9 @@ export const TOOLS: RegisteredTool[] = [
   aeration,
   gutterCleaning,
   leafRemoval,
+  christmasLights,
+  sprinklerBlowout,
+  drywallRepair,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);
