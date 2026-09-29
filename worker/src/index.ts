@@ -42,6 +42,7 @@ export const SLUGS = new Set([
   'aeration-and-overseeding-calculator',
   'christmas-light-pricing-calculator',
   'sprinkler-blowout-cost-calculator',
+  'sod-hydroseeding-cost-calculator',
   // construction
   'contractor-hourly-rate-calculator',
   'material-cost-estimator',

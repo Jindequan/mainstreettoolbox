@@ -38,6 +38,7 @@ import leafRemoval from './leaf-removal-cost-calculator';
 import christmasLights from './christmas-light-pricing-calculator';
 import sprinklerBlowout from './sprinkler-blowout-cost-calculator';
 import drywallRepair from './drywall-repair-cost-calculator';
+import sodHydro from './sod-hydroseeding-cost-calculator';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -78,6 +79,7 @@ export const TOOLS: RegisteredTool[] = [
   christmasLights,
   sprinklerBlowout,
   drywallRepair,
+  sodHydro,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);
