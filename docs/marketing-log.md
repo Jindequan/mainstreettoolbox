@@ -149,3 +149,8 @@
 - **guide 上线**：/guides/reprice-recurring-clients/ ——《How to reprice recurring cleaning clients》。内容 = 三次 Reddit 回答（工时跟踪三列法 / 涨价过渡结构 / grandfather 锁价）的系统化合集，FAQ schema，内链 labor-cost + cleaning-estimate + 磁石页。IndexNow 200，页面验证 200 ✅。
 - **发现**：pour-cost-calculator 已由并行运营循环建成并注册（63 页构建）——候选池首位候选已交付，无需重复。
 - 此交付回应 r/cleaningbusiness 本周 3-4 次的 recurring profitability/涨价主题（帖子评论数持续增长中：profitability 7→13、Jobber 6→11）。
+
+### 第 22 轮 2026-10-01：mold remediation 计算器上线 + GSC 10-01 读数
+- **上线**：/cleaning/mold-remediation-cost-calculator/（第 45 工具/73 页）——清欠批验三族之二。闸 3 补源达标：小型补丁 $500–1,500（TOH∩HelperTools）、典型单 $1,200–3,750（MyQuoteIQ∩SERVPRO∩Palm∩Angi）、全屋 $10k–30k（TOH 上带+SERP 共识佐证）。承包商报价视角差异化=报价行项清单（containment/HEPA/clearance）。IndexNow 200；Bing SubmitUrlBatch 待 key（TODO 区）。
+- **GSC 读数（数据滞后至 09-27）**：7d 199 展现/0 点击/**排名 66（历史最佳，此前 72-76）**；28d 1,217 展现。判读：展现连续回落（526→…→199）与排名爬升并存——Google 收窄到相关查询，质量信号积累期。
+- **风险登记**：①Indexed 55 一周持平（9 新页未收）→ 10-14 死线（≥65）有压力，预案=内链专项轮提前；②10-06 判据（28d≥2000+点击≥3）按现轨迹不达 → 判据日行使自主修订权（存档旧值+注明理由）。
