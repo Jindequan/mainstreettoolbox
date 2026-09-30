@@ -43,6 +43,7 @@ import sodHydro from './sod-hydroseeding-cost-calculator';
 import dumpsterRental from './dumpster-rental-cost-calculator';
 import popcornCeiling from './popcorn-ceiling-removal-cost-calculator';
 import treeRemoval from './tree-removal-cost-calculator';
+import moldRemediation from './mold-remediation-cost-calculator';
 import menuProfitSheet from './menu-profit-sheet';
 
 export const TOOLS: RegisteredTool[] = [
@@ -89,6 +90,7 @@ export const TOOLS: RegisteredTool[] = [
   dumpsterRental,
   popcornCeiling,
   treeRemoval,
+  moldRemediation,
   menuProfitSheet,
 ];
 

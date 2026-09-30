@@ -7,11 +7,11 @@
 
 | 项目 | 区间 | 来源 |
 |---|---|---|
-| Remediation per sq ft | **$10–25**（合并带） | This Old House $10–25 ∩ MyQuoteIQ $10–30 |
-| 典型整单 | **$1,200–3,750** | MyQuoteIQ ∩ SERVPRO $1,223–3,753 ∩ Palm ~$1,200–3,750 三源同带 |
+| Remediation per sq ft | **$10–25**（合并带） | This Old House $10–25 ∩ MyQuoteIQ $10–30（10-01 补：RestorationCalcs/Mold-Compass SERP 共识同带） |
+| 典型整单 | **$1,200–3,750** | MyQuoteIQ ∩ SERVPRO $1,223–3,753 ∩ Palm ~$1,200–3,750 三源同带（10-01 补：Angi 口径 $1,223–3,757，均值 ~$2,369） |
 | 全国均价 | $2,368 | SERVPRO（TOH/Palm 量级吻合 ~$2,300） |
-| 小型单间 | $500–1,500 | TOH |
-| 全屋/严重 | $10,000–30,000 | TOH 上带（单源上限标注） |
+| 小型单间 | $500–1,500 | TOH ∩ HelperTools（10-01 补第 2 源，原单源解除） |
+| 全屋/严重 | $10,000–30,000 | TOH 上带（单源上限标注；10-01 SERP 共识佐证方向一致，仍按上限带谨慎呈现） |
 | 仅表面清洁（非 remediation） | $2.34–2.85/sq ft | Homewyse（口径不同，FAQ 提及勿混算） |
 
 ## 不进计算（单源/口径混）
