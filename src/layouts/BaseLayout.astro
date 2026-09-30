@@ -96,6 +96,14 @@ const ga = import.meta.env.PUBLIC_GA_ID;
       var loc = a.closest('.nav') ? 'nav' : a.closest('footer') ? 'footer' : 'in_page';
       gtag('event', 'contact_page_nav', { link_location: loc });
     }, { passive: true });
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest ? e.target.closest('a[href*="ko-fi.com"]') : null;
+      if (!a || typeof gtag !== 'function') return;
+      var loc = a.closest('footer') ? 'footer' : a.closest('.faq') ? 'faq' : a.closest('.prose') ? 'prose' : 'next_steps';
+      var trade = '';
+      try { trade = new URLSearchParams(location.search).get('trade') || ''; } catch (err) {}
+      gtag('event', 'kofi_cta_click', { link_location: loc, trade: trade, product: a.getAttribute('data-kofi') || 'generic' });
+    }, { passive: true });
   </script>}
   <script src="../scripts/stats.ts"></script>
 </body>

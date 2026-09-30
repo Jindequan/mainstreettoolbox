@@ -19,6 +19,47 @@ const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const g = initials.gauge;
 const gaugePct = (v: number) => Math.min(100, Math.max(0, ((v - (g!.min)) / (g!.max - (g!.min))) * 100));
 const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' }[t] ?? 'ℹ');
+
+// Ko-fi 单品 CTA（2026-09-30 漏斗批次）：只挂"该页人群=某 SKU 买家"的页面，宁可少挂不滥挂。
+// 全部外链走 BaseLayout 的 kofi_cta_click 委托追踪；价格/承诺与 docs/kofi-files 实际商品一致。
+const SHOP = 'https://ko-fi.com/devinjin/shop';
+const KOFI_LINE: Record<string, { product: string; url: string; text: string }> = {
+  'cleaning-estimate-calculator': {
+    product: 'House Cleaning Price List Template',
+    url: SHOP,
+    text: 'Put your cleaning prices on paper — print-ready PDF plus editable spreadsheet, instant download.',
+  },
+  'window-cleaning-price-calculator': {
+    product: 'House Cleaning Price List Template',
+    url: SHOP,
+    text: 'A printed price list answers the window-cleaning question before the phone rings.',
+  },
+  'pressure-washing-price-calculator': {
+    product: 'House Cleaning Price List Template',
+    url: SHOP,
+    text: 'A printed price list sets the anchor before the customer asks.',
+  },
+  'lawn-care-estimate-generator': {
+    product: 'Lawn Care Price List Template',
+    url: SHOP,
+    text: 'Attach a typeset price list to every estimate — print-ready PDF plus editable spreadsheet.',
+  },
+  'lawn-mowing-price-calculator': {
+    product: 'Lawn Care Price List Template',
+    url: SHOP,
+    text: 'Turn your mowing prices into a printed one-pager — PDF plus editable spreadsheet.',
+  },
+  'contractor-hourly-rate-calculator': {
+    product: 'Handyman Price List Template',
+    url: SHOP,
+    text: 'Job bundles beat hourly at the door — five classic jobs, printed, no negotiation.',
+  },
+  'booth-rent-commission-calculator': {
+    product: 'Salon Price List Template',
+    url: SHOP,
+    text: 'Stylists love a counter price list — print-ready PDF plus editable spreadsheet.',
+  },
+};
 ---
 <BaseLayout title={tool.title} description={tool.description} path={`/${tool.industry}/${tool.slug}/`} bodyClass="has-mbar">
   <div class="industry-hero">
@@ -162,11 +203,15 @@ const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' 
       When your prices look right, print the menu with the <a href="/menu-maker/">Menu Maker</a> — free templates,
       PDF & PNG. Want us to set the whole system up for you? <a href="/services">Ask about concierge setup</a>.</p>
     {tool.slug === 'service-price-list-builder' && (
-      <p>Prefer a ready-made file? The <a href="https://ko-fi.com/s/d889e8caf6">Price List Templates 10-Pack</a> gives
+      <p>Prefer a ready-made file? The <a data-kofi="Price List Templates 10-Pack" href="https://ko-fi.com/s/d889e8caf6" target="_blank" rel="noopener">Price List Templates 10-Pack</a> gives
       you print-ready PDF plus editable spreadsheet versions for ten service trades — $5, instant download. Want just
-      your trade, deeper? Trade-specific packs with sourced 2026 prices — <a href="https://ko-fi.com/devinjin/shop" target="_blank" rel="noopener">auto detailing, dog
+      your trade, deeper? Trade-specific packs with sourced 2026 prices — <a data-kofi="Shop — trade packs" href="https://ko-fi.com/devinjin/shop" target="_blank" rel="noopener">auto detailing, dog
       grooming, handyman, house cleaning, lawn care, salon, catering and photography — are on our shop</a>, alongside
-      the full 53-band Pricing Benchmarks Database.</p>
+      the full 53-band <a data-kofi="Pricing Benchmarks Database" href="https://ko-fi.com/devinjin/shop" target="_blank" rel="noopener">Pricing Benchmarks Database</a>.</p>
+    )}
+    {KOFI_LINE[tool.slug] && (
+      <p class="kofi-line">Want it on paper? The <a data-kofi={KOFI_LINE[tool.slug].product} href={KOFI_LINE[tool.slug].url} target="_blank" rel="noopener">{KOFI_LINE[tool.slug].product}</a>
+      {' '}— {KOFI_LINE[tool.slug].text}</p>
     )}
   </section>
 
