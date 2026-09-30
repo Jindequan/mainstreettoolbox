@@ -17,3 +17,10 @@
 - 石棉减除：$5–15+/sqft（abatement 口径差异大）→ 只进 FAQ+verdict 警告（1980 前房屋先检测，检测 ~$50–150）
 - 层高/斜顶加价、地区人工差 → 定性提及
 - 后续重漆 → 不乘系数，explain 里定性（painting 工具互链承接）
+
+## 验证层回填（2026-09-30，Bing WMT API）
+
+- "popcorn ceiling removal cost"：US strict 0 /90d —— cost 精确短语在 Bing 无直指量
+- 家族词有量（strict/90d）：popcorn ceiling 1,265（broad 2,718）、popcorn ceiling removal 1,081、how to remove popcorn ceiling 417、popcorn ceiling removal tool 271 → 家族合计 2.5K+，支撑已建工具保留
+- 判读：**保留已建 URL**（title/description 不为 Bing 数字改动，Google 侧为准）；cost 头词低量记档，期望流量来自家族长尾
+- 数据源：docs/keyword-data/bing-api-2026-09-30.md

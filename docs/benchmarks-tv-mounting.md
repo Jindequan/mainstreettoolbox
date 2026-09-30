@@ -33,3 +33,7 @@
 TV 尺寸 select（4 档）× 支架类型（fixed/tilt/articulating 微调）× 墙体（drywall/brick-concrete 上浮）+ 藏线/插座开关（标注单源）→ 输出人工+支架低/高带。默认含支架（用户问"cost"通常含硬件）。
 
 来源：homeguide.com/costs/tv-mount-installation-cost（2025-01）；angi.com/articles/how-much-does-buying-and-repairing-tv-cost（2026 data）；thumbtack national avg；TaskRabbit 2026 guide（尺寸档单源）。
+
+## 验证层判读（2026-09-30，Bing WMT API 批验）
+
+**未过闸**：cost 头词及全部 cost 变体 strict=0/90d（数据 docs/keyword-data/bing-api-2026-09-30.md）。家族层意图不在价格信息（near-me/品牌/设备主导）→ **不建独立计算器 URL**；基准数字转作对应行业预设（handyman/cleaning）素材。待 GSC 侧出现直指量再复议。

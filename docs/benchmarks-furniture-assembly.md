@@ -39,3 +39,7 @@
 家具类型 select（8 档取自阶梯表）× 件数（同 visit 折扣定性提示）→ 输出低/高带 + 时薪换算参考行。批量折扣不进系数（单源无比例），以"第二件起单价常下调"文案承接。
 
 来源：homeguide.com/costs/furniture-assembly-cost（2024-08）；thumbtack furniture assembly pages；taskrabbit.com（rates + fee 结构）。
+
+## 验证层判读（2026-09-30，Bing WMT API 批验）
+
+**未过闸**：cost 头词及全部 cost 变体 strict=0/90d（数据 docs/keyword-data/bing-api-2026-09-30.md）。家族层意图不在价格信息（near-me/品牌/设备主导）→ **不建独立计算器 URL**；基准数字转作对应行业预设（handyman/cleaning）素材。待 GSC 侧出现直指量再复议。

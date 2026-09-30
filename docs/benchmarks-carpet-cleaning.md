@@ -20,3 +20,7 @@
 ## 计算器模型草案（验证过闸后用）
 
 rooms select（1–6+）× 每房间价带 + 可选 add-on 开关 + sqft 交叉校验；输出低/典型/高三档。
+
+## 验证层判读（2026-09-30，Bing WMT API 批验）
+
+**未过闸**：cost 头词及全部 cost 变体 strict=0/90d（数据 docs/keyword-data/bing-api-2026-09-30.md）。家族层意图不在价格信息（near-me/品牌/设备主导）→ **不建独立计算器 URL**；基准数字转作对应行业预设（handyman/cleaning）素材。待 GSC 侧出现直指量再复议。

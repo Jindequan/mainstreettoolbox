@@ -14,8 +14,9 @@ const tools = byIndustry(industry!);
 const heroImg = `/images/${industry}.jpg`;
 
 // 枢纽页独特内容：每行业 2026 定价速览（全部带源，与 /benchmarks/ 同口径——薄枢纽是 GSC 覆盖率诊断出的收录障碍）
-const HUB_CONTENT: Record<string, { intro: string; bands: [string, string, string][]; more: string }> = {
+const HUB_CONTENT: Record<string, { question: string; intro: string; bands: [string, string, string][]; more: string }> = {
   cleaning: {
+    question: "How much does house cleaning cost in 2026?",
     intro: "What cleaning companies actually charge in 2026, from sourced industry data — use the bands to sanity-check any quote before you set your own.",
     bands: [
       ["Standard clean, per visit", "$120–280", "HomeGuide; Housecall Pro"],
@@ -27,6 +28,7 @@ const HUB_CONTENT: Record<string, { intro: string; bands: [string, string, strin
     more: "Deep-dive numbers: <a href=\"/guides/house-cleaning-prices/\">house cleaning prices guide</a> and the <a href=\"/benchmarks/service-pricing-2026/\">full 2026 benchmarks page</a>.",
   },
   lawn: {
+    question: "How much does lawn care cost in 2026?",
     intro: "Lawn care pricing in 2026 — mowing is a volume game priced per visit, and the seasonal add-ons are where the margin lives.",
     bands: [
       ["Mowing, standard yard, per visit", "$40–60", "GreenPal; LawnStarter"],
@@ -38,6 +40,7 @@ const HUB_CONTENT: Record<string, { intro: string; bands: [string, string, strin
     more: "Season pricing and contract structures: <a href=\"/benchmarks/service-pricing-2026/\">2026 benchmarks</a>.",
   },
   construction: {
+    question: "How much do contractors charge in 2026?",
     intro: "Contractor pricing in 2026 — quotes are built from labor hours plus materials, and these are the bands the industry works from.",
     bands: [
       ["Interior painting, per sq ft", "$1.50–3.50", "Angi; HomeAdvisor; HomeGuide"],
@@ -50,6 +53,7 @@ const HUB_CONTENT: Record<string, { intro: string; bands: [string, string, strin
     more: "Full construction bands: <a href=\"/benchmarks/service-pricing-2026/\">2026 benchmarks page</a>.",
   },
   restaurant: {
+    question: "What food cost percentage should a restaurant target in 2026?",
     intro: "Restaurant margins in 2026 — the numbers that decide whether a menu item or a whole dining room makes money.",
     bands: [
       ["Food cost %, full-service", "28–35%", "Industry standard; MTB Food Cost guide"],
@@ -60,6 +64,7 @@ const HUB_CONTENT: Record<string, { intro: string; bands: [string, string, strin
     more: "How to fix a high number: <a href=\"/guides/food-cost-percentage/\">food cost guide</a> and the <a href=\"/benchmarks/service-pricing-2026/\">2026 benchmarks</a>.",
   },
   salon: {
+    question: "How much do salon services cost in 2026?",
     intro: "Salon and barber pricing in 2026 — service menu anchors plus the booth-rent-versus-commission math that decides a stylist's take-home.",
     bands: [
       ["Women's cut & finish", "$45–95", "SalonsRated; StyleSeat"],
@@ -71,6 +76,7 @@ const HUB_CONTENT: Record<string, { intro: string; bands: [string, string, strin
     more: "The pay-structure math: <a href=\"/guides/booth-rent-vs-commission/\">booth rent vs commission guide</a>.",
   },
   retail: {
+    question: "How do you calculate retail markup and margin?",
     intro: "Retail pricing rules that never go out of date — the two arithmetic facts behind every markup and every sale.",
     bands: [
       ["Keystone pricing", "100% markup = 50% margin", "Arithmetic rule"],
@@ -119,7 +125,7 @@ const hub = HUB_CONTENT[industry!];
 
   {hub && (
     <section class="container explain" style="padding-top:8px">
-      <h2>{meta.name} pricing, quick answers (2026)</h2>
+      <h2>{hub.question}</h2>
       <p>{hub.intro}</p>
       <table>
         <thead><tr><th>Service / metric</th><th>2026 band</th><th>Source</th></tr></thead>

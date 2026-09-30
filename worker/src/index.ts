@@ -50,6 +50,7 @@ export const SLUGS = new Set([
   'drywall-repair-cost-calculator',
   'dumpster-rental-cost-calculator',
   'popcorn-ceiling-removal-cost-calculator',
+  'tree-removal-cost-calculator',
   // salon
   'booth-rent-commission-calculator',
   'service-price-list-builder',
