@@ -48,6 +48,8 @@ export const SLUGS = new Set([
   'material-cost-estimator',
   'work-order-generator',
   'drywall-repair-cost-calculator',
+  'dumpster-rental-cost-calculator',
+  'popcorn-ceiling-removal-cost-calculator',
   // salon
   'booth-rent-commission-calculator',
   'service-price-list-builder',

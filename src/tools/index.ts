@@ -39,6 +39,8 @@ import christmasLights from './christmas-light-pricing-calculator';
 import sprinklerBlowout from './sprinkler-blowout-cost-calculator';
 import drywallRepair from './drywall-repair-cost-calculator';
 import sodHydro from './sod-hydroseeding-cost-calculator';
+import dumpsterRental from './dumpster-rental-cost-calculator';
+import popcornCeiling from './popcorn-ceiling-removal-cost-calculator';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -80,6 +82,8 @@ export const TOOLS: RegisteredTool[] = [
   sprinklerBlowout,
   drywallRepair,
   sodHydro,
+  dumpsterRental,
+  popcornCeiling,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);

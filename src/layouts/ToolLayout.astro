@@ -208,4 +208,13 @@ const favicon = (t: string) => ({ ok: '✓', warn: '!', bad: '✕', info: 'ℹ' 
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).toString() },
+      { '@type': 'ListItem', position: 2, name: industryName, item: new URL(`/${tool.industry}/`, Astro.site).toString() },
+      { '@type': 'ListItem', position: 3, name: tool.name, item: new URL(`/${tool.industry}/${tool.slug}/`, Astro.site).toString() },
+    ],
+  })} />
 </BaseLayout>
