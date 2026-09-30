@@ -42,6 +42,7 @@ import sodHydro from './sod-hydroseeding-cost-calculator';
 import dumpsterRental from './dumpster-rental-cost-calculator';
 import popcornCeiling from './popcorn-ceiling-removal-cost-calculator';
 import treeRemoval from './tree-removal-cost-calculator';
+import menuProfitSheet from './menu-profit-sheet';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -86,6 +87,7 @@ export const TOOLS: RegisteredTool[] = [
   dumpsterRental,
   popcornCeiling,
   treeRemoval,
+  menuProfitSheet,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);
@@ -100,6 +102,7 @@ export const BESPOKE_SLUGS: ReadonlySet<string> = new Set([
   'lawn-care-estimate-generator',
   'retail-math-calculator',
   'recipe-cost-calculator',
+  'menu-profit-sheet',
 ]);
 
 export const byIndustry = (industry: string): RegisteredTool[] => TOOLS.filter((t) => t.industry === industry);

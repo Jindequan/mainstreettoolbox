@@ -1,0 +1,465 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Menu Profit Sheet — Free Menu-Level Cost & Pricing Summary | Main Street Toolbox"
+  description="Roll your costed recipes into one menu-level profit sheet: food cost % per dish, contribution margin and four pricing flags, printable as a one-page PDF. Free, no signup, saves on your device."
+  path="/restaurant/menu-profit-sheet/"
+>
+  <div class="industry-hero">
+    <div class="industry-hero-bg" style="background-image:linear-gradient(rgba(250,247,240,.82), rgba(250,247,240,.06)), url('/images/restaurant.jpg')"></div>
+    <div class="container head">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/restaurant">Restaurant</a> / <b style="color:var(--ink)">Menu Profit Sheet</b></p>
+      <h1>Menu Profit Sheet</h1>
+      <p class="sub">The whole menu on one page — plate costs, food cost %, margins and what to fix first.</p>
+    </div>
+  </div>
+
+  <main class="container work">
+    <!-- 左：菜单填表 -->
+    <section class="form-col" aria-label="Menu details">
+      <div class="card card-pad">
+        <h2 class="step-lbl"><span>1</span> The menu</h2>
+        <div class="meta-grid">
+          <div class="field">
+            <label for="rname">Restaurant or menu name</label>
+            <input id="rname" type="text" value="" placeholder="e.g. Main Street Grill" autocomplete="off" />
+          </div>
+          <div class="field">
+            <label for="target">Target food cost %</label>
+            <select id="target">
+              <option value="25">25%</option>
+              <option value="28">28%</option>
+              <option value="30" selected>30%</option>
+              <option value="32">32%</option>
+              <option value="35">35%</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="import-bar">
+          <button class="import-btn" id="import-btn" type="button">⤓ Pull costed recipe</button>
+          <span class="import-note" id="import-note">Brings in the dish you costed with the <a href="/restaurant/recipe-cost-calculator/">Recipe Cost Calculator</a> on this device.</span>
+        </div>
+
+        <h2 class="step-lbl"><span>2</span> Dishes</h2>
+        <div class="rows-head">
+          <span class="rh-name">Dish</span>
+          <span class="rh-price">Menu price $</span>
+          <span class="rh-cost">Plate cost $</span>
+          <span class="rh-pct">Cost %</span>
+          <span class="rh-margin">Margin $</span>
+          <span class="rh-flag">Flag</span>
+          <span class="rh-x"></span>
+        </div>
+        <div id="rows"></div>
+        <button class="add-row" id="add-row" type="button">+ Add dish</button>
+        <p class="fineprint">Plate cost comes from your recipe costing — trim and waste included. No price yet? Leave it at 0 and the dish waits unflagged until you price it.</p>
+      </div>
+    </section>
+
+    <!-- 右：菜单级结果 + 打印表 -->
+    <aside class="out-col">
+      <div class="card answer-card" aria-live="polite">
+        <div class="ans-row big">
+          <span>Menu average food cost</span>
+          <b id="out-avg">—</b>
+        </div>
+        <div class="ans-row">
+          <span>Dishes on the sheet</span>
+          <b id="out-count">0</b>
+        </div>
+        <div class="ans-row">
+          <span>Average contribution margin</span>
+          <b id="out-margin">—</b>
+        </div>
+        <div class="ans-row">
+          <span id="out-over-lbl">Priced above your 30% target</span>
+          <b id="out-over">0</b>
+        </div>
+        <div class="ans-note" id="out-note">Most full-service kitchens run 28–35% food cost. The fastest margin on any menu is repricing the dishes that run over target.</div>
+        <div class="ans-links">
+          <a href="/restaurant/recipe-cost-calculator/">Cost another dish →</a>
+          <a href="/restaurant/menu-engineering-matrix/">Add popularity data →</a>
+          <a href="/restaurant/food-cost-percentage-calculator/">Check one live dish →</a>
+        </div>
+        <div class="ans-actions">
+          <button class="btn-primary" id="print-btn" type="button">Print profit sheet</button>
+          <button class="btn-ghost" id="reset-btn" type="button">Reset example</button>
+        </div>
+        <p class="save-hint" id="save-hint">Saved on this device automatically.</p>
+      </div>
+
+      <!-- 打印专用菜单利润表（屏幕上隐藏） -->
+      <div class="profit-sheet" id="profit-sheet">
+        <div class="sheet-brand">MENU PROFIT SHEET</div>
+        <div class="sheet-meta">
+          <div><span>Restaurant</span><b id="s-name">—</b></div>
+          <div><span>Date</span><b id="s-date">—</b></div>
+          <div><span>Target food cost</span><b id="s-target">—</b></div>
+        </div>
+        <table>
+          <thead><tr><th>Dish</th><th>Price</th><th>Plate cost</th><th>Cost %</th><th>Margin</th><th>Flag</th></tr></thead>
+          <tbody id="s-rows"></tbody>
+        </table>
+        <div class="sheet-totals">
+          <div><span>Dishes</span><b id="s-count">—</b></div>
+          <div><span>Menu average food cost</span><b id="s-avg">—</b></div>
+          <div><span>Average contribution margin</span><b id="s-margin">—</b></div>
+        </div>
+        <div class="sheet-foot">Built with mainstreettoolbox.com — free restaurant calculators</div>
+      </div>
+    </aside>
+  </main>
+
+  <section class="container prose">
+    <h2>What the numbers mean</h2>
+    <h3>How do I build a menu profit sheet?</h3>
+    <p>For every dish you need two numbers: <b>menu price</b> and <b>plate cost</b>. Plate cost comes from recipe
+    costing — the <a href="/restaurant/recipe-cost-calculator/">Recipe Cost Calculator</a> produces it, and the
+    ⤓ Pull button imports a costed dish from that page in one tap. Everything else is arithmetic the sheet runs
+    for you: <b>food cost % = plate cost ÷ price</b>, and <b>contribution margin = price − plate cost</b> — the
+    dollars a dish actually throws off toward rent and labor every time it sells.</p>
+    <h3>What food cost percentage should the whole menu run?</h3>
+    <p>Most full-service kitchens run <b>28–35%</b>; fast-casual and QSR often sit a few points lower. Watch the
+    <b>menu average</b> against your target, but fix dishes one at a time: a single 45% dish among 30% neighbors
+    drags the average while quietly burning margin on every order.</p>
+    <h3>What do the four flags mean?</h3>
+    <p>Each dish is placed against the menu's own averages — price against average price, cost % against average
+    cost %. That yields four positions:</p>
+    <table>
+      <thead><tr><th>Flag</th><th>Position</th><th>The move</th></tr></thead>
+      <tbody>
+        <tr><td>★ Star</td><td>Higher price, leaner cost than menu average</td><td>Protect it — feature it, never discount it</td></tr>
+        <tr><td>Volume</td><td>Lower price, leaner cost</td><td>Good traffic dish; a $0.50 price test adds pure margin</td></tr>
+        <tr><td>Premium</td><td>Higher price, heavier cost</td><td>Check the plate — portion creep and garnish bloat live here</td></tr>
+        <tr><td>Watch</td><td>Lower price, heavier cost</td><td>Reprice, recost or replace — margin and traffic both weak</td></tr>
+      </tbody>
+    </table>
+    <p>The classic <a href="/restaurant/menu-engineering-matrix/">Menu Engineering Matrix</a> adds sales-mix data
+    (Stars, Plowhorses, Puzzles, Dogs). Use that when you have POS counts; use this sheet when all you have is a
+    costed recipe list and ten minutes.</p>
+    <h3>Does my menu data leave this device?</h3>
+    <p>No. Prices, costs and the sheet itself live in your browser's local storage — there is no account, no
+    upload and no signup. Print or save to PDF from the browser and the sheet is yours.</p>
+  </section>
+
+  <section class="container faq">
+    <h2>Questions owners ask</h2>
+    <details><summary>How do I calculate food cost percentage for my whole menu?</summary><p>Cost each dish (plate cost), then divide each by its menu price to get per-dish food cost %. The menu average is the mean of those per-dish percentages — compare it to your target, usually 28–35% for full service, and fix the dishes that run over one at a time.</p></details>
+    <details><summary>What is contribution margin on a menu?</summary><p>Menu price minus plate cost — the dollars each sale contributes toward labor, rent and profit. A $16.50 burger with a $5.30 plate contributes $11.20 every time it sells, regardless of its food cost percentage.</p></details>
+    <details><summary>How do I get my recipes into the profit sheet?</summary><p>Cost a dish once in the Recipe Cost Calculator — it saves on your device — then hit ⤓ Pull costed recipe here. The dish lands in the table with its plate cost filled; add its menu price and it flags itself. Manual rows work the same way.</p></details>
+    <details><summary>Is there a free alternative to MarketMan's menu costing reports?</summary><p>For menu-level cost summaries, yes — this sheet totals your costed recipes, flags the pricing risks and prints a one-page report, free and without an account. What it does not do is inventory depletion and purchase tracking; start here and add software only when purchasing becomes the bottleneck.</p></details>
+  </section>
+
+  <section class="related">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:0;padding-top:28px"><h2 style="font-size:1.2rem">Related tools</h2></div>
+      <div class="related-grid">
+        <a href="/restaurant/recipe-cost-calculator/">Recipe Cost Calculator</a>
+        <a href="/restaurant/menu-pricing-calculator/">Menu Pricing Calculator</a>
+        <a href="/restaurant/menu-engineering-matrix/">Menu Engineering Matrix</a>
+        <a href="/restaurant/food-cost-percentage-calculator/">Food Cost Percentage Calculator</a>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I calculate food cost percentage for my whole menu?', acceptedAnswer: { '@type': 'Answer', text: 'Cost each dish (plate cost), divide each by its menu price for per-dish food cost %, and take the mean as the menu average. Compare it to your target — usually 28–35% for full service — and fix the dishes that run over one at a time.' } },
+      { '@type': 'Question', name: 'What is contribution margin on a menu?', acceptedAnswer: { '@type': 'Answer', text: 'Menu price minus plate cost — the dollars each sale contributes toward labor, rent and profit. A $16.50 burger with a $5.30 plate contributes $11.20 per sale.' } },
+      { '@type': 'Question', name: 'How do I get my recipes into the profit sheet?', acceptedAnswer: { '@type': 'Answer', text: 'Cost a dish in the Recipe Cost Calculator (it saves on your device), then use the Pull costed recipe button. The dish lands in the table with its plate cost filled; add its menu price and it flags itself.' } },
+      { '@type': 'Question', name: 'Is there a free alternative to MarketMan menu costing reports?', acceptedAnswer: { '@type': 'Answer', text: 'For menu-level cost summaries, yes — this sheet totals your costed recipes, flags pricing risks and prints a one-page report, free without an account. It does not do inventory depletion or purchase tracking.' } },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Menu Profit Sheet',
+    url: new URL('/restaurant/menu-profit-sheet/', Astro.site).toString(),
+    applicationCategory: 'FinanceApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  })} />
+
+  <style is:global>
+    .head { padding: 36px 24px 8px; }
+    .head h1 { font-size: var(--fs-800); margin-bottom: 6px; }
+    .head .sub { color: var(--ink-2); }
+    .work { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px; padding-top: 8px; padding-bottom: 40px; align-items: start; }
+    .step-lbl { display: flex; align-items: center; gap: 9px; font-size: 1.02rem; margin: 18px 0 10px; }
+    .step-lbl span { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--ink); color: var(--paper); font-size: 13px; font-weight: 600; flex: none; }
+    .meta-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 12px; }
+    .field label { display: block; font-size: 13px; font-weight: 600; color: var(--ink-2); margin-bottom: 5px; }
+    .field input, .field select { width: 100%; min-width: 0; border: 1.5px solid var(--line-2); border-radius: var(--r-m); background: var(--card); padding: 9px 12px; font: 500 15px var(--font-body, inherit); color: var(--ink); }
+    .field input:focus, .field select:focus { outline: 0; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+    .import-bar { display: flex; align-items: center; gap: 12px; margin-top: 12px; padding: 10px 12px; border: 1.5px dashed var(--line-2); border-radius: var(--r-m); }
+    .import-btn { flex: none; border: 1.5px solid var(--ink); border-radius: var(--r-s); background: none; padding: 8px 12px; font: 600 13.5px var(--font-body, inherit); color: var(--ink); cursor: pointer; }
+    .import-btn:hover { background: var(--ink); color: var(--paper); }
+    .import-note { font-size: 12.5px; color: var(--ink-3); line-height: 1.45; }
+    .import-note a { color: var(--ink-2); text-decoration: underline; text-underline-offset: 3px; }
+    .rows-head, .dish-row { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, .95fr) minmax(0, .95fr) minmax(0, .7fr) minmax(0, .8fr) 92px 28px; gap: 8px; align-items: center; }
+    .rows-head { font-size: 12px; font-weight: 600; color: var(--ink-3); text-transform: uppercase; letter-spacing: .04em; margin-top: 6px; padding: 0 2px; }
+    .dish-row { margin-top: 8px; }
+    .dish-row input { width: 100%; min-width: 0; border: 1.5px solid var(--line-2); border-radius: var(--r-s); background: var(--card); padding: 8px 10px; font: 500 14.5px var(--font-body, inherit); color: var(--ink); }
+    .dish-row input:focus { outline: 0; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-tint); }
+    .dish-row .cell-pct, .dish-row .cell-margin { font: 640 14.5px var(--font-display); font-variant-numeric: tabular-nums; text-align: right; color: var(--ink-2); padding-right: 4px; min-width: 0; }
+    .dish-row .rm { display: grid; place-items: center; width: 28px; height: 28px; border: 0; border-radius: var(--r-s); background: none; color: var(--ink-3); cursor: pointer; font-size: 16px; }
+    .dish-row .rm:hover { background: var(--bad-tint); color: var(--bad); }
+    .flag { display: inline-grid; place-items: center; width: 100%; padding: 5px 4px; border-radius: 999px; font: 600 12px/1.2 var(--font-body, inherit); letter-spacing: .01em; text-align: center; min-width: 0; }
+    .flag-star { background: var(--green-tint); color: var(--green); }
+    .flag-volume { background: #e8eef8; color: #35558f; }
+    .flag-premium { background: #f8f0dc; color: #8a6413; }
+    .flag-watch { background: var(--bad-tint); color: var(--bad); }
+    .flag-none { background: var(--line); color: var(--ink-3); }
+    .add-row { margin-top: 10px; border: 1.5px dashed var(--line-2); background: none; border-radius: var(--r-m); padding: 9px 14px; font: 600 14px var(--font-body, inherit); color: var(--ink-2); cursor: pointer; }
+    .add-row:hover { border-color: var(--green); color: var(--green); }
+    .fineprint { font-size: 13px; color: var(--ink-3); margin-top: 12px; line-height: 1.5; }
+    .answer-card { position: sticky; top: 16px; padding: 20px 22px; }
+    .ans-row { display: flex; justify-content: space-between; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; color: var(--ink-2); }
+    .ans-row b { font: 640 1.15rem var(--font-display); font-variant-numeric: tabular-nums; color: var(--ink); }
+    .ans-row.big { padding: 4px 0 10px; }
+    .ans-row.big span { font-weight: 600; color: var(--ink); }
+    .ans-row.big b { font-size: 2.3rem; color: var(--green); }
+    .ans-note { font-size: 13px; color: var(--ink-3); line-height: 1.5; padding: 10px 0 4px; }
+    .ans-links { display: grid; gap: 6px; font-size: 13.5px; }
+    .ans-links a { color: var(--ink-2); text-decoration: underline; text-underline-offset: 3px; }
+    .ans-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+    .btn-primary { border: 0; border-radius: var(--r-m); background: var(--ink); color: var(--paper); font: 600 14.5px var(--font-body, inherit); padding: 11px 14px; cursor: pointer; }
+    .btn-primary:hover { opacity: .9; }
+    .btn-ghost { border: 1.5px solid var(--line-2); border-radius: var(--r-m); background: none; color: var(--ink-2); font: 600 14.5px var(--font-body, inherit); padding: 11px 14px; cursor: pointer; }
+    .btn-ghost:hover { border-color: var(--ink-3); color: var(--ink); }
+    .save-hint { font-size: 12px; color: var(--ink-3); margin-top: 10px; text-align: center; }
+    .profit-sheet { display: none; }
+    @media (max-width: 860px) {
+      .work { grid-template-columns: minmax(0, 1fr); }
+      .answer-card { position: static; }
+      .meta-grid { grid-template-columns: minmax(0, 1fr); }
+      .import-bar { flex-direction: column; align-items: stretch; }
+      .import-btn { width: 100%; }
+      .rows-head { display: none; }
+      .dish-row {
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.15fr) minmax(0, .8fr) auto 28px;
+        grid-template-areas:
+          'name name name name name'
+          'price cost pct flag rm';
+        row-gap: 6px;
+      }
+      .dish-row input[data-k='name'] { grid-area: name; }
+      .dish-row input[data-k='price'] { grid-area: price; }
+      .dish-row input[data-k='cost'] { grid-area: cost; }
+      .dish-row .cell-pct { grid-area: pct; }
+      .dish-row .cell-margin { display: none; }
+      .dish-row .flag { grid-area: flag; font-size: 11.5px; padding: 5px 3px; }
+      .dish-row .rm { grid-area: rm; }
+      .dish-row input { padding-left: 6px; padding-right: 6px; font-size: 13.5px; }
+    }
+    @media print {
+      .industry-hero, .nav, .crumbs, .form-col, .prose, .faq, .related, footer.site, .fineprint, .ans-links, .ans-actions, .save-hint, .import-bar { display: none !important; }
+      .work { display: block; padding: 0; }
+      .out-col { width: 100%; }
+      .answer-card { display: none; }
+      .profit-sheet { display: block; font: 500 13px/1.45 var(--font-body, "Inter", serif); color: #111; padding: 24px 8px; }
+      .sheet-brand { font: 700 15px var(--font-display, inherit); letter-spacing: .12em; border-bottom: 2px solid #111; padding-bottom: 8px; margin-bottom: 12px; }
+      .sheet-meta { display: flex; gap: 28px; margin-bottom: 12px; }
+      .sheet-meta span { display: block; font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: .05em; }
+      .sheet-meta b { font-size: 14px; }
+      .profit-sheet table { width: 100%; border-collapse: collapse; }
+      .profit-sheet th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: #555; border-bottom: 1px solid #999; padding: 6px 8px 6px 0; }
+      .profit-sheet td { border-bottom: 1px solid #ddd; padding: 6px 8px 6px 0; font-variant-numeric: tabular-nums; }
+      .profit-sheet td:last-child { font-size: 12px; }
+      .sheet-totals { margin-top: 14px; display: grid; gap: 6px; }
+      .sheet-totals div { display: flex; justify-content: space-between; max-width: 340px; margin-left: auto; }
+      .sheet-totals b { font-variant-numeric: tabular-nums; }
+      .sheet-foot { margin-top: 18px; font-size: 11px; color: #888; border-top: 1px solid #ddd; padding-top: 8px; }
+    }
+  </style>
+
+  <script>
+    import { beaconUse } from '../../scripts/stats';
+
+    type Dish = { name: string; price: string; cost: string };
+    const EXAMPLE: Dish[] = [
+      { name: 'House burger & fries', price: '16.50', cost: '5.30' },
+      { name: 'Caesar salad', price: '13.00', cost: '2.95' },
+      { name: 'Ribeye steak', price: '30.00', cost: '12.40' },
+      { name: 'Smoked brisket plate', price: '21.00', cost: '5.85' },
+    ];
+    const KEY = 'mst-menu-profit-sheet';
+    const RECIPE_KEY = 'mst-recipe-cost'; // recipe-cost-calculator 的单菜谱存档
+    const money = (n: number) => '$' + (Math.round(n * 100) / 100).toFixed(2);
+    const pct = (n: number) => (Math.round(n * 10) / 10).toFixed(1) + '%';
+    const num = (v: string) => { const n = parseFloat(String(v).replace(/[^0-9.]/g, '')); return Number.isFinite(n) ? n : 0; };
+
+    let counted = false;
+    const countUse = () => { if (!counted) { counted = true; beaconUse('menu-profit-sheet'); } };
+
+    const rowsEl = document.getElementById('rows')!;
+    let data: Dish[] = [];
+
+    type Computed = { dish: Dish; price: number; cost: number; pct: number | null; margin: number | null; label: string; cls: string };
+    function compute() {
+      const parsed = data.map((dish) => {
+        const price = num(dish.price), cost = num(dish.cost);
+        return { dish, price, cost, pct: price > 0 && cost > 0 ? (cost / price) * 100 : null, margin: price > 0 ? price - cost : null };
+      });
+      const withPct = parsed.filter((p) => p.pct !== null);
+      const avgPct = withPct.length ? withPct.reduce((s, p) => s + (p.pct as number), 0) / withPct.length : 0;
+      const priced = parsed.filter((p) => p.price > 0);
+      const avgPrice = priced.length ? priced.reduce((s, p) => s + p.price, 0) / priced.length : 0;
+      const out: Computed[] = parsed.map((p) => {
+        let label = '—', cls = 'flag-none';
+        if (p.pct !== null && p.price > 0) {
+          const hiPrice = p.price >= avgPrice, lean = (p.pct as number) <= avgPct;
+          if (hiPrice && lean) { label = '★ Star'; cls = 'flag-star'; }
+          else if (!hiPrice && lean) { label = 'Volume'; cls = 'flag-volume'; }
+          else if (hiPrice) { label = 'Premium'; cls = 'flag-premium'; }
+          else { label = 'Watch'; cls = 'flag-watch'; }
+        }
+        return { ...p, label, cls };
+      });
+      const margins = parsed.filter((p) => p.margin !== null);
+      const avgMargin = margins.length ? margins.reduce((s, p) => s + (p.margin as number), 0) / margins.length : null;
+      const target = Math.max(5, Math.min(90, num((document.getElementById('target') as HTMLSelectElement).value) || 30));
+      const over = withPct.filter((p) => (p.pct as number) > target);
+      return { out, avgPct, avgMargin, target, over, count: parsed.length };
+    }
+
+    function renderRows() {
+      rowsEl.innerHTML = '';
+      data.forEach((dish, i) => {
+        const row = document.createElement('div');
+        row.className = 'dish-row';
+        row.innerHTML = `
+          <input type="text" data-k="name" value="${dish.name.replace(/"/g, '&quot;')}" placeholder="Dish name" autocomplete="off" />
+          <input type="text" inputmode="decimal" data-k="price" value="${dish.price}" placeholder="Price $" aria-label="Menu price" autocomplete="off" />
+          <input type="text" inputmode="decimal" data-k="cost" value="${dish.cost}" placeholder="Cost $" aria-label="Plate cost" autocomplete="off" />
+          <div class="cell-pct"></div>
+          <div class="cell-margin"></div>
+          <span class="flag flag-none">—</span>
+          <button class="rm" type="button" aria-label="Remove dish">×</button>`;
+        row.querySelectorAll('input').forEach((inp) => {
+          inp.addEventListener('input', () => {
+            (data[i] as unknown as Record<string, string>)[inp.dataset.k!] = (inp as HTMLInputElement).value;
+            countUse(); calc(); save();
+          });
+        });
+        row.querySelector('.rm')!.addEventListener('click', () => {
+          data.splice(i, 1); countUse(); renderRows(); calc(); save();
+        });
+        rowsEl.appendChild(row);
+      });
+    }
+
+    function save() {
+      const state = {
+        restaurant: (document.getElementById('rname') as HTMLInputElement).value,
+        target: (document.getElementById('target') as HTMLSelectElement).value,
+        rows: data,
+      };
+      try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { /* 隐私模式等场景静默 */ }
+    }
+
+    function restore(): boolean {
+      try {
+        const raw = localStorage.getItem(KEY);
+        if (!raw) return false;
+        const s = JSON.parse(raw);
+        if (!Array.isArray(s.rows) || s.rows.length === 0) return false;
+        (document.getElementById('rname') as HTMLInputElement).value = s.restaurant ?? '';
+        (document.getElementById('target') as HTMLSelectElement).value = s.target ?? '30';
+        data = s.rows;
+        return true;
+      } catch { return false; }
+    }
+
+    function escapeHtml(s: string): string {
+      return s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] as string));
+    }
+
+    function calc() {
+      const r = compute();
+
+      r.out.forEach((row2, i) => {
+        const el = rowsEl.querySelectorAll('.dish-row')[i];
+        if (!el) return;
+        el.querySelector('.cell-pct')!.textContent = row2.pct !== null ? pct(row2.pct) : '—';
+        el.querySelector('.cell-margin')!.textContent = row2.margin !== null ? money(row2.margin) : '—';
+        const chip = el.querySelector('.flag')!;
+        chip.textContent = row2.label;
+        chip.className = 'flag ' + row2.cls;
+      });
+
+      document.getElementById('out-avg')!.textContent = r.avgPct > 0 ? pct(r.avgPct) : '—';
+      document.getElementById('out-count')!.textContent = String(r.count);
+      document.getElementById('out-margin')!.textContent = r.avgMargin !== null ? money(r.avgMargin) : '—';
+      document.getElementById('out-over')!.textContent = String(r.over.length);
+      document.getElementById('out-over-lbl')!.textContent = `Priced above your ${Math.round(r.target)}% target`;
+
+      // verdict：有超目标菜先修它；全达标给健康话术
+      const note = document.getElementById('out-note')!;
+      if (r.over.length > 0) {
+        const worst = r.over.reduce((a, b) => ((b.pct as number) > (a.pct as number) ? b : a));
+        note.textContent = `${worst.dish.name || 'Unnamed dish'} runs at ${pct(worst.pct as number)} — over your ${Math.round(r.target)}% target. Reprice or recost it first; that is the fastest margin on this menu.`;
+      } else if (r.avgPct > 0) {
+        note.textContent = `Every priced dish sits at or under your ${Math.round(r.target)}% target. Most full-service kitchens run 28–35% — you have room to feature the ★ dishes.`;
+      } else {
+        note.textContent = 'Most full-service kitchens run 28–35% food cost. Add dishes with prices to see the menu-level picture.';
+      }
+
+      // 打印表镜像
+      document.getElementById('s-name')!.textContent = (document.getElementById('rname') as HTMLInputElement).value || '—';
+      document.getElementById('s-date')!.textContent = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      document.getElementById('s-target')!.textContent = Math.round(r.target) + '%';
+      document.getElementById('s-rows')!.innerHTML = r.out.map((row2) =>
+        `<tr><td>${escapeHtml(row2.dish.name) || '—'}</td><td>${row2.price > 0 ? money(row2.price) : '—'}</td><td>${row2.cost > 0 ? money(row2.cost) : '—'}</td><td>${row2.pct !== null ? pct(row2.pct) : '—'}</td><td>${row2.margin !== null ? money(row2.margin) : '—'}</td><td>${row2.label}</td></tr>`
+      ).join('');
+      document.getElementById('s-count')!.textContent = String(r.count);
+      document.getElementById('s-avg')!.textContent = r.avgPct > 0 ? pct(r.avgPct) : '—';
+      document.getElementById('s-margin')!.textContent = r.avgMargin !== null ? money(r.avgMargin) : '—';
+    }
+
+    // 从 Recipe Cost Calculator 导入已成本菜谱（localStorage mst-recipe-cost）
+    document.getElementById('import-btn')!.addEventListener('click', () => {
+      countUse();
+      const note = document.getElementById('import-note')!;
+      try {
+        const raw = localStorage.getItem(RECIPE_KEY);
+        if (!raw) { note.textContent = 'No costed recipe found on this device yet — cost one first in the Recipe Cost Calculator.'; return; }
+        const s = JSON.parse(raw);
+        if (!Array.isArray(s.rows) || s.rows.length === 0) { note.textContent = 'The saved recipe has no ingredients — open the Recipe Cost Calculator and re-save it.'; return; }
+        const total = s.rows.reduce((sum: number, ing: Record<string, string>) => sum + num(ing.qty) * num(ing.unitCost), 0);
+        const servings = Math.max(1, num(s.servings) || 1);
+        const per = total / servings;
+        if (!(per > 0)) { note.textContent = 'The saved recipe costs $0 — check its ingredient rows in the Recipe Cost Calculator.'; return; }
+        const name = String(s.name || 'Imported recipe');
+        const existing = data.findIndex((d) => d.name.trim().toLowerCase() === name.trim().toLowerCase());
+        if (existing >= 0) data[existing].cost = per.toFixed(2);
+        else data.push({ name, price: '', cost: per.toFixed(2) });
+        note.textContent = `Imported "${name}" at ${money(per)}/serving — add its menu price and it flags itself.`;
+        renderRows(); calc(); save();
+      } catch { note.textContent = 'Could not read the saved recipe — it may be from an older version.'; }
+    });
+
+    document.getElementById('add-row')!.addEventListener('click', () => {
+      data.push({ name: '', price: '', cost: '' });
+      countUse(); renderRows(); calc(); save();
+      const inputs = rowsEl.querySelectorAll(`.dish-row:nth-child(${data.length}) input`);
+      (inputs[0] as HTMLInputElement | undefined)?.focus();
+    });
+    document.getElementById('rname')!.addEventListener('input', () => { countUse(); save(); });
+    document.getElementById('target')!.addEventListener('change', () => { countUse(); calc(); save(); });
+    document.getElementById('print-btn')!.addEventListener('click', () => window.print());
+    document.getElementById('reset-btn')!.addEventListener('click', () => {
+      (document.getElementById('rname') as HTMLInputElement).value = 'Main Street Grill';
+      (document.getElementById('target') as HTMLSelectElement).value = '30';
+      data = EXAMPLE.map((x) => ({ ...x }));
+      renderRows(); calc(); save();
+    });
+
+    if (!restore()) data = EXAMPLE.map((x) => ({ ...x }));
+    renderRows(); calc();
+  </script>
+</BaseLayout>

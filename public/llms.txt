@@ -4,7 +4,7 @@
 
 ## Docs
 
-- [Home](https://mainstreettoolbox.com/): Overview of all 41 free tools with a live search box; the fastest way to find the right calculator.
+- [Home](https://mainstreettoolbox.com/): Overview of all 43 free tools with a live search box; the fastest way to find the right calculator.
 - [All Tools](https://mainstreettoolbox.com/tools/): Every calculator grouped by trade with one-line descriptions of what each answers.
 - [Restaurant tools](https://mainstreettoolbox.com/restaurant/): Food cost, menu pricing, menu engineering, tip out, prime cost and labor calculators for restaurant owners.
 - [Cleaning tools](https://mainstreettoolbox.com/cleaning/): House cleaning estimates, pressure washing and window cleaning pricing, junk removal, invoices and checklists.
@@ -20,6 +20,7 @@
 - [Food Cost Percentage Calculator](https://mainstreettoolbox.com/restaurant/food-cost-percentage-calculator/): Enter plate cost and menu price; returns food cost percentage against the 28–35% healthy band and the price that fixes a high number.
 - [Menu Pricing Calculator](https://mainstreettoolbox.com/restaurant/menu-pricing-calculator/): Set menu prices from target food cost percentage per dish.
 - [Recipe Cost Calculator](https://mainstreettoolbox.com/restaurant/recipe-cost-calculator/): Costs a dish from ingredients, quantities and unit costs — total recipe cost, cost per serving and the menu price for a target food cost percentage; printable cost card.
+- [Menu Profit Sheet](https://mainstreettoolbox.com/restaurant/menu-profit-sheet/): Rolls costed dishes into one menu-level sheet — food cost % and contribution margin per dish, four pricing flags against menu averages, printable one-page profit sheet; imports dishes costed on this device.
 - [Pour Cost Calculator](https://mainstreettoolbox.com/restaurant/pour-cost-calculator/): Checks any drink against its pour cost band — spirits 15–22%, draft beer 20–28%, wine 28–40% — and shows the menu price that fixes a high pour.
 - [Menu Engineering Matrix](https://mainstreettoolbox.com/restaurant/menu-engineering-matrix/): Scores every dish on profitability and popularity; classifies Stars, Plowhorses, Puzzles and Dogs with an action per class.
 - [Tip Out Calculator](https://mainstreettoolbox.com/restaurant/tip-out-calculator/): Splits the tip pool across servers and support staff by percentage shares; printable summary sheet.
