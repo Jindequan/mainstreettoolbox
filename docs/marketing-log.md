@@ -154,3 +154,9 @@
 - **上线**：/cleaning/mold-remediation-cost-calculator/（第 45 工具/73 页）——清欠批验三族之二。闸 3 补源达标：小型补丁 $500–1,500（TOH∩HelperTools）、典型单 $1,200–3,750（MyQuoteIQ∩SERVPRO∩Palm∩Angi）、全屋 $10k–30k（TOH 上带+SERP 共识佐证）。承包商报价视角差异化=报价行项清单（containment/HEPA/clearance）。IndexNow 200；Bing SubmitUrlBatch 待 key（TODO 区）。
 - **GSC 读数（数据滞后至 09-27）**：7d 199 展现/0 点击/**排名 66（历史最佳，此前 72-76）**；28d 1,217 展现。判读：展现连续回落（526→…→199）与排名爬升并存——Google 收窄到相关查询，质量信号积累期。
 - **风险登记**：①Indexed 55 一周持平（9 新页未收）→ 10-14 死线（≥65）有压力，预案=内链专项轮提前；②10-06 判据（28d≥2000+点击≥3）按现轨迹不达 → 判据日行使自主修订权（存档旧值+注明理由）。
+
+### 第 25 轮 2026-10-01：retail 族内链批次 + benchmarks 对齐 + 多实例协同规则
+- **retail 集群互链成网**：6 工具 related 补齐（retail-math 为桥），枢纽 retail 段算术带 +2 行 + 3 深链，5 个工具页 explain 问句 H3（GEO 工具页侧清零）——服务 10-21 判据（retail 族 28d 展现 ≥100）的承接面。
+- **benchmarks-attic-insulation.md 对齐重写**：TLS 源核验真实（tlsinsulation.com 2026 总带 $0.75–7.00），已部署工具带全表可追溯；open-cell 三源带/空阁楼档/拆除带入"未进计算"备注区=未来迭代素材。
+- **撞车根因发现**：两实例共享同一工作目录，对方 git add -A 连续两轮把本实例在途改动裹挟提交（内容无损、审计混乱）。运行规则 10 入册：禁 add -A、逐文件审阅、双向 fetch、在途文件不覆盖。
+- 部署对齐：25 轮末全量重建部署，生产=origin HEAD；IndexNow 12 URL 200。
