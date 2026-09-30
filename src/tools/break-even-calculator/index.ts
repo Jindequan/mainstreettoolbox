@@ -27,9 +27,11 @@ export default {
   },
   compute: (values, _rows, p) => calcBreakEven(values, p),
   explain: `
+    <h3>What is a restaurant's break-even point?</h3>
     <p>Break-even is the sales level where the restaurant stops losing money: fixed costs (rent, insurance,
     salaried staff, loan payments) ÷ contribution margin from each sales dollar. With a 60% variable cost
     (food plus hourly labor), every dollar of sales leaves 40¢ to pay fixed costs.</p>
+    <h3>How do you lower your break-even?</h3>
     <p>Translating that into <b>covers per day</b> makes it real: it becomes a number you can compare against
     your Tuesday reality. If the required covers feel out of reach, the levers are — in order of speed —
     average ticket (sell more per check), variable costs (portion and waste), then fixed costs (the lease).</p>`,
@@ -38,5 +40,5 @@ export default {
     { q: 'What is a good contribution margin for a restaurant?', a: 'After food (28–35%) and hourly labor (25–35%), a healthy restaurant keeps 30–45% of each sales dollar to cover fixed costs and profit. Below 40% contribution makes break-even very hard.' },
     { q: 'How many covers can a small restaurant serve per day?', a: 'It depends on seats and turns — a 40-seat room turning twice at dinner is roughly 80 covers on a strong night. Compare your break-even covers against your slowest weekday, not your best Saturday.' },
   ],
-  related: ['profit-margin-calculator', 'prime-cost-calculator', 'labor-cost-calculator', 'menu-pricing-calculator'],
+  related: ['profit-margin-calculator', 'retail-math-calculator', 'prime-cost-calculator', 'labor-cost-calculator', 'menu-pricing-calculator'],
 } as RegisteredTool;

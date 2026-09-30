@@ -50,5 +50,5 @@ export default {
     { q: 'How do I price extras like mulch or leaf removal?', a: 'As separate lines on the same estimate — never folded into the mowing price. It keeps the base price clean and makes upsells visible.' },
     { q: 'Is an estimate a contract?', a: 'A signed estimate functions like a lightweight agreement: it records scope and price, and courts generally treat it as evidence of the deal. For season-long work, add start and end dates to the notes so both sides know when it renews.' },
   ],
-  related: ['lawn-mowing-price-calculator', 'cleaning-invoice-generator', 'contractor-hourly-rate-calculator'],
+  related: ['lawn-mowing-price-calculator', 'tree-removal-cost-calculator', 'cleaning-invoice-generator', 'contractor-hourly-rate-calculator'],
 } as RegisteredTool;

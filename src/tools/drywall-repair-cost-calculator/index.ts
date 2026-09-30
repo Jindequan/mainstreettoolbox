@@ -99,5 +99,5 @@ export default {
     { q: 'How much is ceiling drywall repair?', a: 'Angi averages ceiling repair near $1,080 with a typical range of $438–1,724; Coastal Drywall books ceiling jobs at $250–1,400. The defensible quote band is $450–1,400, more if texture matching or water damage is involved.' },
     { q: 'Should paint and texture be included in a drywall quote?', a: 'No — the $1.50–3.50 per square foot national band is drywall only. Bill texture, paint and primer as separate lines. And if the damage is water-related, scope mold remediation first: it can add $1,500–4,500+ (Angi) and it changes the whole job.' },
   ],
-  related: ['painting-estimate-calculator', 'contractor-hourly-rate-calculator', 'material-cost-estimator'],
+  related: ['painting-estimate-calculator', 'attic-insulation-cost-calculator', 'popcorn-ceiling-removal-cost-calculator', 'material-cost-estimator'],
 } as RegisteredTool;

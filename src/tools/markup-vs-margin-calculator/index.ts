@@ -28,9 +28,11 @@ export default {
   },
   compute: (values, _rows, p) => calcMarkupMargin(values, p),
   explain: `
+    <h3>What is the difference between markup and margin?</h3>
     <p>Markup and margin describe the same money from two directions. <b>Markup</b> is profit compared to
     <em>cost</em>; <b>margin</b> is profit compared to <em>price</em>. A 50% markup on a $10 dish is a $15 price —
     but that same dish only has a <b>33.3% margin</b>, because $5 of profit is a third of $15.</p>
+    <h3>Why does the mix-up cost money?</h3>
     <p>The mix-up is expensive: a owner who asks for "50% margin" but prices with a 50% markup pockets a third,
     not a half. Whichever number your bookkeeper reports, make sure the kitchen and the spreadsheet mean the
     same thing.</p>
@@ -48,5 +50,5 @@ export default {
     { q: 'Why does 100% markup equal 50% margin?', a: 'Doubling your cost adds a profit equal to the cost (100% markup), but that profit is half of the final price, because price = cost + profit. Margin is always smaller than markup for the same sale.' },
     { q: 'What margin do restaurants aim for?', a: 'On individual dishes, margins of 65–72% (a 28–35% food cost) are typical. Net profit for the whole restaurant is far thinner — usually 3–9% — after labor, rent and overhead.' },
   ],
-  related: ['menu-pricing-calculator', 'food-cost-percentage-calculator', 'profit-margin-calculator', 'break-even-calculator'],
+  related: ['retail-math-calculator', 'discount-profit-calculator', 'profit-margin-calculator', 'break-even-calculator', 'menu-pricing-calculator'],
 } as RegisteredTool;

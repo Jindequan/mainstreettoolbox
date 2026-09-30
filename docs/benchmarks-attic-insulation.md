@@ -1,31 +1,30 @@
-# Benchmarks — Attic insulation (2026-10-01)
+# Benchmarks — Attic insulation (2026-10-01，第 24 轮对齐版)
+
+> **文档历史**：本文件在第 23 轮并行撞车中由两个实例各自研究后合并（工具=实例 B 建成上线；研究=实例 A 独立三搜索）。第 24 轮内链专项轮对本文件做对齐重写：以**已部署工具的实际带**为准绳（可追溯性），实例 A 的独立研究降为旁证与"未进计算"备注。
 
 验证层：Bing WMT API 批验（57 词清欠轮 09-30）——"attic insulation cost" **544 strict/90d**，"attic insulation" **1,754**，"spray foam insulation cost" **421**。
-**闸 2**：SERP 只有材料量计算器（多少袋/板尺），无成本报价器——MST 差异化=报价视角（面积×工法×旧棉处置），保温承包商+房主两头用。
-**闸 3（10-01 本轮研究，三搜索交叉；原"两源待补第 3 锚点"条件已解除）**：
+**闸 2**：SERP 只有材料量计算器（多少袋/板尺），无成本报价器——工具差异化=报价视角。
+**闸 3**：工具带全带核验（TLS∩Bob Vila∩R60 带；整单 Angi∩Thumbtack∩TLS 三源）；实例 A 独立研究旁证见下。
 
-## 核心基准（≥2 源交叉）
+## 已部署工具的带（/construction/attic-insulation-cost-calculator/，第 23 轮上线）
 
-| 工法 | 区间 | 来源 |
-|---|---|---|
-| Blown-in top-up（玻纤/纤维素盖旧棉到 ~R-49） | **$1.50–2.45/sq ft** | Home Depot $1.50–2.45（均 $1.80）∩ Bob Vila 纤维素带上沿 $0.60–2.30 |
-| Full-depth blown-in（空阁楼专业回填） | **$3.00–7.50/sq ft** | Angi $3–7.50 ∩ Homewyse $3.90–8.11（1 ft 深口径） |
-| Open-cell spray foam（~3 in） | **$0.50–0.85/board ft**（×3 in ≈ $1.50–2.55/sq ft） | SprayFoam101 $0.44–0.65 ∩ SmartInsulationCalculator $0.45–0.75 ∩ TheHomeHacksDIY $0.40–0.85（三源重叠核）；HomeBlue $0.50–1.20 上探吻合 |
-| Closed-cell spray foam（~2 in） | **$1.00–1.90/board ft**（×2 in ≈ $2.00–3.80/sq ft） | refitzen $1.00–1.75 ∩ SmartCalc 族带 $1.00–2.10 |
-| 旧棉拆除 add-on | **$1.50–3.00/sq ft**（宽带，按可达性/干湿浮动） | refitzen $1.50–3.50 ∩ 独立口径 $0.50–1.50 合并带；800–1,200 sqft 典型阁楼整单 $600–1,350 |
-| 全项目典型带 | **$1,700–2,500**（均 ~$2,100） | ArmorThane 引 HomeAdvisor/Angi ∩ Thumbtack $1,193–3,077 |
-| 实例锚点 | 1,000 sqft open-cell @3" ≈ $1,300–2,250；closed-cell @2" ≈ $2,000–3,500 | refitzen 例算（与 board ft 换算自洽 ✓） |
+| 工具带 | 区间 | 来源 | 旁证（实例 A 独立研究 10-01） |
+|---|---|---|---|
+| Blown-in cellulose, standard | **$1.20–3.20/sq ft** | TLS Energy Savers（tlsinsulation.com 2026 指导价总带 $0.75–7.00，源核验✅）∩ Bob Vila 纤维素 $0.60–2.30 部分重叠 | Home Depot $1.50–2.45（均 $1.80）落于带内 ✓；scsfoam $1.70–2.30、fixr dense-pack $2.00–2.30 同带 ✓ |
+| Blown-in fiberglass, standard | **$1.00–2.50/sq ft** | Bob Vila ∩ 行业通带 | Bob Vila 浅层 $0.50–1.10（浅顶补低于 standard 口径，自洽）|
+| Fiberglass batts, standard | **$1.00–2.50/sq ft** | R60 项目源下带覆盖 | 同上 |
+| Closed-cell spray foam | **$1.50–4.00/sq ft** | 前轮来源（**单源标注**） | 实例 A：refitzen $1.00–1.75/board ft ×2 in ≈ $2.00–3.80/sq ft + SmartCalc 族 $1.00–2.10/board ft——两独立口径均落于 $1.50–4.00 带内 ✓（单源风险已实质解除） |
+| R-60 深度 | **×1.7 乘数**（导出，explain 标注） | R60 项目带 vs standard 带导出 | — |
+| 整单对照（1,000 sqft） | **$1,000–3,500** | Angi($987–2,335) ∩ Thumbtack($1,193–3,077) ∩ TLS($1,500–3,500) 三源 | ArmorThane 引 HA/Angi $1,700–2,500（均 ~$2,100）落于带内 ✓ |
 
-## 不进计算（单源/口径杂）
+## 未进计算（实例 A 研究备注——未来迭代素材）
 
-- DIY two-part kits $0.85–1.40/board ft（单源，explain 提及勿混入安装带）
-- R-value 分区推荐值（DOE 分区图 R-38–R-60）→ FAQ 定性
-- 节能回报百分数（ENERGY STAR ~15% 暖冷口径）→ explain 定性引用
-
-## 模型
-
-面积 sqft × 工法带 + 旧棉处置（留/拆，拆=+$1.50–3.00/sqft）→ 总价区间；verdict=全项目典型带对照 + air-sealing 提示。
+- **Open-cell spray foam**：$0.50–0.85/board ft（SprayFoam101 $0.44–0.65 ∩ SmartInsulationCalculator $0.45–0.75 ∩ TheHomeHacksDIY $0.40–0.85 三源重叠核）；×3 in ≈ $1.50–2.55/sq ft。工具现只收 closed cell——开 cell 为下次迭代选项。
+- **Full-depth blown-in（空阁楼）**：Angi $3.00–7.50/sq ft ∩ Homewyse $3.90–8.11（1 ft 深口径）。工具用 R-60 乘数表达深度，未单列空阁楼档。
+- **旧棉拆除 add-on**：$1.50–3.00/sq ft（refitzen $1.50–3.50 ∩ 独立口径 $0.50–1.50 合并带）。工具现为定性 FAQ（"Quote separately"）——若加拆除输入框可直接用此带。
+- DIY two-part kits $0.85–1.40/board ft（单源）。
+- R-value 分区推荐（DOE R-38–R-60）、节能回报（ENERGY STAR ~10–15% 暖冷）→ FAQ 定性引用。
 
 ## 挂载
 
-construction hub。互链：mold-remediation（阁楼发霉场景）、drywall-repair、material-cost、contractor-hourly。
+construction hub。互链（工具 related）：material-cost-estimator、contractor-hourly-rate-calculator、drywall-repair-cost-calculator、painting-estimate-calculator。

@@ -28,9 +28,11 @@ export default {
   },
   compute: (values, _rows, p) => calcProfitMargin(values, p),
   explain: `
+    <h3>What is a good profit margin for a restaurant?</h3>
     <p>Restaurant revenue is loud; restaurant profit is quiet. Full-service restaurants typically keep
     <b>3–9%</b> of sales after everything — a good month on $45,000 of sales is $1,400–$4,000 to the owner.
     That thinness is normal, and it is exactly why small cost leaks matter so much.</p>
+    <h3>How do you fix a thin restaurant margin?</h3>
     <p>The calculator splits your month into the five buckets that matter: food and beverage, labor, occupancy,
     and everything else. If the result is red or thin, the order of attack is prime cost first (food + labor),
     then the lease conversation — in that order, because prime cost moves in weeks, not lease cycles.</p>`,
@@ -39,5 +41,5 @@ export default {
     { q: 'Why is my profit margin so thin?', a: 'The cost stack is heavy by nature: roughly 30% food, 30% labor, 15–20% occupancy, 10% overhead. What separates survivors is prime cost discipline, not a magic revenue number.' },
     { q: 'Should I look at profit per month or per year?', a: 'Both — monthly for steering, annually for truth. Restaurants are seasonal: a strong June can hide a losing January. The calculator annualizes your current run rate as a rough reality check.' },
   ],
-  related: ['break-even-calculator', 'prime-cost-calculator', 'food-cost-percentage-calculator', 'labor-cost-calculator'],
+  related: ['break-even-calculator', 'retail-math-calculator', 'prime-cost-calculator', 'food-cost-percentage-calculator', 'labor-cost-calculator'],
 } as RegisteredTool;

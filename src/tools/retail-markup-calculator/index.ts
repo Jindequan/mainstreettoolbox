@@ -28,14 +28,17 @@ export default {
   },
   compute: (values, _rows, p) => calcMarkupMargin(values, p),
   explain: `
-    <p><b>How to calculate retail price from cost — the two formulas:</b> working from a markup,
+    <h3>How do you calculate retail price from cost?</h3>
+    <p>Two formulas, one destination: working from a markup,
     <b>price = cost × (1 + markup%)</b>. Working from a margin, <b>price = cost ÷ (1 − margin%)</b>.
     Markup starts at what you paid and adds up; margin starts at the price and asks what share is profit.
     On a $10 cost, a 100% markup and a 50% margin land on the same $19.99-ish shelf price — two roads,
     one destination, and this calculator drives both.</p>
+    <h3>What markup should a retail store use?</h3>
     <p>Retail lives on markup — but survives on margin. <b>Keystone pricing</b> (doubling wholesale cost) is the
     traditional floor for independent shops: a 100% markup, which is a 50% margin before rent. Gift and
     specialty often run higher; groceries and hardware run far lower and make it up in turns.</p>
+    <h3>How much does a 20%-off sale really cost?</h3>
     <p>The number that matters after the price is set is the <b>markdown math</b>: a 20%-off sale needs roughly
     1.5× the units to hold profit. Price the shelf so that the discount you'll eventually run still pays the
     rent.</p>

@@ -90,5 +90,5 @@ export default {
     { q: 'How often should gutters be cleaned?', a: 'At least twice a year — spring and fall — without guards (Leafguard). Homes under heavy tree cover do better on a quarterly plan. With quality guards, once a year usually covers it.' },
     { q: 'Why do two-story gutters cost more to clean?', a: 'Height drives equipment, time and insurance: extensions or platforms on every section, slower ladder work, and a higher risk tier for the crew. That\'s why the per-foot rate roughly doubles from one story to three.' },
   ],
-  related: ['cleaning-estimate-calculator', 'pressure-washing-price-calculator', 'window-cleaning-price-calculator'],
+  related: ['cleaning-estimate-calculator', 'mold-remediation-cost-calculator', 'dryer-vent-cleaning-cost-calculator', 'pressure-washing-price-calculator'],
 } as RegisteredTool;

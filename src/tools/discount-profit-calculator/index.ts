@@ -22,9 +22,11 @@ export default {
   },
   compute: (values, _rows, p) => calcDiscountVolume(values, p),
   explain: `
+    <h3>How much more must you sell to break even on a discount?</h3>
     <p>The discount trap: on a 40% margin, a 15%-off sale needs <b>60% more unit sales</b> just to make the same
     profit — and at a 20% margin it needs infinite (you'd be selling at cost). Discounts don't create profit;
     they trade it for volume, and the exchange rate is brutal at thin margins.</p>
+    <h3>When is a discount worth it?</h3>
     <p>That doesn't mean never discount — it means knowing the price of the party before you throw it. Run the
     number first; if the required lift looks impossible, try a bundled offer or a minimum-spend threshold
     instead, which move volume without cutting the margin on every unit.</p>`,
@@ -32,5 +34,5 @@ export default {
     { q: 'How much more do I need to sell at 20% off?', a: 'On a 40% margin: +100% — double. On a 50% margin: +67%. On a 20% margin: mathematically impossible (you\'d be selling below cost). The thinner the margin, the deadlier the discount.' },
     { q: 'Are sales and discounts always bad?', a: 'No — they\'re fine for moving dead stock at cost, winning a new client whose repeat business is worth the give-up, or matching a competitor once. Bad is running them by habit without running this math.' },
   ],
-  related: ['retail-markup-calculator', 'markup-vs-margin-calculator', 'profit-margin-calculator'],
+  related: ['retail-markup-calculator', 'markup-vs-margin-calculator', 'retail-math-calculator', 'profit-margin-calculator', 'break-even-calculator'],
 } as RegisteredTool;

@@ -80,10 +80,12 @@ const HUB_CONTENT: Record<string, { question: string; intro: string; bands: [str
     intro: "Retail pricing rules that never go out of date — the two arithmetic facts behind every markup and every sale.",
     bands: [
       ["Keystone pricing", "100% markup = 50% margin", "Arithmetic rule"],
+      ["Markup → margin conversion", "margin = markup ÷ (1 + markup)", "Arithmetic rule"],
       ["20% discount at 50% margin", "~+67% volume to break even", "Discount math"],
+      ["20% discount at 40% margin", "~+100% volume — double", "Discount math"],
       ["Typical retail margin range", "25–50%", "Category-dependent; MTB guide synthesis"],
     ],
-    more: "Work the numbers: <a href=\"/retail/retail-math-calculator/\">retail math calculator</a>.",
+    more: "Work the numbers: <a href=\"/retail/retail-math-calculator/\">retail math calculator</a>, the <a href=\"/retail/retail-markup-calculator/\">retail markup calculator</a> and the <a href=\"/retail/discount-profit-calculator/\">discount profit calculator</a>.",
   },
 };
 const hub = HUB_CONTENT[industry!];
