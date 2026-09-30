@@ -36,6 +36,7 @@ import aeration from './aeration-and-overseeding-calculator';
 import gutterCleaning from './gutter-cleaning-price-calculator';
 import dryerVent from './dryer-vent-cleaning-cost-calculator';
 import atticInsulation from './attic-insulation-cost-calculator';
+import airDuct from './air-duct-cleaning-cost-calculator';
 import leafRemoval from './leaf-removal-cost-calculator';
 import christmasLights from './christmas-light-pricing-calculator';
 import sprinklerBlowout from './sprinkler-blowout-cost-calculator';
@@ -84,6 +85,7 @@ export const TOOLS: RegisteredTool[] = [
   gutterCleaning,
   dryerVent,
   atticInsulation,
+  airDuct,
   leafRemoval,
   christmasLights,
   sprinklerBlowout,

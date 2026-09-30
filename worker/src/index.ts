@@ -36,6 +36,7 @@ export const SLUGS = new Set([
   'gutter-cleaning-price-calculator',
   'dryer-vent-cleaning-cost-calculator',
   'attic-insulation-cost-calculator',
+  'air-duct-cleaning-cost-calculator',
   'mold-remediation-cost-calculator',
   'leaf-removal-cost-calculator',
   // lawn
