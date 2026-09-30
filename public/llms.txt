@@ -4,7 +4,7 @@
 
 ## Docs
 
-- [Home](https://mainstreettoolbox.com/): Overview of all 36 free tools with a live search box; the fastest way to find the right calculator.
+- [Home](https://mainstreettoolbox.com/): Overview of all 41 free tools with a live search box; the fastest way to find the right calculator.
 - [All Tools](https://mainstreettoolbox.com/tools/): Every calculator grouped by trade with one-line descriptions of what each answers.
 - [Restaurant tools](https://mainstreettoolbox.com/restaurant/): Food cost, menu pricing, menu engineering, tip out, prime cost and labor calculators for restaurant owners.
 - [Cleaning tools](https://mainstreettoolbox.com/cleaning/): House cleaning estimates, pressure washing and window cleaning pricing, junk removal, invoices and checklists.
@@ -40,12 +40,18 @@
 - [Material Cost Estimator](https://mainstreettoolbox.com/construction/material-cost-estimator/): Materials with quantities, unit costs and a waste factor; the true material budget, printable.
 - [Work Order Generator](https://mainstreettoolbox.com/construction/work-order-generator/): Creates a printable work order with tasks, hours and labor cost — a one-page scope agreement.
 - [Contractor Hourly Rate Calculator](https://mainstreettoolbox.com/construction/contractor-hourly-rate-calculator/): The hourly rate a contractor must charge to cover wages, taxes, overhead and target profit — includes handyman and state variations.
+- [Drywall Repair Cost Calculator](https://mainstreettoolbox.com/construction/drywall-repair-cost-calculator/): Holes, ceilings, water damage or new hang — price the patch before you quote the paint. No signup.
+- [Dumpster Rental Cost Calculator](https://mainstreettoolbox.com/construction/dumpster-rental-cost-calculator/): Size the box, count the days, weigh the debris — see the full 2026 rental cost before you call a hauler. No signup.
+- [Popcorn Ceiling Removal Cost Calculator](https://mainstreettoolbox.com/construction/popcorn-ceiling-removal-cost-calculator/): Price the scrape before anyone sets foot on a ladder — per-sqft bands for painted and unpainted texture, asbestos caveat included. No signup.
 - [Lawn Mowing Price Calculator](https://mainstreettoolbox.com/lawn/lawn-mowing-price-calculator/): Prices mowing jobs by lawn size, frequency and trim work against US averages.
 - [Lawn Care Estimate Generator](https://mainstreettoolbox.com/lawn/lawn-care-estimate-generator/): Builds a full lawn-care estimate line by line — mowing, trim, edging, cleanup, fertilization — with US pricing bands and a printable quote.
 - [Mulch Calculator](https://mainstreettoolbox.com/lawn/mulch-calculator/): Cubic yards of mulch needed for an area and depth, with bag-count conversion.
 - [Snow Removal Pricing Calculator](https://mainstreettoolbox.com/lawn/snow-removal-pricing-calculator/): Prices snow removal per push by driveway size, as a seasonal contract or hourly — with 2026 US ranges and contract trigger-depth guidance.
 - [Aeration and Overseeding Calculator](https://mainstreettoolbox.com/lawn/aeration-and-overseeding-calculator/): Prices fall aeration and overseeding by lawn size — aeration alone $15–30 per 1,000 sq ft, the combination $35–80 — with double-pass and stop-fee guidance.
 - [Leaf Removal Cost Calculator](https://mainstreettoolbox.com/lawn/leaf-removal-cost-calculator/): Prices fall leaf cleanup by yard size — 1/4 acre $160–290 up to 1 acre $400–925 — cross-checked against your crew hours and rate, with minimum-charge guidance.
+- [Christmas Light Pricing Calculator](https://mainstreettoolbox.com/lawn/christmas-light-pricing-calculator/): Per foot by story and complexity, plus tree wraps — quote it before the season books up. No signup.
+- [Sprinkler Blowout Cost Calculator](https://mainstreettoolbox.com/lawn/sprinkler-blowout-cost-calculator/): Flat per visit or per zone — price winterization before the first freeze. No signup.
+- [Sod & Hydroseeding Cost Calculator](https://mainstreettoolbox.com/lawn/sod-hydroseeding-cost-calculator/): New-lawn quotes both ways — instant sod or sprayed lawn, priced per square foot. No signup.
 - [Service Price List Builder](https://mainstreettoolbox.com/salon/service-price-list-builder/): Builds a typeset, printable price list for any service business — salon, cleaning, lawn care or contracting.
 - [Booth Rent vs Commission Calculator](https://mainstreettoolbox.com/salon/booth-rent-commission-calculator/): Weekly sales, commission split and booth rent in; which pay structure leaves more in your pocket out.
 - [Receipt Generator](https://mainstreettoolbox.com/salon/receipt-generator/): Generates a clean printable receipt for services rendered — client, services, amounts, total.
@@ -64,7 +70,7 @@
 
 ## Key Facts
 
-- 36 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
+- 41 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
 - US pricing benchmarks throughout; target market is United States small businesses
 - Every tool works instantly with no signup, no account and no ads
 - Independent, single-developer project; pricing benchmarks sourced from industry data and cross-checked guides
