@@ -2,16 +2,31 @@
 // llms.txt 对账：注册表 TOOLS vs public/llms.txt 收录（memory 纪律：每次新工具上线必须对账）。
 // 用法：node scripts/llms-audit.mjs            # 只对账，退出码 1=有缺口
 //       node scripts/llms-audit.mjs --fix     # 自动把缺失工具按行业分组补进 ## Tools 段
-import { readFileSync, writeFileSync } from 'node:fs';
-import { TOOLS } from '../src/tools/index.ts';
+// 实现：正则扫描 src/tools/*/index.ts 提取 slug/industry/name/tagline——
+//       不 import 注册表（裸 node 解析不了目录/无扩展名导入，2026-10-01 第 31 轮修复）。
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
+
+const TOOLS_DIR = 'src/tools';
+const tools = [];
+for (const d of readdirSync(TOOLS_DIR)) {
+  const p = `${TOOLS_DIR}/${d}/index.ts`;
+  if (!existsSync(p)) continue;
+  const src = readFileSync(p, 'utf8');
+  const grab = (re) => (src.match(re) || [])[1];
+  const slug = grab(/slug: '([a-z0-9-]+)'/);
+  const industry = grab(/industry: '([a-z]+)'/);
+  const name = grab(/name: '([^']+)'/);
+  const tagline = grab(/tagline: '([^']+)'/) ?? grab(/tagline: "([^"]+)"/) ?? '';
+  if (slug && industry) tools.push({ slug, industry, name: name ?? slug, tagline });
+}
 
 const text = readFileSync('public/llms.txt', 'utf8');
-const missing = TOOLS.filter((t) => !text.includes(`/${t.industry}/${t.slug}/`));
+const missing = tools.filter((t) => !text.includes(`/${t.industry}/${t.slug}/`));
 
-console.log(`注册表 ${TOOLS.length} 个工具；llms.txt 缺 ${missing.length} 个：`);
+console.log(`注册表 ${tools.length} 个工具；llms.txt 缺 ${missing.length} 个：`);
 for (const t of missing) console.log(`  - [${t.industry}] ${t.name} — /${t.industry}/${t.slug}/`);
 
-const hubLines = ['restaurant', 'cleaning', 'construction', 'lawn', 'salon', 'retail']
+const hubLines = ['restaurant', 'cleaning', 'construction', 'lawn', 'salon', 'retail', 'auto']
   .filter((ind) => !text.includes(`https://mainstreettoolbox.com/${ind}/`));
 if (hubLines.length) console.log(`行业枢纽缺失：${hubLines.join(', ')}`);
 
@@ -30,10 +45,9 @@ if (process.argv.includes('--fix') && missing.length) {
     out = out.slice(0, insertAt) + '\n' + line + out.slice(insertAt);
   }
   // 修工具总数（"N free tools" → 实际注册数）
-  out = out.replace(/\b(\d+) free tools\b/g, `${TOOLS.length} free tools`);
-  out = out.replace(/\ball \d+ free tools\b/g, `all ${TOOLS.length} free tools`);
+  out = out.replace(/\b(\d+) free tools\b/g, `${tools.length} free tools`);
+  out = out.replace(/\ball \d+ free tools\b/g, `all ${tools.length} free tools`);
   writeFileSync('public/llms.txt', out);
   console.log(`\n已回填 ${missing.length} 条并修正总数 → public/llms.txt（重跑无 --fix 验证应为 0 缺口）`);
-  process.exit(missing.length ? 1 : 0);
 }
 process.exit(missing.length ? 1 : 0);

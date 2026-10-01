@@ -4,7 +4,7 @@
 
 ## Docs
 
-- [Home](https://mainstreettoolbox.com/): Overview of all 43 free tools with a live search box; the fastest way to find the right calculator.
+- [Home](https://mainstreettoolbox.com/): Overview of all 48 free tools with a live search box; the fastest way to find the right calculator.
 - [All Tools](https://mainstreettoolbox.com/tools/): Every calculator grouped by trade with one-line descriptions of what each answers.
 - [Restaurant tools](https://mainstreettoolbox.com/restaurant/): Food cost, menu pricing, menu engineering, tip out, prime cost and labor calculators for restaurant owners.
 - [Cleaning tools](https://mainstreettoolbox.com/cleaning/): House cleaning estimates, pressure washing and window cleaning pricing, junk removal, invoices and checklists.
@@ -59,6 +59,7 @@
 - [Christmas Light Pricing Calculator](https://mainstreettoolbox.com/lawn/christmas-light-pricing-calculator/): Per foot by story and complexity, plus tree wraps — quote it before the season books up. No signup.
 - [Sprinkler Blowout Cost Calculator](https://mainstreettoolbox.com/lawn/sprinkler-blowout-cost-calculator/): Flat per visit or per zone — price winterization before the first freeze. No signup.
 - [Sod & Hydroseeding Cost Calculator](https://mainstreettoolbox.com/lawn/sod-hydroseeding-cost-calculator/): New-lawn quotes both ways — instant sod or sprayed lawn, priced per square foot. No signup.
+- [Tree Removal Cost Calculator](https://mainstreettoolbox.com/lawn/tree-removal-cost-calculator/): Price by height, situation and stump work before the crew rolls. No signup.
 - [Service Price List Builder](https://mainstreettoolbox.com/salon/service-price-list-builder/): Builds a typeset, printable price list for any service business — salon, cleaning, lawn care or contracting.
 - [Booth Rent vs Commission Calculator](https://mainstreettoolbox.com/salon/booth-rent-commission-calculator/): Weekly sales, commission split and booth rent in; which pay structure leaves more in your pocket out.
 - [Receipt Generator](https://mainstreettoolbox.com/salon/receipt-generator/): Generates a clean printable receipt for services rendered — client, services, amounts, total.
@@ -77,7 +78,7 @@
 
 ## Key Facts
 
-- 41 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
+- 48 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
 - US pricing benchmarks throughout; target market is United States small businesses
 - Every tool works instantly with no signup, no account and no ads
 - Independent, single-developer project; pricing benchmarks sourced from industry data and cross-checked guides

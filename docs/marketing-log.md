@@ -177,3 +177,7 @@
 - **修复**：painting 新增 2 条入链——material-cost-estimator related + 磁石页 service-pricing-2026 计算器清单（连同 mulch 一起补入）；加 round 24 已有 drywall related = 共 3 条内容链。27 tests/77 页/部署 22s/IndexNow 4 URL 200。
 - **勘误**：第 29 轮"painting 零入链"结论部分失准（审计 glob 失效漏报 drywall related）——Google "None detected" 反映 round 24 前的爬取态。painting/mulch 的收录请求（第 29 轮已提交）+ 新入链双管齐下。
 - **/lawn/ 收录请求**：GSC 会话标签页丢失，两次尝试未完成 → TODO 下轮（确切步骤见 TODO 区）。
+
+### 第 31 轮 2026-10-01：/lawn/ 请求闭环 + llms-audit 修复（用户指令"do more"）
+- /lawn/ Indexing requested 确认✓——4 个问题 URL 全部处置完毕（painting/mulch/lawn 已请求收录，invoice-generator 与 /contact/ 实查早已收录）。
+- llms-audit.mjs 重写（正则扫描 src/tools，裸 node 可跑）；首跑即抓到真缺口：tree-removal 漏登 llms.txt（上线时审计脚本恰好是坏的）→ 回填 + 部署 + 线上验证 ✓。审计缺口归零。
