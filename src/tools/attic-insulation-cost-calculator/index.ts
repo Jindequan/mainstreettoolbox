@@ -8,6 +8,7 @@ import { clamp, money, num } from '../../lib/types';
 // R-60 加深 — 纤维素 $2.00–3.50 / 毡 $2.50–4.00（R60 项目源，乘数导出 ×1.7 标注）
 // 整单对照 $1,000–3,500 — Angi($987–2,335) ∩ Thumbtack($1,193–3,077) ∩ TLS($1,500–3,500) 三源
 // 喷沫 closed cell $1.50–4.00 — 前轮来源（单源标注）
+// 喷沫 open cell $1.50–2.55/sqft — $0.50–0.85/board ft ×3 in（SprayFoam101 $0.44–0.65 ∩ SmartCalc $0.45–0.75 ∩ HomeHacksDIY $0.40–0.85 三源重叠核；33 轮迭代入计算，见 benchmarks-attic-insulation.md）
 // 旧保温清除 — 口径杂 → FAQ 定性
 // 验证层：attic insulation cost 544 strict + spray foam 421 + attic insulation 1,754（57 词清欠轮，SERP 只有材料量计算器）
 const BANDS: Record<string, { lo: number; hi: number; label: string }> = {
@@ -15,6 +16,7 @@ const BANDS: Record<string, { lo: number; hi: number; label: string }> = {
   fiberglass: { lo: 1.0, hi: 2.5, label: 'Blown-in fiberglass' },
   batts: { lo: 1.0, hi: 2.5, label: 'Fiberglass batts (DIY-friendly)' },
   foam: { lo: 1.5, hi: 4.0, label: 'Spray foam (closed cell)' },
+  opencell: { lo: 1.5, hi: 2.55, label: 'Open-cell spray foam (~3 in)' },
 };
 
 export default {
@@ -23,7 +25,7 @@ export default {
   name: 'Attic Insulation Cost Calculator',
   tagline: 'Price by square feet, material and R-value target — before the energy audit becomes an upsell. No signup.',
   title: 'Attic Insulation Cost Calculator — Free 2026 Price per Sq Ft by Material',
-  description: 'Attic insulation costs $1.00–3.20 per sq ft blown-in, with R-60 upgrades running ~1.7×. Price your attic by size, material and depth target — free, instant, no signup.',
+  description: 'Attic insulation costs $1.00–3.20 per sq ft blown-in, with R-60 upgrades running ~1.7×; open-cell or closed-cell spray foam priced per board foot. Free attic insulation cost calculator — instant, no signup.',
   result: { label: 'Suggested quote' },
   fields: [
     { id: 'sqft', label: 'Attic floor area (square feet)', kind: 'number', default: 1000, hint: 'most homes: 800–1,400' },
@@ -33,7 +35,8 @@ export default {
         { value: 'cellulose', label: 'Blown-in cellulose' },
         { value: 'fiberglass', label: 'Blown-in fiberglass' },
         { value: 'batts', label: 'Fiberglass batts' },
-        { value: 'foam', label: 'Spray foam (closed cell)' },
+        { value: 'foam', label: 'Spray foam (closed cell, roofline)' },
+        { value: 'opencell', label: 'Open-cell spray foam (roofline, ~3 in)' },
       ],
     },
     {
@@ -72,7 +75,8 @@ export default {
     <h3>How much does attic insulation cost?</h3>
     <p>Blown-in cellulose runs <b>$1.20–3.20 per sq ft installed</b> and blown fiberglass
     <b>$1.00–2.50</b> (Bob Vila; TLS Energy Savers bands overlapped), with batts in the same $1.00–2.50
-    range and closed-cell spray foam at $1.50–4.00. A typical 1,000 sq ft attic lands at
+    range, closed-cell spray foam at $1.50–4.00, and open-cell at $1.50–2.55 (about $0.50–0.85 per
+    board foot at a ~3 in roofline). A typical 1,000 sq ft attic lands at
     <b>$1,000–3,500 all-in</b> — the band Angi ($987–2,335), Thumbtack ($1,193–3,077) and TLS
     ($1,500–3,500) all agree on.</p>
     <h3>What does the R-60 upgrade add?</h3>
@@ -87,8 +91,10 @@ export default {
     <h3>Blown-in, batts or spray foam — which per sq ft wins?</h3>
     <p>For open attics, blown-in wins on cost and coverage: it fills joist gaps batts bridge, and the
     machine pays for itself across a crew-day. Batts suit accessible, standard-spaced joists and DIY.
-    Spray foam prices 1.5–4.0 and is for converting the attic to conditioned space (roofline insulation),
-    not for the floor — different job, different quote.</p>
+    Spray foam is for converting the attic to conditioned space (roofline insulation), not for the
+    floor: <b>open-cell</b> runs $0.50–0.85 per board foot and buys air sealing and sound dampening at the
+    lower price; <b>closed-cell</b> runs roughly double per board foot and adds rigidity plus a moisture
+    barrier. Different job from the floor — different quote.</p>
     <table>
       <thead><tr><th>Material / depth</th><th>Installed per sq ft (2026)</th></tr></thead>
       <tbody>
@@ -96,12 +102,13 @@ export default {
         <tr><td>Blown-in fiberglass, standard</td><td>$1.00 – $2.50</td></tr>
         <tr><td>Fiberglass batts, standard</td><td>$1.00 – $2.50</td></tr>
         <tr><td>Spray foam (closed cell)</td><td>$1.50 – $4.00</td></tr>
+        <tr><td>Open-cell spray foam, ~3 in</td><td>$1.50 – $2.55 ($0.50–0.85 / board ft)</td></tr>
         <tr><td>R-60 depth multiplier</td><td>≈ ×1.7 on band</td></tr>
         <tr><td>Typical whole attic (1,000 sq ft)</td><td>$1,000 – $3,500</td></tr>
       </tbody>
     </table>`,
   faq: [
-    { q: 'How much does attic insulation cost?', a: 'In 2026 US data: blown-in cellulose $1.20–3.20 per sq ft installed, blown fiberglass and batts $1.00–2.50, closed-cell spray foam $1.50–4.00. A typical 1,000 sq ft attic project lands at $1,000–3,500 (Angi; Thumbtack; TLS).' },
+    { q: 'How much does attic insulation cost?', a: 'In 2026 US data: blown-in cellulose $1.20–3.20 per sq ft installed, blown fiberglass and batts $1.00–2.50, closed-cell spray foam $1.50–4.00, open-cell $1.50–2.55 per sq ft installed ($0.50–0.85 per board foot at ~3 in). A typical 1,000 sq ft attic project lands at $1,000–3,500 (Angi; Thumbtack; TLS).' },
     { q: 'How much insulation do I need in my attic?', a: 'Most US climate zones target R-49–60 for attics — roughly 16–20 inches of loose-fill cellulose. Topping an under-insulated attic up to R-38 costs meaningfully less than the full R-60 upgrade, which prices at about 1.7× the standard band.' },
     { q: 'Is blown-in insulation cheaper than batts?', a: 'Installed, they overlap: blown cellulose $1.20–3.20 vs batts $1.00–2.50 per sq ft. Blown-in usually wins on real attics because it fills irregular joist bays and wire clutter batts bridge — the air gaps are where R-value dies.' },
     { q: 'Should I remove old attic insulation before adding new?', a: 'Only if it is wet, mold-contaminated, pest-soiled or possibly asbestos-containing vermiculite. Clean, dry insulation accepts new blow-over directly; removal is a separate disposal line item — keep it out of the insulation quote.' },

@@ -19,7 +19,7 @@
 
 ## 未进计算（实例 A 研究备注——未来迭代素材）
 
-- **Open-cell spray foam**：$0.50–0.85/board ft（SprayFoam101 $0.44–0.65 ∩ SmartInsulationCalculator $0.45–0.75 ∩ TheHomeHacksDIY $0.40–0.85 三源重叠核）；×3 in ≈ $1.50–2.55/sq ft。工具现只收 closed cell——开 cell 为下次迭代选项。
+- **Open-cell spray foam（33 轮已进计算）**：$0.50–0.85/board ft（SprayFoam101 ∩ SmartCalc ∩ HomeHacksDIY 三源重叠核）；×3 in ≈ $1.50–2.55/sq ft。2026-10-01 第 33 轮迭代为工具第五档。
 - **Full-depth blown-in（空阁楼）**：Angi $3.00–7.50/sq ft ∩ Homewyse $3.90–8.11（1 ft 深口径）。工具用 R-60 乘数表达深度，未单列空阁楼档。
 - **旧棉拆除 add-on**：$1.50–3.00/sq ft（refitzen $1.50–3.50 ∩ 独立口径 $0.50–1.50 合并带）。工具现为定性 FAQ（"Quote separately"）——若加拆除输入框可直接用此带。
 - DIY two-part kits $0.85–1.40/board ft（单源）。
