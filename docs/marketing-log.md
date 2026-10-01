@@ -166,3 +166,8 @@
 - **执行**：子代理批次（硬约束：只插问句 H3、原句不动、零新增数字）+ 人工抽检 diff + 27 tests/77 页 build/部署 19s/生产抽检/IndexNow 20 URL 200。每页现在都是「问句标题+首段直答」的 AI 可提取形态。
 - **安全响应头**：HSTS 已有（Vercel 默认）；补 nosniff / X-Frame-Options SAMEORIGIN / Referrer-Policy；CSP 涉及 GA 内联脚本需单独测试，遗留。
 - **GEO 基线记分**：Citable 层最大结构性缺口（全站 0 问题式标题）清零；遗留仅 CSP、YouTube 实体层、10 月中 compare 重跑（预期 citability 分从 ~55 跳升）。
+
+### 第 29 轮 2026-10-01：not-indexed 42 桶拆解 + URL inspection 实查（用户指令）
+- **关键发现：覆盖率报告 Last update=9/21（陈旧 10 天）**——"Indexed 55 持平"部分是假象。URL inspection 实查：invoice-generator、/contact/ 均已收录（报告滞后/Crawled 桶自愈）；painting-estimate（从未抓取+零 referring page）、mulch-calculator（URL unknown+零 sitemap+零 referring）为真孤儿 → 两例 Indexing requested 已提交 ✓；/lawn/ 未收录，请求未确认待补。
+- **结构性结论**：Discovered 桶的老工具页全是"零内容链孤儿"——round 24 只救了新页，老页内链缺口实锤，下轮做孤儿页内容链批次。
+- 良性桶：32 canonical 变体 + 2 重定向 = 设计使然，不处理；feedback/services/terms 工具页无需排名。
