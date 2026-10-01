@@ -216,12 +216,14 @@ const KOFI_LINE: Record<string, { product: string; url: string; text: string }> 
     <h2>What this number means</h2>
     <Fragment set:html={tool.explain} />
     <h2>Next steps</h2>
-    <p>Keep going with these tools — they build on this calculation:
-      {relatedTools.map((rt, i) => (
-        <>{i > 0 && (i === relatedTools.length - 1 ? ' and ' : ', ')}<a href={`/${rt.industry}/${rt.slug}/`}>{rt.name}</a></>
-      ))}.
-      When your prices look right, print the menu with the <a href="/menu-maker/">Menu Maker</a> — free templates,
-      PDF & PNG. Want us to set the whole system up for you? <a href="/services">Ask about concierge setup</a>.</p>
+    {relatedTools.length > 0 && (
+      <p>Keep going with these tools — they build on this calculation:
+        {relatedTools.map((rt, i) => (
+          <>{i > 0 && (i === relatedTools.length - 1 ? ' and ' : ', ')}<a href={`/${rt.industry}/${rt.slug}/`}>{rt.name}</a></>
+        ))}.</p>
+    )}
+    <p>When your prices look right, print the menu with the <a href="/menu-maker/">Menu Maker</a> — free templates,
+    PDF & PNG. Want us to set the whole system up for you? <a href="/services">Ask about concierge setup</a>.</p>
     {tool.slug === 'service-price-list-builder' && (
       <p>Prefer a ready-made file? The <a data-kofi="Price List Templates 10-Pack" href="https://ko-fi.com/s/d889e8caf6" target="_blank" rel="noopener">Price List Templates 10-Pack</a> gives
       you print-ready PDF plus editable spreadsheet versions for ten service trades — $5, instant download. Want just

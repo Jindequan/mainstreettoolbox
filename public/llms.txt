@@ -12,6 +12,7 @@
 - [Lawn care tools](https://mainstreettoolbox.com/lawn/): Mowing prices, full lawn-care estimates, mulch, snow removal and aeration calculators.
 - [Salon tools](https://mainstreettoolbox.com/salon/): Service price list builder, booth rent vs commission calculator and receipt generator.
 - [Retail tools](https://mainstreettoolbox.com/retail/): Retail math, markup, discount profit and inventory count tools for independent shops.
+- [Auto glass tools](https://mainstreettoolbox.com/auto/): Windshield replacement and chip repair pricing against the 2026 band — the anonymous alternative to quote-aggregator sites.
 - [2026 Pricing Benchmarks](https://mainstreettoolbox.com/benchmarks/service-pricing-2026/): Sourced benchmark bands for every trade, built to be cited.
 
 ## Tools
@@ -40,6 +41,7 @@
 - [Dryer Vent Cleaning Cost Calculator](https://mainstreettoolbox.com/cleaning/dryer-vent-cleaning-cost-calculator/): Prices dryer vent cleaning per vent by location — ground $100–250, second floor $130–300, roof $150–350 — with deep-clean and duct-bundle guidance.
 - [Attic Insulation Cost Calculator](https://mainstreettoolbox.com/construction/attic-insulation-cost-calculator/): Prices attic insulation per square foot by material — blown cellulose $1.20–3.20, fiberglass $1.00–2.50, spray foam $1.50–4.00 — with R-60 upgrade multiplier and whole-project cross-check.
 - [Air Duct Cleaning Cost Calculator](https://mainstreettoolbox.com/cleaning/air-duct-cleaning-cost-calculator/): Prices duct cleaning per vent — $25–50 with a $300–450 whole-home minimum — plus sanitizing tier, home-size bands and the ducts-plus-dryer-vent bundle.
+- [Windshield Replacement Cost Calculator](https://mainstreettoolbox.com/auto/windshield-replacement-cost-calculator/): Prices windshield replacement $200–500 standard and $1,000–1,800 with ADAS recalibration, chip repair $60–150 — anonymous, no quote-aggregator signup.
 - [Mold Remediation Cost Calculator](https://mainstreettoolbox.com/cleaning/mold-remediation-cost-calculator/): Prices mold remediation by affected area and depth — $10–25 per sq ft, $1,200–3,750 typical job, whole-home/HVAC band — with quote line-item and insurance guidance.
 - [Painting Estimate Calculator](https://mainstreettoolbox.com/construction/painting-estimate-calculator/): Three-tier interior and exterior painting quotes (budget, standard, premium) with labor rates, material fees and a printable estimate.
 - [Material Cost Estimator](https://mainstreettoolbox.com/construction/material-cost-estimator/): Materials with quantities, unit costs and a waste factor; the true material budget, printable.

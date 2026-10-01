@@ -37,6 +37,7 @@ import gutterCleaning from './gutter-cleaning-price-calculator';
 import dryerVent from './dryer-vent-cleaning-cost-calculator';
 import atticInsulation from './attic-insulation-cost-calculator';
 import airDuct from './air-duct-cleaning-cost-calculator';
+import windshield from './windshield-replacement-cost-calculator';
 import leafRemoval from './leaf-removal-cost-calculator';
 import christmasLights from './christmas-light-pricing-calculator';
 import sprinklerBlowout from './sprinkler-blowout-cost-calculator';
@@ -86,6 +87,7 @@ export const TOOLS: RegisteredTool[] = [
   dryerVent,
   atticInsulation,
   airDuct,
+  windshield,
   leafRemoval,
   christmasLights,
   sprinklerBlowout,
@@ -122,6 +124,7 @@ export const INDUSTRY_META: Record<string, { name: string; path: string; live: b
   construction: { name: 'Construction', path: '/construction', live: true, blurb: 'Rates & bids' },
   salon: { name: 'Salon & Barber', path: '/salon', live: true, blurb: 'Rent vs commission' },
   retail: { name: 'Retail', path: '/retail', live: true, blurb: 'Margin & markdowns' },
+  auto: { name: 'Auto Glass', path: '/auto', live: true, blurb: 'Windshield pricing' },
 };
 
 /** 服务端首屏渲染：从 fields/rows 默认值构建初始输入 */
