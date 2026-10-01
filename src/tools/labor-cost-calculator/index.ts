@@ -28,9 +28,11 @@ export default {
   },
   compute: (values, _rows, p) => calcLaborCost(values, p),
   explain: `
+    <h3>What is fully loaded labor cost?</h3>
     <p>A $18/hour employee does not cost $18. Add employer payroll taxes (FICA, federal and state unemployment,
     workers' compensation — typically <b>15–22%</b> on top of wages) and any benefits, and the true figure is a
     <b>fully loaded cost</b> that can run 20–35% higher than the sticker wage.</p>
+    <h3>What percentage of revenue should labor be?</h3>
     <p>Once you add monthly revenue, the calculator shows labor as a percentage of sales — the number managers
     actually steer by. Full-service restaurants target <b>25–35%</b>; quick service runs lower. The percentage,
     not the paycheck, is what tells you whether you can afford the next hire.</p>`,

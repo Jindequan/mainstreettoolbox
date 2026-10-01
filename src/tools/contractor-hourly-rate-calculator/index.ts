@@ -27,6 +27,7 @@ export default {
   },
   compute: (values, _rows, p) => calcContractorRate(values, p),
   explain: `
+    <h3>How much should a contractor charge per hour?</h3>
     <p>The mistake almost every solo tradesman makes: charging <b>40 hours of rate</b> when only 20–25 hours are
     actually billable. The rest disappears into quotes, supply runs, driving and callbacks — but payroll taxes
     and overhead still come due.</p>
@@ -34,12 +35,14 @@ export default {
     overhead (insurance, truck, tools, licenses), divided by <b>real billable hours</b>. A $60,000 target with
     25 billable hours and $800 of overhead needs about <b>$69 an hour</b> — not $30.</p>
     <p>That rate is the floor for every bid. Jobs below it are you paying for the privilege of working.</p>
+    <h3>How much do handymen charge per hour?</h3>
     <p><b>Handymen, read this twice:</b> the same math decides handyman rates, and the US market runs
     <b>$50–85/hour</b> in most metros (California and coastal cities higher, rural lower) — but self-employed
     handymen carry their own payroll taxes, insurance and tool wear, so the sticker rate is not take-home.
     Small-job specialists can charge above the band because nobody else wants a two-hour job; that
     inconvenience premium is real pricing power. Run your own numbers below — the honest hourly rate is
     usually 30–50% higher than what neighbors charge.</p>
+    <h3>How much should an electrician charge per hour?</h3>
     <p><b>Electricians, same math, higher band:</b> licensing and insurance push the rate up — US
     residential electricians bill <b>$50–100/hour</b> in most markets (HomeGuide's electrical work pricing
     guide runs $40–100, national survey averages reach $130 for licensed masters in coastal metros), and a

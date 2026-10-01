@@ -55,9 +55,11 @@ export default {
   params,
   compute,
   explain: `
+    <h3>How should you price a menu?</h3>
     <p>Food cost is the share of the menu price that goes to ingredients. At <b>30%</b>, a dish that costs you
     $4.90 to plate should sell for about $16.95 — for every dollar a guest pays, roughly 30¢ covers the food and
     the rest covers labor, rent and (hopefully) profit.</p>
+    <h3>Should menu prices end in .95?</h3>
     <p>The calculator rounds up to a "charm price" ($X.95) because guests read $14.95 as meaningfully cheaper
     than $15 — while your food cost percentage barely moves.</p>
     <table>

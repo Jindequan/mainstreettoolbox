@@ -37,9 +37,11 @@ export default {
   },
   compute: (values, rows, p) => calcLineDoc(values, rows, p),
   explain: `
+    <h3>What should a cleaning invoice include?</h3>
     <p>An invoice does two jobs: it asks for the money and it documents the work. Keep both — a one-page invoice
     with the services itemized (not "cleaning — $200") prevents scope arguments and makes repeat clients trust
     the number.</p>
+    <h3>How do you invoice recurring cleaning clients?</h3>
     <p>For recurring clients, send the same invoice template with the date changed; the itemized lines stay as
     your service record.</p>`,
   faq: [

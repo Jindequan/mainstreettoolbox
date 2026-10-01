@@ -37,9 +37,11 @@ export default {
   },
   compute: (values, rows, p) => calcScaler(values, rows, p),
   explain: `
+    <h3>How do you scale a recipe up?</h3>
     <p>Scaling a recipe is multiplication — but cooking is not. Ingredients that carry structure (flour, stock,
     vegetables) scale linearly and happily. Ingredients that carry <b>flavor</b> — salt, spices, chilies,
     alcohol — do not: a 3× batch usually needs only about 2× the salt, added gradually.</p>
+    <h3>What should you check before serving a scaled batch?</h3>
     <p>Practical catering wisdom: scale the recipe, then taste the batch before service. Evaporation, pan
     surface area and hold time all shift as volumes grow, so liquids may reduce differently than your
     multiplication predicts.</p>

@@ -67,12 +67,13 @@ export default {
     };
   },
   explain: `
-    <h3>Two ways to price the same pile of leaves</h3>
+    <h3>What are the two ways to price the same pile of leaves?</h3>
     <p>The trade quotes fall cleanup two ways, and the pros cross-check both before naming a number
     (ECHO's pricing guide walks exactly this method): estimate your crew hours and multiply by your
     hourly rate, <i>then</i> compare it against the whole-job band for that yard size. If the crew math
     lands far below the yard-size band, your hours estimate is wrong; if it lands far above, your rate
     is the problem.</p>
+    <h3>How much does leaf removal cost?</h3>
     <p><b>By yard size (2026 US, LawnStarter):</b> 1/6 acre $115–185, 1/4 acre $160–290, 1/2 acre
     $230–475, 3/4 acre $305–550, a full acre up to $925. Angi's independent read of 5,000–10,000 sq ft
     yards — $200–500 per service — sits inside the same arithmetic.</p>

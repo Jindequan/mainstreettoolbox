@@ -52,6 +52,7 @@ export default {
   },
   compute: (values, rows, p) => calcChecklist(values, rows, p),
   explain: `
+    <h3>What should a deep cleaning checklist include?</h3>
     <p>A written checklist is the cheapest professionalism a cleaning business can buy: it sets expectations with
     the client, keeps every visit consistent, and settles "you didn't do X" disputes in seconds. Build the list
     once per property type, print it, and initial it on site.</p>
@@ -59,6 +60,7 @@ export default {
     grime don't spread evenly: kitchens and baths carry most of the work, and a room-by-room list stops the
     crew from "finishing" the easy rooms first. A standard maintenance clean is a shorter list — delete the
     inside-appliance and descale lines and you have it.</p>
+    <h3>What goes on a move-out cleaning checklist?</h3>
     <p>A <b>move-out checklist</b> swaps the occupant for the next one: everything in the deep list, plus the
     things tenants get charged for at inspection — inside every cabinet and closet, appliance interiors,
     walls spot-cleaned, and the spaces furniture hid for years. If you clean for tenants, price it from the

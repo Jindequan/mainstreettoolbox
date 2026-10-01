@@ -37,9 +37,11 @@ export default {
   },
   compute: (values, rows, p) => calcLineDoc(values, rows, p),
   explain: `
+    <h3>Why should a service business give receipts?</h3>
     <p>A receipt is thirty seconds of paperwork that buys you a clean record: it documents the service, the
     amount and the date — protection for both sides, and the professional finish a walk-in client remembers.
     Independent stylists and barbers who take cash especially need the paper trail.</p>
+    <h3>Should you print receipts or send them digitally?</h3>
     <p>Print on the spot for walk-ins, or save the PDF and text it for regulars. Same content, whichever way
     the client wants it.</p>`,
   faq: [

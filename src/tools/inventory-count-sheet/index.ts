@@ -36,9 +36,11 @@ export default {
   },
   compute: (values, rows, p) => calcInventory(values, rows, p),
   explain: `
+    <h3>What is an inventory count sheet for?</h3>
     <p>An inventory count is how a small shop finds its leaks: shrinkage, theft, supplier shortfalls and the
     "borrowed" stock nobody returned. Count at <b>cost</b>, not shelf price — the total is an asset on your
     books and the basis of any insurance claim.</p>
+    <h3>How often should a small shop count inventory?</h3>
     <p>Print the sheet, walk the floor, write the numbers, then enter them here — the total updates live and
     the dated printout becomes your baseline for the next count. Monthly counts on high-theft categories,
     quarterly for the rest.</p>`,

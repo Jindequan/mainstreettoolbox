@@ -67,12 +67,15 @@ export default {
     };
   },
   explain: `
+    <h3>How much should you charge for pressure washing?</h3>
     <p>Pressure washing is priced by <b>square footage and surface type</b>, because the surface decides the
     machine, the chemicals and the care: flat concrete runs <b>$0.12–0.25/sq ft</b>, house soft-washing runs
     <b>$0.30–0.50</b>, and wood (which rewards patience and punishes shortcuts) runs <b>$0.50–0.85</b>.</p>
+    <h3>Should you charge by the hour or by the square foot?</h3>
     <p>The classic beginner mistake is quoting by the hour and then getting faster — a driveway that took 3
     hours in March takes 90 minutes by June, and your hourly quote just cut your own rate in half. Quote the
     job by surface and area; keep the hourly number private as your floor.</p>
+    <h3>What moves a pressure washing price up or down?</h3>
     <p>Two stories add 20–30% (ladder work, slower passes, more setup). Recurring annual plans commonly run
     10% under one-time pricing — the discount buys you a spring job every year without re-selling it.</p>
     <table>

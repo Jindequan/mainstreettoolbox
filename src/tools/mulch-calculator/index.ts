@@ -44,9 +44,11 @@ export default {
     };
   },
   explain: `
+    <h3>How much mulch do I need?</h3>
     <p>Mulch math is volume: area × depth, converted to <b>cubic yards</b> (the unit bulk delivery is sold in).
     Standard depth is <b>3 inches</b> — enough to hold moisture and block weeds without suffocating roots.
     Refresh beds every spring with about half that on top.</p>
+    <h3>Is bulk mulch cheaper than bags?</h3>
     <p>Bags make sense under ~3 cubic yards; beyond that, bulk delivery by the yard is cheaper and easier on
     your back. The calculator shows both so you can price the job either way — and bill materials with a
     markup, not at cost.</p>`,

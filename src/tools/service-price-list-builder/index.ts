@@ -104,12 +104,14 @@ export default {
   },
   compute: (values, rows, p) => calcPriceList(values, rows, p),
   explain: `
+    <h3>Why does a service business need a price list?</h3>
     <p>A typeset price list does quiet work every day: it answers the phone question, sets the anchor before the
     consultation, and quietly says "this is a professional operation". The layout pairs each service with its
     time — clients read time as honesty, and you get shorter consultations.</p>
     <p>The same builder works for any service trade — swap the preset rows for your own services and print.
     Any business that quotes by the job instead of by the hour gets the same benefit: prices that are seen
     before they are discussed.</p>
+    <h3>Which price list templates can you start from?</h3>
     <p><b>Start from a trade preset</b> (rows, times and typical 2026 US prices already filled in):</p>
     <ul>
       <li><a href="/salon/service-price-list-builder/?trade=detailing">Auto detailing price list template</a> — exterior, interior, full detail, wax, headlight restore (HomeGuide; BGI; Thumbtack)</li>

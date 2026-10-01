@@ -26,9 +26,11 @@ export default {
   },
   compute: (values, _rows, p) => calcPrimeCost(values, p),
   explain: `
+    <h3>What is prime cost in a restaurant?</h3>
     <p>Prime cost is <b>cost of goods sold plus labor</b> — the two costs you can actually move week to week.
     It is the first number a serious operator looks at, because rent is fixed, but prime cost answers to
     portioning, scheduling and pricing.</p>
+    <h3>What should prime cost be?</h3>
     <p>The industry line is <b>60%</b>: prime cost at or under 60% of sales leaves enough gross profit to pay
     rent, utilities and still keep 10–15% for the owner. Between 60–65% is a warning zone — fixable with
     tighter prep lists and schedules. Past 65%, the restaurant is one slow month from trouble.</p>`,

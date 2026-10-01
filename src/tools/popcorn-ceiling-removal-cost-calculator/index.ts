@@ -62,18 +62,18 @@ export default {
     skim-coated smooth, with masking and cleanup included — Angi's $1–3 removal range and CalcBuilt's
     $1.25–3.60 scrape-and-skim range overlap almost exactly there. A typical 800 sq ft ceiling lands at
     <b>$1,000–2,900</b>. Whole-home jobs in the 1,500–2,500 sq ft range are a four-figure project either way.</p>
-    <h3>Why painted popcorn costs 1.5–2×</h3>
+    <h3>Why does painted popcorn cost 1.5–2×?</h3>
     <p>Paint glues the texture down. Unpainted popcorn softens with a sprayer and scrapes off in ribbons;
     painted texture needs heavier wet-scraping and usually a full skim coat to look flat again — that is
     the 1.5–2× multiplier (CalcBuilt). If a quote treats painted and unpainted identically, that is the
     corner being cut.</p>
-    <h3>The asbestos rule (pre-1980 homes)</h3>
+    <h3>What is the asbestos rule for pre-1980 homes?</h3>
     <p>Popcorn texture applied before about 1980 can contain asbestos, and scraping launches it airborne.
     A lab test costs <b>$50–150</b> and takes a few days. Positive results change the job entirely:
     professional abatement runs <b>$5–15+ per sq ft</b> with containment and disposal protocols — a
     different quote, a different crew, and not a DIY situation. Test first; it is the cheapest line item
     on the whole project.</p>
-    <h3>What moves the number besides texture</h3>
+    <h3>What moves the number besides texture?</h3>
     <p>Ceiling height (vaulted or above-normal walls add staging time), furniture masking, whether you
     want a level-5 skim or a light texture re-spray, and local labor rates. Debris adds up too — a
     scraped ceiling fills a 10–20 yard box fast, so price the haul alongside the scrape with the

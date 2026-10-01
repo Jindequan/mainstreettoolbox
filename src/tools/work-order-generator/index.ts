@@ -39,9 +39,11 @@ export default {
   },
   compute: (values, rows, p) => calcLineDoc(values, rows, p),
   explain: `
+    <h3>What should a work order include?</h3>
     <p>The work order is the tradesman's contract: <b>what's in scope, how many hours, what it costs</b>. Every
     "while you're here" that isn't on this sheet is a change order — same sheet, new line, new number. It is not
     bureaucracy; it is the difference between a paid afternoon and a free one.</p>
+    <h3>How do you use a work order on the job?</h3>
     <p>Keep the hours column honest — it's what you're actually selling. Print two copies, both parties initial,
     and materials ride on top at cost plus markup.</p>`,
   faq: [

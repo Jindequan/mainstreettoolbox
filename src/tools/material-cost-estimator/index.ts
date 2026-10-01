@@ -50,9 +50,11 @@ export default {
     };
   },
   explain: `
+    <h3>How much do materials cost?</h3>
     <p>Every trade has a waste rate: deck boards that split, tiles that crack, paint that vanishes. Budgeting
     materials at the exact sum is budgeting to lose money — the standard allowance is <b>10%</b> for lumber and
     paint, up to 15–20% for tile and stone.</p>
+    <h3>Should you mark up materials?</h3>
     <p>The estimator shows three numbers: the bare sum, the waste allowance, and a suggested bill at cost plus
     15% — because materials sitting on a job site are capital you fronted, and fronting capital is worth a
     markup.</p>`,

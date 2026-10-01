@@ -64,14 +64,17 @@ export default {
     };
   },
   explain: `
+    <h3>How much does junk removal cost?</h3>
     <p>Junk removal prices in <b>fractions of a truck</b>, not hours: customers understand "a quarter truck"
     better than cubic yards, and your costs (dump fee + drive + crew time) scale with load fraction. Typical
     US ranges: <b>⅛ load $100–180 · ¼ load $150–250 · ½ load $250–420 · full load $500–800</b>, with a
     $100–150 job minimum.</p>
+    <h3>What makes a junk removal job cost more?</h3>
     <p>Two adjustments that protect margin: <b>heavy debris</b> (concrete, dirt, shingle) weighs out long
     before it fills the truck — dump fees are by weight, so quote it 30–50% above mixed loads or decline it;
     <b>stairs and distance</b> (long carries from back yards, elevators that need padding) quietly double
     labor time, so price access, not just volume.</p>
+    <h3>How do haulers keep more profit per load?</h3>
     <p>The profit lever customers never see: <b>donation and recycling diversion</b>. Metals, working appliances
     and re-sellable furniture offset dump fees — a hauler who sorts well keeps 10–20% more per load at the
     same customer price.</p>

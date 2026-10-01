@@ -61,12 +61,15 @@ export default {
     };
   },
   explain: `
+    <h3>How much should you charge per window?</h3>
     <p>Window cleaning prices by the <b>pane</b>: outside-only typically runs <b>$4–8 per window</b>,
     inside+outside <b>$8–12</b>. The per-pane number is your vocabulary; the quote is panes × rate, floored at
     a job minimum (<b>$150–200</b> is standard) so small jobs still pay for the drive and setup.</p>
+    <h3>How do you build recurring window cleaning revenue?</h3>
     <p>The recurring money is in frequency plans: twice-a-year customers commonly pay ~10% under one-time
     rates, quarterly ~15% under. A route of quarterly commercial storefronts is the backbone of most
     full-time window cleaning businesses — one-time residential fills the gaps.</p>
+    <h3>What add-ons grow the average ticket?</h3>
     <p>Screens ($1–3 each), tracks ($2–5 per window), and hard-water stain removal (quoted separately, priced
     high — it is chemistry work, not washing) are where the average ticket grows. Show them as add-on lines,
     not buried in the per-pane rate.</p>

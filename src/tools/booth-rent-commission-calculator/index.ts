@@ -24,13 +24,16 @@ export default {
   },
   compute: (values, _rows, p) => calcBoothVsCommission(values, p),
   explain: `
+    <h3>Is booth rent or commission the better deal?</h3>
     <p>Booth rent means you keep every dollar of service revenue and pay a flat rent; commission means the salon
     keeps a split (typically <b>40–60%</b>) and covers most of the overhead. The honest comparison is monthly:
     commission take-home is your sales times your split, booth take-home is sales minus rent — and the salon
     supplies, laundry and front-desk work you now do yourself.</p>
+    <h3>How much should booth rent be?</h3>
     <p>The classic guideline: <b>rent should run 15–25% of revenue</b>. Above that, only a very loyal book makes
     it work. The 50/50 rule of thumb — if half your sales would cover the rent, renting wins — is what this
     calculator checks with your real numbers.</p>
+    <h3>What are the hidden costs of renting a booth?</h3>
     <p>Remember the hidden costs of renting: self-employment tax, your own supplies, and no paycheck in a slow
     week. A book that is 80% rebooked is the real qualification for going independent.</p>`,
   faq: [

@@ -60,6 +60,7 @@ export default {
     };
   },
   explain: `
+    <h3>How much does gutter cleaning cost?</h3>
     <p>Gutter cleaners price by the <b>linear foot</b>, adjusted for height: <b>$0.95–1.75 per foot</b> on a
     one-story home, <b>$1.00–2.50</b> two-story, <b>$2.25–3.50</b> three-story (Angi; CrewNest; CleanPro).
     Most homes have <b>150–200 feet</b> of gutter, which is why typical whole-house jobs land between
@@ -68,9 +69,11 @@ export default {
     needs ladder extensions or a platform at every section, and three-story work is a different insurance
     tier entirely. Quote the height honestly — it's the first thing a competitor will undercut with an
     unsafe setup.</p>
+    <h3>How often should gutters be cleaned?</h3>
     <p><b>Frequency</b> is standard twice a year (spring and fall) without guards (Leafguard). Heavy tree
     cover pushes it to quarterly. Sell it as a plan: two scheduled visits beat two one-offs for both sides —
     the customer's gutters never hit the clog stage, and your route fills.</p>
+    <h3>Do gutter guards end the need for cleaning?</h3>
     <p><b>Gutter guards don't end the work.</b> Guards block leaves but shingle grit, seeds and pollen still
     wash through, and debris piles on top of the guard itself — so guarded homes drop from two cleanings a
     year to about one (K-Guard; All Day Power Washing). Guards themselves run <b>$500–5,000</b> installed

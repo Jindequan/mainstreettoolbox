@@ -160,3 +160,9 @@
 - **benchmarks-attic-insulation.md 对齐重写**：TLS 源核验真实（tlsinsulation.com 2026 总带 $0.75–7.00），已部署工具带全表可追溯；open-cell 三源带/空阁楼档/拆除带入"未进计算"备注区=未来迭代素材。
 - **撞车根因发现**：两实例共享同一工作目录，对方 git add -A 连续两轮把本实例在途改动裹挟提交（内容无损、审计混乱）。运行规则 10 入册：禁 add -A、逐文件审阅、双向 fetch、在途文件不覆盖。
 - 部署对齐：25 轮末全量重建部署，生产=origin HEAD；IndexNow 12 URL 200。
+
+### 第 28 轮 2026-10-01：GEO 内容批次——全站工具页问句 H3 清零 + 安全响应头（用户指令"继续优化 SEO GEO"）
+- **普查**：38 个注册表工具页 explain，18 个零 H3（全是第 2 轮 snow-removal 规范立起前的老工具，含 GSC 展现最高的 material-cost / menu-pricing）+ 2 个部分缺失。
+- **执行**：子代理批次（硬约束：只插问句 H3、原句不动、零新增数字）+ 人工抽检 diff + 27 tests/77 页 build/部署 19s/生产抽检/IndexNow 20 URL 200。每页现在都是「问句标题+首段直答」的 AI 可提取形态。
+- **安全响应头**：HSTS 已有（Vercel 默认）；补 nosniff / X-Frame-Options SAMEORIGIN / Referrer-Policy；CSP 涉及 GA 内联脚本需单独测试，遗留。
+- **GEO 基线记分**：Citable 层最大结构性缺口（全站 0 问题式标题）清零；遗留仅 CSP、YouTube 实体层、10 月中 compare 重跑（预期 citability 分从 ~55 跳升）。
