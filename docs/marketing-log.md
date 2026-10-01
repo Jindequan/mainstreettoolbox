@@ -171,3 +171,9 @@
 - **关键发现：覆盖率报告 Last update=9/21（陈旧 10 天）**——"Indexed 55 持平"部分是假象。URL inspection 实查：invoice-generator、/contact/ 均已收录（报告滞后/Crawled 桶自愈）；painting-estimate（从未抓取+零 referring page）、mulch-calculator（URL unknown+零 sitemap+零 referring）为真孤儿 → 两例 Indexing requested 已提交 ✓；/lawn/ 未收录，请求未确认待补。
 - **结构性结论**：Discovered 桶的老工具页全是"零内容链孤儿"——round 24 只救了新页，老页内链缺口实锤，下轮做孤儿页内容链批次。
 - 良性桶：32 canonical 变体 + 2 重定向 = 设计使然，不处理；feedback/services/terms 工具页无需排名。
+
+### 第 30 轮 2026-10-01：孤儿页修复——painting-estimate 接入内容链网（用户指令"修复问题，持续推进"）
+- **全站严格孤儿审计**（基于 dist 构建产物数入链）：69 内容页中零入链孤儿仅 1 个 = **construction/painting-estimate-calculator**（12 个 /d/ Ko-fi 交付页为 robots 屏蔽的故意孤儿，正确）。1 入链弱页 2 个（guides），可接受。
+- **修复**：painting 新增 2 条入链——material-cost-estimator related + 磁石页 service-pricing-2026 计算器清单（连同 mulch 一起补入）；加 round 24 已有 drywall related = 共 3 条内容链。27 tests/77 页/部署 22s/IndexNow 4 URL 200。
+- **勘误**：第 29 轮"painting 零入链"结论部分失准（审计 glob 失效漏报 drywall related）——Google "None detected" 反映 round 24 前的爬取态。painting/mulch 的收录请求（第 29 轮已提交）+ 新入链双管齐下。
+- **/lawn/ 收录请求**：GSC 会话标签页丢失，两次尝试未完成 → TODO 下轮（确切步骤见 TODO 区）。
