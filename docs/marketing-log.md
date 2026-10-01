@@ -181,3 +181,7 @@
 ### 第 31 轮 2026-10-01：/lawn/ 请求闭环 + llms-audit 修复（用户指令"do more"）
 - /lawn/ Indexing requested 确认✓——4 个问题 URL 全部处置完毕（painting/mulch/lawn 已请求收录，invoice-generator 与 /contact/ 实查早已收录）。
 - llms-audit.mjs 重写（正则扫描 src/tools，裸 node 可跑）；首跑即抓到真缺口：tree-removal 漏登 llms.txt（上线时审计脚本恰好是坏的）→ 回填 + 部署 + 线上验证 ✓。审计缺口归零。
+
+### 第 32 轮 2026-10-01：catering 闸 2 闭项 + 移动端导航修复
+- **catering price calculator 闸 2 不过→闭项**：SERP 已有 Tabby（人工/租赁/毛利全模型）、Menubly、Kwickos、Food Cost Tools 等免费即时计算器 + Thumbtack 铅页，增量不足。至此候选池历史遗留项全部清零（上线/闭项/观察各有归属），新选题供给移交 R7 词库。
+- **移动端导航修复**（09-19 ui-reviewer 遗留）：≤860px 之前 Tools/Get help 全隐藏只剩按钮；现在保留 Tools 文字链（移动端唯一工具入口），Get help 加 .nav-help 类继续隐藏，nav-links 加 flex-wrap 防 360px 溢出。

@@ -316,8 +316,8 @@ footer.site { padding: 44px 0 56px; color: var(--ink-2); font-size: var(--fs-400
   .result-card { position: static; }
   .nav-in { height: auto; min-height: 56px; flex-wrap: wrap; gap: 8px 14px; padding: 8px 24px; }
   .logo { white-space: nowrap; min-width: 0; font-size: 1.05rem; }
-  .nav-links a:not(.btn) { display: none; }
-  .nav-links { gap: 10px; margin-left: auto; }
+  .nav-links a.nav-help { display: none; }
+  .nav-links { gap: 10px; margin-left: auto; flex-wrap: wrap; }
   .nav-links .btn { padding: 0 12px; }
   .trust-in { flex-direction: column; gap: 8px; align-items: center; }
   .foot-grid { grid-template-columns: 1fr 1fr; }
