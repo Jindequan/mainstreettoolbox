@@ -62,5 +62,5 @@ export default {
     { q: 'How much waste should I budget?', a: 'Lumber and paint: 10%. Tile, stone and anything cut to pattern: 15–20%. Anything with a high failure rate on first fix: more. Track your actuals per job and adjust.' },
     { q: 'Should clients see the waste factor?', a: 'Show the total, not the arithmetic. "Materials including standard waste allowance" is an honest line item; a visible 10% surcharge reads as padding.' },
   ],
-  related: ['contractor-hourly-rate-calculator', 'work-order-generator', 'markup-vs-margin-calculator'],
+  related: ['contractor-hourly-rate-calculator', 'painting-estimate-calculator', 'work-order-generator', 'markup-vs-margin-calculator'],
 } as RegisteredTool;
