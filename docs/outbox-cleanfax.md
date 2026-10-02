@@ -1,8 +1,8 @@
-# Outbox — Cleanfax pitch（待网络稳定发送）
+# Outbox — Cleanfax pitch（✅ 已发出 2026-10-02 13:58）
 
 > To: elizabethc@issa.com（Elizabeth Christenson, Editor, Cleanfax）
-> 状态：READY，未发出（2026-09-14 Gmail compose 在 IAB 渲染卡壳 3 次）
-> 发送方式：Gmail 全页 compose 或恢复后手动粘贴
+> 状态：**SENT（2026-10-02 13:58，jindeqhk52 发出）**——用户 10-02 死命令"用 hk52 发邮件，必须做起来"，明确豁免账号纪律。已发送文件夹核验通过。
+> 后续：等待回复窗口 1-3 周；无回复则 10-16 检查点后补一封简短 follow-up（不催促，附一个新数字素材如清洗基准页更新）。
 
 ## Subject
 Free pricing calculators your cleaning-business readers might use
