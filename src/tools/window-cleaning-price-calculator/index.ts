@@ -6,8 +6,8 @@ export default {
   industry: 'cleaning',
   name: 'Window Cleaning Price Calculator',
   tagline: 'Per-pane pricing, done right. No signup.',
-  title: 'Window Cleaning Price Calculator — Free tool for window cleaning businesses',
-  description: 'Price a window cleaning job per pane: count, in/out, stories and frequency — get a quote range, time estimate and per-window rate. Free, instant, no signup.',
+  title: 'Window Cleaning Price Calculator — Free Cost & Quote Calculator',
+  description: 'Price a window cleaning job per pane: count, in/out, stories and frequency — get a window cleaning cost estimate and quote range, plus time and per-window rate. Free, instant, no signup.',
   result: { label: 'Suggested quote' },
   fields: [
     { id: 'panes', label: 'Number of windows', kind: 'number', default: 20, hint: 'panes to clean' },
@@ -88,5 +88,5 @@ export default {
     { q: 'How much should I charge for a 20-window house?', a: 'A 20-pane in-and-out clean at typical rates lands $160–240 — most quotes land near $200. One-story outside-only on the same house would run $80–160 and often hits the job minimum instead.' },
     { q: 'How do I get recurring window cleaning clients?', a: 'Sell the frequency plan at the first quote: twice-a-year at ~10% off or quarterly at ~15% off, scheduled before you leave the property. Routes beat one-offs — the discount is cheaper than finding a new customer every job.' },
   ],
-  related: ['pressure-washing-price-calculator', 'cleaning-estimate-calculator', 'cleaning-invoice-generator'],
+  related: ['pressure-washing-price-calculator', 'gutter-cleaning-price-calculator', 'cleaning-estimate-calculator', 'cleaning-invoice-generator'],
 } as RegisteredTool;

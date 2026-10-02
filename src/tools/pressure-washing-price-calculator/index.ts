@@ -6,8 +6,8 @@ export default {
   industry: 'cleaning',
   name: 'Pressure Washing Price Calculator',
   tagline: 'Price the job by surface, not by guess. No signup.',
-  title: 'Pressure Washing Price Calculator — Free tool for pressure washing businesses',
-  description: 'Price a pressure washing job in seconds: driveway, house siding, deck or patio by square feet — with a fair quote range, time estimate and per-sqft rate. Free, no signup.',
+  title: 'Pressure Washing Price Calculator — Free Power Washing Cost Estimator',
+  description: 'Price a pressure washing or power washing job in seconds: driveway, house siding, deck or patio by square feet — with a fair cost range, time estimate and per-sqft rate. Free, no signup.',
   result: { label: 'Suggested quote' },
   fields: [
     {

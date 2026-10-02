@@ -8,8 +8,8 @@ export default {
   industry: 'lawn',
   name: 'Snow Removal Pricing Calculator',
   tagline: 'Per push, per season or by the hour — price it before the flurries. No signup.',
-  title: 'Snow Removal Pricing Calculator — Free 2026 Cost Tool',
-  description: 'Price a snow removal job in seconds: per push by driveway size, a full-season contract, or hourly shoveling — with fair 2026 US ranges for each. Free, no signup.',
+  title: 'Snow Removal Pricing Calculator — Free 2026 Snow Plowing Cost Tool',
+  description: 'Price a snow removal or snow plowing job in seconds: per push by driveway size, a full-season contract, or hourly shoveling — with fair 2026 US ranges for each. Free, no signup.',
   result: { label: 'Suggested quote' },
   fields: [
     {
@@ -100,5 +100,5 @@ export default {
     { q: 'Should I charge extra per inch of snow?', a: 'Some operators add a per-inch fee for heavy storms — Angi reports add-ons of $10–30 per inch above the base. If you use one, keep it in the contract; many operators instead bill a heavy-storm push at 1.5× the normal rate. Either way, write it down.' },
     { q: 'What should I charge for hourly snow shoveling?', a: 'US hourly shoveling and sidewalk work runs $40–75; TaskRabbit puts the national average near $41/hour. Hourly fits one-offs — for repeat driveway work, per-push pricing is the norm.' },
   ],
-  related: ['lawn-mowing-price-calculator', 'lawn-care-estimate-generator', 'mulch-calculator'],
+  related: ['christmas-light-pricing-calculator', 'sprinkler-blowout-cost-calculator', 'lawn-care-estimate-generator'],
 } as RegisteredTool;

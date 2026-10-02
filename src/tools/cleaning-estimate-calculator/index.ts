@@ -6,7 +6,7 @@ export default {
   industry: 'cleaning',
   name: 'House Cleaning Cost Calculator',
   tagline: 'Standard, deep or move-out — price the job in 20 seconds. No signup.',
-  title: 'House Cleaning Cost Calculator — Free Estimate Tool | Main Street Toolbox',
+  title: 'House Cleaning Cost Calculator — Free Estimate Tool for Move-Out & Deep Cleans',
   description: 'Price a house cleaning job in 20 seconds: standard, deep clean or move-out, by bedrooms and bathrooms. Live range against 2026 US prices, hours and hourly rate. Free, no signup.',
   result: { label: 'Suggested quote' },
   fields: [
