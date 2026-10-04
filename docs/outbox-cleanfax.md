@@ -12,11 +12,42 @@
 >
 > **发信模板纪律（用户垃圾内容禁令下的合规形态）**：每封引用对方自己近期真实文章（发前 WebSearch 核实存在）+ 只推与读者职业直接相关的 2-4 个工具 + 主动提供可引用基准数据 + 提供免费供稿 + 明确"不要报酬不要链接"。四封全部定制，零模板群发。
 >
+> 9. ✅ TCIA（Tree Care Industry Magazine）— editor@tcia.org（旧刊实证地址+杂志 Contribute 页开放投稿；钩子=其 "how to price jobs so you actually make a profit" 公司专访+PHC 定价系列；推 tree-removal 计算器+供稿）。⚠️ 重复：误发 2 封（12:14+12:16，双击模式延迟生效所致），该地址已列入禁再发名单。
+> ⚠️ **重复发送事故（10-02，诚实入档）**：abowman@glass.com 收到 3 封（1:17 全文/10:53 疑似空壳/10:55 全文）、editor@tcia.org 收到 2 封——根因=Gmail 点击延迟生效叠加"双击保险"习惯，无法撤回。**此两地址列入禁再发名单**；流程修正为：单击一次→等 10s+→Sent 实证→缺失才重试。
+> ❌ **Groomer to Groomer（todd@barkleigh.com）6 次尝试全部静默失败**（0 发出/0 草稿/0 outbox，其他 9 收件人同流程全成功，疑似 Gmail 对该域名隐蔽拦截）——邮件全文见下，**待人工 2 分钟粘贴发送或下轮会话换路重试**；联系人信息为 2018 年刊头（Todd Shelly, Barkleigh Productions 总裁兼主编），可能已失效，发送前建议先核 groomertogroomer.com 现任编辑。
+
+### 待发：Groomer to Groomer（全文备好）
+
+> To: todd@barkleigh.com
+> Subject: Free grooming price list tool for Groomer to Groomer readers
+
+Hi Todd,
+
+Groomer to Groomer's coverage of the industry's growth spurt keeps landing on the groomer's version of an old problem: pricing that was set by gut feel three years ago and never revisited, while costs moved.
+
+I built Main Street Toolbox, a free set of trade calculators — no signup, no ads, everything computes in the browser. Two pieces fit groomers directly:
+
+- Service Price List Builder (with a Dog Grooming preset) — bath/full groom/add-ons lines pre-anchored to published industry ranges, printable as a take-home price list
+- Profit Margin Calculator — revenue vs costs, so a booth-renting groomer can see what a raise in prices actually does to their year
+
+Happy to write a short contributed piece on building a price list that survives 2026 costs — what the published ranges are, and why groomers underprice the add-ons. No payment or link required.
+
+Site: https://mainstreettoolbox.com/salon/service-price-list-builder/?trade=grooming
+
+Thanks for the work you do,
+Devin
+mainstreettoolbox.com
+
+---
+
 > **待发队列**（钩子或邮箱未达标，按质量闸暂缓——凑不齐真实钩子不发）：
 > - ForConstructionPros — EIC Marina Mayer（Muck Rack 实证）但 Iron.markets 邮箱模式未核实到本人；钩子待挖（需他们站内 estimating 专题文）。
 > - JLC (Journal of Light Construction) — 无公开编辑邮箱；走联系页或按 byline 挖作者。
 > - American Painting Contractor — EIC 疑似 Emily Howard 但无公开邮箱；走 apcmag.com 联系页。
 > - Green Industry Pros / Total Landscape Care / PCT——待调研。
+> - ~~Groomer to Groomer~~ → 已升级为"待人工发送"条目（见上）。
+
+> **每日自动巡检（10-02 建）**：cron automation-eff9e757，每天 9 点只读巡检外联回复（9 个收件人）+ 14 个观察词排名 + 展现/点击总量对照基线（1,280/0），中文简报。禁再发名单：abowman@glass.com、editor@tcia.org。
 >
 > **站内体检同步项（10-02）**：冬季三件套（snow/christmas/blowout）内链体检通过——lawn hub、首页、tools index 全覆盖，三页互链齐。
 >
