@@ -23,6 +23,8 @@
 > **发信模板纪律（用户垃圾内容禁令下的合规形态）**：每封引用对方自己近期真实文章（发前 WebSearch 核实存在）+ 只推与读者职业直接相关的 2-4 个工具 + 主动提供可引用基准数据 + 提供免费供稿 + 明确"不要报酬不要链接"。四封全部定制，零模板群发。
 >
 > 9. ✅ TCIA（Tree Care Industry Magazine）— editor@tcia.org（旧刊实证地址+杂志 Contribute 页开放投稿；钩子=其 "how to price jobs so you actually make a profit" 公司专访+PHC 定价系列；推 tree-removal 计算器+供稿）。⚠️ 重复：误发 2 封（12:14+12:16，双击模式延迟生效所致），该地址已列入禁再发名单。
+> 10. ✅ ForConstructionPros — Marina Mayer <mmayer@iron.markets>（Content Director，PACER Award 公开联络邮箱；钩子=其 "Labor a Constant Concern" labor burden 专题文+编辑公开邀约 pitch；推 contractor-hourly-rate 计算器+material estimator+供稿）。Sent 实证 ✓。**发送方法论突破：cua 坐标点击对部分 compose 持续失效，JS evaluate 触发 Send 按钮（单次）为可靠路径**。
+> 11. ✅ Groomer to Groomer — Todd Shelly <todd@barkleigh.com>（Barkleigh Productions 总裁兼主编，2018 刊头；钩子=其行业增长报道+定价失配问题；推 grooming preset 价目表+profit-margin）。此前 6 次静默失败，JS 方法一次成功，Sent 实证 ✓。**注意：地址为 2018 年刊头信息，若退信需更新联系人后重试（禁重复发送，先查 Sent）。**
 > ⚠️ **重复发送事故（10-02，诚实入档）**：abowman@glass.com 收到 3 封（1:17 全文/10:53 疑似空壳/10:55 全文）、editor@tcia.org 收到 2 封——根因=Gmail 点击延迟生效叠加"双击保险"习惯，无法撤回。**此两地址列入禁再发名单**；流程修正为：单击一次→等 10s+→Sent 实证→缺失才重试。
 > ❌ **Groomer to Groomer（todd@barkleigh.com）6 次尝试全部静默失败**（0 发出/0 草稿/0 outbox，其他 9 收件人同流程全成功，疑似 Gmail 对该域名隐蔽拦截）——邮件全文见下，**待人工 2 分钟粘贴发送或下轮会话换路重试**；联系人信息为 2018 年刊头（Todd Shelly, Barkleigh Productions 总裁兼主编），可能已失效，发送前建议先核 groomertogroomer.com 现任编辑。
 
