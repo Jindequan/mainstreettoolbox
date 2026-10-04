@@ -59,6 +59,30 @@ mainstreettoolbox.com
 
 > **每日自动巡检（10-02 建）**：cron automation-eff9e757，每天 9 点只读巡检外联回复（9 个收件人）+ 14 个观察词排名 + 展现/点击总量对照基线（1,280/0），中文简报。禁再发名单：abowman@glass.com、editor@tcia.org。
 >
+> ### 待发：ForConstructionPros（研究齐备，发送被 Gmail 静默拦截，10-03 首要动作）
+> **状态**：mmayer@iron.markets 实证（PACER Award 公开联络邮箱）+ 钩子实锤（其 "Labor a Constant Concern" 文讨论 labor burden 且编辑公开邀约 pitch）。10-02 晚发送尝试：pre-check 通过（Sent 无重复）→ 单击 → 静默失败（无 Sent/无草稿/compose 消失），与 Groomer 同症状。**判定：Gmail 当日 10+ 发送触发静默限流，勿在同日重试**。次日会话第一动作=按发信铁律重发本邮件。
+>
+> To: mmayer@iron.markets
+> Subject: Free crew-cost calculators — pitching a tools item per your invite
+>
+> Hi Marina,
+>
+> Your "Labor a Constant Concern for Construction Industry at Large" coverage dug into labor burden — and the article invited quick pitches, so here's one.
+>
+> I built Main Street Toolbox, a free set of trade calculators — no signup, no ads, everything computes in the browser. For contractors wrestling with crew costs and estimates:
+>
+> - Contractor Hourly Rate Calculator — turns base wage into a fully loaded billing rate: payroll taxes, workers' comp, benefits, overhead — the labor-burden math your piece described, made interactive
+> - Material Cost Estimator — line-item material takeoffs with waste factors
+> - Trade calculators for painting, drywall, dumpster rental and tree removal quotes
+>
+> Happy to write a contributed piece on labor burden in crew pricing — how unburdened wage vs billing rate confusion eats margin on every bid. No payment or link required.
+>
+> Site: https://mainstreettoolbox.com/construction/contractor-hourly-rate-calculator/
+>
+> Thanks for the work you do,
+> Devin
+> mainstreettoolbox.com
+>
 > **站内体检同步项（10-02）**：冬季三件套（snow/christmas/blowout）内链体检通过——lawn hub、首页、tools index 全覆盖，三页互链齐。
 >
 > **Gmail 自动化新增教训（10-02 晚，AGRR 卡壳复盘）**：①toast 文本会残留误报，**发送成功的唯一可靠判据=Sent 文件夹出现 "To: xxx" 行**；②compose 点击经常第一二次被吞，模式是"截图定位→点击→再点击"；③compose 卡死时 tab 会变得不可恢复，此时走「草稿箱 → 点行 → 右下角最小化药丸 → 展开按钮(↗) → Send」，Send 坐标每次布局不同必须 evaluate 实测（本次在 202,840）；④同一草稿会被多次 compose 会话自动存重复副本，发完去 Drafts 勾选→Discard drafts 清理。
