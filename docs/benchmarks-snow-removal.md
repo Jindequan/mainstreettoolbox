@@ -45,3 +45,22 @@
 - title 瞄准词簇：snow removal pricing calculator / snow removal cost calculator（词报告 v3 信号：commercial/formula/per hour 多变体）
 - 基准表 + per-inch 附加做成 FAQ/explain 素材（带来源句式 "According to Angi 2026…"——GEO 统计密度加分项）
 - 上线后 IndexNow + llms.txt 增补该条目
+
+## 成本侧补充研究（2026-10-03，净利 FAQ 素材，闸 3 复核）
+
+**目的**：snow 页补"承包商真实成本结构"FAQ（SERP 对照发现头部竞品有净利视角）。只收 ≥2 源数字；每推成本绝对值未找到 ≥2 源硬数字，**不入册不引用**。
+
+**已过闸数字**：
+- 保险（solo 住宅）：**$500–1,500/年**——Contractors Insurance & Bonds（solo $500-1,500）∩ Kase Insurance（$660-840）∩ JW Surety Bonds（~$825/yr <$70/mo）。三源交叉，核心带 ~$700-850。
+- 保险（含商用除雪卡车）：**$3,000+/年**——OriginalPricing（$3,000-12,000/车/年）+ PlowSite 操作者实报（Progressive 报价 $6,000/年含商用险）。双源。
+- 吃毛利的主变量（定性，双源一致）：**燃料+人工为每推主要成本；路线密度（route density）决定单位经济**——Eden.studio《Snow Removal Profit Margin》+ PlowSite/LawnSite 承包商共识。
+
+**明确不采用**：每推成本绝对值（无 ≥2 源）；PlowSite "owner-operator 低于 $70-80/hr 几无利润"（单论坛来源，降级为背景不引用）。
+
+**来源清单（成本侧）**：
+- JW Surety Bonds：https://www.jwsuretybonds.com（snow & ice removal insurance 页）
+- Kase Insurance：kaseinsurance.com（$55-70/mo）
+- Contractors Insurance & Bonds：solo $500-1,500/yr
+- OriginalPricing.com：plow truck 保险 $3,000-12,000/车/年
+- Eden.studio：Snow Removal Profit Margin: Real Numbers
+- PlowSite / LawnSite 论坛（定性共识）
