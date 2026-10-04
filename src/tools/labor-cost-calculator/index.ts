@@ -40,6 +40,7 @@ export default {
     { q: 'What is fully loaded labor cost?', a: 'Wages plus every employer-paid cost attached to them: payroll taxes (FICA, FUTA/SUTA), workers’ compensation, benefits, and meals on shift. It typically runs 20–35% above base wages.' },
     { q: 'What percentage of revenue should labor be?', a: 'Full-service restaurants usually target 25–35%; quick-service 20–30%. Prime cost (food plus labor) under 60% is the broader health check.' },
     { q: 'How do I lower labor percentage without cutting hours?', a: 'Raise average ticket (attach rate on sides and drinks), tighten the schedule against your sales curve, and reduce overtime. Cutting hours is the last lever — it costs service quality.' },
+    { q: 'What is an example of fully loaded hourly cost?', a: 'Using the calculator defaults: an $18 wage × 40 hours is $720 a week; at 18% payroll taxes that adds about $129.60, bringing the loaded week to roughly $849.60 — about $21.24 per loaded hour. Compare that number, not the $18 on the schedule, against what the position actually brings in.' },
   ],
   related: ['prime-cost-calculator', 'break-even-calculator', 'tip-out-calculator', 'profit-margin-calculator'],
 } as RegisteredTool;
