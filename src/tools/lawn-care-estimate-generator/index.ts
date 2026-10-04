@@ -6,8 +6,8 @@ export default {
   industry: 'lawn',
   name: 'Lawn Care Estimate Generator',
   tagline: 'A season quote on one page. No signup.',
-  title: 'Lawn Care Estimate Generator — Free Printable Estimate Template | Main Street Toolbox',
-  description: 'Build a printable lawn care estimate template: itemized services, monthly total, season note and signature lines your client can sign on the spot. Free, no signup.',
+  title: 'Lawn Care Estimate Calculator & Generator — Free Printable Estimate Template',
+  description: 'Build a printable lawn care estimate — an itemized lawn care estimate calculator with services, monthly total, season note and signature lines your client can sign on the spot. Free, no signup.',
   result: { label: 'Monthly total' },
   fields: [
     { id: 'client', label: 'Client name', kind: 'text', default: '', placeholder: 'Client or property name' },

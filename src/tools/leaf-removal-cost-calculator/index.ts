@@ -19,8 +19,8 @@ export default {
   industry: 'lawn',
   name: 'Leaf Removal Cost Calculator',
   tagline: 'Flat quote vs crew hours — both in one pass. No signup.',
-  title: 'Leaf Removal Cost Calculator — Free Fall Cleanup Pricing Tool',
-  description: 'Price leaf removal and fall cleanup by yard size — 1/6 acre $115–185 up to 1 acre $400–925 — cross-checked against your crew hours and rate. Free, instant, no signup.',
+  title: 'Leaf Removal Cost Calculator — Free Raking & Fall Leaf Cleanup Pricing',
+  description: 'How much to rake leaves or price leaf removal and fall leaf cleanup by yard size — 1/6 acre $115–185 up to 1 acre $400–925 — cross-checked against your crew hours and rate. Free, instant, no signup.',
   result: { label: 'Suggested flat quote' },
   fields: [
     {
