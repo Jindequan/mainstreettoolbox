@@ -1,4 +1,14 @@
-# Outbox — 行业媒体外联（Cleanfax 首发 + 10-02 下午三连发）
+# Outbox — 行业媒体外联（Cleanfax 首发 + 10-02 五波连发）
+
+> ## 🔴 发信铁律（用户 10-02 死命令，先于一切发送动作）
+> **"无论是否成功，你都应该先检查是否发送！而不是一直点击！"**
+> 1. **点 Send 之前先查 Sent**：同收件人+同主题已存在 → 停手，绝不点击。
+> 2. **单击一次，永不连点**——Gmail 点击延迟生效（实测 10 秒后入 Sent），双击=重复。
+> 3. 点击后等 ≥10 秒。
+> 4. **唯一可靠判据=Sent 出现 row "To: xxx"**；toast 与 composeGone 都会误报。
+> 5. 实证缺失才重试**一次**；再失败即停转人工。第三次点击被禁止。
+>
+> **禁再发名单**：abowman@glass.com（误发 3 封）、editor@tcia.org（误发 2 封）。
 
 > **2026-10-02 外联八连发（全部 jindeqhk52，用户死命令授权），已发送文件夹逐一核验：**
 > 1. ✅ 13:58 Cleanfax — Elizabeth Christenson <elizabethc@issa.com>（ ISSA 旗下，清洗/restoration 读者）
