@@ -74,7 +74,7 @@ export default {
     <p>By driveway size. A standard <b>1–2 car driveway runs $30–40 per push</b>; a 2–3 car driveway
     <b>$40–60</b>; and long or 3+ car driveways <b>$55–75 or more</b>. Thumbtack's 2026 estimates land a
     1–2 car driveway near $35 and a 150-footer near $60, which matches what operators report charging.</p>
-    <h3>Per push, seasonal or hourly — which quote fits?</h3>
+    <h3>What is the snow removal pricing formula — per push, seasonal or hourly?</h3>
     <p>Per-push is the default for residential work: simple, and the client only pays when it snows.
     A <b>seasonal contract ($350–700 for a typical driveway)</b> trades a lower effective rate for guaranteed
     revenue — it pays for itself in a heavy winter and costs you in a light one. Hourly ($40–75) fits
