@@ -19,7 +19,7 @@ export default {
   name: 'Mold Remediation Cost Calculator',
   tagline: 'Price by affected area and how deep the mold runs — before the "emergency" markup lands. No signup.',
   title: 'Mold Remediation Cost Calculator — Free 2026 Price per Sq Ft',
-  description: 'Mold remediation costs $10–25 per sq ft, with a typical job at $1,200–3,750. Price mold removal by area and scope (surface, wall cavity, whole home). Free, instant, no signup.',
+  description: 'Mold remediation costs $10–25 per sq ft, with a typical job at $1,200–3,750. Price mold removal after water damage or leaks by area and scope (surface, wall cavity, whole home). Free, instant, no signup.',
   result: { label: 'Expected quote' },
   fields: [
     {

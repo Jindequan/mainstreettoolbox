@@ -20,7 +20,7 @@ export default {
   name: 'Tree Removal Cost Calculator',
   tagline: 'Price by height, situation and stump work before the crew rolls. No signup.',
   title: 'Tree Removal Cost Calculator — Free 2026 Pricing by Tree Size',
-  description: 'Price tree removal in seconds: $200–500 under 30 ft up to $1,500–4,000 over 80 ft, with fallen-tree and stump add-ons. Free 2026 US ranges, instant, no signup.',
+  description: 'Price tree removal in seconds: $200–500 under 30 ft up to $1,500–4,000 over 80 ft, with fallen-tree and stump add-ons plus per-acre land clearing ($850–6,000). Free 2026 US ranges, instant, no signup.',
   result: { label: 'Suggested quote' },
   fields: [
     {
