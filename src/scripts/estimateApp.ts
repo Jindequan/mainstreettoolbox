@@ -306,7 +306,7 @@ export function initEstimateApp(root: HTMLElement): void {
   });
 
   $('#newEstimate').addEventListener('click', () => {
-    if (!window.confirm('Start a new, blank estimate? The current one stays in this browser.')) return;
+    if (!window.confirm('Start a new estimate? This will replace the current saved draft. Print or save it as PDF first if you need a copy.')) return;
     const draft = freshState(state.trade);
     draft.biz = state.biz; // business identity carries over
     Object.assign(state, draft);
