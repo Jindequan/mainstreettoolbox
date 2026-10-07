@@ -1,0 +1,38 @@
+Live preview — this is exactly what prints
+
+Your business name
+
+Estimate
+
+No. EST-20261002-01
+
+Date 2026-10-02
+
+Valid until 2026-10-31
+
+Prepared for
+
+Client name
+
+Description	Qty	Unit	Amount
+Standard Clean (2BR/1BA)Dusting, vacuum, kitchen surfaces, bathrooms, floors	1	120.00	120.00
+Deep Clean (2BR/1BA)Standard + baseboards, inside appliances, fixtures	1	220.00	220.00
+Move-In / Move-OutEmpty-home full detail, cabinets in & out	1	250.00	250.00
+Inside OvenAdd-on	1	35.00	35.00
+Inside FridgeAdd-on	1	35.00	35.00
+Interior WindowsAdd-on, per window	1	8.00	8.00
+Laundry & FoldingPer load, wash + dry + fold	1	15.00	15.00
+Pet Hair UpgradeHeavy shedding households	1	25.00	25.00
+Carpet Spot TreatmentPer room	1	30.00	30.00
+
+Subtotal$738.00
+
+Total$738.00
+
+Notes & terms
+
+Prices assume a standard home; adjust for size, condition and pets. Recurring visits billed at the agreed frequency.
+
+Accepted by
+
+Date

@@ -1,8 +1,10 @@
 ---
 import '../styles/tokens.css';
 
-interface Props { title: string; description: string; path?: string; bodyClass?: string; noIndex?: boolean; }
-const { title, description, path = '/', bodyClass = '', noIndex = false } = Astro.props;
+interface Props { title: string; description: string; path?: string; bodyClass?: string; noIndex?: boolean; ogImage?: string; }
+const { title, description, path = '/', bodyClass = '', noIndex = false, ogImage = '' } = Astro.props;
+const ogImageAbs = ogImage ? new URL(ogImage, Astro.site).toString() : '';
+const fontsUrl = 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&family=Inter:wght@400;500;600;700&display=swap';
 const canonical = new URL(path, Astro.site);
 const plausible = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
 const gsc = import.meta.env.PUBLIC_GSC_TOKEN;
@@ -22,7 +24,9 @@ const ga = import.meta.env.PUBLIC_GA_ID;
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
-  <meta name="twitter:card" content="summary" />
+  {ogImageAbs && <meta property="og:image" content={ogImageAbs} />}
+  {ogImageAbs && <meta name="twitter:card" content="summary_large_image" />}
+  {!ogImageAbs && <meta name="twitter:card" content="summary" />}
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -31,7 +35,9 @@ const ga = import.meta.env.PUBLIC_GA_ID;
   {gsc && <meta name="google-site-verification" content={gsc} />}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href={fontsUrl} />
+  <link href={fontsUrl} rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href={fontsUrl} rel="stylesheet" /></noscript>
   {plausible && <script defer data-domain={plausible} src="https://plausible.io/js/script.js"></script>}
   {ga && <script is:inline define:vars={{ gaId: ga }}>
     // 延迟加载 GA：首次交互后才注入 gtag.js（Can We Launch 审计 2026-09-14：

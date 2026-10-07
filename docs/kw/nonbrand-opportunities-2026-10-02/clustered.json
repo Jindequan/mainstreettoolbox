@@ -1,0 +1,7677 @@
+{
+  "ignore": [
+    {
+      "term": "battery health info download",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health tool check download",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "download battery health info",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice download online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice excel template download",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice format download",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice online login",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice software free download",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice template download",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice template free download",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice tools excel download",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice utility tool download",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice web login",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing free download",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e lost report app download for pc",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e.i reporting online login",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electronic invoice template free download",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free ai agent download",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "gepp e invoice tool download",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to download e invoice data",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to download e invoice report from gst portal",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to download e invoices",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "login to e invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "report generator free download",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "sap e invoicing tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste management pdf notes free download",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note download",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note pdf free download",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note template free download",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note template word free download",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    }
+  ],
+  "tool-intent": [
+    {
+      "term": "ai agent roi calculator",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai energy consumption calculator",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice distance calculator",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice template excel",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing template",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant gwp calculator",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note template",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note template free",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note template uk",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note template word",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging data file generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 2
+    },
+    {
+      "term": "plastic packaging tax calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 2
+    },
+    {
+      "term": "template for packaging design",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 2
+    },
+    {
+      "term": "a e website e report generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "a e website e report template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "additional minerals reporting template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai builder cost calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai calculator to buy",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai college acceptance calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai core cost calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai image generator energy consumption",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai inference cost calculator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai search cost calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai video generator energy consumption",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai voice agent roi calculator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "all material weight calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "american passport photo generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "annual waste transfer note template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "are ai power generators good",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "article generator ai comparison",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health calculator mwh",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health check calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health checker tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health percentage calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery risk assessment template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health calculator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "box packaging template free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "bulk waste generator guidelines",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "bulk waste generator registration",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "bulk waste generator rules",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "calculator with ai in it",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "categories of hazardous waste generators",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "conflict mineral reporting template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "conflict minerals reporting template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "conflict minerals reporting template中文",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center water consumption calculator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "defra digital waste tracking spreadsheet",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking spreadsheet",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e commerce invoice generator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e commerce invoice template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e commerce report template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e commerce report template excel",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice applicability calculator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice email template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice free template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice generator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice generator free",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice generator online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice generator software",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice information request template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice json generator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice qr generator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice template free",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice template malaysia",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice template pdf",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice template uae",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice template word",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing calculator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electronic invoice generator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electronic reporting word template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "energy consumption calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "energy consumption calculator下载",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epa hazardous waste generator categories",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epa waste generator categories",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr packaging data template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "extended mineral reporting template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "extended mineral reporting template emrt",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "extended minerals reporting template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "federal hazardous waste generator categories",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "file and report generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "formula to calculate roi",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free ai agent generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free ai agent templates",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free electronic invoice generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free online invoice generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free online report generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free passport photo generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free web report generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free web reporting templates",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "general reporting template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "generator and battery system",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "gst e-invoice generator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hazardous waste disposal plan template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hazardous waste generator categories",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hazardous waste generator categories chart",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hazardous waste generator classification",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hazardous waste generator classifications",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hazardous waste generator online registration",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hazardous waste generator registration",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hazardous waste policy template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hazardous waste program template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how gwp is calculated",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how is battery health calculated",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how is roi calculated",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate annual energy consumption",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate battery health",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate battery health percentage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate battery report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate e in calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate e on calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate energy consumption per day",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate epr",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate material weight",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate material weight formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate packaging cost",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate plastic packaging tax",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate roi",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate total roi",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to calculate waste",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to create an roi calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to do e on calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to find e on calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to get e on calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to put e into calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ifs ai roi calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "invoice generator by invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "invoicing free online generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "invoicing free online templates",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "laptop battery health calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "laptop battery health percentage calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "m&e report template doc",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "m&e report template doc word",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "m&e reporting template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "material size to weight calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "material weight calculator formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "material weight calculator in kg",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "material weight calculator online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "material weight calculator uk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "online calculator with e",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "online data report generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "open ai pricing calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging material specification template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "passport check digit calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "passport generator online free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "passport photo generator online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "pdf24 e invoice generator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "plastic material weight calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "report generator free software",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "report generator tool for web",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "report-generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "resca e report template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "roi calculator for agentic ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "roi calculator for real estate",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "roi calculator for yearly investment",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "roi calculator real estate",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "roi on investment calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "server energy consumption calculator blog",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "t&e report template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "tceq hazardous waste generator classification",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "template for waste management plan",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "tu e report template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "us passport photo generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification report template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste consignment note template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste disposal form template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste disposal register template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste generator classification",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste management policy template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste management register template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note free template",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note generator",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note template ea",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note template pdf",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note template scotland",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note template sepa",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer notice template",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "weight calculator for material",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "weight calculator for packages",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is an roi calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "wooden packing box weight calculator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "write report online generator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    }
+  ],
+  "comparison-commercial": [
+    {
+      "term": "ai inference vs training",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health vs state of charge",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best e invoicing software",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best e invoicing software in saudi arabia",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai in cost estimating",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai in cost estimation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai inference cost",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai training vs ai inference",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai training vs inference market size",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery post vs terminal",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best ai agent for coding",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best ai agent for finance",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best ai agent for market research",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best ai agent for research",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best ai agent maker",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best ai agent reddit",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best ai agent right now",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best ai agent stock",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best ai for calculations",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best ai for financial calculations",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best battery for 2019 honda passport",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best battery for 2020 honda passport",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best battery for 2021 honda passport",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best battery for 2022 honda passport",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best battery for honda passport",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best battery on the market",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best digital waste tracking software",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best e invoice software in india",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best e invoicing software in coimbatore",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best e invoicing software in uae",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best e invoicing software malaysia",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best e invoicing solution in uae",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best e invoicing solutions",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best e-invoicing",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best free ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best gwp refrigerant",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best online invoicing for small business",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best online invoicing software",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best packaging examples",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best packaging materials for shipping",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best packing material for shipping",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best practices for reporting electrocatalytic",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best recyclable packaging",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best refrigerant gas",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best refrigerant gas for ac",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best refrigerant gauges",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best reporting tool in market for e-commerce",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best web reporting services",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "best web reporting solutions",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "brown passport vs blue passport",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "cost of ai implementation in businesses",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "cost of generative ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "cost of implementing ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "cost of implementing ai in business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice software price",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-invoices business best practices",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr vs packaging tax",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "gen ai cost equation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "passport vs passport book",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "the cost of using ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "the cost of using ai is low",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "the high cost of ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what are the best passports",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is inference cost in ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is the best ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is the best ai investment",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "which is the best battery",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    }
+  ],
+  "how-to-info": [
+    {
+      "term": "how is waste classified",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to create an ai agent",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "state of health battery formula",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note example",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is ai inference",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is waste classification",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "a e website e report example",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent creation guide",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent example code",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent how to",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent tutorial with example",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai inference what is it",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "air consumption calculation formula",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery ah calculation formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health check formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport example",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport requirements",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health formula",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health when to replace",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "cpi design for recyclability guidelines",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "d365 electronic reporting formula designer",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data centers use how much water",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "deadline for tax receipts",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "deadline for use of official receipt",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice how to do",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice how to generate",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing malaysia guidelines",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing mandate uk deadline",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e reporting france requirements",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-invoicing guidelines",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-invoicing what is it",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electronic reporting formula",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electronic reporting formula designer",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ema icsr reporting requirements",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "energy consumption formula",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr examples",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "example of waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "examples of battery",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "formula e annual report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "formula e financial regulations",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "formula e reporting dwp",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "formula e sustainability report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "formula for roi calculation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "formula for waste percentage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "formula in getting a passport",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "formula to find roi",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "guideline for e invoicing",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "guidelines on epr for plastic packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how does ai inference work",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how does inference work in ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how generate e invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how much electricity does a data centre use",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how much energy has ai used",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how much energy is used for ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how much energy will ai consume",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how much water do data center use",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how much water does a data center use",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how much water does a datacenter use",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how much water does data center use",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to build an ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to check e invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to classify different types of waste",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to complete a waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to compute electric bill consumption",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to create a gen ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to create ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to create an ai agent free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to create e invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to do e invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to do e invoice manually",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to do e invoicing",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to do passport online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to find battery health percentage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to generate ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to generate e invoice manually",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to get a waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to get battery health report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to implement ai for small businesses",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to make ai agent for free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to make an ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to make e invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to make e invoice in excel",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to make e invoice manually",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to measure ai roi",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to obtain a waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to process passport online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to recycle plastic packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to roi calculation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to start e invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to start e invoicing",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to use passport app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to work out gwp of refrigerant",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to write an ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how to write net weight on packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "how will digital waste tracking work",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "material weight calculation formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "material weight calculation formula in excel",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "material weight calculation formula in kg",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "plastic part weight calculation formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "power of battery formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "raw material weight calculation formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "reg e reporting requirements",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "reporting requirements for small businesses",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "roi definition and formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "roi formula for a machine investment",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "roi in marketing formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "roi in years formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "small business filing deadlines",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "soh of battery formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "state of charge of battery formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "state of health formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "sustainable packaging and recycling examples",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification guidelines",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification guidelines dwer",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification guidelines epa",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification guidelines part 1",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification guidelines uk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification guidelines wa",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note examples",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note what is it",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste web app examples",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what are ai agent tools",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what are ai inference costs",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what are gwp refrigerants",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what are the classification of waste",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what does epr stand for in packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what does epr stand for packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is a battery passport",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is a digital tracker",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is a good battery health",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is a good battery health percentage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is a gwp refrigerant",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is a waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is ai inference market",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is ai model inference",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is an ai inference",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is an ai inference accelerator",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is battery health",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is battery in healthcare",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is battery passport",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is battery state of health",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is classified waste",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is digital waste",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is digital waste tracking",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is epr for packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is epr in packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is epr packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is epr packaging regulations",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is gwp for refrigerants",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is gwp in refrigeration",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is gwp refrigerant",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is inference in ai",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is inference in ai models",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is inference in artificial intelligence",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is low gwp refrigerant",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is make ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is online reporting",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is packaging epr",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is packaging material",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is passport app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is refrigerant gwp",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is roi in automation",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is the battery health percentage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is the energy consumption of ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is the gwp of r22",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is the least recycled packaging format",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is the roi formula",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is the roi on ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is the top ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what is your ai agent buying",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what numbers are recyclable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what numbers of plastic are recyclable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what packaging is included in epr",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what packaging is not recyclable",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what packaging is recyclable",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what refrigerant has lowest gwp",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "what's a good battery health",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "when are annual waste reports due",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "when are waste management bills due",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "why do data centers need water",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    }
+  ],
+  "watch": [
+    {
+      "term": "battery state of health calculation",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking app",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking approved software",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking software",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice online tool",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicability",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicability check",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicability in uae",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicability limit",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicability under gst",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing for small business",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing free course",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ei reporting online",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note app",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note explained",
+      "sources": [
+        "bing",
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging design app free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 2
+    },
+    {
+      "term": "packaging design tool free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 2
+    },
+    {
+      "term": "packaging design tool online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 2
+    },
+    {
+      "term": "packaging for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 2
+    },
+    {
+      "term": "packaging items for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 2
+    },
+    {
+      "term": "packaging material for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 2
+    },
+    {
+      "term": "packaging tools and equipment",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 2
+    },
+    {
+      "term": "product packaging for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 2
+    },
+    {
+      "term": "100% recyclable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "a battery's state of health soh indicates",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "a e website e report format",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "a e website e reporting",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "a e website e reporting tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "a reporting tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "a website that reports e-books reviews",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "a website that reports e-business strategies",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "agent.ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "‌ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent creation tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent development tools",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent for android",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent for business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent for finance",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent for free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent for investing",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent for real estate",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent for realtors",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent free online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent maker online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent online free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent roadmap",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent roi",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agent to agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai agents and applications",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai and electricity consumption",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai and energy consumption",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai and energy usage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai consumption of energy",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai energy companies",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai energy consumption",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai energy consumption 2025",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai energy consumption article",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai energy consumption forecast",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai energy consumption problem",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai energy consumption statistics",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai energy usage chart",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai fees",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai inference market size",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai inference use cases",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai research agent free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai that delivers roi",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai tool using agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai tools energy consumption",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai training and inference",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai training versus inference",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ai+agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "aku e reports online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "all about e invoicing",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "amount of water used by data centers",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "annual waste summary due date",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "annual waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "apa itu roi (return on investment)",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "apple data center water usage",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "apple data center water use",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "apple watch battery state of health",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "apps for paper recycling",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "are plastic packaging recyclable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "art a reporting tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "auto passport photo maker",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "autocad performance reporting tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "autocad performance reporting tool有用吗",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "automatic weighing and packaging machine",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "automatic weighing and packing machine",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "average data center water usage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "average power consumption of a data center",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery color code",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery digital product passport",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery for health improvement",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery formats",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health and safety",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health check application",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health check free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health check online free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health check online tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health check tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health diagnostic tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health management hp",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health management system",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health online check",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health report html file",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health report online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health test online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery health tool windows",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport application",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport content guidance",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport data attribute longlist",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport eu regulation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport means",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport pilot",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport ready",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport regulation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport sample",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport software",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery passport toyota",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery setup",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health definition",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health estimation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health meaning",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health on embedded systems",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health soh",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health stellantis",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery state of health tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "battery_health",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "‌batteryhealth‌",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "beste reportagen",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "boxes for packaging small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "build an ai agent free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "building an ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "business analyst ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "business classification for ewaste recycling",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "business development ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "business intelligence ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "business report for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "buy an ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "cad performance reporting tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "can air generate electricity",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "car battery state of health",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "car scanner app battery state of health",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "certificate of recyclability of packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "cheap professional packaging materials",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "classification of waste based on nature",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "classification of waste management",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "classification of waste materials",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "classification of waste pdf",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "code for battery health",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "command for battery health report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "comment faire le e reporting",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "completed waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "completing a waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "construction and inference in ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "create a waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "create battery health report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "custom box packaging machine",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "custom packaging for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center and water usage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center use water",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center water consumption",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center water supply",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center water usage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center water usage data",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center water usage effectiveness",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center water usage facts",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center water usage per day",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center water usage per mw",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center water usage per year",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data center water use",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data centers use a lot of water",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data centers water usage",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "data centre water usage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital battery passport platform",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital product passport battery",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital product passport for batteries",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital tracking of waste",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking app free",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking date",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking dwt",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking for local authorities",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking from 2026",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking github",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking gov",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking gov.uk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking helpline",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking ltd",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking regulations",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking scheme",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking service",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking software free",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking software providers",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking software uk",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking summary",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking system",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking systems",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking timeline",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking timescales",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking training",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking uk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking uk government",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste tracking update",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "digital waste transfer notes app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "do data centers use a lot of water",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "does net weight include packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "does shipping weight include packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "does using ai increase energy consumption",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "dry weight food packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e accident report online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e billing tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e carl report online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e cib report online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice and invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice for enterprise",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice for individual",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice for services",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice for small company",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice free app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice free seminar",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice freelancer",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice generate online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice generation process",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice generation software",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice generation tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice implementation for small business",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice log in",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice maker",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice maker free",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice online class",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice online free",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice online generation",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice online platform",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice online portal",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice online process",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice pdf sample",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice pdf tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice sample format",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice software free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice verification tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoice without software",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicability date",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicability for export",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicability for fy 24-25",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicability for fy 25-26",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicability in dubai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicability under gst limit",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing applicable to insurance companies",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing approved asp",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing approved vendor list",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing contact number",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing customer care",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing details",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing for malaysia",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing for small business malaysia",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing format",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing free",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing free software",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing free training",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing generation time limit",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing in uk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing malaysia",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing malaysia 2025",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing malaysia implementation date",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing mandate",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing mandate uk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing mandatory",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing mandatory fields",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing mandatory for small businesses",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing mandatory in uae",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing mauritius",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing process",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing service providers",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing sign up",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing software for small business",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing software solutions",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing solution providers",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing tools",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e invoicing uae for small business",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e lost report app karnataka",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e lost report application",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e lost report online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e lost report online bangalore",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e lost report online karnataka",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e lost reporting app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e notification application",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e report application",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e report for energy",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e report jpmc online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e reporting app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e reporting auto entrepreneur",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e reporting form",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e reporting format",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e reporting france",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e reporting malaysia",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e reporting micro entreprise",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e reporting pdrm",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e reporting pdrm app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e reporting transaction",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e substances reporting application",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e waste return due date",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e weight on packaging australia",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e- invoicing meaning",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-app notification",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-invoice software",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-invoicing",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-invoicing online training",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-invoicing rules",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-reporting tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "e-survey report tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "eco friendly packaging for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "einvoicing app",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "einvoicing tnt",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electricity consumption of ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electronic invoice maker",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electronic invoicing for small business",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electronic invoicing free",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electronic reporting tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electronic reporting tool epa",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "electronic reporting tool ert",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "energy consumed by ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "energy consumption and ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "energy consumption of ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "energy usage by ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "enterprise reporting app features",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "enterprise reporting app integration",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "enterprise reporting app reviews",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "enterprise reporting applications software",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "environment agency digital waste tracking",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epa refrigerant gwp values",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epa waste classification list",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr events",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr for packaging uk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr for plastic packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr list of items",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr non household packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr packaging producer list",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr packaging regulations uk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr packaging waste regulations",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr product list",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr types of packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "epr_germany_packing",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ereporting application",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "ereporting manual",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "esrs small business reporting",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "eu battery digital passport",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "eu battery passport conference",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "eu digital battery passport",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "expense reporting for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "fast weigh mobile app",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "fedex reporting online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "food packaging for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "food packaging volume and weight",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free ai agent api",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free ai agent app",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free ai agent maker",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free ai agent tutorial",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free battery health app",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free e invoice software",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free electronic invoice online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free page reporting",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free waste transfer note",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free web report maker",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free web reporting services",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free web reporting tool for education",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "free weight management apps",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "from gen ai to agents",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "garbage classification app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "gba battery passport pilot",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "generate battery health report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "generational battery health check",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "generative ai energy consumption",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "get battery health report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "google ai energy consumption",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "google data center water usage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "google roi of ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "gov digital waste tracking",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "government digital waste tracking",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "grafana reporting tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "gross weight includes packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "gwp chart for refrigerants",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "gwp limits for refrigerants",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "gwp list of refrigerants",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "gwp of common refrigerants",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "gwp values of refrigerants",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hazardous waste license due date",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "health app using battery",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "healthcare gov small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "heavy duty packing material",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hfm reporting tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "high energy consumption of ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "highest gwp refrigerant",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "hopes e report online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "industrial packaging material recycling",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "inference in ai models",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "inference meaning in ai models",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "inference meaning in ai terms",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "inference techniques in ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "inference.ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "internet reporting for e.i",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "introduction to ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "invoice for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "invoicing for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "is 70% battery health good",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "is 87% battery health good",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "is 90% battery health good",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "is apple packaging recyclable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "is bubble packaging recyclable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "is ipad packaging recyclable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "is packing material recyclable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "is packing paper recyclable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "is plastic packaging recyclable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "laptop battery pin details",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "linux配置reporting tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "list of packaging materials",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "list of refrigerants by gwp",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "logic app ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "low gwp refrigerant list",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "low gwp refrigerant practice test",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "m&e reporting tools",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "make an e report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "make e invoice online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "making an ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "material used for packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "minimum recycled content in plastic packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "minnesota epr for packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "mobile passport control app",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "my passport wireless app",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "net weight on packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "non-recyclable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "npdes electronic reporting tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "npdes electronic reporting tool net",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "online e invoice generation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "online invoicing software for small business",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "online invoicing tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "online packaging material near me",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "online reporting system",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "online reporting system ln edu hk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "online state of health assessment for battery management systems",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "online waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "open ai energy consumption",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "open ai inference costs",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging and containers manufacturing",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging as a marketing tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging bags for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging box for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging box maker machine",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging catalogue - power apps",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging costs for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging design tool for cosmetics",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging design tool for food products",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging design tool software",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging epr",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging epr agreed positions",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging epr base fees",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging epr france",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging epr regulations uk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging epr tax",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging for heavy items",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging maker online free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging material for shipping",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging material weight",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging recyclability",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging recyclability evaluation portal",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging recyclability summit 2026",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packaging supplies for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packing list gross weight",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packing material for heavy items",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "packing/weight list",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "passport app for phone",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "passport app not working",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "passport maker near me",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "passport maker online free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "passport most powerful",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "passport to safety online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "pc passport type",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "plastic free food packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "plastic free packaging bags",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "plastic packaging tax calculation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "plastic packaging tax recycled content",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "plastic packaging tax weighing methods",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "process of e invoicing",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "product packaging ideas for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "pwc e invoicing tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "que contient le e reporting",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "recyclable logo on packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "recyclable materials for packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "recyclable materials report form",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "recycled content packaging legislation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "recycling of packaging materials",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "recycling plastic food packaging",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "recycling plastic packaging materials",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "recycling rate for selected materials",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant chart with gwp",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant gas gwp table",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant gwp",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant gwp chart",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant gwp chart pdf",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant gwp less than 150",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant gwp list",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant gwp meaning",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant gwp ratings",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant gwp table",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant with gwp of 1",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerant with lowest gwp",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "refrigerants with gwp less than 10",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "renault zoe battery state of health app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "report maker online free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "report maker pro software",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "report packaging data epr",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "reporting format",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "research portfolio online reporting tools",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "retail packaging for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "roi full form in ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "roi in business analyst",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "safety e report app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "sample ai agent code",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "sample of e invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "sample of recyclable materials",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "sample waste transfer note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "small business and ai",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "small business erp software report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "smart weigh packaging machinery co. ltd",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "software for e invoice",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "solutions to ai energy consumption",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "state of health battery",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "state of health battery deutsch",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "state of health battery meaning",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "state of health battery tester",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "state of health ev battery",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "state of health ev battery testing tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "state of health for battery",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "sustainable packaging and recycling benefits",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "sustainable packaging and recycling research",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "sustainable packaging for small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "tax reporting for a small business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "technical battery in healthcare",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "tool for ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "tools to build ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "tools used in reporting",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "top ai agent tools",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "toronto police online reporting",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "transfer of waste note",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "type of packaging material",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "types of waste categories",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "types of waste classification",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "types of waste classification in legislation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "types of waste in business",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "uk digital waste tracking",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "uk recyclability assessment methodology",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "understanding data center water usage",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "us passport photo maker",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "victoria police online reporting",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "was ist die battery passport regulation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification 17 05 04",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification analysis",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification and codes",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification assessment",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification assessment protocol",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification assessment report",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification chart",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification codes",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification flow chart",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification in legislation",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification meaning",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification project github",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification software",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification tceq",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification technical guidance",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification technical guidance wm3",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification test",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification testing",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification tool",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste classification types",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste identification app",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste management award classifications",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste return submission dates",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste tracking codes",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note amazon",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note blank",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note books",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note definition",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note digital",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note form",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note gov",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note gov uk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note meaning",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note number",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note online",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note pdf",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note printable",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note records",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note register",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note software",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note training",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note transferee",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste transfer note uk",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste types and classification",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste web app design",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste web app features",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "waste web app solutions",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "water consumption for data centers",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "water system for data center",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "water usage data center",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "water usage for data centers",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "water usage in data centers",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "water use by data centers",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "weight based quantity tool",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "weight tracking app free",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "where to recycle packaging materials",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "which are the strongest passports",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "which type of refrigerant typically has the lowest gwp",
+      "sources": [
+        "google"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "wholesale packaging materials online",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    },
+    {
+      "term": "writing an ai agent",
+      "sources": [
+        "bing"
+      ],
+      "seedHits": 1
+    }
+  ]
+}

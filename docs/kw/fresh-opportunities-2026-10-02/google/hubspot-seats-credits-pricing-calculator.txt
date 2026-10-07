@@ -1,0 +1,216 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQPHoECAYQBA
+  - combobox "Search": hubspot seats credits pricing calculator hubspot seats credits pricing calculator
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dhubspot%2Bseats%2Bcredits%2Bpricing%2Bcalculator%26newwindow%3D1%26sca_esv%3D657ce744dba959fb%26hl%3Den%26gl%3Dus%26biw%3D1280%26bih%3D720%26sxsrf%3DAPpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g%253A1790944530648%26ei%3DEqW_atmKJ8qL4-EP0-TF4Qg%26ved%3D2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ4dUDegQIBhAM%26uact%3D5%26oq%3Dhubspot%2Bseats%2Bcredits%2Bpricing%2Bcalculator%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiKGh1YnNwb3Qgc2VhdHMgY3JlZGl0cyBwcmljaW5nIGNhbGN1bGF0b3JIIVAAWABwAHgBkAEAmAEAoAEAqgEAuAEDyAEA-AEC-AEBmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB%26sclient%3Dgws-wiz-serp&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&q=hubspot+seats+credits+pricing+calculator&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ8RRzo6J-BIhE0fun05Kv9Vn_fvrMD9FN432YiYJstn5zFQ-8ZHSNt5OW4LVm6iPnVN0MKzoGN5YYM3cV_r5JZDAhzqOKInL9Egh2oqw69HmGxiltAlxivFQGYQ9lrPvsFbuePt019Kretfe2V_7uyo15iF5Lcpbh1r6sjYsqM6Bx1TZBA&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ0pQJegQIGRAB
+      - generic: News
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ8RRzo6J-BIhE0fun05Kv9Vn_fvrMD9FN432YiYJstn5zFQ-8ZHSNt5OW4LVm6iPnVN0MKzoGN5YYM3cV_r5JZDAhzqOKInL9Egh2oqw69HmGxiltAlxivFQGYQ9lrPvsFbuePt019Kretfe2V_7uyo15iF5Lcpbh1r6sjYsqM6Bx1TZBA&q=hubspot+seats+credits+pricing+calculator&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQs6gLegQIGBAB
+      - generic: Forums
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ8RRzo6J-BIhE0fun05Kv9Vn_fvrMD9FN432YiYJstn5zFQ-8ZHSNt5OW4LVm6iPnVN0MKzoGN5YYM3cV_r5JZDAhzqOKInL9Egh2oqw69HmGxiltAlxivFQGYQ9lrPvsFbuePt019Kretfe2V_7uyo15iF5Lcpbh1r6sjYsqM6Bx1TZBA&q=hubspot+seats+credits+pricing+calculator&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&udm=imgs&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ8RRzo6J-BIhE0fun05Kv9Vn_fvrMD9FN432YiYJstn5zFQ-8ZHSNt5OW4LVm6iPnVN0MKzoGN5YYM3cV_r5JZDAhzqOKInL9Egh2oqw69HmGxiltAlxivFQGYQ9lrPvsFbuePt019Kretfe2V_7uyo15iF5Lcpbh1r6sjYsqM6Bx1TZBA&q=hubspot+seats+credits+pricing+calculator&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQtKgLegQIFxAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ8RRzo6J-BIhE0fun05Kv9Vn_fvrMD9FN432YiYJstn5zFQ-8ZHSNt5OW4LVm6iPnVN0MKzoGN5YYM3cV_r5JZDAhzqOKInL9Egh2oqw69HmGxiltAlxivFQGYQ9lrPvsFbuePt019Kretfe2V_7uyo15iF5Lcpbh1r6sjYsqM6Bx1TZBA&q=hubspot+seats+credits+pricing+calculator&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQtKgLegQIFRAB
+      - generic: Videos
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ8RRzo6J-BIhE0fun05Kv9Vn_fvrMD9FN432YiYJstn5zFQ-8ZHSNt5OW4LVm6iPnVN0MKzoGN5YYM3cV_r5JZDAhzqOKInL9Egh2oqw69HmGxiltAlxivFQGYQ9lrPvsFbuePt019Kretfe2V_7uyo15iF5Lcpbh1r6sjYsqM6Bx1TZBA&q=hubspot+seats+credits+pricing+calculator&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQs6gLegQIFBAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "Sales Software Pricing HubSpot https://www.hubspot.com › pricing › sales":
+    - /url: /goto?url=CAESXQHrOzAV5MO5aur_cIX2dJ1oqY_Wybxva9YhuLkO1lWvgJTV8BvtYmWocoOjGqetYqDbWfjygyknRTYrh6Dmh4u9qUrvlh-G233YPdawihbVlPk_nf5W5QyJ8O4b4w
+    - heading "Sales Software Pricing" [level=3]
+    - generic: HubSpot
+    - generic: https://www.hubspot.com › pricing › sales
+  - button "About this result":
+  - emphasis: Professional for $57/mo/seat
+  - text: (was $95/mo/seat) or Enterprise for $98/mo/seat (was $140/mo/seat) when billed annually. Calculate your price Free. Starts at $7/ ...
+  - generic: $100.00
+  - link "Marketing Software Pricing HubSpot https://www.hubspot.com › pricing › marketing":
+    - /url: /goto?url=CAESYQHrOzAVPKCgaNvWTNxUsrn2CDG6PzxRn21SszEDfEogfZa9vzdDFn3uAKiIb2jP2TrSQjLOadLMg_F2l5XsMdlSIlnNTsfu0Zx6GOBrFJH_Je7wuvMbC6hh3PQ1CXNc5D8
+    - heading "Marketing Software Pricing" [level=3]
+    - generic: HubSpot
+    - generic: https://www.hubspot.com › pricing › marketing
+  - button "About this result":
+  - emphasis: Starts at $7/mo/seat
+  - text: $20/mo/seat demand engine Starts at $800/mo $890/mo. Starts at $3,600/mo Includes 5 Core Seats Additional Core Seats start at $75/mo Talk ...
+  - generic: $890.00
+  - 'link "HubSpot Pricing: Cost Breakdown & Calculator (2026) Zeeg https://zeeg.me › Home › Blog"':
+    - /url: /goto?url=CAESZAHrOzAVZe8NBGxi8OKsT6Pu57yJbtNfYL1Up5iDGegrT8H1s7WkTCf_0hBe2U_wUStAKu1Xrq23j5jiRZ6dZvLNwko7Os9FcvGFxDvjuYf5DfUCkieY_rMlg6AzzObF0dKn48o
+    - 'heading "HubSpot Pricing: Cost Breakdown & Calculator (2026)" [level=3]'
+    - generic: Zeeg
+    - generic: https://zeeg.me › Home › Blog
+  - button "About this result":
+  - generic: Dec 30, 2025 —
+  - text: Additional marketing contacts cost $50 monthly per 1,000 contacts, and additional
+  - emphasis: seats
+  - text: cost $20 monthly each. This
+  - emphasis: pricing
+  - text: model becomes ...
+  - link "Read more":
+    - /url: /goto?url=CAESxgEB6zswFcASeeTLxoUvaD6b-iq-XVMAG_eOK7nEQfVJspalyqZls4uQz4PZzFvSlrPg_RsMbmL3ZIx31teFFzpZRZHzHIhxrTEA-Z4F0KanO1DVUzc3XI2tJxTZORupaZ5rDtAxR3nkGP9_vR8L10N7l18RWPfocPkJejUCDIGJXsyPNjFsNB0uU9EZ6_tLks7YNiuPoMjde7jW0ddpZJ457fkvLD3ooDuF_7JYV4GT1lWaTIOSl2t7xVWqMpy67FFnodwyP40
+  - heading "People also ask" [level=2]
+  - button "What does HubSpot cost per seat?":
+    - generic: What does HubSpot cost per seat?
+  - button "Why are so many people leaving HubSpot?":
+    - generic: Why are so many people leaving HubSpot?
+  - button "How do HubSpot credits work?":
+    - generic: How do HubSpot credits work?
+  - button "What is a paid seat in HubSpot?":
+    - generic: What is a paid seat in HubSpot?
+  - heading "Web results" [level=2]
+  - link "Free HubSpot TCO Calculator | Calculate Your Cost Savings HubSpot https://www.hubspot.com › tco-calculator":
+    - /url: /goto?url=CAESXgHrOzAVzNMTb7vX-ipAB7xDHuvSs9njp3xnVmQUc1MHNAwBCRcFGJhMoweopc4Iw2d9UrrtOzYl7gzpuaUA6sDdejB-Uax8of5Zlxx5Lj5FZU59F7Gqkp6yfEsop-s
+    - heading "Free HubSpot TCO Calculator | Calculate Your Cost Savings" [level=3]
+    - generic: HubSpot
+    - generic: https://www.hubspot.com › tco-calculator
+  - button "About this result":
+  - emphasis: Use our free TCO calculator
+  - text: to estimate your total HubSpot costs and uncover potential savings. Get clarity on software, services, and long-term value.
+  - 'link "HubSpot Pricing 2026: Plans, Hidden Fees & Cost Calculator saascrmreview.com https://saascrmreview.com › ... › CRM Pricing & Plans"':
+    - /url: /goto?url=CAESYgHrOzAVuXoODMQIA5jgXZH0rFK2qpejfXNbZmjUlk9UgfOS6cP395Y7zhI1RvBeU6x1p7UV2Ds2kDtYOqulkq50j6w2hApphs3ndDMHMjxNNkT05Hvy_cSFeoN4Ya-zzrH3
+    - 'heading "HubSpot Pricing 2026: Plans, Hidden Fees & Cost Calculator" [level=3]'
+    - generic: saascrmreview.com
+    - generic: https://saascrmreview.com › ... › CRM Pricing & Plans
+  - button "About this result":
+  - generic: Sep 8, 2026 —
+  - text: Revenue Hub Professional runs $
+  - emphasis: 85 per seat per month on annual billing
+  - text: or $95 per seat per month on monthly billing with 3,000 credits. Revenue ...
+  - link "Read more":
+    - /url: /goto?url=CAESvwEB6zswFXw_evwA_SZ5GZpjutppvD6Lb9jdYRRFfZtrYQZgXHE4SVq8QW8GT_JAFQtyt02H7eZ-EtljjI7Mx-B_HukxkTrY8w21Pk8bQ6w-X6gHQdzAggePuZzzQG0wP8XWyR1vVp-v5Km1OpdALDE2PjpLUuiV31S3vLQGPBGooc7Hx79Z30U1Wxy53irD7W6K1HooTv6mMZwqJrZX9wr0cpMlVBdpy17hUAquVCaYnict-a2XgSU1bEfURcclYg
+  - 'link "HubSpot Pricing Calculator: Your Real Cost in Five ... Market Disrupt https://marketdisrupt.io › Blog › HubSpot"':
+    - /url: /goto?url=CAEScAHrOzAVOzWVDVrMNYc8NgPVSgkHFjcZQowqhw_kwg3jbeSPP-T4iOvfsYl6CFN_D-EZx7-4bBs_SLvgPvMBDK7-nmJYX9OK1H3Q1_ujlNw6VSL3kp4VaWXlew3cPUYidLTS1HZn-I9ITa0YwT-XZ90
+    - 'heading "HubSpot Pricing Calculator: Your Real Cost in Five ..." [level=3]'
+    - generic: Market Disrupt
+    - generic: https://marketdisrupt.io › Blog › HubSpot
+  - button "About this result":
+  - generic: Jul 22, 2026 —
+  - emphasis: HubSpot pricing calculator
+  - text: ": Marketing Hub Pro: $800/month including 3 seats. Service Hub Pro: $90 per seat/month — pure per-seat, no base fee."
+  - 'link "HubSpot Pricing 2026: Seats, Hubs, and What It Actually ... De Novo Digital https://denovodigital.com › blog › hubspot-pricing"':
+    - /url: /goto?url=CAESZgHrOzAVpfjQgDSbY_UJfEcMp73bxiuhuoQMlopRfiSJfa_N-uvVC3WS_z1sTMbZrALKoYQJ2J5scJenCYPTRJDRvw9IKrhJgp4L9mB5PaL5Xrp79ombTV1A5lMxU-2CWPrxtREEsg
+    - 'heading "HubSpot Pricing 2026: Seats, Hubs, and What It Actually ..." [level=3]'
+    - generic: De Novo Digital
+    - generic: https://denovodigital.com › blog › hubspot-pricing
+  - button "About this result":
+  - emphasis: Starter tiers run $20 per seat per month at list
+  - text: (promotional pricing is usually available), Professional and Enterprise tiers vary by hub, and Marketing, ...
+  - link "Read more":
+    - /url: /goto?url=CAESsAEB6zswFaGkdJJqwauRdojnI-_Hw6-DaU5lqSMMqfQQH6HYYKGdYmDvvR6YQ_nSuPV8WxaK1jyW0-n5GWU3tO0inab9BUEmZtp8wuBmjVB22LFQ7frYfBTT7VmDd_DUDmSV13o35-D4CY3PUknv7opDXl15Cbir3Zq-jVhpkN4OFVjNrFYY7ekvCHQ4SKUEG-LQRAa1sJ76LP2tBW1gMjHpO4UfBQyJmnUAcbxsfWC5cQ
+  - link "HubSpot Product & Services Catalog - Legal Center HubSpot https://legal.hubspot.com › hubspot-product-and-services...":
+    - /url: /goto?url=CAESdgHrOzAVQIgjUudSFU7b_ryb6XvMidg3Obkwrpb3sAwvX3eCw-bUew8Qt52TYqbErbqRmtw0TwGEnKGhXNUJLPLkGDWee9qCsD8Slj2R83lOExrTcqIHTKEVKNAxSBuf45gRNplhJLQKis-t5tPjiz5-xBE4XLU
+    - heading "HubSpot Product & Services Catalog - Legal Center" [level=3]
+    - generic: HubSpot
+    - generic: https://legal.hubspot.com › hubspot-product-and-services...
+  - button "About this result":
+  - text: With HubSpot Credits,
+  - emphasis: Starts at $20/month per seat
+  - text: Additional Core Seats (Starter) available for $20/month per seat. Professional) available for $50/month per ...
+  - 'link "HubSpot Pricing FAQs: Seats, Upgrades, Add-Ons & What You ... YouTube · The Gist - HubSpot Strategists 1.9K+ views · 7 months ago"':
+    - /url: /goto?url=CAESbAHrOzAVcleKqM2gTBphEb6ZcT4MGd0EEAH7njcMfyvVszP1wJW49j71ybjnl1zcgF_FBUUyL1NkhOxE-0-ypyDgwkbrNVULKgPzoA3VzHm8cFNQsYyS-GBNVx9u_BNTz-txMdrgpYV0HR0QoQ
+    - 'heading "HubSpot Pricing FAQs: Seats, Upgrades, Add-Ons & What You ..." [level=3]'
+    - generic: YouTube · The Gist - HubSpot Strategists
+    - generic: 1.9K+ views · 7 months ago
+  - button "About this result":
+  - 'button "HubSpot Pricing FAQs: Seats, Upgrades, Add-Ons & What You ... by The Gist - HubSpot Strategists on YouTube. Play on Google. 15:32"':
+    - generic: 15:32
+  - generic: In this first installment of our new FAQ series, we're answering five of the most common questions we get about HubSpot pricing, seats, and
+  - button "10 key moments in this video":
+    - generic: 10 key moments in this video
+  - link "HubSpot Pricing Calculator — real monthly & first-year cost SeldonFrame https://www.seldonframe.com › tools › hubspot-pricing...":
+    - /url: /goto?url=CAESdAHrOzAV_WyDsroy6zO1Ng6ZZHgzpx7t3pS_n8oXgCAx0kpfkbAG2cnvvY3Ta5ZdR-tT-b0GzppRNaLB7EkPqJYGY9D6Ms_rTBBu0svNmmWZeb4KpQP5hl8HiIEu6rfJQcDPE1f8ygP99_EVvkeN20gkitMe
+    - heading "HubSpot Pricing Calculator — real monthly & first-year cost" [level=3]
+    - generic: SeldonFrame
+    - generic: https://www.seldonframe.com › tools › hubspot-pricing...
+  - button "About this result":
+  - emphasis: HubSpot Pricing Calculator
+  - text: . Pick a tier, set your contacts and seats, and see what HubSpot really costs per month and in year one — onboarding fee included.
+  - link "Read more":
+    - /url: /goto?url=CAESywEB6zswFQ6tdDW0x9xRuEzvEH3e8NGaYPRKHL7-eK8-0UUY-pLOs5WU672BBwigyUaPZWsnKOAFSqrZtSFChoiIni4y7r2-67i00loQx9Os4z2J-gQ77wxCkpuckauGAz-dpFnFkEzdtYQigLAKeVIKmbW92ZN2Wsry9IPBHsrxlPhiW-oK_adFqDp0vug6ewtYI96SqIvTdgJCzhgHVHfpE5_qIDuNbR_QHwl8J0-JcQYF4UUSpJm7KuITsvmgrmDL7axWAqejMqouBQ
+  - heading "People also search for" [level=2]
+  - link "HubSpot pricing calculator":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&q=HubSpot+pricing+calculator&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ1QJ6BAg0EAE
+    - generic: HubSpot pricing calculator
+  - link "HubSpot Credits pricing":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&q=HubSpot+Credits+pricing&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ1QJ6BAhAEAE
+    - generic: HubSpot Credits pricing
+  - link "HubSpot Starter pricing":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&q=HubSpot+Starter+pricing&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ1QJ6BAg5EAE
+    - generic: HubSpot Starter pricing
+  - link "HubSpot CRM pricing":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&q=HubSpot+CRM+pricing&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ1QJ6BAhCEAE
+    - generic: HubSpot CRM pricing
+  - link "HubSpot Enterprise pricing":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&q=HubSpot+Enterprise+pricing&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ1QJ6BAhBEAE
+    - generic: HubSpot Enterprise pricing
+  - link "HubSpot pricing plans comparison":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&q=HubSpot+pricing+plans+comparison&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ1QJ6BAg4EAE
+    - generic: HubSpot pricing plans comparison
+  - link "HubSpot Core seat pricing":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&q=HubSpot+Core+seat+pricing&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ1QJ6BAg2EAE
+    - generic: HubSpot Core seat pricing
+  - link "HubSpot Sales Hub pricing":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&q=HubSpot+Sales+Hub+pricing&sa=X&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ1QJ6BAg3EAE
+    - generic: HubSpot Sales Hub pricing
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=hubspot+seats+credits+pricing+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&ei=VqW_asi_GsGt4-EP_PS1wA8&start=10&sa=N&sstk=AS6-VmJTMMozZJcV7S9x0mqvPYp6jskNzzgJPm2keBWOWYU7acku8FGq5n7IB__4toxd39jLuM_O9C1ZKOXP1o9w2S19ufJHUHsz_g&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ8tMDegQIMhAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=hubspot+seats+credits+pricing+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&ei=VqW_asi_GsGt4-EP_PS1wA8&start=20&sa=N&sstk=AS6-VmJTMMozZJcV7S9x0mqvPYp6jskNzzgJPm2keBWOWYU7acku8FGq5n7IB__4toxd39jLuM_O9C1ZKOXP1o9w2S19ufJHUHsz_g&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ8tMDegQIMhAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=hubspot+seats+credits+pricing+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&ei=VqW_asi_GsGt4-EP_PS1wA8&start=30&sa=N&sstk=AS6-VmJTMMozZJcV7S9x0mqvPYp6jskNzzgJPm2keBWOWYU7acku8FGq5n7IB__4toxd39jLuM_O9C1ZKOXP1o9w2S19ufJHUHsz_g&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ8tMDegQIMhAI
+      - text: "4"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=hubspot+seats+credits+pricing+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA:1790944598442&ei=VqW_asi_GsGt4-EP_PS1wA8&start=10&sa=N&sstk=AS6-VmJTMMozZJcV7S9x0mqvPYp6jskNzzgJPm2keBWOWYU7acku8FGq5n7IB__4toxd39jLuM_O9C1ZKOXP1o9w2S19ufJHUHsz_g&ved=2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ8NMDegQIMhAK
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

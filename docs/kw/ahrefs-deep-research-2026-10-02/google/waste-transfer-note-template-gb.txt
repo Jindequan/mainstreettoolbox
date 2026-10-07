@@ -1,0 +1,254 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en-GB
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQPHoECAYQBA
+  - combobox "Search": waste transfer note template waste transfer note template
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dwaste%2Btransfer%2Bnote%2Btemplate%26gl%3Dgb%26hl%3Den&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEiVEEKhGMS6J6qOai58Kp-xhksXV28NogeTUukXLA6cFub1PSYzFGwavsiDBCC23eN8LZJ4xL13bUS1K6Bmb82HrHjrsWyaZMVBYFFk2UMG1Dju_2bcVyFvcfVYG3RyzQ0dIaaA&q=waste+transfer+note+template&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQtKgLegQIFhAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEiVEEKhGMS6J6qOai58Kp-xhksXV28NogeTUukXLA6cFub1PSYzFGwavsiDBCC23eN8LZJ4xL13bUS1K6Bmb82HrHjrsWyaZMVBYFFk2UMG1Dju_2bcVyFvcfVYG3RyzQ0dIaaA&q=waste+transfer+note+template&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQtKgLegQIHBAB
+      - generic: Videos
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEiVEEKhGMS6J6qOai58Kp-xhksXV28NogeTUukXLA6cFub1PSYzFGwavsiDBCC23eN8LZJ4xL13bUS1K6Bmb82HrHjrsWyaZMVBYFFk2UMG1Dju_2bcVyFvcfVYG3RyzQ0dIaaA&q=waste+transfer+note+template&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEiVEEKhGMS6J6qOai58Kp-xhksXV28NogeTUukXLA6cFub1PSYzFGwavsiDBCC23eN8LZJ4xL13bUS1K6Bmb82HrHjrsWyaZMVBYFFk2UMG1Dju_2bcVyFvcfVYG3RyzQ0dIaaA&q=waste+transfer+note+template&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQs6gLegQIGhAB
+      - generic: Forums
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEiVEEKhGMS6J6qOai58Kp-xhksXV28NogeTUukXLA6cFub1PSYzFGwavsiDBCC23eN8LZJ4xL13bUS1K6Bmb82HrHjrsWyaZMVBYFFk2UMG1Dju_2bcVyFvcfVYG3RyzQ0dIaaA&q=waste+transfer+note+template&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQs6gLegQIGBAB
+      - generic: Short videos
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&q=waste+transfer+note+template&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEiVEEKhGMS6J6qOai58Kp-xhksXV28NogeTUukXLA6cFub1PSYzFGwavsiDBCC23eN8LZJ4xL13bUS1K6Bmb82HrHjrsWyaZMVBYFFk2UMG1Dju_2bcVyFvcfVYG3RyzQ0dIaaA&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ0pQJegQIGRAB
+      - generic: News
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "Duty of care waste transfer note form GOV.UK https://www.gov.uk › ... › Waste management":
+    - /url: /goto?url=CAESjwEB6zswFT_dAMh57eXyZtn5Shuc99fAPXhY2OHlNZdbaQTJ4Bx05v6Q0mud8LO7YdvttHGRTVG9dTAXiEAtlBVj4ZoDEf6W9SmK2350Jy8f4ODWA8Fq-zNitf1rgAM2Ww22FSj3qVr-9m8kk7ydq1w0lypmP1JOr8vGeorR53s1XGdB8kyuVcRvGX-qzFJUjA
+    - heading "Duty of care waste transfer note form" [level=3]
+    - generic: GOV.UK
+    - generic: https://www.gov.uk › ... › Waste management
+  - button "About this result":
+  - emphasis: You can use this form to fill in, sign and store your waste transfer notes
+  - text: . Or you can use alternative documentation with the required information.
+  - link "Read more":
+    - /url: /goto?url=CAES6wEB6zswFcLaiWv4YbAEWJqX-myASnxmczTYo8hoza8FiBBW8EZp2rv5xtA1D-X5L9B9N_W1G2XJFZF_pD-iEa2Y2gcWUruKTLop7cBG3EhSJ2TwzdRatVpFs73P-uPYSUsWjPCYTRp-gue7w6IkaeNKIfEeMAwQClqXQd2HMywDPDn1Er1mcwWq3F1k0FQrgiQ23W80IcIhmb8jm52DUkqZGH-UnWkkLvNLcsv1LRTMHBLC91INsy91lvb2oAJYF4Y9CVllRd2rDdNf0yoLytqsLZ3OU58BrNdnDcr0lAG_426ByxDjFjpdV2PZ
+  - heading "Images" [level=2]
+  - link "Waste Transfer Notes – A5 NCR Pads & Books (UK Printed) Oceanprint":
+    - /url: /goto?url=CAESnwEB6zswFYe-H9SvJeev4Ka6ouOqC3oxwF2cT9YLUH6zIpQrtN3NpHfz-QiACg_4Pv95HpKMTds4snDJ6ewbCPFclIN_SBSYIkLIAzr4455ckGRRcmDjoW1TNiDzw3XpW47T9ghYBEj6SGeLCmXIJmViiBZVijKPyiYO_THdfmENuJw9OlURB5fqcBJ2Y8yNjtabg4aEFHelctTFKvWWOWU
+  - button "Waste Transfer Notes – A5 NCR Pads & Books (UK Printed)":
+    - img "Waste Transfer Notes – A5 NCR Pads & Books (UK Printed)"
+  - generic: Waste Transfer Notes – A5 NCR Pads & Books (UK Printed)
+  - generic: Oceanprint
+  - button "About this result":
+  - link "Personalised Controlled Waste Transfer Note – A5 NCR Form (WTN03) | Oceanprint Oceanprint":
+    - /url: /goto?url=CAESnAEB6zswFWEXNfLUnsFlEf9IGjlcd575vsWuQOugWQZRtf7AWWB2rr4jhVqoy-lEXhShazj0U4Yg_POJQurhhyRDZ-RbCRWucDxbGm8YGMeGzjgDzZ0FO89sG06LK440Zfn5ovzdWlfJZ6Ei2U4EfOJOVuaeBIxP4GjGL4zNrkhjVXXE1aLbcA2KH0Z-7gWJz65fey4Ha7PCyrVuXKI
+  - button "Personalised Controlled Waste Transfer Note – A5 NCR Form (WTN03) | Oceanprint":
+    - img "Personalised Controlled Waste Transfer Note – A5 NCR Form (WTN03) | Oceanprint"
+  - generic: Personalised Controlled Waste Transfer Note – A5 NCR Form (WTN03) | Oceanprint
+  - generic: Oceanprint
+  - button "About this result":
+  - link "Duty of Care - Waste Transfer Note - Skip Hire - 2 Part (Duplicate Pads), No Numbering, No Text, 1 Pad / 50 Sets, A4 The Pad Printers":
+    - /url: /goto?url=CAESlgEB6zswFYKQpsgRWwnT7vybA15S6Wl6OG2UqDjGMJRZZAGCLfFWpvd5FWg_R25oS2jHjnyjs5rLxYqEHgy_0oR6kPTQqqnNly70af6CsrT0lgvQYtZ6syH0mhcKKsDp2-JjiFtxHkJMq6jjLOv0WKJfzKuSCsTxFi_x9XfDRRFBYPOZwJ33ceMGmbKbJGPgZsLW0W2gx7o
+  - button "Duty of Care - Waste Transfer Note - Skip Hire - 2 Part (Duplicate Pads), No Numbering, No Text, 1 Pad / 50 Sets, A4":
+    - img "Duty of Care - Waste Transfer Note - Skip Hire - 2 Part (Duplicate Pads), No Numbering, No Text, 1 Pad / 50 Sets, A4"
+  - generic: Duty of Care - Waste Transfer Note - Skip Hire - 2 Part (Duplicate Pads), No Numbering, No Text, 1 Pad / 50 Sets, A4
+  - generic: The Pad Printers
+  - button "About this result":
+  - link "Waste Transfer Notes & Hazardous Waste Notes | Duty of Care NCR Pads":
+    - /url: /goto?url=CAESrgEB6zswFXpP9-q3tYVl-uTub4H0HS2QdL3XIZ50jkXwAH7OLc5W9uKGZmzLtsWIZEQSakGAk4BFUy_YMz02SKKqthUGpNrEoimTvQUTrWLf10yKRjBA61N9LvCMP60Cy-Xee0RC0RH0NQL2lGiTX7BbmDcjMbZf1jnEFfdQXADw7-vqAL9qgXKEmEn5y6GzpSHSLeWSzqOV9BX9vuNhJ6QdeqlcnYyyxP8cIXLSkek
+  - button "Waste Transfer Notes & Hazardous Waste Notes | Duty of Care":
+    - img "Waste Transfer Notes & Hazardous Waste Notes | Duty of Care"
+  - generic: Waste Transfer Notes & Hazardous Waste Notes | Duty of Care
+  - generic: NCR Pads
+  - button "About this result":
+  - 'link "NCR Print Templates : Waste Transfer Note Caralan Printers"':
+    - /url: /goto?url=CAEShAEB6zswFfhcnBCAiQEGDegzEVGMJhJRzsQLvoSF92bZHU_0OZVF9thsecYIeN2-lUNtypryaadaX3DmZDnl3W85LN5mOugWfpFw2jaD0yccOW02UkKLQ7VpJCekMKSBoeuzehzvtW-SeO0OhIkF1q7T4vZtJJo9tJGEzYWV-MDCZ8RMnCw
+  - 'button "NCR Print Templates : Waste Transfer Note"':
+    - 'img "NCR Print Templates : Waste Transfer Note"'
+  - generic: "NCR Print Templates : Waste Transfer Note"
+  - generic: Caralan Printers
+  - button "About this result":
+  - link "Duty of Care WASTE TRANSFER NOTE Template printed £49 Trade Printing UK":
+    - /url: /goto?url=CAESugEB6zswFbNFyqi_siuRzkcB00CjT3ccHA1scoHhginruKv3x2K-mQyTIFlwJl9I-Sek0mOBOlpdPFplnHGA3gI2QW6HmVxOxI0SQpTZHFyUWQTDHiZTR_g7h7DmMRyVwowTSfxq2xIApkzF3GsiuIXw4nLK2HHqdmXsfKcqPdgeSc0Gtusme5J1w3R_isB9G8RXMS-uJ3vZ7F6n98jy0pHnlxCJBJBCrLfp0rsTszcZGaJ6_DxIVyTskmo
+  - button "Duty of Care WASTE TRANSFER NOTE Template printed £49":
+    - img "Duty of Care WASTE TRANSFER NOTE Template printed £49"
+  - generic: Duty of Care WASTE TRANSFER NOTE Template printed £49
+  - generic: Trade Printing UK
+  - button "About this result":
+  - button "Show more images":
+    - separator
+    - generic: Show more images
+  - heading "People also ask" [level=2]
+  - button "What should be included on a waste transfer note?":
+    - generic: What should be included on a waste transfer note?
+  - button "What is the difference between a consignment note and a waste transfer note?":
+    - generic: What is the difference between a consignment note and a waste transfer note?
+  - button "How to fill in a waste consignment note?":
+    - generic: How to fill in a waste consignment note?
+  - link "Waste transfer note template Ealing Council https://www.ealing.gov.uk › downloads › download":
+    - /url: /goto?url=CAESiQEB6zswFUoJFae_ptwRdJYdMi81dUkHjSfECN0sQTLtae2ZKPfz_SCgLfvUbpcjl0zDllh_Abm2og6tMnOlQhMsEwdSOafePCZRtlxGaK-pYd7nkXuLkuHSqDTAEfm0Dj9iQIPYhMoFHZJgRnaVVfeEnNgd4tu0Bukz6e2-C4UQHb1GvkV-PlurVg
+    - heading "Waste transfer note template" [level=3]
+    - generic: Ealing Council
+    - generic: https://www.ealing.gov.uk › downloads › download
+  - button "About this result":
+  - emphasis: Waste transfer note template
+  - text: "|."
+  - emphasis: Waste transfer notes
+  - text: for commercial
+  - emphasis: waste
+  - text: customers only
+  - emphasis: Waste transfer note
+  - text: "File type: DOCX Size: 71.53 KB"
+  - link "Waste Transfer Notes and how to complete them NetRegs https://www.netregs.org.uk › waste › waste-transfer-not...":
+    - /url: /goto?url=CAESyQEB6zswFbcsnnMdrMXIDs6RvFCYgOZzh_D51zRIfGWiHq-bHlkWPAdwtHP5n3dJs4wQOjnv7Rbrp3E2DniwS7d40IbD3BPUDP0w-PtzMjv_RVQ0t2YV5YPlFAoNOMwzg31etSBJFjJA8hDy4SvEto56RGnfNiYv73YEJ-_ktk4GgK4AYqZ7FpAnaagub_i4hL6iAeRzd9ZiD0EnQWWmTGy6Lr0X6MmzAJGmqc-5khSl59RZyPJHfYG45BVBWkJoLSJABCBmyQyFnRM
+    - heading "Waste Transfer Notes and how to complete them" [level=3]
+    - generic: NetRegs
+    - generic: https://www.netregs.org.uk › waste › waste-transfer-not...
+  - button "About this result":
+  - text: What a Waste Transfer Note should contain ·
+  - emphasis: a description of the waste
+  - text: · any processes the waste has been through · how the waste is contained or packaged · the ...
+  - link "Read more":
+    - /url: /goto?url=CAESwgMB6zswFdNga--wC2zxruGw-YL01ym6CH39YFIaom4vsIxUB8I1zCAOPvJsGZ5Rho64XWm-VAMOTd_wBpp6NwRfjRZ2V7TyMeCocy0zpgIW6AuSKTogd3O7iuoOXUflABmOQDa7Fo_KcOgzQg98WOOpdPZn8076J98kjr141QwqUEBMRXXcrXUjSQbQZ6HGFzflN23JCtJbvDsNKAFOlQwuSOWdsIIwhNaB3-GkNmPOvhE8E-IVghwMLWfcVgkfu508e1ucqOT3_2lWOXNBAOHGCF2mma5FmDsvzxysLScdfWDtGiUXA9VBW06GK5iZHc7Ai0av_yU1FHNNP48_BwQFaSjMx7sWd8jLmQLH2Q1s-kzeJ_WtIq81pWUXtkWMVlciUwdnbX6gRUe4caVvoPKLO0YQOJQUTxAlLmswOTJR5Jp62v8uDZd9NKKTVEIaNy9dWLVZ9ZnYMo3WD3PiwzPz7OQVPOc6Onw8mKSg_cR-c5J66NVCtpO3RWHquQDxbmvR8FcnxYtmufBSMqDO3o3ILjVbQpQTlagBEN9gCz8co58PkmZrtQe4b1qJmN_93xD2_0en-x2Ql47eNxmz5syfCqM
+  - 'link "Waste Transfer Note Template: Free Download, Stay ... The Waste Group https://www.thewastegroup.co.uk › news › waste-transf..."':
+    - /url: /goto?url=CAESfQHrOzAVGS3gZZugBZbFxPu2KojQ4wyMAJiVNdbAainzqTbNzb2C1c2Rp-Vyh1d90NqfJs4SmrvDtaENCdquaQHxEQTs3ERTzFBY8G1huZHCu-3x_4UsVCU9z0yLQgKBzTGqi_s2ti62i-j02p5elvfWUhDnkq3MPLGODs0Y
+    - 'heading "Waste Transfer Note Template: Free Download, Stay ..." [level=3]'
+    - generic: The Waste Group
+    - generic: https://www.thewastegroup.co.uk › news › waste-transf...
+  - button "About this result":
+  - emphasis: Waste Transfer Note Template
+  - text: ": Free Download, Stay Compliant 2026 ... A Waste Transfer Note (WTN) is your legal proof of responsible waste disposal here in the UK."
+  - link "Read more":
+    - /url: /goto?url=CAESowIB6zswFRmv0XvR3Offp1X7_NHsihF1OjAPxb6xhZFa2_KkhG4nqGkBJRos48wgzS6N67VxCIZ3-jvYQEMRtrEwpld3e-L3LBILegweghASs0ww-0DnIZC_mpIYHg1liEVaQiRW_SH_oahQxI4PJ7_CVWTrZvT7jvVoaXI5r_UlPiCoEIZYgReLHvz5y965HMB9ICuIAT9qc_Saq4BDebTpWc74CPidUBdgaIb2kElKKD-73xacXR1zS6qeJA0XNTi9B0K-MkWdhY9Uv7FEeSPU8kWBDjRwOMbBZQQ5zVfDW-TCOVxMxG0uMyp41k9KD07pR12IpnqR0eDOms7QjqKf2NdnMA-ycPrQQhR-44Tb3ovwzb-8HtcPN0-2VYKHrLhnpsc
+  - link "Free Waste Transfer Note Template | Download PDF - Crate mydatacrate.co.uk https://mydatacrate.co.uk › free-waste-transfer-note-tem...":
+    - /url: /goto?url=CAESdwHrOzAVrtMFXt8GxZE01V4FcYByAGdIIFD8GNZYKPTKf6bZ0UdsKvm7TQkNcqGjKnl0h0W1cT-nGuK2dT6CeL_k2Ealgn2ypQqssuwwIjk-bYrqExP4kaS-5McBy1LwZxYO52c6ZtRjSbKpK2qbPhYCCQCsXKr_
+    - heading "Free Waste Transfer Note Template | Download PDF - Crate" [level=3]
+    - generic: mydatacrate.co.uk
+    - generic: https://mydatacrate.co.uk › free-waste-transfer-note-tem...
+  - button "About this result":
+  - emphasis: Download a free, compliant UK waste transfer note template
+  - text: . Print and complete by hand, or fill it in on screen and save. No sign-up needed.
+  - link "Free Waste Transfer Note Template (UK) — Download PDF qwtn.co.uk https://qwtn.co.uk › waste-transfer-note-template":
+    - /url: /goto?url=CAESagHrOzAV7px0rGeBizbmOHZYoweYcsTngwunA8cYt7pwJ3PsB8n2kh0oyv3HnwNLSVzHN7-N2HDWyKgliUr4678jTE8DZ8hx45jaRdus2BSLfV0Pgol4iMaTZtLZ9WPgqLmOEZ6gN_lXp4c
+    - heading "Free Waste Transfer Note Template (UK) — Download PDF" [level=3]
+    - generic: qwtn.co.uk
+    - generic: https://qwtn.co.uk › waste-transfer-note-template
+  - button "About this result":
+  - emphasis: Download a free, blank waste transfer note template
+  - text: compliant with UK regulations. All 9 mandatory fields included. Or create a digital WTN in 60 seconds.
+  - 'link "Dispose of business or commercial waste: Waste transfer ... GOV.UK https://www.gov.uk › ... › Business waste"':
+    - /url: /goto?url=CAEShAEB6zswFRL5XP8VytyJYGfmxWZal1ToQ4W-V7ENQKRDQkmtfzZvo7TbvTZNRVwavMNE2roeFB6myc8I_mH_2SdaB4W8pQSktnr4_vduQMneyrHsY9nxWdJ9JLRo_YEhD7Pz1w1mrXY3U-HP2uznbw0sgtxMjbO5e8H7wEEQnInTzMoh9tQ
+    - 'heading "Dispose of business or commercial waste: Waste transfer ..." [level=3]'
+    - generic: GOV.UK
+    - generic: https://www.gov.uk › ... › Business waste
+  - button "About this result":
+  - emphasis: Fill in the sections of the waste transfer note that apply to you
+  - text: . · Sign it. · Keep a paper or electronic copy for 2 years. · Show it to an enforcement officer ...
+  - link "Read more":
+    - /url: /goto?url=CAES7QIB6zswFTRpqLjTjSCJ--gkqy3Jtf834US8LhWpJOhZAC0coBeasekNgCkqsej8UiSpXHv1JyIL6BVciPObTGhr8SAUBY0gCQk9_WWUI-ThqqEtPJf9TA28m-okUQBSmZlLHgV3DaTBpiWcSdFvZaBDD5U4e-Ax-B6GKByxFbS358b7S3mJ9SKdW4xoRBYEPXnmdb-XpV23HypzRcmMdapff9VlpHoc7j9muQONQjpkDFYrx5wHVYMWxgGrDI89mB3hiixvW0GK5uphq9l-8Qe96PR473pI9xAB7EG7t9Nhw1Pn0HXGmO3VOczF3DIfvOcEyyTdcMKdii8rjwoZ546DG6dk__fydDj6EyWa20gSZCCbxSznV_k-wpZMSMcV0dTj9W1JGGdRdJaSlYNtxh_TJjR0ZQj7S7JUfX6dXAR2DL4GlrezV-LtlQWG0_FuXwEBc3ZNSye3nJWGjuffaS6mEx6k-uqD9H31BBN7vA
+  - link "Waste Transfer Note Template Guide | PDF Scribd https://www.scribd.com › doc › Duty-of-Care-Waste-Tr...":
+    - /url: /goto?url=CAEShwEB6zswFWqzW04cg-rNzjtOUeNrT6lRu_ZHM59vrdWGy_WkGmMDWgQ_lYOLDY0W2doSpUgLVxRVBQOyNo3QoiocZTFLItwe6mN6jIUEqHrZtaVDnu5-dvuUmQUewKCIRXlzjLimzaUJ_ghqDlj2drK8QO47N6F7XKAG6REJ8rc9PKuMzTlCH6Q
+    - heading "Waste Transfer Note Template Guide | PDF" [level=3]
+    - generic: Scribd
+    - generic: https://www.scribd.com › doc › Duty-of-Care-Waste-Tr...
+  - button "About this result":
+  - text: This document is a
+  - emphasis: waste transfer note
+  - text: used to document the transfer of waste from the holder (transferor) to the collector (transferee).
+  - link "Read more":
+    - /url: /goto?url=CAES5QEB6zswFcwfHnETOWMPr6CvVZILh86n6oEoaM3zMgtDSo5dcPoEoJJMsvsHBdHLx6FvZGAh8eTzk87G7SdNwByLzOhalnz5Gg679-6uAhHya3o30IGarJ_sAacGgsxzFCCdRiC__lE9e8H1lF80vONlhjKzhvjfnlFzaH063sdBiBWf7XL7Ycb7wM5iRDugBfD5xNnOH10wYnXKXstfBkgm3GIGDwpEf4pEkAxGYiCONmqfvrsDz81jj8kPj3x9R0cTjER8i0v_G_73yyBIRAXaaEfbrdtB555y0TREtWpvOUy1k9eZ
+  - link "WASTE TRANSFER NOTE AnyJunk https://www.anyjunk.co.uk › documents › exampl...":
+    - /url: /goto?url=CAESfgHrOzAVRS68x22UHq0buOPcNnor-jJSH-rUdApuAY3j2QLtcvHaZg7UiHCm6ft7Jij046bGA3xuSBB_Sec5yp4--mKgA-oKrGj0eL-_gxvybQRTKRIMc5ndh4RGazUO4e-aMCpSE4KDPL2ev4cdYg9wrdouSkSFa29WoWODIQ
+    - heading "WASTE TRANSFER NOTE" [level=3]
+    - generic: AnyJunk
+    - generic: https://www.anyjunk.co.uk › documents › exampl...
+  - generic: PDF
+  - button "About this result":
+  - text: "Employee name: Vehicle reg. number: Arr. time: Dep. time:"
+  - emphasis: WASTE TRANSFER NOTE
+  - text: . Customer (Transferor). Collection Size / Value. Waste Carrier (Transferee). EWC ...
+  - link "Read more":
+    - /url: /goto?url=CAESpQEB6zswFQKZi1C3AJFK3rPd6FhCfcD2sVhUKwQ1VUCynZErjNXFsdd8dNBAQ7QGz4lAwhWK0nKe5Uf8T50TxfBlJZzdqIVs1Bs0rkF9LqIDfvTCmcMqximegA_GMaUE1j84eQjdEDvc6iro3tzawRKEJH4404HgjVU_DuBPZNuxXDi49UhSK0TNJQ5vGS3FOLuVYsgh8sNSbHtFH1PjP30WzWV7G8E
+  - generic: 1 page
+  - heading "People also search for" [level=2]
+  - link "Waste transfer note template word":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&q=Waste+transfer+note+template+word&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ1QJ6BAhHEAE
+    - generic: Waste transfer note template word
+  - link "Waste transfer note template pdf":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&q=Waste+transfer+note+template+pdf&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ1QJ6BAhPEAE
+    - generic: Waste transfer note template pdf
+  - link "Waste transfer note PDF free download":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&q=Waste+transfer+note+PDF+free+download&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ1QJ6BAhMEAE
+    - generic: Waste transfer note PDF free download
+  - link "Waste transfer note template excel":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&q=Waste+transfer+note+template+excel&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ1QJ6BAhLEAE
+    - generic: Waste transfer note template excel
+  - link "Waste transfer note template free":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&q=Waste+transfer+note+template+free&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ1QJ6BAhOEAE
+    - generic: Waste transfer note template free
+  - link "Waste transfer note template uk":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&q=Waste+transfer+note+template+uk&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ1QJ6BAhNEAE
+    - generic: Waste transfer note template uk
+  - link "Waste transfer Note Book":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&q=Waste+transfer+Note+Book&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ1QJ6BAhKEAE
+    - generic: Waste transfer Note Book
+  - link "Annual waste transfer note template word":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&q=Annual+waste+transfer+note+template+word&sa=X&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ1QJ6BAhJEAE
+    - generic: Annual waste transfer note template word
+  - navigation:
+    - heading "Page navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=waste+transfer+note+template&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&ei=nba_aqj1DNu_juMP9vzz2AI&start=10&sa=N&sstk=AS6-VmIdL7ieD9f1YWCM2BlS7EZe3h-d_A4jK903MgcA1uhFN6W7aRWKLXUypjLQa_MNzs7K4dxdfgp6IfbaakHdD3uBd_N6DpZjGQ&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ8tMDegQIPBAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=waste+transfer+note+template&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&ei=nba_aqj1DNu_juMP9vzz2AI&start=20&sa=N&sstk=AS6-VmIdL7ieD9f1YWCM2BlS7EZe3h-d_A4jK903MgcA1uhFN6W7aRWKLXUypjLQa_MNzs7K4dxdfgp6IfbaakHdD3uBd_N6DpZjGQ&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ8tMDegQIPBAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=waste+transfer+note+template&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&ei=nba_aqj1DNu_juMP9vzz2AI&start=30&sa=N&sstk=AS6-VmIdL7ieD9f1YWCM2BlS7EZe3h-d_A4jK903MgcA1uhFN6W7aRWKLXUypjLQa_MNzs7K4dxdfgp6IfbaakHdD3uBd_N6DpZjGQ&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ8tMDegQIPBAI
+      - text: "4"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=waste+transfer+note+template&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnswT7Zko_ef8jHS5zpX45AHJB2-Dg:1790949021219&ei=nba_aqj1DNu_juMP9vzz2AI&start=10&sa=N&sstk=AS6-VmIdL7ieD9f1YWCM2BlS7EZe3h-d_A4jK903MgcA1uhFN6W7aRWKLXUypjLQa_MNzs7K4dxdfgp6IfbaakHdD3uBd_N6DpZjGQ&ved=2ahUKEwjot-GBvZuXAxXbn2MGHXb-HCsQ8NMDegQIPBAK
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer links" [level=1]
+  - text: United Kingdom
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-GB&fg=1
+  - link "Send feedback":
+    - /url: "#"
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en-GB&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en-GB&fg=1

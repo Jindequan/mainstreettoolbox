@@ -1,0 +1,184 @@
+- banner:
+  - link "Compayr":
+    - /url: /
+    - img "Compayr"
+  - navigation "Main":
+    - list:
+      - button "Compare":
+        - text: Compare
+      - button "Guides":
+        - text: Guides
+      - button "About":
+        - text: About
+      - link "Statement Upload":
+        - /url: /upload
+  - button "Search Compayr":
+    - generic: Search
+    - generic: ⌘K
+  - button "Copy link to this page":
+    - generic: Share
+  - button "Compare my rate"
+- region "Payments reform deadline":
+  - generic: Surcharging ended 1 October. Foreign-card interchange caps and new fee-transparency rules take effect 1 April 2027 — 181 days.
+  - link "What changes next":
+    - /url: /october-2026
+    - text: What changes next
+  - button "Dismiss countdown for this session":
+- main:
+  - paragraph: Surcharge ban calculator
+  - 'heading "Card surcharge calculator: business payment costs?" [level=1]'
+  - paragraph: From 1 October 2026 you can't surcharge eftpos, Mastercard or Visa payments under the card schemes' rules, following the RBA's reforms. That surcharge becomes a cost you absorb. This calculator estimates it and what the providers we compare would charge to process the same card volume.
+  - link "Why this matters right now":
+    - /url: /knowledge/two-franks-closure-what-merchants-should-learn
+    - text: Why this matters right now
+  - heading "Your surcharge ban cost" [level=2]
+  - text: Monthly card volume
+  - spinbutton "Monthly card volume": "42500"
+  - text: Surcharge you currently add (%)
+  - spinbutton "Surcharge you currently add (%)": "1.5"
+  - paragraph: Not sure? Most surcharges sit between 1% and 2%. Use your current effective card rate if you don't surcharge.
+  - paragraph: Impact summary
+  - paragraph: From 1 October 2026 you'll absorb
+  - generic: $638/month
+  - generic: $7,650 per year
+  - text: On a 0.8% plan you could reduce that by up to
+  - generic: $3,570/year
+  - text: of that.
+  - paragraph:
+    - text: Indicative only — 0.8% is a market benchmark, not a quote you've been matched to. Actual savings depend on your circumstances and on comparing like with like, and exclude any exit or early-termination fees payable to your current provider — check your agreement.
+    - link "See providers ranked at your volume":
+      - /url: /compare
+  - paragraph: Prepared 2 October 2026 · compayr.com.au
+  - button "Save my quote as PDF":
+    - text: Save my quote as PDF
+  - button "Email this quote":
+    - text: Email this quote
+  - button "Print":
+    - text: Print
+  - button "Copy summary":
+    - text: Copy summary
+  - button "Share this page":
+    - generic: Share
+  - paragraph: Shrink Your Card Acceptance Costs
+  - paragraph: The lower your rate, the less you absorb. Compare providers by estimated card acceptance cost.
+  - link "Compare providers":
+    - /url: /directory/in-person
+    - text: Compare providers
+  - link "Estimate my new bill":
+    - /url: /compare
+  - paragraph: Get updates on the reforms
+  - textbox "you@business.com.au"
+  - button "Notify me":
+    - text: Notify me
+  - paragraph: No spam. Just one useful reminder (and the odd reforms update).
+  - heading "Surcharge ban FAQ" [level=2]
+  - heading "What's actually changing on 1 October 2026?" [level=3]:
+    - button "What's actually changing on 1 October 2026?":
+      - text: What's actually changing on 1 October 2026?
+  - heading "So my card fees disappear?" [level=3]:
+    - button "So my card fees disappear?":
+      - text: So my card fees disappear?
+  - heading "Will the October interchange cut lower my rate?" [level=3]:
+    - button "Will the October interchange cut lower my rate?":
+      - text: Will the October interchange cut lower my rate?
+  - heading "What should I do about it?" [level=3]:
+    - button "What should I do about it?":
+      - text: What should I do about it?
+  - heading "How does Compayr help?" [level=3]:
+    - button "How does Compayr help?":
+      - text: How does Compayr help?
+  - region "Surcharge ban — common questions":
+    - heading "Surcharge ban — common questions" [level=2]
+    - term: How much will the surcharge ban cost my business?
+    - definition: From 1 October 2026 you can no longer add a surcharge to card payments, so the card fee you used to pass on to customers becomes a cost your business absorbs. Compayr's surcharge ban cost calculator estimates that absorbed cost from your monthly card turnover and the surcharge percentage you currently add — shown per month and per year — and estimates the potential saving on a lower-cost plan. Figures are indicative estimates in Australian dollars; confirm current pricing with your provider.
+    - term: When does the surcharge ban start and which payments are included?
+    - definition: It starts on 1 October 2026 and applies to consumer card surcharging on eftpos, Mastercard and Visa. American Express has confirmed it follows the same rule. The ban is enforced through the card schemes' operating rules rather than by legislation.
+    - term: Does Compayr both explain the surcharge ban and calculate what it will cost me?
+    - definition: Yes. Compayr's October 2026 Reform Hub and Knowledge Centre explain what changes and which payments are covered, the surcharge calculator estimates the cost of the ban to your specific business (the surcharge you currently recover and the card cost you will absorb from 1 October 2026), and the comparison tool then ranks 18 providers (22 listings) by estimated card acceptance cost at your real turnover and card mix — so you can carry that cost for less.
+    - term: Is the surcharge ban calculator free, and is it financial advice?
+    - definition: The calculator and the full provider comparison are free and self-service, with no account required. Figures are indicative estimates only and are not financial advice — always confirm current pricing with the provider.
+- contentinfo:
+  - img "Compayr"
+  - paragraph: Compayr is a free self-service comparison tool for merchant card transaction costs. See your cost of card acceptance and how it compares — in about 60 seconds.
+  - text: Get the October reforms explainer + occasional updates
+  - textbox "Email address":
+    - /placeholder: you@business.com.au
+  - button "Subscribe" [disabled]
+  - paragraph:
+    - text: No spam. Unsubscribe anytime. By subscribing you agree to our
+    - link "Privacy Policy":
+      - /url: /privacy
+    - text: .
+  - paragraph: Follow us on Google
+  - paragraph: Add Compayr as a preferred source to see our comparisons higher in your Google results.
+  - generic "Add to Preferred Sources":
+    - button "Add to Preferred Sources":
+      - generic: Add to Preferred Sources
+  - link "Add Compayr as a preferred source":
+    - /url: https://www.google.com/preferences/source?q=compayr.com.au
+  - paragraph: Product
+  - list:
+    - link "Compare my rate":
+      - /url: /compare
+    - link "Merchant fee calculator":
+      - /url: /merchant-fee-calculator
+    - link "Provider comparison":
+      - /url: /directory/in-person
+    - link "Head-to-head comparisons":
+      - /url: /versus
+    - link "Surcharge ban cost calculator":
+      - /url: /surcharge-calculator
+    - link "Upload statement":
+      - /url: /upload
+  - paragraph: Guides
+  - list:
+    - link "Least-cost routing":
+      - /url: /knowledge/least-cost-routing-merchant-choice-routing-guide
+    - link "Tap to Pay on your phone":
+      - /url: /knowledge/tap-to-pay-iphone-android-softpos-australia
+    - link "Cost of accepting cards":
+      - /url: /knowledge/average-card-payment-fees-australia
+    - link "EFTPOS machines compared":
+      - /url: /best-eftpos-machines-australia
+    - link "eftpos vs credit cards":
+      - /url: /knowledge/eftpos-vs-credit-card-cost-australia
+    - link "Flat-rate vs interchange-plus":
+      - /url: /knowledge/flat-rate-vs-interchange-plus-pricing-australia
+    - link "Chargebacks explained":
+      - /url: /knowledge/chargebacks-explained-australia-merchants
+    - link "PCI compliance":
+      - /url: /knowledge/pci-compliance-small-business-australia
+    - link "By business type":
+      - /url: /eftpos-for
+  - paragraph: Knowledge Centre
+  - list:
+    - link "All articles":
+      - /url: /knowledge
+    - link "RBA Reforms":
+      - /url: /knowledge?category=RBA%20Reforms
+    - link "Surcharge Ban":
+      - /url: /knowledge?category=Surcharge%20Ban
+    - link "Pricing Models":
+      - /url: /knowledge?category=Pricing%20Models
+    - link "Switching":
+      - /url: /knowledge?category=Switching
+    - link "Payments glossary":
+      - /url: /glossary
+  - paragraph: Company
+  - list:
+    - link "About":
+      - /url: /about
+    - link "How we compare":
+      - /url: /how-we-compare
+    - link "Contact":
+      - /url: /contact
+    - link "Privacy Policy":
+      - /url: /privacy
+    - link "Terms of Use":
+      - /url: /terms
+  - paragraph: Rates are indicative — always verify with the provider.
+  - paragraph: Compayr.com.au is operated by Neural Pathways Pty Ltd (ABN 99 684 738 289)
+  - paragraph: © 2026 Neural Pathways Pty Ltd.
+- region "Notifications alt+T"
+- alert
+- iframe

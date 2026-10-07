@@ -1,0 +1,265 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQPHoECAYQBA
+  - combobox "Search": qualified overtime tracking qualified overtime tracking
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dqualified%2Bovertime%2Btracking%26gl%3Dus%26hl%3Den&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8GVSvqyGdykqk6W5STIO7Ee71YxW2VggeXfxXsifX2adcjn1FmZ0TFRvOZRlIHRDRwAqcDMoSGfAy3MhF2taL3iq2jVwy9uk7H2zNMdCHmaFAkonkEFxOGJppuhcLHFyHUnBNZg&q=qualified+overtime+tracking&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQtKgLegQIGBAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8GVSvqyGdykqk6W5STIO7Ee71YxW2VggeXfxXsifX2adcjn1FmZ0TFRvOZRlIHRDRwAqcDMoSGfAy3MhF2taL3iq2jVwy9uk7H2zNMdCHmaFAkonkEFxOGJppuhcLHFyHUnBNZg&q=qualified+overtime+tracking&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQtKgLegQIFxAB
+      - generic: Videos
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&q=qualified+overtime+tracking&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8GVSvqyGdykqk6W5STIO7Ee71YxW2VggeXfxXsifX2adcjn1FmZ0TFRvOZRlIHRDRwAqcDMoSGfAy3MhF2taL3iq2jVwy9uk7H2zNMdCHmaFAkonkEFxOGJppuhcLHFyHUnBNZg&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ0pQJegQIFhAB
+      - generic: News
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8GVSvqyGdykqk6W5STIO7Ee71YxW2VggeXfxXsifX2adcjn1FmZ0TFRvOZRlIHRDRwAqcDMoSGfAy3MhF2taL3iq2jVwy9uk7H2zNMdCHmaFAkonkEFxOGJppuhcLHFyHUnBNZg&q=qualified+overtime+tracking&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQs6gLegQIFRAB
+      - generic: Forums
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8GVSvqyGdykqk6W5STIO7Ee71YxW2VggeXfxXsifX2adcjn1FmZ0TFRvOZRlIHRDRwAqcDMoSGfAy3MhF2taL3iq2jVwy9uk7H2zNMdCHmaFAkonkEFxOGJppuhcLHFyHUnBNZg&q=qualified+overtime+tracking&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8GVSvqyGdykqk6W5STIO7Ee71YxW2VggeXfxXsifX2adcjn1FmZ0TFRvOZRlIHRDRwAqcDMoSGfAy3MhF2taL3iq2jVwy9uk7H2zNMdCHmaFAkonkEFxOGJppuhcLHFyHUnBNZg&q=qualified+overtime+tracking&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQs6gLegQIExAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "Impact of the No Tax on Overtime provision to QuickBooks ... QuickBooks https://quickbooks.intuit.com › track-worker-overtime":
+    - /url: /goto?url=CAES1AEB6zswFRS57F_frZhWiUJe15EVHD6_wmsbEQ6GUoO6AjpBQ01LWaslWf9zam2xbAUJPJT0cv4Ob-MeHcQs022BvSHxtLPpcu5lhl0BJ04_UHf4ITi0u-CKKLMu42CG4WXGu0pTg_2Ss8vbsf63r3yzfBkVXbCnWFyTuKQLKeGrmc_Xmr-gSS5_eyT6kAVr78Edvu0WDJUUmdPIbucZ48Set465hzhZD5WLC_KH8GNy3eB3PocBzEMxmf0yc1tsl357uywYqDKKPcWm5ZR4Zf4VuZtCQQ
+    - heading "Impact of the No Tax on Overtime provision to QuickBooks ..." [level=3]
+    - generic: QuickBooks
+    - generic: https://quickbooks.intuit.com › track-worker-overtime
+  - button "About this result":
+  - generic: Aug 25, 2026 —
+  - text: The "
+  - emphasis: Qualified Overtime Tracking
+  - text: "\" item will calculate automatically if you use the embedded Overtime 1.5x and Double Time pay types that pay in ..."
+  - link "Read more":
+    - /url: /goto?url=CAES-wEB6zswFdj21SPheWJ9dN7v4SA1zKPWO834gI1aTKhUyXCU8FjgJJ45O2XS6nIMPRXj2GjErulS2qBbd13qlPS-DX23emddnVXmVCmUKfAyEUOf431TX5FrqNvvLypB0FV4L6KdTr1xVuYaPY9OGYMO-GZvFqkPhqImpiqOblteavzOkHnnHkYPI5NRoL8huszXBtJVVqRiXUv-h_ifR_uFS5buK51pybQFnyXtw49HLRK8KOHeUAXqdcKCbjnicQZgzjHzQUr0UnAwI9J3rMXmWn5PpQ-dhcaqgQBsjruof2xpUUIjyM1HO2-eYNIgvMElgU0P_WSZp4KpPw
+  - heading "People also ask" [level=2]
+  - button "What does qualified overtime tracking mean on my paycheck?":
+    - generic: What does qualified overtime tracking mean on my paycheck?
+  - button "How to determine your qualified overtime?":
+    - generic: How to determine your qualified overtime?
+  - button "What is certified overtime tracking?":
+    - generic: What is certified overtime tracking?
+  - button "How does QuickBooks track qualified overtime?":
+    - generic: How does QuickBooks track qualified overtime?
+  - heading "Web results" [level=2]
+  - link "New Overtime Deduction Rules (Includes QuickBooks ... Vrakas CPAs + Advisors https://vrakascpas.com › Blog":
+    - /url: /goto?url=CAESjAEB6zswFa5Z2pheSu6m7fjghdDBXAdBwj-39fKEey330DDvNhDlMZ2kxqeCtSWUA4sz8mhmYczIN0mB1VJAFgSsV6tsjK2oV_q3z-YDyqXteZC20CICRZNlW4iX5V_yN-FrSJQscD-WQTtwUxP2o7GST6c4lDUiY_14wN9Kz1Jit366ZnyTb2yKJvvfRg
+    - heading "New Overtime Deduction Rules (Includes QuickBooks ..." [level=3]
+    - generic: Vrakas CPAs + Advisors
+    - generic: https://vrakascpas.com › Blog
+  - button "About this result":
+  - generic: Feb 5, 2026 —
+  - emphasis: Track qualified overtime
+  - text: during normal payroll processing by selecting the item under Other Deductions and entering the calculated amount, or ...
+  - link "Read more":
+    - /url: /goto?url=CAES8QEB6zswFehAj65RwqqowJrrb9q3EFcFzb7WhA1aekMLUZ2bghjedglq5WOsdc0iLb125GoTLaFAWPyhigCrYga08IZQ4C3jnmRDgUuoQOJRnLJT8nIWsAOPXlUPDhpBTZNkvkbFUFX15wFWLrMNr5T8KtJRt9zG83WVXcMlGOwPiVFlbCyZcRUkwS997vyXyRilnyCKBrgcvYVjXRTi6mOI_0_WuiBM6hj41SLZ0ssX5v5uX-RBrb8SroO_fJhhuAUXUhHVOXnQiFccPMIkPgjWMulqJ_j8IG-pFJ2MbfOGIHA4sy51Ngn9B-65nXap_090
+  - link "How is everyone handling Qualified Overtime tracking right ... Reddit · r/QuickBooks 4 comments · 7 months ago":
+    - /url: /goto?url=CAESnAEB6zswFRswUNEW10chkcAGR_TXcSFI0EMbS-4SyCOQoRxhqnq9MpYNmPfxtLlCEOwkpFn0Vk1K4vN-2ImugdYWY3bKJcXjZq9QzbFlZF1ZJWk1hMNcHR8zmXWIFCrz6MLq2hqHryliTzxuCHo4Zr5GpQBpq9y4ThaH8ogWBOOZ9WKlK17tBTjkTt-WAu2h8s03Xhlb0eT0nCIEmzs
+    - heading "How is everyone handling Qualified Overtime tracking right ..." [level=3]
+    - generic: Reddit · r/QuickBooks
+    - generic: 4 comments · 7 months ago
+  - button "About this result":
+  - generic: I am running payroll (we do weekly, have roughly 10 employees, 2 are salary and 8 are hourly). Today I keep getting a popups for Qualified Overtime ...
+  - link "4 answers":
+    - /url: /goto?url=CAESgAEB6zswFcDQbwxUEmGw7_z1hF_kOsZyka4R6qNNYyF7uTq7OCLTvkiNKgKNve8Dr6Xr-gRCpMP7XgL28QfrQlhoc7Sd_nMD9BFh1Csa_mfNWENBlqC3pbKuUmG4UkRZLRxe57D9-WF32UGYLTsLkErIw-yeT8uuTXLmjEMBWP9UCA
+  - generic: ·
+  - generic: "Top answer:"
+  - generic: From what I remember, it set up automatically. It adds qualified OT tracking as a line item ...
+  - link "What Does Qualified OT Tracking Mean on a Pay Stub? qualifiedovertime.com https://qualifiedovertime.com › what-is-qualified-ot-trac...":
+    - /url: /goto?url=CAESdwHrOzAV92NIorkzj8C3aN0cuxBOAN18cYkQcPmX0t9b3Daz55Wvdt4gObFbx-J7-6JSAEJuSxMjW9qU8SuxEmraPoKjOVdqaGnbL5jrDt7yTOMcRoM6_H9zZzWpUyC9UaOXe3BsvfZExuu4_PJNqgj-o6JH2uge
+    - heading "What Does Qualified OT Tracking Mean on a Pay Stub?" [level=3]
+    - generic: qualifiedovertime.com
+    - generic: https://qualifiedovertime.com › what-is-qualified-ot-trac...
+  - button "About this result":
+  - emphasis: Qualified Overtime Tracking
+  - text: is a tracking item for the qualified overtime premium, not extra pay. Other payroll systems may use different labels; confirm yours ...
+  - link "Calculating Qualified Overtime With isolved Payday HCM https://www.paydayhcm.com › blog › overtime-tax-dedu...":
+    - /url: /goto?url=CAESlwEB6zswFdruOUx6mbGTWq6y7XoTybNpi4l7QvA2gXLLHlGwvnJ-v3x9UmO44M14VLhsArg69Qrvl_wkTcItn7puLHuaiWmnbmtwQ0OYbVH9kUEZG3k7GGVFZK1kLUn-PLTVs5_ou9dDUdicSb_aTrPtnA4bvk_9_Yu6RTBd7MRBQuxPyME45fJQFC1FceNThkvjnUehQ5Fc
+    - heading "Calculating Qualified Overtime With isolved" [level=3]
+    - generic: Payday HCM
+    - generic: https://www.paydayhcm.com › blog › overtime-tax-dedu...
+  - button "About this result":
+  - text: Employers can use isolved when processing payroll to
+  - emphasis: better track any qualifying overtime hours
+  - text: ", making it easier for employees to claim the deduction and ..."
+  - link "Read more":
+    - /url: /goto?url=CAES_wEB6zswFXp7-UAOxeSciMSUXhIt1mOtSOmE6u6WMF_ZAs_29vYTdFPEuX0THvXSQoaOl8zfr4_vRCQ09CU5csCl4M2OWuhCb9DsZ_Eaka5yxh3avbiyznYRSrkGcEXebQwvjJO5DzVuVZgu3ZZw_BE3RHxvFjADPkHSPLGWDVN9zL22lzfYffX4-At6NeQpjggdUzmL_Pj0ONLYk2pdE0xLgbgJQQJKPajR8MxQzxdYqwmX7v1LsJw1WV9u9fjY9vXMBF6ofO816EdUngrJ4HwJB1VW62nOaHmVw2HkI1f8D5sun2TlNdUZnrSn-A9fNXDxteQrJeECU5VCYkFHbN4
+  - heading "Videos" [level=2]
+  - button "About this result":
+  - link "New Overtime Pay Rules Made Simple – QuickBooks Desktop YouTube Candus Kampfer Jan 28, 2026":
+    - /url: /goto?url=CAESZgHrOzAVQlv3xXoLrFajMgffn0R_0-kLJXBWrI7sV2Ur9ezzZqiC-nauiK6Cx9EfHqaBzMM7tIBx3N1Ctln4-QynhKkfwDHOU9ufDEgI0zN7ZU1rQLMMJkTrx21CEC8U2WdU1sqfRw
+    - heading "New Overtime Pay Rules Made Simple – QuickBooks Desktop YouTube Candus Kampfer Jan 28, 2026" [level=3]:
+      - generic: New Overtime Pay Rules Made Simple – QuickBooks Desktop
+      - text: YouTube
+      - generic: · Candus Kampfer
+      - generic: Jan 28, 2026
+  - text: YouTube
+  - generic: · Candus Kampfer
+  - button "About this result":
+  - button "New Overtime Pay Rules Made Simple – QuickBooks Desktop by Candus Kampfer on YouTube. Play on Google. 10:48":
+    - generic: 10:48
+  - button "Learn to set up qualified overtime tracking in QuickBooks Desktop by updating payroll, creating a custom payroll item, and adding it to employees.":
+    - generic: Learn to set up qualified overtime tracking in QuickBooks Desktop by updating payroll, creating a custom payroll item, and adding it to employees.
+  - 'link "Qualified Overtime Tracking Explained: Mandatory QuickBooks ... YouTube Payroll Restoration Dec 29, 2025"':
+    - /url: /goto?url=CAESZgHrOzAVQaw1u-4ity7uf3Hrj4ahtF8DxcrdmSowH5e-hbMsk1Ae93nHWaCJseyEZlI-902oy2X4mBXdgA21dAsjSBlnlW_2HNmKc04DBXl9slXFaQnbIvMZcqdZvSJrsVC-ciRJgA
+    - 'heading "Qualified Overtime Tracking Explained: Mandatory QuickBooks ... YouTube Payroll Restoration Dec 29, 2025" [level=3]':
+      - generic: "Qualified Overtime Tracking Explained: Mandatory QuickBooks ..."
+      - text: YouTube
+      - generic: · Payroll Restoration
+      - generic: Dec 29, 2025
+  - text: YouTube
+  - generic: · Payroll Restoration
+  - button "About this result":
+  - 'button "Qualified Overtime Tracking Explained: Mandatory QuickBooks ... by Payroll Restoration on YouTube. Play on Google. 5:25"':
+    - generic: 5:25
+  - button "Starting in 2026, the One Big Beautiful Bill Act requires you to report and track taxes accurately for qualified overtime premiums.":
+    - generic: Starting in 2026, the One Big Beautiful Bill Act requires you to report and track taxes accurately for qualified overtime premiums.
+  - link "New Overtime Pay Rules Made Simple – QuickBooks Online YouTube Candus Kampfer Jan 28, 2026":
+    - /url: /goto?url=CAESZgHrOzAVzDt4xnrDGEptVB9mKXQW8cypnSsriWd19BrB2s8UCY2hwBgMxrm99T3btsDPQhXYZBkTW59EY6iyA7IyOs4rSSNXDp0L7dJqxwax41tSPkZZ_8NbHYMspv_-Xn36S7isqA
+    - heading "New Overtime Pay Rules Made Simple – QuickBooks Online YouTube Candus Kampfer Jan 28, 2026" [level=3]:
+      - generic: New Overtime Pay Rules Made Simple – QuickBooks Online
+      - text: YouTube
+      - generic: · Candus Kampfer
+      - generic: Jan 28, 2026
+  - text: YouTube
+  - generic: · Candus Kampfer
+  - button "About this result":
+  - button "New Overtime Pay Rules Made Simple – QuickBooks Online by Candus Kampfer on YouTube. Play on Google. 9:56":
+    - generic: 9:56
+  - button "QuickBooks Online now tracks qualified overtime. Add \"qualified overtime\" to additional pay types & ensure it's effective immediately.":
+    - generic: QuickBooks Online now tracks qualified overtime. Add "qualified overtime" to additional pay types & ensure it's effective immediately.
+  - link "Qualified Overtime Tracking in QuickBooks Desktop Payroll YouTube James M Jan 3, 2026":
+    - /url: /goto?url=CAESZgHrOzAVeC350dD8YTHxc1AvxbPct_ylbprZIk-iUQo-VcaBqoL8i80u1RkeAConsVFlJHJXrntttfQkDy85eQPuIqVbcf2-93aCV_Z8OcTovpDFJSMxh_6nO2kZ_16SYroDlbJ7hg
+    - heading "Qualified Overtime Tracking in QuickBooks Desktop Payroll YouTube James M Jan 3, 2026" [level=3]:
+      - generic: Qualified Overtime Tracking in QuickBooks Desktop Payroll
+      - text: YouTube
+      - generic: · James M
+      - generic: Jan 3, 2026
+  - text: YouTube
+  - generic: · James M
+  - button "About this result":
+  - button "Qualified Overtime Tracking in QuickBooks Desktop Payroll by James M on YouTube. Play on Google. 8:04":
+    - generic: 8:04
+  - button "To track qualified overtime in QuickBooks Desktop, set up a \"Qualified OT Tracking\" company contribution payroll item. Use the same liability and expense accounts to ensure a zero balance.":
+    - generic: To track qualified overtime in QuickBooks Desktop, set up a "Qualified OT Tracking" company contribution payroll item. Use the same liability and expense accounts to ensure a zero balance.
+  - link "View all videos":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&udm=vids&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&q=qualified+overtime+tracking&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ8ccDKAJ6BAhfEAU
+    - separator
+    - generic: View all
+  - heading "Web results" [level=2]
+  - 'link "Qualified Overtime Compensation: OBBBA Regulations ... CBIZ https://www.cbiz.com › insights › article › qualified-ov..."':
+    - /url: /goto?url=CAESnAEB6zswFZewUYtX5HhZGt_J6gE_TslwzaroJ-Xa5IQMuEVJ9ac9wsG6bccc9kP9jPGBjE0bd1vrQrOwwZP-fn1nXf0SfGzqEuP1XF2rlSBGpvCdx5UU6FE26rfShoc-xxwoyIKpEldxRIvSdHKcGkT2nvUSfPh3d9HFF4-GRe47KOYBCOAuAM0Y8-rj8icbIt_0jD9vC6LgwRv5Y94
+    - 'heading "Qualified Overtime Compensation: OBBBA Regulations ..." [level=3]'
+    - generic: CBIZ
+    - generic: https://www.cbiz.com › insights › article › qualified-ov...
+  - button "About this result":
+  - generic: Dec 22, 2025 —
+  - text: New OBBBA regulations change how employers report
+  - emphasis: overtime
+  - text: . Learn what constitutes "
+  - emphasis: qualified overtime
+  - text: compensation" and how to prepare.
+  - link "Qualified Overtime Tracking | QuickBooks Community - Intuit QuickBooks https://quickbooks.intuit.com › employees-and-payroll-2":
+    - /url: /goto?url=CAESmwEB6zswFcUgomqtCUUDT7YpKwB14hYdqg5GNx_Yf5_01csvVd3PrNKqI6cEtXxp2bMYmFRBZG8jIapyOJ0L4MMmlFURt-JHe0Clujt9VcNJ1t-LlpW0ta9KiJCRiHl6Qv1tfgQqZjmHFzosQxVAliLdT-gnfrxLTmYvr7MlLvciiTNLtdLgnSAEmTh234n9johx_oAEKTCBDFnH9g
+    - heading "Qualified Overtime Tracking | QuickBooks Community - Intuit" [level=3]
+    - generic: QuickBooks
+    - generic: https://quickbooks.intuit.com › employees-and-payroll-2
+  - button "About this result":
+  - generic: Jan 16, 2026 —
+  - text: If we are already using a basic overtime pay type and all of our OT hours are "qualified", why would we need to add the "Qualified Overtime Tracking" pay type?
+  - link "4 answers":
+    - /url: /goto?url=CAEStAEB6zswFawY1q46cfIMui_mZQqxOILRaQYAS8FyxUgASKQep5rkc9CA0zt1mWW6uWn0DB5CgRuzEKAfTbf5FtcgebCjASQdHy3j42u09rGrUsMfnhlvs_OOs-yorOWFYMc1Pj0iNPBiqj1JlU6L9q_YmS6ixZfN2ixVdtPlPc7kqcYev3C4i4wG7C0IKlNhiMpcHmKPvM5Xptq3ZZ1VQOjRa8RiCkg9cBVgKK1SgwbpkaTm2Zg
+  - generic: ·
+  - generic: "0 votes:"
+  - generic: The tax deductible Overtime Premium amount is not the full amount of OT pay. Only the OT portion is tax deductible. If your OT rate is 1.5 x regular pay ...
+  - link "New Overtime Pay Rules Made Simple - Online Users Candus Kampfer https://canduskampfer.com › new-overtime-pay-rules-...":
+    - /url: /goto?url=CAESfAHrOzAVLnyVzd-rtaPEtjXvyG5CKOkpjKJUf-rMxnl3k_L-IQW7Yb-qUz6oSzZOE49CdJAryGFVq0AvtOMeeraavuM0VZFJn4wC8Kx9DYoNKkWQSv2obk3YNXTlZulNIYYYIM16uh1pLFx2SBFFx__4QjgBPjqawKqOyTs
+    - heading "New Overtime Pay Rules Made Simple - Online Users" [level=3]
+    - generic: Candus Kampfer
+    - generic: https://canduskampfer.com › new-overtime-pay-rules-...
+  - button "About this result":
+  - generic: Jan 28, 2026 —
+  - emphasis: Overtime tracking is simply recording when employees work more than 40 hours in a week
+  - text: and ensuring they're paid time-and-a-half for those extra ...
+  - link "Read more":
+    - /url: /goto?url=CAES6AEB6zswFSFLqRDKZTjaa5_VdyZNKGjhdRfQd8R678VYOazzn2ljIIibDWzktO39iOasgRKtQZUYwlrLxbaU9iZCwJIr579NWsJNXhTEafpvDPtePYZG8mKJSSsRlBlVcdJhy0BQYmVFkhMorgtqdb4y00vjdbMgPrkaVFFCowCWqsNlw6QFTlYRVFNCRmH7TPwsL6ySP1UQNal-lD4TnJYigD9M98sCrrxQ9rRhO2n5IW8dcDKH6AQb5wjUUOcP_HaBtlyalDwxzhHmMKUz3NIQPQQEGpO2LWVnS5ZDFebtlzUGaub9B1qV
+  - heading "People also search for" [level=2]
+  - link "Qualified overtime tracking in QuickBooks Desktop":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&q=Qualified+overtime+tracking+in+QuickBooks+Desktop&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ1QJ6BAg_EAE
+    - generic: Qualified overtime tracking in QuickBooks Desktop
+  - link "QuickBooks Qualified Overtime tracking":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&q=QuickBooks+Qualified+Overtime+tracking&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ1QJ6BAhZEAE
+    - generic: QuickBooks Qualified Overtime tracking
+  - link "QuickBooks Qualified Overtime Tracking setup":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&q=QuickBooks+Qualified+Overtime+Tracking+setup&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ1QJ6BAhaEAE
+    - generic: QuickBooks Qualified Overtime Tracking setup
+  - link "Qualified overtime Tracking 2026":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&q=Qualified+overtime+Tracking+2026&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ1QJ6BAhYEAE
+    - generic: Qualified overtime Tracking 2026
+  - link "Qualified overtime Tracking calculator":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&q=Qualified+overtime+Tracking+calculator&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ1QJ6BAhSEAE
+    - generic: Qualified overtime Tracking calculator
+  - link "QuickBooks Qualified Overtime Tracking Not Working":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&q=QuickBooks+Qualified+Overtime+Tracking+Not+Working&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ1QJ6BAhKEAE
+    - generic: QuickBooks Qualified Overtime Tracking Not Working
+  - link "How to calculate Qualified Overtime Tracking":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&q=How+to+calculate+Qualified+Overtime+Tracking&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ1QJ6BAhJEAE
+    - generic: How to calculate Qualified Overtime Tracking
+  - link "Qualified Overtime Tracking limit":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&q=Qualified+Overtime+Tracking+limit&sa=X&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ1QJ6BAhGEAE
+    - generic: Qualified Overtime Tracking limit
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=qualified+overtime+tracking&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&ei=o7e_atP5FciJqfkP1pmmmAY&start=10&sa=N&sstk=AS6-VmJZPfzwg36nHFdq-dKxcR7blfxhVG23xNHo1-6RTx_jnAsqUP8gkzuG0jaItinhIR9maznRoIAPV0hqqlr5V0wUohQ3IlTvzw&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ8tMDegQIPRAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=qualified+overtime+tracking&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&ei=o7e_atP5FciJqfkP1pmmmAY&start=20&sa=N&sstk=AS6-VmJZPfzwg36nHFdq-dKxcR7blfxhVG23xNHo1-6RTx_jnAsqUP8gkzuG0jaItinhIR9maznRoIAPV0hqqlr5V0wUohQ3IlTvzw&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ8tMDegQIPRAG
+      - text: "3"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=qualified+overtime+tracking&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnv3WfQgsP0TJYiWpuYQLIpG1EzoXg:1790949283368&ei=o7e_atP5FciJqfkP1pmmmAY&start=10&sa=N&sstk=AS6-VmJZPfzwg36nHFdq-dKxcR7blfxhVG23xNHo1-6RTx_jnAsqUP8gkzuG0jaItinhIR9maznRoIAPV0hqqlr5V0wUohQ3IlTvzw&ved=2ahUKEwiT1-H-vZuXAxXIRCoJHdaMCWMQ8NMDegQIPRAI
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - link "Send feedback":
+    - /url: "#"
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

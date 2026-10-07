@@ -1,0 +1,235 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQPHoECAYQBA
+  - combobox "Search": cbam cost calculator cbam cost calculator
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dcbam%2Bcost%2Bcalculator%26hl%3Den%26gl%3Dus%26sei%3D5KS_apTDMeqX4-EP9Z7WwAo&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn-2P3ChV6jS1CjrASxE0c6jTNmS30YFtzzWIrGYRci0b7irE3uhR5MUyBl7zczD-AqNS5ZZ0foSO6l-e3OR6FJB1LzhNwj5RLVFqwkg-ZmDEkNV1SXHQbIBZMcK7saDpySgXSOQVcOIZwcMUC1F9R0WaH6oA&q=cbam+cost+calculator&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn-2P3ChV6jS1CjrASxE0c6jTNmS30YFtzzWIrGYRci0b7irE3uhR5MUyBl7zczD-AqNS5ZZ0foSO6l-e3OR6FJB1LzhNwj5RLVFqwkg-ZmDEkNV1SXHQbIBZMcK7saDpySgXSOQVcOIZwcMUC1F9R0WaH6oA&q=cbam+cost+calculator&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQtKgLegQIFRAB
+      - generic: Images
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn-2P3ChV6jS1CjrASxE0c6jTNmS30YFtzzWIrGYRci0b7irE3uhR5MUyBl7zczD-AqNS5ZZ0foSO6l-e3OR6FJB1LzhNwj5RLVFqwkg-ZmDEkNV1SXHQbIBZMcK7saDpySgXSOQVcOIZwcMUC1F9R0WaH6oA&q=cbam+cost+calculator&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQs6gLegQIFhAB
+      - generic: Forums
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn-2P3ChV6jS1CjrASxE0c6jTNmS30YFtzzWIrGYRci0b7irE3uhR5MUyBl7zczD-AqNS5ZZ0foSO6l-e3OR6FJB1LzhNwj5RLVFqwkg-ZmDEkNV1SXHQbIBZMcK7saDpySgXSOQVcOIZwcMUC1F9R0WaH6oA&q=cbam+cost+calculator&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQtKgLegQIFxAB
+      - generic: Videos
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&q=cbam+cost+calculator&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn-2P3ChV6jS1CjrASxE0c6jTNmS30YFtzzWIrGYRci0b7irE3uhR5MUyBl7zczD-AqNS5ZZ0foSO6l-e3OR6FJB1LzhNwj5RLVFqwkg-ZmDEkNV1SXHQbIBZMcK7saDpySgXSOQVcOIZwcMUC1F9R0WaH6oA&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ0pQJegQIFBAB
+      - generic: News
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn-2P3ChV6jS1CjrASxE0c6jTNmS30YFtzzWIrGYRci0b7irE3uhR5MUyBl7zczD-AqNS5ZZ0foSO6l-e3OR6FJB1LzhNwj5RLVFqwkg-ZmDEkNV1SXHQbIBZMcK7saDpySgXSOQVcOIZwcMUC1F9R0WaH6oA&q=cbam+cost+calculator&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQs6gLegQIEhAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "CBAM calculator, estimate your certificate costs kolum.earth https://www.kolum.earth › cbam-calculator":
+    - /url: /goto?url=CAESYgHrOzAVK2dfaKxn1dmCzRSIEDK5NIMVXNRUAl4m6ug2y4ZNprj1WGuMf2QUmFYfLPRe6ifQIpbRZ-tuNuue9yS4kLyMzzsiNz3_2-8-glP-lqhgwliwg2_-yLftZ64DJtSQ
+    - heading "CBAM calculator, estimate your certificate costs" [level=3]
+    - generic: kolum.earth
+    - generic: https://www.kolum.earth › cbam-calculator
+  - button "About this result":
+  - text: Estimate your CBAM certificate costs by product and country of origin.
+  - emphasis: Use the free kolum calculator
+  - text: to see your exposure in just a few clicks.
+  - link "CBAM Calculator, check Your CBAM obligations Greenly https://greenly.earth › en-us › tools › calculator":
+    - /url: /goto?url=CAESdAHrOzAVGzuKkXcmRkKsbt3R4eCq5CD4T-stBYuXaLpxLea8uwXwfvymuH5VNXU8BgkOrdUU7zVlbX_iix3WWJEy5kDgo0xLZWfU9EYO7mq2TH61r3-DImnWA0We5RmBgD5QUzXsRBlgmm7cY1xHIUlZmDSX
+    - heading "CBAM Calculator, check Your CBAM obligations" [level=3]
+    - generic: Greenly
+    - generic: https://greenly.earth › en-us › tools › calculator
+  - button "About this result":
+  - emphasis: Quickly assess your CBAM obligations with our online calculator
+  - text: . Importers, check if your products are affected and estimate your carbon emissions.
+  - link "How to calculate CBAM costs as an importer in 2026 ... Coolset https://www.coolset.com › Academy":
+    - /url: /goto?url=CAESkwEB6zswFYPGZJX6v-ALlRBm5z3CzJqxIE0sK0Vp7pxuxdrlTGI8haEj7FiyFMatqw6YWDfDqjemkjOb4jClr27sepubSDEa6qz2bsQ7Nu16HS34HEq6AMt1KoETt0T9C635oEn4a60E0MyRxHtPJND_kVlfR7HBrrkH3ZSI3N7zvbx59SYNMzORSu0arn8nkpWq7Z8
+    - heading "How to calculate CBAM costs as an importer in 2026 ..." [level=3]
+    - generic: Coolset
+    - generic: https://www.coolset.com › Academy
+  - button "About this result":
+  - generic: Feb 24, 2026 —
+  - emphasis: CBAM costs
+  - text: are calculated by multiplying the quantity of imported goods (metric tonnes), their embedded emissions per metric tonne and the EU ...
+  - link "CBAM Calculator earthemission https://www.earthemission.com › calculator":
+    - /url: /goto?url=CAESYwHrOzAV9BnkTATaOBwJiqQy5AXs8OivhEs2b3XROlko1MfwuzCqU6vxpueswYi480pxAC5aRZFmF3vqQDDyH3EeBZyIxItl4lXrT8gTxqR3dgEc8TPk9EwbQR719pZ1j0-Buw
+    - heading "CBAM Calculator" [level=3]
+    - generic: earthemission
+    - generic: https://www.earthemission.com › calculator
+  - button "About this result":
+  - text: CBAM Cost Intelligence.
+  - emphasis: Estimate your Carbon Border Adjustment Mechanism liabilities instantly
+  - text: . Ensure compliance and plan your budget effectively.
+  - link "Read more":
+    - /url: /goto?url=CAESsAEB6zswFYpEluiC7Lka_uFSgkc3-UJ3MMgzrVASYHO87biTqycaDlq765H4VMMpPbvfNT8pMR-B5t1kBGx8G-vgHNB_AfJgJfY30UtxANcFskw2RzlvwvTKKE33q9YMW_jE469lzx7dFWoWTkivxT3lY1zZMP3pLa5h6cLiPdsUosV55Gjq_qk5VFZgXFMkWuWSLwSMbUWnmP8fs-yfFyTpfM4642GXcat1yqhIjcZQcg
+  - link "CBAM Calculator | EU Carbon Border Adjustment Mechanism ... cbam-calculator.eu https://cbam-calculator.eu":
+    - /url: /goto?url=CAESVgHrOzAVUBsO1QW92dtpW0T0OnBpaVGDK1vu2Gm4c9WEUY4KYlAPCoSmqV9jqiEd6i9okX5gkGhhPYzjfQb2hXEgo1h_-qPCm_hoq-Rh2MGu3-lWNdmM
+    - heading "CBAM Calculator | EU Carbon Border Adjustment Mechanism ..." [level=3]
+    - generic: cbam-calculator.eu
+    - generic: https://cbam-calculator.eu
+  - button "About this result":
+  - emphasis: Free CBAM cost calculator
+  - text: for EU importers. Estimate your Carbon Border Adjustment Mechanism certificate costs for steel, aluminum, cement, fertilizers, ...
+  - heading "People also ask" [level=2]
+  - button "How much does a CBAM certificate cost?":
+    - generic: How much does a CBAM certificate cost?
+  - button "How are CBAM costs calculated?":
+    - generic: How are CBAM costs calculated?
+  - button "What is the price of the CBAM certificate in 2026?":
+    - generic: What is the price of the CBAM certificate in 2026?
+  - button "Who pays CBAM costs?":
+    - generic: Who pays CBAM costs?
+  - heading "Web results" [level=2]
+  - 'link "CBAM Calculator: Free Online Tool to Estimate Your Cost 瑞欧科技 https://cbam.reach24h.com › ..."':
+    - /url: /goto?url=CAESXQHrOzAVQSLBYkZ2QHw3RumVwSPj5a6ZDMGKbimrVOnWKmz-6Yp00jb5MLY7LAuQAmGZr-c9763TlHXKVdH4l_e9ASdge9AK5htgIWHFE98Ar8WmKARLrhcBWZkEDw
+    - 'heading "CBAM Calculator: Free Online Tool to Estimate Your Cost" [level=3]'
+    - generic: 瑞欧科技
+    - generic: https://cbam.reach24h.com › ...
+  - button "About this result":
+  - emphasis: Free EU CBAM carbon tax calculator
+  - text: based on official EU default values. Enter your product HS code to get an instant carbon cost report and compliance ...
+  - link "EU carbon costs for CBAM goods CO2 IQ https://co2-iq.com › cbam-cost-calculation":
+    - /url: /goto?url=CAESZgHrOzAVWIo5L8an9E6LxdQZSDMSZwT2ItPJqnZNR_9zK2PA8GyRdEMfO1wuTFY_T-83glpmHoLrT8svSvFLd-gnCCHkW2lB9uo__vRiT67Y2ZXLW_fJoy3VxFHvESoB2m1Qgnn2pQ
+    - heading "EU carbon costs for CBAM goods" [level=3]
+    - generic: CO2 IQ
+    - generic: https://co2-iq.com › cbam-cost-calculation
+  - button "About this result":
+  - generic: Dec 8, 2025 —
+  - emphasis: How to calculate CBAM costs for EU imports from 2026
+  - text: "? For Q1 and Q2 of 2026 they have been set to be 75.36 and 75.28 EUR/tCO2eq."
+  - link "CBAM Calculator — EU Carbon Border Tax Cost Estimator Senseible https://senseible.earth › cbam-calculator":
+    - /url: /goto?url=CAESYgHrOzAVmSrrqPCC53HUuKPvNCmWvZ-w4MX3Vx3t03z0Zeg5LYIEbYNuh2vRmNK_5QHATBI10Dc84rtehHs0tJIttKzKRdi3pgLJdAEGZOrm2fjkO8OKSs5QJ-7fQtf8zy0D
+    - heading "CBAM Calculator — EU Carbon Border Tax Cost Estimator" [level=3]
+    - generic: Senseible
+    - generic: https://senseible.earth › cbam-calculator
+  - button "About this result":
+  - emphasis: Free CBAM cost estimator for EU importers
+  - text: . Calculate carbon border tax exposure for steel, aluminium, cement, fertilizers from India. 2026-2034 projections.
+  - img "Rated 4.8 out of 5, (127) user reviews":
+    - text: "4.8"
+    - text: (127)
+  - text: ·
+  - text: Free · ‎Business/Productivity
+  - heading "Videos" [level=2]
+  - button "About this result":
+  - link "How to calculate CBAM Certificate Costs - A Step by Step Guide YouTube Dubrink May 8, 2025":
+    - /url: /goto?url=CAESZgHrOzAVOcB3_bVxffTlooDeLnnRg73pLYufPFxfKOy2c3BDNx9hmABNOMy-Gk2L3FVKwY-0bd3cm0PWdS06rtvAcx25qrkeCE9FRv1l9cgSO6UJUVSkSp6_MqEIRroTN-6_GUVCGQ
+    - heading "How to calculate CBAM Certificate Costs - A Step by Step Guide YouTube Dubrink May 8, 2025" [level=3]:
+      - generic: How to calculate CBAM Certificate Costs - A Step by Step Guide
+      - text: YouTube
+      - generic: · Dubrink
+      - generic: May 8, 2025
+  - text: YouTube
+  - generic: · Dubrink
+  - button "About this result":
+  - button "How to calculate CBAM Certificate Costs - A Step by Step Guide by Dubrink on YouTube. Play on Google. 4:37":
+    - generic: 4:37
+  - button "To calculate CBAM certificate costs, deduct the benchmark (e.g., 2) from the emission factor (e.g., 10), then multiply by the CBAM factor (e.g., 0.975).":
+    - generic: To calculate CBAM certificate costs, deduct the benchmark (e.g., 2) from the emission factor (e.g., 10), then multiply by the CBAM factor (e.g., 0.975).
+  - link "How to calculate and forecast CBAM emission costs. YouTube Dubrink May 23, 2025":
+    - /url: /goto?url=CAESZgHrOzAVFKbO9jNR8w6gX6xXMoUU0UUu2usXlGG2l1R2IsoqxpM0gfcZqEIdyU_nbxI_41bPR_9f9QV8tbs4D_JiVxBlvY1i_E9i8tgXbcaxFgxDM_PzquoVluIMqP4Qz-r-9EjBew
+    - heading "How to calculate and forecast CBAM emission costs. YouTube Dubrink May 23, 2025" [level=3]:
+      - generic: How to calculate and forecast CBAM emission costs.
+      - text: YouTube
+      - generic: · Dubrink
+      - generic: May 23, 2025
+  - text: YouTube
+  - generic: · Dubrink
+  - button "About this result":
+  - button "How to calculate and forecast CBAM emission costs. by Dubrink on YouTube. Play on Google. 4:23":
+    - generic: 4:23
+  - button "Forecast CBAM emission costs using a platform that simplifies the EU's equation, even estimating unknown variables like benchmarks & certificate prices.":
+    - generic: Forecast CBAM emission costs using a platform that simplifies the EU's equation, even estimating unknown variables like benchmarks & certificate prices.
+  - 'link "Calculating CBAM costs: EU default values vs supplier data YouTube Coolset Jan 15, 2026"':
+    - /url: /goto?url=CAESZgHrOzAVLzk1xqMEaTb1gjqegVazWOLmuHPLTeAXAaTRfq3nAFkpIkC28j1wt6Ba1QqGVEf9dMagxIB9ybVhle83Tj4VfU6Jl-OGiPTZtnlGiBw6v5I4CJEZ15ldTX7Annn8Dc6VQA
+    - 'heading "Calculating CBAM costs: EU default values vs supplier data YouTube Coolset Jan 15, 2026" [level=3]':
+      - generic: "Calculating CBAM costs: EU default values vs supplier data"
+      - text: YouTube
+      - generic: · Coolset
+      - generic: Jan 15, 2026
+  - text: YouTube
+  - generic: · Coolset
+  - button "About this result":
+  - 'button "Calculating CBAM costs: EU default values vs supplier data by Coolset on YouTube. Play on Google. 47:35"':
+    - generic: 47:35
+  - button "8 key moments in this video":
+    - generic: 8 key moments in this video
+  - link "View all videos":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&udm=vids&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&q=cbam+cost+calculator&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ8ccDKAJ6BAhDEAU
+    - separator
+    - generic: View all
+  - heading "People also search for" [level=2]
+  - link "CBAM calculator free":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&q=CBAM+calculator+free&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ1QJ6BAg4EAE
+    - generic: CBAM calculator free
+  - link "CBAM calculation Excel":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&q=CBAM+calculation+Excel&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ1QJ6BAg_EAE
+    - generic: CBAM calculation Excel
+  - link "CBAM calculation example":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&q=CBAM+calculation+example&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ1QJ6BAg-EAE
+    - generic: CBAM calculation example
+  - link "CBAM calculation for steel":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&q=CBAM+calculation+for+steel&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ1QJ6BAg9EAE
+    - generic: CBAM calculation for steel
+  - link "CBAM factor":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&q=CBAM+factor&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ1QJ6BAg8EAE
+    - generic: CBAM factor
+  - link "CBAM certificate":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&q=CBAM+certificate&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ1QJ6BAg7EAE
+    - generic: CBAM certificate
+  - link "CBAM tools":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&q=CBAM+tools&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ1QJ6BAg6EAE
+    - generic: CBAM tools
+  - link "CBAM benchmark values":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&q=CBAM+benchmark+values&sa=X&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ1QJ6BAg5EAE
+    - generic: CBAM benchmark values
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=cbam+cost+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&ei=5aS_asWxJfCX4-EP17PqIQ&start=10&sa=N&sstk=AS6-VmJRIky74LYShWn8PpGm6pwLxgAX7AwZ0p120S6Ch-y6_NRxIaQERG_PXoK210jXmA2BHk3XLYXOyno6srHCmCQtkHjtRmE7BA&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ8tMDegQINhAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=cbam+cost+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&ei=5aS_asWxJfCX4-EP17PqIQ&start=20&sa=N&sstk=AS6-VmJRIky74LYShWn8PpGm6pwLxgAX7AwZ0p120S6Ch-y6_NRxIaQERG_PXoK210jXmA2BHk3XLYXOyno6srHCmCQtkHjtRmE7BA&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ8tMDegQINhAG
+      - text: "3"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=cbam+cost+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&sxsrf=APpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ:1790944485620&ei=5aS_asWxJfCX4-EP17PqIQ&start=10&sa=N&sstk=AS6-VmJRIky74LYShWn8PpGm6pwLxgAX7AwZ0p120S6Ch-y6_NRxIaQERG_PXoK210jXmA2BHk3XLYXOyno6srHCmCQtkHjtRmE7BA&ved=2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ8NMDegQINhAI
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - link "Send feedback":
+    - /url: "#"
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

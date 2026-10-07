@@ -1,0 +1,276 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4QPHoECAYQBA
+  - combobox "Search": w2 code tt w2 code tt
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dw2%2Bcode%2Btt%26gl%3Dus%26hl%3Den&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkMfWsh5Z9ZkqTJtAkqH4x-Kq3YP6HdLlwyl3H2gqWGfvMe5ZuX3geRSGs1aro8BX5SoyL0ZCYOtQIOCvo81OQLYLAWFUBbAWHZwwLo0hPmxvGfXTXQ&q=w2+code+tt&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4QtKgLegQIGBAB
+      - generic: Images
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&q=w2+code+tt&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkMfWsh5Z9ZkqTJtAkqH4x-Kq3YP6HdLlwyl3H2gqWGfvMe5ZuX3geRSGs1aro8BX5SoyL0ZCYOtQIOCvo81OQLYLAWFUBbAWHZwwLo0hPmxvGfXTXQ&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q0pQJegQIFxAB
+      - generic: News
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkMfWsh5Z9ZkqTJtAkqH4x-Kq3YP6HdLlwyl3H2gqWGfvMe5ZuX3geRSGs1aro8BX5SoyL0ZCYOtQIOCvo81OQLYLAWFUBbAWHZwwLo0hPmxvGfXTXQ&q=w2+code+tt&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4QtKgLegQIFhAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkMfWsh5Z9ZkqTJtAkqH4x-Kq3YP6HdLlwyl3H2gqWGfvMe5ZuX3geRSGs1aro8BX5SoyL0ZCYOtQIOCvo81OQLYLAWFUBbAWHZwwLo0hPmxvGfXTXQ&q=w2+code+tt&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Qs6gLegQIFRAB
+      - generic: Forums
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkMfWsh5Z9ZkqTJtAkqH4x-Kq3YP6HdLlwyl3H2gqWGfvMe5ZuX3geRSGs1aro8BX5SoyL0ZCYOtQIOCvo81OQLYLAWFUBbAWHZwwLo0hPmxvGfXTXQ&q=w2+code+tt&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkMfWsh5Z9ZkqTJtAkqH4x-Kq3YP6HdLlwyl3H2gqWGfvMe5ZuX3geRSGs1aro8BX5SoyL0ZCYOtQIOCvo81OQLYLAWFUBbAWHZwwLo0hPmxvGfXTXQ&q=w2+code+tt&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Qs6gLegQIEhAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "2026 General Instructions for Forms W-2 and W-3 IRS (.gov) https://www.irs.gov › pub › irs-pdf":
+    - /url: /goto?url=CAESZAHrOzAV70Lt1ty6E04NkmXHx3gF9ZDOlPlCQ5PAZAoUlsdq508_D5Pgu3QV5FZyk3RalldLkvy-L-oQfbdtLbe8E5s50ADZucQ7NJhTEVPOheKXa3IrV6NVG1uW6jILNLOzNhg
+    - heading "2026 General Instructions for Forms W-2 and W-3" [level=3]
+    - generic: IRS (.gov)
+    - generic: https://www.irs.gov › pub › irs-pdf
+  - generic: PDF
+  - button "About this result":
+  - text: New box 12, code TT, will be used to report the
+  - emphasis: total amount of qualified overtime compensation
+  - text: . See Code TT—Total amount of qualified overtime compensation, ...
+  - generic: 36 pages
+  - heading "People also ask" [level=2]
+  - button "What is code TT on W-2?":
+    - generic: What is code TT on W-2?
+  - button "What does tt mean on the W-2 form?":
+    - generic: What does tt mean on the W-2 form?
+  - button "What is tt in tax code?":
+    - generic: What is tt in tax code?
+  - button "What does \"TT\" mean in box 12 on a W-2 form?":
+    - generic: What does "TT" mean in box 12 on a W-2 form?
+  - heading "Web results" [level=2]
+  - link "What do the W-2 box 12 codes mean? TaxSlayer https://support.taxslayer.com › en-us › articles › 360015...":
+    - /url: /goto?url=CAESmQEB6zswFYy3q2pLNlwwVtvrpxw2SXjfq2IYx9Md4qCMrND-8S25dHHKuPUU1wAIhn1TE2izeS9SPSgWNHiNNbBN1YG3LjwlfhQvUNqTkFaa8HVQATieDdiZHWljUvBZX0-uCf-2MpCJAP3mC5i_sUxszNULO0VRBeNcK0VKs3uhF8CH8qfAruVJruKJZeBhpVzT6HHBxWJOUsg
+    - heading "What do the W-2 box 12 codes mean?" [level=3]
+    - generic: TaxSlayer
+    - generic: https://support.taxslayer.com › en-us › articles › 360015...
+  - button "About this result":
+  - text: TT,
+  - emphasis: Total qualified overtime compensation
+  - text: . Use this amount for the overtime deduction. Additional Information. W-2 instructions · Facebook · Twitter · LinkedIn.
+  - link "Read more":
+    - /url: /goto?url=CAESuQEB6zswFSqunO07-G6AWik3Im2A6LjNB-fTmjSBjs-YfojF-CxLfNZxpLm8Bdza6w_IVpyn81EL8aRT9GECtNqvpA-pcL19NhGn1wxid2icpvHW_tWOMbTDma4kXW69F7s_eyJVqj9x2D3cp8co8dJq1hZ1IjphVNgYCmnlyU8QMVCqpFjIJRUv8LtZE25Swh-Ji7P5BfKAwVcDc4IyW-BkZvMH_iYONIzhdqvZv2kRo1Or5mTFj7uoew
+  - 'link "Box 12 Code TT and TP: 2026 W-2 Tips and Overtime Coeur Workforce Solutions https://coeurws.com › Blog"':
+    - /url: /goto?url=CAESdwHrOzAVMcKXqgSrp_3mIwrjcxNfa-s8SyCHET3ZQbaERBYVQRT7SOcy8A8FYEFqccwGgIKEKyC-OFIdc4hXxfx5oqulBNmFJ1-tynIB4a-ZOpGDoDXndFle50NcIVxJoMimNeqs2FmH6xhTDKlZsumREHTep2z_
+    - 'heading "Box 12 Code TT and TP: 2026 W-2 Tips and Overtime" [level=3]'
+    - generic: Coeur Workforce Solutions
+    - generic: https://coeurws.com › Blog
+  - button "About this result":
+  - generic: Aug 10, 2026 —
+  - text: Code TT covers
+  - emphasis: only pay above the employee's regular rate
+  - text: that the FLSA requires, generally the extra half of time-and-a-half pay;
+  - link "How do I enter the letter code TT for box 12 when it is not in ... TurboTax Support https://ttlc.intuit.com › ... › Taxes › Business & farm":
+    - /url: /goto?url=CAESxgEB6zswFRtrGuIakvwgqU-JVb33BMaTChbdS0qJWOkPUnIvTeu5YfiS68YhvetYTAi6WUVKRU-gMrCiV0MNzHj1YwGXKuOCpbCyXO-qEnMNvcu5Zj7HUsRZsKntVChZThDXhTfCc7QbdXC82T2AER_M8Ilrr_fZ8Zd7RgyYe-yL7avg_oh0AbXoD-d1vOgVd1zRKAirINgNsh0KZzFSkhw-u-vt0u_43G9hbZm8weZpAcuheqF0zX1fiVyJ2_2OJq8rf25JIrE
+    - heading "How do I enter the letter code TT for box 12 when it is not in ..." [level=3]
+    - generic: TurboTax Support
+    - generic: https://ttlc.intuit.com › ... › Taxes › Business & farm
+  - button "About this result":
+  - generic: Feb 1, 2026 —
+  - text: W2 has TT which stands for the total amount of qualified overtime compensation in box 12, but TT is not an option to select from the select a letter ...
+  - link "1 answer":
+    - /url: /goto?url=CAES4QEB6zswFfMcMg4XsA1eO3O3uZF-grVrQnjg9gB2TCR182o211VExQbLAEYzJlpjFfVxXvi-Xu0BVPPXByeKFTAffVGBYyb1uOh9W25Ni_CBLtxsSlkxbAHhIFtf3vKaae2m0SvBNiAuLy67oplqxC6OpuH8dxnmV08Xw7DP_PxXldttxUWXtj00pduvhNQ2JRPIRe1v_2BtgMJcbuwRk73w1x1Y4qS4vtuFEBxESE9K2REB1hV85XFn5bQWNR7rXAzgkonSIKRtIy5sn3Jtut6FIJGc79B9WzrQcfq2w1M786Q
+  - generic: ·
+  - generic: "Top answer:"
+  - generic: Expert Reviewed Box 12 is informational only. Since there isn't a dropdown for code TT currently, enter all of the other information from your W-2. ...
+  - 'link "W-2 Box 12 Code TT vs. Box 14: What Changed for ... TaxBandits https://blog.taxbandits.com › W-2 Forms"':
+    - /url: /goto?url=CAESogEB6zswFWBH5_dx4F2G4aoGluzoScxDvQEu-ZQQhQCTv8ew4CzKJIiDSp6sLGDzPKlgouxvC_CpHyrF0L0MvjTLcxrEIr82y6OVdESTFR7lgwjMckqTYQQJE25IVV4S5GxyTKPYhTYfH0x2_0paIEJtDyqx9liR9pGCcAm8TabCO3wSM8EBOiTAnHSV0tvobDwis3vA-X9YQH6FWIeiynp_X8k
+    - 'heading "W-2 Box 12 Code TT vs. Box 14: What Changed for ..." [level=3]'
+    - generic: TaxBandits
+    - generic: https://blog.taxbandits.com › W-2 Forms
+  - button "About this result":
+  - generic: Aug 11, 2026 —
+  - text: "A new Form W-2 Box 12 code was introduced to provide a designated reporting place: Code TT, the"
+  - emphasis: total amount of qualified overtime compensation
+  - text: .
+  - link "Read more":
+    - /url: /goto?url=CAES-wEB6zswFZN0OELx5LSU7W4bkhXbi5mNERM6IMU6b42y_6ta_j0y9GIckga-bt7QP5_CW1Xzt5MilQi2iRcVGpXP4i59258PfrLICEOOy4INggELSrpRijuvNaZKDMB_8F3bBfFmlvK4Aon5JJ3LGcbIHCGeJU63vKOYob2Gnq1bakIDsP8QzhrKM9cDrOuwC_jws--ZJPAWKIQo3oW9AE_ocUJMp0v8Zmnh9H64NW4dj3KsMPGYd7BoWTzowlNRtMw5ynSUfq-IIgFc7nVxRBNQh7WgaIXErv0VDWs4ZpRtOGhuCWiJD3gYIP38TuaA98KE7E3Ottdo1UJFsA
+  - link "Form W-2 box 12 codes and instructions H&R Block https://www.hrblock.com › tax-center › irs › forms › un...":
+    - /url: /goto?url=CAESzQEB6zswFXFRDhEbfXHyS-88vsVMfQHNXvLUWQZDZZ2xWpC7SA9ZNxRaKwqJBCkCfOIsCF-oNug1UxJIFMHbk4StM0XWMR1GBnuiM7yJ89KPVz633eFR4HlVcQqGobYWrL1Zwr2pcuOwgrtRAPbc1Ts1dslx_l6rN73InMFd37m__S_hrst-vPCnxnBgYHi_nmeizG5_-w5oL21Y_NjjC4yXZQnjNEKN4_z-tp7jm41PDmX2zmUnZrpftUs-QnKSi77rLS1g6NWCZwLRH8JQ
+    - heading "Form W-2 box 12 codes and instructions" [level=3]
+    - generic: H&R Block
+    - generic: https://www.hrblock.com › tax-center › irs › forms › un...
+  - button "About this result":
+  - generic: Feb 5, 2025 —
+  - text: The
+  - emphasis: W-2
+  - text: box 12
+  - emphasis: codes
+  - text: provide more information to the IRS and determine if the amount is taxable income. However, if any amount is gross income, ...
+  - link "Read more":
+    - /url: /goto?url=CAESlQIB6zswFXtRdB5xEJPJ-j-PG3q1D8ORkl8JmOOPTXLGIj5o1r0wTLRRGyqlih0_JvD1xibYCfAL9aRKtsU-GJs0Kj078Rn287lSTzUn-VOXGuS2_B62Ly8Pgh-AVNsQkNPNQlCmK0Vem8HYqeZCNKY_jC-aSbF31kg_1cNOQJu1fPbQTUj2OBTbpez1tZhtYa_NPTwjz8eEo9ZYoh0QOyPIfWbBQp-cLqAJlSY5NQl5pR4HPy6Fqur7hTsxtnjEzUlMzbk02ZY2vqx8W_VDU1lDp4IMbaCUjR-HFHd9F-6DVgurvZnJz2EX8pcylWGhnAPKcNo0rOa7AzX1neOxIJBn4XNrjYX2iHWr4LgPcD9vDVZnr4P1
+  - link "Entering Box 12 information on your W-2 Jackson Hewitt Tax https://www.jacksonhewitt.com › w-2-box-12-codes":
+    - /url: /goto?url=CAESlQEB6zswFZUANDQeW78bG29im543AN3SABwpOKLszr5LU03uNILrdp48mXIkXXnyEvpmUfjiBN5gnJZVxg9uGi1W6jDucc60VhbNcj2kvDFHRfP9IqXmB6kRAHaO0_ZD8JHLvTD6u_uVkD3TYB5acpvY_2CB9xsfZ01eHzRvVx5GZ0IjexFPE5xagfV_WxFDKccTnszNWQ
+    - heading "Entering Box 12 information on your W-2" [level=3]
+    - generic: Jackson Hewitt Tax
+    - generic: https://www.jacksonhewitt.com › w-2-box-12-codes
+  - button "About this result":
+  - generic: Jul 8, 2026 —
+  - text: "TT:"
+  - emphasis: represents total amount of qualified overtime compensation
+  - text: . Considered for the Overtime Additional Deduction.
+  - link "What Do the Letter Codes Mean in Box 12 of My W-2 Form? TaxAct Blog https://blog.taxact.com › Tax Forms":
+    - /url: /goto?url=CAESZAHrOzAVd8_ECM7ox75GmtxHiEwEXu5bvRAnT1H_67spn8aAUkJ6wot2wjeYhnuETXirRT9xoJvtRKuKLo2JvgeIVOXmCWAqkKbmA5EthCNb0x9XZu0DtvLmnIY8hmq9PvDywFg
+    - heading "What Do the Letter Codes Mean in Box 12 of My W-2 Form?" [level=3]
+    - generic: TaxAct Blog
+    - generic: https://blog.taxact.com › Tax Forms
+  - button "About this result":
+  - generic: Aug 26, 2026 —
+  - text: "New for 2026 W-2s:"
+  - emphasis: codes
+  - text: TA (Trump account employer contributions), TP (cash tips reported), and
+  - emphasis: TT
+  - text: (qualified overtime compensation). Paper W- ...
+  - link "Read more":
+    - /url: /goto?url=CAESvQEB6zswFRF9hxbzWcXkohrUkO1b4BAdv6u042CSgTZsV3TztRhY8btQFWKAmpKGsITBH2FjuHcuoSibrVs5IWbaJaC9qKGv6Nku69qWPS5qcoU8fbya3nkiohgsiS_kPO8bZCJqbKQYqACbSReTUsqYj2DrcaXCBGB7tIry1q6Z7Y8K0nVrDAn8l4h3M5AEwpCHaGuPaH0keb5QjoWGdBtRIpUg22frqVyfcL2T2DgxpFqK7IpLkRKIWX_gFXg
+  - link "Form W-2 Box 12 Codes and Explanations Patriot Software https://www.patriotsoftware.com › blog › payroll › for...":
+    - /url: /goto?url=CAESjwEB6zswFXcunk1kRm5XO6MuENfUELnp6zq35-x3sTwNQu1wYUktdhoxQxXhsA7PSjreIu7Q4E3CsNedAo6VBpSngBeadcENjmgseSk0J0QSarXqa0YAOP7hGVhJL_1zvcDNq6pN9ShrUKpwMqxw5YB3MxBLgMz7QbfEgAu1Uch0BnVJKF8kFzGibopa4iHl2A
+    - heading "Form W-2 Box 12 Codes and Explanations" [level=3]
+    - generic: Patriot Software
+    - generic: https://www.patriotsoftware.com › blog › payroll › for...
+  - button "About this result":
+  - generic: Aug 26, 2026 —
+  - text: "Code TT:"
+  - emphasis: Total amount of qualified overtime compensation
+  - text: . Use code ... Form W-2 Box 12 code chart with explanations. Take a look at the ...
+  - link "Read more":
+    - /url: /goto?url=CAESuAIB6zswFafmczPzkanO-_YO1NVKqJ8Mz8ddy3Y_6eBOyMdfGmHDl4TqaHcEyhyr0BPo78DHj-i1epzAWpdHF8hnhV9PJgblXMYtZiesYKuqEm1hBi0L_bSWeFoclJzJTaFOryFDuomkt58LH9V_KjKIjqwZEiRrb7jZeyfi2HVzOzU35oM-EaYi37y1rtqPvTDSeY4WGwtfqI8IMjWWUUSkuBC1G77zD0k-mnsfuaTQP44LDqaoRaL95G_PHcSh-h73S7Uzjt0J9talGIIW6ENwI4Ro-Nw8pVCiLW42uQn7zhti-LLRJ7QAB7HRbqf21KLkhmYW9nRETRKloKY-9Lmqvf7LbdS3stQai2aM2yR79lZgDQW6nHC-xY0cW7dlNg3ivIFQMggFOaqWh-6-ZgAuSJYU9UCEhUY
+  - heading "Videos" [level=2]
+  - button "About this result":
+  - link "New Tip & Overtime Codes to W-2 (IRS Tax Form) YouTube Teaching Tax Flow Sep 18, 2025":
+    - /url: /goto?url=CAESZgHrOzAViKUFPm2mSfubzKI7cD8nLHRK1IUcb32hDSn9lTWCiFtRPWtSq3SF1P0X7_uAFLm_vJjXzGhcmndb1SbGx6c3Dl_EGnyedDHNXrPsW8XYmW3t6HdWocDs8xlPHCIkZmB3Og
+    - heading "New Tip & Overtime Codes to W-2 (IRS Tax Form) YouTube Teaching Tax Flow Sep 18, 2025" [level=3]:
+      - generic: New Tip & Overtime Codes to W-2 (IRS Tax Form)
+      - text: YouTube
+      - generic: · Teaching Tax Flow
+      - generic: Sep 18, 2025
+  - text: YouTube
+  - generic: · Teaching Tax Flow
+  - button "About this result":
+  - button "New Tip & Overtime Codes to W-2 (IRS Tax Form) by Teaching Tax Flow on YouTube. Play on Google. 3:47":
+    - generic: 3:47
+  - button "New W-2 codes TA, TP, and TT in Box 12 identify employer Trump account contributions, cash tips, and qualified overtime compensation.":
+    - generic: New W-2 codes TA, TP, and TT in Box 12 identify employer Trump account contributions, cash tips, and qualified overtime compensation.
+  - 'link "Box 12 On Your Tax Return: How To Enter Box 12 Info & More YouTube Jackson Hewitt Aug 6, 2024"':
+    - /url: /goto?url=CAESZgHrOzAV31dDf2rUSRyjrhGNkoYUVwKPekYhNd9o3eJQOLtC_FFGwy6gsKGKfbNqkoLx2hs6OtSt-I8RFJw2lh_nf2mh-TFsrdBMs5Gx-1D-uA0U8b6tfq3QVtfnQ3P0T9GuuRw1QQ
+    - 'heading "Box 12 On Your Tax Return: How To Enter Box 12 Info & More YouTube Jackson Hewitt Aug 6, 2024" [level=3]':
+      - generic: "Box 12 On Your Tax Return: How To Enter Box 12 Info & More"
+      - text: YouTube
+      - generic: · Jackson Hewitt
+      - generic: Aug 6, 2024
+  - text: YouTube
+  - generic: · Jackson Hewitt
+  - button "About this result":
+  - 'button "Box 12 On Your Tax Return: How To Enter Box 12 Info & More by Jackson Hewitt on YouTube. Play on Google. 5:20"':
+    - generic: 5:20
+  - button "Box 12 on your W2 is a catch-all for miscellaneous items with codes (A-HH) that represent taxable amounts or are for informational purposes.":
+    - generic: Box 12 on your W2 is a catch-all for miscellaneous items with codes (A-HH) that represent taxable amounts or are for informational purposes.
+  - link "What is W2 Box 12? YouTube SK Financial CPA LLC Nov 14, 2025":
+    - /url: /goto?url=CAESZgHrOzAVI-Sgkgu6ziYL7a-6h-7thuxFuJABqyQJsrKSLJqnY_Cj3_IqeNz5KlNhueSSj48cm5n7fdVD3ZP5pOPx1a6W1EJqGAu_ozrvtvS1EWtLSoL_Etr01M_GBvQM5vvNgEngJQ
+    - heading "What is W2 Box 12? YouTube SK Financial CPA LLC Nov 14, 2025" [level=3]:
+      - generic: What is W2 Box 12?
+      - text: YouTube
+      - generic: · SK Financial CPA LLC
+      - generic: Nov 14, 2025
+  - text: YouTube
+  - generic: · SK Financial CPA LLC
+  - button "About this result":
+  - button "What is W2 Box 12? by SK Financial CPA LLC on YouTube. Play on Google. 2:41":
+    - generic: 2:41
+  - button "Box 12 on your W2 reports specific compensation or benefits using codes like D for 401k, DD for health insurance, and W for HSA.":
+    - generic: Box 12 on your W2 reports specific compensation or benefits using codes like D for 401k, DD for health insurance, and W for HSA.
+  - link "View all videos":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&udm=vids&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&q=w2+code+tt&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q8ccDKAJ6BAhQEAU
+    - separator
+    - generic: View all
+  - heading "People also search for" [level=2]
+  - link "W2 code aa":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&q=W2+code+aa&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q1QJ6BAguEAE
+    - generic: W2 code aa
+  - link "Box 14 W2 code V":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&q=Box+14+W2+code+V&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q1QJ6BAhDEAE
+    - generic: Box 14 W2 code V
+  - link "Box 12 w2 code D":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&q=Box+12+w2+code+D&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q1QJ6BAhCEAE
+    - generic: Box 12 w2 code D
+  - link "W2 box 12a code DD":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&q=W2+box+12a+code+DD&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q1QJ6BAg7EAE
+    - generic: W2 box 12a code DD
+  - link "Box 12 w2 code C":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&q=Box+12+w2+code+C&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q1QJ6BAg5EAE
+    - generic: Box 12 w2 code C
+  - link "W2 code tt turbotax":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&q=W2+code+tt+turbotax&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q1QJ6BAg4EAE
+    - generic: W2 code tt turbotax
+  - link "W2 Box 14 codes list":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&q=W2+Box+14+codes+list&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q1QJ6BAg2EAE
+    - generic: W2 Box 14 codes list
+  - link "W2 Box 12 codes":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&q=W2+Box+12+codes&sa=X&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q1QJ6BAgvEAE
+    - generic: W2 Box 12 codes
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=w2+code+tt&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&ei=sLS_aqHzLq-p4-EPvcqd8A4&start=10&sa=N&sstk=AS6-VmJQu0e0FLSIv3EHWlf4cH0CXqXEJBkUeKPnx2kimH-tMHn7wXpf9llm8q4A86Q2oREgxuAYFY1LgMTi6uDMqyfquZb9nGhIwA&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q8tMDegQITBAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=w2+code+tt&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&ei=sLS_aqHzLq-p4-EPvcqd8A4&start=20&sa=N&sstk=AS6-VmJQu0e0FLSIv3EHWlf4cH0CXqXEJBkUeKPnx2kimH-tMHn7wXpf9llm8q4A86Q2oREgxuAYFY1LgMTi6uDMqyfquZb9nGhIwA&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q8tMDegQITBAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=w2+code+tt&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&ei=sLS_aqHzLq-p4-EPvcqd8A4&start=30&sa=N&sstk=AS6-VmJQu0e0FLSIv3EHWlf4cH0CXqXEJBkUeKPnx2kimH-tMHn7wXpf9llm8q4A86Q2oREgxuAYFY1LgMTi6uDMqyfquZb9nGhIwA&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q8tMDegQITBAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=w2+code+tt&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&ei=sLS_aqHzLq-p4-EPvcqd8A4&start=40&sa=N&sstk=AS6-VmJQu0e0FLSIv3EHWlf4cH0CXqXEJBkUeKPnx2kimH-tMHn7wXpf9llm8q4A86Q2oREgxuAYFY1LgMTi6uDMqyfquZb9nGhIwA&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q8tMDegQITBAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=w2+code+tt&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&ei=sLS_aqHzLq-p4-EPvcqd8A4&start=50&sa=N&sstk=AS6-VmJQu0e0FLSIv3EHWlf4cH0CXqXEJBkUeKPnx2kimH-tMHn7wXpf9llm8q4A86Q2oREgxuAYFY1LgMTi6uDMqyfquZb9nGhIwA&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q8tMDegQITBAM
+      - text: "6"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=w2+code+tt&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQns1iVZsSvXsV8-WUUzoiwRZVZFV6Q:1790948528776&ei=sLS_aqHzLq-p4-EPvcqd8A4&start=10&sa=N&sstk=AS6-VmJQu0e0FLSIv3EHWlf4cH0CXqXEJBkUeKPnx2kimH-tMHn7wXpf9llm8q4A86Q2oREgxuAYFY1LgMTi6uDMqyfquZb9nGhIwA&ved=2ahUKEwihi_mWu5uXAxWv1DgGHT1lB-4Q8NMDegQITBAO
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - link "Send feedback":
+    - /url: "#"
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

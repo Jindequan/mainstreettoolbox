@@ -1,0 +1,264 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQPHoECAYQBA
+  - combobox "Search": qualified overtime tracking spreadsheet qualified overtime tracking spreadsheet
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dqualified%2Bovertime%2Btracking%2Bspreadsheet%26gl%3Dus%26hl%3Den&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nq-aQnTz_mBV-EZYISbLc-S3LQBbMYAGT8xXTqdTxRg035UMv2Z78Np7XNhc7R_0KDLpOk9LBXOLKOfTUeXYi8vwbQzxPoRPLg7Wg8n7dnWTU8xZYJttHjDToCxfQISOR4pr9zPLEQLe4W2O2PGIvvU_dK1jg&q=qualified+overtime+tracking+spreadsheet&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQtKgLegQIERAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nq-aQnTz_mBV-EZYISbLc-S3LQBbMYAGT8xXTqdTxRg035UMv2Z78Np7XNhc7R_0KDLpOk9LBXOLKOfTUeXYi8vwbQzxPoRPLg7Wg8n7dnWTU8xZYJttHjDToCxfQISOR4pr9zPLEQLe4W2O2PGIvvU_dK1jg&q=qualified+overtime+tracking+spreadsheet&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQtKgLegQIHBAB
+      - generic: Videos
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nq-aQnTz_mBV-EZYISbLc-S3LQBbMYAGT8xXTqdTxRg035UMv2Z78Np7XNhc7R_0KDLpOk9LBXOLKOfTUeXYi8vwbQzxPoRPLg7Wg8n7dnWTU8xZYJttHjDToCxfQISOR4pr9zPLEQLe4W2O2PGIvvU_dK1jg&q=qualified+overtime+tracking+spreadsheet&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&q=qualified+overtime+tracking+spreadsheet&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nq-aQnTz_mBV-EZYISbLc-S3LQBbMYAGT8xXTqdTxRg035UMv2Z78Np7XNhc7R_0KDLpOk9LBXOLKOfTUeXYi8vwbQzxPoRPLg7Wg8n7dnWTU8xZYJttHjDToCxfQISOR4pr9zPLEQLe4W2O2PGIvvU_dK1jg&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ0pQJegQIFxAB
+      - generic: News
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nq-aQnTz_mBV-EZYISbLc-S3LQBbMYAGT8xXTqdTxRg035UMv2Z78Np7XNhc7R_0KDLpOk9LBXOLKOfTUeXYi8vwbQzxPoRPLg7Wg8n7dnWTU8xZYJttHjDToCxfQISOR4pr9zPLEQLe4W2O2PGIvvU_dK1jg&q=qualified+overtime+tracking+spreadsheet&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQs6gLegQIExAB
+      - generic: Forums
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nq-aQnTz_mBV-EZYISbLc-S3LQBbMYAGT8xXTqdTxRg035UMv2Z78Np7XNhc7R_0KDLpOk9LBXOLKOfTUeXYi8vwbQzxPoRPLg7Wg8n7dnWTU8xZYJttHjDToCxfQISOR4pr9zPLEQLe4W2O2PGIvvU_dK1jg&q=qualified+overtime+tracking+spreadsheet&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQs6gLegQIEhAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Videos" [level=2]
+  - button "About this result":
+  - link "Overtime Tracker in Excel YouTube Excel Campus - Jon Nov 19, 2024":
+    - /url: /goto?url=CAESZQHrOzAV957yvDm-wj7dUz6T1bjff1LpJPTlLTsRXQAZ3Oxt693i_SI42HzfKchdiMklwR0Fzidrc01ICF-BHNN1mMOPPwK-6kObjFTQRY8o1dtmbq5kTaNERevuipVqoZfzpbnE
+    - heading "Overtime Tracker in Excel YouTube Excel Campus - Jon Nov 19, 2024" [level=3]:
+      - generic: Overtime Tracker in Excel
+      - text: YouTube
+      - generic: · Excel Campus - Jon
+      - generic: Nov 19, 2024
+  - text: YouTube
+  - generic: · Excel Campus - Jon
+  - button "About this result":
+  - button "Overtime Tracker in Excel by Excel Campus - Jon on YouTube. Play on Google. 0:44":
+    - generic: 0:44
+  - button "Calculate overtime in Excel by subtracting time in from time out, multiplying by 24, and subtracting 8. Use MAX to return zero.":
+    - generic: Calculate overtime in Excel by subtracting time in from time out, multiplying by 24, and subtracting 8. Use MAX to return zero.
+  - link "Overtime Tracker Excel Template for HR Analytics YouTube Erin at Time Saving Templates Aug 29, 2023":
+    - /url: /goto?url=CAESZgHrOzAVOC1QG9WwPpu3Aw2DqSDcMmxMiE3eVdfcPTf22-n-q5PqFuivqyM-EKAj2Y6sy372z7MtQgdPBWGhlf1PqsLpIpe9RfFl_q7yhHBy6ZGzYPzpEybk7QubeqMRUkOXQMfyjw
+    - heading "Overtime Tracker Excel Template for HR Analytics YouTube Erin at Time Saving Templates Aug 29, 2023" [level=3]:
+      - generic: Overtime Tracker Excel Template for HR Analytics
+      - text: YouTube
+      - generic: · Erin at Time Saving Templates
+      - generic: Aug 29, 2023
+  - text: YouTube
+  - generic: · Erin at Time Saving Templates
+  - button "About this result":
+  - button "Overtime Tracker Excel Template for HR Analytics by Erin at Time Saving Templates on YouTube. Play on Google. 14:11":
+    - generic: 14:11
+  - button "Learn how to use an Excel template to track employee overtime, analyze trends, and identify potential staffing needs.":
+    - generic: Learn how to use an Excel template to track employee overtime, analyze trends, and identify potential staffing needs.
+  - link "Create a sheet to record overtime from your schedule in Excel YouTube Barb Henderson Sep 11, 2022":
+    - /url: /goto?url=CAESZgHrOzAVpBYjr-lYCkge3wcfY0aoSUw3Qj6PY_HPjK8_FLMfEOxp3BuXRAueL4WP39L9D-UzT8QSp_LOtnv0ymJmjlDNt8PU1zRsXgvYvXj9f1bEPqTDxBWF5KJVCroJ-YnkUJR8ZA
+    - heading "Create a sheet to record overtime from your schedule in Excel YouTube Barb Henderson Sep 11, 2022" [level=3]:
+      - generic: Create a sheet to record overtime from your schedule in Excel
+      - text: YouTube
+      - generic: · Barb Henderson
+      - generic: Sep 11, 2022
+  - text: YouTube
+  - generic: · Barb Henderson
+  - button "About this result":
+  - button "Create a sheet to record overtime from your schedule in Excel by Barb Henderson on YouTube. Play on Google. 8:20":
+    - generic: 8:20
+  - button "Learn to create an Excel sheet that automatically calculates overtime from your schedule, including total hours for each employee.":
+    - generic: Learn to create an Excel sheet that automatically calculates overtime from your schedule, including total hours for each employee.
+  - link "View all videos":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&udm=vids&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&q=qualified+overtime+tracking+spreadsheet&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ8ccDKAJ6BAgYEAU
+    - separator
+    - generic: View all
+  - heading "People also ask" [level=2]
+  - button "How do I calculate qualified overtime tracking?":
+    - generic: How do I calculate qualified overtime tracking?
+  - button "How to record overtime in Excel?":
+    - generic: How to record overtime in Excel?
+  - button "How to check overtime in Excel?":
+    - generic: How to check overtime in Excel?
+  - text: "\"... ...\" \"... ...\""
+  - button "How to ot calculation?":
+    - generic: How to ot calculation?
+  - heading "Web results" [level=2]
+  - link "Free Employee Time Tracking Spreadsheets in Excel QuickBooks https://quickbooks.intuit.com › time-tracking › resources":
+    - /url: /goto?url=CAESjgEB6zswFdAXtVwQEt_8TAhUHLPb_F9KUeGRXQ4r5e7D3fVR-GeBnZpLA4FW67aM0di-ZiR34Jj5oIykAxyYASnmbNWBl7iy2GCRKGAAzEl3zQ0Chsc5By5iDzVEhF20hFF011ct9NLTwh3wOfHkI0wPSQ7DfionTksg6PojpRr6Q-dZZhrODK30w1HBBm-z
+    - heading "Free Employee Time Tracking Spreadsheets in Excel" [level=3]
+    - generic: QuickBooks
+    - generic: https://quickbooks.intuit.com › time-tracking › resources
+  - button "About this result":
+  - text: Download our free 2019
+  - emphasis: Excel
+  - text: timesheet
+  - emphasis: template
+  - text: to
+  - emphasis: track
+  - text: employee hours,
+  - emphasis: overtime
+  - text: ", vacation days, and more"
+  - link "Overtime tracker Excel template (free download) RosterElf https://www.rosterelf.com › overtime-tracker-excel":
+    - /url: /goto?url=CAESjgEB6zswFa7l60rP4pOOcgQL3D_H6KT9leHyuSVAMMMHQO6qUAfKSdr6g-bXT3ZRR_daBntOESFq-wV6B0dFv2Ng2lOC8BVmJGW53zDpS9gcOAyq5INIMkz3QlFHqwUwMv_W_j2VBmCpespua8-0bkBO83vqchNcvV1e74jmcZ8qEnb32OOfi1I1pe2CW7gX
+    - heading "Overtime tracker Excel template (free download)" [level=3]
+    - generic: RosterElf
+    - generic: https://www.rosterelf.com › overtime-tracker-excel
+  - button "About this result":
+  - generic: Sep 14, 2026 —
+  - emphasis: Free overtime tracker for Excel
+  - text: . Log regular vs overtime hours and total them with formulas, ready for payroll. No signup — works in Google ...
+  - link "Qualified Overtime Tracking Templates qualifiedovertime.com https://qualifiedovertime.com › templates":
+    - /url: /goto?url=CAESYwHrOzAVvNZEZQpkGy0te_XzUrhOConUrzS7G1sRMxrh2Zv1RYDQ_PuVuk1dro18Ujho6YIc9h8ymUPi6QMm43exMS0zmkpTQtzevSWX5CfcAPwDBl0PufpcKR3ctl9hUAv3Hw
+    - heading "Qualified Overtime Tracking Templates" [level=3]
+    - generic: qualifiedovertime.com
+    - generic: https://qualifiedovertime.com › templates
+  - button "About this result":
+  - text: Template pack contents ·
+  - emphasis: Employee tracking sheet
+  - text: . A pay-period worksheet for regular rate, overtime hours, overtime rate, statement reference, and method notes.
+  - link "Read more":
+    - /url: /goto?url=CAES2QEB6zswFZ8ZXpcKlWeGRe7nHZUNc2_JueUIcrJ20POjKl3xnfw54l875dne_dAql7lsTNgwxWgC19PSCdWyPor3grb-NsLH5y3DpFecP0mcA5-_dOT5-S5Zdp4SKBDtL42UXeVz8sp3I3jb9bQ8jfjrKaKkZeCSZAHUvs0OZThz0kciKrIZji0dkmsQEnvcfaU699Ix3SFCIMTRjm66fEAodo4OOJWH10DrpgFTxSwn4VPHkiYR-nrXAWy0AXBpoRiv6FZBjbPpNw6c8hcCrvmgSeDrKSFcHXsi
+  - link "Overtime Calculation Spreadsheet - Try Free Harvest https://www.getharvest.com › Time Tracking":
+    - /url: /goto?url=CAESggEB6zswFS7VupFCcp-jz-gc4TWoTVl1AEPUZBXDnSVsvlyqnMmLfvgT5mNYCrZMSBgy24tpXKumdmFzDs97fHDEyvYxORdkDMD1VUxv9GSF_K688cSJxED6d-h7jSB6tZ_J0XrT4ctL_XV1SttfwyCUFrX-XNS4yp1IyeqoFwh2G2ca
+    - heading "Overtime Calculation Spreadsheet - Try Free" [level=3]
+    - generic: Harvest
+    - generic: https://www.getharvest.com › Time Tracking
+  - button "About this result":
+  - text: The Harvest overtime calculation spreadsheet shows how to
+  - emphasis: track overtime hours separately from regular hours
+  - text: ", enhancing compliance and visibility."
+  - img "Rated 4.8 out of 5, (17,700) user reviews":
+    - text: "4.8"
+    - text: (17,700)
+  - link "Determine next-in line for overtime in Excel YouTube · Barb Henderson 1.8K+ views · 5 years ago":
+    - /url: /goto?url=CAESZgHrOzAVKO3hjjkc2_zkNMFKU5Y8UZBjf-0YPpUnBvBt7A5IZP9b8Q7sXg9-x607iqnDGasliPPfxrOzI39B2N_zKrLVEJNsvO93BPti0_kPDmsctjHzbJ-rqVoOnh_AWP0KnLAMAg
+    - heading "Determine next-in line for overtime in Excel" [level=3]
+    - generic: YouTube · Barb Henderson
+    - generic: 1.8K+ views · 5 years ago
+  - button "About this result":
+  - button "Determine next-in line for overtime in Excel by Barb Henderson on YouTube. Play on Google. 5:59":
+    - generic: 5:59
+  - generic: Determine next in line for overtime in Excel. Create a sheet to record overtime from your schedule in Excel. How to Calculate Overtime in Excel ...
+  - button "5 key moments in this video":
+    - generic: 5 key moments in this video
+  - link "Overtime Tracker in Excel Spreadsheet | by Rihot Gusron Medium · Rihot Gusron 2 years ago":
+    - /url: /goto?url=CAESjgEB6zswFaN_N2C0rih3rBM2rcrPq4DzuCFq1hN4tAJd_xZlDT_5sjwOWfQzKHEjzF_uRZtKzP8Mrckuwznp1tgtwHTxQLWTp8dPk4jQXOJyM-C7UIRQcTK3FNCEJkszv9UqL6TumK__8n1JQZeCZReddq-BvHzypUbrtVFFjG-qG3dB3_nsu8Un8b_iyXNc
+    - heading "Overtime Tracker in Excel Spreadsheet | by Rihot Gusron" [level=3]
+    - generic: Medium · Rihot Gusron
+    - generic: 2 years ago
+  - button "About this result":
+  - text: This sheet will be the main sheet to
+  - emphasis: calculate the overtime and the input data
+  - text: to the OT hour, hourly cost, and the total cost for each employee
+  - link "Free Overtime Tracker Excel Template (2026) User Solutions https://usersolutions.com › Excel Templates":
+    - /url: /goto?url=CAESdQHrOzAVf9vEiPoiZgZXQz3ei1MTyfLu-DDistZbxwvu7zErr_kKVFBw4PU8Z3Kg8L6pj17p8eNFGZZJF2CWbRZzhwfoZSBI9itoCnuEADg2nCoTrXp5nxxfRTdvJXqgaemFHIz4vMa-Hc2P2o1NoEffTZDOlA
+    - heading "Free Overtime Tracker Excel Template (2026)" [level=3]
+    - generic: User Solutions
+    - generic: https://usersolutions.com › Excel Templates
+  - button "About this result":
+  - emphasis: Free overtime tracker Excel template
+  - text: . Log OT by operator, work center, and reason. Reveal the recurring causes of overtime and reduce OT spend 20–30%.
+  - link "Excel Template for Qualified Overtime Etsy https://www.etsy.com › market › excel_template_for_q...":
+    - /url: /goto?url=CAESfAHrOzAVAqwC3dhj79ErIo5vuD-ZHGbDsTYYafUHowRQttfZ9BXl-s_ceRAZMo66uWsKKnHqEQ6STx5Zfwfi0qXW_n4baJz8mM9vkxYj-3w1cUSR7hNFjMg7TV79ry86r5jhf5aEGLvc9EfrIdM8nnx6csZF_w1bDoT7L_I
+    - heading "Excel Template for Qualified Overtime" [level=3]
+    - generic: Etsy
+    - generic: https://www.etsy.com › market › excel_template_for_q...
+  - button "About this result":
+  - text: Check out our
+  - emphasis: excel template for qualified overtime
+  - text: selection for the very best in unique or custom, handmade pieces from our templates shops.
+  - link "How to Automate Weekly Timesheet Template in Excel for Payroll YouTube · Sharon Smith 53.4K+ views · 2 years ago":
+    - /url: /goto?url=CAESbAHrOzAVA9e8qB-EUgM6yKIcDit9wPTTfO-Z-v8sbZjvV7euuF8ZaU9ScA1_fs_Sajf2PTfmnyI2YOMFG9vg2Qcpjy-mlJVIpNTEmoFhtySEFGyS5V6ZDDbGVEj33Po0DrdLGZAIPAI6LgD_Dg
+    - heading "How to Automate Weekly Timesheet Template in Excel for Payroll" [level=3]
+    - generic: YouTube · Sharon Smith
+    - generic: 53.4K+ views · 2 years ago
+  - button "About this result":
+  - button "How to Automate Weekly Timesheet Template in Excel for Payroll by Sharon Smith on YouTube. Play on Google. 9:29":
+    - generic: 9:29
+  - generic: How to automate a weekly employee timesheet in Excel using formulas to auto-populate the dates in the pay period, how to calculate time in and ...
+  - button "5 key moments in this video":
+    - generic: 5 key moments in this video
+  - heading "People also search for" [level=2]
+  - link "Monthly overtime sheet template Excel free download":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&q=Monthly+overtime+sheet+template+Excel+free+download&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ1QJ6BAhUEAE
+    - generic: Monthly overtime sheet template Excel free download
+  - link "Overtime log template Excel":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&q=Overtime+log+template+Excel&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ1QJ6BAhbEAE
+    - generic: Overtime log template Excel
+  - link "Monthly overtime sheet format in Excel":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&q=Monthly+overtime+sheet+format+in+Excel&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ1QJ6BAhaEAE
+    - generic: Monthly overtime sheet format in Excel
+  - link "Daily time tracking spreadsheet Excel free":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&q=Daily+time+tracking+spreadsheet+Excel+free&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ1QJ6BAhZEAE
+    - generic: Daily time tracking spreadsheet Excel free
+  - link "Overtime template Excel free download":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&q=Overtime+template+Excel+free+download&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ1QJ6BAhYEAE
+    - generic: Overtime template Excel free download
+  - link "Overtime tracker template":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&q=Overtime+tracker+template&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ1QJ6BAhXEAE
+    - generic: Overtime tracker template
+  - link "How to calculate overtime hours in Excel using IF function":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&q=How+to+calculate+overtime+hours+in+Excel+using+IF+function&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ1QJ6BAhWEAE
+    - generic: How to calculate overtime hours in Excel using IF function
+  - link "How to calculate overtime hours in Excel formula":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&q=How+to+calculate+overtime+hours+in+Excel+formula&sa=X&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ1QJ6BAhVEAE
+    - generic: How to calculate overtime hours in Excel formula
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=qualified+overtime+tracking+spreadsheet&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&ei=KLW_ar-NJNey4-EP4pi2uQE&start=10&sa=N&sstk=AS6-VmLcNB5DfGCoPdK2B5I6xogVDCShu9bmUbjNXQd1w1S-4rlJC0PZCxIIJAsPXf21BJYSxkcIo8LXmigXnmqRsdaxXA4lKpiqrQ&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ8tMDegQIUhAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=qualified+overtime+tracking+spreadsheet&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&ei=KLW_ar-NJNey4-EP4pi2uQE&start=20&sa=N&sstk=AS6-VmLcNB5DfGCoPdK2B5I6xogVDCShu9bmUbjNXQd1w1S-4rlJC0PZCxIIJAsPXf21BJYSxkcIo8LXmigXnmqRsdaxXA4lKpiqrQ&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ8tMDegQIUhAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=qualified+overtime+tracking+spreadsheet&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&ei=KLW_ar-NJNey4-EP4pi2uQE&start=30&sa=N&sstk=AS6-VmLcNB5DfGCoPdK2B5I6xogVDCShu9bmUbjNXQd1w1S-4rlJC0PZCxIIJAsPXf21BJYSxkcIo8LXmigXnmqRsdaxXA4lKpiqrQ&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ8tMDegQIUhAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=qualified+overtime+tracking+spreadsheet&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&ei=KLW_ar-NJNey4-EP4pi2uQE&start=40&sa=N&sstk=AS6-VmLcNB5DfGCoPdK2B5I6xogVDCShu9bmUbjNXQd1w1S-4rlJC0PZCxIIJAsPXf21BJYSxkcIo8LXmigXnmqRsdaxXA4lKpiqrQ&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ8tMDegQIUhAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=qualified+overtime+tracking+spreadsheet&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&ei=KLW_ar-NJNey4-EP4pi2uQE&start=50&sa=N&sstk=AS6-VmLcNB5DfGCoPdK2B5I6xogVDCShu9bmUbjNXQd1w1S-4rlJC0PZCxIIJAsPXf21BJYSxkcIo8LXmigXnmqRsdaxXA4lKpiqrQ&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ8tMDegQIUhAM
+      - text: "6"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=qualified+overtime+tracking+spreadsheet&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnuiw5AbLyiPcHQ1uQ8MaPe1-2wBRg:1790948648599&ei=KLW_ar-NJNey4-EP4pi2uQE&start=10&sa=N&sstk=AS6-VmLcNB5DfGCoPdK2B5I6xogVDCShu9bmUbjNXQd1w1S-4rlJC0PZCxIIJAsPXf21BJYSxkcIo8LXmigXnmqRsdaxXA4lKpiqrQ&ved=2ahUKEwi_wYrQu5uXAxVX2TgGHWKMLRcQ8NMDegQIUhAO
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - link "Send feedback":
+    - /url: "#"
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

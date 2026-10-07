@@ -1,0 +1,303 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQPHoECAYQBA
+  - combobox "Search": payrolling benefits in kind readiness checker payrolling benefits in kind readiness checker
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dpayrolling%2Bbenefits%2Bin%2Bkind%2Breadiness%2Bchecker%26newwindow%3D1%26sca_esv%3D657ce744dba959fb%26hl%3Den%26gl%3Dus%26biw%3D1280%26bih%3D720%26sxsrf%3DAPpeQnuDiv_zmkl093gwWJo0meTsiq81KQ%253A1790944839457%26ei%3DR6a_aoK7G_-z4-EPz9iMqAs%26ved%3D2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQ4dUDegQIBhAM%26uact%3D5%26oq%3Dpayrolling%2Bbenefits%2Bin%2Bkind%2Breadiness%2Bchecker%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiLXBheXJvbGxpbmcgYmVuZWZpdHMgaW4ga2luZCByZWFkaW5lc3MgY2hlY2tlckgUUABYAHAAeACQAQCYAQCgAQCqAQC4AQPIAQD4AQL4AQGYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE%26sclient%3Dgws-wiz-serp&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT0U_atBfRmMqrT1MCXu409g54jGOapnMt6elh2bebJrJGfw3RpxwTb36iGNXsxe3pYS_63FDayhs-ykHhTwTj_1Sc6t_Rg-0SGVm58c6nvUX1PIRHp2HDmuvIkw6duuDSxj_MGbeVtKL6odLH8hB_pIwzypWg&q=payrolling+benefits+in+kind+readiness+checker&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQs6gLegQIGRAB
+      - generic: Short videos
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT0U_atBfRmMqrT1MCXu409g54jGOapnMt6elh2bebJrJGfw3RpxwTb36iGNXsxe3pYS_63FDayhs-ykHhTwTj_1Sc6t_Rg-0SGVm58c6nvUX1PIRHp2HDmuvIkw6duuDSxj_MGbeVtKL6odLH8hB_pIwzypWg&q=payrolling+benefits+in+kind+readiness+checker&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQtKgLegQIGBAB
+      - generic: Videos
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=payrolling+benefits+in+kind+readiness+checker&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT0U_atBfRmMqrT1MCXu409g54jGOapnMt6elh2bebJrJGfw3RpxwTb36iGNXsxe3pYS_63FDayhs-ykHhTwTj_1Sc6t_Rg-0SGVm58c6nvUX1PIRHp2HDmuvIkw6duuDSxj_MGbeVtKL6odLH8hB_pIwzypWg&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ0pQJegQIFxAB
+      - generic: News
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&udm=imgs&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT0U_atBfRmMqrT1MCXu409g54jGOapnMt6elh2bebJrJGfw3RpxwTb36iGNXsxe3pYS_63FDayhs-ykHhTwTj_1Sc6t_Rg-0SGVm58c6nvUX1PIRHp2HDmuvIkw6duuDSxj_MGbeVtKL6odLH8hB_pIwzypWg&q=payrolling+benefits+in+kind+readiness+checker&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQtKgLegQIFhAB
+      - generic: Images
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT0U_atBfRmMqrT1MCXu409g54jGOapnMt6elh2bebJrJGfw3RpxwTb36iGNXsxe3pYS_63FDayhs-ykHhTwTj_1Sc6t_Rg-0SGVm58c6nvUX1PIRHp2HDmuvIkw6duuDSxj_MGbeVtKL6odLH8hB_pIwzypWg&q=payrolling+benefits+in+kind+readiness+checker&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQs6gLegQIFBAB
+      - generic: Forums
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT0U_atBfRmMqrT1MCXu409g54jGOapnMt6elh2bebJrJGfw3RpxwTb36iGNXsxe3pYS_63FDayhs-ykHhTwTj_1Sc6t_Rg-0SGVm58c6nvUX1PIRHp2HDmuvIkw6duuDSxj_MGbeVtKL6odLH8hB_pIwzypWg&q=payrolling+benefits+in+kind+readiness+checker&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "Getting ready for mandatory payrolling of benefits in kind GOV.UK https://www.gov.uk › guidance › getting-ready-for-ma...":
+    - /url: /goto?url=CAES7QEB6zswFRVdod1NLWpxArYfVWv4IzQVGp_-qtHRgIvUWoJAghIUWCAdtwYIR9VTw4aMzvG2kVLQSETEbcP3qZ-jhQVcjtKqqRO6FO-MEWkRI2crErGNXLY__e6JIaYuYDHoUKcrmiSkns1dzXVaGW_V8zSuWOmPgdXm-tWL5qUC8ed20_NMYBt8zG4LofnN38pks7Duu1hOhbPLkiPXa8bbrvrih3zW0GolwfVvE3qYEBAK885Wq-0jOwvhZfxmv-jQfmdnklgiJf3Y33pqWwwZhaMvTYxAjj27-ScHKJzhdXW-xQ1dIXnLJLStA0o
+    - heading "Getting ready for mandatory payrolling of benefits in kind" [level=3]
+    - generic: GOV.UK
+    - generic: https://www.gov.uk › guidance › getting-ready-for-ma...
+  - button "About this result":
+  - generic: Nov 26, 2025 —
+  - text: The deadline for registering to voluntarily
+  - emphasis: payroll
+  - text: non-mandatory BiKs will be 5 April 2027. HMRC will automatically remove the BiKs from ...
+  - link "Read more":
+    - /url: /goto?url=CAESlAIB6zswFfLGu1UFqbCH1pj4k-glYwVxO-0mHQJmVyEsuz96lsLtRpuvDk4MoNlWITQEuSt4LXPVqa8VhuI-OlDJkvBO3kjO5olriioIQEsr5ORLZng4xpqclzeY37s-L5LHvNIHd8kz8nOdRo025r9dwmZImKodt4EbvgmVaDEYiE7fpvJJsUU8rMoHmpRXcbafCELumrxDNURXd7E0a_vmvRfkGsOqqHJW--VinCublfs5ky75_wOXY0Bzn0eQomSyz8an2U4ahmrq1TlCqADA84o0VG-EA3Y2497FrRa4P0kuJ2Ab-hY3K_fJd_QSm-e-DGGIk_0abKq54JGUeS7FGAU1ok2R-GSRvnBanRVnIB0g1Xs
+  - link "Mandatory payrolling of benefits in kind and expenses GOV.UK https://www.gov.uk › guidance › draft-guidance-and-le...":
+    - /url: /goto?url=CAESsQEB6zswFc1MiZfJsE7qeLP0h6UhQITEX4_XsItxdss7Ho32AXNl8KCWAiEFJ-rRhSiqSEaTL7l0jgaWNXCaOaMOujsKkRrsi3Owfb7fRFD9gl_V8OLZHASHNXK34ejzyBy_Gded6Tumu84F8eYz90_-F9YMw6EHoRkUV080Rn_l3sQq-eIkZoM_Hmg3nrSnVmv6qcuFH9Ku7Wu18tPR9zqWHwzwwh4ITqXahsmLWHFdrXo
+    - heading "Mandatory payrolling of benefits in kind and expenses" [level=3]
+    - generic: GOV.UK
+    - generic: https://www.gov.uk › guidance › draft-guidance-and-le...
+  - button "About this result":
+  - generic: Nov 26, 2025 —
+  - text: Draft interim guidance and legislation to aid preparation for reporting
+  - emphasis: benefits in kind
+  - text: (BiKs) and expenses in real time, through
+  - emphasis: payroll
+  - text: ...
+  - text: "Missing: checker ‎| Show results with:"
+  - link "checker":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=payrolling+benefits+in+kind+readiness+%22checker%22&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ5t4CegQIKRAB
+  - 'link "UK Payrolling Benefits in Kind: 2027 Employer Guide Deel https://www.deel.com › blog › payrolling-benefits-in-ki..."':
+    - /url: /goto?url=CAEScQHrOzAVJxRJsb7E4oe64SNFTWumlAM9JCGiSpk3F41Hfn5w3klhukDRcyhn1FY9suAFfuk1akO1FyOwxlmHSALlyTM2bB1EJ8cW9nklu5ucR8bBqaYM3BQ-RIiAgjKnVWy2QksccAu4kJTUvL1PUfTJ
+    - 'heading "UK Payrolling Benefits in Kind: 2027 Employer Guide" [level=3]'
+    - generic: Deel
+    - generic: https://www.deel.com › blog › payrolling-benefits-in-ki...
+  - button "About this result":
+  - generic: Jul 20, 2026 —
+  - text: HMRC is mandating that
+  - emphasis: most benefits in kind be reported through payroll in real time
+  - text: ", ending annual P11D reporting"
+  - link "Payrolling Benefits in Kind from April 2027 | Employer Guide Price & Accountants https://priceandaccountants.com › payrolling-benefits-i...":
+    - /url: /goto?url=CAEScwHrOzAVIiwG6Ox6agBSv6GPGUuRyhp8X6ocT537QQSnlwXx9sp4RlBqR_8TKMvPHdpjUguS_bwY9GiYsAsBhaodtFxgYMP5KRH2gWwfoSAhTxxMCi4kp4cgOC5T5vwLykBdNLiJdCpDMeOS76opdAPEtzo
+    - heading "Payrolling Benefits in Kind from April 2027 | Employer Guide" [level=3]
+    - generic: Price & Accountants
+    - generic: https://priceandaccountants.com › payrolling-benefits-i...
+  - button "About this result":
+  - text: Prepare for
+  - emphasis: mandatory payrolling of benefits in kind from April 2027
+  - text: . Guidance on RTI, P11D, Class 1A NIC, company cars, fuel and medical benefits.
+  - 'link "Payrolling benefits in kind: What''s changing from April 2027 ... sage.com https://www.sage.com › en-gb › blog › what-are-payrol..."':
+    - /url: /goto?url=CAESfQHrOzAVFi8y0kx4Rxk1Cnv76IN7i1AKBzALC4tIhcHFeV6iPniLzh7Y1s1huPNORNyEeIkaPT4EfknUm7IdIFJFpYlhp9RcKnigbAXJ3_YAz108HIMKVSDoCWCcvOrC73IbFlL_-DSGfds7muexQWhKJgYXvVyzbxPQ-kf-
+    - 'heading "Payrolling benefits in kind: What''s changing from April 2027 ..." [level=3]'
+    - generic: sage.com
+    - generic: https://www.sage.com › en-gb › blog › what-are-payrol...
+  - button "About this result":
+  - generic: Jun 26, 2026 —
+  - text: HMRC has confirmed
+  - emphasis: payrolling benefits in kind is becoming mandatory in two phases
+  - text: ": from 6 April 2027 for certain kinds, and from 6 April 2028 ..."
+  - link "Read more":
+    - /url: /goto?url=CAES2QEB6zswFQahLC0R2QrN5k_bMdnbVFqge0-2o1q9WVqleK4AmO_GfgBrN_bCBn9VS-snBT4SAEdc28VIlN1jJrrlxeJ4ICZMqk-wNGsYh4Et-DsVtdgNG5mtfYg7t_H93pC8jiTNGFawOCkY9EoBrZLt1OFLFf_5nRR3S0RjzxMhBMeSiCB8quIDSZxXkLbEdu2nnwy1z_tMuaXfNl0vLxN2fiR5G423zBHON5UyhpIWiFNvg6Ok_Q_gQAX6FEZWD_-d4nWuXkMty4Ns3ozFXrnxBkRWnhs85CxX
+  - heading "Videos" [level=2]
+  - button "About this result":
+  - link "Mandatory Payrolling of Benefits in Kind from April 2027 YouTube Henderson Loggie 1 week ago":
+    - /url: /goto?url=CAESYwHrOzAVISPwGEc6bgft3zuH4e9CdlxJKFYLlcvtNtt1G_3k35DDm8wDWzHNe11Rw5DaHq0vcqz998saKZOoLMJqXgf_U-np3RvRo7j-LejEWccdk7q528Q1CVz2Tzb5Mgy7rA
+    - heading "Mandatory Payrolling of Benefits in Kind from April 2027 YouTube Henderson Loggie 1 week ago" [level=3]:
+      - generic: Mandatory Payrolling of Benefits in Kind from April 2027
+      - text: YouTube
+      - generic: · Henderson Loggie
+      - generic: 1 week ago
+  - text: YouTube
+  - generic: · Henderson Loggie
+  - button "About this result":
+  - button "Mandatory Payrolling of Benefits in Kind from April 2027 by Henderson Loggie on YouTube. Play on Google. 45:31":
+    - generic: 45:31
+  - link "How to prepare for payrolling benefits in kind | PKF Francis Clark YouTube PKF Francis Clark Feb 19, 2025":
+    - /url: /goto?url=CAESYwHrOzAVBZ_57xJsy6uskYJWBaynkJUBqFjT89k4OMIHY3ww7DBUJeEE6dusCTC7wG4h1Yudkxd72Wzv5IWtyknSIwaN37bqP6PIStRUO4BL5t9MwysA7_1aNLDD5lv9pwwZEw
+    - heading "How to prepare for payrolling benefits in kind | PKF Francis Clark YouTube PKF Francis Clark Feb 19, 2025" [level=3]:
+      - generic: How to prepare for payrolling benefits in kind | PKF Francis Clark
+      - text: YouTube
+      - generic: · PKF Francis Clark
+      - generic: Feb 19, 2025
+  - text: YouTube
+  - generic: · PKF Francis Clark
+  - button "About this result":
+  - button "How to prepare for payrolling benefits in kind | PKF Francis Clark by PKF Francis Clark on YouTube. Play on Google. 1:18:48":
+    - generic: 1:18:48
+  - link "Payrolling Benefits In Kind | TC Group YouTube TC Group Mar 3, 2025":
+    - /url: /goto?url=CAESYwHrOzAV69RBtQBZwKext_rcQG7mEv9hC-ZNKJMXDebYHhcjplHvlcxBPqHNEtSN6OmNYPb6sM6JKWSCHyy9_Gydafwi4_ZnCNqg4tkKwEl6Fx1fyzIDwOkbNNcghTIr6yWjfg
+    - heading "Payrolling Benefits In Kind | TC Group YouTube TC Group Mar 3, 2025" [level=3]:
+      - generic: Payrolling Benefits In Kind | TC Group
+      - text: YouTube
+      - generic: · TC Group
+      - generic: Mar 3, 2025
+  - text: YouTube
+  - generic: · TC Group
+  - button "About this result":
+  - button "Payrolling Benefits In Kind | TC Group by TC Group on YouTube. Play on Google. 4:04":
+    - generic: 4:04
+  - link "View all videos":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&udm=vids&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=payrolling+benefits+in+kind+readiness+checker&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ8ccDKAJ6BAhcEAU
+    - separator
+    - generic: View all
+  - heading "Web results" [level=2]
+  - link "Mandatory payrolling of benefits in kind from April 2027 Saffery https://www.saffery.com › Articles":
+    - /url: /goto?url=CAESmwEB6zswFRyg3gnPwXbYECJrN779Xa5Ye2wvSVMtLLl7Pb5fV8HJFdsebPVZ0cPYvN9IJANLv1UxyeXVdfrQLPXzPJeSmvcCghNyhGv95OHOqLH-eVcxAPohJ3SItKRz1gx89snHml809jplkwlh9VlIIjy73tWcIV46LUD2XW8u_tlgYJDuTTa-bsfHvchZ3uDnG1TeHPDde5U0IA
+    - heading "Mandatory payrolling of benefits in kind from April 2027" [level=3]
+    - generic: Saffery
+    - generic: https://www.saffery.com › Articles
+  - button "About this result":
+  - generic: Sep 3, 2026 —
+  - text: To assess your
+  - emphasis: payroll readiness
+  - text: and plan for mandatory
+  - emphasis: payrolling
+  - text: ", please speak to your usual Saffery contact or use this form to get in touch."
+  - link "Read more":
+    - /url: /goto?url=CAES6wEB6zswFXjs1XsvI6pg--jHoHV-lEZM3ccDSOKjFO917ixEsXBt2yyw_NDRqmWBY_MumdNEtmGlDaHFoOc0x5TZueqvMvvCuSwbUvndGL2a0qbx-HKd9rltnS8m-8Z7JHgNz4FLpXgTNZ1zzZ7vhbzaNy2LUaO3b_A8OsLx7Jq_H8oiOAifWvK0kC8oif5QX18Dk1V0npqfsVTH9xf6hrG2-2QOd6GaRZ1YFkDsa8LKf6rPTbWnuG1Q7uZFoJM7HdYYWF6iqst5zWFq_WRsRtV__S4-zWCkLC0C4HYuvwSUudActO16kIeoeioj
+  - text: "Missing: checker ‎| Show results with:"
+  - link "checker":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=payrolling+benefits+in+kind+readiness+%22checker%22&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ5t4CegQIVBAB
+  - 'link "Payrolling benefits in kind: what to fix before 2027 SCC Chartered Accountants https://scc-ca.com › news › payrolling-benefits-in-kind"':
+    - /url: /goto?url=CAESbAHrOzAVNn9pNGShpSjQ-de5K6TwpJYzU6RUTCYlb4Oiy9B92wLVP719EM7B21-FYroXVR59oSdAMJbC16KAUM8Gbc3U2MLTvsw4aFEVFHkLGUhzVuXw10O-CdjfbjODj7PrSu06FPuMR3Fj7w
+    - 'heading "Payrolling benefits in kind: what to fix before 2027" [level=3]'
+    - generic: SCC Chartered Accountants
+    - generic: https://scc-ca.com › news › payrolling-benefits-in-kind
+  - button "About this result":
+  - generic: Sep 9, 2026 —
+  - text: From 6 April 2027, mandatory
+  - emphasis: payrolling
+  - text: of
+  - emphasis: benefits in kind
+  - text: "will begin with five categories: company cars, car fuel, vans, van fuel and employer ..."
+  - link "Read more":
+    - /url: /goto?url=CAES0wEB6zswFdDQDQgR6zE2PnMp8ZLjqNHC4o68lSeslqe6Wk1Tl60LOWH8ukCy5HVENCUVoxeIIlmSRgcuzKtz8Eo6iTjAkhpJbehdTQ-qf6hMpD5fUIzKMyT4o0bdZ9eEH2ia4nvZhxmQaAvTOayyrc7jCX0Itikysat7sV_KpVmXXUr6p9ir2Tzidm5vbitIrt_R3WsupPP_S-IWVQ2v8dByd7Cmqf-SU4icAXBkURVVXbmYX1pmusSy3NEzfudryg9HhBOhW3IKrC-J1qYf3Ys6uxOo
+  - list:
+    - link "Mandatory Payrolling Starts...":
+      - /url: /goto?url=CAES9AEB6zswFZNpUCTbJ0VXBt79fUJJVmZX04cKIY0KKjhoSk7mPtuZMkdtTks1BJd12oohLdxBcTsATGpq0TVt7woKjyYB0tt4zs2o9fVPrKp7qGfmy-2Bb8Mc1fse_fdWfpZo7y9zSN5c8tvRutrCzRkgef1l_udUsByhgsCoRn_JJ4GruzvAsh5fhq4WGZz7onC5b6WM4C0RM3qVhRpbTNL6_RUrokQgU7YM_La-jvhHJ8fAjUgWOy2EGftX-JjiAwSFRIFwQ0NTB4n8FkSuJxA7Dpnt0OBHO7kUnF_zh5kK10GwS7GQvX5SHcdXyxA7WKEdBdvA
+      - generic: Mandatory Payrolling Starts...
+    - link "What To Do Before April 2027":
+      - /url: /goto?url=CAESmwEB6zswFYq0_JHY-h8RpRlg-Zebqf3_4GKXjDguaBq0rQraD0Xrq4CGRR4j4gLC-eRHWa_3flsiKaP6iwyjs-9HCSDYDU3DAPv-17jPntNx6gfKOqf9Nb0_Pt9UwLkJ6fFdNAiPxk7ZxYr8vUL1HkpZy69OXJQeKdhc2Tke6tc8V-bkOD8N-i4PJ20XBBWlBMoatS3z9y0klSOKxg
+      - generic: What To Do Before April 2027
+    - link "A Practical Example":
+      - /url: /goto?url=CAESjAEB6zswFZXcKxNK_gTY4PhALSiUrsHYpp6M4orqeQwpgm0FAsAPZesfuhRXPq0MVZ5A6kPHLxlGlfI1dMGSkKOnPFX54H0Oslt_qJbZv3CJ0ImY0blfcX6PRk13iPAJQOMa9Df_EfaXjXmCJoxtXDJfcJ01Qmi9_n1PFLf1C6hylim6DM9zhxbQ1EMsIw
+      - generic: A Practical Example
+  - link "Payrolling Benefits in Kind - What should you know? Menzies LLP https://www.menzies.co.uk › Insights":
+    - /url: /goto?url=CAESbgHrOzAVp2qIKwiK8XxrylY2Yj0-FtnKhbiPqQ50FV7q-n1zdhlU_Ph4bnsCPw4d7Mq0YaJzR4Eh_jE2trz_38dR6fBfykO7VX2MokfW5EVhWwa32oAXL0nCLA6Nuew0dWrb_AoJbGnof0ZnrXos
+    - heading "Payrolling Benefits in Kind - What should you know?" [level=3]
+    - generic: Menzies LLP
+    - generic: https://www.menzies.co.uk › Insights
+  - button "About this result":
+  - text: From April 2027,
+  - emphasis: payrolling benefits in kind will be made compulsory
+  - text: ", removing the need for employers to submit a P11D at end of the year."
+  - list:
+    - link "Hmrc Announces Phased...":
+      - /url: /goto?url=CAESvgEB6zswFQ0nmMivmKg1pCIolSKEtVabpvnzAhXUg9yOBObcbGOQqFTLPgxuyws2RwlD0IRjY7DcKXPuBL_6XXw5VO-1S01NoD63bXXEPxTfl3XA9-0_kwRXV67_YXQedrhwq4UStCmMiAhJXdCIyuJklHcAMR6OENU8ckr_VjgsngIqqBClAKTLGdHyM8hMDowmxCr9fRWw9i1ZO0qWWPBvp3K41ceYArR87abNA-84Ed6_387LRsGojpKjamHg
+      - generic: Hmrc Announces Phased...
+    - link "What Does This Mean For...":
+      - /url: /goto?url=CAESpQEB6zswFc6fw1mUASb5KWz3m6DkE4IGUIgxmNW9n5LQu1ILMoCAEz9Rw8_uiIHUisc6jYWNhHQkCBwKERv1KpMFBmlNWHl2TCjauefTKlujzufntEZcXQiuSMUuDIkBeFGU92UnNiJkiXS6IrC8PV2xGM6BzYvLmuWSIxCgug6NeP4xE4F6lxFCUnu9GYV0rInR8ZFW4cJJMjSKx41CAjGSpSyiZUw
+      - generic: What Does This Mean For...
+    - link "Preparing For The Transition":
+      - /url: /goto?url=CAESmQEB6zswFdKEcHZQ3X9XbJwmdCFEgSH55LWONZ7IE5iP_K9RYU3H9g6OEo0cr-zT-UXHDTGXppPrWxV63DLcRXB6TTIiP9TvKwOwP6ubih7HgoGcTdDh2HOL2SCGXIxDokqCJK-nq9HEeYMdcIjuZvjysdJYovnlLbIv73tW-ss7Tkh_KpbCUP7USgva2xdVRLfEOE4uji0SWk8
+      - generic: Preparing For The Transition
+  - text: "Missing: checker ‎| Show results with:"
+  - link "checker":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=payrolling+benefits+in+kind+readiness+%22checker%22&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ5t4CegQIWBAB
+  - heading "People also ask" [level=2]
+  - button "When can you start payrolling benefits?":
+    - generic: When can you start payrolling benefits?
+  - button "What is payrolling benefits in kind in the UK and when is it mandatory for employers?":
+    - generic: What is payrolling benefits in kind in the UK and when is it mandatory for employers?
+  - heading "Web results" [level=2]
+  - 'link "Payrolling Benefits in Kind: HMRC Phased Update Capture Expense https://captureexpense.com › blog › phased-payrolling-..."':
+    - /url: /goto?url=CAESewHrOzAVwvVsbPwcX0BmaHo6P5CH5yQ0UUmtLidGPJCpdLitcqcCw4OSIWB8skClFJGjs74BQkzoXwJPgO6VIulGlU6pcQ6G_btRnb0Y0widODdQc9EchHAE3Ffo74Z6aQFVL6k77PD93zl3xC_9f_f5wu9VmtsFo0P4Tw
+    - 'heading "Payrolling Benefits in Kind: HMRC Phased Update" [level=3]'
+    - generic: Capture Expense
+    - generic: https://captureexpense.com › blog › phased-payrolling-...
+  - button "About this result":
+  - generic: Jun 19, 2026 —
+  - text: Mandatory payrolling of benefits in kind starts
+  - emphasis: April 2027
+  - text: . Here's what finance teams need to know to prepare.
+  - heading "People also search for" [level=2]
+  - link "Mandating the reporting of benefits in kind and expenses through payroll software":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=Mandating+the+reporting+of+benefits+in+kind+and+expenses+through+payroll+software&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ1QJ6BAg9EAE
+    - generic: Mandating the reporting of benefits in kind and expenses through payroll software
+  - link "Is benefit in kind added to salary":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=Is+benefit+in+kind+added+to+salary&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ1QJ6BAhVEAE
+    - generic: Is benefit in kind added to salary
+  - link "How to pay benefit in kind":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=How+to+pay+benefit+in+kind&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ1QJ6BAhSEAE
+    - generic: How to pay benefit in kind
+  - link "Pay expenses through payroll":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=Pay+expenses+through+payroll&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ1QJ6BAhOEAE
+    - generic: Pay expenses through payroll
+  - link "Taxing employees benefits and expenses through your payroll webinar":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=Taxing+employees+benefits+and+expenses+through+your+payroll+webinar&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ1QJ6BAhLEAE
+    - generic: Taxing employees benefits and expenses through your payroll webinar
+  - link "New benefit in kind rules":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=New+benefit+in+kind+rules&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ1QJ6BAhJEAE
+    - generic: New benefit in kind rules
+  - link "Payroll changes 2026":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=Payroll+changes+2026&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ1QJ6BAhFEAE
+    - generic: Payroll changes 2026
+  - link "Payroll changes April 2026":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&q=Payroll+changes+April+2026&sa=X&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ1QJ6BAhDEAE
+    - generic: Payroll changes April 2026
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=payrolling+benefits+in+kind+readiness+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&ei=caa_asOfB_eX4-EPzNyQOA&start=10&sa=N&sstk=AS6-VmJ37SrKI02oDbcwRzRCFq20BVlatpjBIlb2W12CWUrsc0CFhoKGuPJPY0kR3ePjB_Ik4GKLFolV-5hwNv4nK1uprZ2Af3eYTQ&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ8tMDegQIWRAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=payrolling+benefits+in+kind+readiness+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&ei=caa_asOfB_eX4-EPzNyQOA&start=20&sa=N&sstk=AS6-VmJ37SrKI02oDbcwRzRCFq20BVlatpjBIlb2W12CWUrsc0CFhoKGuPJPY0kR3ePjB_Ik4GKLFolV-5hwNv4nK1uprZ2Af3eYTQ&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ8tMDegQIWRAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=payrolling+benefits+in+kind+readiness+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&ei=caa_asOfB_eX4-EPzNyQOA&start=30&sa=N&sstk=AS6-VmJ37SrKI02oDbcwRzRCFq20BVlatpjBIlb2W12CWUrsc0CFhoKGuPJPY0kR3ePjB_Ik4GKLFolV-5hwNv4nK1uprZ2Af3eYTQ&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ8tMDegQIWRAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=payrolling+benefits+in+kind+readiness+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&ei=caa_asOfB_eX4-EPzNyQOA&start=40&sa=N&sstk=AS6-VmJ37SrKI02oDbcwRzRCFq20BVlatpjBIlb2W12CWUrsc0CFhoKGuPJPY0kR3ePjB_Ik4GKLFolV-5hwNv4nK1uprZ2Af3eYTQ&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ8tMDegQIWRAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=payrolling+benefits+in+kind+readiness+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&ei=caa_asOfB_eX4-EPzNyQOA&start=50&sa=N&sstk=AS6-VmJ37SrKI02oDbcwRzRCFq20BVlatpjBIlb2W12CWUrsc0CFhoKGuPJPY0kR3ePjB_Ik4GKLFolV-5hwNv4nK1uprZ2Af3eYTQ&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ8tMDegQIWRAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=payrolling+benefits+in+kind+readiness+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&ei=caa_asOfB_eX4-EPzNyQOA&start=60&sa=N&sstk=AS6-VmJ37SrKI02oDbcwRzRCFq20BVlatpjBIlb2W12CWUrsc0CFhoKGuPJPY0kR3ePjB_Ik4GKLFolV-5hwNv4nK1uprZ2Af3eYTQ&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ8tMDegQIWRAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=payrolling+benefits+in+kind+readiness+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&ei=caa_asOfB_eX4-EPzNyQOA&start=70&sa=N&sstk=AS6-VmJ37SrKI02oDbcwRzRCFq20BVlatpjBIlb2W12CWUrsc0CFhoKGuPJPY0kR3ePjB_Ik4GKLFolV-5hwNv4nK1uprZ2Af3eYTQ&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ8tMDegQIWRAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=payrolling+benefits+in+kind+readiness+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&ei=caa_asOfB_eX4-EPzNyQOA&start=80&sa=N&sstk=AS6-VmJ37SrKI02oDbcwRzRCFq20BVlatpjBIlb2W12CWUrsc0CFhoKGuPJPY0kR3ePjB_Ik4GKLFolV-5hwNv4nK1uprZ2Af3eYTQ&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ8tMDegQIWRAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=payrolling+benefits+in+kind+readiness+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&ei=caa_asOfB_eX4-EPzNyQOA&start=90&sa=N&sstk=AS6-VmJ37SrKI02oDbcwRzRCFq20BVlatpjBIlb2W12CWUrsc0CFhoKGuPJPY0kR3ePjB_Ik4GKLFolV-5hwNv4nK1uprZ2Af3eYTQ&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ8tMDegQIWRAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=payrolling+benefits+in+kind+readiness+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvQwkZmIzlmYGs-EpKWjt_T8GBGYQ:1790944881125&ei=caa_asOfB_eX4-EPzNyQOA&start=10&sa=N&sstk=AS6-VmJ37SrKI02oDbcwRzRCFq20BVlatpjBIlb2W12CWUrsc0CFhoKGuPJPY0kR3ePjB_Ik4GKLFolV-5hwNv4nK1uprZ2Af3eYTQ&ved=2ahUKEwiDnM7LrZuXAxX3yzgGHUwuBAcQ8NMDegQIWRAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

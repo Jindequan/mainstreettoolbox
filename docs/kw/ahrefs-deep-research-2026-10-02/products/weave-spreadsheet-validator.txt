@@ -1,0 +1,104 @@
+- generic: DEFRA digital waste tracking is mandatory from October 2026.
+- link "Lock in £19 / site / month + VAT for 24 months — sign up free before January 2027 →":
+  - /url: https://app.weavecomply.com/auth/login?screen_hint=signup
+- banner:
+  - link "Weave Comply":
+    - /url: /
+    - img "Weave Comply"
+  - navigation "Primary":
+    - list:
+      - link "Product Tour":
+        - /url: /product-tour
+      - link "Pricing":
+        - /url: /#pricing
+      - link "Guide":
+        - /url: /guide/manual-reporting
+      - link "Contact":
+        - /url: /#contact
+      - link "Login":
+        - /url: https://app.weavecomply.com/auth/login
+      - link "Try for Free":
+        - /url: https://app.weavecomply.com/auth/login?screen_hint=signup
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - link "Home":
+        - /url: /
+      - listitem: /
+      - link "Spreadsheet validator":
+        - /url: /tools/spreadsheet-validator
+  - paragraph: Free tool
+  - heading "Validate your DEFRA waste receipt spreadsheet" [level=1]
+  - paragraph:
+    - text: Upload your filled
+    - emphasis: receipt-of-waste-template.xlsx
+    - text: and we'll run every rule DEFRA cares about — missing fields, invalid EWC codes, broken cross-references, hazardous and POPs consistency. You get a line-by-line report in seconds.
+  - generic: 1. Upload your filled receipt-of-waste spreadsheet
+  - button "Choose File"
+  - paragraph: .xlsx only. Up to 10 MB. We don't store your file — it's parsed in memory and discarded.
+  - generic: 2. Company name
+  - textbox "2. Company name":
+    - /placeholder: Acme Recycling Ltd
+  - generic: 3. Work email
+  - textbox "3. Work email":
+    - /placeholder: you@company.com
+  - button "Validate spreadsheet"
+  - paragraph: By submitting, you agree to be contacted by Weave Comply about UK waste tracking. We don't sell or share your details.
+  - heading "What we check" [level=2]
+  - list:
+    - listitem: • Required movement-level fields
+    - listitem: • Required item-level fields
+    - listitem: • EWC codes are real 6-digit DEFRA codes
+    - listitem: • Physical form / weight unit / yes-no values
+    - listitem: • At least one D/R code per item, and the code is valid
+    - listitem: • Hazardous = Yes implies HP codes present
+    - listitem: • POPs = Yes implies name and concentration
+    - listitem: • Asterisk EWCs must be hazardous
+    - listitem: • Every item ref exists on the movement sheet
+    - listitem: • Every movement has at least one item row
+    - listitem: • UK postcode format on site & carrier addresses
+    - listitem: • Date received parses and isn't in the future
+  - paragraph:
+    - text: Need to do this for hundreds of movements?
+    - link "See how Weave Comply automates the whole flow →":
+      - /url: /
+- contentinfo:
+  - link "Weave Comply":
+    - /url: /
+    - img "Weave Comply"
+  - paragraph: The one-stop shop for environmental reporting. UK-first, starting with DEFRA digital waste tracking.
+  - heading "Product" [level=3]
+  - list:
+    - link "Product tour":
+      - /url: /product-tour
+    - link "Pricing":
+      - /url: /#pricing
+    - link "Login / Sign up":
+      - /url: /access
+    - link "Contact":
+      - /url: /#contact
+  - heading "Resources" [level=3]
+  - list:
+    - link "Manual reporting guide":
+      - /url: /guide/manual-reporting
+    - link "UK waste tracking guide":
+      - /url: /guide/uk-waste-tracking
+    - link "EWC code lookup":
+      - /url: /guide/uk-waste-tracking/ewc-codes
+    - link "Spreadsheet validator":
+      - /url: /tools/spreadsheet-validator
+    - link "FAQs":
+      - /url: /guide/uk-waste-tracking/faqs
+  - heading "Get in touch" [level=3]
+  - list:
+    - link "Sales@WeaveComply.com":
+      - /url: mailto:Sales@WeaveComply.com
+  - paragraph:
+    - text: © 2026 Weave Comply. All rights reserved. ·
+    - button "Cookie preferences"
+  - paragraph:
+    - text: DEFRA reference data ©
+    - link "Crown copyright, OGL v3.0":
+      - /url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+    - text: .
+- alert: Free DEFRA waste reporting spreadsheet validator | Weave Comply

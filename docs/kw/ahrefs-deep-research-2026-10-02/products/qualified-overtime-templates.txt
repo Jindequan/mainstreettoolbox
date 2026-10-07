@@ -1,0 +1,125 @@
+- link "Skip to content":
+  - /url: "#main-content"
+- banner:
+  - link "Qualified Overtime home":
+    - /url: /
+    - generic: Qualified Overtime
+  - navigation "Primary navigation":
+    - link "Calculator":
+      - /url: /calculator/
+      - text: Calculator
+    - link "Templates":
+      - /url: /templates/
+      - text: Templates
+    - link "For employers":
+      - /url: /employers/
+      - text: For employers
+- main:
+  - paragraph: Template pack
+  - heading "Qualified overtime tracking templates" [level=1]
+  - paragraph: Download a free overtime record sheet for Excel or Google Sheets. Keep your estimates and the pay records behind them in one place. Email us about the planned paid pack.
+  - link "Download free tracking sheet":
+    - /url: /downloads/qualified-overtime-tracking.csv
+    - text: Download free tracking sheet
+  - link "Estimate my overtime premium":
+    - /url: /calculator/
+  - paragraph: Not affiliated with the IRS, Treasury, Department of Labor, payroll providers, or tax software vendors. For educational and tracking purposes only.
+  - figure:
+    - img "Concept illustration of blank tracking worksheets, colored dividers, and a white handoff envelope."
+  - heading "Free overtime record sheet" [level=2]
+  - paragraph: A blank CSV sheet for your workweek dates, regular rates, overtime hours, estimated premiums, and pay-statement references. It opens in Excel or Google Sheets. No account or email is required.
+  - paragraph: Keep different workweeks and rates on separate rows. This sheet does not calculate a tax deduction or replace payroll reporting. Use the calculator to download a record containing your current estimate.
+  - link "Download free tracking sheet":
+    - /url: /downloads/qualified-overtime-tracking.csv
+    - text: Download free tracking sheet
+  - heading "Template pack contents" [level=2]
+  - paragraph: The items below describe the planned pack for recordkeeping and tax-preparer review. It is not available for instant download or online purchase. Email us about availability. The pack does not file taxes or replace your payroll system.
+  - article:
+    - heading "Employee tracking sheet" [level=3]
+    - paragraph: A pay-period worksheet for regular rate, overtime hours, overtime rate, statement reference, and method notes.
+  - article:
+    - heading "Excel and Google Sheets formats" [level=3]
+    - paragraph: Planned Excel and Google Sheets layouts for a local copy or a shared worksheet.
+  - article:
+    - heading "2025 W-2 Box 14 checklist" [level=3]
+    - paragraph: A review list for 2025 reporting variations, employer statements, portal screenshots, and questions to ask payroll.
+  - article:
+    - heading "CPA handoff summary" [level=3]
+    - paragraph: A one-page summary of estimated qualified overtime compensation, caps, phase-out warning, source documents, and open issues.
+  - link "Ask about the template pack":
+    - /url: mailto:hello@qualifiedovertime.com?subject=Qualified%20Overtime%20template%20pack
+  - figure:
+    - img "A documented record packet and summary sheet gathered into an open envelope for professional handoff."
+  - heading "What is not included" [level=2]
+  - list:
+    - listitem: No promise that an amount is deductible on a specific return.
+    - listitem: No tax filing, legal, payroll, or accounting advice.
+    - listitem: No employer-of-record, payroll-provider, IRS, Treasury, or DOL affiliation.
+    - listitem: This website does not store employee payroll records.
+  - heading "When the template pack helps" [level=2]
+  - paragraph: The pack is useful when records are scattered across pay statements, payroll portals, and year-end forms.
+  - paragraph: It is also useful for employers who need a consistent internal checklist before responding to employee or preparer questions.
+  - generic "Related links":
+    - link "Employer workflow":
+      - /url: /employers/
+    - link "Qualified OT tracking guide":
+      - /url: /qualified-ot-tracking/
+  - region "Related qualified overtime guides":
+    - heading "Related qualified overtime guides" [level=2]
+    - link "Calculator":
+      - /url: /calculator/
+      - generic: Calculator
+    - link "Qualified OT tracking":
+      - /url: /qualified-ot-tracking/
+      - generic: Qualified OT tracking
+    - link "Terms and disclaimer":
+      - /url: /terms/
+      - generic: Terms and disclaimer
+  - region "Review the official guidance directly":
+    - paragraph: Official sources
+    - paragraph: Source baseline checked 2026-09-08
+    - heading "Review the official guidance directly" [level=2]
+    - article:
+      - 'heading "IRS FAQ FS-2026-13: Qualified overtime compensation deduction" [level=3]'
+      - paragraph: Defines qualified overtime compensation, FLSA overtime eligibility, deduction limits, reporting rules, and taxpayer requirements.
+      - paragraph: Internal Revenue Service | FAQ
+      - link "View official source":
+        - /url: https://www.irs.gov/pub/taxpros/fs-2026-13.pdf
+    - article:
+      - 'heading "IRS overview: No Tax on Overtime deduction" [level=3]'
+      - paragraph: Summarizes the deduction cap, MAGI phase-out thresholds, Social Security number rule, and 2025 reporting note.
+      - paragraph: Internal Revenue Service | Overview
+      - link "View official source":
+        - /url: https://www.irs.gov/newsroom/what-to-know-about-the-no-tax-on-overtime-deduction
+    - article:
+      - heading "IRS Notice 2025-69" [level=3]
+      - paragraph: Provides 2025 methods for individuals estimating qualified overtime compensation when separate reporting is not available.
+      - paragraph: Internal Revenue Service | Notice
+      - link "View official source":
+        - /url: https://www.irs.gov/pub/irs-drop/n-25-69.pdf
+    - article:
+      - heading "2026 Instructions for Forms W-2 and W-3" [level=3]
+      - paragraph: Explains 2026 Form W-2 reporting, including Box 12 code TT for qualified overtime compensation.
+      - paragraph: Internal Revenue Service | Instructions
+      - link "View official source":
+        - /url: https://www.irs.gov/instructions/iw2w3
+    - article:
+      - heading "DOL overtime overview" [level=3]
+      - paragraph: Explains the FLSA overtime baseline for covered, nonexempt employees working over 40 hours in a workweek.
+      - paragraph: U.S. Department of Labor | Guidance
+      - link "View official source":
+        - /url: https://www.dol.gov/agencies/whd/overtime
+  - complementary "Important disclaimer":
+    - heading "Important disclaimer" [level=2]
+    - paragraph: This site helps you estimate qualified overtime compensation and organize supporting records. It does not file tax returns or provide tax, legal, payroll, accounting, or employment-law advice. Your deduction depends on personal tax rules. Review the estimate with a qualified tax professional.
+    - generic "Read calculator and source-use limits"
+- contentinfo:
+  - paragraph: QualifiedOvertime.com
+  - paragraph: Check your overtime premium and keep the pay records your tax professional needs.
+  - navigation "Footer navigation":
+    - link "Privacy":
+      - /url: /privacy/
+    - link "Terms":
+      - /url: /terms/
+    - link "Official sources":
+      - /url: "#official-sources"

@@ -1,0 +1,16 @@
+{
+  "seed_country_queries": 20,
+  "queries_with_ideas": 19,
+  "queries_without_ideas": 1,
+  "raw_rows": 325,
+  "unique_country_keywords": 324,
+  "excluded_rows": 113,
+  "clean_unique_candidates": 211,
+  "qualified_new_opportunities": 0,
+  "cpc_status": "unavailable",
+  "growth_status": "unavailable",
+  "google_query_snapshots": 10,
+  "organic_rank_status": "not_a_complete_localized_rank_export",
+  "account_access": "401 Unauthorized",
+  "actual_remaining_api_units": null
+}

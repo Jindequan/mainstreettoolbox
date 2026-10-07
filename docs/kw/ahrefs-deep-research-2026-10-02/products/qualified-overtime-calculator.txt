@@ -1,0 +1,189 @@
+- link "Skip to content":
+  - /url: "#main-content"
+- banner:
+  - link "Qualified Overtime home":
+    - /url: /
+    - generic: Qualified Overtime
+  - navigation "Primary navigation":
+    - link "Guides":
+      - /url: /what-is-qualified-ot-tracking/
+      - text: Guides
+    - link "Templates":
+      - /url: /templates/
+      - text: Templates
+    - link "For employers":
+      - /url: /employers/
+      - text: For employers
+- main:
+  - region "Qualified OT tracking calculator":
+    - heading "Qualified OT tracking calculator" [level=1]
+    - paragraph: Use your pay records to estimate the FLSA overtime premium. The result is before deduction caps, income phase-outs, and other personal tax limits.
+    - link "IRS FS-2026-13":
+      - /url: https://www.irs.gov/pub/taxpros/fs-2026-13.pdf
+      - text: IRS FS-2026-13
+    - generic: Checked Sep 8, 2026
+    - group "Calculate from":
+      - generic: Calculate from
+      - radio "Hours & rate" [checked]
+      - text: Hours & rate
+      - radio "Pay-stub total"
+      - text: Pay-stub total
+      - radio "Reported amount"
+      - text: Reported amount
+    - generic: Tax year
+    - combobox "Tax year":
+      - option "2025"
+      - option "2026" [selected]
+      - option "2027"
+      - option "2028"
+    - generic: Period
+    - combobox "Period":
+      - option "One workweek" [selected]
+      - option "Annual total"
+    - generic: FLSA regular rate / hour
+    - generic: $
+    - spinbutton "FLSA regular rate / hour"
+    - generic: OT hours over 40 this week
+    - spinbutton "OT hours over 40 this week"
+    - generic: Use the regular rate for each workweek.
+    - button "Where do I find this?":
+      - text: Where do I find this?
+    - generic: FLSA overtime eligible?
+    - link "What does this mean?":
+      - /url: https://www.dol.gov/agencies/whd/overtime
+      - text: What does this mean?
+    - combobox "FLSA overtime eligible?":
+      - option "Not sure yet" [selected]
+      - option "Confirmed eligible"
+      - option "Not eligible"
+    - paragraph: Confirm covered, nonexempt status with payroll.
+    - button "Calculate estimate":
+      - text: Calculate estimate
+    - button "Reset calculator":
+    - generic "Personal deduction limits (annual)":
+      - text: Personal deduction limits
+      - generic: (annual)
+    - option "Single" [disabled] [selected]
+    - option "Married filing jointly" [disabled]
+    - option "Head of household" [disabled]
+    - option "Married filing separately" [disabled]
+    - text: Start with your pay records
+    - button "Try an example"
+    - complementary "Your estimate":
+      - heading "Your estimate" [level=2]
+      - paragraph:
+        - text: Start with the numbers
+        - text: on your pay record.
+      - paragraph: Your qualified overtime estimate and the calculation behind it will appear here.
+      - button "See a worked example":
+        - text: See a worked example
+      - paragraph: For educational and tracking purposes. Not affiliated with the IRS. Consult a tax professional before filing.
+    - status
+  - region "Find the right number on your pay stub":
+    - heading "Find the right number on your pay stub" [level=2]
+    - link "What does Qualified OT Tracking mean?":
+      - /url: /what-is-qualified-ot-tracking/
+      - text: What does Qualified OT Tracking mean?
+    - figure "Sample only. Payroll layouts vary.":
+      - 'img "Sample pay stub highlighting $360 of time-and-a-half overtime pay: eight hours at $45 with a $30 regular rate."'
+      - generic: Sample only. Payroll layouts vary.
+    - paragraph: A STANDARD TIME-AND-A-HALF EXAMPLE
+    - heading "The premium is one part of your overtime pay." [level=3]:
+      - text: The premium is one part
+      - text: of your overtime pay.
+    - paragraph: At a $30 regular rate, 8 overtime hours pay $360. Of that, $240 is the regular-rate portion and $120 is the half-time premium.
+    - paragraph:
+      - text: $30.00 × 0.5 × 8 hours =
+      - strong: $120.00
+    - paragraph: Assumes FLSA-covered, nonexempt overtime in one workweek. Personal limits and reporting rules still apply.
+    - button "Use these example numbers":
+      - text: Use these example numbers
+  - heading "Choose the method that fits your records" [level=2]
+  - paragraph: Use a separately reported qualified amount if you have one. Otherwise, choose total overtime pay or enter your regular rate and hours. Keep the statement you used so payroll or your tax preparer can check the result.
+  - article:
+    - heading "Separate FLSA premium" [level=3]
+    - paragraph: If a statement separately reports the FLSA overtime premium, use that amount as the starting estimate.
+  - article:
+    - heading "Total time-and-a-half overtime" [level=3]
+    - paragraph: For standard time-and-a-half pay, the premium is one third of total overtime earnings. The rest is the regular pay for those hours.
+  - article:
+    - heading "Higher overtime rate" [level=3]
+    - paragraph: If overtime was paid above time-and-a-half, the estimate should isolate only the FLSA-required half-time premium portion.
+  - article:
+    - heading "No separate statement" [level=3]
+    - paragraph: If no annual statement is available, estimate from regular rate and overtime hours, then keep notes showing why that method was used.
+  - heading "How to read the result" [level=2]
+  - paragraph: The result estimates your qualified overtime compensation. Your deduction may be lower because of annual caps, income limits, or other tax rules.
+  - paragraph: For an annual total, you can also review the filing-status cap and check whether your MAGI may trigger a phase-out warning.
+  - generic "Related links":
+    - link "Learn how tracking works":
+      - /url: /qualified-ot-tracking/
+    - link "Prepare a CPA handoff":
+      - /url: /templates/
+  - figure:
+    - img "Four pay-period record sheets connected by a teal ribbon to a bound annual record."
+  - heading "Documentation checklist" [level=2]
+  - list:
+    - listitem: Annual W-2, Form 1099, portal statement, or separate employer statement.
+    - listitem: Pay statements showing regular rate, overtime hours, overtime rate, and pay period.
+    - listitem: Notes explaining the selected method and any regular-rate approximation.
+    - listitem: Questions for a tax professional about taxpayer eligibility, filing status, SSN rules, and phase-out.
+  - region "Related qualified overtime guides":
+    - heading "Related qualified overtime guides" [level=2]
+    - link "Deduction rules and limits":
+      - /url: /qualified-overtime-deduction/
+      - generic: Deduction rules and limits
+    - link "Tracking template pack":
+      - /url: /templates/
+      - generic: Tracking template pack
+    - link "Employer reporting workflow":
+      - /url: /employers/
+      - generic: Employer reporting workflow
+  - region "Review the official guidance directly":
+    - paragraph: Official sources
+    - paragraph: Source baseline checked 2026-09-08
+    - heading "Review the official guidance directly" [level=2]
+    - article:
+      - 'heading "IRS FAQ FS-2026-13: Qualified overtime compensation deduction" [level=3]'
+      - paragraph: Defines qualified overtime compensation, FLSA overtime eligibility, deduction limits, reporting rules, and taxpayer requirements.
+      - paragraph: Internal Revenue Service | FAQ
+      - link "View official source":
+        - /url: https://www.irs.gov/pub/taxpros/fs-2026-13.pdf
+    - article:
+      - 'heading "IRS overview: No Tax on Overtime deduction" [level=3]'
+      - paragraph: Summarizes the deduction cap, MAGI phase-out thresholds, Social Security number rule, and 2025 reporting note.
+      - paragraph: Internal Revenue Service | Overview
+      - link "View official source":
+        - /url: https://www.irs.gov/newsroom/what-to-know-about-the-no-tax-on-overtime-deduction
+    - article:
+      - heading "IRS Notice 2025-69" [level=3]
+      - paragraph: Provides 2025 methods for individuals estimating qualified overtime compensation when separate reporting is not available.
+      - paragraph: Internal Revenue Service | Notice
+      - link "View official source":
+        - /url: https://www.irs.gov/pub/irs-drop/n-25-69.pdf
+    - article:
+      - heading "2026 Instructions for Forms W-2 and W-3" [level=3]
+      - paragraph: Explains 2026 Form W-2 reporting, including Box 12 code TT for qualified overtime compensation.
+      - paragraph: Internal Revenue Service | Instructions
+      - link "View official source":
+        - /url: https://www.irs.gov/instructions/iw2w3
+    - article:
+      - heading "DOL overtime overview" [level=3]
+      - paragraph: Explains the FLSA overtime baseline for covered, nonexempt employees working over 40 hours in a workweek.
+      - paragraph: U.S. Department of Labor | Guidance
+      - link "View official source":
+        - /url: https://www.dol.gov/agencies/whd/overtime
+  - complementary "Important disclaimer":
+    - heading "Important disclaimer" [level=2]
+    - paragraph: This site helps you estimate qualified overtime compensation and organize supporting records. It does not file tax returns or provide tax, legal, payroll, accounting, or employment-law advice. Your deduction depends on personal tax rules. Review the estimate with a qualified tax professional.
+    - generic "Read calculator and source-use limits"
+- contentinfo:
+  - paragraph: QualifiedOvertime.com
+  - paragraph: Check your overtime premium and keep the pay records your tax professional needs.
+  - navigation "Footer navigation":
+    - link "Privacy":
+      - /url: /privacy/
+    - link "Terms":
+      - /url: /terms/
+    - link "Official sources":
+      - /url: "#official-sources"

@@ -1,0 +1,234 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQPHoECAYQBA
+  - combobox "Search": cbam 50 tonne threshold checker cbam 50 tonne threshold checker
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dcbam%2B50%2Btonne%2Bthreshold%2Bchecker%26newwindow%3D1%26sca_esv%3D657ce744dba959fb%26hl%3Den%26gl%3Dus%26biw%3D1280%26bih%3D720%26sxsrf%3DAPpeQnu-uKnbVLfGQzTLjPQDXZgT94HlhA%253A1790944598442%26ei%3DVqW_asi_GsGt4-EP_PS1wA8%26ved%3D2ahUKEwjIwujErJuXAxXB1jgGHXx6DfgQ4dUDegQIBhAM%26uact%3D5%26oq%3Dcbam%2B50%2Btonne%2Bthreshold%2Bchecker%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiH2NiYW0gNTAgdG9ubmUgdGhyZXNob2xkIGNoZWNrZXJIDFAAWABwAHgBkAEAmAEAoAEAqgEAuAEDyAEA-AEC-AEBmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB%26sclient%3Dgws-wiz-serp&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&udm=imgs&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJeDOBOSXJfy23fhf4tlUSPJN_p149c20MiBoCYgsKB8amFclUImkROFfu6Ic1mAB9yeozEhrW3mCKFh-5zLF93IdrmpHw&q=cbam+50+tonne+threshold+checker&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQtKgLegQIGBAB
+      - generic: Images
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJeDOBOSXJfy23fhf4tlUSPJN_p149c20MiBoCYgsKB8amFclUImkROFfu6Ic1mAB9yeozEhrW3mCKFh-5zLF93IdrmpHw&q=cbam+50+tonne+threshold+checker&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJeDOBOSXJfy23fhf4tlUSPJN_p149c20MiBoCYgsKB8amFclUImkROFfu6Ic1mAB9yeozEhrW3mCKFh-5zLF93IdrmpHw&q=cbam+50+tonne+threshold+checker&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQtKgLegQIFRAB
+      - generic: Videos
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&q=cbam+50+tonne+threshold+checker&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJeDOBOSXJfy23fhf4tlUSPJN_p149c20MiBoCYgsKB8amFclUImkROFfu6Ic1mAB9yeozEhrW3mCKFh-5zLF93IdrmpHw&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ0pQJegQIFhAB
+      - generic: News
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJeDOBOSXJfy23fhf4tlUSPJN_p149c20MiBoCYgsKB8amFclUImkROFfu6Ic1mAB9yeozEhrW3mCKFh-5zLF93IdrmpHw&q=cbam+50+tonne+threshold+checker&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQs6gLegQIFxAB
+      - generic: Forums
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJeDOBOSXJfy23fhf4tlUSPJN_p149c20MiBoCYgsKB8amFclUImkROFfu6Ic1mAB9yeozEhrW3mCKFh-5zLF93IdrmpHw&q=cbam+50+tonne+threshold+checker&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQs6gLegQIGRAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "CBAM 50-tonne threshold checker cbampulse.com https://cbampulse.com › tools › cbam-threshold-checker":
+    - /url: /goto?url=CAESagHrOzAVRCqwalh5xB0GfUh4fARXb4BQ43rDvHOfNZTQb6bez7rsXOQtRJwSr-ApLBKEeGCtnU6QjXDn-UJoEebx9a5wRGGiDv9boVAMWDPMEEmxc8Swimgww5NBtbJxQMU4US_zKadbn-k
+    - heading "CBAM 50-tonne threshold checker" [level=3]
+    - generic: cbampulse.com
+    - generic: https://cbampulse.com › tools › cbam-threshold-checker
+  - button "About this result":
+  - generic: Jul 3, 2026 —
+  - text: This free checker
+  - emphasis: adds up your annual net mass per legal entity
+  - text: and shows where you stand against that threshold. It computes nothing else, ...
+  - link "EU CBAM goods checker cbamreports.com https://cbamreports.com › cbamchecker":
+    - /url: /goto?url=CAESWwHrOzAVx6ylJ5bo6gR3UdDKdfc3sIu3gjqJVxHlKiNHKpT3nOkh6avqwttFHzuf3dndm9BBEhJdHfsf_ARG2W6DId2NlzgNt1yYDrPfCDuAhVFC4axaqNSm_oo
+    - heading "EU CBAM goods checker" [level=3]
+    - generic: cbamreports.com
+    - generic: https://cbamreports.com › cbamchecker
+  - button "About this result":
+  - emphasis: Check
+  - text: if your goods are subject to EU
+  - emphasis: CBAM
+  - text: . Enter your CN/HS code into the
+  - emphasis: CBAM
+  - text: "CheckerTM below: exceed the"
+  - emphasis: "50"
+  - text: "-"
+  - emphasis: tonne threshold
+  - text: . See official version here.
+  - link "Carbon Border Adjustment Mechanism (CBAM) Taxation and Customs Union https://taxation-customs.ec.europa.eu › carbon-border-a...":
+    - /url: /goto?url=CAESgwEB6zswFR4b6vfkwI6lcfBwecn2a8kX4zFRz1fKccHR5m8N4QzEGPHKZk6fa26CrMwHX4vSMquDwqAu04OdF3GJ2bXnLJptoHKZ5NZ1aTlbufwdbdUxIaH0_ce-jwenLVm2jPJpO9aoUGyfEWdQLKTnqN-HZ3iuTMveWApXZin5zEeVwQ
+    - heading "Carbon Border Adjustment Mechanism (CBAM)" [level=3]
+    - generic: Taxation and Customs Union
+    - generic: https://taxation-customs.ec.europa.eu › carbon-border-a...
+  - button "About this result":
+  - text: The Carbon Border Adjustment Mechanism (
+  - emphasis: CBAM
+  - text: ) is the EU's tool to address carbon leakage by ensuring that the price of imports reflects their embedded carbon ...
+  - 'link "CBAM De Minimis Threshold: The 50-Tonne Rule Explained cbamguide.com https://cbamguide.com › Compliance"':
+    - /url: /goto?url=CAESZAHrOzAVj-SFTLhiCabNTG678ivm4z1RCvF3Y4aHzRcxc_1rghvs5dt0zqEpiCy0Y6FCI5sESWrNvjvAh26OADCTMmUjjYkjorV1EAk_MeuxRaMHPYJmRDgaXmmhb1PMC-majaA
+    - 'heading "CBAM De Minimis Threshold: The 50-Tonne Rule Explained" [level=3]'
+    - generic: cbamguide.com
+    - generic: https://cbamguide.com › Compliance
+  - button "About this result":
+  - text: The CBAM de minimis threshold exempts EU importers from all CBAM obligations when their
+  - emphasis: total annual mass of CBAM goods falls below 50 tonnes per calendar year
+  - text: .
+  - heading "People also ask" [level=2]
+  - button "What goods are subject to the CBAM threshold of 50 tonnes per year?":
+    - generic: What goods are subject to the CBAM threshold of 50 tonnes per year?
+  - button "What are CBAM benchmark values?":
+    - generic: What are CBAM benchmark values?
+  - button "Who is exempt from CBAM?":
+    - generic: Who is exempt from CBAM?
+  - button "Is CBAM still in effect?":
+    - generic: Is CBAM still in effect?
+  - heading "Web results" [level=2]
+  - 'link "CBAM Exemptions Explained: What the De Minimis Threshold ... sustainable-markets.com https://www.sustainable-markets.com › Blog"':
+    - /url: /goto?url=CAESswEB6zswFaZtrGYE27RiYB5RTqYNFF4z5Ny3eRSC1-DXIMaoqBSFlrbHZYJdPBRE-itBm1R75i12mgw5e31CCcsXUjipVef6F-KHVHB27nIW5nZFRl0UVpF37z4aS9TM8Z21Ut7b98_oPFS6VYDMRGFJZ4QEyzkTDms7LaGI3oLzcji86ZT5lgHmvLSPMm_H6XJbWNrygwIW20h0Q6lp-_BZYPO2Y0G6Ki-GPoTN94o7xQp-Iw
+    - 'heading "CBAM Exemptions Explained: What the De Minimis Threshold ..." [level=3]'
+    - generic: sustainable-markets.com
+    - generic: https://www.sustainable-markets.com › Blog
+  - button "About this result":
+  - generic: Apr 29, 2025 —
+  - text: EU importers are exempt from
+  - emphasis: CBAM
+  - text: obligations when their total imports of covered
+  - emphasis: CBAM
+  - text: goods remain below
+  - emphasis: 50 tonnes
+  - text: per year, per importer ( ...
+  - text: "Missing: checker ‎| Show results with:"
+  - link "checker":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&q=cbam+50+tonne+threshold+%22checker%22&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ5t4CegQIThAB
+  - link "Understanding the CBAM 50-Tonne Exemption (2026-2027) eumarketready.com https://eumarketready.com › blog › cbam-50-tonne-exe...":
+    - /url: /goto?url=CAESbgHrOzAVY5lXeoD5gGA5Qef4g4VFGIAUZyCMURra0i9LvME9ZTEkFBKNnt6C1nrmJNs497Q8FuaE-nDRhYrVkhF_J1AT7f8qtEAW6274x2IOI66n8YN6ih3KMNKEWM6uTtdt8Etu4dQ-mT8RkemC
+    - heading "Understanding the CBAM 50-Tonne Exemption (2026-2027)" [level=3]
+    - generic: eumarketready.com
+    - generic: https://eumarketready.com › blog › cbam-50-tonne-exe...
+  - button "About this result":
+  - generic: Oct 26, 2025 —
+  - emphasis: How to Calculate Your Tonnage
+  - text: "· Step 1: Identify CBAM-Covered Products · Step 2: Sum Gross Mass · Step 3: Monitor Threshold."
+  - link "Read more":
+    - /url: /goto?url=CAESogIB6zswFYL9X3zkkDKLZq1o6BywrIhGPW57VQkoVSYNk8MkOVfvSL-ICOfLetO20P2WUsclVyP9acJFCRCaAcA4kxkNF-feqd95brjQN0J9S069B3nW4Go9SSKe5z0XRhZx8_RHDchmQK8cAV-aufh7IAwSmj9ilhwDRK1gL8NX-o5pVemVFtJIJKvu6dJIkkQchsX5FpS-52VDu9KB-KavFrVy-lejMGA_EQjVUMsn7agXOmIOBfzT66ax6gAzIXnqvACkZaWp_gNZJHRHOY9JGZJnEklEr0GMkmCL5LEpWW8dW7LeCaS6G9pSB7ll87EthfI_CslOLmNmujJPgBvMxTcinchuF47_u6jVVzNC3qNvkC7ovEVE1ZSzlLb1My8YfA
+  - link "CBAM Compliance Timeline - CBAM Calculator cbam-calculator.eu https://cbam-calculator.eu › compliance":
+    - /url: /goto?url=CAESXgHrOzAV2H6AxU5_MH8nJYbHdfwJWCOBXixCokipOHXQd9ZZYowyapFNneSmvCI4fuBV-aGljSu3s2CDLh7MMr_6vpTtdnR2_AjyFftSYXqhTGtbYSCg9nSgvLNHH-o
+    - heading "CBAM Compliance Timeline - CBAM Calculator" [level=3]
+    - generic: cbam-calculator.eu
+    - generic: https://cbam-calculator.eu › compliance
+  - button "About this result":
+  - text: "!Verify you exceed (or are under) the"
+  - emphasis: 50 tonne
+  - text: de minimis
+  - emphasis: threshold
+  - text: annually •Request verified emission data from your suppliers •Set up internal tracking ...
+  - link "CBAM Applicability Calculator & Eligibility Estimator brightest.io https://www.brightest.io › cbam-eligibility-calculator":
+    - /url: /goto?url=CAESbQHrOzAVMX1R7hJ9oHBopqpntJi7xVxzhLxm-eGOt9HKV89ipWsw9_1UWGVFKfKKF5RkfUo1P79KhYzRkfD8Jv1JPqPlqTtMmTtdg-gzp3YSINDfXifWjGf12lM0jpR0kVF4sE8OpgW5FInawzU
+    - heading "CBAM Applicability Calculator & Eligibility Estimator" [level=3]
+    - generic: brightest.io
+    - generic: https://www.brightest.io › cbam-eligibility-calculator
+  - button "About this result":
+  - emphasis: Use our free CBAM applicability and eligibility calculator
+  - text: to see whether the EU Carbon Border Adjustment Mechanism (CBAM) applies to your imports.
+  - link "Read more":
+    - /url: /goto?url=CAESxgEB6zswFX_6tfdUcMrLXqtMffPnDs_8rNwfL4jZr6n9h-AWEONYvREC1xfjcAA7M3Kczm8Qts9ydKUBc6TsAk6WSsbt2eGlf-XjEeck6DxZGHt10rgcuQMRF7Yyi8HJRwvTqVqLoAPQEgi_aUZv2eSZ7mHsxpk00lhCdcsZcb748fsp0xiOtkM4PXhlolpspF4QpnNN9V0z6aUcYv6ffrTT7G_kVJzk7BTuvQ4E9Yg5uEmeJ_ZLfgayrqOz6xestrbdFmFZ2CI
+  - generic: "Missing: 50 ‎tonne"
+  - link "Do the new CBAM rules apply to you? The 50-tonne threshold ... cbam-assured.com https://cbam-assured.com › resources › do-the-new-cba...":
+    - /url: /goto?url=CAESngEB6zswFYf9hKD22NHuVsAkoaaX-WeI9zW8MYI0kG5Vv126ybhD3tIQZdOk-YkvM2762MJWba3Y0e1B4Ci5slomLhmGJx4FIawgG1Tc8iYWTQrWk1lFaTVcDeHqc-RIYgpNzaLRG24p4II31lfutgr2SIIAcwKEwJne9gDCdTDkKdNhoCDyUbdbjcHVdvHpruNDHT-Sqh8jV0QaiLymIQ
+    - heading "Do the new CBAM rules apply to you? The 50-tonne threshold ..." [level=3]
+    - generic: cbam-assured.com
+    - generic: https://cbam-assured.com › resources › do-the-new-cba...
+  - button "About this result":
+  - text: If your total annual net imports of
+  - emphasis: CBAM
+  - text: goods stay below
+  - emphasis: 50 tonnes
+  - text: ", you are fully outside the mechanism. That means no reporting, no authorisation and no ..."
+  - link "Read more":
+    - /url: /goto?url=CAES9gEB6zswFSNWmD1S3DDkdIsouSzfnRrRPQ1TxoUOm9-fC3S9bP0wcx2Aizc3DCxFNtvVKIEyFnaEyCaIoUZj9gGNRUdNVNQ8BOMD6ZYET1SOlv1HPq2JUsZkiE_huMsELpcSsPGzHzrMih1e8f_efIzbIl8Qs8L9F7daJIU7R1u6ValYQvwpoC7g_0NHGLyauZCLPZHvzeJspWJPn0Fn4-IJ3518lRXsTonri4zxGTTCM92mNAqjIaTAIawhBiFa-DToKWOaK3IfAain0Z-KH-edyFS15XjxHQTF53vYzLmt3pd4d5dX7LORtsXk_p2qyv2r654SPPA
+  - text: "Missing: checker ‎| Show results with:"
+  - link "checker":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&q=cbam+50+tonne+threshold+%22checker%22&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ5t4CegQIURAB
+  - link "CBAM | Your Guide to the EU Carbon Border Adjustment ... CarbonChain https://www.carbonchain.com › cbam":
+    - /url: /goto?url=CAESWAHrOzAVJ0SeRVYhLRCT_edEDzAxxM1FVO8Xe4dKZojflUeylQU0H2VNIhvfQKOjNpZLPy2NWofjYo8AQ0d1ZKoomqeti7h4z15Z4ZCEdq8yz0s4_1EiNuA
+    - heading "CBAM | Your Guide to the EU Carbon Border Adjustment ..." [level=3]
+    - generic: CarbonChain
+    - generic: https://www.carbonchain.com › cbam
+  - button "About this result":
+  - text: Your practical guide to
+  - emphasis: CBAM
+  - text: compliance. Understand what's changing in 2026, calculate your costs, and learn how to prepare.
+  - heading "People also search for" [level=2]
+  - link "CBAM checker":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&q=CBAM+checker&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ1QJ6BAg1EAE
+    - generic: CBAM checker
+  - link "CBAM reporting template":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&q=CBAM+reporting+template&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ1QJ6BAg7EAE
+    - generic: CBAM reporting template
+  - link "CBAM Regulation":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&q=CBAM+Regulation&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ1QJ6BAg8EAE
+    - generic: CBAM Regulation
+  - link "CBAM Registry":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&q=CBAM+Registry&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ1QJ6BAhBEAE
+    - generic: CBAM Registry
+  - link "CBAM declarant portal":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&q=CBAM+declarant+portal&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ1QJ6BAhAEAE
+    - generic: CBAM declarant portal
+  - link "CBAM Portal":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&q=CBAM+Portal&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ1QJ6BAg4EAE
+    - generic: CBAM Portal
+  - link "CBAM Regulation pdf":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&q=CBAM+Regulation+pdf&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ1QJ6BAg3EAE
+    - generic: CBAM Regulation pdf
+  - link "CBAM simplification":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&q=CBAM+simplification&sa=X&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ1QJ6BAg2EAE
+    - generic: CBAM simplification
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=cbam+50+tonne+threshold+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&ei=eaW_atzgOJib4-EPkrDP2Ak&start=10&sa=N&sstk=AS6-VmLbB-hcE1-0fMxGVaLqUOYUKUX6eU-9Il6H5HZSxUTFsFjEkUvn1RUkaqDABwQtgbh4PzQksmKjwKc74XTau6mOHJ0ewogsYg&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ8tMDegQIMxAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=cbam+50+tonne+threshold+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&ei=eaW_atzgOJib4-EPkrDP2Ak&start=20&sa=N&sstk=AS6-VmLbB-hcE1-0fMxGVaLqUOYUKUX6eU-9Il6H5HZSxUTFsFjEkUvn1RUkaqDABwQtgbh4PzQksmKjwKc74XTau6mOHJ0ewogsYg&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ8tMDegQIMxAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=cbam+50+tonne+threshold+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&ei=eaW_atzgOJib4-EPkrDP2Ak&start=30&sa=N&sstk=AS6-VmLbB-hcE1-0fMxGVaLqUOYUKUX6eU-9Il6H5HZSxUTFsFjEkUvn1RUkaqDABwQtgbh4PzQksmKjwKc74XTau6mOHJ0ewogsYg&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ8tMDegQIMxAI
+      - text: "4"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=cbam+50+tonne+threshold+checker&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A:1790944633936&ei=eaW_atzgOJib4-EPkrDP2Ak&start=10&sa=N&sstk=AS6-VmLbB-hcE1-0fMxGVaLqUOYUKUX6eU-9Il6H5HZSxUTFsFjEkUvn1RUkaqDABwQtgbh4PzQksmKjwKc74XTau6mOHJ0ewogsYg&ved=2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ8NMDegQIMxAK
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

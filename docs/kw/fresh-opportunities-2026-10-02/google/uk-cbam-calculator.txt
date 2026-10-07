@@ -1,0 +1,213 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8QPHoECAYQBA
+  - combobox "Search": uk cbam calculator uk cbam calculator
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Duk%2Bcbam%2Bcalculator%26newwindow%3D1%26sca_esv%3D657ce744dba959fb%26hl%3Den%26gl%3Dus%26biw%3D1280%26bih%3D720%26sxsrf%3DAPpeQnsga5ZfjqoIcTpOtjCOkHBOIVDj1A%253A1790944633936%26ei%3DeaW_atzgOJib4-EPkrDP2Ak%26ved%3D2ahUKEwicgd_VrJuXAxWYzTgGHRLYE5sQ4dUDegQIBhAM%26uact%3D5%26oq%3Duk%2Bcbam%2Bcalculator%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiEnVrIGNiYW0gY2FsY3VsYXRvckgNUABYAHAAeAGQAQCYAQCgAQCqAQC4AQPIAQD4AQL4AQGYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE%26sclient%3Dgws-wiz-serp&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&udm=imgs&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJegBZ_c7DJaWGUhzWcLUe7xiY0SN8j-2FrBD22eAej1aQeKiNIeh3-nrksGJiz2lGuP-ss7qxuJLfaGhCyXfKiiiJRvMA&q=uk+cbam+calculator&sa=X&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8QtKgLegQIGRAB
+      - generic: Images
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJegBZ_c7DJaWGUhzWcLUe7xiY0SN8j-2FrBD22eAej1aQeKiNIeh3-nrksGJiz2lGuP-ss7qxuJLfaGhCyXfKiiiJRvMA&q=uk+cbam+calculator&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJegBZ_c7DJaWGUhzWcLUe7xiY0SN8j-2FrBD22eAej1aQeKiNIeh3-nrksGJiz2lGuP-ss7qxuJLfaGhCyXfKiiiJRvMA&q=uk+cbam+calculator&sa=X&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8QtKgLegQIFxAB
+      - generic: Videos
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&q=uk+cbam+calculator&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJegBZ_c7DJaWGUhzWcLUe7xiY0SN8j-2FrBD22eAej1aQeKiNIeh3-nrksGJiz2lGuP-ss7qxuJLfaGhCyXfKiiiJRvMA&sa=X&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q0pQJegQIFBAB
+      - generic: News
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJegBZ_c7DJaWGUhzWcLUe7xiY0SN8j-2FrBD22eAej1aQeKiNIeh3-nrksGJiz2lGuP-ss7qxuJLfaGhCyXfKiiiJRvMA&q=uk+cbam+calculator&sa=X&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Qs6gLegQIFhAB
+      - generic: Forums
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYQR84vEJkyW62ul7Q3Bkhu9i-p_ALr7slx3OYYzZdb8Ie3_0xt4GO-v5dZLSACYYJegBZ_c7DJaWGUhzWcLUe7xiY0SN8j-2FrBD22eAej1aQeKiNIeh3-nrksGJiz2lGuP-ss7qxuJLfaGhCyXfKiiiJRvMA&q=uk+cbam+calculator&sa=X&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Qs6gLegQIFRAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "CBAM calculator, estimate your certificate costs kolum.earth https://www.kolum.earth › cbam-calculator":
+    - /url: /goto?url=CAESXwHrOzAVEiwEG9I0zc6LoS0ihcLLztwPYrI1ForQFCpCZL8B5gY4mdXo0NKCLca5o25X-oZYoesbwR3Kf8Rcx49UgTVT73gdX4zFZXljOdfAhn_uRXM0yjvsTKxd34vW
+    - heading "CBAM calculator, estimate your certificate costs" [level=3]
+    - generic: kolum.earth
+    - generic: https://www.kolum.earth › cbam-calculator
+  - button "About this result":
+  - text: Estimate your CBAM certificate costs by product and country of origin.
+  - emphasis: Use the free kolum calculator
+  - text: to see your exposure in just a few clicks.
+  - link "CBAM Proof — UK Carbon Border Adjustment Mechanism ... cbamproof.co.uk https://www.cbamproof.co.uk":
+    - /url: /goto?url=CAESVAHrOzAV4A0UZT6Ycz7QpN0P0tC1DAkn-gJNTZFewt0d39Pcr9p4aL210ddJtOw5pPBB1G0RBG-OV2J7t2fReXkJUQNax9cRLV1EnZK0kmSyt4ypCQ
+    - heading "CBAM Proof — UK Carbon Border Adjustment Mechanism ..." [level=3]
+    - generic: cbamproof.co.uk
+    - generic: https://www.cbamproof.co.uk
+  - button "About this result":
+  - emphasis: Free UK CBAM calculator
+  - text: for steel, aluminium, cement, fertiliser & hydrogen importers. Know your 2027 liability in 90 seconds. Board-ready audit in 48 hrs.
+  - link "Work out your Carbon Price Relief GOV.UK https://www.gov.uk › guidance › work-out-your-carbo...":
+    - /url: /goto?url=CAESdQHrOzAVZQS-K22igcOmREBL2r4mMp5hLtKPDcFJFpgM0G-9jO8loMBVDUyvyjyjIJsuXWmGcg9zFsrja7JjHyx7M1zAsTBMiGCN9PlRp8czTfA1tvWoeDswERxToTmpJVPmdDBQoVvejtMmKzVjqhjuWg5w-w
+    - heading "Work out your Carbon Price Relief" [level=3]
+    - generic: GOV.UK
+    - generic: https://www.gov.uk › guidance › work-out-your-carbo...
+  - button "About this result":
+  - generic: Jul 16, 2026 —
+  - text: Find out how to work out your Carbon Price Relief for the Carbon Border Adjustment Mechanism (
+  - emphasis: CBAM
+  - text: ). 60,000 tCO2e free allowances = $10.30 per ...
+  - 'link "CBAM Calculator: EU & UK Carbon Border Cost - SteelMath steelmath.com https://steelmath.com › CBAM Hub"':
+    - /url: /goto?url=CAESXQHrOzAVyPeXrV8DX3wtfKvO-cVsFqRCOsXxNT3dzOvG4VYML9ip6lj8NZeBeeZea2m7cToi5CVvp7_QBjP9lp8k-JhHCQWRYUihkE8Wtxqfxsuu2M3gtUfVQvzI6g
+    - 'heading "CBAM Calculator: EU & UK Carbon Border Cost - SteelMath" [level=3]'
+    - generic: steelmath.com
+    - generic: https://steelmath.com › CBAM Hub
+  - button "About this result":
+  - emphasis: Free CBAM cost calculator
+  - text: for EU and UK regimes, iron & steel, aluminium, cement, fertilisers and hydrogen. Country default intensities, carbon-price ...
+  - link "CBAM Calculator | Estimate UK CBAM Liability & Carbon Costs cbamjournal.com https://www.cbamjournal.com › calculator":
+    - /url: /goto?url=CAESXgHrOzAV_QMXoMyNcF8Oy0MccYfoSkeKuU4tq4iCjtg-wID_Fd5YDa72_5_3sAun5JLaQWtfrOK1f7qM2xo3la-rEtDhB6GEFIU2fWpIcSjOLOnH4QWMN-_aYSzqrSg
+    - heading "CBAM Calculator | Estimate UK CBAM Liability & Carbon Costs" [level=3]
+    - generic: cbamjournal.com
+    - generic: https://www.cbamjournal.com › calculator
+  - button "About this result":
+  - emphasis: Use the CBAM Calculator
+  - text: to estimate UK CBAM liability, embedded emissions costs, and carbon price adjustments for imported goods.
+  - 'link "UK CBAM Cost Calculator: Steel Import Pricing ... LinkedIn · Nick Ogilvie 90+ reactions · 1 month ago"':
+    - /url: /goto?url=CAESlgEB6zswFRPQ_JOd6XVToK48JnMiB0LEXhrC3AMDnrUoeq-ZRqlC7XHH8uNI5fAIccBj8N4Y2GlZiP9lyMA3IWE5aKx7xrEWWnitLe4nimpN0YO7F5Zb1CPGlMaD4OqABAMmfhvx5rZre3ggN_oRqa9Xr6tMWfeD770tT93b0mDrXtlMDik4CO5kLb5Qj69RnP4FrCEsaLI
+    - 'heading "UK CBAM Cost Calculator: Steel Import Pricing ..." [level=3]'
+    - generic: LinkedIn · Nick Ogilvie
+    - generic: 90+ reactions · 1 month ago
+  - button "About this result":
+  - text: This article explains how much UK CBAM costs will be for importers of steel.
+  - emphasis: UK CBAM costs of £4.50/tCO2e for the steel sector
+  - text: ", closer to £25- ..."
+  - heading "People also ask" [level=2]
+  - button "Is there a UK CBAM?":
+    - generic: Is there a UK CBAM?
+  - button "What is the difference between EU CBAM and UK CBAM?":
+    - generic: What is the difference between EU CBAM and UK CBAM?
+  - button "How is CBAM tax calculated?":
+    - generic: How is CBAM tax calculated?
+  - button "Does UK CBAM include electricity?":
+    - generic: Does UK CBAM include electricity?
+  - heading "Web results" [level=2]
+  - link "Calculate Your UK CBAM Exposure - Churchill Carbon churchill-carbon.com https://churchill-carbon.com › cbam-calculator":
+    - /url: /goto?url=CAESZAHrOzAVs4gWieMx7m7G9z2_H4jGtzHZaEMaNf1fAIL-1POlS2vzK8i1uRJyLXz1Pkl9ELFWmmEy2C_7LcdDCJ_2Ad653s23BHEdccQd9CKYsU52WWm884t4vC6PrTOLmBioqzQ
+    - heading "Calculate Your UK CBAM Exposure - Churchill Carbon" [level=3]
+    - generic: churchill-carbon.com
+    - generic: https://churchill-carbon.com › cbam-calculator
+  - button "About this result":
+  - text: Exposure Calculator
+  - emphasis: Estimate your UK CBAM liability
+  - text: under default vs. actual emissions values. Used to determine overseas carbon price offsets. enter it here ...
+  - link "Calculate Your CBAM Cost in Seconds Below280 https://below280.com › cbam-calculator":
+    - /url: /goto?url=CAESXQHrOzAVqVWUsLUbGj-4Gpmm3gh_nurFQsps3AkPBNiZYoHcSih5IVMBI54mmXQrsR-D12n5C8jrdGMr9L6oP2gNpcnRWYDANO2uE53Oox6Mj1IUEJo-BiPKEuBDgQ
+    - heading "Calculate Your CBAM Cost in Seconds" [level=3]
+    - generic: Below280
+    - generic: https://below280.com › cbam-calculator
+  - button "About this result":
+  - text: Instant Calculations.
+  - emphasis: Real-time CBAM cost calculations for EU and UK regimes
+  - text: ; Scenario Planning. Model different carbon prices and phase-out years ; 7 Sectors ...
+  - link "Read more":
+    - /url: /goto?url=CAES-wEB6zswFX2OgYGSLnug8lzUF1v57tbJYWA-KOD7KwwEGTAVjYZt9squuojWE0zdNI9kZ02g1M1qogN04vGjlGRnBq8b2yxbwL3rP0K4RtDuY_zqIWUjTvb7hyVkpDcZGuQT5FDlc9EO_ljQJQvx0tObxqApL8z4dgsRNsFiXkkE4R2oQcZB64L6P4WxgE7UOzasFdmp_a4mREmy_57beXtLCFXB_hYNWwW1o_Jo9M6Azk1HmC7QAyWv9QZxhBN-C5xHtaJgxhdq9R5I0RE41IN8HNg6domAFK3a0BIFKpRHDN8cgqy6JEH_jmYp-XYP1WM4Xkskq7dpd_CwQA
+  - link "CBAM Calculator cbamengine.co.uk https://cbamengine.co.uk":
+    - /url: /goto?url=CAESUQHrOzAV-OhSmU5kl0wQ_TloPzQp034IDVMO5ob9VglDUBdPmjsM8tySRKy8XsZVuGHk2kk3vJLlOKSzDfSDsIhzlkij9GYur5EORALnNA2W0Q
+    - heading "CBAM Calculator" [level=3]
+    - generic: cbamengine.co.uk
+    - generic: https://cbamengine.co.uk
+  - button "About this result":
+  - emphasis: Quick CBAM cost per tonne
+  - text: . Pick a product, enter tonnes, choose default or custom factors. Instant CBAM cost using current EU certificate price and phase-in (φ) ...
+  - link "Read more":
+    - /url: /goto?url=CAESrwEB6zswFcLKdnj6-9OtvWJI1Tc2tat7OVOYR42N4xkIZpHmBanW1eKWwdqEwbl4eOPe0L0k-K7cDaUWBS-KlEZsDGjO9XUkSWJpvaJSJPmbGSBp2Ru-sPCCpTR4d2-Cqqy-n_VAbj1DeVmIeIAkJq4-LWH7NqIgPkDMnWjIGNUUe1REQmdi9YENmCM8xtt6QI3E-2Nir_JIFoBfChH1JX1jFLa2X03_pwInqyae6KdQ
+  - link "CBAM Carbon Cost Calculator OneCargoKit https://onecargokit.com › tools › cbam-calc":
+    - /url: /goto?url=CAESXwHrOzAVs3B6k6Q4xKHqKf0MtsBsvZipO1VpD-av5nPvs7ulcEo2fNIHsSVjjGCMSPT3hsaqtwjtDx4VaV4UhFTLf0ABmoRr4p46MJ31MJ3tvrs4BowEfP9nIgCHVwJX
+    - heading "CBAM Carbon Cost Calculator" [level=3]
+    - generic: OneCargoKit
+    - generic: https://onecargokit.com › tools › cbam-calc
+  - button "About this result":
+  - emphasis: Calculate CBAM
+  - text: carbon border adjustment costs for imports into the EU and
+  - emphasis: UK
+  - text: . Covers cement, steel, aluminium, fertilisers, electricity, hydrogen, ceramics, ...
+  - heading "People also search for" [level=2]
+  - link "Uk cbam calculator gov":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&q=Uk+cbam+calculator+gov&sa=X&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q1QJ6BAgrEAE
+    - generic: Uk cbam calculator gov
+  - link "CBAM calculator free":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&q=CBAM+calculator+free&sa=X&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q1QJ6BAguEAE
+    - generic: CBAM calculator free
+  - link "CBAM calculation formula":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&q=CBAM+calculation+formula&sa=X&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q1QJ6BAgsEAE
+    - generic: CBAM calculation formula
+  - link "CBAM Calculator Excel":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&q=CBAM+Calculator+Excel&sa=X&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q1QJ6BAgtEAE
+    - generic: CBAM Calculator Excel
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=uk+cbam+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&ei=r6W_au3KGLqy4-EP98Xq-Qo&start=10&sa=N&sstk=AS6-VmJJ2xrbZ6BvySUQeXRrqaAzveqknRha9k4ODWe9CZegqtdmnyH9TdTm9eycHtDE3RATtaZ4-z51SxYrWqgXICDb6NmNrWIadA&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q8tMDegQIKhAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=uk+cbam+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&ei=r6W_au3KGLqy4-EP98Xq-Qo&start=20&sa=N&sstk=AS6-VmJJ2xrbZ6BvySUQeXRrqaAzveqknRha9k4ODWe9CZegqtdmnyH9TdTm9eycHtDE3RATtaZ4-z51SxYrWqgXICDb6NmNrWIadA&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q8tMDegQIKhAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=uk+cbam+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&ei=r6W_au3KGLqy4-EP98Xq-Qo&start=30&sa=N&sstk=AS6-VmJJ2xrbZ6BvySUQeXRrqaAzveqknRha9k4ODWe9CZegqtdmnyH9TdTm9eycHtDE3RATtaZ4-z51SxYrWqgXICDb6NmNrWIadA&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q8tMDegQIKhAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=uk+cbam+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&ei=r6W_au3KGLqy4-EP98Xq-Qo&start=40&sa=N&sstk=AS6-VmJJ2xrbZ6BvySUQeXRrqaAzveqknRha9k4ODWe9CZegqtdmnyH9TdTm9eycHtDE3RATtaZ4-z51SxYrWqgXICDb6NmNrWIadA&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q8tMDegQIKhAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=uk+cbam+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&ei=r6W_au3KGLqy4-EP98Xq-Qo&start=50&sa=N&sstk=AS6-VmJJ2xrbZ6BvySUQeXRrqaAzveqknRha9k4ODWe9CZegqtdmnyH9TdTm9eycHtDE3RATtaZ4-z51SxYrWqgXICDb6NmNrWIadA&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q8tMDegQIKhAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=uk+cbam+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&ei=r6W_au3KGLqy4-EP98Xq-Qo&start=60&sa=N&sstk=AS6-VmJJ2xrbZ6BvySUQeXRrqaAzveqknRha9k4ODWe9CZegqtdmnyH9TdTm9eycHtDE3RATtaZ4-z51SxYrWqgXICDb6NmNrWIadA&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q8tMDegQIKhAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=uk+cbam+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&ei=r6W_au3KGLqy4-EP98Xq-Qo&start=70&sa=N&sstk=AS6-VmJJ2xrbZ6BvySUQeXRrqaAzveqknRha9k4ODWe9CZegqtdmnyH9TdTm9eycHtDE3RATtaZ4-z51SxYrWqgXICDb6NmNrWIadA&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q8tMDegQIKhAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=uk+cbam+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&ei=r6W_au3KGLqy4-EP98Xq-Qo&start=80&sa=N&sstk=AS6-VmJJ2xrbZ6BvySUQeXRrqaAzveqknRha9k4ODWe9CZegqtdmnyH9TdTm9eycHtDE3RATtaZ4-z51SxYrWqgXICDb6NmNrWIadA&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q8tMDegQIKhAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=uk+cbam+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&ei=r6W_au3KGLqy4-EP98Xq-Qo&start=90&sa=N&sstk=AS6-VmJJ2xrbZ6BvySUQeXRrqaAzveqknRha9k4ODWe9CZegqtdmnyH9TdTm9eycHtDE3RATtaZ4-z51SxYrWqgXICDb6NmNrWIadA&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q8tMDegQIKhAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=uk+cbam+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg:1790944687410&ei=r6W_au3KGLqy4-EP98Xq-Qo&start=10&sa=N&sstk=AS6-VmJJ2xrbZ6BvySUQeXRrqaAzveqknRha9k4ODWe9CZegqtdmnyH9TdTm9eycHtDE3RATtaZ4-z51SxYrWqgXICDb6NmNrWIadA&ved=2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q8NMDegQIKhAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

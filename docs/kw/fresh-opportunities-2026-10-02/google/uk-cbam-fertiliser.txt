@@ -1,0 +1,229 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQPHoECAYQBA
+  - combobox "Search": uk cbam fertiliser uk cbam fertiliser
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Duk%2Bcbam%2Bfertiliser%26newwindow%3D1%26sca_esv%3D657ce744dba959fb%26hl%3Den%26gl%3Dus%26biw%3D1280%26bih%3D720%26sxsrf%3DAPpeQnumm-QDkQVLdqOkgGmmTnK1bRURDQ%253A1790945204393%26ei%3DtKe_aoO8F86dhvcP89epkQw%26ved%3D2ahUKEwiD5uDlrpuXAxXOjuEIHfNrKsIQ4dUDegQIBhAM%26uact%3D5%26oq%3Duk%2Bcbam%2Bfertiliser%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiEnVrIGNiYW0gZmVydGlsaXNlckgIUABYAHAAeAGQAQCYAQCgAQCqAQC4AQPIAQD4AQL4AQGYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE%26sclient%3Dgws-wiz-serp&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&udm=imgs&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYS0UkvKdZAJprgUu75aBO7-BLWkuaPDBh2_EM1SJP1rc08CVyl19pahAnGF-dfPH5V4yyRze5uRWazkta9j7xobJ4_WUAxSY9WOcz0zpW7ZYR-CLPnJso_BZLw6CIc7OhO5IeSpWL4d6NyXp9xUAwDWoog2LA&q=uk+cbam+fertiliser&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQtKgLegQIEhAB
+      - generic: Images
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYS0UkvKdZAJprgUu75aBO7-BLWkuaPDBh2_EM1SJP1rc08CVyl19pahAnGF-dfPH5V4yyRze5uRWazkta9j7xobJ4_WUAxSY9WOcz0zpW7ZYR-CLPnJso_BZLw6CIc7OhO5IeSpWL4d6NyXp9xUAwDWoog2LA&q=uk+cbam+fertiliser&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&q=uk+cbam+fertiliser&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYS0UkvKdZAJprgUu75aBO7-BLWkuaPDBh2_EM1SJP1rc08CVyl19pahAnGF-dfPH5V4yyRze5uRWazkta9j7xobJ4_WUAxSY9WOcz0zpW7ZYR-CLPnJso_BZLw6CIc7OhO5IeSpWL4d6NyXp9xUAwDWoog2LA&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ0pQJegQIFRAB
+      - generic: News
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYS0UkvKdZAJprgUu75aBO7-BLWkuaPDBh2_EM1SJP1rc08CVyl19pahAnGF-dfPH5V4yyRze5uRWazkta9j7xobJ4_WUAxSY9WOcz0zpW7ZYR-CLPnJso_BZLw6CIc7OhO5IeSpWL4d6NyXp9xUAwDWoog2LA&q=uk+cbam+fertiliser&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQtKgLegQIFhAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYS0UkvKdZAJprgUu75aBO7-BLWkuaPDBh2_EM1SJP1rc08CVyl19pahAnGF-dfPH5V4yyRze5uRWazkta9j7xobJ4_WUAxSY9WOcz0zpW7ZYR-CLPnJso_BZLw6CIc7OhO5IeSpWL4d6NyXp9xUAwDWoog2LA&q=uk+cbam+fertiliser&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQs6gLegQIFxAB
+      - generic: Forums
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832SMIiTl3t-JZ4hGJOxPbHYS0UkvKdZAJprgUu75aBO7-BLWkuaPDBh2_EM1SJP1rc08CVyl19pahAnGF-dfPH5V4yyRze5uRWazkta9j7xobJ4_WUAxSY9WOcz0zpW7ZYR-CLPnJso_BZLw6CIc7OhO5IeSpWL4d6NyXp9xUAwDWoog2LA&q=uk+cbam+fertiliser&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQs6gLegQIExAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "What a carbon tax on fertiliser means for farmers? British Agriculture Bureau https://www.britishagriculturebureau.co.uk › cbam-wha...":
+    - /url: /goto?url=CAESsgEB6zswFfKczkFbnXJrtuwLhME1-wBT5Cd9gOm8TqoStZXG4DTM719PXq20huEfI_QzAbBm3k9HLrG4RVXqMgeiVm8ErFIsRC6j6jXCAaGtYiHrVPrc0d2YJ4gr1JPNk0CvEyCkQTPrVmH8wpqDq3WrrAysiJzDpkrgyY5BIPE9mEFaBPe-D01NYl8o68_uP5bTvqBfrEnBVTNuRQ3H72uY16UtGPdAbZ8Pe70ZWbuhvtRt
+    - heading "What a carbon tax on fertiliser means for farmers?" [level=3]
+    - generic: British Agriculture Bureau
+    - generic: https://www.britishagriculturebureau.co.uk › cbam-wha...
+  - button "About this result":
+  - generic: Feb 17, 2026 —
+  - emphasis: UK CBAM
+  - text: ": At present, the EU CBAM regulates fertiliser imports into the EU. However, the UK government is also planning its own CBAM."
+  - link "Read more":
+    - /url: /goto?url=CAEShAIB6zswFSIMsYo0HGbptSsvzU8hFxHutrgEimo3kZXBUPRqIPh0IyWACP6gCVfjSxlp6KMyfFTIRv4g3OkaHuwDhqWJkHys0Wgoz4G8oAmAuaCJ626qzK-JJe6G1sBCKkMpFkaikyPKkZQN3K3B8dXEdRkytbXM2sUtQcc4WMs_dZjhPPF6XKK4FLwwthMSQoiaKGdqSh_gUzQruw_uKqwpqZwwuV3fxJe89ydlk0bhCZx2UTJ8fRb0cLyGH1-roWDs-Er0aQP8yn8SPGuS2EvyuB_P1-DvZsAZ5sLB2BFNBIrofH6FDm1Ar-S0sSqIh9lExv73k8gtQBNHxCB3kXqIRVTygA
+  - link "Fertilisers and Food - Written questions, answers and statements UK Parliament https://questions-statements.parliament.uk › detail":
+    - /url: /goto?url=CAESjgEB6zswFWKGaDJXr5lr57Bv0QrLsrvcWdmabAmHDgDN7MzfqYdYz-k2HiUMRPG2VvAMqxh189VF20RmBtmNAnYS64eD0qFO9zjBFOX7Iep01-eQ--KM3Vr35hqndu7XKlBnKj7ljPD156AR6PoSK4MWVhhTYMUJewCFcw5kZlq3naZkB4AIuIeWCWcE8dVY
+    - heading "Fertilisers and Food - Written questions, answers and statements" [level=3]
+    - generic: UK Parliament
+    - generic: https://questions-statements.parliament.uk › detail
+  - button "About this result":
+  - generic: Nov 27, 2024 —
+  - text: The
+  - emphasis: UK CBAM
+  - text: rate charged on imports, including
+  - emphasis: fertiliser
+  - text: ", will reflect the carbon price paid by domestic industries after support mechanisms ( ..."
+  - link "Read more":
+    - /url: /goto?url=CAES3gEB6zswFTejz4mEdKVRUHQZJJcqjNUbyFvfCeQsGV63Fe03lQ232t_8_pV2pELp7jC03iD44o2CuJVB_LU5UgNpzKqMeC1gA5_K6C4JS__Dx2hx8lEboXG86KJcNg1If2lZmyVOkwjtssNhoXZMQD1kBv7vynd_RlCK-Y8NITP1B0OXG7OE2-XfL1ePQnIOUnoyaMVvt843cQ51KkuVzd-MyENIECUVIEmiZyveTRt9xyeGs_0m4Jv_qnPzxXRfnoWS-Sg9K7EbJ9K5NdVz0YIFCLF4i3F5u2UdoXBs5OE
+  - link "AIC | Understanding CBAM Agricultural Industries Confederation https://www.agindustries.org.uk › resource › understan...":
+    - /url: /goto?url=CAESkAEB6zswFaVgw4U3jCCnTfSlM2kbwGpwLALgBRPy1j1IT0Xxg1871qq6-4IGgXpGsBck5zVlBWVfWUdBIGYY5dbCjjCD5xVU0AZdfWT0oDLKZ-aiA-QjSrmiGGA_bIeuzdG8I9dQ5qP-RzCCaJLQjEZZ2P7lwwxstnJPUbekYEQTe8Po5KZpYyrHyd5CoSmtHMc
+    - heading "AIC | Understanding CBAM" [level=3]
+    - generic: Agricultural Industries Confederation
+    - generic: https://www.agindustries.org.uk › resource › understan...
+  - button "About this result":
+  - generic: Feb 18, 2026 —
+  - emphasis: CBAM
+  - text: is designed to reduce carbon leakage by applying a border charge on the embedded emissions of imported goods such as steel, cement and, ...
+  - link "Read more":
+    - /url: /goto?url=CAES8AEB6zswFYffuwkoZI0uIIhO0zKY75dzGAzk-fAR4BWB6WLAabaAzNc9zDvNxEdha6-5KsF9y4Za7f8kXI6Hq0lrhMWBLawYyMRnAJyWpqqIu-uOoA8WMN-NVT1vMCL7W9Ahe_JmINYTZ2p-DvalEILEgyA1XmQXwliMJRq8UgGyM6eXM6gdPbnLd1G232KqWjp5nBUmt_etE82c03x7eG4gauM7QqjZ_pLJsvXghJyLt0PwihPKDDRwsq2lIamlXncaD0ZWZRrDVHgtmb4Ys8y2KA-Q-Oan6XDBhH9LjYb2s_w_b3Vd5KdOaeWuYl06UI0
+  - heading "People also ask" [level=2]
+  - button "Does CBAM apply to agriculture?":
+    - generic: Does CBAM apply to agriculture?
+  - button "What country is the largest producer of fertilizer in the world?":
+    - generic: What country is the largest producer of fertilizer in the world?
+  - button "Does CBAM apply to the UK?":
+    - generic: Does CBAM apply to the UK?
+  - button "Where does the UK get their fertilizer from?":
+    - generic: Where does the UK get their fertilizer from?
+  - heading "Web results" [level=2]
+  - link "Ministers in talks over shelving carbon tax on fertiliser to ... The Guardian https://www.theguardian.com › business › may › carbo...":
+    - /url: /goto?url=CAESnQEB6zswFSjCEgY98ackT3lGgf75O0GPcKwowcLN80-a2-Cw-Ps5qttVUCs6ZJ9z_wX7ErHuQadxzCYHTKFCG-p4bIkmTjHxeW0vJ7Ov-QHUb4SWtWTZqwtI4lseKmEtYo-P_IKjYFkJgp4sjrVNVA4xPIA7euZIvRUJo_niwJod-t-DXuEXwTE5vbsiJa4pkB_tT48b6elLtgObZKdv
+    - heading "Ministers in talks over shelving carbon tax on fertiliser to ..." [level=3]
+    - generic: The Guardian
+    - generic: https://www.theguardian.com › business › may › carbo...
+  - button "About this result":
+  - generic: May 28, 2026 —
+  - text: The proposed tax is a
+  - emphasis: CBAM
+  - text: (carbon border adjustment mechanism), as introduced by the EU in 2023. It is a levy paid by importers on
+  - emphasis: fertilisers
+  - text: ...
+  - link "Read more":
+    - /url: /goto?url=CAES7QEB6zswFZLo0Ya_nQSCvfGDAxcZnTz8k8mc2BnSMyCjcYqj-qApNAsjAM6Ft8ic-OHe8f00xvWd04yPQnwc7j32rplTB1MJyGW8wq6iGMkPYuobUCAbe8nUovMw8eCRWwpwZqtXJVgkMKiag4JLf7baGh92ze0SFn4flkgaqipCItc58rCZG3IMU9_9ivkJQC5uYZglap5mIfzBLMJEEsVPEFNfN4Ce2esUp7gmQvc_6jWUrp54rMC9x5NScFVtUwctRVV8XIh00qLj8HiMq4jDzNrgW84e-uwQXf4yVXYV9uLsqHblXcrREVea_gE
+  - link "Carbon Border Adjustment Mechanism GOV.UK https://www.gov.uk › government › publications › carb...":
+    - /url: /goto?url=CAESuQEB6zswFbcZsy0kEr35kBWLNSh1Kvw4Nwt_n62i9DQRWrhR9Mft71Fu9WYXKBMG-N76PHbFYNoWWMAfxmFhyRBMfNYgiGatQ5vbxyRBGH1ctmWlCfUqR7er2LrjJohyrb8nn_flAQEJeqFcFfcosaD8r3u64gCWpKu1VGr7qtXDvDx05EIBTtjjyq54nurrKb95rfktcXriwAAGxG43AVDFc2vSbjaon5Kjrugb-uYnrsw3QxTwXo1xSg
+    - heading "Carbon Border Adjustment Mechanism" [level=3]
+    - generic: GOV.UK
+    - generic: https://www.gov.uk › government › publications › carb...
+  - button "About this result":
+  - emphasis: CBAM is expected to reduce the risk of carbon leakage
+  - text: for UK producers of iron and steel, aluminium, cement, hydrogen and fertiliser
+  - link "laying down the hard facts of Labour's looming fertiliser (CBAM ... Facebook · Victoria Atkins 560+ reactions · 3 months ago":
+    - /url: /goto?url=CAES0QEB6zswFYUcW3CEOjemcle94pfKzvTRLF_Glo9ypf2VprvHzt3hu87p5AAkE2KFMrkE1wDwvr2QJo8J284l5Gw0RXDTGJHzyl8BQ3lzsBn6rHY0asI57Sue-Psodeoc68IB2IHMiDFfRDorhmB8_bwerKmMahsOiLiCJ8qHBtm-qCcmq8OMEWNfwr-yqA3UYDCqO7K0R8lli6WE5BjIEOjfbQpWqc1lF1PMQkN9IsBW4L8pY4LPbM6sAJ9sRxIs2YhlYX1thgH_87g72DanI_e3zA
+    - heading "laying down the hard facts of Labour's looming fertiliser (CBAM ..." [level=3]
+    - generic: Facebook · Victoria Atkins
+    - generic: 560+ reactions · 3 months ago
+  - button "About this result":
+  - link "laying down the hard facts of Labour's looming fertiliser (CBAM ... by Victoria Atkins on Facebook. Play on Facebook. 1:18":
+    - /url: /goto?url=CAES0QEB6zswFYUcW3CEOjemcle94pfKzvTRLF_Glo9ypf2VprvHzt3hu87p5AAkE2KFMrkE1wDwvr2QJo8J284l5Gw0RXDTGJHzyl8BQ3lzsBn6rHY0asI57Sue-Psodeoc68IB2IHMiDFfRDorhmB8_bwerKmMahsOiLiCJ8qHBtm-qCcmq8OMEWNfwr-yqA3UYDCqO7K0R8lli6WE5BjIEOjfbQpWqc1lF1PMQkN9IsBW4L8pY4LPbM6sAJ9sRxIs2YhlYX1thgH_87g72DanI_e3zA
+    - generic: 1:18
+  - generic: That's why today I called on the Government to scrap the fertiliser tax (CBAM). This new charge, due to come into force in 2027, will increase ...
+  - link "How the carbon tax on fertiliser will impact farm businesses Farmers Weekly https://www.fwi.co.uk › business › input-prices › how-t...":
+    - /url: /goto?url=CAESswEB6zswFUg_GJ2dseYXd4k_twqtPbQHRIklv_GH7y5bsP9XenHWeyVj9trGFu9nKVctXys7Bg0jMHYAqqB6lhQxyXsdCo3FHkj09gTazRerGbLwm3t0vlWQpxSKSXpdahK0Cyj3Zgw9gK734jsUlrQXxe3NJN-kukaPTSB1Y4S2NYJs_wIlAqxzq3giOz2TOB7n4SiCADFD7jD7jq-v-nZd8V-rkrubOrQv2ZRE_FCKg5tbRA
+    - heading "How the carbon tax on fertiliser will impact farm businesses" [level=3]
+    - generic: Farmers Weekly
+    - generic: https://www.fwi.co.uk › business › input-prices › how-t...
+  - button "About this result":
+  - generic: Feb 19, 2025 —
+  - text: A Carbon Border Adjustment Mechanism (
+  - emphasis: Cbam
+  - text: ) is due to be implemented by the government from 1 January 2027, leading to higher
+  - emphasis: fertiliser
+  - text: costs ...
+  - 'link "UK CBAM for Fertiliser Importers: 2027 Compliance Guide cbamjournal.com https://www.cbamjournal.com › post › uk-cbam-for-fer..."':
+    - /url: /goto?url=CAESeQHrOzAVIeRU3nK7nO0xpMGJCGAvYMdvWLpzNMC3ULap5QZBUJuemiw0-IViaugmzvn7bPKtUs5eEQLrtp_LAFmeyxkhH5UnYgODOhBy_imn70-xhwf1sNe7KEKXZfi7T9yi451bqMXMC4M0XxhP4whpsb1p16NbB_8
+    - 'heading "UK CBAM for Fertiliser Importers: 2027 Compliance Guide" [level=3]'
+    - generic: cbamjournal.com
+    - generic: https://www.cbamjournal.com › post › uk-cbam-for-fer...
+  - button "About this result":
+  - generic: Jul 16, 2026 —
+  - emphasis: UK CBAM
+  - text: applies to nitrogen-based
+  - emphasis: fertiliser
+  - text: imports from 1 January 2027, and 2026 is the operational preparation year.
+  - link "Green tax on fertiliser to hit British farmers The Telegraph https://www.telegraph.co.uk › politics › 2026/08/19 › e...":
+    - /url: /goto?url=CAESiwEB6zswFVkKn3A2bc2VkEOdAisN3G1vDk_xwpFfRDr00FeqIIrns1bGxwz1tCS_V73UfMdhuHwgbf7k5UmRGQSRWMOPPMuIi3cmloYQtGR8cPvZiXKuCp7K6Z2PMoQSuK1WEy6U0XgB2cxyOE_f0-bfpKqV4hAg6wREPfhSNN2a79YQYQXLU6A6ZQXQ
+    - heading "Green tax on fertiliser to hit British farmers" [level=3]
+    - generic: The Telegraph
+    - generic: https://www.telegraph.co.uk › politics › 2026/08/19 › e...
+  - button "About this result":
+  - generic: Aug 19, 2026 —
+  - emphasis: Farmers face a doubling of fertiliser prices
+  - text: when a net zero border tax is introduced in January, research suggests.
+  - link "Read more":
+    - /url: /goto?url=CAES6wEB6zswFTjvdGqNl4SLfMFDyyHaxOvhRQqxBpggOk07rLcf54QYXw5ewwV5l0zlHGGc3aE21ulLLl_OvYUxkOEzky5x5ySPejkoT1b6lYYTrBecrPWhiHNUObda6l6nzVpfgMad1K1PwK59w5w5JyVmNEXb9oTVRmMMIrIDslD1PgJvu6apZXLZhO-AxuIzwtXXbouDTwWMPmQlmH--wBnrj5pjrjAyLZshrL8jrepsbdv18uwICoKm7MMGAQKr6R7A1hu59vcD997N6bU0pROwnfQ2xIugqTgFpO6K-o5e8F1GAN97VRg1A5Bq
+  - link "Fertiliser Prices, CBAM, and Food Security Nitrasol https://nitrasol.co.uk › fertiliser-prices-cbam-and-food-s...":
+    - /url: /goto?url=CAESeAHrOzAV8r9OVG9PzaWKSjlTkH1xwnTQVCOI1hqF1rrTYnQk_iT9Z5-YeGR2S4wSReOAByVCtG_v46Nz_TNQwUBFX6heNgxadn9U31s9jfthQxiTWpQTH-yZliil7JtrzgMAUVVUWtoPDlae4ss1Q6ITgbyTwSrosA
+    - heading "Fertiliser Prices, CBAM, and Food Security" [level=3]
+    - generic: Nitrasol
+    - generic: https://nitrasol.co.uk › fertiliser-prices-cbam-and-food-s...
+  - button "About this result":
+  - text: Fertiliser Prices -
+  - emphasis: understand what the House of Lords debate on CBAM
+  - text: ", fertiliser prices and food security means for UK farming."
+  - heading "People also search for" [level=2]
+  - link "Uk cbam fertiliser price":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&q=Uk+cbam+fertiliser+price&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ1QJ6BAg0EAE
+    - generic: Uk cbam fertiliser price
+  - link "Uk cbam fertiliser cost":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&q=Uk+cbam+fertiliser+cost&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ1QJ6BAg-EAE
+    - generic: Uk cbam fertiliser cost
+  - link "UK CBAM commodity codes":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&q=UK+CBAM+commodity+codes&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ1QJ6BAhBEAE
+    - generic: UK CBAM commodity codes
+  - link "What is UK CBAM":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&q=What+is+UK+CBAM&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ1QJ6BAhAEAE
+    - generic: What is UK CBAM
+  - link "CBAM UK 2027":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&q=CBAM+UK+2027&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ1QJ6BAg4EAE
+    - generic: CBAM UK 2027
+  - link "UK CBAM default values":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&q=UK+CBAM+default+values&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ1QJ6BAg9EAE
+    - generic: UK CBAM default values
+  - link "UK CBAM draft legislation":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&q=UK+CBAM+draft+legislation&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ1QJ6BAg2EAE
+    - generic: UK CBAM draft legislation
+  - link "UK CBAM consultation":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&q=UK+CBAM+consultation&sa=X&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ1QJ6BAg1EAE
+    - generic: UK CBAM consultation
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=uk+cbam+fertiliser&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&ei=5qe_atvYGbGphvcPw-PnmQ8&start=10&sa=N&sstk=AS6-VmKW4wMJwS6KXien4sPYVdLtrGpRQqgjQzCArj2tguJzYT0Cw5vbJU0PpQ-4t0WQL8UkBpk3Xg66M6LCeDNTIxgPt4xLDf7X-A&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ8tMDegQIMRAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=uk+cbam+fertiliser&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&ei=5qe_atvYGbGphvcPw-PnmQ8&start=20&sa=N&sstk=AS6-VmKW4wMJwS6KXien4sPYVdLtrGpRQqgjQzCArj2tguJzYT0Cw5vbJU0PpQ-4t0WQL8UkBpk3Xg66M6LCeDNTIxgPt4xLDf7X-A&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ8tMDegQIMRAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=uk+cbam+fertiliser&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&ei=5qe_atvYGbGphvcPw-PnmQ8&start=30&sa=N&sstk=AS6-VmKW4wMJwS6KXien4sPYVdLtrGpRQqgjQzCArj2tguJzYT0Cw5vbJU0PpQ-4t0WQL8UkBpk3Xg66M6LCeDNTIxgPt4xLDf7X-A&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ8tMDegQIMRAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=uk+cbam+fertiliser&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&ei=5qe_atvYGbGphvcPw-PnmQ8&start=40&sa=N&sstk=AS6-VmKW4wMJwS6KXien4sPYVdLtrGpRQqgjQzCArj2tguJzYT0Cw5vbJU0PpQ-4t0WQL8UkBpk3Xg66M6LCeDNTIxgPt4xLDf7X-A&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ8tMDegQIMRAK
+      - text: "5"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=uk+cbam+fertiliser&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnvG8LraMhbVX5Mh0QjPJf-oM8rkpA:1790945254429&ei=5qe_atvYGbGphvcPw-PnmQ8&start=10&sa=N&sstk=AS6-VmKW4wMJwS6KXien4sPYVdLtrGpRQqgjQzCArj2tguJzYT0Cw5vbJU0PpQ-4t0WQL8UkBpk3Xg66M6LCeDNTIxgPt4xLDf7X-A&ved=2ahUKEwjb4879rpuXAxWxlOEIHcPxOfMQ8NMDegQIMRAM
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

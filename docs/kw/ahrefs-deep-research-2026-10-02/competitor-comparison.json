@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Compayr",
+    "url": "https://compayr.com.au/surcharge-calculator",
+    "access_observed": "Anonymous immediate results; PDF, print, copy and share visible",
+    "model_observed": "monthly card revenue and surcharge rate; alternative rate scenario",
+    "evidence": "products/compayr-surcharge-calculator.txt",
+    "verification": "UI calculation with AUD 40000 and 1.5%; AUD 600/month, 7200/year",
+    "calculation_evidence": "products/compayr-40000-1point5.txt"
+  },
+  {
+    "name": "MerchantCompare",
+    "url": "https://merchantcompare.com.au/articles/cash-discount-surcharge-ban",
+    "access_observed": "Anonymous live calculator",
+    "model_observed": "card rate, all revenue, existing cash share, switches, discount; excludes fixed transaction fees and cash handling costs",
+    "evidence": "products/merchantcompare-cash-discount.txt"
+  },
+  {
+    "name": "QualifiedOvertime",
+    "url": "https://qualifiedovertime.com/calculator/",
+    "access_observed": "Free single-scenario calculator",
+    "model_observed": "hours/rate, paystub or already reported qualified amount; eligibility and reporting context",
+    "evidence": "products/qualified-overtime-calculator.txt"
+  },
+  {
+    "name": "QualifiedOvertime templates",
+    "url": "https://qualifiedovertime.com/templates/",
+    "access_observed": "Current UI has free CSV download without account or email; planned expanded pack contact link",
+    "model_observed": "Blank workweek tracking CSV; not an automatic multirate payroll replacement",
+    "evidence": "products/qualified-overtime-templates.txt",
+    "cache_discrepancy": "Cached web extract describes request-only pack; current browser UI takes priority"
+  },
+  {
+    "name": "Weave Comply validator",
+    "url": "https://weavecomply.com/tools/spreadsheet-validator",
+    "access_observed": "File, company name and work email fields; submission agrees to contact",
+    "model_observed": "Spreadsheet rules, EWC, hazardous and POPs consistency, cross-sheet references",
+    "evidence": "products/weave-spreadsheet-validator.txt",
+    "verification_limit": "No company data or files submitted; completed validation output not tested"
+  },
+  {
+    "name": "NicheToolkits",
+    "url": "https://nichetoolkithub.com/p/tax-deduction",
+    "access_observed": "Paid download product; no purchase",
+    "model_observed": "Seller demonstrates overtime records and TT/TP variance reconciliation",
+    "source_type": "Primary product page read with web tool",
+    "verification_limit": "Workbook not bought, calculations and sales not independently verified"
+  },
+  {
+    "name": "Insightful Sums",
+    "url": "https://insightfulsums.com/blog/how-to-price-services-surcharges-banned/",
+    "access_observed": "Free price calculator inside guide",
+    "model_observed": "Service price, fee percentage and fixed tap cost",
+    "source_type": "Primary product page read with web tool",
+    "verification_limit": "Tax statements and article arithmetic not adopted as model authority"
+  }
+]

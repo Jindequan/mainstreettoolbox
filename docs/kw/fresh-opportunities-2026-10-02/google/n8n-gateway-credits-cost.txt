@@ -1,0 +1,265 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQPHoECAYQBA
+  - combobox "Search": n8n gateway credits cost n8n gateway credits cost
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dn8n%2Bgateway%2Bcredits%2Bcost%26newwindow%3D1%26sca_esv%3D657ce744dba959fb%26hl%3Den%26gl%3Dus%26biw%3D1280%26bih%3D720%26sxsrf%3DAPpeQnvb69zKEeK7SSVzaMGFctJ20SaJNg%253A1790944687410%26ei%3Dr6W_au3KGLqy4-EP98Xq-Qo%26ved%3D2ahUKEwit3p7vrJuXAxU62TgGHfeiOq8Q4dUDegQIBhAM%26uact%3D5%26oq%3Dn8n%2Bgateway%2Bcredits%2Bcost%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiGG44biBnYXRld2F5IGNyZWRpdHMgY29zdEgLUABYAHAAeAGQAQCYAQCgAQCqAQC4AQPIAQD4AQL4AQGYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwCACAE%26sclient%3Dgws-wiz-serp&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5VCXfoAFDwluzAalGm-Yaddgry1MSo2tEjQEzZdcuNu_owpkUHQki-G7up7Qvrr5NG3-TZoIkRzHiInFA3-JOGSfTYXwsdveZUnvG8bjw_KIViXF9HyWHqAaCCcDCNximmMaYQhmHcucyzYqqB0_P3l7yvh8YW2_tdycRuOnTdykeD2orA&q=n8n+gateway+credits+cost&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&q=n8n+gateway+credits+cost&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5VCXfoAFDwluzAalGm-Yaddgry1MSo2tEjQEzZdcuNu_owpkUHQki-G7up7Qvrr5NG3-TZoIkRzHiInFA3-JOGSfTYXwsdveZUnvG8bjw_KIViXF9HyWHqAaCCcDCNximmMaYQhmHcucyzYqqB0_P3l7yvh8YW2_tdycRuOnTdykeD2orA&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ0pQJegQIGBAB
+      - generic: News
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&udm=imgs&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5VCXfoAFDwluzAalGm-Yaddgry1MSo2tEjQEzZdcuNu_owpkUHQki-G7up7Qvrr5NG3-TZoIkRzHiInFA3-JOGSfTYXwsdveZUnvG8bjw_KIViXF9HyWHqAaCCcDCNximmMaYQhmHcucyzYqqB0_P3l7yvh8YW2_tdycRuOnTdykeD2orA&q=n8n+gateway+credits+cost&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQtKgLegQIFxAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5VCXfoAFDwluzAalGm-Yaddgry1MSo2tEjQEzZdcuNu_owpkUHQki-G7up7Qvrr5NG3-TZoIkRzHiInFA3-JOGSfTYXwsdveZUnvG8bjw_KIViXF9HyWHqAaCCcDCNximmMaYQhmHcucyzYqqB0_P3l7yvh8YW2_tdycRuOnTdykeD2orA&q=n8n+gateway+credits+cost&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQtKgLegQIFhAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5VCXfoAFDwluzAalGm-Yaddgry1MSo2tEjQEzZdcuNu_owpkUHQki-G7up7Qvrr5NG3-TZoIkRzHiInFA3-JOGSfTYXwsdveZUnvG8bjw_KIViXF9HyWHqAaCCcDCNximmMaYQhmHcucyzYqqB0_P3l7yvh8YW2_tdycRuOnTdykeD2orA&q=n8n+gateway+credits+cost&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQs6gLegQIFBAB
+      - generic: Forums
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5VCXfoAFDwluzAalGm-Yaddgry1MSo2tEjQEzZdcuNu_owpkUHQki-G7up7Qvrr5NG3-TZoIkRzHiInFA3-JOGSfTYXwsdveZUnvG8bjw_KIViXF9HyWHqAaCCcDCNximmMaYQhmHcucyzYqqB0_P3l7yvh8YW2_tdycRuOnTdykeD2orA&q=n8n+gateway+credits+cost&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQs6gLegQIFRAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "n8n Plans and Pricing - n8n.io n8n https://n8n.io › pricing":
+    - /url: /goto?url=CAESTwHrOzAVohWBY2PRdEKaDM95XZsGergB_meXFcg93KAvsnd-ygOA4nZcor2MJFZ5aHXYbKJVv9x_6nfmEFfDAH9uabLUNeicCkJ5hD1hvJk
+    - heading "n8n Plans and Pricing - n8n.io" [level=3]
+    - generic: n8n
+    - generic: https://n8n.io › pricing
+  - button "About this result":
+  - text: 20€/mo, billed annually 2.5K workflow executions with unlimited steps Start free trial No
+  - emphasis: credit
+  - text: card required ・ nodes 1,600 Assistant
+  - emphasis: credits
+  - text: /month AI models ...
+  - link "Use Gateway credits | Build n8n Docs https://docs.n8n.io › build › understand-workflows › us...":
+    - /url: /goto?url=CAESegHrOzAVPgZ6layUdSVbXLKrrAcu9AESgfHcEHVPq4TfUU1yYR2vdc_88bl16jTsHiVxKg-jOI80To5ZMHwE9cA7KS3h_YbdXdV2dI3kiHZ4mHRNYdsHvzyOQ4pou2iQeIPo_3vybp86zdQ_traMHSmDbLv3DuHBlqO2
+    - heading "Use Gateway credits | Build" [level=3]
+    - generic: n8n Docs
+    - generic: https://docs.n8n.io › build › understand-workflows › us...
+  - button "About this result":
+  - generic: 2 days ago —
+  - text: Gateway credits are available from n8n 2.36.0.
+  - emphasis: Free trials include Gateway credits
+  - text: ", but you can't top up until you upgrade to a paid plan. . ..."
+  - list:
+    - link "Use Gateway credits on a node":
+      - /url: /goto?url=CAESmAEB6zswFT4t4RDpbXhFktCfrv3I_RqhHNL6BVXhthc9akXQYqTd8NOzWpYJJsk0xtVbrMdAXrELOv13BBJMRJZco5bIFJ36-ndAHEM6R6TrqbTS3UBUpy-i-z-m7VzKx-F2mRtGjF8rYiL4NkpQlmRHlKq-ajB81hlnRePCYY6fc__NjX4rp0I7MxleFiuEnG4SAPEP-Lq5-g
+      - generic: Use Gateway credits on a node
+    - link "Find supported nodes":
+      - /url: /goto?url=CAESjwEB6zswFQIM8E8jVCBYZjYWU7XdQlN9ADWbkl1wG766KNUD4JW6UR8JAgGh8CcAr5R8qFmSU64v_S3F4I0HlusMnLMDaMSD9scPOH96azhd2iJJanX5NPqh7VciPao0GZg7rfDeikXlIYBFZP6QIISkmm_Mw7u3LHXm3-fQk1_pzdIABIsjGM-n17R7t0Y_4g
+      - generic: Find supported nodes
+  - link "Gateway credits | Deploy n8n Docs https://docs.n8n.io › deploy › use-n8n-cloud › gateway...":
+    - /url: /goto?url=CAEScAHrOzAVxp1kObWZPHmyY1skDyA3X0THFox4GWCLEJtt2W1M-z2fy-ahv-i4nzgXnfA0A3z-89tuQmCw30pok3WX3AJx29p_Nwpm6laP3rGiKmhjL0t_-S529hYikZkuC1me343YDmtqPF5A307nBCI
+    - heading "Gateway credits | Deploy" [level=3]
+    - generic: n8n Docs
+    - generic: https://docs.n8n.io › deploy › use-n8n-cloud › gateway...
+  - button "About this result":
+  - generic: 2 days ago —
+  - emphasis: Gateway credits are available from n8n 2.36.0
+  - text: . Rates vary by model and service, and change as providers update their pricing, current rates for ...
+  - list:
+    - link "How Gateway credits work":
+      - /url: /goto?url=CAESiQEB6zswFeldFjpAyIWpjUbTFqum0mPMPYksvniENYytJFQ8Agz7RL9Vhgu22RhZk_1SB5vHC2REdxmlV0fT79hxh4IiJBdt0ORjAgqCVIuGMiEUpSM9fLhZTaYTXINaTap0DkWvvugnhmvZpiTSa57eEO3qYLeQvN6oK1HG_uSqYT57wb8it58_rA
+      - generic: How Gateway credits work
+    - link "Your credit balance":
+      - /url: /goto?url=CAEShAEB6zswFR4AT3oANT1YgNxEio4OSf8nFt8RN8fQXIWrDKblz-ePqbH_q-GrwsZZ2_yql5aFpebIigaq0lmOwnkyrDKn0qZTigFXuTFcZsKF1lj_FKSWjsazj6e-1k2KII9T0787OGYHmN5Xlo5aHN1Bjsw_RPV3A-DNDTfYyS8cE25biiE
+      - generic: Your credit balance
+    - link "Credit expiry and forfeiture":
+      - /url: /goto?url=CAESjQEB6zswFcYwXbbM_coruosIk_IDw-_7N3ZE6ijU3o_kzO0LYDQlXzE5pgwq3Om8xkjmS0_r80mrEVWyDIPFVU6Prs3Sn68_Uo3WQ6R0KrtGSnpL2ZCh4sGuO0g5VkJGdey8uwt5uVRnqoDsF8kt7tpy4fTnguarWfsDW6VdNMLMC_n7st80lRxAvRWKrGc
+      - generic: Credit expiry and forfeiture
+  - 'link "TypeSafe''s Jev is now in n8n: free on Cloud (via Gateway ... n8n Community https://community.n8n.io › typesafes-jev-is-now-in-n8n..."':
+    - /url: /goto?url=CAESrgEB6zswFfe8BtiAoxgiIFOSrTeeozZwpoxOPO0W-xj06coIN5wotCloZGS1quoW-E5QX32ZLgvRvrcnzX82rgmxK75yCjwBKhw6adWrcJO_kCiJdryPt_0IYthEDEgGxFyQKlrzxCmEPdfjdUjIkjc30N7nsAJPkE_aBAUdm-M8MmrhxssG61-iH-nOpwtsb9kfS_FcJTJAllyGyEk7rsbRaBxKj1ChvtI-R239mtU
+    - 'heading "TypeSafe''s Jev is now in n8n: free on Cloud (via Gateway ..." [level=3]'
+    - generic: n8n Community
+    - generic: https://community.n8n.io › typesafes-jev-is-now-in-n8n...
+  - button "About this result":
+  - generic: 2 days ago —
+  - text: TypeSafe
+  - emphasis: prices
+  - text: it at $42 per 1 billion input tokens (output is free), Jev runs on
+  - emphasis: Gateway credits
+  - text: ", It's free until October 10, 23:59 UTC. ..."
+  - 'link "n8n pricing in 2026: every plan and the execution math CloudZero https://www.cloudzero.com › Blog"':
+    - /url: /goto?url=CAESYwHrOzAV6Nu7kMY_mm_d7DmLuDEPa6FJpouRnDSZP2CqfABxsO2YJybQTq3jBc_RCJDYyKnJXzXhGnmeaCTJ2qOxK3HOM1kFdTXBzxQU8-d5z7zWOGmT3n1W-_E13e-VAu-5mg
+    - 'heading "n8n pricing in 2026: every plan and the execution math" [level=3]'
+    - generic: CloudZero
+    - generic: https://www.cloudzero.com › Blog
+  - button "About this result":
+  - generic: Sep 10, 2026 —
+  - emphasis: n8n pricing
+  - text: runs €24 per month for 2,500 workflow executions (Starter), €60 for 10,000 (Pro), and €800 for 40,000 (Business), with 17 percent ...
+  - heading "People also ask" [level=2]
+  - button "How much does an n8n subscription cost?":
+    - generic: How much does an n8n subscription cost?
+  - button "How to get free n8n credits?":
+    - generic: How to get free n8n credits?
+  - button "What are n8n's different pricing tiers?":
+    - generic: What are n8n's different pricing tiers?
+  - button "Does n8n use credits?":
+    - generic: Does n8n use credits?
+  - heading "Web results" [level=2]
+  - 'link "N8N Pricing 2025: Complete Plans Comparison + Hidden ... Latenode https://latenode.com › Blog"':
+    - /url: /goto?url=CAES1wEB6zswFbGmY08xJ9ljkimuTXkd3x-nzT4Y-ilbXbhlS-usT5AvWExvpdXpp2vtTaH5gOKhZvywtxRiNoalLu9ovE7OBOeUP5hJMDzALyQA1j23CgDGDaqwL9l17Q1ki1CrT3T3I4ffi0O9ptWCeIr6bwgHfVY5G3JE2UIui_QEpo5MH0lQTbxmw-G_J0IQxoULIBIQlSOzY3KRQZ1wPxfAOqgzoejSSOO-S2mP50ns_0luWsnP-o4b0go_cSGR0nCDA7h8MVW-BHR8TvLq6XEZw5EIUcj2lQ
+    - 'heading "N8N Pricing 2025: Complete Plans Comparison + Hidden ..." [level=3]'
+    - generic: Latenode
+    - generic: https://latenode.com › Blog
+  - button "About this result":
+  - generic: Jun 11, 2026 —
+  - emphasis: "Free Plan: Includes 300 credits per month at no cost"
+  - text: ". Start Plan: $19/month for 5,000 credits. Team Plan: $59/month for 25,000 credits. ..."
+  - link "n8n adds support for Jev with free Gateway credits on Cloud ... Reddit · r/n8n 4 comments · 1 day ago":
+    - /url: /goto?url=CAESkQEB6zswFaMBeqPMLWtQOdVedjUX566j8BIIiRTCbKwyyiEtSCDrzOQnO75QRCA9tr5Ebmn4MsDk1PUIL3_zWdcRJJln8WiRAZRLjBv0o76UOKN5bhr5OoquLZq1QoN-thWv4yeKm2XY4rHCF09gTdSjIHOfo5ddGRmiGsBrH_s-14D04GXRNa31Lps2mSsU6hV_
+    - heading "n8n adds support for Jev with free Gateway credits on Cloud ..." [level=3]
+    - generic: Reddit · r/n8n
+    - generic: 4 comments · 1 day ago
+  - button "About this result":
+  - link "n8n adds support for Jev with free Gateway credits on Cloud ... by n8n on Reddit. Play on Reddit. 5:13":
+    - /url: /goto?url=CAESkQEB6zswFaMBeqPMLWtQOdVedjUX566j8BIIiRTCbKwyyiEtSCDrzOQnO75QRCA9tr5Ebmn4MsDk1PUIL3_zWdcRJJln8WiRAZRLjBv0o76UOKN5bhr5OoquLZq1QoN-thWv4yeKm2XY4rHCF09gTdSjIHOfo5ddGRmiGsBrH_s-14D04GXRNa31Lps2mSsU6hV_
+    - generic: 5:13
+  - generic: On n8n Cloud (Starter & Pro), Jev runs on Gateway credits and it's free until October 10. If you're self-hosted or on the Community Edition, ...
+  - link "Try new models and services, skip the account setup n8n Blog https://blog.n8n.io › gateway-credits":
+    - /url: /goto?url=CAESXAHrOzAVPqpCaFq9aFzv4rk_TTtPCZZFx5oO-wVuuYOQRl8Wj0zQAoP8ihnq0LGEQG5U1mtr3zLKxGqNBE-BS_Y6XYTV07uDq1aVFGxf7UzdKxHHBPHmAcG5LTQf
+    - heading "Try new models and services, skip the account setup" [level=3]
+    - generic: n8n Blog
+    - generic: https://blog.n8n.io › gateway-credits
+  - button "About this result":
+  - generic: Sep 17, 2026 —
+  - emphasis: Gateway credits
+  - text: come from one balance shared across your
+  - emphasis: n8n
+  - text: instance, giving you one number to watch and one place to top up.
+  - link "Gateway Credits vs. Client API Keys · AI Automation Society Skool https://www.skool.com › ai-automation-society › gatew...":
+    - /url: /goto?url=CAESkQEB6zswFbrGup2XH5iFIZrqkg8y91PmCMn0pp1GB6o1QHD8YTW7uKewbOoOpVdVn6gedj1dk7cV3tx_wF3VPpTNiFL7ZD3ymB23nQWrhmme8jA8YF470aAUFYo99nKQtAKI7vLNCT6nK8NJhGeqUTUNaZZdldOvRXLa0ojxkInVodRnehRGe7Nt_Ya00xIgH4jM
+    - heading "Gateway Credits vs. Client API Keys · AI Automation Society" [level=3]
+    - generic: Skool
+    - generic: https://www.skool.com › ai-automation-society › gatew...
+  - button "About this result":
+  - emphasis: n8n's gateway credits
+  - text: doc says usage is billed per request "at the
+  - emphasis: rates
+  - text: listed on the service
+  - emphasis: pricing
+  - text: page" and calls that page the source of truth. So LLM ...
+  - link "Read more":
+    - /url: /goto?url=CAES4QEB6zswFUz72o29-qu-_uRiheB7oT9GNqnwUPgSC8_eSmW8Fsiem_TzD-GO5zi9gRkODyNtgbKHzZuIwzJhOYF5JbUomyRj7ZJ3iGOUGzKXywDQveI_24bYW0ELZeL8awUO2efS5JH_h6im28hS0Vgp12lhJQ-bdNprM0g2PexbGb93paKYNLJD-4-j9PRQjFJJuHPYJlcMiY6NoiTqZ_fmZkZzfrXm_SShkXHIfs4LhcL5DyCrdX3zTCmOrcnR_64SvTIwxXZVaDY_xDYQEWNWOkJE4gfWGhQY5vooZYmTmps
+  - 'link "n8n Pricing: Plans & Execution Costs in 2026 Tech Jacks Solutions https://techjacksolutions.com › ... › n8n › n8n Pricing"':
+    - /url: /goto?url=CAESbwHrOzAVwMVOAy1BIPqsQC5xipy9VbR-SMzeierjBCRow8EUd-N3zAw5x5bJLOWOnllWQ6RUmi02xYnUCjHEMmeOHF7ihF9ZP5PlKoC_4L8g7DYrh7PMhFpokjWoQZXos_UC7Y4H7u8vtPEiKM3wWA
+    - 'heading "n8n Pricing: Plans & Execution Costs in 2026" [level=3]'
+    - generic: Tech Jacks Solutions
+    - generic: https://techjacksolutions.com › ... › n8n › n8n Pricing
+  - button "About this result":
+  - generic: Jun 9, 2026 —
+  - text: "This breakdown covers the full lineup as of 2026: the free, self-hosted Community Edition, the Starter plan at $20/mo, Pro at $50/mo, the self- ..."
+  - link "Read more":
+    - /url: /goto?url=CAES1QEB6zswFYKekjIOzjDBaUNCUBU19t8rho_u5Mhxd-fzQaWAA7xjLGS9-i9_e5FdUKbrvknhLenMdxUhRkT09gElZ6dDAyLboRW_1Nvon0ZyuVHzpwK7k-C-3M1UhP7DSgzh4VjS0o-1n_17LhhIvCh-ohyuvA-qzhY32WBio8vBlDQ0LAqqk9p8MxCj-_DVGXjGjulS8nyRMFnJFD55bpCPthIP-BeKCfoGMHSwoLDU2Z9MsAnOydLdhjO7rCas0I7TZW1wC9KBHqK6ux1p_DiVzZEPYIc
+  - list:
+    - 'link "N8n Pricing Explained: Plans..."':
+      - /url: /goto?url=CAESywEB6zswFWhFBfwvMD2YdJOXs_NQLWmIZY785GeAY9YPv2cdfB52NYNfUIWRm_m4_DiL75aI53PUpPVKKReOtITTXuzVCszdIOFHDo6mw3gd8pOjfmafsg9X6Xft-fBlXTPOZfhsFXBA4NDV9jBxXYsSVlacr66NWrOKxi1e77lR1Sg2201O0J6vl_zrHe_cCc5SMa1LLxD6C2v9NOEZyL8U1-MU5o7JDDcszTMls9Vt-kEqONYEXiMD99hz-OxndGpStEVKc4DqR_67xQ
+      - generic: "N8n Pricing Explained: Plans..."
+    - link "What Every Plan Includes":
+      - /url: /goto?url=CAESugEB6zswFZZsebMg6cBpyK9lWYGFg03RQUCASCylHyz5tDaSg2Ci-Z7XOPzKE6g-DME1lY69NTK313nPLbyJ6CbHhcB3PTK22KPR2_LxJpq_5HQGDM0E5q6onkkXug6nKc_fBICFyGu3_DyDANTaS70xR2BSJwlmFpnAKfjHFDszP3vauqaUea044wW2FYpWZCKw4VsLy8YgLY3_XmIsfwgWysWZFlnEANiu3KvVss1a5wHFg_8SU7J5H2g
+      - generic: What Every Plan Includes
+    - link "Does N8n Charge Per User?":
+      - /url: /goto?url=CAESmwEB6zswFRZ-8cztQr1TfF-l_sFHRMILuv7L5bVwbj-qu7d9ozE4Tsrt4C7s0CNeUE7LOtLzRjvOVBFa8eKULwuWEo8QfS0q7S5Sl1xxuE3UMZpKKNxgHfUsOkdh400hvww44Lz9T6FgtZXQfjK87tCNhWaxdlzxnKPjNx0QI_cKQ2C8tsUZflYUiSOnkt4Qj0CY8im2ffNI-Z8fUw
+      - generic: Does N8n Charge Per User?
+  - heading "People also search for" [level=2]
+  - link "N8n gateway credits cost reddit":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&q=N8n+gateway+credits+cost+reddit&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ1QJ6BAgrEAE
+    - generic: N8n gateway credits cost reddit
+  - link "N8n gateway credits cost per month":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&q=N8n+gateway+credits+cost+per+month&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ1QJ6BAg6EAE
+    - generic: N8n gateway credits cost per month
+  - link "N8n self-hosted pricing":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&q=N8n+self-hosted+pricing&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ1QJ6BAg3EAE
+    - generic: N8n self-hosted pricing
+  - link "N8n Community edition":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&q=N8n+Community+edition&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ1QJ6BAg1EAE
+    - generic: N8n Community edition
+  - link "N8n free vs paid":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&q=N8n+free+vs+paid&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ1QJ6BAg0EAE
+    - generic: N8n free vs paid
+  - link "N8n enterprise price":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&q=N8n+enterprise+price&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ1QJ6BAgyEAE
+    - generic: N8n enterprise price
+  - link "N8n free alternative":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&q=N8n+free+alternative&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ1QJ6BAgwEAE
+    - generic: N8n free alternative
+  - link "N8n Community edition Download":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&q=N8n+Community+edition+Download&sa=X&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ1QJ6BAgsEAE
+    - generic: N8n Community edition Download
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=n8n+gateway+credits+cost&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&ei=26W_as6-HfyX4-EP5pz0iAk&start=10&sa=N&sstk=AS6-VmK9RYzlo223TFJdjyqYvmYFJDO3KfObemm4tH7OEqmbZqJ4AN1siVoiR7i0vNTVo88lEDEwFJaICrP_je1ETGKFDXqF0kCByA&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ8tMDegQIKhAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=n8n+gateway+credits+cost&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&ei=26W_as6-HfyX4-EP5pz0iAk&start=20&sa=N&sstk=AS6-VmK9RYzlo223TFJdjyqYvmYFJDO3KfObemm4tH7OEqmbZqJ4AN1siVoiR7i0vNTVo88lEDEwFJaICrP_je1ETGKFDXqF0kCByA&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ8tMDegQIKhAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=n8n+gateway+credits+cost&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&ei=26W_as6-HfyX4-EP5pz0iAk&start=30&sa=N&sstk=AS6-VmK9RYzlo223TFJdjyqYvmYFJDO3KfObemm4tH7OEqmbZqJ4AN1siVoiR7i0vNTVo88lEDEwFJaICrP_je1ETGKFDXqF0kCByA&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ8tMDegQIKhAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=n8n+gateway+credits+cost&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&ei=26W_as6-HfyX4-EP5pz0iAk&start=40&sa=N&sstk=AS6-VmK9RYzlo223TFJdjyqYvmYFJDO3KfObemm4tH7OEqmbZqJ4AN1siVoiR7i0vNTVo88lEDEwFJaICrP_je1ETGKFDXqF0kCByA&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ8tMDegQIKhAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=n8n+gateway+credits+cost&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&ei=26W_as6-HfyX4-EP5pz0iAk&start=50&sa=N&sstk=AS6-VmK9RYzlo223TFJdjyqYvmYFJDO3KfObemm4tH7OEqmbZqJ4AN1siVoiR7i0vNTVo88lEDEwFJaICrP_je1ETGKFDXqF0kCByA&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ8tMDegQIKhAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=n8n+gateway+credits+cost&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&ei=26W_as6-HfyX4-EP5pz0iAk&start=60&sa=N&sstk=AS6-VmK9RYzlo223TFJdjyqYvmYFJDO3KfObemm4tH7OEqmbZqJ4AN1siVoiR7i0vNTVo88lEDEwFJaICrP_je1ETGKFDXqF0kCByA&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ8tMDegQIKhAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=n8n+gateway+credits+cost&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&ei=26W_as6-HfyX4-EP5pz0iAk&start=70&sa=N&sstk=AS6-VmK9RYzlo223TFJdjyqYvmYFJDO3KfObemm4tH7OEqmbZqJ4AN1siVoiR7i0vNTVo88lEDEwFJaICrP_je1ETGKFDXqF0kCByA&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ8tMDegQIKhAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=n8n+gateway+credits+cost&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&ei=26W_as6-HfyX4-EP5pz0iAk&start=80&sa=N&sstk=AS6-VmK9RYzlo223TFJdjyqYvmYFJDO3KfObemm4tH7OEqmbZqJ4AN1siVoiR7i0vNTVo88lEDEwFJaICrP_je1ETGKFDXqF0kCByA&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ8tMDegQIKhAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=n8n+gateway+credits+cost&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&ei=26W_as6-HfyX4-EP5pz0iAk&start=90&sa=N&sstk=AS6-VmK9RYzlo223TFJdjyqYvmYFJDO3KfObemm4tH7OEqmbZqJ4AN1siVoiR7i0vNTVo88lEDEwFJaICrP_je1ETGKFDXqF0kCByA&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ8tMDegQIKhAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=n8n+gateway+credits+cost&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g:1790944731492&ei=26W_as6-HfyX4-EP5pz0iAk&start=10&sa=N&sstk=AS6-VmK9RYzlo223TFJdjyqYvmYFJDO3KfObemm4tH7OEqmbZqJ4AN1siVoiR7i0vNTVo88lEDEwFJaICrP_je1ETGKFDXqF0kCByA&ved=2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ8NMDegQIKhAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

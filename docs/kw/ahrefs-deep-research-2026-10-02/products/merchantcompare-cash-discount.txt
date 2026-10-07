@@ -1,0 +1,300 @@
+- banner:
+  - navigation "Primary":
+    - link "MerchantCompare":
+      - /url: /
+    - list:
+      - button "Search":
+      - button "Compare":
+        - text: Compare
+      - link "Versus":
+        - /url: /compare/comparisons
+      - link "Guides":
+        - /url: /guides
+      - link "Reports":
+        - /url: /reports
+      - link "Articles":
+        - /url: /articles
+      - link "About":
+        - /url: /about
+      - button "Share this page":
+        - generic: Share
+      - text: Link copied
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - link "Home":
+        - /url: /
+      - link "Articles":
+        - /url: /articles
+      - generic: Merchants Are Turning to Cash to Beat the Surcharge Ban. A 10% Cash Discount Can Cost Six Times the Card Fee
+  - generic: Payment providers
+  - heading "Merchants Are Turning to Cash to Beat the Surcharge Ban. A 10% Cash Discount Can Cost Six Times the Card Fee" [level=1]
+  - paragraph: A cash or PayID discount is legal after the surcharge ban, but a 10% discount can give away six times the card fee it saves, and much of it goes to customers who already paid cash. Work out your own numbers with our calculator.
+  - generic: MerchantCompare
+  - generic: Editorial team
+  - generic: 6 min read
+  - generic: Published 28 Sept 2026
+  - img "Merchants Are Turning to Cash to Beat the Surcharge Ban. A 10% Cash Discount Can Cost Six Times the Card Fee"
+  - article:
+    - paragraph:
+      - text: "From 1 October 2026 Australian businesses can no longer add a surcharge to eftpos, Mastercard or Visa payments. The fix many are reaching for is the opposite move: a discount for paying in cash or by PayID. Some businesses are going further and dropping cards altogether ("
+      - link "Yahoo Finance":
+        - /url: https://au.finance.yahoo.com/news/business-owners-send-warning-as-cash-only-signs-appear-ahead-of-new-ban-next-week-222909851.html
+      - text: ), and a discount of up to 10 per cent for paying by cash or PayID has been floated as a way to steer customers (
+      - link "Newcastle Herald, via AAP":
+        - /url: https://www.newcastleherald.com.au/story/9358280/cafes-shoppers-at-a-crossroads-as-surcharge-ban-looms/
+      - text: ).
+    - paragraph: The discount is legal. The maths is the problem. A card payment costs a business a percentage of the sale, and on every published flat rate in our dataset that percentage is a small fraction of 10 per cent. Offer a 10 per cent cash discount and you can hand back six times what the card would have cost you, before counting the customers who were paying cash anyway.
+    - heading "Is a cash discount allowed after the surcharge ban?" [level=2]
+    - paragraph:
+      - text: Yes. The Reserve Bank's ban covers surcharges on eftpos, Mastercard and Visa. It does not stop discounts. The RBA says "businesses can continue to offer discounts for particular payment methods" (
+      - link "RBA FAQ":
+        - /url: https://www.rba.gov.au/payments-and-infrastructure/review-of-retail-payments-regulation/2026-03/conclusions-paper/faqs/
+      - text: ).
+    - paragraph:
+      - text: There is one condition. The ACCC says the price you display "must be the full price they will pay if they do not receive the payment method discount" (
+      - link "ACCC, card surcharges":
+        - /url: https://www.accc.gov.au/consumers/prices-surcharges-receipts/card-surcharges
+      - text: ). It also says businesses should not "display only the discounted price" or "make the discounted price more prominent than the full price", and that the discount "should be clearly disclosed before consumers choose to book, order or pay". Marking prices at the cash price and adding the difference back at the terminal is a surcharge by another name.
+    - heading "What a card payment actually costs you" [level=2]
+    - paragraph: Across the payment providers we track, published flat in-person rates run from 0.79% to 1.65%, with a median of 1.3%. That percentage is what you save when a customer switches from card to cash.
+    - paragraph:
+      - text: "A 10 per cent discount gives away 10 per cent. Divide one by the other and you have the multiple. At any card rate below 1.67 per cent, a 10 per cent discount is more than six times the fee it replaces, and the lower your rate, the worse the trade. Some rates are about to fall further: Westpac announced on 23 September that its flat rate for eligible customers on its EFTPOS terminals drops from 1.20 per cent to 0.79 per cent on 1 October ("
+      - link "Westpac media release":
+        - /url: https://www.westpac.com.au/about-westpac/media/media-releases/2026/24-september/
+      - text: ), and CommBank's flat in-store rate falls from 1.10 per cent to 0.99 per cent on the same day (
+      - link "SmartCompany":
+        - /url: https://www.smartcompany.com.au/finance/card-surcharges-end-october-1-how-business-can-prepare/
+      - text: "). Against a card fee under 1 per cent, a 10 per cent cash discount is more than ten times the saving. The one thing that narrows the gap is a fixed fee per transaction: on a plan that adds a few cents to every tap, a very small sale carries a higher effective rate, so the multiple on a cheap coffee is lower than on a large purchase."
+    - 'heading "The bigger cost: customers who already pay cash" [level=2]'
+    - paragraph: The multiple is only half of it. A discount cannot be offered to new cash customers alone. Everyone who was already paying cash gets it too, and they were costing you no card fee in the first place.
+    - paragraph: Reserve Bank data, reported by AAP, puts cash at "barely 15 per cent of all counter purchases", counted by number of purchases rather than by value. Every one of those purchases gets the discount. A 10 per cent cash discount hands 10 per cent of those sales straight back, with no card fee saved on any of them. For many businesses that line is larger than the whole saving from customers who switch.
+    - paragraph: Put your own numbers in below. The provider list and the starting rate come from the same live pricing data as our comparison table.
+    - region "Cash discount calculator":
+      - heading "Cash discount calculator" [level=3]
+      - paragraph: See what a cash or PayID discount gives away, against the card fees it saves you.
+      - generic: Your payment provider
+      - combobox "Your payment provider":
+        - option "Enter my own rate" [selected]
+        - option "Bendigo Bank (1.3%)"
+        - option "CommBank Smart (0.99%)"
+        - option "NAB (1.05%)"
+        - option "Square (1.6%)"
+        - option "Stripe (1.65% + $0.10)"
+        - option "SumUp (1.4%)"
+        - option "Tyro (1.3%)"
+        - option "Westpac (0.79%)"
+        - option "Zeller (1.4%)"
+      - paragraph: Prefilled with the median published in-person rate. Use the rate on your statement.
+      - generic: Your card rate
+      - textbox "Your card rate": "1.3"
+      - generic: "%"
+      - paragraph: Percentage fee only. A fixed per-transaction fee is not included.
+      - generic: Sales /mo
+      - generic: $
+      - textbox "Sales /mo": "20000"
+      - paragraph: All in-store sales, cash and card.
+      - generic: Already paid in cash or PayID
+      - textbox "Already paid in cash or PayID": "15"
+      - generic: "%"
+      - paragraph: Share of your sales, by value, paid in cash or PayID today.
+      - generic: Card customers who switch
+      - textbox "Card customers who switch": "20"
+      - generic: "%"
+      - paragraph: Share of card sales you expect to move to cash or PayID.
+      - generic: Cash discount
+      - textbox "Cash discount": "10"
+      - generic: "%"
+      - paragraph: The discount you would offer for cash or PayID.
+      - paragraph: The discount costs you
+      - paragraph: $596/mo
+      - paragraph: $7,152 a year
+      - paragraph:
+        - text: On every sale that switches, a 10% discount gives away
+        - strong: 7.7 times
+        - text: the 1.3% card fee it saves.
+      - term: Card fees saved on switched sales
+      - definition: +$44
+      - term: Discount given to customers who switch
+      - definition: "-$340"
+      - term: Discount given to customers who already paid cash
+      - definition: "-$300"
+      - term: Net each month
+      - definition: "-$596"
+      - paragraph:
+        - text: "Break-even: a discount of about"
+        - strong: 1.3%
+        - text: pays for itself on switched sales alone, and about
+        - strong: 0.69%
+        - text: once your existing cash customers get it too.
+      - paragraph: Estimates only. Excludes fixed per-transaction fees and the cost of handling cash.
+      - link "Compare all payment providers":
+        - /url: /compare/payment-providers
+        - text: Compare all payment providers
+    - heading "What a cash discount that pays for itself looks like" [level=2]
+    - paragraph: On sales that switch from card, a discount pays for itself only up to your card rate. At the median published rate of 1.3%, a 1.3% cash discount is break-even on those sales, and anything above it is a cost. Once your existing cash customers are counted, the break-even discount is lower still, which is the second break-even figure the calculator shows.
+    - paragraph: "That does not make a cash discount wrong. A business may want one for reasons the calculator does not price: customers who value it, a quieter terminal on busy days, or simply matching the shop next door. The point is to set the number knowing what it costs, rather than picking 10 per cent because it sounds generous."
+    - paragraph: "Cash also carries its own costs that the calculator leaves out on purpose, because they vary so much between businesses: counting and banking time, cash deposit fees, and the risk of holding it. Those push the true break-even lower again."
+    - heading "Is PayID different?" [level=2]
+    - paragraph: "A PayID payment goes straight from the customer's bank account into yours. None of the payment providers we track takes PayID at the counter, because it does not run through a card terminal at all, so there is no card fee on it and no cash to count. That makes a PayID discount cheaper to run than a cash one, but the maths above is the same: the discount goes to every customer who pays that way, including the ones who would have paid by PayID without it."
+    - heading "A cheaper way to cut the cost of card payments" [level=2]
+    - paragraph: If the aim is to stop card fees eating into margin now that you cannot pass them on, the cheaper lever is the rate itself. Published in-person rates differ between providers, and some banks are cutting theirs as the ban starts. A lower rate cuts the cost of every card sale, including the customers who will never switch to cash, and it does not hand any of your margin back to the ones who already do.
+    - paragraph:
+      - text: Compare every provider's published rate, monthly fee and hardware cost on our
+      - link "payment providers comparison":
+        - /url: /compare/payment-providers
+      - text: ", and see what the ban itself costs you with the"
+      - link "surcharge ban calculator":
+        - /url: /compare/credit-card-surcharge-calculator
+      - text: . For the full picture of what goes into a card fee, read our
+      - link "plain-English guide to merchant fees":
+        - /url: /articles/merchant-fees-australia-guide
+      - text: and
+      - link "what changes on 1 October":
+        - /url: /articles/rba-surcharge-ban-2026
+      - text: .
+    - heading "Frequently asked questions" [level=2]
+    - heading "Can I still offer a cash discount after 1 October 2026?" [level=3]
+    - paragraph: Yes. The RBA and the ACCC both confirm businesses can offer a discount for paying by a particular method, such as cash or PayID. The price you display must be the full price a customer pays without the discount.
+    - heading "How big should a cash discount be?" [level=3]
+    - paragraph: On sales that switch from card to cash, a discount breaks even at your own card rate, and published flat in-person rates run from 0.79% to 1.65%. A larger discount costs more than the card fee it saves, and it also goes to customers who were already paying cash.
+    - heading "Is a cash discount the same as a surcharge?" [level=3]
+    - paragraph: No, as long as the displayed price is the full price. Showing a lower cash price and charging card users more at the terminal is treated as a surcharge, which is banned on eftpos, Mastercard and Visa from 1 October 2026.
+  - paragraph:
+    - text: We may earn a commission when you click through to a provider. Any offer shown is the provider’s own, and we check each one before it appears. Neither ever affects ranking or data shown.
+    - link "Read our terms":
+      - /url: /terms
+    - text: .
+  - paragraph:
+    - text: Take the next step
+  - heading "Run your numbers against every provider in our index." [level=3]
+  - paragraph: Free, no signup. We model your real cost using each provider’s published rates and rank them by your projected monthly bill.
+  - link "Compare Payment Providers":
+    - /url: /compare/payment-providers
+    - text: Compare Payment Providers
+  - heading "MerchantCompare" [level=2]
+  - paragraph: Editorial team
+  - paragraph: Independent comparisons of business services for Australian businesses. Our editorial coverage and rankings are not influenced by commercial relationships with the providers we feature.
+  - complementary:
+    - navigation "Table of contents":
+      - paragraph: In this guide
+      - list:
+        - link "Is a cash discount allowed after the surcharge ban?":
+          - /url: "#is-a-cash-discount-allowed-after-the-surcharge-ban"
+        - link "What a card payment actually costs you":
+          - /url: "#what-a-card-payment-actually-costs-you"
+        - 'link "The bigger cost: customers who already pay cash"':
+          - /url: "#the-bigger-cost-customers-who-already-pay-cash"
+        - link "What a cash discount that pays for itself looks like":
+          - /url: "#what-a-cash-discount-that-pays-for-itself-looks-like"
+        - link "Is PayID different?":
+          - /url: "#is-payid-different"
+        - link "A cheaper way to cut the cost of card payments":
+          - /url: "#a-cheaper-way-to-cut-the-cost-of-card-payments"
+        - link "Frequently asked questions":
+          - /url: "#frequently-asked-questions"
+        - link "Can I still offer a cash discount after 1 October 2026?":
+          - /url: "#can-i-still-offer-a-cash-discount-after-1-october-2026"
+        - link "How big should a cash discount be?":
+          - /url: "#how-big-should-a-cash-discount-be"
+        - link "Is a cash discount the same as a surcharge?":
+          - /url: "#is-a-cash-discount-the-same-as-a-surcharge"
+  - paragraph: Keep reading
+  - heading "Related guides." [level=2]
+  - link "View all articles →":
+    - /url: /articles
+  - link "Who Cut Merchant Fees After the Surcharge Ban (Oct 2026) Payment providers Who Cut Merchant Fees After the Surcharge Ban (Oct 2026) Westpac, CommBank, NAB and Stripe had cut a published merchant rate by 1 October 2026; most providers did not. Who moved, who quotes privately, and what to ask your provider. 8 min read · 02 Oct 2026":
+    - /url: /articles/merchant-fees-after-surcharge-ban
+    - img "Who Cut Merchant Fees After the Surcharge Ban (Oct 2026)"
+    - generic: Payment providers
+    - heading "Who Cut Merchant Fees After the Surcharge Ban (Oct 2026)" [level=3]
+    - paragraph: Westpac, CommBank, NAB and Stripe had cut a published merchant rate by 1 October 2026; most providers did not. Who moved, who quotes privately, and what to ask your provider.
+    - paragraph: 8 min read · 02 Oct 2026
+  - 'link "Interchange Plus vs Flat Rate: Which Pricing Model Saves You More? Payment providers Interchange Plus vs Flat Rate: Which Pricing Model Saves You More? How flat rate and interchange-plus pricing really work, with worked examples and the maths on which model is cheaper for your Australian business. 10 min read · 07 June 2026"':
+    - /url: /articles/interchange-plus-vs-flat-rate
+    - 'img "Interchange Plus vs Flat Rate: Which Pricing Model Saves You More?"'
+    - generic: Payment providers
+    - 'heading "Interchange Plus vs Flat Rate: Which Pricing Model Saves You More?" [level=3]'
+    - paragraph: How flat rate and interchange-plus pricing really work, with worked examples and the maths on which model is cheaper for your Australian business.
+    - paragraph: 10 min read · 07 June 2026
+  - 'link "The RBA Surcharge Ban Is Now in Force: What It Means for Australian Businesses Payment providers The RBA Surcharge Ban Is Now in Force: What It Means for Australian Businesses Since 1 October 2026 Australian businesses cannot surcharge on EFTPOS, Visa or Mastercard. What the ban covers, what changed in the wholesale fees behind it, and what to do now. 14 min read · 14 May 2026"':
+    - /url: /articles/rba-surcharge-ban-2026
+    - 'img "The RBA Surcharge Ban Is Now in Force: What It Means for Australian Businesses"'
+    - generic: Payment providers
+    - 'heading "The RBA Surcharge Ban Is Now in Force: What It Means for Australian Businesses" [level=3]'
+    - paragraph: Since 1 October 2026 Australian businesses cannot surcharge on EFTPOS, Visa or Mastercard. What the ban covers, what changed in the wholesale fees behind it, and what to do now.
+    - paragraph: 14 min read · 14 May 2026
+- contentinfo:
+  - paragraph: Get price updates and news
+  - form "Get price updates and news":
+    - generic: Email address
+    - textbox "Email address":
+      - /placeholder: you@business.com
+    - text: Website
+    - textbox
+    - button "Sign up"
+  - paragraph:
+    - text: Get price updates and payment news from MerchantCompare. This may include offers from us and our partners; we never share your email. You can unsubscribe at any time. Read our
+    - link "Privacy Policy":
+      - /url: /privacy
+    - text: .
+  - paragraph: Follow us on Google
+  - paragraph: Add MerchantCompare as a preferred source to see our comparisons higher in your Google results.
+  - link "Add MerchantCompare as a preferred source in Google Search (opens in a new tab)":
+    - /url: https://www.google.com/preferences/source?q=merchantcompare.com.au
+    - text: Add as a preferred source
+  - generic: MerchantCompare
+  - paragraph: Merchant Compare is an independent business comparison platform. We may earn an affiliate commission when you click through to a provider on this site, where a commercial arrangement is in place. Commissions never affect our rankings or the data we publish. Our comparisons remain editorially independent.
+  - paragraph: Information on this site is general factual information, not financial product advice.
+  - link "MerchantCompare on LinkedIn":
+    - /url: https://www.linkedin.com/company/merchantcompare
+  - link "MerchantCompare on X":
+    - /url: https://x.com/smbcompare
+  - 'button "Country: Australia. Change country site"':
+    - generic: Australia
+  - heading "Compare" [level=5]:
+    - link "Compare":
+      - /url: /compare
+  - link "Payments":
+    - /url: /compare
+  - link "Accounting":
+    - /url: /compare
+  - link "People & Payroll":
+    - /url: /compare
+  - link "Sales & Marketing":
+    - /url: /compare
+  - link "E-Commerce":
+    - /url: /compare
+  - link "AI":
+    - /url: /compare
+  - heading "Resources" [level=5]
+  - link "How We Compare":
+    - /url: /how-we-compare
+  - link "All Providers":
+    - /url: /providers
+  - link "Articles":
+    - /url: /articles
+  - link "Guides":
+    - /url: /guides
+  - link "Reports":
+    - /url: /reports
+  - link "Versus":
+    - /url: /compare/comparisons
+  - heading "Company" [level=5]
+  - link "About":
+    - /url: /about
+  - link "Services":
+    - /url: /services
+  - link "Contact":
+    - /url: /contact
+  - link "Partners":
+    - /url: /partners
+  - link "Media kit":
+    - /url: /media-kit
+  - link "Privacy Policy":
+    - /url: /privacy
+  - link "Terms of Use":
+    - /url: /terms
+  - generic: © Copyright 2026 Merchant Compare.
+  - generic: Made in Australia.
+- alert

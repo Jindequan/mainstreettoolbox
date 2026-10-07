@@ -1,0 +1,216 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwjn4KCGupuXAxXpxTgGHW4mHNEQPHoECAYQBA
+  - combobox "Search": booth rent vs commission calculator booth rent vs commission calculator
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dbooth%2Brent%2Bvs%2Bcommission%2Bcalculator%26newwindow%3D1%26sca_esv%3De4aefc4d69977452%26gl%3Dus%26hl%3Den%26sxsrf%3DAPpeQntYwc-S2BXtCTLGgSKMqWJn1eUlRw%253A1790948194753%26ei%3DYrO_aqnGLbbH4-EPoJuSsQQ%26biw%3D1280%26bih%3D720%26ved%3D2ahUKEwip_9X3uZuXAxW24zgGHaCNJEYQ4dUDegQIBhAM%26uact%3D5%26oq%3Dbooth%2Brent%2Bvs%2Bcommission%2Bcalculator%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiI2Jvb3RoIHJlbnQgdnMgY29tbWlzc2lvbiBjYWxjdWxhdG9ySBJQAFgAcAB4AZABAJgBAKABAKoBALgBA8gBAPgBAvgBAZgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ%26sclient%3Dgws-wiz-serp&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&biw=1280&bih=720&sxsrf=APpeQnu6curdP3UPTPqwoY_uzgOEj6XxRw:1790948225339&udm=imgs&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkJswfxpqShzBmeU9vLtlIzopjL8GevC4L9ZTknjTuyYZNj4rl0Pk-t4SeTNeAmp10bOTcyvZqzFfmS8fciEJ7KhLnD1qFLzhkL7sE4rUaTzQUcLYHA&q=booth+rent+vs+commission+calculator&sa=X&ved=2ahUKEwjn4KCGupuXAxXpxTgGHW4mHNEQtKgLegQIGRAB
+      - generic: Images
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&biw=1280&bih=720&sxsrf=APpeQnu6curdP3UPTPqwoY_uzgOEj6XxRw:1790948225339&q=booth+rent+vs+commission+calculator&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkJswfxpqShzBmeU9vLtlIzopjL8GevC4L9ZTknjTuyYZNj4rl0Pk-t4SeTNeAmp10bOTcyvZqzFfmS8fciEJ7KhLnD1qFLzhkL7sE4rUaTzQUcLYHA&sa=X&ved=2ahUKEwjn4KCGupuXAxXpxTgGHW4mHNEQ0pQJegQIGBAB
+      - generic: News
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&biw=1280&bih=720&sxsrf=APpeQnu6curdP3UPTPqwoY_uzgOEj6XxRw:1790948225339&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkJswfxpqShzBmeU9vLtlIzopjL8GevC4L9ZTknjTuyYZNj4rl0Pk-t4SeTNeAmp10bOTcyvZqzFfmS8fciEJ7KhLnD1qFLzhkL7sE4rUaTzQUcLYHA&q=booth+rent+vs+commission+calculator&sa=X&ved=2ahUKEwjn4KCGupuXAxXpxTgGHW4mHNEQtKgLegQIFhAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&biw=1280&bih=720&sxsrf=APpeQnu6curdP3UPTPqwoY_uzgOEj6XxRw:1790948225339&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkJswfxpqShzBmeU9vLtlIzopjL8GevC4L9ZTknjTuyYZNj4rl0Pk-t4SeTNeAmp10bOTcyvZqzFfmS8fciEJ7KhLnD1qFLzhkL7sE4rUaTzQUcLYHA&q=booth+rent+vs+commission+calculator&sa=X&ved=2ahUKEwjn4KCGupuXAxXpxTgGHW4mHNEQs6gLegQIFxAB
+      - generic: Forums
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&biw=1280&bih=720&sxsrf=APpeQnu6curdP3UPTPqwoY_uzgOEj6XxRw:1790948225339&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkJswfxpqShzBmeU9vLtlIzopjL8GevC4L9ZTknjTuyYZNj4rl0Pk-t4SeTNeAmp10bOTcyvZqzFfmS8fciEJ7KhLnD1qFLzhkL7sE4rUaTzQUcLYHA&q=booth+rent+vs+commission+calculator&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&biw=1280&bih=720&sxsrf=APpeQnu6curdP3UPTPqwoY_uzgOEj6XxRw:1790948225339&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIqtB7m0uJCnmO69VZCGvjkJswfxpqShzBmeU9vLtlIzopjL8GevC4L9ZTknjTuyYZNj4rl0Pk-t4SeTNeAmp10bOTcyvZqzFfmS8fciEJ7KhLnD1qFLzhkL7sE4rUaTzQUcLYHA&q=booth+rent+vs+commission+calculator&sa=X&ved=2ahUKEwjn4KCGupuXAxXpxTgGHW4mHNEQs6gLegQIFRAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "Booth Rent vs Commission Calculator Lutily https://lutily.com › Tools":
+    - /url: /goto?url=CAESaQHrOzAV_bePacG9OkqCRS0WdYuXlxZd0hmuPJVegUnbZOdspPg0qHfWexhw-JTJ5oqg_8HlNukweRGCiTI7ywaW1Vjz2K7cV_rzd2h10iajtkxNmziOb9khfjDJR8XLzTTLZ8_Mck4HcQ
+    - heading "Booth Rent vs Commission Calculator" [level=3]
+    - generic: Lutily
+    - generic: https://lutily.com › Tools
+  - button "About this result":
+  - text: Booth rent or commission?
+  - emphasis: Use our free calculator
+  - text: to compare real take-home pay and find your break-even point — then decide with confidence.
+  - heading "People also ask" [level=2]
+  - button "Is booth rent better than commission?":
+    - generic: Is booth rent better than commission?
+  - button "What are the disadvantages of booth renting?":
+    - generic: What are the disadvantages of booth renting?
+  - button "Are booth rent salons profitable?":
+    - generic: Are booth rent salons profitable?
+  - button "How do you calculate your commission?":
+    - generic: How do you calculate your commission?
+  - heading "Web results" [level=2]
+  - link "Booth Rent vs Commission Calculator, Earnings Compare Poli International https://poliinternational.com › Tools":
+    - /url: /goto?url=CAESbAHrOzAVCpZX7doqyPHQhKpfbXHQVC0qkNe5mIkZN9yBfYXk9P6sn_NaDIL-J6uZoDjY8mVA4WZ339i0alKs6bN2SKM9xNjG6obyGHnElWxi7F_ckEPEIXSQ2PjALbspvi6jFitJNvjTGLCxLQ
+    - heading "Booth Rent vs Commission Calculator, Earnings Compare" [level=3]
+    - generic: Poli International
+    - generic: https://poliinternational.com › Tools
+  - button "About this result":
+  - text: "The break-even point between booth rent and commission is calculated as:"
+  - emphasis: weekly rent ÷ commission percentage
+  - text: = the weekly revenue at which both models pay out ...
+  - link "Booth Rent vs Commission Calculator Tilavon https://tilavon.com › Tools":
+    - /url: /goto?url=CAESagHrOzAVpZL7MONbgghsSfbhtFDds0nWYjC-ppDwf88wTc4OOUyfqRESUzJwgaDjZLlrR5ZpMRokeayFlKkuEr2InWavfjfHDX6Y99WA5N49cd1hnSVHptfxDc-hQz2YfSMGGweTCVxu8FU
+    - heading "Booth Rent vs Commission Calculator" [level=3]
+    - generic: Tilavon
+    - generic: https://tilavon.com › Tools
+  - button "About this result":
+  - text: At $966 per chair per week,
+  - emphasis: booth rent earns you the same as commission
+  - text: . Charge less and commission wins; charge more and booth rent wins — if you can keep ...
+  - link "Read more":
+    - /url: /goto?url=CAEStwEB6zswFTw7DVx7G0IK9cudx0Bw3oBHS1JVQ5prvj_pfHk4Q5Vw8-jR09u-zHTZiq7M5NDIGql9QJy3a1IKuf7qoN5YmAvfNojPYK6DlfFGu139vdpnOgYx8VeEFWm1JIknSkE2RbeGDWi6XnL-TaGk5p5CweLJrrNC9fXKXCtFjjH8uwgrMZ2iQ4_tV25FYJa-1nvFQHy_uzb5qcBA6bjzavixZpbC7nBF3b56hjoqcsJ8CQW8rI8
+  - 'link "Booth Rent vs. Commission: Which Model Is Right Zenoti https://www.zenoti.com › thecheckin › booth-rent-vs-c..."':
+    - /url: /goto?url=CAEScgHrOzAVovbbsJcrejPe3Us878uIeprJjo-lpjea5A-JPqtEAtpTbbbBD0q6E0V0v4ZNYWjOYKWKlCbD6OQzuQPePABre4wnHj56x6toD71V-mULQ46eXRXIFY3NRrT52276QC90yw6Hp3hBV77biAM3bw
+    - 'heading "Booth Rent vs. Commission: Which Model Is Right" [level=3]'
+    - generic: Zenoti
+    - generic: https://www.zenoti.com › thecheckin › booth-rent-vs-c...
+  - button "About this result":
+  - generic: Dec 20, 2024 —
+  - text: "Understand the costs:"
+  - emphasis: Calculate all potential expenses
+  - text: ", including rent, supplies, insurance, and marketing. Compare these with your expected ..."
+  - link "Read more":
+    - /url: /goto?url=CAES2gEB6zswFULf1NeCQyUmclDTFu4q63UAbA19mKb1l1Q_7ZF5H9HnGLY6cKc9cyKWMYvpbKAKzIleyNpJEcGpmriPd4zKUJPPt4N1vqgD4BX2yWMSkrDQPnvUsT3tfTMgqwKz6-bDnnPtQzichiQeyyJ4HYPI9pVMbKGu9IaSk-vhJaHIBOw9d7b0H2GvhTx-uBQkXy8R14ffSJQKnQsNgLaaN6Anqf9FHqJEHQGCe-p0o05i5VcFwVXyLE7sZCtS0Ffj_cYkCrVODgnR5rLPx4NzA8YRweCinuE1TA
+  - 'link "Booth Rent vs Commission Calculator (2026): Honest Math Hair Salon Pro https://hairsalonpro.com › booth-rent-vs-commission-ca..."':
+    - /url: /goto?url=CAESdQHrOzAVJf-9A8I6RBNqY77zPSEGwTUbrBAPFtgM_9INlM8zG7OvZajn9oF4rqcEfvmitsmgwR3Yqn2ZjqmwI03PF-WiwcJR4g5ITpVXW6aamGmn3FCjfdywMJzlRXJuB223_VNjccWL57WDhMsww5uTF1rNeQ
+    - 'heading "Booth Rent vs Commission Calculator (2026): Honest Math" [level=3]'
+    - generic: Hair Salon Pro
+    - generic: https://hairsalonpro.com › booth-rent-vs-commission-ca...
+  - button "About this result":
+  - text: Booth rent or commission?
+  - emphasis: Free 2026 calculator
+  - text: shows real annual take-home under each, with W-2 vs 1099 tax math built in. Find your break-even gross.
+  - link "Booth Rent vs Commission Calculator | Free Tool by ... Tabby AI Bookkeeper https://www.usetabby.com › tools › booth-rent-vs-com...":
+    - /url: /goto?url=CAESewHrOzAVs57jjvCvDw3ZjyCd-B5bJmVPatRq2zT_--COT0PzWwKits3UIFvdO1cK3qlITpucdGBFULaj56qEZRcBymTDkCAxBBg3pEspo6IPhIDZxVwbOX7uIEq7966rXMKmW03oN4j61cIDiRSnDckp5km1dcInJGmeMA
+    - heading "Booth Rent vs Commission Calculator | Free Tool by ..." [level=3]
+    - generic: Tabby AI Bookkeeper
+    - generic: https://www.usetabby.com › tools › booth-rent-vs-com...
+  - button "About this result":
+  - text: The calculator
+  - emphasis: computes monthly take-home under both
+  - text: and finds your break-even revenue — the volume where renting starts beating commission.
+  - img "Rated 4.9 out of 5, (150) user reviews":
+    - text: "4.9"
+    - text: (150)
+  - text: ·
+  - text: Free · ‎iOS
+  - link "Booth rent vs commission calculator for salon owners - Nouz nouz.co https://nouz.co › Tools":
+    - /url: /goto?url=CAEScQHrOzAVRstGkVFZhy_-bqFNBmTcHKoHGui8G9_g8BQXBcWatCxY0PByeycV24GttBrX25i1-Bde0QnCGukEeBQtk1WpWW40Zo37WCcjrmMmL_X3gFUEYamFEt4ZuhcqcKqcPcqNjYURT3EG9_t_8LQl
+    - heading "Booth rent vs commission calculator for salon owners - Nouz" [level=3]
+    - generic: nouz.co
+    - generic: https://nouz.co › Tools
+  - button "About this result":
+  - generic: May 25, 2026 —
+  - emphasis: Free calculator
+  - text: ": enter weekly bookings, commission %, and booth rent — see take-home under each model. The number that decides how to ..."
+  - 'link "Booth Rent vs Commission: Which Pays You More? Notomantra https://www.notomantra.com › booth-rent-vs-commissi..."':
+    - /url: /goto?url=CAESdwHrOzAVM-kz5OvqzIvcONVbAxBSB5QGIFpW_H8z36m3Bf4cb2zM0qKs8_Xc_VTw6-MfG2LGoscmVqjpmwxZVK1KA4s0kf11O24Xg1IIeUhgNqjDv_IXx4WNm0wvA_IO-PShfZoj7GJst3GACKK3aiggq4qVJyNL
+    - 'heading "Booth Rent vs Commission: Which Pays You More?" [level=3]'
+    - generic: Notomantra
+    - generic: https://www.notomantra.com › booth-rent-vs-commissi...
+  - button "About this result":
+  - text: This free calculator compares your real take-home pay both ways at your revenue level,
+  - emphasis: Booth rent is fixed, so every dollar above your costs is yours
+  - text: . Below it ...
+  - list:
+    - link "Compare Your Two Options":
+      - /url: /goto?url=CAESngEB6zswFSzYO__yEC0NE1kYMlzAe16p04ws163sqx6w73e8B8H2mm8rsWGS7Y_p-J8ZyxNHlKOFgz1-oOBELQCIKeV5SX7Rb8ZbKN1IdHwsqQBO2ZA_RM8sB9W3HDHVu5aI9abr0WogdYGUwVQNQFFdhSD5Qk9rl8D1c9FW3BAUEsxnjtj-nuNVnOnCkncZn4LOITNa73oue6YrrG2M7Q
+      - generic: Compare Your Two Options
+    - link "Booth Rent Vs Commission...":
+      - /url: /goto?url=CAESwQEB6zswFXA3KYHYO2i4p91SJOdYWi5C8i-vD9upWbjhVoqcE8n9aQmlBEs9a5IfP5KFMF1vDLI-LIbtuGUF_5WHIiWbtkQFsKxa7aPfhaEDjZlgJSW8QNzyTcl1vxLve8lKqErj4WV5b5WwrQuCLRb6iRC7GSDmIxobSqElSnJPlp7obT51Q0j_A-wRB5e92LZXkpDKhHl5esLc1rw-V3KCxZBQuk5I6xILlXQxsFUv07EuhNqL4G3cG_X8Aoyi5xej
+      - generic: Booth Rent Vs Commission...
+    - link "Why Commission Wins At Lower...":
+      - /url: /goto?url=CAESrgEB6zswFXUKTLKW7C9CIx1cFFOKFw7SbpDhQGszIzXuuEDs9wVJ44GlroRinsk8DzvGlmkj7OJh0ksEW5aZgQ5u74ZFq8WNu0Sac1vM4sX9eViN2fHYXuL46HdISyGGEORcqZ5SSbAkbQtdYd8f-qPtjPaxUDvDfBODATXRt9kBRUDTmPItdnI8iWjeb8noKOQGIo5ERNVWRgcSpSVBONrb3rz8T7mc0_V5rcRFJqU
+      - generic: Why Commission Wins At Lower...
+  - link "Booth Rent vs Commission Calculator - BarberFlow barberflow.com https://barberflow.com › Calculators":
+    - /url: /goto?url=CAEScwHrOzAVZvhZr0N0zvuuT_zpbFJi8cJ8fHMNtQeDEtBkvpUnVShKb3JdwbI2lS4XBTI2f873Tl94il8BezXX8bsbBIkdIp1n5C239jZkOQtZ6T3Hr0xDXFCPXmATlvuFPEkBGuHArxkBiJIwMlbRqSd2R6Y
+    - heading "Booth Rent vs Commission Calculator - BarberFlow" [level=3]
+    - generic: barberflow.com
+    - generic: https://barberflow.com › Calculators
+  - button "About this result":
+  - emphasis: Under booth rent the barber keeps service and product revenue and pays the rent
+  - text: . Under commission the barber keeps their percentage of each and the shop keeps ...
+  - link "Read more":
+    - /url: /goto?url=CAESwQEB6zswFW96Am6ryYXmUF4RYj90EcowcYdeNQsjYlfA87DJNC6IlJ_6m97njDuOKCju8NStp-7IfVdYAsf31cGLR72cpEejIM3FncvDH7PaY0RYEcM_43qEY2w7Bv1Ddh7sg1RlswcB9LbYjPPsNrwSnMCva_psJuVX7Mb_MeHhd7ASAS5Zy4i1gbGrcxfmb3ptTA89s_nSJrvkxTz85nHlK8eMk2RMM3Gtrwspcy0dZdwElyA0atsfu7oC4m7KVSvB
+  - 'link "Booth Rent vs Commission: The Math That Decides What ... StyleSeat https://www.styleseat.com › blog › booth-rent-vs-comm..."':
+    - /url: /goto?url=CAEScAHrOzAVZuhvTqds5L846jM77eF214y2gASThP9IW6FffnaGB4Y4Bc-Du1ZM2xPRedYERVcnf-q6cRl2OtzuBBaCLLdxb7BGVXWv0207m8PNUvtAJRo1aP1DXskwGtTpBjrLjl2r5Fc88M4WgNXppy0
+    - 'heading "Booth Rent vs Commission: The Math That Decides What ..." [level=3]'
+    - generic: StyleSeat
+    - generic: https://www.styleseat.com › blog › booth-rent-vs-comm...
+  - button "About this result":
+  - generic: Aug 28, 2026 —
+  - emphasis: Booth rent is a fixed cost and commission is a percentage
+  - text: ", so renting gets cheaper the busier you are and more expensive the slower you are."
+  - link "Read more":
+    - /url: /goto?url=CAESvQEB6zswFUbqv5RyHDZCNwL1rBW_T6Ud0drJKHt7-VwpD5ScP6BURU0NeW15Rr-L1daJAgty-OXJBxVQJDbhFxE_zOBPNXntczPkNueyjxxOF_iNqdLer4yzdfTb772VpFaF2xWt_bgxyrASgHnECw0cNyK-eewOU0waCot06K0i1UCKFScJ-Nt5UfDH1zVS_njXc-o36x1joPtt0xJXlNMjblx9mZELS913naQW6OY0DdWnmfpcQB7OKsZ5cCI
+  - list:
+    - link "Booth Rent Vs Commission...":
+      - /url: /goto?url=CAES3wEB6zswFaivTaJ0iz6ZarPiyLdJjxuoZiYgF3nk15znhFf7voDWBHqcl1khRfbuh2oJUPcPbpuQ-WSD6yWcDzZPpaDE2dGTStvq4TXS8pSIP02Nd7WeQsFx1cL6IWaafdkQDKnSKb1CXq76ie7dbKrwT2VLdKfVzw2QiytxJqoT891ShMnF1RU4FSy5-soW2xrnCYA4DS6bPKDyZko6C3uZIoVDjiEjSKmpQcZTXlRqsLCCJjtH6BdGjM4xSCMbos6yFqviRTO73BN1R7krGn-tAVGV1vaM0x-3btx1XNHb
+      - generic: Booth Rent Vs Commission...
+    - link "The Number That Decides It":
+      - /url: /goto?url=CAESwgEB6zswFT5009ollodfYOyyGn3qWL8RLJK5eM16iiTYJQTq9EmGVYLfxd5C0IqQyXnsbhY_XO9J1fKmey8MAEU76B1Xr5d3R46uymipVVNscSXkjBYuD-RBgJz6OpYzGpV_xrHe2NvYCwbrjqaKxJKfLJS7VexEK0BkV9PS9fo6y3pbzl48oo3fEH--6e411dIDH7-JYH3TrLXOxz82fFh2quZMoupozruaP-Kc7CdxVu8stEmkTSd4RDrCjMk5UD3HjA
+      - generic: The Number That Decides It
+    - link "Questions Pros Ask":
+      - /url: /goto?url=CAESswEB6zswFdDAXPxoHSFm6eicbon36JsLdVcdGs0f50VCxEurogdn7wBePzTS6HWR0kp5pU5ZHf6AcnbD_YeDq8msFAuJ8G5hF76rD-z2c27uTArugxScC10JEiwE9wPj-fW6Ky65mgwq43T_K8-lHBY0mV0BXrJjzqYhURREzqBmIV-qSP9ZuWaHyPd7InkoWFDV7RBZW8kzaJduhCOpRJ9MHOrsKdzGhBgNlhwyNFdkZOWxpg
+      - generic: Questions Pros Ask
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=booth+rent+vs+commission+calculator&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&biw=1280&bih=720&sxsrf=APpeQnu6curdP3UPTPqwoY_uzgOEj6XxRw:1790948225339&ei=gbO_aqecFOmL4-EP7szwiA0&start=10&sa=N&sstk=AS6-VmJobNDXiidDDlcbverG3LMcCAO5ALxVl9_w3mKmYOLPEH2iDmgQzqy83V5Wt-DQG81CBAtaJN1CYIftsKWpHCROLHTgNlglyQ&ved=2ahUKEwjn4KCGupuXAxXpxTgGHW4mHNEQ8tMDegQIPxAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=booth+rent+vs+commission+calculator&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&biw=1280&bih=720&sxsrf=APpeQnu6curdP3UPTPqwoY_uzgOEj6XxRw:1790948225339&ei=gbO_aqecFOmL4-EP7szwiA0&start=20&sa=N&sstk=AS6-VmJobNDXiidDDlcbverG3LMcCAO5ALxVl9_w3mKmYOLPEH2iDmgQzqy83V5Wt-DQG81CBAtaJN1CYIftsKWpHCROLHTgNlglyQ&ved=2ahUKEwjn4KCGupuXAxXpxTgGHW4mHNEQ8tMDegQIPxAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=booth+rent+vs+commission+calculator&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&biw=1280&bih=720&sxsrf=APpeQnu6curdP3UPTPqwoY_uzgOEj6XxRw:1790948225339&ei=gbO_aqecFOmL4-EP7szwiA0&start=30&sa=N&sstk=AS6-VmJobNDXiidDDlcbverG3LMcCAO5ALxVl9_w3mKmYOLPEH2iDmgQzqy83V5Wt-DQG81CBAtaJN1CYIftsKWpHCROLHTgNlglyQ&ved=2ahUKEwjn4KCGupuXAxXpxTgGHW4mHNEQ8tMDegQIPxAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=booth+rent+vs+commission+calculator&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&biw=1280&bih=720&sxsrf=APpeQnu6curdP3UPTPqwoY_uzgOEj6XxRw:1790948225339&ei=gbO_aqecFOmL4-EP7szwiA0&start=40&sa=N&sstk=AS6-VmJobNDXiidDDlcbverG3LMcCAO5ALxVl9_w3mKmYOLPEH2iDmgQzqy83V5Wt-DQG81CBAtaJN1CYIftsKWpHCROLHTgNlglyQ&ved=2ahUKEwjn4KCGupuXAxXpxTgGHW4mHNEQ8tMDegQIPxAK
+      - text: "5"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=booth+rent+vs+commission+calculator&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&biw=1280&bih=720&sxsrf=APpeQnu6curdP3UPTPqwoY_uzgOEj6XxRw:1790948225339&ei=gbO_aqecFOmL4-EP7szwiA0&start=10&sa=N&sstk=AS6-VmJobNDXiidDDlcbverG3LMcCAO5ALxVl9_w3mKmYOLPEH2iDmgQzqy83V5Wt-DQG81CBAtaJN1CYIftsKWpHCROLHTgNlglyQ&ved=2ahUKEwjn4KCGupuXAxXpxTgGHW4mHNEQ8NMDegQIPxAM
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

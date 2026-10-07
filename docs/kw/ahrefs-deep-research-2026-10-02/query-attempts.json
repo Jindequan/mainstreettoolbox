@@ -1,0 +1,162 @@
+[
+  {
+    "seed": "battery passport",
+    "country": "us",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/battery-passport-us.json",
+    "retrieved_at": "2026-10-02T13:34:04.288Z"
+  },
+  {
+    "seed": "booth rent",
+    "country": "us",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/booth-rent-us.json",
+    "retrieved_at": "2026-10-02T13:40:31.191Z"
+  },
+  {
+    "seed": "cash discount",
+    "country": "au",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/cash-discount-au.json",
+    "retrieved_at": "2026-10-02T13:49:59.772Z"
+  },
+  {
+    "seed": "digital waste tracking",
+    "country": "gb",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/digital-waste-tracking-gb.json",
+    "retrieved_at": "2026-10-02T13:44:08.156Z"
+  },
+  {
+    "seed": "digital waste tracking",
+    "country": "us",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/digital-waste-tracking-us.json",
+    "retrieved_at": "2026-10-02T13:36:31.823Z"
+  },
+  {
+    "seed": "fall cleanup",
+    "country": "us",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/fall-cleanup-us.json",
+    "retrieved_at": "2026-10-02T13:41:39.419Z"
+  },
+  {
+    "seed": "labor burden",
+    "country": "us",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/labor-burden-us.json",
+    "retrieved_at": "2026-10-02T13:40:31.208Z"
+  },
+  {
+    "seed": "no tax on tips",
+    "country": "us",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/no-tax-on-tips-us.json",
+    "retrieved_at": "2026-10-02T13:39:13.518Z"
+  },
+  {
+    "seed": "overtime tax deduction",
+    "country": "us",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/overtime-tax-deduction-us.json",
+    "retrieved_at": "2026-10-02T13:37:49.094Z"
+  },
+  {
+    "seed": "packaging epr",
+    "country": "us",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/packaging-epr-us.json",
+    "retrieved_at": "2026-10-02T13:35:40.828Z"
+  },
+  {
+    "seed": "qualified overtime",
+    "country": "us",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/qualified-overtime-us.json",
+    "retrieved_at": "2026-10-02T13:51:40.889Z"
+  },
+  {
+    "seed": "snow removal",
+    "country": "us",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/snow-removal-us.json",
+    "retrieved_at": "2026-10-02T13:41:39.404Z"
+  },
+  {
+    "seed": "surcharge ban",
+    "country": "au",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/surcharge-ban-au.json",
+    "retrieved_at": "2026-10-02T13:37:48.976Z"
+  },
+  {
+    "seed": "surcharge ban calculator",
+    "country": "au",
+    "rows": 0,
+    "status": "no_keyword_ideas",
+    "evidence": "free-ui/surcharge-ban-calculator-au.json",
+    "retrieved_at": "2026-10-02T13:44:46.047Z"
+  },
+  {
+    "seed": "surcharge calculator",
+    "country": "au",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/surcharge-calculator-au.json",
+    "retrieved_at": "2026-10-02T13:51:40.931Z"
+  },
+  {
+    "seed": "tip tax deduction",
+    "country": "us",
+    "rows": 11,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/tip-tax-deduction-us.json",
+    "retrieved_at": "2026-10-02T13:36:10.108Z"
+  },
+  {
+    "seed": "treasury tipped occupation code",
+    "country": "us",
+    "rows": 8,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/treasury-tipped-occupation-code-us.json",
+    "retrieved_at": "2026-10-02T13:42:32.032Z"
+  },
+  {
+    "seed": "w2 code tt",
+    "country": "us",
+    "rows": 5,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/w2-code-tt-us.json",
+    "retrieved_at": "2026-10-02T13:42:32.009Z"
+  },
+  {
+    "seed": "waste receipt",
+    "country": "gb",
+    "rows": 1,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/waste-receipt-gb.json",
+    "retrieved_at": "2026-10-02T13:53:08.158Z"
+  },
+  {
+    "seed": "waste transfer note",
+    "country": "gb",
+    "rows": 20,
+    "status": "keyword_ideas_returned",
+    "evidence": "free-ui/waste-transfer-note-gb.json",
+    "retrieved_at": "2026-10-02T13:49:59.809Z"
+  }
+]

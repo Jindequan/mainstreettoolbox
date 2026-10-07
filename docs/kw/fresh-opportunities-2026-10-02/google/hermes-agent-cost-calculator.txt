@@ -1,0 +1,212 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQPHoECAYQBA
+  - combobox "Search": hermes agent cost calculator hermes agent cost calculator
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dhermes%2Bagent%2Bcost%2Bcalculator%26newwindow%3D1%26sca_esv%3D657ce744dba959fb%26hl%3Den%26gl%3Dus%26biw%3D1280%26bih%3D720%26sxsrf%3DAPpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg%253A1790944783786%26ei%3DD6a_aqDLL6W94-EPmJ-CkQQ%26ved%3D2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ4dUDegQIBhAM%26uact%3D5%26oq%3Dhermes%2Bagent%2Bcost%2Bcalculator%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiHGhlcm1lcyBhZ2VudCBjb3N0IGNhbGN1bGF0b3JICVAAWABwAHgBkAEAmAEAoAEAqgEAuAEDyAEA-AEC-AEBmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB%26sclient%3Dgws-wiz-serp&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&q=hermes+agent+cost+calculator&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&udm=imgs&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&q=hermes+agent+cost+calculator&sa=X&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQtKgLegQIFBAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&q=hermes+agent+cost+calculator&sa=X&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQtKgLegQIFRAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&q=hermes+agent+cost+calculator&sa=X&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQs6gLegQIFhAB
+      - generic: Forums
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&q=hermes+agent+cost+calculator&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&sa=X&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQ0pQJegQIFxAB
+      - generic: News
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&q=hermes+agent+cost+calculator&sa=X&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQs6gLegQIExAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - 'link "Hermes Agent Cost Calculator: Provider, VPS, and FlyHermes ... hermes-agent.ai https://hermes-agent.ai › Blog"':
+    - /url: /goto?url=CAEScQHrOzAVlV54_tx1-_Xt2rp1wLWpVDjWxFupDi7K461fDldJRud7b6qzBKDf-P8mhbYT1O2JHCacRP5yNuyu-9vha_4FYsODEPBVjyqeHlqf8hSfFzaLeFu_mRU4Yr8iiX-_P4LlyrlT4XTedUetCaXl
+    - 'heading "Hermes Agent Cost Calculator: Provider, VPS, and FlyHermes ..." [level=3]'
+    - generic: hermes-agent.ai
+    - generic: https://hermes-agent.ai › Blog
+  - button "About this result":
+  - generic: Sep 11, 2026 —
+  - emphasis: Calculate the real Hermes Agent cost
+  - text: for model providers, API credits, rate limits, VPS hosting, dashboards, gateways, cron jobs, ...
+  - 'link "Hermes Agent cost: Real monthly pricing and breakdown ... Hostinger https://www.hostinger.com › Tutorials"':
+    - /url: /goto?url=CAESbgHrOzAV8pKg8Ar6VdC9yomzivgfKSdgnMW_RD-gBCV7jtSf01MuyLsJD4abPPyNT12uZ3kSyLp2oxVQep_Msi1COC2-i00to5_GiYcerKK5Jqz1Dy0PPAkSCb7IjMsWWjVnrSNr1etJMk5zXrsW
+    - 'heading "Hermes Agent cost: Real monthly pricing and breakdown ..." [level=3]'
+    - generic: Hostinger
+    - generic: https://www.hostinger.com › Tutorials
+  - button "About this result":
+  - generic: Sep 15, 2026 —
+  - emphasis: Hermes Agent costs from $5.99/month for a managed plan
+  - text: ", while a self-hosted deployment typically costs around $6 to $85+ per month once VPS ..."
+  - link "Read more":
+    - /url: /goto?url=CAESywEB6zswFT3s-KZ39iLMZJAQnbVzXQmnOjZsWd1fSSLBIliaFourNOKSaVl3NyfzCyKNXm5wCkQ9EUZ7K6sDjK54PUAh4dTrbpA_B02OZesSKa0QhR7pkOLZW9vxT3oisgJHEyx100KPfDHRVFePYMp67vlNEZzcUI8cmrUL1AtktXf060hSovt_2USnklnOA82ScwTXCbo3qfKi0rl8MZ9xgsTpzb5X13IQz4sdRE7ywt8IxfsX1cF33MKiegrnFt-DRvGl7qpjcj2sFA
+  - 'link "Hermes Agent Pricing and AI Agent Cost: FlyHermes vs Self ... hermes-agent.ai https://hermes-agent.ai › pricing"':
+    - /url: /goto?url=CAESVwHrOzAVujRX4WZBDTM5b9wt2_pstSJU-xwXPwJaq6AiQxVtR4-Q9kb9Sae-sUlQjFpo_3CymgSXhT3iLEPrP0X6ZG58H5k_Dai_awzv2HbaOGV8JAr24g
+    - 'heading "Hermes Agent Pricing and AI Agent Cost: FlyHermes vs Self ..." [level=3]'
+    - generic: hermes-agent.ai
+    - generic: https://hermes-agent.ai › pricing
+  - button "About this result":
+  - text: Assumptions used in the
+  - emphasis: calculator
+  - text: ": $20/month VPS, $60/month API usage, 3 hours of initial setup, and 3.5 hours/week of ongoing maintenance."
+  - link "How much do you guys spend on AI costs monthly Reddit · r/hermesagent 50+ comments · 4 months ago":
+    - /url: /goto?url=CAESnQEB6zswFVBK3K1zEbrNWsFNK4xZdET7jv0WppnoEpmtvVMd-gcJm1639Lkn9nBVLvGQiLmXU_py4s6JuvcIQj69aJqRmzbgS6fuqOjeV2XEWkqdldrEuTsCE4IaxhJxsiR-tqjRFDh42Tgm2CM3TVHxLYHde9vcnl9XzJnbfru_U8GmDHxXcyi-ZccohkE0SJeY6XJI5zIGh1nLL1Y0
+    - heading "How much do you guys spend on AI costs monthly" [level=3]
+    - generic: Reddit · r/hermesagent
+    - generic: 50+ comments · 4 months ago
+  - button "About this result":
+  - generic: I have been trying to set up Hermes but i only have my local model which is not great for my use case so I have been thinking of using deepseek. But wondering ...
+  - link "56 answers":
+    - /url: /goto?url=CAESpQEB6zswFVZNVVWpQSRb0i8TuEQHUke8NGM9V1pY_xPS1cVwnrzE3Mg3tksnqS5iB8XMILyOE02TAx95PeCOT94-0zvriF4GwFgouNSyfDaHAaCDCT6OHnpIIetnTN6HgvTapx4JvXv1whn6oRmuiHNIz5qBKOnAyOKtrijLAoiHd3xhm47sQQfHpLzQAoB_H4VMoS5DzuonXJ0FmGVddp6KXfk02cI
+  - generic: ·
+  - generic: "Top answer:"
+  - generic: Deepseek v4 flash is a lot of bang for the bucks
+  - heading "People also ask" [level=2]
+  - button "How much does Hermes Agent cost?":
+    - generic: How much does Hermes Agent cost?
+  - button "Do you need to pay for Hermes agent?":
+    - generic: Do you need to pay for Hermes agent?
+  - button "Is Hermes agent free of cost?":
+    - generic: Is Hermes agent free of cost?
+  - button "Where can I host my Hermes Agent for the cheapest price?":
+    - generic: Where can I host my Hermes Agent for the cheapest price?
+  - heading "Web results" [level=2]
+  - link "How Much Does Hermes Agent Cost? API, VPS & ... Hermify https://www.hermify.io › Home › Blog":
+    - /url: /goto?url=CAESdgHrOzAVbPg9kCnwlAS59pdEIkm0UobOiwxDml8YN34TPSRuPKoQ0dvg1b47H0pFIof007Ehv2tViMuUJk2h8r-xNwTktBMkV3sU7n-wu_me7cNPdpH7FL8WMYju4Fg75171WynTChHPNUa8FYNdDk8UlKX48BQ
+    - heading "How Much Does Hermes Agent Cost? API, VPS & ..." [level=3]
+    - generic: Hermify
+    - generic: https://www.hermify.io › Home › Blog
+  - button "About this result":
+  - generic: Apr 15, 2026 —
+  - emphasis: Estimate the real cost of Hermes Agent
+  - text: ", A self-hosted setup usually combines a $5 to $20 VPS with model usage, Cost: $12/month for the Starter ..."
+  - 'link "Hermes Agent Costs: Prices, Limits & Scenarios Gradually AI https://www.gradually.ai › hermes-agent-costs"':
+    - /url: /goto?url=CAESZwHrOzAVqISV0NTel8T_X14dy9PDXaGAHGyVOgIucho5Sl417jazCul1SkfGpoz4FdQl1XO2nfQ4MEBJkQUDynQ1rDnnKsrHzexsJZAWEawM-o4kO5Y1nH6YzoZUKdwOci5VTgHt9wg
+    - 'heading "Hermes Agent Costs: Prices, Limits & Scenarios" [level=3]'
+    - generic: Gradually AI
+    - generic: https://www.gradually.ai › hermes-agent-costs
+  - button "About this result":
+  - generic: 2 days ago —
+  - emphasis: Hermes Agent
+  - text: itself is free (MIT license). Real
+  - emphasis: costs
+  - text: come from API tokens, $0 to $85 or more a month, plus optional hosting for 24/7 channels ...
+  - link "Read more":
+    - /url: /goto?url=CAESsgEB6zswFaVh8T8PkpsMnPatVmWs-7yMcDyS3db7sC20nyIslFH5-27IdkxgyHIg38Qh3wgEgrg1M0divV8zakg3lE8NLE2DTFyknLlQaSShNEoehUANTFVHiGfnt2WoDN_7mXnXXyStuNOkQEha0XbHaxfVwbcTHClTianU4ZGhU725WBm00CkJaHhKDpUYRik9_l6RG5kwbq3s7U6MSvmogODoImYbJR2f3tSGvz0lKb6X
+  - 'link "Hermes Agent Pricing: Free Software, Paid Tokens (2026) Layer3Labs https://www.layer3labs.io › Resources"':
+    - /url: /goto?url=CAESbQHrOzAVpi_dANiSH6g6UpbWUFyfhWl6GM3pJPpr0T__V9A8kQB0Vc7QpBzDv6tdlA-B24JU89KD6cnnMGVQAIQUkeLgOXK1mfN4uG2O0fDv_Nd4_8Od_1UHc-7eC6VXjJFaLNTgu6LkVLaGgjI
+    - 'heading "Hermes Agent Pricing: Free Software, Paid Tokens (2026)" [level=3]'
+    - generic: Layer3Labs
+    - generic: https://www.layer3labs.io › Resources
+  - button "About this result":
+  - generic: Sep 2, 2026 —
+  - text: A realistic
+  - emphasis: Hermes Agent
+  - text: bill runs from near $0 for a local hobby setup to roughly $80 a month for a busy business
+  - emphasis: agent
+  - text: on a paid model and VPS ...
+  - link "Read more":
+    - /url: /goto?url=CAESugEB6zswFWJLXt3HWlNgQJeyOX9DIdEVOf4j39pCanviCpYV2eIQb22oGKLjQsbJ184KBwdgWc6TghcadSZYq5D0Bl2SVccvU2OJwiM88oNwTgLP_Roo7hnV26S9syHhwVGF0DTQMM2d4PcrD7jSPZdZhmFsy0u5PN4Bbs4g0Eqy_UfmyQkSxpC-G0zG-T3OHJoq6Mu3NPly489MI0Uv7_ujMrQcY_zT-BLWlFj8Epw_8yFNv-L7hABcMUE
+  - 'link "Hermes AI Agent Pricing: Managed Hosting vs VPS Costs ... MindStudio https://www.mindstudio.ai › blog › hermes-managed-age..."':
+    - /url: /goto?url=CAEScwHrOzAVwtzrHjn2XXWMVo2c9r2_AUAhj2PafSF6ITIdHAWAQrQaYcO_CEfGKB_v_FbLgZ6lnfZaec0tz0jmYIIUMQP8rlboSpinkqXRylCgAV3wWprYQOhC8xg74yoY807vKnIKe3hw_mlXZ6RBeI7MNYg
+    - 'heading "Hermes AI Agent Pricing: Managed Hosting vs VPS Costs ..." [level=3]'
+    - generic: MindStudio
+    - generic: https://www.mindstudio.ai › blog › hermes-managed-age...
+  - button "About this result":
+  - generic: Aug 27, 2026 —
+  - text: Managed Hermes agent hosting
+  - emphasis: starts at $6/month
+  - text: vs a VPS setup. Here's what each pricing tier actually includes and who should pick which.
+  - link "AI Agent Pricing — HermesInstall hermesinstall.com https://www.hermesinstall.com › Pricing":
+    - /url: /goto?url=CAESXgHrOzAV3QIzUeOwUjp0Pd-ghs2zR1w1Dn1vilMn1HCRzt-YdfWYKR5VhwH3DY-rR2fkwXZJuNzz0XKGhkt4mpy4rcRQtlmGXOwjb8lJiqBva3dAEDdBYyKwyoiBWIA
+    - heading "AI Agent Pricing — HermesInstall" [level=3]
+    - generic: hermesinstall.com
+    - generic: https://www.hermesinstall.com › Pricing
+  - button "About this result":
+  - emphasis: Transparent pricing for Hermes cloud and on-site deployments
+  - text: . Includes Stripe checkout links and guided plan matching.
+  - generic: $29.00 to $3,000.00
+  - 'link "Hermes Agent Cost Guide: Hosting, AI Usage, Total Cost oneclickclaw.io https://oneclickclaw.io › Hermes Agent"':
+    - /url: /goto?url=CAESYQHrOzAVtYPnvcSMhowDB8TTw40SKkCTXVcPvScS5A45aGEXvGYc7rrhWqkBA1jUqfmusxXvjx-Czlc6OaCELAQB07eOzd9drGUfph2FOHAhaBZKb4fGCEVdpDe9r0xDOlw
+    - 'heading "Hermes Agent Cost Guide: Hosting, AI Usage, Total Cost" [level=3]'
+    - generic: oneclickclaw.io
+    - generic: https://oneclickclaw.io › Hermes Agent
+  - button "About this result":
+  - text: "What running Hermes Agent costs each month:"
+  - emphasis: free software
+  - text: ", the always-on server it needs, and the AI provider bill you pay directly, with a worked estimate."
+  - list:
+    - link "The Three Things You Are...":
+      - /url: /goto?url=CAESpAEB6zswFYlPT50DMlAfBoh_51JJry4YKxeGQh66aKZKwLCgwmVOcj3zGL8U3lHtR-MwxtiMHSwMBinFMzypLLwZD_DR5le_7D3Osh6Stxd8Ea21Jlxp_5AR-2bIwBUKOaECe6brZqFRyBDAGHfYxhPabQfoNueipO4LhWnggsAL7xM8MEk91hnmwELcVFqPIxiPhwn03T0M-Y4E80WWX6no85ISmg
+      - generic: The Three Things You Are...
+    - 'link "Part Two: The Variable Ai..."':
+      - /url: /goto?url=CAESnAEB6zswFe8O6q_u1EePhWj--yijk6B7JlrA5PjnwqNPXh-G8J20RSBMm92-kbVq2witVi5gxQGbyFW2qcQEf3tFBRv_Vjgo4LC2SwI-QW7HApqccBLeDkaa_jH0qeLIyCHSL3otVTmIqC0gm12F33KoJW4LsPOc_MKh7c7h-wsQN1cUyQEDDlm7amw0SOGE5ts5h5DYd8Y1xJPXoAw
+      - generic: "Part Two: The Variable Ai..."
+    - link "How To Estimate Your Own...":
+      - /url: /goto?url=CAESqgEB6zswFWSoE8t2hXCBRmO_o3bewODzTLrLZ9KcwnJEeyn7gEtlrMoNDz-KimDWpNrPgt1DdbPmK8BjQbjWs7PlfgV3ZKkJfYNrDm-i0NZ4wgmlIa6LpO_Aw-VeZoR5ggqIgXyle0LCxtEX_mRcV-1zxGaozKHsPg0ogCleiKfEMZ-zXYd__ql_wO8ITx98Ke0Z532KH-ddwqjX98AvXiHVnKx-a0BpoDVf_A
+      - generic: How To Estimate Your Own...
+  - text: "Missing: calculator ‎| Show results with:"
+  - link "calculator":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&q=hermes+agent+cost+%22calculator%22&sa=X&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQ5t4CegQIXhAB
+  - heading "People also search for" [level=2]
+  - link "Hermes agent cost calculator reddit":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&q=Hermes+agent+cost+calculator+reddit&sa=X&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQ1QJ6BAhIEAE
+    - generic: Hermes agent cost calculator reddit
+  - link "Hermes agent cost calculator usa":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&q=Hermes+agent+cost+calculator+usa&sa=X&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQ1QJ6BAhJEAE
+    - generic: Hermes agent cost calculator usa
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=hermes+agent+cost+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&ei=R6a_aoK7G_-z4-EPz9iMqAs&start=10&sa=N&sstk=AS6-VmKZVst-atgLNu05VBi1dqd7oGbL7te_VJQjv5G7sdldHB1626qo5_1axDHA_Z00PbPajSP3yZet5cb5dsNfSrORnQpOz5VAmw&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQ8tMDegQIRhAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=hermes+agent+cost+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&ei=R6a_aoK7G_-z4-EPz9iMqAs&start=20&sa=N&sstk=AS6-VmKZVst-atgLNu05VBi1dqd7oGbL7te_VJQjv5G7sdldHB1626qo5_1axDHA_Z00PbPajSP3yZet5cb5dsNfSrORnQpOz5VAmw&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQ8tMDegQIRhAG
+      - text: "3"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=hermes+agent+cost+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQnuDiv_zmkl093gwWJo0meTsiq81KQ:1790944839457&ei=R6a_aoK7G_-z4-EPz9iMqAs&start=10&sa=N&sstk=AS6-VmKZVst-atgLNu05VBi1dqd7oGbL7te_VJQjv5G7sdldHB1626qo5_1axDHA_Z00PbPajSP3yZet5cb5dsNfSrORnQpOz5VAmw&ved=2ahUKEwjC-t63rZuXAxX_2TgGHU8sA7UQ8NMDegQIRhAI
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

@@ -1,0 +1,1 @@
+{"retrieved_at": "2026-10-02T13:32:17.477191+00:00", "method": "keywords_explorer_overview", "params": {"keywords": "battery passport", "country": "us", "select": "keyword,volume,cpc,difficulty", "limit": 1}, "ok": false, "error_type": "AuthenticationError", "status_code": 401, "message": "[\"Error\",\"Unauthorized\"]", "response_body": "[\"Error\",\"Unauthorized\"]"}

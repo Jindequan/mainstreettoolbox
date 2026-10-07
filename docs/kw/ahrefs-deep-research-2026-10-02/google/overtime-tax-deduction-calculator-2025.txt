@@ -1,0 +1,255 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0QPHoECAYQBA
+  - combobox "Search": overtime tax deduction calculator 2025 overtime tax deduction calculator 2025
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dovertime%2Btax%2Bdeduction%2Bcalculator%2B2025%26gl%3Dus%26hl%3Den&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&q=overtime+tax+deduction+calculator+2025&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-a7vPN0oJUPXgT9BPYDfgnNv0ZlTDhPHW1D2eptEeZsJAYSJuD4ZpuZ39QfFzYHJrjHRV0olMAsbf69UqHyCQBXsJ8-mmqOPefegVIF-fu3EPtVLJDMNxuem2Esb1K37JjMrWXKuf4PisQcJH7PbKfQdzWMqg&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q0pQJegQIGBAB
+      - generic: News
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-a7vPN0oJUPXgT9BPYDfgnNv0ZlTDhPHW1D2eptEeZsJAYSJuD4ZpuZ39QfFzYHJrjHRV0olMAsbf69UqHyCQBXsJ8-mmqOPefegVIF-fu3EPtVLJDMNxuem2Esb1K37JjMrWXKuf4PisQcJH7PbKfQdzWMqg&q=overtime+tax+deduction+calculator+2025&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0QtKgLegQIFhAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-a7vPN0oJUPXgT9BPYDfgnNv0ZlTDhPHW1D2eptEeZsJAYSJuD4ZpuZ39QfFzYHJrjHRV0olMAsbf69UqHyCQBXsJ8-mmqOPefegVIF-fu3EPtVLJDMNxuem2Esb1K37JjMrWXKuf4PisQcJH7PbKfQdzWMqg&q=overtime+tax+deduction+calculator+2025&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0QtKgLegQIFxAB
+      - generic: Videos
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-a7vPN0oJUPXgT9BPYDfgnNv0ZlTDhPHW1D2eptEeZsJAYSJuD4ZpuZ39QfFzYHJrjHRV0olMAsbf69UqHyCQBXsJ8-mmqOPefegVIF-fu3EPtVLJDMNxuem2Esb1K37JjMrWXKuf4PisQcJH7PbKfQdzWMqg&q=overtime+tax+deduction+calculator+2025&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-a7vPN0oJUPXgT9BPYDfgnNv0ZlTDhPHW1D2eptEeZsJAYSJuD4ZpuZ39QfFzYHJrjHRV0olMAsbf69UqHyCQBXsJ8-mmqOPefegVIF-fu3EPtVLJDMNxuem2Esb1K37JjMrWXKuf4PisQcJH7PbKfQdzWMqg&q=overtime+tax+deduction+calculator+2025&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Qs6gLegQIFBAB
+      - generic: Forums
+    - link "Web":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&udm=web&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-a7vPN0oJUPXgT9BPYDfgnNv0ZlTDhPHW1D2eptEeZsJAYSJuD4ZpuZ39QfFzYHJrjHRV0olMAsbf69UqHyCQBXsJ8-mmqOPefegVIF-fu3EPtVLJDMNxuem2Esb1K37JjMrWXKuf4PisQcJH7PbKfQdzWMqg&q=overtime+tax+deduction+calculator+2025&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Qs6gLegQIExAB
+      - generic: Web
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "How to Calculate Your Tips and Overtime Deductions for ... Moore Colson https://moorecolson.com › news-insights › how-to-calc...":
+    - /url: /goto?url=CAESnQEB6zswFT2F3K1i0O2u3Lapzg3ssLSYaHAAqvQ8_zbymxS6FMFYBEbH6A0C5A1DDlmTXR9zbLL9tWtwyluD6-OfynODwovIraqg66reBfqsUk7SeCX7CAQzdjqYAMhRacFUsXPif04tcl3RIiPcl-pgy5v33bO78A2MWUW3ah74vxFjEaUXdLlMI551vGUdYHcNl72jvvDnxyzivYhn
+    - heading "How to Calculate Your Tips and Overtime Deductions for ..." [level=3]
+    - generic: Moore Colson
+    - generic: https://moorecolson.com › news-insights › how-to-calc...
+  - button "About this result":
+  - generic: Dec 17, 2025 —
+  - text: Learn how the new
+  - emphasis: IRS
+  - text: guidance affects the tips and
+  - emphasis: overtime tax deduction
+  - text: for
+  - emphasis: "2025"
+  - text: ", including eligibility and limits."
+  - link "No Tax on Overtime Calculator - The TurboTax Blog - Intuit Intuit TurboTax Blog https://blog.turbotax.intuit.com › no-tax-on-overtime-cal...":
+    - /url: /goto?url=CAESngEB6zswFQR6CVEF3wbsRDjvRx6R9jqvemgFqqoHF_Yd5yV6HgPP59LyGrvI9BKp9avvQ_wz1Bwk9dgTVnr3Ckh_lZkPhhKoej9-yeFTFjfen1te67-U63axbAu-UVJn1ZwgnVavtcIsRNZhzgbHoUdMZEMcnliRtSV0v0sASq4N8SeIEaV6QaOLO-mgiDBg7piT0d5j03rphXaJZnSK4Q
+    - heading "No Tax on Overtime Calculator - The TurboTax Blog - Intuit" [level=3]
+    - generic: Intuit TurboTax Blog
+    - generic: https://blog.turbotax.intuit.com › no-tax-on-overtime-cal...
+  - button "About this result":
+  - generic: Feb 20, 2026 —
+  - emphasis: Calculate how much you can deduct with our no tax on overtime calculator
+  - text: . Estimate your potential savings and see how new tax rules impact ...
+  - heading "People also ask" [level=2]
+  - button "How do I calculate overtime for 2025 taxes?":
+    - generic: How do I calculate overtime for 2025 taxes?
+  - button "How do I figure out my deductible overtime?":
+    - generic: How do I figure out my deductible overtime?
+  - button "How will no tax on OT work?":
+    - generic: How will no tax on OT work?
+  - button "Will I get all my overtime taxes back?":
+    - generic: Will I get all my overtime taxes back?
+  - heading "Web results" [level=2]
+  - link "Overtime Deduction - How to Calculate the Amount to Enter? TaxSlayer https://support.taxslayer.com › en-us › articles › 429747...":
+    - /url: /goto?url=CAESsQEB6zswFV67vCjabSGy6rEZIfgAsjxxCIZz5hU22QZEkr61zkKFReqhdzBvsnbM_j6akYhWFNi_i_MkR7dDfU8oJh8xllPbCwl7w3yyQh-athTpLdupX3JdG8-TBpHZ6nPK814e30lIWjlMa1cDJiC0AW956RGTTl_MvUQejjLdi-bYdi9x2M4X9LeKVoUvd0TI2rHaCO_7AfyU3KEiWLPLPzwUMo0j0QuOBDkk0ILJ9VY
+    - heading "Overtime Deduction - How to Calculate the Amount to Enter?" [level=3]
+    - generic: TaxSlayer
+    - generic: https://support.taxslayer.com › en-us › articles › 429747...
+  - button "About this result":
+  - text: To find the deductible portion for time-and-a-half
+  - emphasis: overtime
+  - text: ", take the extra pay and divide it by the total"
+  - emphasis: overtime
+  - text: pay
+  - link "What to know about the No Tax on Overtime deduction IRS (.gov) https://www.irs.gov › newsroom › what-to-know-about-t...":
+    - /url: /goto?url=CAESiwEB6zswFaz7_vLTdoOBZ5gWAo9GAtZD6cQezucifED3sjO7Prulhji1mas2p-cOTm2TdfvY3oylHX1BUlC2yDynoDu-w2veN-McPcuAo3cNZSlrNju271v3tlJwDm-kIBLqc81XS1kou9kGjp_tNZdvdMUXcsi3E59VkRcvS5w1IZbL59U_shntGRSh
+    - heading "What to know about the No Tax on Overtime deduction" [level=3]
+    - generic: IRS (.gov)
+    - generic: https://www.irs.gov › newsroom › what-to-know-about-t...
+  - button "About this result":
+  - generic: Mar 5, 2026 —
+  - text: For
+  - emphasis: "2025"
+  - text: ", employers aren't required to report qualified"
+  - emphasis: overtime
+  - text: compensation. Maximum annual
+  - emphasis: deduction
+  - text: is $12,500; $25,000, if you file ...
+  - link "Overtime Tax Calculator 2026 Jupid https://jupid.com › Tools":
+    - /url: /goto?url=CAESZAHrOzAV4dCy6xuKOCY9XXh03DLruVUCAJhJ-87GBAgCRB8JeIoQsdNHxQJIU_51Vk9hev_1ldGtdWH5VJ34MQsFPA9rSCPUAJM3h4ScpOYoHyrWjxdFLRMXGZO7olIqpMUPtNI
+    - heading "Overtime Tax Calculator 2026" [level=3]
+    - generic: Jupid
+    - generic: https://jupid.com › Tools
+  - button "About this result":
+  - emphasis: Free overtime tax calculator for 2026
+  - text: . See federal tax on overtime pay, your real take-home, and the OBBBA No Tax on Overtime deduction — up to $12500.
+  - link "OB3 Overtime Tax Deduction Calculator Timesheets.com https://www.timesheets.com › no-tax-on-overtime-calcu...":
+    - /url: /goto?url=CAESdAHrOzAVB0NQJl-powqmcmmHcNVBReq9ums9zBGhKcCeNi3OlcG7AGmcfdQdCny1k43qyHUMcCyt3va9GMtyklhqfuJ8eNTq1pOyPt1Fn0KPCj3xfJ9MgSyUoJcf-S-yO8NHRjdZkzMJWp2p7W69cp5gwMkN
+    - heading "OB3 Overtime Tax Deduction Calculator" [level=3]
+    - generic: Timesheets.com
+    - generic: https://www.timesheets.com › no-tax-on-overtime-calcu...
+  - button "About this result":
+  - text: Calculate your OB3 overtime tax deduction with our free tool.
+  - emphasis: Enter overtime hours and base pay rate
+  - text: to determine eligible hours and dollar amount
+  - link "No Tax on Overtime Calculator 2026 | Estimate Your Qualified ... No Tax on Overtime Calculator 2026 https://notaxovertimecalculator.com":
+    - /url: /goto?url=CAESXwHrOzAV9txVzQCwURKJFS50hh5E2RRlgz4J49q5OR98weE7Vl-Nzek0Af63AFr8aiBhjoKW9Qfxb0c11p6x5go4uhugcLK0GKqY1hZ4b-13i17bKnDUzdi3RucUY6ib
+    - heading "No Tax on Overtime Calculator 2026 | Estimate Your Qualified ..." [level=3]
+    - generic: No Tax on Overtime Calculator 2026
+    - generic: https://notaxovertimecalculator.com
+  - button "About this result":
+  - text: This
+  - emphasis: calculator
+  - text: provides an estimate of the potential federal income
+  - emphasis: tax deduction
+  - text: for qualified
+  - emphasis: overtime
+  - text: premium pay. The federal
+  - emphasis: deduction
+  - text: is capped at $12, ...
+  - link "http://notaxonovertimecalculator.com/ notaxonovertimecalculator.com http://notaxonovertimecalculator.com":
+    - /url: /goto?url=CAESYAHrOzAVFFQb19IwQDeLlEYnOahUgL3g9NLoofhcgVa1rRxLoWKFi_w5lRDMFp41E3ybQ1-gzOZmTr4V_s-AmD5qSBspO7zpk0gDwInJ_FUGkK2aAAmZ0tkmoXqMaGSlAA
+    - heading "http://notaxonovertimecalculator.com/" [level=3]
+    - generic: notaxonovertimecalculator.com
+    - generic: http://notaxonovertimecalculator.com
+  - button "About this result":
+  - generic: No information is available for this page.
+  - link "Learn why":
+    - /url: https://support.google.com/webmasters/answer/7489871?hl=en
+  - heading "Videos" [level=2]
+  - button "About this result":
+  - link "The Truth About 'No Tax On Overtime' (Calculate Your Refund) YouTube Toby Mathis Esq | Tax Planning & Asset Protection Jan 23, 2026":
+    - /url: /goto?url=CAESZgHrOzAVAm30dxx8x1n7A-B6CqGk_NgxesSNPlOVukDnjYRkSzVT-Vjxq2femZ2YegNutbdR7kVMcFmnLJy_ickYZfdfLjYhjIsU1bB3Uch-gZP5vLb2GHv5d1cR-k_xj7tCOp21kg
+    - heading "The Truth About 'No Tax On Overtime' (Calculate Your Refund) YouTube Toby Mathis Esq | Tax Planning & Asset Protection Jan 23, 2026" [level=3]:
+      - generic: The Truth About 'No Tax On Overtime' (Calculate Your Refund)
+      - text: YouTube
+      - generic: · Toby Mathis Esq | Tax Planning & Asset Protection
+      - generic: Jan 23, 2026
+  - text: YouTube
+  - generic: · Toby Mathis Esq | Tax Planning & Asset Protection
+  - button "About this result":
+  - button "The Truth About 'No Tax On Overtime' (Calculate Your Refund) by Toby Mathis Esq | Tax Planning & Asset Protection on YouTube. Play on Google. 18:29":
+    - generic: 18:29
+  - button "You can get a tax refund on overtime pay if you understand how to calculate the deduction, phase-outs, and your pay structure.":
+    - generic: You can get a tax refund on overtime pay if you understand how to calculate the deduction, phase-outs, and your pay structure.
+  - 'link "No Tax on Overtime (2026): How to Calculate the Deduction + ... YouTube Forager Tax Jan 3, 2026"':
+    - /url: /goto?url=CAESZgHrOzAVY3HW6FvkV-B5O41DA8iFeCEdoXOeODlZ81JoNlqrMI-ki7Iz-SXGV_PFWYiLGMrfwNv5pcdzQd2_4zzJlAZCYtgFhQzu_s2dy1I_SCoeQdxjpIpt48mbNEW4hR6bjofksg
+    - 'heading "No Tax on Overtime (2026): How to Calculate the Deduction + ... YouTube Forager Tax Jan 3, 2026" [level=3]':
+      - generic: "No Tax on Overtime (2026): How to Calculate the Deduction + ..."
+      - text: YouTube
+      - generic: · Forager Tax
+      - generic: Jan 3, 2026
+  - text: YouTube
+  - generic: · Forager Tax
+  - button "About this result":
+  - 'button "No Tax on Overtime (2026): How to Calculate the Deduction + ... by Forager Tax on YouTube. Play on Google. 4:31"':
+    - generic: 4:31
+  - button "Calculate your no-tax overtime deduction by using a free online calculator. Single filers can deduct up to $12,500, married up to $25,000.":
+    - generic: Calculate your no-tax overtime deduction by using a free online calculator. Single filers can deduct up to $12,500, married up to $25,000.
+  - 'link "Overtime Tax Deduction: What You Must Do to Claim It YouTube Wise Money Show Feb 5, 2026"':
+    - /url: /goto?url=CAESZgHrOzAVeluOsZUSJpVcYiR9LHfPBb3Hx7WVbxO0-0UTmhjfafmRveY4BHpA5eJNykrn32wZsNfM7XdCf51KCgt--Cr-2P_4bAV0CGInFUkZ97hO3lrOMZHU1ALFJ00k7mRAxZG10w
+    - 'heading "Overtime Tax Deduction: What You Must Do to Claim It YouTube Wise Money Show Feb 5, 2026" [level=3]':
+      - generic: "Overtime Tax Deduction: What You Must Do to Claim It"
+      - text: YouTube
+      - generic: · Wise Money Show
+      - generic: Feb 5, 2026
+  - text: YouTube
+  - generic: · Wise Money Show
+  - button "About this result":
+  - 'button "Overtime Tax Deduction: What You Must Do to Claim It by Wise Money Show on YouTube. Play on Google. 11:34"':
+    - generic: 11:34
+  - button "Claim the overtime tax deduction by verifying your W2 or using your last pay stub. Calculate the premium by dividing time-and-a-half by 3.":
+    - generic: Claim the overtime tax deduction by verifying your W2 or using your last pay stub. Calculate the premium by dividing time-and-a-half by 3.
+  - link "View all videos":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&udm=vids&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&q=overtime+tax+deduction+calculator+2025&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q8ccDKAJ6BAhLEAU
+    - separator
+    - generic: View all
+  - heading "People also search for" [level=2]
+  - link "Overtime tax refund calculator":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&q=Overtime+tax+refund+calculator&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q1QJ6BAguEAE
+    - generic: Overtime tax refund calculator
+  - link "No tax on overtime calculator":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&q=No+tax+on+overtime+calculator&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q1QJ6BAhBEAE
+    - generic: No tax on overtime calculator
+  - link "Overtime tax refund calculator 2026":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&q=Overtime+tax+refund+calculator+2026&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q1QJ6BAhAEAE
+    - generic: Overtime tax refund calculator 2026
+  - link "Overtime tax calculator":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&q=Overtime+tax+calculator&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q1QJ6BAg5EAE
+    - generic: Overtime tax calculator
+  - link "Overtime tax deduction 2025":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&q=Overtime+tax+deduction+2025&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q1QJ6BAg4EAE
+    - generic: Overtime tax deduction 2025
+  - link "How to calculate qualified overtime":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&q=How+to+calculate+qualified+overtime&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q1QJ6BAg3EAE
+    - generic: How to calculate qualified overtime
+  - link "Overtime tax deduction on W2":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&q=Overtime+tax+deduction+on+W2&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q1QJ6BAg2EAE
+    - generic: Overtime tax deduction on W2
+  - link "How to calculate overtime tax deduction 2025 Reddit":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&q=How+to+calculate+overtime+tax+deduction+2025+Reddit&sa=X&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q1QJ6BAgvEAE
+    - generic: How to calculate overtime tax deduction 2025 Reddit
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=overtime+tax+deduction+calculator+2025&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&ei=c7S_apbELPGW4-EPx6Dx6AU&start=10&sa=N&sstk=AS6-VmKsqF5hv5t7__fTgy3G9XN4YIrI_ubowBBjCuaeSgzTTrGM-shE4Pf1xCVzjPCBDLj4iJp7GUidAkGAY1r5aN5w063GrcA0Jg&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q8tMDegQILBAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=overtime+tax+deduction+calculator+2025&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&ei=c7S_apbELPGW4-EPx6Dx6AU&start=20&sa=N&sstk=AS6-VmKsqF5hv5t7__fTgy3G9XN4YIrI_ubowBBjCuaeSgzTTrGM-shE4Pf1xCVzjPCBDLj4iJp7GUidAkGAY1r5aN5w063GrcA0Jg&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q8tMDegQILBAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=overtime+tax+deduction+calculator+2025&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&ei=c7S_apbELPGW4-EPx6Dx6AU&start=30&sa=N&sstk=AS6-VmKsqF5hv5t7__fTgy3G9XN4YIrI_ubowBBjCuaeSgzTTrGM-shE4Pf1xCVzjPCBDLj4iJp7GUidAkGAY1r5aN5w063GrcA0Jg&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q8tMDegQILBAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=overtime+tax+deduction+calculator+2025&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&ei=c7S_apbELPGW4-EPx6Dx6AU&start=40&sa=N&sstk=AS6-VmKsqF5hv5t7__fTgy3G9XN4YIrI_ubowBBjCuaeSgzTTrGM-shE4Pf1xCVzjPCBDLj4iJp7GUidAkGAY1r5aN5w063GrcA0Jg&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q8tMDegQILBAK
+      - text: "5"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=overtime+tax+deduction+calculator+2025&newwindow=1&sca_esv=e4aefc4d69977452&gl=us&hl=en&sxsrf=APpeQnsLBzV1rJ7GftCWYf2sHrhrPApI5w:1790948467738&ei=c7S_apbELPGW4-EPx6Dx6AU&start=10&sa=N&sstk=AS6-VmKsqF5hv5t7__fTgy3G9XN4YIrI_ubowBBjCuaeSgzTTrGM-shE4Pf1xCVzjPCBDLj4iJp7GUidAkGAY1r5aN5w063GrcA0Jg&ved=2ahUKEwjWyev5upuXAxVxyzgGHUdQHF0Q8NMDegQILBAM
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - link "Send feedback":
+    - /url: "#"
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

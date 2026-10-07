@@ -1,0 +1,243 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en-GB
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQPHoECAYQBA
+  - combobox "Search": digital waste tracking spreadsheet validator digital waste tracking spreadsheet validator
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Ddigital%2Bwaste%2Btracking%2Bspreadsheet%2Bvalidator%26gl%3Dgb%26hl%3Den&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwLP8msUKsz-6AMxGyueJZ9cK2mNBy2II_6WvkKSZWdegvvKnEPeeArWgEP9exNATg6oybL0Q4MEKOxPxFbct-gPoxJydwQkFVgNkm6vNXPQZjfoWDOyzkktih_Z6lssQmfbdqIKqxUyGROmvXoo-iyz5AhpVQ&q=digital+waste+tracking+spreadsheet+validator&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQtKgLegQIGBAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwLP8msUKsz-6AMxGyueJZ9cK2mNBy2II_6WvkKSZWdegvvKnEPeeArWgEP9exNATg6oybL0Q4MEKOxPxFbct-gPoxJydwQkFVgNkm6vNXPQZjfoWDOyzkktih_Z6lssQmfbdqIKqxUyGROmvXoo-iyz5AhpVQ&q=digital+waste+tracking+spreadsheet+validator&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQtKgLegQIFxAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwLP8msUKsz-6AMxGyueJZ9cK2mNBy2II_6WvkKSZWdegvvKnEPeeArWgEP9exNATg6oybL0Q4MEKOxPxFbct-gPoxJydwQkFVgNkm6vNXPQZjfoWDOyzkktih_Z6lssQmfbdqIKqxUyGROmvXoo-iyz5AhpVQ&q=digital+waste+tracking+spreadsheet+validator&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQs6gLegQIFhAB
+      - generic: Forums
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwLP8msUKsz-6AMxGyueJZ9cK2mNBy2II_6WvkKSZWdegvvKnEPeeArWgEP9exNATg6oybL0Q4MEKOxPxFbct-gPoxJydwQkFVgNkm6vNXPQZjfoWDOyzkktih_Z6lssQmfbdqIKqxUyGROmvXoo-iyz5AhpVQ&q=digital+waste+tracking+spreadsheet+validator&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwLP8msUKsz-6AMxGyueJZ9cK2mNBy2II_6WvkKSZWdegvvKnEPeeArWgEP9exNATg6oybL0Q4MEKOxPxFbct-gPoxJydwQkFVgNkm6vNXPQZjfoWDOyzkktih_Z6lssQmfbdqIKqxUyGROmvXoo-iyz5AhpVQ&q=digital+waste+tracking+spreadsheet+validator&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQs6gLegQIExAB
+      - generic: Short videos
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&q=digital+waste+tracking+spreadsheet+validator&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwLP8msUKsz-6AMxGyueJZ9cK2mNBy2II_6WvkKSZWdegvvKnEPeeArWgEP9exNATg6oybL0Q4MEKOxPxFbct-gPoxJydwQkFVgNkm6vNXPQZjfoWDOyzkktih_Z6lssQmfbdqIKqxUyGROmvXoo-iyz5AhpVQ&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ0pQJegQIFBAB
+      - generic: News
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "Developing the digital waste tracking service GOV.UK https://www.gov.uk › government › publications › digit...":
+    - /url: /goto?url=CAESowEB6zswFRuhBtCq26dYe1CqqlANRgtoRVv9HGi456kF5JN94UkRxM_De2Dwm3yCTC5y-motdDb9r3M-Q86Ho8EDIfedQSIjguoYEqCm4bkrwgvkbPwaoxCO7d_-BiVZ8DmwF3cPNLrxaOGr8QpHAxamWOha9IEBI3MU20wwAtY-2WE6Ax3INEnL7lZkR0PHMHP8zML7WXoAb5W6fYYuBZ9X_hgG
+    - heading "Developing the digital waste tracking service" [level=3]
+    - generic: GOV.UK
+    - generic: https://www.gov.uk › government › publications › digit...
+  - button "About this result":
+  - text: We are developing an alternative way to submit data using a
+  - emphasis: spreadsheet
+  - text: for
+  - emphasis: waste
+  - text: receivers who currently do not have
+  - emphasis: waste tracking
+  - text: software.
+  - 'link "Digital Waste Tracking goes live: a major step forward in ... GOV.UK blogs https://environmentagency.blog.gov.uk › 2026/04/30"':
+    - /url: /goto?url=CAESugEB6zswFV0-M9Clt_5z13Nf-Vabt8QgGvutopS2SuY6dh4QTM5jL2on4zJB2AUazac_AjlwBYdoaZXng0vsz0QfJqNPpkg3315a9qeqRfeKPEpZ0yw9T3Nbvil1jOoZ1eneYVLSmmn35LlUYP6QvHEb1vOMZgeltZWd1hX_IabqpenkdtKSN6CfQfOlW7tVEJwiVimpho3VOvYvtzk3eAcLuYt8upZHHLocnwg1RwN_OomSyM1BICb0w0U
+    - 'heading "Digital Waste Tracking goes live: a major step forward in ..." [level=3]'
+    - generic: GOV.UK blogs
+    - generic: https://environmentagency.blog.gov.uk › 2026/04/30
+  - button "About this result":
+  - generic: 30 Apr 2026 —
+  - emphasis: Digital Waste Tracking
+  - text: will help close these gaps. The service will create a clear and near real-time record of where
+  - emphasis: waste
+  - text: goes and who is ...
+  - link "Read more":
+    - /url: /goto?url=CAESjwIB6zswFc2ejOgGLtQiGvNd-vfVzrry6dKl6gl2fN1MvsDLwOIu7HKNJSL7n9pyyvddUmtWI8gPLy97e_e_2gFxcUmqsGgV3ADA_mHZ0xITGdD4AM4QFlq-VpPiA5VEbGyIWahryJslOICkbRhvgRaUjE7D9efVeX7XYw38q9f5TuiySq31Bsn5cCricUNsDGrE8Y7rmoGHJkY8lSotTvhzM0vW36653KeW2w7rAVXT0lrCdWknPPs4HtXhXRv8h6aYE7rWh3jz-4NyWVvFLAjtCOTJtlK4Ih7XmD5QCIujuSyhWH4xWSNQBB9wzVe_RCz09g1LSJ1A8MVm6ZGhvD5qB1haEr4z-cGp5voIgsmU
+  - link "Manual Reporting Process Guide — UK Digital Waste Tracking weavecomply.com https://weavecomply.com › guide › manual-reporting":
+    - /url: /goto?url=CAESaQHrOzAVwGGIKKu8ltYcJfjEuqizChng7nZHtRWmaMSvvtEJ-Z2XgsLrQ64jmPwL7pkUG3LjHDqfFo4SvnPjxBbsSvgalV8SW7fD5hpO4o-KJ2-aj40c38b_1Ar8PEfuHMwylfUUPGuabA
+    - heading "Manual Reporting Process Guide — UK Digital Waste Tracking" [level=3]
+    - generic: weavecomply.com
+    - generic: https://weavecomply.com › guide › manual-reporting
+  - button "About this result":
+  - emphasis: Validate your spreadsheet
+  - text: Download. Weave fills these tabs for you, validates every code live against DEFRA, and submits within the deadline
+  - link "DEFRA Digital Waste Tracking Software Folderit https://www.folderit.com › defra-digital-waste-tracking-...":
+    - /url: /goto?url=CAESegHrOzAVml9xJQWMu2oknKoXGuCQ3MpLa5V0uOYa4eHveP0VAsdEw0pP72wF7F-IfYmmVdL7B14IG300rL7hPQy0cgs6Cr4mV15OzUHtPGsNbvLvXzgZ3DjfdSYiY1Ei_drpgA4s4BWzWtxT4kveLFNg99uElYGYgMWS
+    - heading "DEFRA Digital Waste Tracking Software" [level=3]
+    - generic: Folderit
+    - generic: https://www.folderit.com › defra-digital-waste-tracking-...
+  - button "About this result":
+  - text: Track –
+  - emphasis: Folderit stores the returned Waste Tracking ID and validation result
+  - text: with the record. The aim is to keep the waste record, Waste Tracking ID ...
+  - link "Read more":
+    - /url: /goto?url=CAES6QEB6zswFZsSDRkIaJjtxxcFrr18_DSxSBadAhom7Mree3EDqXI8a-wpp9NE2f1G1CM96YvadqMRKAryY6oqaxp-K_RyyzzGyMfhh2gHCY-TD5wzApGusbsVcpcVV40eCVto1r4_vsiR6B0WiRnJNjV5Cufu_GQAeWxyqFbpMQYlNjyAS4qjbcT2D6M6y_-E70LICgnTQms-Yh7eWLYFNj1r4ufxqu6T9rEvKYWNKxlrP79MIOaUHnQdI5QK2eE2NSI04q4C6YpMO28R2vlWC3H7SGUX-2_x2OJe2rr1pzNaLtvjbiYXQToBew
+  - 'link "The DEFRA Digital Waste Tracking Spreadsheet: How It Works loadlog.co.uk https://loadlog.co.uk › blog › defra-waste-tracking-spre..."':
+    - /url: /goto?url=CAESdgHrOzAV7yGqg-d4770LCMKU13Ybj2rPICdJj6EAflnKzkdhFQHOdaM2r-XuDfQlXrM-B977ViFsaqC0qUH96FYszHCa_98-ym4CQytu3jUONYdaLvvpwpBNnqifvgvf9ERaXfwp7DUrMzjRmWcBwQTc8U46pUc
+    - 'heading "The DEFRA Digital Waste Tracking Spreadsheet: How It Works" [level=3]'
+    - generic: loadlog.co.uk
+    - generic: https://loadlog.co.uk › blog › defra-waste-tracking-spre...
+  - button "About this result":
+  - generic: 6 days ago —
+  - text: Where to get it. The template comes from DEFRA.
+  - emphasis: Get it from the report receipt of waste service
+  - text: ", or follow the link on GOV.UK's guidance page ..."
+  - link "Read more":
+    - /url: /goto?url=CAESvQEB6zswFcfECQ36KA9Vnj3lruXwqo-iPrFtT84MsRju39a1wzq39gGRx49xj_cGm-5wD3mhERxF2o6-71TX9LNfb8_r60bfVFDxySj0NZ2NOI7jrU60Yp7ffiYwrYVhL7TOslIXaQcQWOVWWV16ykFPZONINDdU5pQ9UMeQe2p2gkrmc_iBCQXU9fNCkf9YsnwWfPzNK95q7ApqOQ-CsslKE7PxiGlxm8FWAFO9jBEIr-TpIsAzuwFwc3qf9ec
+  - link "Digital waste tracking in Scotland - SEPA Beta | SEPA https://beta.sepa.scot › topics › digital-waste-tracking":
+    - /url: /goto?url=CAEScAHrOzAV9fVSw0gIyqxFspYLZ2mIc1rX_7-vUsX4ySdQUARk67OC9nuFbYczhbqA07A7n-ZFPAa9cphKAbayBr_oN1aT4hkwPlUjbb8TdFSVHbQ6b2KL4Dnusgm236AxUMZbz4BvCWNf_mrJpfXrd40
+    - heading "Digital waste tracking in Scotland - SEPA" [level=3]
+    - generic: Beta | SEPA
+    - generic: https://beta.sepa.scot › topics › digital-waste-tracking
+  - button "About this result":
+  - emphasis: Digital waste tracking
+  - text: is a UK-wide project which aims to digitise and streamline the way we
+  - emphasis: track
+  - text: the movement of
+  - emphasis: waste
+  - text: ", from its origin, to where it ends up."
+  - link "Digital Waste Tracking Software UK - PaperRoute paperroute.co.uk https://www.paperroute.co.uk › digital-waste-tracking":
+    - /url: /goto?url=CAESbgHrOzAVOqnt148dM2sjdQ51W2N3JjqGVSXep1uovdUTkhKi-jpSz-9_hA1WkxJZK-q6v8ygwxhxTW05RtAKy6ZJace1K-3rgMRRcFrI9hrwLS8a_eJM0msR50bs1wo1NSe0gUqDoEjmosdBChsc
+    - heading "Digital Waste Tracking Software UK - PaperRoute" [level=3]
+    - generic: paperroute.co.uk
+    - generic: https://www.paperroute.co.uk › digital-waste-tracking
+  - button "About this result":
+  - emphasis: DEFRA-approved Digital Waste Tracking software
+  - text: with digital WTNs, structured waste records and submission-ready data for UK waste operators. Start free trial
+  - 'link "Digital Waste Tracking (DWT): reporting received waste to ... IT Asset Disposition Software https://recyc.ly › wiki › page"':
+    - /url: /goto?url=CAESWwHrOzAV7d5RfHGz6ShbNzFDFh4ufS7fXe_FtjaDHhe9lnK51z8G9-xkObZcZEagTaRqtCAOtM8ZLYtEr9cm8pU3cxOxJdB_M4Vqa7Kw2pL6Tzmf6iI-M5AuOTM
+    - 'heading "Digital Waste Tracking (DWT): reporting received waste to ..." [level=3]'
+    - generic: IT Asset Disposition Software
+    - generic: https://recyc.ly › wiki › page
+  - button "About this result":
+  - generic: 8 Aug 2026 —
+  - text: Digital Waste Tracking (DWT) is the UK government service that
+  - emphasis: records every movement of waste
+  - text: ", run by Defra"
+  - heading "People also ask" [level=2]
+  - button "What is digital waste tracking?":
+    - generic: What is digital waste tracking?
+  - button "Which software providers offer digital waste tracking software?":
+    - generic: Which software providers offer digital waste tracking software?
+  - button "What is a WM3 assessment?":
+    - generic: What is a WM3 assessment?
+  - button "What are the regulations for digital waste tracking in England for 2026?":
+    - generic: What are the regulations for digital waste tracking in England for 2026?
+  - link "Digital waste tracking FREE YouTube · Skip Worx everything waste 1.9k+ views · 3 weeks ago":
+    - /url: /goto?url=CAESZgHrOzAVrs7JTA5iBGwZ4OwZ8XgtZ0o8urh-FC0-Ey4Oyz-tshIAXoXXnyYgkfKr_um247_JWLwAxe4e8iLuefhtldaE_PLqR6WvGSWkpWlS2ESI7LKGVttGTXUIcwG0wFsZh2_FzQ
+    - heading "Digital waste tracking FREE" [level=3]
+    - generic: YouTube · Skip Worx everything waste
+    - generic: 1.9k+ views · 3 weeks ago
+  - button "About this result":
+  - button "Digital waste tracking FREE by Skip Worx everything waste on YouTube. Play on Google. 12:48":
+    - generic: 12:48
+  - generic: This is just another way for the government and local authorities creating legislation and regulation to create revenue in fines penalty ...
+  - link "Digital Waste Tracking – what farmers need to know NFUonline https://www.nfuonline.com › news › digital-waste-track...":
+    - /url: /goto?url=CAEShwEB6zswFXpTFlmJv-CHE0d34rDGi7AD19n8iI9GapMH3yhZGB4sH0GzxJa_wWbnABec9h3KQXYzvHJyMpjsLbcCaXVEAA66Nc3PIq3Ckk_C7KkdQ_t7v2fJJ0xExI7xwQ0wWvoOTd08TKrwrqPl0wicJ55WHiU2Gv3GtRJr6KQDTj2tzEvqIns
+    - heading "Digital Waste Tracking – what farmers need to know" [level=3]
+    - generic: NFUonline
+    - generic: https://www.nfuonline.com › news › digital-waste-track...
+  - button "About this result":
+  - generic: 7 days ago —
+  - text: DWT is a government-led programme designed to replace many fragmented paper-based
+  - emphasis: waste
+  - text: records with a
+  - emphasis: digital
+  - text: system that will create a clear ...
+  - link "Read more":
+    - /url: /goto?url=CAES3QEB6zswFVheXYMpIyHpute-wv8qHcihYZFUo9tNHkdduY_K6poiEfkLCsPXikrBIxfKc9euya-QAo_C6qCn1tfCiACmPq4AX2rR9oAz9lyZMtunNYcNv3IeC_EjxCGuzmJOk4C6i4LuV5AM1XStskxSNTEdI9s4q-prAFYa9u5oqfKnLDkmrXKBCZfVC2He9-XWYd-gUMyKA0JwBfaVv4zt89DFbk_bwJQF3bE2Rp6wqvmEpY6S-W1Ba2K_vYxDM96cdj1fVwa9xrp7ZCWLoeQ-aefrKIY_6wB_qLB0Zw
+  - heading "People also search for" [level=2]
+  - link "Digital waste tracking Defra":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&q=Digital+waste+tracking+Defra&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ1QJ6BAhAEAE
+    - generic: Digital waste tracking Defra
+  - link "Digital waste tracking software":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&q=Digital+waste+tracking+software&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ1QJ6BAhZEAE
+    - generic: Digital waste tracking software
+  - link "Digital waste tracking regulations":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&q=Digital+waste+tracking+regulations&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ1QJ6BAhWEAE
+    - generic: Digital waste tracking regulations
+  - link "Digital waste tracking 2026":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&q=Digital+waste+tracking+2026&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ1QJ6BAhREAE
+    - generic: Digital waste tracking 2026
+  - link "Digital waste tracking requirements":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&q=Digital+waste+tracking+requirements&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ1QJ6BAhNEAE
+    - generic: Digital waste tracking requirements
+  - link "Digital waste tracking spreadsheet validator gov uk":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&q=Digital+waste+tracking+spreadsheet+validator+gov+uk&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ1QJ6BAhLEAE
+    - generic: Digital waste tracking spreadsheet validator gov uk
+  - link "Digital waste tracking spreadsheet validator app":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&q=Digital+waste+tracking+spreadsheet+validator+app&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ1QJ6BAhHEAE
+    - generic: Digital waste tracking spreadsheet validator app
+  - link "Digital waste tracking phase 1":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&q=Digital+waste+tracking+phase+1&sa=X&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ1QJ6BAhCEAE
+    - generic: Digital waste tracking phase 1
+  - navigation:
+    - heading "Page navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=digital+waste+tracking+spreadsheet+validator&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&ei=_La_aqfHNu2Ug8UP7Mi1gQE&start=10&sa=N&sstk=AS6-VmK6sjUsl5BivNW5n3lhvDiXomeEZ79k7fTGVtdPeLwPBCYoAZV2y8PTr8KreC6XtKxSPRtIV3xyOfBcXUncqMLDWxCdv3UM6Q&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ8tMDegQIORAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=digital+waste+tracking+spreadsheet+validator&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&ei=_La_aqfHNu2Ug8UP7Mi1gQE&start=20&sa=N&sstk=AS6-VmK6sjUsl5BivNW5n3lhvDiXomeEZ79k7fTGVtdPeLwPBCYoAZV2y8PTr8KreC6XtKxSPRtIV3xyOfBcXUncqMLDWxCdv3UM6Q&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ8tMDegQIORAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=digital+waste+tracking+spreadsheet+validator&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&ei=_La_aqfHNu2Ug8UP7Mi1gQE&start=30&sa=N&sstk=AS6-VmK6sjUsl5BivNW5n3lhvDiXomeEZ79k7fTGVtdPeLwPBCYoAZV2y8PTr8KreC6XtKxSPRtIV3xyOfBcXUncqMLDWxCdv3UM6Q&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ8tMDegQIORAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=digital+waste+tracking+spreadsheet+validator&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&ei=_La_aqfHNu2Ug8UP7Mi1gQE&start=40&sa=N&sstk=AS6-VmK6sjUsl5BivNW5n3lhvDiXomeEZ79k7fTGVtdPeLwPBCYoAZV2y8PTr8KreC6XtKxSPRtIV3xyOfBcXUncqMLDWxCdv3UM6Q&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ8tMDegQIORAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=digital+waste+tracking+spreadsheet+validator&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&ei=_La_aqfHNu2Ug8UP7Mi1gQE&start=50&sa=N&sstk=AS6-VmK6sjUsl5BivNW5n3lhvDiXomeEZ79k7fTGVtdPeLwPBCYoAZV2y8PTr8KreC6XtKxSPRtIV3xyOfBcXUncqMLDWxCdv3UM6Q&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ8tMDegQIORAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=digital+waste+tracking+spreadsheet+validator&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&ei=_La_aqfHNu2Ug8UP7Mi1gQE&start=60&sa=N&sstk=AS6-VmK6sjUsl5BivNW5n3lhvDiXomeEZ79k7fTGVtdPeLwPBCYoAZV2y8PTr8KreC6XtKxSPRtIV3xyOfBcXUncqMLDWxCdv3UM6Q&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ8tMDegQIORAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=digital+waste+tracking+spreadsheet+validator&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&ei=_La_aqfHNu2Ug8UP7Mi1gQE&start=70&sa=N&sstk=AS6-VmK6sjUsl5BivNW5n3lhvDiXomeEZ79k7fTGVtdPeLwPBCYoAZV2y8PTr8KreC6XtKxSPRtIV3xyOfBcXUncqMLDWxCdv3UM6Q&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ8tMDegQIORAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=digital+waste+tracking+spreadsheet+validator&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&ei=_La_aqfHNu2Ug8UP7Mi1gQE&start=80&sa=N&sstk=AS6-VmK6sjUsl5BivNW5n3lhvDiXomeEZ79k7fTGVtdPeLwPBCYoAZV2y8PTr8KreC6XtKxSPRtIV3xyOfBcXUncqMLDWxCdv3UM6Q&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ8tMDegQIORAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=digital+waste+tracking+spreadsheet+validator&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&ei=_La_aqfHNu2Ug8UP7Mi1gQE&start=90&sa=N&sstk=AS6-VmK6sjUsl5BivNW5n3lhvDiXomeEZ79k7fTGVtdPeLwPBCYoAZV2y8PTr8KreC6XtKxSPRtIV3xyOfBcXUncqMLDWxCdv3UM6Q&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ8tMDegQIORAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=digital+waste+tracking+spreadsheet+validator&newwindow=1&sca_esv=e4aefc4d69977452&gl=gb&hl=en&sxsrf=APpeQnv58I3qnFvOvcGdagJshadbiZ1DGA:1790949116901&ei=_La_aqfHNu2Ug8UP7Mi1gQE&start=10&sa=N&sstk=AS6-VmK6sjUsl5BivNW5n3lhvDiXomeEZ79k7fTGVtdPeLwPBCYoAZV2y8PTr8KreC6XtKxSPRtIV3xyOfBcXUncqMLDWxCdv3UM6Q&ved=2ahUKEwintbGvvZuXAxVtyqACHWxkLRAQ8NMDegQIORAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer links" [level=1]
+  - text: United Kingdom
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-GB&fg=1
+  - link "Send feedback":
+    - /url: "#"
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en-GB&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en-GB&fg=1

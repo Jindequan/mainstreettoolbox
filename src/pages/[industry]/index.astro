@@ -103,6 +103,7 @@ const HUB_CONTENT: Record<string, { question: string; intro: string; bands: [str
 const hub = HUB_CONTENT[industry!];
 ---
 <BaseLayout
+  ogImage={heroImg}
   title={`Free ${meta.name} Calculators & Tools — Main Street Toolbox`}
   description={`Free ${meta.name.toLowerCase()} tools: ${tools.map((t) => t.name).join(', ')} and more. Instant, free, no signup.`}
   path={`${meta.path}/`}

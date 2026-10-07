@@ -1,0 +1,250 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQPHoECAYQBA
+  - combobox "Search": n8n assistant credits calculator n8n assistant credits calculator
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dn8n%2Bassistant%2Bcredits%2Bcalculator%26newwindow%3D1%26sca_esv%3D657ce744dba959fb%26hl%3Den%26gl%3Dus%26sxsrf%3DAPpeQnsr2SyHrKGngq5FTClqDSa5FLpkyQ%253A1790944485620%26ei%3D5aS_asWxJfCX4-EP17PqIQ%26biw%3D1280%26bih%3D720%26ved%3D2ahUKEwiFuIKPrJuXAxXwyzgGHdeZOgQQ4dUDegQIBhAM%26uact%3D5%26oq%3Dn8n%2Bassistant%2Bcredits%2Bcalculator%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiIG44biBhc3Npc3RhbnQgY3JlZGl0cyBjYWxjdWxhdG9ySCFQAFgAcAB4AZABAJgBAKABAKoBALgBA8gBAPgBAvgBAZgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ%26sclient%3Dgws-wiz-serp&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&q=n8n+assistant+credits+calculator&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&udm=imgs&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&q=n8n+assistant+credits+calculator&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQtKgLegQIGBAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&q=n8n+assistant+credits+calculator&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQtKgLegQIFhAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&q=n8n+assistant+credits+calculator&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQs6gLegQIFxAB
+      - generic: Forums
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&q=n8n+assistant+credits+calculator&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ0pQJegQIFRAB
+      - generic: News
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn1PTmby9t4tumVo2l1imA7zXzUtWBynCWWtqkX5F_1Sa3ahzGropv4-sQ_DAn7xVtQ3XKSN_jtyc3_MUR7BuaU_yHi96vqqMRTeZbf2qwLu3bYekvCkkE6ObqK26ya3g_sWb7gU-juNDNIeAGfoIDtYTEhFw&q=n8n+assistant+credits+calculator&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQs6gLegQIFBAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "Calculator integrations | Workflow automation with n8n n8n https://n8n.io › integrations › calculator":
+    - /url: /goto?url=CAESXwHrOzAVg36AONLwwFkSdH_4iP4nMejVrvyWNbD0sU_FnzXto_pdEzwW4A1VRRsJgWFQvsAL1oV1SLsysn38CRPK3_GanMUYGwkvcKS2wfoauC2xBlni7v6JuaL3YbZA
+    - heading "Calculator integrations | Workflow automation with n8n" [level=3]
+    - generic: n8n
+    - generic: https://n8n.io › integrations › calculator
+  - button "About this result":
+  - text: Use Calculator to
+  - emphasis: easily build AI-powered applications
+  - text: and integrate them with 422+ apps and services. n8n lets you seamlessly import data from files, websites ...
+  - img "Rated 4.6 out of 5, (27) user reviews":
+    - text: "4.6"
+    - text: (27)
+  - text: ·
+  - text: Free · ‎Business/Productivity
+  - link "n8n Plans and Pricing - n8n.io n8n https://n8n.io › pricing":
+    - /url: /goto?url=CAESTwHrOzAVU4qEWPvxzq2jn1PcUzs29jZbLM1pbVKOIRCXynKMTfpLPtD-I5BuVZTcotDzoe7-fGdiDNNCAV5jRxddu_SmvA8pLykV5aKYwRU
+    - heading "n8n Plans and Pricing - n8n.io" [level=3]
+    - generic: n8n
+    - generic: https://n8n.io › pricing
+  - button "About this result":
+  - text: 1,600
+  - emphasis: Assistant credits
+  - text: /month. AI models without API keys. Forum support ... 800
+  - emphasis: Assistant credits
+  - text: ", plus 100 AI"
+  - emphasis: credits
+  - text: "; Not included: Admin Roles, the ..."
+  - link "Read more":
+    - /url: /goto?url=CAEStwEB6zswFdnlWB4lfx0qBTeTepYfep_jf7ZzdGDdSDlB8eu886FthYKuyrJOFtaaaUOAbGrlv9g2wEXgcOZe5Eoz-jSRkpQjSYYkqkZlY8Rf5N0oqIoTfwpc76kOynxKbUlZGH2jl6hVBYMTgd45JBZVVXWcVpB-4UdsdFdOjyE4cQ2v-g1zvWjzATYJWOUZ8EferAPzX8TyZVTmvCJM5jQeyFi6Kn79OT9J2ErE0MlefDfzHpfNWxc
+  - link "How are you calculating your AI usage costs in AI-powered ... Reddit · r/n8n 40+ comments · 1 year ago":
+    - /url: /goto?url=CAESlQEB6zswFQ3Z2XE9Ell6-cgTRNDjsK0yg6np1YfsCqN0JQz-N5HMVPh6xWuAgF_UZZk_hOZDOoHfe9jPbi_jlcMEW5LUZvkfH-A2hYp2WKFEPHhc2K8zJuSq8LBvQvNBSYsIubxMom37ecCsEZo8GzVdavuLkdk-IoLvOMEt8zDw1gS9BXVr9ZSjZNEJ7sxKvAK5yfb2Yg
+    - heading "How are you calculating your AI usage costs in AI-powered ..." [level=3]
+    - generic: Reddit · r/n8n
+    - generic: 40+ comments · 1 year ago
+  - button "About this result":
+  - generic: I was implementing an n8n AI-powered workflow for a customer and since we needed to show him how much time and cost he's saving per workflow we wanted ...
+  - link "49 answers":
+    - /url: /goto?url=CAESnQEB6zswFXKuRNYSty4rtzhb6DW6HzK6RDI2LWSBfnIxbVRmGGSzy0bIw4P5E0m9kFIUzJhjHVGp3JUyr6IjdHJXJtK3s08w6vEKO-F94r4ePNiewH32DQuo8wrHVcvpz-1OY2SYWXU8QO7xHTx9dnbfuafJWOXlsoZxKM4O3PzV-c4Ys2iY7WvNJVyE6Rb87fq9zKAgnJI-9CZbcKSA
+  - generic: ·
+  - generic: "Top answer:"
+  - generic: I'm not. Everything is always ran locally. Not paying for hosted services.
+  - link "Free n8n AI Cost Calculator – see how cheap your ...":
+    - /url: /goto?url=CAESlQEB6zswFWH7AYS5SDyICi-VJ44KCXjHfp7WijrBkvnPJWTJjbD9oXCZI0W5G0G6hWn3MHva6FwvbflsCM9uyCXPG_N34VxTgDrOqTxMJTXHD85NvmF5PQXA8ymf3HoOPYRU7xZwgve6mJuNC2aWPY5XtkMSosegRC9dmWFeBDu2UjKmGcnLou_FWwvlp3aLnSD8G0_utg
+    - text: Free
+    - emphasis: n8n
+    - text: AI Cost
+    - emphasis: Calculator
+    - text: – see how cheap your ...
+  - generic: 3 answers
+  - generic: Apr 6, 2026
+  - link "I set up n8n-based AI assistants for 10+ non-technical ...":
+    - /url: /goto?url=CAESjQEB6zswFawKmcfXQOvxScgQwbQdAq5kQGBt4239vVnF1YVYGRdro3Z2OVh6PoejatLfEQgj5HXyhsHYetUGzhPnwlicgf8606Iteht07vXnzrn62lTfHjSWKKizS63dPh4aQHzA8Ml9afHiTHkugeLREKW9Hypu2ld4Fy-uj-udLtHGq64O3jLOO_PkyzI
+    - text: I set up
+    - emphasis: n8n
+    - text: "-based AI"
+    - emphasis: assistants
+    - text: for 10+ non-technical ...
+  - generic: 33 answers
+  - generic: Apr 6, 2026
+  - link "More results from www.reddit.com":
+    - /url: /search?q=n8n+assistant+credits+calculator+site:www.reddit.com&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQrQIoAnoECCIQAw
+  - 'link "N8N Tutorial: Building N8N Ai Agents (Beginner to Pro) YouTube · Productive Dude 183K+ views · 1 year ago"':
+    - /url: /goto?url=CAESYwHrOzAVsaoDbo5yMBYsHeDCrEJ0ooVYxEYBDuqSiA-b1u2bj8rwQVCe0yeOe_H7pCWBd5bIZJvWCrOa3btP5TcRe-g_KN3yakC29J__oOdlhGS10AkWjfNpb1ZnEojwyydFBA
+    - 'heading "N8N Tutorial: Building N8N Ai Agents (Beginner to Pro)" [level=3]'
+    - generic: YouTube · Productive Dude
+    - generic: 183K+ views · 1 year ago
+  - button "About this result":
+  - 'button "N8N Tutorial: Building N8N Ai Agents (Beginner to Pro) by Productive Dude on YouTube. Play on Google. 47:37"':
+    - generic: 47:37
+  - generic: This is the most comprehensive N8N tutorial. then we'll turn our agent into a personal assistant using N8N tools!
+  - link "Assistant credits | Deploy n8n Docs https://docs.n8n.io › deploy › use-n8n-cloud › assistant...":
+    - /url: /goto?url=CAEScgHrOzAVJsfyh0kksVWXpjGO1jTrY7POFhm51Z-04Dj5K_HGs0rnO2dusxchdXlWBUvDkO80Cx45vdNJFJVYV3_85YtkotYk7CKBL9VQfBQqvi-wStFwdStWYvOey0XHgO-2Nn-4u5RkWmaOC90b2yr62Q
+    - heading "Assistant credits | Deploy" [level=3]
+    - generic: n8n Docs
+    - generic: https://docs.n8n.io › deploy › use-n8n-cloud › assistant...
+  - button "About this result":
+  - generic: 2 days ago —
+  - emphasis: n8n Assistant uses credits based on the tokens that the underlying AI model processes
+  - text: for each message. Longer conversations, larger workflows, ...
+  - link "Read more":
+    - /url: /goto?url=CAES1AEB6zswFduuW4_ixuv8LMeY4E8I6vvw7G-D2ldPjBxkUXXwJzUycKP1pj9hnQ0XSaEcpHOMsEPhlwb-o_go6HFWNebekWs3TaeNDrILTSAey6Fh_iX1asDnPtDOV8f8K3r1_T3Llo0QveHd_3OGN-RtYWmQJtmBLAqO5eZ1o-Jd7soSHueEow82NtZvqanlIWqWX9k4v0KWV6U2SsYemcoQGBUbCMkks6xILrLS5IluHUmQoiiLCLghknxFD64t8Qn2zUkkyWyjK9wncEke5eQ6AoPlaA
+  - link "AI Personal Assistant | n8n workflow template N8N https://n8n.io › workflows › 4723-ai-personal-assistant":
+    - /url: /goto?url=CAESbAHrOzAVJKGiU2lCqE6a2Ai34HjniBLhPLaffru-1EVtWss1Wsfd88zuHNBUiWzOMP8BYSERjOmn19vlSYxleVn-rdkRJadwOQjFhU3vwfIyHbK2mYUo-LyzweBksVg8eF8HIzr1bO6Oxqdo4w
+    - heading "AI Personal Assistant | n8n workflow template" [level=3]
+    - generic: N8N
+    - generic: https://n8n.io › workflows › 4723-ai-personal-assistant
+  - button "About this result":
+  - generic: This automation flow is designed to proactively monitor email, calendar, and Slack communications, analyze priorities generate a comprehensive daily briefing
+  - img "Rated 4.6 out of 5, (27) user reviews":
+    - text: "4.6"
+    - text: (27)
+  - text: ·
+  - text: Free · ‎Business/Productivity
+  - link "Build the offer calculation tool - n8n Tutorial LinkedIn · Tobias Zwingmann https://www.linkedin.com · Nov 25, 2025":
+    - /url: /goto?url=CAESnAEB6zswFaITzT15R4EiPkkyD1e11UOuneVEhmYW76aicjpiuSucoMg6dtSPgOBTy82gnnt9tAjtjzP00eHRlIuanIgIRINWuL0zRvbsIZp1eRLCymTv57-u9i30rnMCtjq_RBM_ZiJYwgz7sjWl_of8h1xjX4-ezOPUAHzUOubZbZdYkwsROEoIqD7TJgO3INDklZlb8PigVL5wyvU
+    - heading "Build the offer calculation tool - n8n Tutorial" [level=3]
+    - generic: LinkedIn · Tobias Zwingmann
+    - generic: https://www.linkedin.com · Nov 25, 2025
+  - button "About this result":
+  - link "Build the offer calculation tool - n8n Tutorial by Tobias Zwingmann on LinkedIn. Play on LinkedIn. 7:56":
+    - /url: /goto?url=CAESnAEB6zswFaITzT15R4EiPkkyD1e11UOuneVEhmYW76aicjpiuSucoMg6dtSPgOBTy82gnnt9tAjtjzP00eHRlIuanIgIRINWuL0zRvbsIZp1eRLCymTv57-u9i30rnMCtjq_RBM_ZiJYwgz7sjWl_of8h1xjX4-ezOPUAHzUOubZbZdYkwsROEoIqD7TJgO3INDklZlb8PigVL5wyvU
+    - generic: 7:56
+  - generic: Learn how to build a simple n8n workflow that calculates product offers based on a predefined calculation schema.
+  - link "n8n Quote Calculator Chatbot N8N Chat UI https://n8nchatui.com › use-cases › quote-calculator-chat...":
+    - /url: /goto?url=CAEScAHrOzAVq5sPbFjJo2IjN0PE0JWS3nlURJt67h3b6_BumQ4i9vEqtrVAgOb84dSRVpIP7ta-1zb4pSOnLDllmoO4S39qBcUiaCkMmJjjHG5S_312wEL4qGSOBwmieovBx3UDokr4B676-BAFIiVSNd0
+    - heading "n8n Quote Calculator Chatbot" [level=3]
+    - generic: N8N Chat UI
+    - generic: https://n8nchatui.com › use-cases › quote-calculator-chat...
+  - button "About this result":
+  - emphasis: Start free with 100 credits
+  - text: ", no card required. A secure, branded chat widget for your n8n workflow, live in minutes. Start building free."
+  - link "Read more":
+    - /url: /goto?url=CAEStwEB6zswFaT6gorD4The8xLodN9rkp6Q8wHHhiN55hKkiR7_9vWonHv_R0y3mKoU-h2NP6bnHYjEXAdK_ynxm2f_Jgr4VX5_xVFyy55eeK9GOrv0GdE1mzNKZPQ90CEPyDVzFgRg6F2WGrn1HOfHgcIWrHrZEiOvqL2WY_QFB1hFEH2m7zQ1cAqfNGPs9Se31H3b6FJn0bwi6vV7gryGkCcy_DDtnRxz89wnwB7Vz4CFr9WEKcsGRFs
+  - link "Use n8n Assistant | Build n8n Docs https://docs.n8n.io › build › ways-of-building-workflows":
+    - /url: /goto?url=CAESegHrOzAVXz8Jc6aLETnrzA2FfluaiWqkaGC8xrGeUKhbVdDqoKhQQ5oqGThJxfHdAzJZWH0UTmU4n_waaRBv0mq0GPX_PFWLtk0igts2pBZxX24LUqESQmcvtLM0U9thVnMTN49JaIS-hGucvHKbFku2hzKmuWxqQfC-
+    - heading "Use n8n Assistant | Build" [level=3]
+    - generic: n8n Docs
+    - generic: https://docs.n8n.io › build › ways-of-building-workflows
+  - button "About this result":
+  - generic: 2 days ago —
+  - text: To check your balance,
+  - emphasis: open the credits menu in the n8n Assistant panel
+  - text: . For your plan's monthly allowance, see n8n plans and pricing . Self- ...
+  - link "Read more":
+    - /url: /goto?url=CAES1AEB6zswFbBqZh68QzQ5Z8nG0hVwKkKM55WK8yadefY6cQC3EdK_BC3-HnS-giz1BiPBaxEcTtB7XAJ5r7-3oitBeNInth-8ofHmkeBQzyqNH8gOLzkKgGm2zFAzrllE-zST6pupMiBr3a3beqWlbKHsL-2wo3dvLaIssI4pUS70lPULX_N9kk-TjfFyU2Yh4bx4yqDupBaqiexHccYzT6EbBOsfFiwC1LsSKb8bTPreLBjKt7ZG0WzuV0ODtiecYhNYjyhKvZDP9doW8J939SYmlyd8oA
+  - link "Automating a Basic Calculator Workflow with n8n LinkedIn · Logeshwaran T 20+ reactions · 1 year ago":
+    - /url: /goto?url=CAESkwEB6zswFUdjdGuNpsweWu6vyhs4ZzJtIQnkvSFLE149lY_zrCclpR3PtgdW_EsJl5YlDQvPLo6TBvnJwMh3EduXqiZVuxEuFN8Ww64gt9JP5eVLsHtCleN8I0XCXp6WQZJlC4fxFK9E8p879ddXpeMNpblEksvTsYb4WUT5STgmavWNmJNxdbLUKVKf_I66P_zUbDE
+    - heading "Automating a Basic Calculator Workflow with n8n" [level=3]
+    - generic: LinkedIn · Logeshwaran T
+    - generic: 20+ reactions · 1 year ago
+  - button "About this result":
+  - text: This article introduces you to the process of
+  - emphasis: automating a simple calculator using the powerful n8n automation tool
+  - text: .
+  - link "Read more":
+    - /url: /goto?url=CAES7QEB6zswFXOV4-6ODMVF-0ascH4_Nwn6eTbrNF7d1r4LCWf523XWuE6n-cXvayk0PeBqmxAeGZm22w2fwmTYcuK_M-fdlvtF3JE7C336fEuUyVnU0kzyhHcvstUf6Na7ogbs7BNVRdl462QxbOEztgAm0qIU79h-4rNfW8WsuOWvZ_IoCiB2KuMokLuHGJhn1SJHfZFCghOxzNojMEr8PuquwJNx1SjHNVLTV33PncREC9znR8ZYoC8SbzrNv5Z6p9ICPlKkZF6kL5X8mMjvN4WfoNqzTTZkA-r7AxoGx_LdNoID5JjdWgxwlMI5BU0
+  - heading "People also search for" [level=2]
+  - link "N8n assistant credits calculator reddit":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&q=N8n+assistant+credits+calculator+reddit&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ1QJ6BAgpEAE
+    - generic: N8n assistant credits calculator reddit
+  - link "N8n assistant credits calculator free":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&q=N8n+assistant+credits+calculator+free&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ1QJ6BAguEAE
+    - generic: N8n assistant credits calculator free
+  - link "N8n calculator tool":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&q=N8n+calculator+tool&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ1QJ6BAgtEAE
+    - generic: N8n calculator tool
+  - link "N8n for business Analyst":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&q=N8n+for+business+Analyst&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ1QJ6BAgsEAE
+    - generic: N8n for business Analyst
+  - link "Data Analyst n8n":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&q=Data+Analyst+n8n&sa=X&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ1QJ6BAgrEAE
+    - generic: Data Analyst n8n
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=n8n+assistant+credits+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&ei=EqW_atmKJ8qL4-EP0-TF4Qg&start=10&sa=N&sstk=AS6-VmJS-ipZ_8rkPrI7uCdMxnWOzUqaAOiieS7MISWHOKCSnq2_DDEncqxU2fCeUGYtOsT7ILgwDb_wOZNpT_fvFoFy8wfm5AJ6_w&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ8tMDegQIJxAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=n8n+assistant+credits+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&ei=EqW_atmKJ8qL4-EP0-TF4Qg&start=20&sa=N&sstk=AS6-VmJS-ipZ_8rkPrI7uCdMxnWOzUqaAOiieS7MISWHOKCSnq2_DDEncqxU2fCeUGYtOsT7ILgwDb_wOZNpT_fvFoFy8wfm5AJ6_w&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ8tMDegQIJxAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=n8n+assistant+credits+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&ei=EqW_atmKJ8qL4-EP0-TF4Qg&start=30&sa=N&sstk=AS6-VmJS-ipZ_8rkPrI7uCdMxnWOzUqaAOiieS7MISWHOKCSnq2_DDEncqxU2fCeUGYtOsT7ILgwDb_wOZNpT_fvFoFy8wfm5AJ6_w&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ8tMDegQIJxAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=n8n+assistant+credits+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&ei=EqW_atmKJ8qL4-EP0-TF4Qg&start=40&sa=N&sstk=AS6-VmJS-ipZ_8rkPrI7uCdMxnWOzUqaAOiieS7MISWHOKCSnq2_DDEncqxU2fCeUGYtOsT7ILgwDb_wOZNpT_fvFoFy8wfm5AJ6_w&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ8tMDegQIJxAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=n8n+assistant+credits+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&ei=EqW_atmKJ8qL4-EP0-TF4Qg&start=50&sa=N&sstk=AS6-VmJS-ipZ_8rkPrI7uCdMxnWOzUqaAOiieS7MISWHOKCSnq2_DDEncqxU2fCeUGYtOsT7ILgwDb_wOZNpT_fvFoFy8wfm5AJ6_w&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ8tMDegQIJxAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=n8n+assistant+credits+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&ei=EqW_atmKJ8qL4-EP0-TF4Qg&start=60&sa=N&sstk=AS6-VmJS-ipZ_8rkPrI7uCdMxnWOzUqaAOiieS7MISWHOKCSnq2_DDEncqxU2fCeUGYtOsT7ILgwDb_wOZNpT_fvFoFy8wfm5AJ6_w&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ8tMDegQIJxAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=n8n+assistant+credits+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&ei=EqW_atmKJ8qL4-EP0-TF4Qg&start=70&sa=N&sstk=AS6-VmJS-ipZ_8rkPrI7uCdMxnWOzUqaAOiieS7MISWHOKCSnq2_DDEncqxU2fCeUGYtOsT7ILgwDb_wOZNpT_fvFoFy8wfm5AJ6_w&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ8tMDegQIJxAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=n8n+assistant+credits+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&ei=EqW_atmKJ8qL4-EP0-TF4Qg&start=80&sa=N&sstk=AS6-VmJS-ipZ_8rkPrI7uCdMxnWOzUqaAOiieS7MISWHOKCSnq2_DDEncqxU2fCeUGYtOsT7ILgwDb_wOZNpT_fvFoFy8wfm5AJ6_w&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ8tMDegQIJxAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=n8n+assistant+credits+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&ei=EqW_atmKJ8qL4-EP0-TF4Qg&start=90&sa=N&sstk=AS6-VmJS-ipZ_8rkPrI7uCdMxnWOzUqaAOiieS7MISWHOKCSnq2_DDEncqxU2fCeUGYtOsT7ILgwDb_wOZNpT_fvFoFy8wfm5AJ6_w&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ8tMDegQIJxAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=n8n+assistant+credits+calculator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntfLhcJsgM5IWEntr_x4fG-UTjv9g:1790944530648&ei=EqW_atmKJ8qL4-EP0-TF4Qg&start=10&sa=N&sstk=AS6-VmJS-ipZ_8rkPrI7uCdMxnWOzUqaAOiieS7MISWHOKCSnq2_DDEncqxU2fCeUGYtOsT7ILgwDb_wOZNpT_fvFoFy8wfm5AJ6_w&ved=2ahUKEwjZ276krJuXAxXKxTgGHVNyMYwQ8NMDegQIJxAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

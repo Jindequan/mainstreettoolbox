@@ -1,0 +1,16 @@
+digital waste tracking
+waste receipt deadline
+waste transfer note
+waste classification
+battery passport
+battery state of health
+packaging epr
+packaging recyclability
+packaging material weight
+e invoicing
+e reporting
+ai inference cost
+ai energy consumption
+ai agent roi
+refrigerant gwp
+data center water usage

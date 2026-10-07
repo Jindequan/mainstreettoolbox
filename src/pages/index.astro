@@ -85,6 +85,13 @@ const searchIndex = [
     </div>
   </section>
 
+  <section id="jump-back" class="section" hidden>
+    <div class="container">
+      <div class="section-head"><h2>Jump back in</h2></div>
+      <div class="jump-list" id="jump-list"></div>
+    </div>
+  </section>
+
   <section class="section most" style="border-top:1px solid var(--line)">
     <div class="container">
       <div class="section-head"><h2>The essentials</h2><a href="/tools">See all →</a></div>
@@ -122,6 +129,37 @@ const searchIndex = [
     tips.addEventListener('input', update);
     n.addEventListener('input', update);
   </script>
+
+  <script>
+    // Jump back in：读取工具页写入的 mst-recent，返回访客直接续上
+    try {
+      const raw = localStorage.getItem('mst-recent');
+      const list = raw ? (JSON.parse(raw) as { u: string; n: string }[]) : [];
+      if (list.length) {
+        const section = document.getElementById('jump-back')!;
+        const listEl = document.getElementById('jump-list')!;
+        for (const item of list) {
+          const a = document.createElement('a');
+          a.href = item.u;
+          a.className = 'jump-row';
+          const b = document.createElement('b');
+          b.textContent = item.n;
+          const go = document.createElement('span');
+          go.className = 'go';
+          go.textContent = '→';
+          a.append(b, go);
+          listEl.append(a);
+        }
+        section.hidden = false;
+      }
+    } catch { /* localStorage 不可用：区块保持隐藏 */ }
+  </script>
+
+  <style>
+    .jump-list { display: grid; gap: 8px; max-width: 34rem; }
+    .jump-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-m); color: var(--ink); }
+    .jump-row:hover { text-decoration: none; border-color: var(--line-2); }
+  </style>
 
   <style>
     .search-wrap { position: relative; max-width: 34rem; }
@@ -170,6 +208,7 @@ const searchIndex = [
     sameAs: [
       'https://ko-fi.com/devinjin',
       'https://github.com/Jindequan',
+      'https://www.youtube.com/channel/UCuZ0kBqozPNOpLBWvqxHN9A',
     ],
   })} />
   <script type="application/ld+json" set:html={JSON.stringify({

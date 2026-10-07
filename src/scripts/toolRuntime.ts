@@ -5,6 +5,19 @@ import type { EngineResult } from '../lib/types';
 import { beaconUse } from './stats';
 
 const $ = <T extends HTMLElement = HTMLElement>(sel: string): T | null => document.querySelector<T>(sel);
+
+// 用户粘性：记录最近使用的工具（去重、上限 6 条），首页 "Jump back in" 消费
+try {
+  const url = location.pathname;
+  const name = (document.querySelector('h1')?.textContent ?? '').trim() || document.title.split('—')[0].trim();
+  if (url && name) {
+    const raw = localStorage.getItem('mst-recent');
+    const list = raw ? (JSON.parse(raw) as { u: string; n: string }[]) : [];
+    const next = [{ u: url, n: name }, ...list.filter((x) => x.u !== url)].slice(0, 6);
+    localStorage.setItem('mst-recent', JSON.stringify(next));
+  }
+} catch { /* 隐私模式等 localStorage 不可用：静默 */ }
+
 const bootEl = $('#tool-boot');
 if (bootEl) {
   const { slug } = JSON.parse(bootEl.textContent ?? '{}') as { slug: string };

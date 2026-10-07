@@ -1,0 +1,26 @@
+[
+  {
+    "skill": "seo-keyword",
+    "repo": "rampstackco/claude-skills",
+    "ref": "3d4510a94a76ead80122c691b5c480f92f3fbe40",
+    "path": "skills/seo-keyword",
+    "sourceUrl": "https://github.com/rampstackco/claude-skills/tree/3d4510a94a76ead80122c691b5c480f92f3fbe40/skills/seo-keyword",
+    "installedPath": "/Users/devin/.codex/skills/seo-keyword",
+    "licenseSource": "https://raw.githubusercontent.com/rampstackco/claude-skills/3d4510a94a76ead80122c691b5c480f92f3fbe40/LICENSE",
+    "upstreamSkillSha256": "48b2ba227409a42749454c9ee5e579581435a3e51b6305ba1de0fea729700ad0",
+    "installedSkillSha256": "983ae5c52fbdad112b7745697cf40814152908410f602626a0bee65e0a4e080f",
+    "localChanges": "Frontmatter compatibility; no invented rough volume; overlap requires intent review; no production quota; template aligned."
+  },
+  {
+    "skill": "ahrefs-python",
+    "repo": "ahrefs/ahrefs-api-skills",
+    "ref": "7e777771deefe378d3e0967c4ccd8b41dd07920c",
+    "path": "skills/ahrefs-python",
+    "sourceUrl": "https://github.com/ahrefs/ahrefs-api-skills/tree/7e777771deefe378d3e0967c4ccd8b41dd07920c/skills/ahrefs-python",
+    "installedPath": "/Users/devin/.codex/skills/ahrefs-python",
+    "licenseSource": "https://raw.githubusercontent.com/ahrefs/ahrefs-api-skills/7e777771deefe378d3e0967c4ccd8b41dd07920c/LICENSE",
+    "upstreamSkillSha256": "53987ef800c83fd94a14d356084fe9e6fd50773049992aa1f386307d09faec94",
+    "installedSkillSha256": "53987ef800c83fd94a14d356084fe9e6fd50773049992aa1f386307d09faec94",
+    "localChanges": "None to instructions."
+  }
+]

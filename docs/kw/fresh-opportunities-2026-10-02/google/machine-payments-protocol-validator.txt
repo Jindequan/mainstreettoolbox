@@ -1,0 +1,304 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQPHoECAYQBA
+  - combobox "Search": machine payments protocol validator machine payments protocol validator
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dmachine%2Bpayments%2Bprotocol%2Bvalidator%26newwindow%3D1%26sca_esv%3D657ce744dba959fb%26hl%3Den%26gl%3Dus%26biw%3D1280%26bih%3D720%26sxsrf%3DAPpeQnuqg-D87Xmo1OQ9H2JvZ08GUcRL-g%253A1790944731492%26ei%3D26W_as6-HfyX4-EP5pz0iAk%26ved%3D2ahUKEwiOmKGErZuXAxX8yzgGHWYOHZEQ4dUDegQIBhAM%26uact%3D5%26oq%3Dmachine%2Bpayments%2Bprotocol%2Bvalidator%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiI21hY2hpbmUgcGF5bWVudHMgcHJvdG9jb2wgdmFsaWRhdG9ySA5QAFgAcAB4AZABAJgBAKABAKoBALgBA8gBAPgBAvgBAZgCAKACAJgDAJIHAKAHALIHALgHAMIHAMgHAIAIAQ%26sclient%3Dgws-wiz-serp&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&udm=imgs&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEfmexCwyVncqqJWDU0Vvgxc6FIBPgVKOgC9S5Fbse6a9-BNuqcgXQ2KnUGfoA1koBdoAhBt0c6UXUgHutpe2GPTeK4U-xaNs7cVWlfPfXSX2Y9KNyghXEFc9i7WA0kJfCU3Bxbg&q=machine+payments+protocol+validator&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQtKgLegQIGRAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEfmexCwyVncqqJWDU0Vvgxc6FIBPgVKOgC9S5Fbse6a9-BNuqcgXQ2KnUGfoA1koBdoAhBt0c6UXUgHutpe2GPTeK4U-xaNs7cVWlfPfXSX2Y9KNyghXEFc9i7WA0kJfCU3Bxbg&q=machine+payments+protocol+validator&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQtKgLegQIGBAB
+      - generic: Videos
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEfmexCwyVncqqJWDU0Vvgxc6FIBPgVKOgC9S5Fbse6a9-BNuqcgXQ2KnUGfoA1koBdoAhBt0c6UXUgHutpe2GPTeK4U-xaNs7cVWlfPfXSX2Y9KNyghXEFc9i7WA0kJfCU3Bxbg&q=machine+payments+protocol+validator&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEfmexCwyVncqqJWDU0Vvgxc6FIBPgVKOgC9S5Fbse6a9-BNuqcgXQ2KnUGfoA1koBdoAhBt0c6UXUgHutpe2GPTeK4U-xaNs7cVWlfPfXSX2Y9KNyghXEFc9i7WA0kJfCU3Bxbg&q=machine+payments+protocol+validator&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQs6gLegQIFhAB
+      - generic: Forums
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&q=machine+payments+protocol+validator&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEfmexCwyVncqqJWDU0Vvgxc6FIBPgVKOgC9S5Fbse6a9-BNuqcgXQ2KnUGfoA1koBdoAhBt0c6UXUgHutpe2GPTeK4U-xaNs7cVWlfPfXSX2Y9KNyghXEFc9i7WA0kJfCU3Bxbg&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ0pQJegQIFRAB
+      - generic: News
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VstEKsVDqPorK0Gahnm2nrruedQ0d32Et2kDhW_DVrEfmexCwyVncqqJWDU0Vvgxc6FIBPgVKOgC9S5Fbse6a9-BNuqcgXQ2KnUGfoA1koBdoAhBt0c6UXUgHutpe2GPTeK4U-xaNs7cVWlfPfXSX2Y9KNyghXEFc9i7WA0kJfCU3Bxbg&q=machine+payments+protocol+validator&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQs6gLegQIFBAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "Machine Payments Protocol | MPP mpp.dev https://mpp.dev":
+    - /url: /goto?url=CAESSAHrOzAVbrwl_KRMNJ9_1KcgiWyYnBh2D2PsEnmpiyJdi55693nSIHxqa0kTAEfCtiqtZ2vKwIPlHVE0vyed9vLnJ3lwySqvHg
+    - heading "Machine Payments Protocol | MPP" [level=3]
+    - generic: mpp.dev
+    - generic: https://mpp.dev
+  - button "About this result":
+  - emphasis: MPP
+  - text: lets agents pay for services on the web, extensible to any payment method. Use with your agentAdd payments to your API. Designed by Tempo × Stripe.
+  - link "Read more":
+    - /url: /goto?url=CAESlgEB6zswFXcvUoUYRGDVMNWH8k-tSUHEDVRa1JUevHUc1Hd3bCQ3XiLrZkenLcAgBLHBEwRZA7yVdzqrk6jfxVKy241kXU_OkOY2IOqAGaptbvm2rs3b9H-20AWFYldo6RmV-RJopVsE4lc8sLwvQ8sk4aIpsKxdFs3cwnpoYPNtyK_Tnr9kR-dmvR4msOPunZ6H47k09yI
+  - link "MPP Stripe Documentation https://docs.stripe.com › payments › machine › mpp":
+    - /url: /goto?url=CAESZAHrOzAV654HeY7J4aTVWa1D3oHRUTzG0m2XI68k-xSY-dvOEQDI3MkM7O-AzciS0xk-yG7kwpZLO1oA5WwSH_Y-28cAzl1DtC7Mw-vnbCZJhReQ-ntz0mDMJFSCkUAnJCXlRsE
+    - heading "MPP" [level=3]
+    - generic: Stripe Documentation
+    - generic: https://docs.stripe.com › payments › machine › mpp
+  - button "About this result":
+  - emphasis: MPP, the Machine Payments Protocol
+  - text: ", is an open protocol that lets agents pay for your APIs and services programmatically without a checkout UI, co-authored ..."
+  - link "Read more":
+    - /url: /goto?url=CAESyAEB6zswFWQxoPu3YTADaj1UPAHPYpNGgrqVrXs7LbRw0ky3LQU-RxJy-o6rR7-Wm0I6CYpOpjAEF2HPYIcoeYS2r37-JP4YSS6mZzyRXWn7AkBhOQV88noi_flDTvpI4YwYPXHfvTOx8D34pTFTvOQGaQkcg7cHgBab1FjNob9JwnQ2cLA9J2rIhPkbO0iQpEUkQB3KcmKFPpoazmXqQbpl4UIjuNkOe6te9eY0HJxqI9hmlhI1AtYwRjwsZ-loUxsYGuTGhjar7Q
+  - text: "Missing: validator ‎| Show results with:"
+  - link "validator":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&q=machine+payments+protocol+%22validator%22&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ5t4CegQIJxAB
+  - link "Inside Tempo's Machine Payment Protocol - Medium Medium · Jesus Rodriguez 6 months ago":
+    - /url: /goto?url=CAESsQEB6zswFd6mFxlVp7hyy7CU2N9T7Yfn0OFxrstSofwOysS99--Si_WiA2feqQKlNS2ui8sX8OOORYzoZg-XT_f1Xw8sQHOkzR3azNyIil9DMA5kEBJVkUJNlRxNGZgL7cNNvVwkbChTvg59nKZU3-jyEsYVtAgXLFHqn1XQyFCyj4wI8JieClXhQQoEK1g65YYdbN9-QDdGP1sgV6s4ioV6ej4Fd80dfbotdxmGRkMLflA
+    - heading "Inside Tempo's Machine Payment Protocol - Medium" [level=3]
+    - generic: Medium · Jesus Rodriguez
+    - generic: 6 months ago
+  - button "About this result":
+  - text: The
+  - emphasis: Machine Payments Protocol
+  - text: (MPP) is an open standard co-authored by Stripe and Tempo, designed to enable internet-native,
+  - emphasis: machine
+  - text: "-to-"
+  - emphasis: machine
+  - text: ...
+  - link "Read more":
+    - /url: /goto?url=CAESrQIB6zswFfApvTL3Xsj4CPofLrbZssCo3jQT35fs2qYCPiibUp-L4FYZ9YuElPpk5ImKukK5OEHUllvCiaqXLh3CR7Xh0qw8B65UaT447dlykP62rFZ3P2VLMRblUbYBLMnmmuEtA81a58YSA2Ka3WPZKwPs_GMCWAW84lSGmJoLJvhZZxH6w_ZudD_GiuoyFIDuu2QLRcz3ckmMGPG4n1kZYkOuxvqbRvk8ldIo66mxcbAbQgczEtZbBRBH8p9QnObr8OUBkU9jAPtssvrKnKJgr1euNgYhRIZhOPPWtZYFhGLu1goQvUGRGQmu2dAXGb-ndf0oBsSbZqwZqbfmtPWpQyAy0FslOZ6XFdJfT8Vhi7mkCp85OrhSynRGI96I61wkUwXxKP_n3V7jeWdP
+  - link "Protocol overview | MPP mpp.dev https://mpp.dev › protocol":
+    - /url: /goto?url=CAESUAHrOzAV3qaRbkyCorL_d3t1uvArUZLDGZlvwfTbDxUX5AnA58M4uuXbQXxgeXLl0B68UiCwtrIgnyvnyWpNWuYz2LeLrEvxwfe5zDhkKw3n
+    - heading "Protocol overview | MPP" [level=3]
+    - generic: mpp.dev
+    - generic: https://mpp.dev › protocol
+  - button "About this result":
+  - generic: Sep 21, 2026 —
+  - text: The
+  - emphasis: Machine Payments Protocol
+  - text: (MPP) is a
+  - emphasis: protocol
+  - text: for
+  - emphasis: machine
+  - text: "-to-"
+  - emphasis: machine payments
+  - text: . It standardizes HTTP 402 "
+  - emphasis: Payment
+  - text: Required" with an ...
+  - 'link "x402 Payment Protocol: How AI Agents Will Pay Online Digital Applied https://www.digitalapplied.com › Blog › eCommerce"':
+    - /url: /goto?url=CAESkwEB6zswFdIwGNqA9kfjuvj8JYjM_KHRaHMMRNZ9I066352c9uB8C-x1KRLsr50gLQVDjDfWwSozLFobMWW0bObITE9p8MrV5voD9S6inMeuXuzsZWwEmjyP7Sv43ijHvlUA6LmRZ-o2A73KzXIYEjVDNSnplcnAed8kye1MgJePJI2o8sJsLcsAfFlSvHmO-oIYeSs
+    - 'heading "x402 Payment Protocol: How AI Agents Will Pay Online" [level=3]'
+    - generic: Digital Applied
+    - generic: https://www.digitalapplied.com › Blog › eCommerce
+  - button "About this result":
+  - generic: Mar 12, 2026 —
+  - text: Always
+  - emphasis: validate
+  - text: that the
+  - emphasis: payment
+  - text: window in the transaction matches the current request timestamp. The x402 specification requires this check,
+  - link "stripe-samples/machine-payments GitHub https://github.com › stripe-samples › machine-payments":
+    - /url: /goto?url=CAESagHrOzAVy8rcVRoTqN3pp5jqrI9UJd-pQV0jk3ucTscjiyPzp7hVwdHRbdbqyZHtrznJpf5jGIOdNv2okujOSruTJ72UjqjVtgpmw7Pal9svDeKiYc4nZljOOQ1wKgxFoMWcv4x2jXYWyA4
+    - heading "stripe-samples/machine-payments" [level=3]
+    - generic: GitHub
+    - generic: https://github.com › stripe-samples › machine-payments
+  - button "About this result":
+  - text: This repository demonstrates how to implement
+  - emphasis: machine
+  - text: "-to-"
+  - emphasis: machine payments
+  - text: "using different protocols: MPP — The"
+  - emphasis: Machine Payments Protocol
+  - heading "Videos" [level=2]
+  - button "About this result":
+  - 'link "Machine Payments Protocol: enabling autonomous agent-to- ... YouTube Stripe Developers Apr 30, 2026"':
+    - /url: /goto?url=CAESYwHrOzAVYt3wdlJv1OGJuA_JBjwGn7XknKJYna8D7ya_uQnj7MAjyhmOoVKEbPZnUtigdhN6us9Mgh3eVOYIEWoQLcoYy_ZcEA_rthQVgPcq4txbMYBtLwsKUnKWA2WXLVZwSA
+    - 'heading "Machine Payments Protocol: enabling autonomous agent-to- ... YouTube Stripe Developers Apr 30, 2026" [level=3]':
+      - generic: "Machine Payments Protocol: enabling autonomous agent-to- ..."
+      - text: YouTube
+      - generic: · Stripe Developers
+      - generic: Apr 30, 2026
+  - text: YouTube
+  - generic: · Stripe Developers
+  - button "About this result":
+  - 'button "Machine Payments Protocol: enabling autonomous agent-to- ... by Stripe Developers on YouTube. Play on Google. 23:30"':
+    - generic: 23:30
+  - link "Inside Stripe's Machine Payments Protocol YouTube Stripe Developers Jun 21, 2026":
+    - /url: /goto?url=CAESYwHrOzAVh_iwDBbA8fvJ-HJS7txPhQcjR8BBt-VarqECpD9rG30iX-vDIIAXHDF1tEhxkJPWlhJJuTBgMxJfD-BRgm09i4CBb8MRdAr4WRF8TkTOe9xAiJu5M_flWFRVkbdCZA
+    - heading "Inside Stripe's Machine Payments Protocol YouTube Stripe Developers Jun 21, 2026" [level=3]:
+      - generic: Inside Stripe's Machine Payments Protocol
+      - text: YouTube
+      - generic: · Stripe Developers
+      - generic: Jun 21, 2026
+  - text: YouTube
+  - generic: · Stripe Developers
+  - button "About this result":
+  - button "Inside Stripe's Machine Payments Protocol by Stripe Developers on YouTube. Play on Google. 7:46":
+    - generic: 7:46
+  - button "Stripe co-authored the Machine Payments Protocol with Tempo, enabling agents to make purchases autonomously using fiat, cards, or Link wallet.":
+    - generic: Stripe co-authored the Machine Payments Protocol with Tempo, enabling agents to make purchases autonomously using fiat, cards, or Link wallet.
+  - link "Machine Payments 101 YouTube Stripe Developers Jun 21, 2026":
+    - /url: /goto?url=CAESYwHrOzAVrBoQe3482WWTQZBGVrY1ZE27DM6s0c6OL4YrLI6rYd2HoWlmvQcT6qNUCxYojj2tZdUYRJuPeNBbQ7ts8wJ11BzB2QZDOyTE9TjW2kog4tw-1LFsmLWxKi5an98YMQ
+    - heading "Machine Payments 101 YouTube Stripe Developers Jun 21, 2026" [level=3]:
+      - generic: Machine Payments 101
+      - text: YouTube
+      - generic: · Stripe Developers
+      - generic: Jun 21, 2026
+  - text: YouTube
+  - generic: · Stripe Developers
+  - button "About this result":
+  - button "Machine Payments 101 by Stripe Developers on YouTube. Play on Google. 15:49":
+    - generic: 15:49
+  - button "Machine payments allow AI agents to pay for digital resources like API calls or data fully programmatically and autonomously.":
+    - generic: Machine payments allow AI agents to pay for digital resources like API calls or data fully programmatically and autonomously.
+  - link "View all videos":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&udm=vids&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&q=machine+payments+protocol+validator&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ8ccDKAJ6BAhFEAU
+    - separator
+    - generic: View all
+  - heading "Web results" [level=2]
+  - link "Stripe just built the toll booth for the machine economy ; Visa ... Substack · Linas's Newsletter 40+ likes · 6 months ago":
+    - /url: /goto?url=CAESZQHrOzAVMowZ1Qe14YRliIHjsTMg2O_e3LBHt3lQGn0Xj-b_Mr3-Gtnz-57JR2FrRe4o21ThA98I5lxsdeCdf9zM2f5s7G9SNIGvo1haZpepKkwcM3QSKMslex1B8ay1KBZQxNYU
+    - heading "Stripe just built the toll booth for the machine economy ; Visa ..." [level=3]
+    - generic: Substack · Linas's Newsletter
+    - generic: 40+ likes · 6 months ago
+  - button "About this result":
+  - text: The
+  - emphasis: Machine Payments Protocol
+  - text: ", a full authentication scheme for autonomous"
+  - emphasis: machine
+  - text: "-to-"
+  - emphasis: machine payments
+  - text: .
+  - emphasis: machine
+  - text: "-to-"
+  - emphasis: machine payments
+  - text: .
+  - emphasis: validator
+  - text: ...
+  - link "What Is MPP (Machine Payments Protocol)? How AI Agents ... formo.so https://formo.so › Blog":
+    - /url: /goto?url=CAESdQHrOzAVv-jDB94SHrqzZztOuJVxRH7Kc-iHTMXurj3Sn6x70J2J7T6gmxGgXtG2YVsaeVVmTR4ZY83Ip-Lsft2JOAWeazAh7qmlnv6XOcK4SrH8YJuzAQdJWfXuk2GY4-RZcPht-8Bf_7ypc4873uQtKxPBkA
+    - heading "What Is MPP (Machine Payments Protocol)? How AI Agents ..." [level=3]
+    - generic: formo.so
+    - generic: https://formo.so › Blog
+  - button "About this result":
+  - generic: Mar 30, 2026 —
+  - text: The MPP
+  - emphasis: protocol
+  - text: defines
+  - emphasis: machine payments
+  - text: over HTTP using a 402 challenge flow. Agents
+  - emphasis: pay
+  - text: ", retry requests, and receive verified receipts ..."
+  - link "Read more":
+    - /url: /goto?url=CAES3QEB6zswFcZhpAX6p9IpSqWGT3K4jb92saOWlP8DmOTK49267D5ZTW_5bjPuEK_2TzY-J-SkevLVqr93Ak2KVJsPlBDMSO4z8VCEC3l7L2FFdhn2hV0EJKZbUHoMFa0zxOMFzTbXhy-fHiEvBQKa_l1Med1Gct6OJMxWPTtENSCGK8QmzX7M-Hli6721J1TSyTJA5i_zubDPUnK72SDq-378Tbesr0qJ5OWqGYXM7EquCSd8RqT1XlPrkDN-sOdnGIAa4bUXaiMmXhUePLtOkA9FbwOVbf7yiQaUWgJacQ
+  - 'link "Deep Dive: The Machine Payments Protocol: By Sam Boboev Finextra Research https://www.finextra.com › Community › Sam Boboev"':
+    - /url: /goto?url=CAESigEB6zswFXjyt-XbV08lLL7hrlp2ilOJinc0Kvp37QVZhFVigNUhGVAjD17PB0_KeaQtW8oS3brAc8M8Xve8P-y4N6m5dilHCQ-5Xeco0N8QH-GgaFxldXP6zKOt1LZJBEAkhX7Aa-wKevla1pm9aLwR9NWoICEUnueofiDU5CVc3f2otcP8YZCrG0Y
+    - 'heading "Deep Dive: The Machine Payments Protocol: By Sam Boboev" [level=3]'
+    - generic: Finextra Research
+    - generic: https://www.finextra.com › Community › Sam Boboev
+  - button "About this result":
+  - generic: Apr 5, 2026 —
+  - text: "Resource Delivery: The server verifies the credential, settles the"
+  - emphasis: payment
+  - text: ", and returns the resource along with a"
+  - emphasis: Payment
+  - text: "-Receipt header. Market ..."
+  - link "Read more":
+    - /url: /goto?url=CAES7QEB6zswFcCU6kHRE9hOPXlb3vDqin39rU3my4dFbUCW07GHO_ET-0syUSZlMvNPoUS4q9z-WGMrX5z8UKu56FZzMS4_i5bGQgVINM33eKZGGyVHH7cM2E2VcdWpL9GmWUrjoMA_Sdb0ElpcShUMxoTLCMfYxpcoKlHdi0CflxdiYH4lzdTszkBafxEdEWC_DG2_h3zKzAtGjhipaRQZSMA_ZWuFcv_Jjqi3d4JXL6VVNcIyfESfgfbEjhEAqfsrYhI6JBQ2YzQzSWBn4NRxdD7JTOCpAeEHdjOq8Pnh1uq3Yhj3CaE2q46WifGqtFw
+  - heading "People also ask" [level=2]
+  - button "What is the Machine Payments Protocol (MPP)?":
+    - generic: What is the Machine Payments Protocol (MPP)?
+  - button "What is MPP crypto?":
+    - generic: What is MPP crypto?
+  - heading "People also search for" [level=2]
+  - link "Machine payments protocol validator pdf":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&q=Machine+payments+protocol+validator+pdf&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ1QJ6BAgsEAE
+    - generic: Machine payments protocol validator pdf
+  - link "Stripe machine payments protocol validator":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&q=Stripe+machine+payments+protocol+validator&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ1QJ6BAg-EAE
+    - generic: Stripe machine payments protocol validator
+  - link "Machine payments protocol validator github":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&q=Machine+payments+protocol+validator+github&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ1QJ6BAg6EAE
+    - generic: Machine payments protocol validator github
+  - link "Stripe Machine payments Protocol":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&q=Stripe+Machine+payments+Protocol&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ1QJ6BAg3EAE
+    - generic: Stripe Machine payments Protocol
+  - link "Machine payments Protocol github":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&q=Machine+payments+Protocol+github&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ1QJ6BAg0EAE
+    - generic: Machine payments Protocol github
+  - link "Machine payments Protocol Visa":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&q=Machine+payments+Protocol+Visa&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ1QJ6BAgyEAE
+    - generic: Machine payments Protocol Visa
+  - link "MPP vs x402":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&q=MPP+vs+x402&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ1QJ6BAguEAE
+    - generic: MPP vs x402
+  - link "Agent Payments Protocol":
+    - /url: /search?newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&q=Agent+Payments+Protocol&sa=X&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ1QJ6BAgtEAE
+    - generic: Agent Payments Protocol
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=machine+payments+protocol+validator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&ei=D6a_aqDLL6W94-EPmJ-CkQQ&start=10&sa=N&sstk=AS6-VmJdUIRuPD19m1AQS6qsmp9qs1Wz_ZLB0N4gHTppjkO-ViBBXE3fYxn6XvZmvhqgUXfFmDQhVO9EzFxpQwnyq3xh1XAbjwXU8A&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ8tMDegQIKhAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=machine+payments+protocol+validator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&ei=D6a_aqDLL6W94-EPmJ-CkQQ&start=20&sa=N&sstk=AS6-VmJdUIRuPD19m1AQS6qsmp9qs1Wz_ZLB0N4gHTppjkO-ViBBXE3fYxn6XvZmvhqgUXfFmDQhVO9EzFxpQwnyq3xh1XAbjwXU8A&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ8tMDegQIKhAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=machine+payments+protocol+validator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&ei=D6a_aqDLL6W94-EPmJ-CkQQ&start=30&sa=N&sstk=AS6-VmJdUIRuPD19m1AQS6qsmp9qs1Wz_ZLB0N4gHTppjkO-ViBBXE3fYxn6XvZmvhqgUXfFmDQhVO9EzFxpQwnyq3xh1XAbjwXU8A&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ8tMDegQIKhAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=machine+payments+protocol+validator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&ei=D6a_aqDLL6W94-EPmJ-CkQQ&start=40&sa=N&sstk=AS6-VmJdUIRuPD19m1AQS6qsmp9qs1Wz_ZLB0N4gHTppjkO-ViBBXE3fYxn6XvZmvhqgUXfFmDQhVO9EzFxpQwnyq3xh1XAbjwXU8A&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ8tMDegQIKhAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=machine+payments+protocol+validator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&ei=D6a_aqDLL6W94-EPmJ-CkQQ&start=50&sa=N&sstk=AS6-VmJdUIRuPD19m1AQS6qsmp9qs1Wz_ZLB0N4gHTppjkO-ViBBXE3fYxn6XvZmvhqgUXfFmDQhVO9EzFxpQwnyq3xh1XAbjwXU8A&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ8tMDegQIKhAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=machine+payments+protocol+validator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&ei=D6a_aqDLL6W94-EPmJ-CkQQ&start=60&sa=N&sstk=AS6-VmJdUIRuPD19m1AQS6qsmp9qs1Wz_ZLB0N4gHTppjkO-ViBBXE3fYxn6XvZmvhqgUXfFmDQhVO9EzFxpQwnyq3xh1XAbjwXU8A&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ8tMDegQIKhAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=machine+payments+protocol+validator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&ei=D6a_aqDLL6W94-EPmJ-CkQQ&start=70&sa=N&sstk=AS6-VmJdUIRuPD19m1AQS6qsmp9qs1Wz_ZLB0N4gHTppjkO-ViBBXE3fYxn6XvZmvhqgUXfFmDQhVO9EzFxpQwnyq3xh1XAbjwXU8A&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ8tMDegQIKhAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=machine+payments+protocol+validator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&ei=D6a_aqDLL6W94-EPmJ-CkQQ&start=80&sa=N&sstk=AS6-VmJdUIRuPD19m1AQS6qsmp9qs1Wz_ZLB0N4gHTppjkO-ViBBXE3fYxn6XvZmvhqgUXfFmDQhVO9EzFxpQwnyq3xh1XAbjwXU8A&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ8tMDegQIKhAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=machine+payments+protocol+validator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&ei=D6a_aqDLL6W94-EPmJ-CkQQ&start=90&sa=N&sstk=AS6-VmJdUIRuPD19m1AQS6qsmp9qs1Wz_ZLB0N4gHTppjkO-ViBBXE3fYxn6XvZmvhqgUXfFmDQhVO9EzFxpQwnyq3xh1XAbjwXU8A&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ8tMDegQIKhAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=machine+payments+protocol+validator&newwindow=1&sca_esv=657ce744dba959fb&hl=en&gl=us&biw=1280&bih=720&sxsrf=APpeQntX8u-YkbHKKUofGMcpkxnxJLzRxg:1790944783786&ei=D6a_aqDLL6W94-EPmJ-CkQQ&start=10&sa=N&sstk=AS6-VmJdUIRuPD19m1AQS6qsmp9qs1Wz_ZLB0N4gHTppjkO-ViBBXE3fYxn6XvZmvhqgUXfFmDQhVO9EzFxpQwnyq3xh1XAbjwXU8A&ved=2ahUKEwjgjpmdrZuXAxWl3jgGHZiPIEIQ8NMDegQIKhAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

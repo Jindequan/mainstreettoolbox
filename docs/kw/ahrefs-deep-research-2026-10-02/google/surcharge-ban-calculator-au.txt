@@ -1,0 +1,250 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en-AU
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com.hk/webhp?hl=en&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQPHoECAYQBA
+  - combobox "Search": surcharge ban calculator surcharge ban calculator
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+  - button "Search":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com.hk/search%3Fq%3Dsurcharge%2Bban%2Bcalculator%26gl%3Dau%26hl%3Den&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jmGsLLhV9MC9EWyWlfU-dFSv7raokBUzNDkxbA2aWNfmuzk88COxcPnI3Gz9UnbfteUIRU9GSNf71Y3Yi2yEY3qKkN4YhUqO2LHEO_T2nbn2Oblp0l5_tqqqfj6Lf5ZdXFUv8kvTc0QNIwBTUapeHBHQKneKw&q=surcharge+ban+calculator&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jmGsLLhV9MC9EWyWlfU-dFSv7raokBUzNDkxbA2aWNfmuzk88COxcPnI3Gz9UnbfteUIRU9GSNf71Y3Yi2yEY3qKkN4YhUqO2LHEO_T2nbn2Oblp0l5_tqqqfj6Lf5ZdXFUv8kvTc0QNIwBTUapeHBHQKneKw&q=surcharge+ban+calculator&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQtKgLegQIFxAB
+      - generic: Images
+    - link "News":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&q=surcharge+ban+calculator&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jmGsLLhV9MC9EWyWlfU-dFSv7raokBUzNDkxbA2aWNfmuzk88COxcPnI3Gz9UnbfteUIRU9GSNf71Y3Yi2yEY3qKkN4YhUqO2LHEO_T2nbn2Oblp0l5_tqqqfj6Lf5ZdXFUv8kvTc0QNIwBTUapeHBHQKneKw&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ0pQJegQIFhAB
+      - generic: News
+    - link "Videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jmGsLLhV9MC9EWyWlfU-dFSv7raokBUzNDkxbA2aWNfmuzk88COxcPnI3Gz9UnbfteUIRU9GSNf71Y3Yi2yEY3qKkN4YhUqO2LHEO_T2nbn2Oblp0l5_tqqqfj6Lf5ZdXFUv8kvTc0QNIwBTUapeHBHQKneKw&q=surcharge+ban+calculator&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQtKgLegQIFBAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jmGsLLhV9MC9EWyWlfU-dFSv7raokBUzNDkxbA2aWNfmuzk88COxcPnI3Gz9UnbfteUIRU9GSNf71Y3Yi2yEY3qKkN4YhUqO2LHEO_T2nbn2Oblp0l5_tqqqfj6Lf5ZdXFUv8kvTc0QNIwBTUapeHBHQKneKw&q=surcharge+ban+calculator&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQs6gLegQIFRAB
+      - generic: Forums
+    - link "Short videos":
+      - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jmGsLLhV9MC9EWyWlfU-dFSv7raokBUzNDkxbA2aWNfmuzk88COxcPnI3Gz9UnbfteUIRU9GSNf71Y3Yi2yEY3qKkN4YhUqO2LHEO_T2nbn2Oblp0l5_tqqqfj6Lf5ZdXFUv8kvTc0QNIwBTUapeHBHQKneKw&q=surcharge+ban+calculator&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQs6gLegQIExAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "Web results" [level=2]
+  - link "Credit Card Surcharge Ban Calculator (Australia 2026) merchantcompare.com.au https://merchantcompare.com.au › compare › credit-car...":
+    - /url: /goto?url=CAESggEB6zswFZwGjv6A_gdcCS_JaJoEpTaxDCJgMWz8Mm88Rna0wXFbtmUTRCuLUNes8gQbYSCtiJnDWo50lpj08Pm0hygU1uGlJQJlCx-GaNbNmLRP5H0-YScpwKoPI8Q4MnRiL_KarovU_yIA0Id36-ZQ1yLJ3sJOnFuF_PqFW3jRuo7Z
+    - heading "Credit Card Surcharge Ban Calculator (Australia 2026)" [level=3]
+    - generic: merchantcompare.com.au
+    - generic: https://merchantcompare.com.au › compare › credit-car...
+  - button "About this result":
+  - text: Work out your credit card surcharge in Australia and see what the 2026 surcharge ban will cost your business.
+  - emphasis: Free calculator
+  - text: ", then compare cheaper payment ..."
+  - heading "People also ask" [level=2]
+  - button "How do I calculate a surcharge?":
+    - generic: How do I calculate a surcharge?
+  - button "Is there a ban on credit surcharges in Australia?":
+    - generic: Is there a ban on credit surcharges in Australia?
+  - button "Is it legal to charge 4% on a debit card?":
+    - generic: Is it legal to charge 4% on a debit card?
+  - button "How high can a surcharge be?":
+    - generic: How high can a surcharge be?
+  - heading "Web results" [level=2]
+  - link "Card surcharges ACCC https://www.accc.gov.au › consumers › pricing › card-su...":
+    - /url: /goto?url=CAESdAHrOzAVkjDQsjWjEld4lS0yH6Y2_Jf_2zo4F8YquTqZdXc0H6V7GAq1uNl0tjKlh-WlBQDyKnKoDP-xzyOLmPX1_cy8rshOZrZmwm_YNPe_nX41Dh-bM0OMgL1k0UXZJikUOkW6HMoKjtcmXyk9Mu2eoxsm
+    - heading "Card surcharges" [level=3]
+    - generic: ACCC
+    - generic: https://www.accc.gov.au › consumers › pricing › card-su...
+  - button "About this result":
+  - text: From 1 October 2026, businesses can no longer add a
+  - emphasis: surcharge
+  - text: for payments made using Visa, Mastercard, American Express and eftpos cards.
+  - 'link "Card surcharge ban: what Australian small businesses ... ANZ https://www.anz.com.au › running-business › run › RB..."':
+    - /url: /goto?url=CAESlAEB6zswFRD59sS5Pg72iY9qVudlI5Zd-LnlxpbxAep1wdg91mVHSVI-1Uvh4xhZYHRvs503-RFEKDBo_-IpbmoPApyvrJhn7v4uLrFGQPHP6b0A1bFmHRMb0iyufaCDXdJ5Y8v37E5P-Nxn3e1VbiFQQXAMw1im6EAgNC63Q3XyMgPidL1q7ITcpwqpqm1QOdA0LMbM
+    - 'heading "Card surcharge ban: what Australian small businesses ..." [level=3]'
+    - generic: ANZ
+    - generic: https://www.anz.com.au › running-business › run › RB...
+  - button "About this result":
+  - generic: 8 May 2026 —
+  - text: Tools, templates, checklists, and
+  - emphasis: calculators
+  - text: (“ANZ Tools”) linked or referred to on this page, are only some of many ways to analyse a ...
+  - link "Read more":
+    - /url: /goto?url=CAESiAIB6zswFZGVbkpEQ00M4w6USzkRkqlNObo-jnuS_lveo7zGdYkg6_ieVZNvCZnO17s0zwx2R1ikeGYqBExQPp8I4cZhB0UMPsp0ZGm_7jGYVGnIsmljrFyJl1PeK6oqMjN6KAxWxGCb4IwR6wfdXV6R0dQcT2u06g-IMqFDA99u-v317IiaosPmaeXdMnxDT4whXelbvxwVpWKBxXkhUtcbYCbqHlJc9CpqLS6vkH-GnbvG2_Kktrx4rxPZ9NLPCPXnKmPbzBMxvuD2PvRTjmdtW7_kG0w3V2EBpT1hsBYoakohMF47uufpPyDhPHuPmSKw23gpVP4usN4JfpOENj1xczl7ik8nOg4
+  - heading "Videos" [level=2]
+  - button "About this result":
+  - link "Card surcharge ban kicks in as experts warn it could cost ... Facebook 7NEWS Melbourne 1 day ago":
+    - /url: /goto?url=CAESxQEB6zswFcokM8yPkrlDAakdkfsH90enaJJs1zy3fx8sTIiv4EuVjkPTd6hOdyHa9PQFGujryfGPtzgAkWLfz5ak1Hie63sa7heRUphdaYElIQ5heJwBscM88ZF4EjQNtp70p0uF4WJPtNrOr0f35u1Z19i58fOMyA9zAaJgeZpdned13KY6Ssv2prLC3Ng6WfWBcJkRvccEM-im5w5HPU04YYpvKSGYJSPjfDETiBAOyGm760gSJI-UqiNlR2vhysu1dTTdhg
+    - heading "Card surcharge ban kicks in as experts warn it could cost ... Facebook 7NEWS Melbourne 1 day ago" [level=3]:
+      - generic: Card surcharge ban kicks in as experts warn it could cost ...
+      - text: Facebook
+      - generic: · 7NEWS Melbourne
+      - generic: 1 day ago
+  - text: Facebook
+  - generic: · 7NEWS Melbourne
+  - button "About this result":
+  - link "Card surcharge ban kicks in as experts warn it could cost ... by 7NEWS Melbourne on Facebook. Play on Facebook. 0:26":
+    - /url: /goto?url=CAESxQEB6zswFcokM8yPkrlDAakdkfsH90enaJJs1zy3fx8sTIiv4EuVjkPTd6hOdyHa9PQFGujryfGPtzgAkWLfz5ak1Hie63sa7heRUphdaYElIQ5heJwBscM88ZF4EjQNtp70p0uF4WJPtNrOr0f35u1Z19i58fOMyA9zAaJgeZpdned13KY6Ssv2prLC3Ng6WfWBcJkRvccEM-im5w5HPU04YYpvKSGYJSPjfDETiBAOyGm760gSJI-UqiNlR2vhysu1dTTdhg
+    - generic: 0:26
+  - link "RBA estimates the card surcharge ban will save consumers ... Facebook 7NEWS Australia 1 day ago":
+    - /url: /goto?url=CAESwAEB6zswFfWtZPisDS90NtSM54MG8sNa2eqme0CjxjG0NWxx9r2FuTgGd8YoJrPBsI7t_M2-6CC7A-4tmwh2Q3oFdfAu-zsnprWNk-KmYXInTw9IP7aZ0pc5LO-mOWO6WRICwoe0BsfdG-ZP7IqXAGWQNZ7Josg9g009cNgsYGU_8bqTPnX0CSy3pV0B4TqeI2J9a9YY4tg5TczSfIiS3mjIFiewvEWVUTIfwXCmHH3ru1ZWuZyZjtg4xMy0TS21go0
+    - heading "RBA estimates the card surcharge ban will save consumers ... Facebook 7NEWS Australia 1 day ago" [level=3]:
+      - generic: RBA estimates the card surcharge ban will save consumers ...
+      - text: Facebook
+      - generic: · 7NEWS Australia
+      - generic: 1 day ago
+  - text: Facebook
+  - generic: · 7NEWS Australia
+  - button "About this result":
+  - link "RBA estimates the card surcharge ban will save consumers ... by 7NEWS Australia on Facebook. Play on Facebook. 1:56":
+    - /url: /goto?url=CAESwAEB6zswFfWtZPisDS90NtSM54MG8sNa2eqme0CjxjG0NWxx9r2FuTgGd8YoJrPBsI7t_M2-6CC7A-4tmwh2Q3oFdfAu-zsnprWNk-KmYXInTw9IP7aZ0pc5LO-mOWO6WRICwoe0BsfdG-ZP7IqXAGWQNZ7Josg9g009cNgsYGU_8bqTPnX0CSy3pV0B4TqeI2J9a9YY4tg5TczSfIiS3mjIFiewvEWVUTIfwXCmHH3ru1ZWuZyZjtg4xMy0TS21go0
+    - generic: 1:56
+  - link "View all videos":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&udm=vids&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&q=surcharge+ban+calculator&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ8ccDKAJ6BAhfEAU
+    - separator
+    - generic: View all
+  - heading "Web results" [level=2]
+  - link "Card Surcharges Explained Australian Banking Association https://www.ausbanking.org.au › surcharging":
+    - /url: /goto?url=CAESZQHrOzAVPXtmSkagmde7rvIKBV_1h7eSj8Cfzt85dFtBkWKRUZ3ckHj9tb4xHHtVOrbNmAMdRaRxuMnJYF5Wg-6ryIsWDgKNyzq126U_hRC6vKtZpjDoK6oQEMZV7XeloWYXUTKV
+    - heading "Card Surcharges Explained" [level=3]
+    - generic: Australian Banking Association
+    - generic: https://www.ausbanking.org.au › surcharging
+  - button "About this result":
+  - text: From 1 October 2026, businesses will no longer be able to add a
+  - emphasis: surcharge
+  - text: when you pay with eftpos, Visa, Mastercard. American Express will also adopt this ...
+  - link "Read more":
+    - /url: /goto?url=CAESvQEB6zswFUNPwQid64fHTij0gsfBnIkXGfy0lLL4EBjIP9QcbNxzRorx8wqOVs0V-sMRl6bx-s1avmNkgG0xSpgF2nSEnMm9w_djQfsEjGaztv3U3eZUU5iw2ssmtKVi4zktthOJl0zEHfZejcFyJVzamgkBd_NbVxMUrVBsh9N6BwtDQPong1v69EiI1JQYAB2YtwkmE7aF-raGqO0nGHXFnHdzFIU8nxvbhVq8gEhmBNLdzqReYaE8d4tTtl4
+  - link "Free Surcharge Calculator Australia | EFTPOS Charges ... comparepayments.com.au https://comparepayments.com.au › surcharge-calculator":
+    - /url: /goto?url=CAESbgHrOzAVroTKa-kY0rpv2FMF8RcEX-AXOPpKCUtXLqZzqQtqKNj7eD_JaW6pd5W-G8WhUiDnVtGwoXpuXHU2QF8zHlnl1AzlqmpJ4Yy1HBRIaqRqPPvsFc3hGZqd9l7gnc82MlBM_D-_o1oxBymr
+    - heading "Free Surcharge Calculator Australia | EFTPOS Charges ..." [level=3]
+    - generic: comparepayments.com.au
+    - generic: https://comparepayments.com.au › surcharge-calculator
+  - button "About this result":
+  - emphasis: Calculate surcharge costs and EFTPOS charges
+  - text: for your Australian business. Free tool shows card fee impact and potential savings from merchant service ...
+  - link "Credit Card Surcharges in Australia in 2026 Canstar https://www.canstar.com.au › Credit Cards":
+    - /url: /goto?url=CAESegHrOzAVxaLTXWKs-2MO_eU1vWda6YuhHbmkR2sMy7EVrsKCIBr6O4JbFN72LscciUt42eyAsIrFUuIjOVMvdaY-OEOE_q1ACgyE6q0mSHbQeVgECgEoaqfhkj2FSp9RQAN9jxeME6Y9uwMC7kQs5pSbfjsV5viWRMjb
+    - heading "Credit Card Surcharges in Australia in 2026" [level=3]
+    - generic: Canstar
+    - generic: https://www.canstar.com.au › Credit Cards
+  - button "About this result":
+  - generic: 18 July 2025 —
+  - text: For example, if it costs a business 1% to accept a Visa credit payment, then the
+  - emphasis: surcharge
+  - text: for this cannot exceed 1%. a
+  - emphasis: ban
+  - text: on debit card ...
+  - link "Reserve Bank of Australia surcharging standard NAB https://www.nab.com.au › ... › Merchant support centre":
+    - /url: /goto?url=CAESmQEB6zswFXBqsDLdTTGzWm932Ne2UQBgX33chdMbP_sqQ89Cm3mJ9ywR7Rd0R_Q8jmb0tsC_QeJweXqUs4Arr02k-RdOxLrLSdx6NvrGg1GHvBQDpqj1fA7FZEZ-7_ekPp6IoKHPeZTuL72lQ0m7DnL6THhKj5-RHD1eYS4fgOW_Uwx1XSTYGrUWllEa6rKwV4nn9A4IG1YaFt8
+    - heading "Reserve Bank of Australia surcharging standard" [level=3]
+    - generic: NAB
+    - generic: https://www.nab.com.au › ... › Merchant support centre
+  - button "About this result":
+  - text: The Reserve Bank of Australia surcharging standard can help your business decide on fair
+  - emphasis: surcharges
+  - text: on EFTPOS, debit and credit card payments.
+  - link "Removal of Card Payment Surcharges From 1 October 2026 rba.gov.au https://www.rba.gov.au › conclusions-paper › faqs":
+    - /url: /goto?url=CAESsgEB6zswFV9b9tZrbJkiWPoZ8QVsAhjg1bUEZqIQcgIDSgMEpP_myzlBGG6dof-frpfLsS9D970jSYF78gger6ZIz1wBMeleMSlLnVvkp1XaG3WBzOQjZxPf95DD0X3s3KqWbtYuV727s-2-mDPRRrsDZRmiALWBGp290FEwp2hsZLIxy7YUi55ApQT14VIIagbi6YqxpIuR4RIjYeq1NQzF4RZaK1Ek2k4DetUqU3YaD99g
+    - heading "Removal of Card Payment Surcharges From 1 October 2026" [level=3]
+    - generic: rba.gov.au
+    - generic: https://www.rba.gov.au › conclusions-paper › faqs
+  - button "About this result":
+  - text: This page provides general information about the removal of card surcharging. It is not intended to be legal or other professional advice and should not be ...
+  - link "Read more":
+    - /url: /goto?url=CAESiAIB6zswFdHyTEUCqki1u0LOy4dSgOHMaXXC5VQkp4r4VXvfXRLAHbqxvhmzusl_BOO4do_TJPbsvSN8DWfATZcFSFrNAZ3xLalE5O1D7YCWP8zHvioz8OEGxTkeYoFNekSLZ-ZglA2uMzLeWIfFBH_FjYZpInS0K-VwcynAK_QLEvO7EihJ2bRrZzGRbBqWZROkL7E9PsCldvUHMWXoILjP3G3y_sxjhFxN_ylu8sV6p-_IX5bOWbrB99mTAfBs9pSiwMAov0FXV1CQdM0yuMep9Ckvpd8xGEM6FBkSRQvJsRhecRkGmeHWAxG0cQMCIodMnlGsRfcYrU6hyqMP6PZDqRy9EXWMzuE
+  - 'link "Card Surcharge Calculator: RBA Rules 2026 OneBookPlus https://onebookplus.com.au › Tools"':
+    - /url: /goto?url=CAESdQHrOzAV96GtZc1PvbdI4z1Ig9qwiynD1Y_BLqYAQRM1Ak_3coDQFdJssI4nSN_5oFvVmiQaF96FAdUva60lduMHDcr_feB_oIujS6j0ZsVhtMIU_RCxFklpvbUFC_LMmU8S-VBuXFA7JU2srNa4YVLTJpjW5Q
+    - 'heading "Card Surcharge Calculator: RBA Rules 2026" [level=3]'
+    - generic: OneBookPlus
+    - generic: https://onebookplus.com.au › Tools
+  - button "About this result":
+  - generic: 19 Aug 2026 —
+  - emphasis: Free Australian card surcharge calculator
+  - text: . Enter your sale amount and your provider's processing fee (percentage plus any fixed ...
+  - link "Read more":
+    - /url: /goto?url=CAES2AEB6zswFf2UXq4cGn6Q_LIddsYb-B7BtO6qS4KM6JQ-WJSI2yk-TOaZRdFtf5Dez4UaTdPSChD7J5lK8m7pYyO3aEDQkhO388aM2RBASkY7mYfLpfiUOldnHYHn7nMwpWH-GmoK8cJlbnzVUQxP9xCD76cDOfQE0qkotkPeVxFKLb-fYBFEmNdHwjU6tQ2LOXc8acdLuNq5az8Ubkwx9WFtPDL9nkX3-53eVuyZCRwFwRZp9B4_1WHIlD_uHQ5NbUVp4q2uaxRLWxOntUZJpw0uXE1ZdnbcHUQ
+  - img "Rated 5.0 out of 5, (7) user reviews":
+    - text: "5.0"
+    - text: (7)
+  - text: ·
+  - text: Free · ‎iOS · ‎Business/Productivity
+  - heading "People also search for" [level=2]
+  - link "Card surcharge ban calculator":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&q=Card+surcharge+ban+calculator&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ1QJ6BAg_EAE
+    - generic: Card surcharge ban calculator
+  - link "Is it legal to charge a surcharge on eftpos in Australia":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&q=Is+it+legal+to+charge+a+surcharge+on+eftpos+in+Australia&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ1QJ6BAhWEAE
+    - generic: Is it legal to charge a surcharge on eftpos in Australia
+  - link "Surcharge ban Australia":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&q=Surcharge+ban+Australia&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ1QJ6BAhNEAE
+    - generic: Surcharge ban Australia
+  - link "RBA credit card surcharge ban":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&q=RBA+credit+card+surcharge+ban&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ1QJ6BAhMEAE
+    - generic: RBA credit card surcharge ban
+  - link "Credit card surcharge notice to customers":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&q=Credit+card+surcharge+notice+to+customers&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ1QJ6BAhLEAE
+    - generic: Credit card surcharge notice to customers
+  - link "Square surcharge ban":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&q=Square+surcharge+ban&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ1QJ6BAhKEAE
+    - generic: Square surcharge ban
+  - link "What is the maximum credit card surcharge in Australia":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&q=What+is+the+maximum+credit+card+surcharge+in+Australia&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ1QJ6BAhCEAE
+    - generic: What is the maximum credit card surcharge in Australia
+  - link "Credit card surcharge calculator":
+    - /url: /search?newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&q=Credit+card+surcharge+calculator&sa=X&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ1QJ6BAhBEAE
+    - generic: Credit card surcharge calculator
+  - navigation:
+    - heading "Page navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=surcharge+ban+calculator&newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&ei=3rO_apqLKru74-EPhfuAwQI&start=10&sa=N&sstk=AS6-VmLCHhvPOc5yzKteyC1_DpEgSIlF13f1yL98i9vn15XZQmmu9DxzPhbxhfIbCOY2XS8RQW3g9bcb1_ljDpBgkXEoEHbSRR11vQ&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ8tMDegQIYBAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=surcharge+ban+calculator&newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&ei=3rO_apqLKru74-EPhfuAwQI&start=20&sa=N&sstk=AS6-VmLCHhvPOc5yzKteyC1_DpEgSIlF13f1yL98i9vn15XZQmmu9DxzPhbxhfIbCOY2XS8RQW3g9bcb1_ljDpBgkXEoEHbSRR11vQ&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ8tMDegQIYBAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=surcharge+ban+calculator&newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&ei=3rO_apqLKru74-EPhfuAwQI&start=30&sa=N&sstk=AS6-VmLCHhvPOc5yzKteyC1_DpEgSIlF13f1yL98i9vn15XZQmmu9DxzPhbxhfIbCOY2XS8RQW3g9bcb1_ljDpBgkXEoEHbSRR11vQ&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ8tMDegQIYBAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=surcharge+ban+calculator&newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&ei=3rO_apqLKru74-EPhfuAwQI&start=40&sa=N&sstk=AS6-VmLCHhvPOc5yzKteyC1_DpEgSIlF13f1yL98i9vn15XZQmmu9DxzPhbxhfIbCOY2XS8RQW3g9bcb1_ljDpBgkXEoEHbSRR11vQ&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ8tMDegQIYBAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=surcharge+ban+calculator&newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&ei=3rO_apqLKru74-EPhfuAwQI&start=50&sa=N&sstk=AS6-VmLCHhvPOc5yzKteyC1_DpEgSIlF13f1yL98i9vn15XZQmmu9DxzPhbxhfIbCOY2XS8RQW3g9bcb1_ljDpBgkXEoEHbSRR11vQ&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ8tMDegQIYBAM
+      - text: "6"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=surcharge+ban+calculator&newwindow=1&sca_esv=e4aefc4d69977452&gl=au&hl=en&sxsrf=APpeQnuaBCoplWvZPua0ry662dplZ8VB2Q:1790948318699&ei=3rO_apqLKru74-EPhfuAwQI&start=10&sa=N&sstk=AS6-VmLCHhvPOc5yzKteyC1_DpEgSIlF13f1yL98i9vn15XZQmmu9DxzPhbxhfIbCOY2XS8RQW3g9bcb1_ljDpBgkXEoEHbSRR11vQ&ved=2ahUKEwia8uKyupuXAxW73TgGHYU9ICgQ8NMDegQIYBAO
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer links" [level=1]
+  - text: Australia
+  - button "Unknown - Can't determine location":
+    - generic: Unknown
+    - text: "-"
+    - generic: Can't determine location
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-AU&fg=1
+  - link "Send feedback":
+    - /url: "#"
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en-AU&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en-AU&fg=1
