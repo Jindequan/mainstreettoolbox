@@ -11,7 +11,7 @@
 
 **判读纪律**（沿用 R7/R8 定版）：autocomplete 只做闸 1/闸 2 初筛，过闸词全部「待 Bing strict 后立项」；问句型消费词族预标「**Google 侧待验证**」（R7：daycare 类 Bing strict 看不见）；**大额购置词除外**（R7 windshield 1,415 strict 判例——wheelchair/hospital bed 属此组，是本轮 strict 验证最有望直接出数的消费族）。
 
-**本轮闸 3 新发现（本报告最重要产出）**：R8 遗留的 carecost 消费族命门「CareScout 不覆盖就没有一手源」在 DME 品类上有解——**CMS DMEPOS 官方费表**（联邦，HCPCS 码级：wheelchair K 系列、hospital bed E0260/E0265、CPAP E0601、seat lift E0626）+ 各州 Medicaid DME 费表（Illinois HFS E0260=$864.01 实证）= 一手官方价格锚。hearing aids 是唯一例外（Medicare 不覆盖，官方源降级为州 Medicaid 合同，MI 2026 合同价目实证）。
+**本轮闸 3 新发现（本报告最重要产出）**：R8 遗留的 carecost 消费族命门「CareScout 不覆盖就没有一手源」在 DME 品类上有解——**CMS DMEPOS 官方费表**（联邦，HCPCS 码级：wheelchair K 系列、hospital bed E0260/E0265、CPAP E0601、seat lift E0626（**2026-10-07 闸 3 勘误：E0626 已废止，现行码 E0627/E0629**——见 web/carecost/docs/benchmarks-power-wheelchair.md））+ 各州 Medicaid DME 费表（Illinois HFS E0260=$864.01 实证）= 一手官方价格锚。hearing aids 是唯一例外（Medicare 不覆盖，官方源降级为州 Medicaid 合同，MI 2026 合同价目实证）。
 
 ## 2. carecost · DME/老年辅具（第 14+ 页供给，消费照护族全组⏳）
 
