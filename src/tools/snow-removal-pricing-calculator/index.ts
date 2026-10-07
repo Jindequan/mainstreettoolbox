@@ -103,5 +103,5 @@ export default {
     { q: 'What is an example snow removal quote for a 2–3 car driveway?', a: 'A 2–3 car driveway sits in the $40–60 per push band. Example: quoting $45 per push, a month with 8 plowable storms bills about $360. That is exactly why many operators convert the estimate into a seasonal contract in the $350–700 range — the customer\u2019s cost is capped, and your revenue is locked either way.' },
     { q: 'What does snow removal actually cost the contractor to provide?', a: 'The biggest fixed line is insurance: general liability for a solo residential operator typically runs $500–1,500 per year (JW Surety Bonds and Kase Insurance both land near $700–850; a dedicated commercial plow truck pushes it toward $3,000+). Per push, the costs that eat margin are fuel and labor — and route density decides whether they stay sane: ten driveways on one street cost far less to serve than ten across town. That is why the same $30–75 per push that is profitable on a dense route can lose money scattered.' },
   ],
-  related: ['christmas-light-pricing-calculator', 'sprinkler-blowout-cost-calculator', 'lawn-care-estimate-generator'],
+  related: ['christmas-light-pricing-calculator', 'sprinkler-blowout-cost-calculator', 'lawn-care-estimate-generator', 'tree-removal-cost-calculator'],
 } as RegisteredTool;

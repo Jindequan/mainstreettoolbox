@@ -129,6 +129,12 @@ export default {
     <p>Bulk land clearing runs <b>$850–6,000 per acre</b> (LawnStarter and Lawn Love band), driven by
     tree density and size. For multi-tree jobs, quote per-tree bands stacked with a density discount —
     the second tree on site is always cheaper than the first because the setup is paid for.</p>
+    <h3>How do you estimate a job step by step?</h3>
+    <p>Worked example — a 65-ft oak with one stump to grind: start with the 60–80 ft band
+    (<b>$850–1,600</b>), add grinding (<b>$150–450</b>), and quote <b>$1,000–2,050</b> all-in.
+    Cross-check by foot: 65 ft × the $10–14.50 band = <b>$650–942</b> of tree work. When the two
+    methods disagree, the difference is access — drops over structures, wires, tight backyards are
+    what push a quote to the top of its band or past it (up to +50%, LawnStarter).</p>
     <table>
       <thead><tr><th>Job</th><th>Typical US range (2026)</th></tr></thead>
       <tbody>
@@ -146,6 +152,7 @@ export default {
   faq: [
     { q: 'How much does tree removal cost?', a: 'In 2026 US data: $200–500 for trees under 30 ft, $450–1,200 for 30–60 ft, $850–1,600 for 60–80 ft and $1,500–4,000+ over 80 ft (HomeGuide, Lawn Love, TreeCostEstimator bands). A typical single tree lands at $385–1,070, about $10–14.50 per foot of height.' },
     { q: 'Do tree services charge by the tree or by height?', a: 'By the tree, with height setting the band — the $10–14.50 per foot rate is how crews sanity-check the quote, not how they invoice. Multi-tree jobs get a density discount because setup is shared; per-acre land clearing runs $850–6,000.' },
+    { q: 'How do you calculate tree removal cost per foot?', a: 'Multiply height by the $10–14.50 per foot band (two sources): a 65-ft tree checks out at $650–942 of tree work before stump add-ons. Per-foot is the sanity check, not the invoice — real quotes price by height band, and access difficulty (up to +50% near structures or power lines) is the swing factor.' },
     { q: 'How much extra is stump grinding?', a: '$150–450 per stump for grinding (LawnStarter: $158–450) and $175–525 for full root removal (LawnStarter averages $326). It always bills separately from tree removal — quote it as its own line.' },
     { q: 'Why is emergency tree removal more expensive?', a: 'Emergency work runs $450–3,000 per job (Lawn Love) — roughly 1.5–2.5× the standing band — because of after-hours crew calls, hazard exposure near power lines or structures, and insurance documentation. By contrast, a tree that already fell costs just $85–300 since there is no climbing or rigging.' },
   ],

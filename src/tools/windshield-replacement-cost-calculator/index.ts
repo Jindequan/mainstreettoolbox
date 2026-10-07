@@ -111,6 +111,13 @@ export default {
     decides: under ~$500, pay cash and keep the claim off the record. And before any of it, compare the
     quote against the band above — the aggregate quote sites (Glass.net and friends) sell your number to
     three shops; the band costs nothing and belongs to you.</p>
+    <h3>What does a realistic quote look like?</h3>
+    <p>Two examples from the bands above. A camera-free sedan lands inside <b>$200–500</b> — a
+    mid-band $350 invoice for OEM-equivalent glass in a mid-size city is normal (illustrative).
+    A camera-equipped SUV bills in two lines: <b>$300–500</b> glass plus <b>$150–600</b> ADAS
+    recalibration, landing at <b>$450–1,100</b> — and $1,000–1,800 on premium trims. Always two
+    lines: glass, and calibration. A quote missing the second line on a camera car is not cheaper;
+    it is incomplete.</p>
     <table>
       <thead><tr><th>Job</th><th>Typical US range (2026)</th></tr></thead>
       <tbody>
@@ -125,6 +132,7 @@ export default {
     { q: 'How much does windshield replacement cost?', a: 'In 2026 US data: $200–500 for a standard car (AAA averages $390), $300–700+ for SUVs, trucks and laminated glass, and $1,000–1,800 total for ADAS-equipped cars once camera recalibration ($150–600, avg ~$300) is included.' },
     { q: 'Why is ADAS recalibration required after windshield replacement?', a: 'On cars with adaptive cruise, lane-keep or automatic braking, the camera mounts to the glass. Replacing the glass changes the camera\'s angle, and the system must re-learn its aim — $150–600 on top of the glass. Skipping it leaves safety systems aiming wrong.' },
     { q: 'Is it worth repairing a windshield chip?', a: 'Yes — $60–150 versus a $200–500 replacement, 30 minutes, and the factory seal stays intact. Many comprehensive policies cover it free. Repair before it spreads: chips at the edge or in the camera\'s view still need full replacement.' },
+    { q: 'What should a windshield replacement quote include?', a: 'Two lines: the glass itself ($200–500 for a standard car, $300–700+ for SUV, truck or laminated glass) and — on cars with adaptive cruise, lane-keep or automatic braking — ADAS recalibration at $150–600, averaging about $300. On a camera-equipped car, a quote without the calibration line is incomplete, not inexpensive.' },
     { q: 'Does insurance cover windshield replacement?', a: 'Comprehensive coverage usually does, and Florida, Kentucky and South Carolina are zero-deductible glass states — replacement costs $0 there. Elsewhere your deductible applies, so under ~$500 it is usually cheaper to pay cash. Aggregator quote sites sell your details to three shops; the published band is free.' },
   ],
   related: [],
