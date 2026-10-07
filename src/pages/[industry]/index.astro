@@ -127,6 +127,12 @@ const hub = HUB_CONTENT[industry!];
             <span class="use">free · no signup</span>
           </a>
         )}
+        {industry === 'construction' && (
+          <a class="most-row" href="/construction/painting-estimate-calculator/">
+            <b>Painting Cost Calculator</b><span class="tag" style="border:none;background:none;padding:0">three-tier interior & exterior painting estimate — labor, materials, printable</span>
+            <span class="use">free · no signup</span>
+          </a>
+        )}
         {tools.map((t) => (
           <a class="most-row" href={`/${t.industry}/${t.slug}/`}>
             <b>{t.name}</b><span class="tag" style="border:none;background:none;padding:0">{t.tagline}</span>

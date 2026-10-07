@@ -56,5 +56,5 @@ export default {
     { q: 'Why is my material markup not in here?', a: 'Materials should be passed through at cost plus a separate markup — mixing them into your labor rate makes bids hard to compare. Price the labor here, mark materials up separately on the quote.' },
     { q: 'How much should an electrician charge per hour?', a: 'Most residential electricians bill $50–100 per hour, with licensed masters in high-cost metros up to $130 (HomeGuide\'s electrical work pricing guide; national survey data). Charge a $75–125 service-call fee on top — typically applied as the first hour — so the truck roll is covered before work begins. Emergency calls run $150–250/hour (Angi).' },
   ],
-  related: ['labor-cost-calculator', 'break-even-calculator', 'markup-vs-margin-calculator', 'profit-margin-calculator'],
+  related: ['labor-cost-calculator', 'painting-estimate-calculator', 'break-even-calculator', 'markup-vs-margin-calculator', 'profit-margin-calculator'],
 } as RegisteredTool;

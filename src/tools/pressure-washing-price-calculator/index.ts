@@ -92,5 +92,5 @@ export default {
     { q: 'How do I price a house wash?', a: 'Soft-washing siding usually lands $0.30–0.50 per sq ft, with a job minimum of $150–250. Two stories add 20–30%. Walk the house first — heavy organic growth or delicate surfaces justify the top of the range.' },
     { q: 'Should I charge by the hour or by the square foot?', a: 'By the job (square feet × surface rate). Hourly quotes punish you for getting faster, and clients watch the clock. Know your hourly floor, but quote the job.' },
   ],
-  related: ['cleaning-estimate-calculator', 'cleaning-invoice-generator', 'lawn-mowing-price-calculator'],
+  related: ['painting-estimate-calculator', 'cleaning-estimate-calculator', 'cleaning-invoice-generator', 'lawn-mowing-price-calculator'],
 } as RegisteredTool;
