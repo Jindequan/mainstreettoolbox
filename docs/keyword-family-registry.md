@@ -92,3 +92,26 @@ n8n Assistant/Gateway credits 与 HubSpot credits 不纳入本次非品牌引流
 | 2026-10-06 | mobile notary fee（R4 遗留） | 翻为判负（头词） | R4「无大站」窗口已关：notaryfeebystate.com EMD+notarycostcalc.com EMD+Mobiigo/Superior/JKC/eOnline 共 6 计算器在位 |
 
 aging in place 改造费（stair lift/ramp/walk-in tub，673 词/27 dual）为 carecost/MST 双站邻接候选，判决记矩阵总表。报告：[keyword-research-R8-2026-10-06.md](keyword-research-R8-2026-10-06.md)。
+
+## 2026-10-08 R10 复查（6,904 词/40 新种子零重叠；无 Bing key，量级全待 strict）
+
+| 日期 | 词族 | 状态 | 新证据与动作 |
+|---|---|---|---|
+| 2026-10-08 | foundation repair（含 mudjacking/concrete leveling 行项） | ✅ T1 候选；量级⏳ | 302 词/22 dual；calculator SERP=铅页+3 随机字符串垃圾站（tree-removal 脏 SERP 同款）；信息头词=内容指南无器；闸 3 分类型区间 ≥2 源现成（crack $250-800/sinking $4,500-15K/piering $25K+/mudjacking $4-9 sqft）；待 strict 后立项 |
+| 2026-10-08 | basement waterproofing | 🟡 T2 候选；量级⏳ | 138 词/7 dual；SERP=承包商铅页+HomeAdvisor 指南，无匿名即时器；承包商报价模型（周长 LF×单价）在位内容里现成；族深弱于 foundation 故列 T2 |
+| 2026-10-08 | roof replacement | 判死（头词） | 424 词/**61 dual 全场最大仍死**：GAF/Calculator.net/Homewyse/RoofMaxx/InchCalculator/CostFlowAI/RoofPitch/Modernize 8 器——高需求≠可打最实证 |
+| 2026-10-08 | water heater replacement | 判死（头词） | 655 词/29 dual/seedHits 峰 6；RePlumbs/RealCostIQ/HeyJodie/SubcontractorHub/Repipe/RemodelCostCalc 6 器 |
+| 2026-10-08 | gutter replacement + gutter guards | 判死（头词） | 268 词/27 dual；两子族合计 10+ 器（Lowe's/Homewyse/Modernize/Sacramento GG 无邮箱即时/RoofingCalculator.com）；既有 gutter-cleaning 工具仍是唯一 gutter 资产 |
+| 2026-10-08 | crawl space encapsulation | 判死（头词） | 116 词/8 dual；MyHomeCostCalc 免费+Stellrr 即时报价在位 |
+| 2026-10-08 | hardwood floor refinishing | 判死（头词） | 70 词/7 dual（dual 率 10% 全场最高）；Homewyse/HowToSandAFloor/Big Bro/AbsolutelyFloored 4 器 |
+| 2026-10-08 | appliance repair | 判死（头词） | 224 词/10 dual；GR Appliance（品类×品牌×故障）+Homewyse+repair-vs-replace 器；service-call 子词形留记录池 |
+| 2026-10-08 | car key replacement（auto 路由） | 判死（头词） | locksmith 族 682 词/23 dual；car key 3 个免费即时 EMD 器（carkeyreplacementcost/lost-car-keys-replacement/opensesame）——EMD 薄≠可赢，产品位已被占 |
+| 2026-10-08 | well drilling/pump | 判死（头词） | 287 词/17 dual；TheWell.guide/SC Well/SubcontractorHub/NGWA 协会本尊 4 器 |
+| 2026-10-08 | furnace/hvac repair+tune-up | 判死（头词） | 339 词/12 dual；myhomecostcalc 专用+LeadDuo/OxMaint/Patchogue/Housecall Pro 5+ 器 |
+| 2026-10-08 | radon mitigation | 判死（头词） | 233 词/10 dual；ProjectCostPro/EraseRadon/ProMatcher 3 器；EPA 官方锚留档（若日后做内容可引用） |
+| 2026-10-08 | gravel driveway/delivery | 判死（头词） | 179 词/10 dual；InchCalculator/Calculator.net/ConcreteCalculatorMax/HelloGravel/Omni 6 器 |
+| 2026-10-08 | locksmith lockout | 不开族 | SERP 无计算器但：scam 高发敏感行业+族 geo 噪音重（uk/calgary/near me）；记录池标注，不做 |
+| 2026-10-08 | demolition/pool install/playset-hot tub-carport | 判死（族薄） | 83/1、85/2、212/3 dual——R8 deck staining 同判法 |
+| 2026-10-08 | tile installation/countertop-cabinet refacing/epoxy garage floor/artificial turf/garage door spring/sump pump/outdoor living/piano moving | 记录池⏳；下轮先 SERP 形态筛 | dual 中等偏薄（3-11）；未深查不做判断；R10 结构发现：脏 SERP 族 > 内容 guide 族 > 工具饱和族，按此排序筛 |
+
+证据：`kw/r10/`（raw.json 6,904 词/family-analysis.json 25 族/serp-gate2-notes.md 18 条/serp-verify-2026-10-08.md DDG 全批 FAILED 留档——FAILED 不构成判词）。报告：[keyword-research-R10-2026-10-08.md](keyword-research-R10-2026-10-08.md)。
