@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS hits (
+  day TEXT NOT NULL,
+  slug TEXT NOT NULL,
+  visitor TEXT NOT NULL,
+  n INTEGER NOT NULL DEFAULT 1,
+  PRIMARY KEY (day, slug, visitor)
+);

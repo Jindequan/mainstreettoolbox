@@ -1,0 +1,11 @@
+name = "mst-stats"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+# Tier 0 使用统计：测量不是服务（docs/评估-后端开启时机.md）。
+# 客户端契约见 src/sdk/local.ts：POST /hit {slug}，GET /counts?days=N。
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mst-stats"
+database_id = "d7dc1262-cb69-4d72-b17e-a58c88eeba69"
