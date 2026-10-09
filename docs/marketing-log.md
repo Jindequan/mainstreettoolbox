@@ -189,3 +189,9 @@
 
 ### R10 找词轮 2026-10-08：foundation repair 浮出（用户指令「新词」）
 - 40 新种子收割 6,904 词（零失败）；18 条 SERP 实查；T1=foundation repair cost（脏 SERP+闸 3 五源）、T2=basement waterproofing；13 头词具名判死。Bing strict 验证积压（key 不在会话，10-07 InvalidApiKey）。报告：docs/keyword-research-R10-2026-10-08.md。
+
+### 10-09 检查点轮：organic 破蛋实锤 + 点击落 painting 页 + Tier 0 统计上线
+- **里程碑**：GA organic 首会话（5m03s 深互动）+ GSC 28d 1 点击/1.71K 展现/均排 65.3（连爬）。点击唯一落点 /construction/painting-estimate-calculator/（152 展现）= TOB 目标页。判定：站内线继续。
+- **B 端铺垫**：contact 漏斗全站巡检通过（/contact + painting + 3 抽查页 CTA 全在）。
+- **Tier 0**：wrangler OAuth 已在（jindeq@126.com）→ D1 mst-stats + stats-worker 部署冒烟全过 → PUBLIC_STATS_API 入 Vercel Production → 同 commit redeploy 生效。per-tool 真实使用数据下周起可读，TOB 高意向工具定位转实测。commit 11c4cdf 本地（积累制）。
+- **外联**：零新发（FCP/Groomer 已于 10-03 清账，9 收件人窗口继续，今日巡检归 9:00 自动化）。
