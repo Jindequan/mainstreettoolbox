@@ -195,3 +195,10 @@
 - **B 端铺垫**：contact 漏斗全站巡检通过（/contact + painting + 3 抽查页 CTA 全在）。
 - **Tier 0**：wrangler OAuth 已在（jindeq@126.com）→ D1 mst-stats + stats-worker 部署冒烟全过 → PUBLIC_STATS_API 入 Vercel Production → 同 commit redeploy 生效。per-tool 真实使用数据下周起可读，TOB 高意向工具定位转实测。commit 11c4cdf 本地（积累制）。
 - **外联**：零新发（FCP/Groomer 已于 10-03 清账，9 收件人窗口继续，今日巡检归 9:00 自动化）。
+
+### 10-09 下午：用户报告"GA 7 天 0 user"排查 + day-7 bump 四连发
+- **排查结论：追踪管道健康，7 天真实数字=5 用户非 0**。用户所见 0 = 属性陷阱（GA 首开默认落 whataicando 资源，localStorage p539592335）或首页"今日"卡片。GA 近 7 天（10-02~10-08）：5 活跃/5 新用户/均互动 1m08s/23 事件；painting 页 0% 跳出单=organic 点击者。近 7 天真实规模确实小（28 天 61 人的大头是 9 月中旬分发脉冲+10 月初测试），这就是曲线真相。
+- **管道验证**：gtag 懒注入（首次交互后）工作正常——IAB 实测交互后 gtag.js 加载+collect 发出；CSP 未拦 GA；页面级 gtag 代码完好。GA 报表有 24-48h 延迟，今日我方访问明日可见。
+- **GSC 对照（先导指标）**：近 7 天 190 词/约 500 展现=**上线以来最强一周**（表内口径；文件 gsc-queries-7d-2026-10-09.csv）。hydroseed 族 2-5 位、tree removal 8.5、windshield 9.4 全在窗口内。展现爬升、点击未兑现=量级问题，方向正确。
+- **Reddit 21:30 巡检自动化仍是 paused**：CronUpdate 无 enabled 字段，助手无法从 API 恢复，需用户在 Automations UI 打开（或指定助手手办轮次）。
+- **day-7 bump 四连发（全部 Sent 实证，线程计数=2）**：elizabethc（Cleanfax，附 sidebar 供稿提议）、mcgowank（R&R，price-the-job item 提议）、bcastiglia（MRM，假日菜单季 know-your-numbers 提议）、mmayer（FCP，price-your-crew-right 专栏提议）。全部回原线程+如实不编造新功能；纪律：单击+10s+Sent row 实证，零重复。Groomer 不 bump（2018 刊头地址待观察退信）；L&L Brian 已回复不 bump。
