@@ -115,3 +115,19 @@ aging in place 改造费（stair lift/ramp/walk-in tub，673 词/27 dual）为 c
 | 2026-10-08 | tile installation/countertop-cabinet refacing/epoxy garage floor/artificial turf/garage door spring/sump pump/outdoor living/piano moving | 记录池⏳；下轮先 SERP 形态筛 | dual 中等偏薄（3-11）；未深查不做判断；R10 结构发现：脏 SERP 族 > 内容 guide 族 > 工具饱和族，按此排序筛 |
 
 证据：`kw/r10/`（raw.json 6,904 词/family-analysis.json 25 族/serp-gate2-notes.md 18 条/serp-verify-2026-10-08.md DDG 全批 FAILED 留档——FAILED 不构成判词）。报告：[keyword-research-R10-2026-10-08.md](keyword-research-R10-2026-10-08.md)。
+
+## 2026-10-09 R10 strict 验证回填（Bing key 恢复，10 词批验）
+
+| 词族 | strict 裁决 | 证据与动作 |
+|---|---|---|
+| foundation repair cost | ❌ 头词降记录池 | 66/90d 头词（低于 stump grinding 126 未过闸线）；related 前 20 全是品牌/承包商（groundworks 6.5K/thrasher 3.5K/jes/olshan/ram jack）+near-me，**零价格意图词**。闸 2 脏 SERP 事实保留：留「GSC 该族展示爬升再立项」钩子（sod 判例），不作 Google 弱判决 |
+| basement waterproofing cost | ❌ 记录池 | 16/90d，死线以下 |
+| mudjacking cost | ❌ 记录池 | strict=0 |
+| security deposit refund（R8 遗留） | ✅ 转正「可建轻量页」 | **534 strict/635 broad**，R8→10-09 最强验证词；前置条件不变=landlord 新 vertical 路由成本评估先行 |
+| wheelchair cost（carecost） | ✅ 家族实锚 | 头词 **223 strict**（windshield 1,415 判例的 1/6 量级）；related=产品意图强（electric 2,339/transport 2,180/motorized 2,101，lindsay clancy 1,173 为案件新闻噪音剔除）；carecost Top1 维持 |
+| hearing aid prices（carecost） | ✅ 出数 | **271 strict/1,165 broad**——R7「问句消费族 Bing strict 看不见」假设被本词证伪；carecost Top3 维持 |
+| hospital bed cost（carecost） | ⬇️ Top2 撤记录池 | strict=0 且 related 全是医院/机构噪音（upmc 32.9K/bon secours/wellstar），无 cost 意图层 |
+| cost of power wheelchair / custom power wheelchair cost | ❌ 头词弱 | 五词短语 strict=0（四词短语效应判例再应验）；家族层走 wheelchair cost 223 |
+| safety stock calculator（procurelink） | ⬇️ strict=0 | 家族层待 related 表回读；procurelink 本就冻结在判决规则里（10-22），此数字仅确认 Bing 侧弱 |
+
+出处：`docs/keyword-data/bing-api-2026-10-09.md`（key 2609…ca1 已恢复有效；账号仅验证 mainstreettoolbox.com 一站）。R10 的「T1/T2」降级为记录池=诚实回写，闸 2 竞争事实不变。
