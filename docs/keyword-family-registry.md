@@ -131,3 +131,9 @@ aging in place 改造费（stair lift/ramp/walk-in tub，673 词/27 dual）为 c
 | safety stock calculator（procurelink） | ⬇️ strict=0 | 家族层待 related 表回读；procurelink 本就冻结在判决规则里（10-22），此数字仅确认 Bing 侧弱 |
 
 出处：`docs/keyword-data/bing-api-2026-10-09.md`（key 2609…ca1 已恢复有效；账号仅验证 mainstreettoolbox.com 一站）。R10 的「T1/T2」降级为记录池=诚实回写，闸 2 竞争事实不变。
+
+## 2026-10-15 security-deposit 词簇二期·第 1 件（letter 词形承接，本轮建页）
+
+| 词族 | 裁决 | 证据与判据 |
+|---|---|---|
+| security deposit demand letter / return letter / letter template | ✅ 词形承接件上线 | 承接 534 strict/635 broad 转正族（10-09）：/landlord/security-deposit-demand-letter/，DocSpec 打印信+十州限期表，法条零新增（复用十州引擎）。**判据：10-29 该 URL GSC 曝光>0；11-12 demand letter 词形展现≥10 或族内点击+1，不达→记录池（与族同进退）** |
