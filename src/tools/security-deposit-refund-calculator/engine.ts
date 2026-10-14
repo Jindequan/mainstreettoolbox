@@ -50,7 +50,7 @@ export const addBusinessDays = (s: string, n: number): string => {
   return cur;
 };
 
-type Slug = 'CA' | 'NY' | 'TX' | 'FL' | 'WA' | 'CO' | 'AZ' | 'WI' | 'AL' | 'PA';
+export type Slug = 'CA' | 'NY' | 'TX' | 'FL' | 'WA' | 'CO' | 'AZ' | 'WI' | 'AL' | 'PA';
 
 export const VERIFIED_STATES: Slug[] = ['CA', 'NY', 'TX', 'FL', 'WA', 'CO', 'AZ', 'WI', 'AL', 'PA'];
 
