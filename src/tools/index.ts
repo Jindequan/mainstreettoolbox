@@ -48,6 +48,7 @@ import popcornCeiling from './popcorn-ceiling-removal-cost-calculator';
 import treeRemoval from './tree-removal-cost-calculator';
 import moldRemediation from './mold-remediation-cost-calculator';
 import menuProfitSheet from './menu-profit-sheet';
+import securityDeposit from './security-deposit-refund-calculator';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -98,6 +99,7 @@ export const TOOLS: RegisteredTool[] = [
   treeRemoval,
   moldRemediation,
   menuProfitSheet,
+  securityDeposit,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);
@@ -113,6 +115,7 @@ export const BESPOKE_SLUGS: ReadonlySet<string> = new Set([
   'retail-math-calculator',
   'recipe-cost-calculator',
   'menu-profit-sheet',
+  'security-deposit-refund-calculator',
 ]);
 
 export const byIndustry = (industry: string): RegisteredTool[] => TOOLS.filter((t) => t.industry === industry);
@@ -125,6 +128,7 @@ export const INDUSTRY_META: Record<string, { name: string; path: string; live: b
   salon: { name: 'Salon & Barber', path: '/salon', live: true, blurb: 'Rent vs commission' },
   retail: { name: 'Retail', path: '/retail', live: true, blurb: 'Margin & markdowns' },
   auto: { name: 'Auto Glass', path: '/auto', live: true, blurb: 'Windshield pricing' },
+  landlord: { name: 'Landlord', path: '/landlord', live: true, blurb: 'Deposits, deadlines & notices' },
 };
 
 /** 服务端首屏渲染：从 fields/rows 默认值构建初始输入 */

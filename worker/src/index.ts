@@ -25,6 +25,7 @@ export const SLUGS = new Set([
   'profit-margin-calculator',
   'recipe-cost-calculator',
   'menu-profit-sheet',
+  'security-deposit-refund-calculator',
   'pour-cost-calculator',
   // cleaning
   'cleaning-estimate-calculator',

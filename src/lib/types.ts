@@ -2,7 +2,7 @@
 // 每个工具 = config(声明) + engine(isomorphic compute)；页面/交互/SEO 由模板产出。
 
 export type FieldType = 'money' | 'number' | 'slider' | 'select' | 'text';
-export type Industry = 'restaurant' | 'cleaning' | 'lawn' | 'construction' | 'salon' | 'retail' | 'universal';
+export type Industry = 'restaurant' | 'cleaning' | 'lawn' | 'construction' | 'salon' | 'retail' | 'landlord' | 'universal';
 
 export interface FieldDef {
   id: string;

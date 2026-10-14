@@ -1,0 +1,291 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Bespoke 页：引擎与 src/tools/security-deposit-refund-calculator/engine.ts 同款数学（内联 JS 副本）。
+// 10 州数据全部来自 docs/benchmarks-security-deposit-refund.md（statute 现行文本，2026-10-13 复核 CO/FL/AZ）。
+const REVIEWED = 'October 13, 2026';
+const states = [
+  { code: 'CA', name: 'California', days: '21 calendar days', trigger: 'Move-out (vacate)', cite: 'Cal. Civ. Code §1950.5' },
+  { code: 'NY', name: 'New York', days: '14 calendar days', trigger: 'Move-out (vacate)', cite: 'N.Y. GOL §7-108(1-a)' },
+  { code: 'TX', name: 'Texas', days: '30 calendar days', trigger: 'Surrender (move-out)', cite: 'Tex. Prop. Code §92.103' },
+  { code: 'FL', name: 'Florida', days: '15 calendar days (30-day written notice if claiming)', trigger: 'Lease termination', cite: 'Fla. Stat. §83.49(3)' },
+  { code: 'WA', name: 'Washington', days: '30 calendar days', trigger: 'Later of termination or move-out', cite: 'RCW 59.18.280' },
+  { code: 'CO', name: 'Colorado', days: '1 calendar month (lease may extend to 60 days max)', trigger: 'Later of termination or surrender', cite: 'C.R.S. §38-12-103' },
+  { code: 'AZ', name: 'Arizona', days: '14 days excluding weekends & legal holidays', trigger: 'Latest of termination, surrender, or written demand', cite: 'A.R.S. §33-1321(D)' },
+  { code: 'WI', name: 'Wisconsin', days: '21 calendar days', trigger: 'Earliest of termination, new tenant start, or knowledge of vacancy', cite: 'Wis. Adm. Code ATCP 134.06(2)' },
+  { code: 'AL', name: 'Alabama', days: '60 calendar days', trigger: 'Later of termination and possession', cite: 'Ala. Code §35-9A-201' },
+  { code: 'PA', name: 'Pennsylvania', days: '30 calendar days', trigger: 'Later of termination or surrender', cite: '68 P.S. §250.512' },
+];
+---
+<BaseLayout
+  title="Security Deposit Refund Calculator — Legal Deadline by State | Main Street Toolbox"
+  description="Pick your state and enter your dates: the legal security-deposit refund deadline, the itemized-statement requirement, and the penalty for missing it — from each state's current statute. Free, no signup."
+  path="/landlord/security-deposit-refund-calculator/"
+>
+  <div class="industry-hero">
+    <div class="container head">
+      <p class="crumbs"><a href="/">Home</a> / <a href="/landlord">Landlord</a> / <b style="color:var(--ink)">Security Deposit Refund</b></p>
+      <h1>Security Deposit Refund Calculator</h1>
+      <p class="sub">The legal refund deadline for your state, computed from your dates — with the statute cited and dated.</p>
+    </div>
+  </div>
+
+  <main class="container work">
+    <section class="form-col" aria-label="Your dates">
+      <div class="card card-pad">
+        <h2 class="step-lbl"><span>1</span> State</h2>
+        <div class="field">
+          <label for="state">Where the rental is</label>
+          <select id="state">
+            {states.map((s) => <option value={s.code}>{s.name}</option>)}
+          </select>
+        </div>
+
+        <h2 class="step-lbl"><span>2</span> Dates</h2>
+        <div class="meta-grid">
+          <div class="field">
+            <label for="vacate">Move-out (vacate) date</label>
+            <input id="vacate" type="date" value="2026-07-01" />
+          </div>
+          <div class="field">
+            <label for="termination">Lease termination date <span class="opt">(if different)</span></label>
+            <input id="termination" type="date" value="" />
+          </div>
+          <div class="field" id="demand-field" hidden>
+            <label for="demand">Tenant's written demand date (Arizona)</label>
+            <input id="demand" type="date" value="" />
+          </div>
+          <div class="field" id="claim-field" hidden>
+            <label for="claim">Landlord will claim deductions?</label>
+            <select id="claim"><option value="no" selected>No — full refund</option><option value="yes">Yes</option></select>
+          </div>
+        </div>
+
+        <h2 class="step-lbl"><span>3</span> Deposit (optional)</h2>
+        <div class="field">
+          <label for="deposit">Deposit amount $</label>
+          <input id="deposit" type="number" min="0" step="50" placeholder="e.g. 1800" inputmode="numeric" />
+        </div>
+      </div>
+    </section>
+
+    <aside class="out-col">
+      <div class="card answer-card" aria-live="polite">
+        <div class="ans-row big">
+          <span>Refund deadline</span>
+          <b id="out-deadline">—</b>
+        </div>
+        <div class="ans-row">
+          <span>Days from the trigger date</span>
+          <b id="out-days">—</b>
+        </div>
+        <div class="ans-row">
+          <span>Trigger date &amp; rule</span>
+          <b id="out-trigger" class="small">—</b>
+        </div>
+        <div class="ans-row" id="out-alt-row" hidden>
+          <span id="out-alt-label"></span>
+          <b id="out-alt" class="small">—</b>
+        </div>
+        <p class="penalty" id="out-penalty"></p>
+        <p class="statute">Source: <a id="out-statute-link" href="#" target="_blank" rel="noopener"><span id="out-cite"></span></a> · reviewed {REVIEWED}</p>
+      </div>
+
+      <div class="card card-pad">
+        <h2 class="step-lbl"><span>§</span> What the statement must contain</h2>
+        <p id="out-statement" class="body-copy"></p>
+      </div>
+    </aside>
+  </main>
+
+  <section class="container">
+    <h2>The deadline in all ten verified states</h2>
+    <p class="section-sub">
+      We publish only deadlines checked against the current statute text — several popular guides still
+      carry outdated numbers (Washington's 21 days became 30 in 2023; Alabama is 60 days, not the 35 many
+      sites print). States outside this table are on the verification roadmap;
+      meanwhile <a href="https://www.hud.gov/topics/rental_assistance/tenantrights" target="_blank" rel="noopener">HUD's tenant-rights portal</a>
+      links each state's official resources, and
+      <a href="https://www.usa.gov/state-consumer" target="_blank" rel="noopener">USA.gov</a> lists every state consumer-protection office for complaints.
+    </p>
+    <div class="table-scroll">
+      <table class="state-table">
+        <thead><tr><th>State</th><th>Refund deadline</th><th>Clock starts on</th><th>Statute</th></tr></thead>
+        <tbody>
+          {states.map((s) => (
+            <tr>
+              <td>{s.name}</td>
+              <td>{s.days}</td>
+              <td>{s.trigger}</td>
+              <td>{s.cite}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h2>What the clock counts — and what it doesn't</h2>
+    <p class="body-copy">
+      The deadline is not "move-out plus 30 days" everywhere. Most states start the clock on the move-out
+      or surrender date, but several start it on the lease <em>termination</em> date instead — Washington,
+      Colorado, Pennsylvania, and Alabama take whichever is later, Wisconsin takes the earliest of three
+      different events, and Arizona won't even start the clock until the tenant demands the deposit in
+      writing. Arizona is also the only verified state that counts business days rather than calendar days.
+      Colorado's clock advances a full calendar month (with the lease allowed to stretch it to 60 days),
+      which is why a January 31 move-out lands on February 28, not March 2 or 3.
+    </p>
+    <p class="body-copy">
+      The statement travels with the check: in every verified state the itemized list of deductions is due
+      at the same time as the refund, and skipping it costs the landlord the right to withhold anything in
+      New York, Colorado, and Pennsylvania. Interest rules exist but are conditional — Florida pays interest
+      only where the deposit sat in a bond or designated account, and Pennsylvania escrow interest starts in
+      year three — so this calculator shows them as notes rather than computing them.
+    </p>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details>
+        <summary>What happens if the landlord misses the deadline?</summary>
+        <p>It depends on the state, and the stakes differ sharply. Florida, New York, and Washington: the landlord forfeits the right to keep any part of the deposit. Texas: missing the 30-day window is presumptively bad faith — $100 plus three times the wrongfully withheld amount plus attorney's fees. Colorado: three times the wrongfully withheld portion for willful retention, after a 7-day written demand. Alabama: twice the entire deposit. Washington adds up to 2× more for willful refusal. The result card above shows your state's exact rule.</p>
+      </details>
+      <details>
+        <summary>Does move-out day count as day one?</summary>
+        <p>No. The clock starts on the trigger event — vacating, surrender, lease termination, or in Arizona the tenant's written demand — and the deadline falls the stated number of days after that day. A landlord who returns the deposit early is fine; one who waits until the last calendar day is also fine, even if that day lands on a weekend (except in Arizona, which skips weekends and legal holidays).</p>
+      </details>
+      <details>
+        <summary>What can be deducted from the deposit?</summary>
+        <p>Unpaid rent, damage beyond normal wear and tear, and cleaning to return the unit to move-in condition — itemized, with receipts where required (California requires receipts for any deduction over $125, and allows a good-faith estimate for unfinished repairs with 14 days to send final receipts). Some states add their own wrinkles: Washington bars carpet-cleaning charges unless there is damage beyond ordinary wear, Wisconsin caps deductions at six statutory categories unless the lease signed nonstandard provisions, and Colorado requires a 7-day written demand before a tenant sues for the triple penalty.</p>
+      </details>
+      <details>
+        <summary>Is this legal advice?</summary>
+        <p>No — it's a calculator over the statutes, cited and dated so you can read the source yourself. Local ordinances (some California cities, for example) can add rules on top of state law, and commercial leases are governed by different law entirely. For a real dispute, a local tenant-rights clinic or attorney is the right call; this page exists so you walk in knowing the deadline and the statute.</p>
+      </details>
+    </div>
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        { '@type': 'Question', name: 'What happens if my landlord misses the security deposit deadline?', acceptedAnswer: { '@type': 'Answer', text: 'It depends on the state: Florida, New York, and Washington landlords forfeit the right to keep any part of the deposit; Texas law makes a missed 30-day window presumptively bad faith ($100 plus 3× the wrongfully withheld amount plus attorney\'s fees); Colorado awards 3× the wrongfully withheld portion for willful retention; Alabama awards 2× the entire deposit. Each state\'s rule is cited to its current statute.' } },
+        { '@type': 'Question', name: 'Does move-out day count as day one for the refund deadline?', acceptedAnswer: { '@type': 'Answer', text: 'No. The clock starts on the trigger event — vacating, surrender, lease termination, or in Arizona the tenant\'s written demand — and the deadline is the stated number of days after that day. Arizona is the only state that counts business days rather than calendar days.' } },
+        { '@type': 'Question', name: 'What can a landlord deduct from a security deposit?', acceptedAnswer: { '@type': 'Answer', text: 'Unpaid rent, damage beyond normal wear and tear, and cleaning to restore the unit to move-in condition, itemized with the refund. Washington bans carpet-cleaning charges unless damage goes beyond ordinary wear, and Wisconsin limits deductions to six statutory categories unless the lease signed nonstandard rental provisions.' } },
+        { '@type': 'Question', name: 'How long does a landlord have to return a security deposit?', acceptedAnswer: { '@type': 'Answer', text: 'Among the states with statute-verified deadlines: New York 14 days, Arizona 14 business days, Florida 15 days (30-day notice if claiming), Wisconsin 21 days, California 21 days, Texas/Pennsylvania/Washington 30 days, Colorado one month (extendable to 60 by lease), Alabama 60 days.' } },
+      ],
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: 'Security Deposit Refund Calculator',
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Any',
+      url: 'https://mainstreettoolbox.com/landlord/security-deposit-refund-calculator/',
+      description: 'Computes the legal security-deposit refund deadline from state statute: trigger date, calendar/business-day rules, itemized-statement duty, and the penalty for missing it across ten statute-verified states.',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    })} />
+  </section>
+
+  <script define:vars={{ REVIEWED }}>
+    // 引擎内联副本 —— 与 src/tools/security-deposit-refund-calculator/engine.ts 同款数学
+    const MS = 86400000;
+    const p = (s) => new Date(s + 'T00:00:00Z');
+    const iso = (d) => d.toISOString().slice(0, 10);
+    const addDays = (s, n) => iso(new Date(p(s).getTime() + n * MS));
+    const monthClamp = (s, n) => {
+      const d = p(s); const t = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + n, 1));
+      const dim = new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth() + 1, 0)).getUTCDate();
+      t.setUTCDate(Math.min(d.getUTCDate(), dim)); return iso(t);
+    };
+    const later = (a, b) => (!b || b < a ? a : b);
+    const biz = (s, n) => { let c = s, l = n; while (l > 0) { c = addDays(c, 1); const w = p(c).getUTCDay(); if (w !== 0 && w !== 6) l--; } return c; };
+
+    const RULES = {
+      CA: { name: 'California', days: 21, kind: 'cal', trigger: 'vacate', daysRule: '21 calendar days after move-out.', statute: 'Cal. Civ. Code §1950.5', url: 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5',
+        statement: 'Itemized statement is due with the refund. Receipts are required for deductions over $125; for unfinished repairs the landlord may deduct a good-faith estimate and must send final receipts within 14 days of completing the work.',
+        penalty: 'Bad-faith retention can cost the landlord up to 2× the deposit in statutory damages plus actual damages.' },
+      NY: { name: 'New York', days: 14, kind: 'cal', trigger: 'vacate', daysRule: '14 calendar days after move-out.', statute: 'N.Y. GOL §7-108(1-a)', url: 'https://www.nysenate.gov/legislation/laws/GOB/7-108',
+        statement: 'An itemized statement of claimed deductions must be delivered within the same 14 days — miss it and the landlord forfeits the right to keep any part of the deposit.',
+        penalty: 'No statement within 14 days = the landlord gives up the right to retain any portion.' },
+      TX: { name: 'Texas', days: 30, kind: 'cal', trigger: 'vacate', daysRule: '30 calendar days after surrender.', statute: 'Tex. Prop. Code §92.103 / §92.109', url: 'https://statutes.capitol.texas.gov/Docs/PR/htm/PR.92.htm',
+        statement: 'Refund and itemized deductions are due within the same 30 days (the lease must include a forwarding-address requirement for this clock to run).',
+        penalty: 'No refund or statement within 30 days is presumptively bad faith: $100 plus 3× the wrongfully withheld portion plus attorney\'s fees.' },
+      FL: { name: 'Florida', days: 15, claimDays: 30, kind: 'cal', trigger: 'termination', claim: true, daysRule: '15 calendar days to refund when nothing is claimed; 30 calendar days to send a written claim when it is.', statute: 'Fla. Stat. §83.49(3)', url: 'https://www.flsenate.gov/Laws/Statutes/2025/83.49',
+        statement: 'Claiming deductions requires written notice with the reasons within 30 days; tenants have 15 days to object in writing. Interest applies only where the deposit sat in a surety bond (5%/yr) or an approved interest account (at least 75% of the federal discount rate or 5%, whichever is less).',
+        penalty: 'Missing the 30-day notice window forfeits the right to impose any claim on the deposit.' },
+      WA: { name: 'Washington', days: 30, kind: 'cal', trigger: 'later', daysRule: '30 calendar days after the later of termination or move-out (raised from 21 days in July 2023).', statute: 'RCW 59.18.280', url: 'https://app.leg.wa.gov/RCW/default.aspx?cite=59.18.280',
+        statement: 'Itemized statement due within the same period. Ordinary wear is not deductible; carpet cleaning only for damage beyond ordinary wear; anything missing from the move-in checklist cannot be deducted.',
+        penalty: 'Missing the deadline forfeits the right to withhold any of the deposit; willful refusal can add up to 2× the deposit plus court costs and attorney\'s fees.' },
+      CO: { name: 'Colorado', days: 1, kind: 'month', cap: 60, trigger: 'later', daysRule: 'One calendar month after the later of termination or surrender — a lease may extend this, never beyond 60 days.', statute: 'C.R.S. §38-12-103', url: 'https://leg.colorado.gov/statutes',
+        statement: 'A written itemized statement is due with the refund; without it the landlord forfeits the right to withhold any portion.',
+        penalty: 'Willful retention of a wrongfully withheld portion = 3× that portion plus court costs and attorney\'s fees (a 7-day written demand must precede suit).' },
+      AZ: { name: 'Arizona', days: 14, kind: 'biz', trigger: 'laterDemand', daysRule: '14 days excluding Saturdays, Sundays, and legal holidays (this engine skips weekends; holidays can add a day or two).', statute: 'A.R.S. §33-1321(D)-(E)', url: 'https://www.azleg.gov/viewdocument/?docName=https://www.azleg.gov/ars/33/01321.htm',
+        statement: 'Refund plus an itemized list of deductions (with reasons) is due inside the same 14-business-day window.',
+        penalty: 'Wrongful withholding exposes the landlord to 2× the wrongfully withheld portion; tenants have 60 days to object in writing.' },
+      WI: { name: 'Wisconsin', days: 21, kind: 'cal', trigger: 'termElseVacate', daysRule: '21 calendar days after the trigger.', statute: 'Wis. Adm. Code ATCP 134.06(2)', url: 'https://docs.legis.wisconsin.gov/document/administrativecode/ATCP%20134.06(2)',
+        statement: 'Itemized statement due within the 21 days. Deductions are limited to six statutory categories unless the lease signed nonstandard rental provisions.',
+        penalty: 'No statutory penalty — disputes run through common-law claims, and Wisconsin tenants regularly win 2× awards in small-claims court.' },
+      AL: { name: 'Alabama', days: 60, kind: 'cal', trigger: 'later', daysRule: '60 calendar days after the later of termination and possession (current statute — older guides citing 35 days are wrong).', statute: 'Ala. Code §35-9A-201', url: 'https://alison.legislature.state.al.us/code-of-alabama',
+        statement: 'Refund with an itemized statement is due within the same 60 days; deposits unclaimed for 90 days belong to the landlord.',
+        penalty: 'Failure to return or account within 60 days = 2× the original deposit.' },
+      PA: { name: 'Pennsylvania', days: 30, kind: 'cal', trigger: 'later', daysRule: '30 calendar days after the later of termination or surrender.', statute: '68 P.S. §250.512', url: 'https://www.palegis.us',
+        statement: 'Refund and itemized list of deductions are due simultaneously. Deposits over $100 sit in escrow; from year three the landlord pays escrow interest (less a 1%/year admin fee).',
+        penalty: 'Missing the window forfeits the right to withhold — tenants can recover 2× the wrongfully withheld amount.' },
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const fmt = (s) => p(s).toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+
+    function render() {
+      const code = $('state').value;
+      const R = RULES[code];
+      const vacate = $('vacate').value;
+      const term = $('termination').value;
+      const demand = $('demand').value;
+      if (!vacate) { $('out-deadline').textContent = '—'; return; }
+
+      $('demand-field').hidden = code !== 'AZ';
+      $('claim-field').hidden = code !== 'FL';
+
+      let trigger, deadline, alt = null;
+      const claims = code === 'FL' && $('claim').value === 'yes';
+      if (R.trigger === 'vacate') { trigger = vacate; deadline = addDays(vacate, R.days); }
+      else if (R.trigger === 'termination') { trigger = term || vacate; deadline = addDays(trigger, claims ? R.claimDays : R.days); alt = claims ? { label: 'Tenant objection window closes', date: addDays(deadline, 15) } : { label: 'Claim-notice deadline if the landlord does claim', date: addDays(trigger, 30) }; }
+      else if (R.trigger === 'later') { trigger = later(vacate, term); deadline = R.kind === 'month' ? monthClamp(trigger, R.days) : addDays(trigger, R.days); if (R.cap) alt = { label: 'Absolute cap with a lease extension (60 days)', date: addDays(trigger, R.cap) }; }
+      else if (R.trigger === 'laterDemand') { trigger = later(later(vacate, term), demand); deadline = biz(trigger, R.days); }
+      else { trigger = term || vacate; deadline = addDays(trigger, R.days); }
+
+      $('out-deadline').textContent = fmt(deadline);
+      const daysLeft = Math.round((p(deadline) - p(new Date().toISOString().slice(0, 10))) / MS);
+      $('out-days').innerHTML = R.daysRule + (daysLeft >= 0 ? ' <em>(' + daysLeft + ' days from today)</em>' : ' <em>(' + (-daysLeft) + ' days ago)</em>');
+      $('out-trigger').textContent = fmt(trigger) + ' — ' + (R.trigger === 'vacate' ? 'the day tenants vacate' : R.trigger === 'termination' ? 'lease termination' : R.trigger === 'later' ? 'the later of termination / move-out' : R.trigger === 'laterDemand' ? 'the latest of termination / move-out / written demand' : 'the earlier applicable date');
+      if (alt) { $('out-alt-row').hidden = false; $('out-alt-label').textContent = alt.label; $('out-alt').textContent = fmt(alt.date); }
+      else $('out-alt-row').hidden = true;
+      $('out-penalty').innerHTML = '<strong>If the deadline slips:</strong> ' + R.penalty;
+      $('out-statement').textContent = R.statement;
+      $('out-cite').textContent = R.statute;
+      $('out-statute-link').href = R.url;
+    }
+
+    ['state', 'vacate', 'termination', 'demand', 'claim'].forEach((id) =>
+      $(id).addEventListener(id === 'vacate' || id === 'deposit' ? 'input' : 'change', render));
+    $('deposit') && $('deposit').addEventListener('input', render);
+    render();
+  </script>
+</BaseLayout>
+
+<style>
+  .opt { color: var(--ink-2); font-weight: 400; font-size: 0.85rem; }
+  .ans-row.big b { font-size: 1.9rem; color: var(--green); }
+  .ans-row .small { font-size: 0.95rem; font-weight: 600; }
+  .penalty { margin: 0.9rem 0 0.4rem; font-size: 0.95rem; line-height: 1.55; }
+  .statute { font-size: 0.85rem; color: var(--ink-2); margin: 0; }
+  .section-sub { max-width: 68ch; }
+  .body-copy { max-width: 72ch; }
+  .table-scroll { overflow-x: auto; margin: 1rem 0 1.5rem; }
+  .state-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  .state-table th, .state-table td { border: 1px solid var(--line); padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; }
+  .state-table th { background: var(--green-tint); }
+  .faq details { border-bottom: 1px solid var(--line); padding: 0.7rem 0; max-width: 76ch; }
+  .faq summary { font-weight: 600; cursor: pointer; }
+  .faq p { margin: 0.5rem 0 0.25rem; color: var(--ink-2); }
+</style>
