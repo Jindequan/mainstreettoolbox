@@ -202,3 +202,9 @@
 - **GSC 对照（先导指标）**：近 7 天 190 词/约 500 展现=**上线以来最强一周**（表内口径；文件 gsc-queries-7d-2026-10-09.csv）。hydroseed 族 2-5 位、tree removal 8.5、windshield 9.4 全在窗口内。展现爬升、点击未兑现=量级问题，方向正确。
 - **Reddit 21:30 巡检自动化仍是 paused**：CronUpdate 无 enabled 字段，助手无法从 API 恢复，需用户在 Automations UI 打开（或指定助手手办轮次）。
 - **day-7 bump 四连发（全部 Sent 实证，线程计数=2）**：elizabethc（Cleanfax，附 sidebar 供稿提议）、mcgowank（R&R，price-the-job item 提议）、bcastiglia（MRM，假日菜单季 know-your-numbers 提议）、mmayer（FCP，price-your-crew-right 专栏提议）。全部回原线程+如实不编造新功能；纪律：单击+10s+Sent row 实证，零重复。Groomer 不 bump（2018 刊头地址待观察退信）；L&L Brian 已回复不 bump。
+
+### 10-15 下午:触发项到位,九线程编队首批 3 发全出(IAB Gmail,每发 Sent 实证)
+- **P0 接住 Brian Horn(L&L/GIE Media,bhorn@gie.net)10-05 回信**——原文 "Thanks, Devin. We will get this posted."(接稿承诺,此前台账误读为普通回复晾了 10 天)。已回跟进信:工具直链+可粘贴导语+双源区间+雪季时效。**若发布=lawnandlandscape.com 引用域到手,引用域 0→1**。判据:10-22 前查 lawnandlandscape.com 是否上稿。
+- **新 pitch 2 封发出**:①AGRR/glassBYTEs Abby Bowman(abowman@glass.com),钩子=7/30《2026 Top Retailers》,主打 windshield 匿名价格带 vs 铅页;②Green Industry Pros Jonathan Kozlowski(jkozlowski@iron.markets),钩子=Job Costing 版块《What Stalled Financing Reveals About Landscape Sales》,tree/snow/sod 三计算器+供稿提议。两封均含 concierge 定制句(收入线)。
+- **TLC 撤销**:Total Landscape Care 10-01 停刊,并入 EquipmentWorld(outbox 挂账,改投需另研)。CMM/UNITS 无公开邮箱,走表单/LinkedIn,排队中。
+- 老四线程(Cleanfax/R&R/MRM/FCP)day-14 bump 排 10-23,今日不动。纪律:单击+Sent 实证+线程计数,零重复。
