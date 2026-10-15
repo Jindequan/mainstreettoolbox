@@ -8,8 +8,8 @@ export default {
   industry: 'lawn',
   name: 'Sod & Hydroseeding Cost Calculator',
   tagline: 'New-lawn quotes both ways — instant sod or sprayed lawn, priced per square foot. No signup.',
-  title: 'Sod Installation Cost Calculator — Free 2026 Sod & Hydroseeding Pricing',
-  description: 'Price a new lawn in seconds: sod installation cost per square foot and hydroseeding per acre or sq ft, with fair 2026 US ranges. Free, no signup.',
+  title: 'Hydroseed Cost per Acre & Sod Installation Calculator — Free 2026 Pricing',
+  description: 'Hydroseeding costs $2,000–4,000 per acre ($0.06–0.20/sq ft); sod runs $0.90–1.80/sq ft. Enter your area and compare both instantly — free calculator, no signup.',
   result: { label: 'Suggested quote' },
   fields: [
     {
