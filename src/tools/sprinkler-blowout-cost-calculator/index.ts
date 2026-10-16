@@ -9,7 +9,7 @@ export default {
   name: 'Sprinkler Blowout Cost Calculator',
   tagline: 'Flat per visit or per zone — price winterization before the first freeze. No signup.',
   title: 'Sprinkler Blowout Cost Calculator — Free 2026 Winterization Pricing',
-  description: 'Price a sprinkler blowout in seconds: flat per-visit or per-zone winterization rates, with fair 2026 US ranges from Angi and working operators. Free, no signup.',
+  description: 'Sprinkler blowouts run $60–150 per visit flat (average about $85), or $5–10 per zone. Price yours before the first freeze — free calculator, no signup.',
   result: { label: 'Suggested quote' },
   fields: [
     {
@@ -83,6 +83,8 @@ export default {
     { q: 'How much does a sprinkler blowout cost?', a: 'Most US residential blowouts run $60–150 per visit, averaging about $85 (Angi 2025). Working operators report typical homes at $75–93. Larger estates and high-cost metros book higher.' },
     { q: 'What is a fair price per zone for winterization?', a: '$5–10 per zone is the common operator practice; a typical four-zone system lands around $75, which matches the national flat-rate average. Per-zone pricing mainly helps on large multi-zone properties.' },
     { q: 'Should I charge extra for backflow devices?', a: 'Many operators do — Angi reports roughly $50 per additional backflow device, since each needs its own isolation and blowout. List it as a line item in written quotes rather than absorbing the extra time.' },
+    { q: 'How much does it cost to blow out sprinklers?', a: 'Expect $60–150 for a flat-rate visit on a typical home, averaging about $85 (Angi 2025), or $5–10 per zone — a four-zone system lands near $75. High-cost metros like Denver book around $175 flat.' },
+    { q: 'How much does a sprinkler blowout cost near me?', a: 'Your metro matters more than your system: Denver operators book residential winterizations around $175 flat, while Columbus, Ohio averages $73 ($51–96). Book early — mid-October is panic season and prices climb toward the first freeze.' },
     { q: 'Why do prices vary so much between companies?', a: 'The work is minutes per zone; the cost is the compressor and the drive. That is why national guides span $28–608 (Landscapey aggregate) and why a Denver winterization books at $175 while Columbus averages $73. Price your travel, not just the zones.' },
   ],
   related: ['snow-removal-pricing-calculator', 'christmas-light-pricing-calculator', 'lawn-care-estimate-generator'],
