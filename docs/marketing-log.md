@@ -215,3 +215,10 @@
 - **外联扫描(Gmail hk52,搜索实证)**:bhorn@gie.net 线程仅 2 封我方发出(10-09 pitch/10-15 跟进),Brian 10-05 承诺后无下文;其余 10 家(issa×2/bnpmedia/MRM/groupc/bobit/iron.markets/barkleigh/agrr/greenindustrypros)零来信。**10-22 引用域 0→1 判据当前趋势 MISS**,10-22 前不再 bump;老四线程 day-14 bump 维持 10-23 排期。
 - **意外信号(矩阵侧)**:GSC 通知 procurelink.store 28 天 20 点击(该站首次破蛋);AdSense 账号被上"ad serving limit"(pub-8535…,10-12,需用户在后台看原因)。
 - GSC 28d/Pages 视图受自绘控件阻塞未取(已试 4 法),明早巡检用 EXPORT 下载路径替代。
+
+### 10-16 下午:外联推进(Bing key 解锁日)+ 两封定稿挂账
+- **Gmail(jindeq52)回复扫描**:六媒体域名(gie/glass/iron.markets/cmmonline/naahq/randallreilly)21 天零回复。旧四线程不动,day-14 bump 排 10-23;Brian 上稿查证 10-22 不变。
+- **④CMM 文案定稿+直投升级**:发现 cmmonline.com/contact 挂编辑部直投邮箱,弃表单改直投 Jeff Cross(jeffcross@issa.com,ISSA Media Director)。HOOK=其 10-15 芝加哥酒店罢工报道;工具 URL /cleaning/cleaning-estimate-calculator/ 验真 200(move-out 模式 $200-600 在工具页)。Gmail compose 参数预填成功,Send 未落地(IAB 输入通道失稳)→ 文案挂账 outbox,择机 10 秒重发。
+- **⑤UNITS 文案定稿**:HOOK=10 月刊 proptech 专题+NAA 10-14 运营成本研究注;素材验真=benchmarks-security-deposit-refund.md(WA 2023 年 21→30、AL 60 非 35 均 statute 坐实)+两 deposit 工具 200。走 naahq 表单,同批择机。
+- **Bing key 解锁**(见 outbox 挂账):验证层恢复,procurelink 基线首读 unit price calculator 176 strict/90d。
+- 纪律:零重复(两封均未 Sent,不计数),发送后按例 marketing-log 记一行+Sent 实证。
