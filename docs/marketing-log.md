@@ -208,3 +208,10 @@
 - **新 pitch 2 封发出**:①AGRR/glassBYTEs Abby Bowman(abowman@glass.com),钩子=7/30《2026 Top Retailers》,主打 windshield 匿名价格带 vs 铅页;②Green Industry Pros Jonathan Kozlowski(jkozlowski@iron.markets),钩子=Job Costing 版块《What Stalled Financing Reveals About Landscape Sales》,tree/snow/sod 三计算器+供稿提议。两封均含 concierge 定制句(收入线)。
 - **TLC 撤销**:Total Landscape Care 10-01 停刊,并入 EquipmentWorld(outbox 挂账,改投需另研)。CMM/UNITS 无公开邮箱,走表单/LinkedIn,排队中。
 - 老四线程(Cleanfax/R&R/MRM/FCP)day-14 bump 排 10-23,今日不动。纪律:单击+Sent 实证+线程计数,零重复。
+
+### 10-16 上午:手动执行 SEO 运营闭环(巡检自动化连续第 4 天未触发,主机未开机;7 点档改 9 点档无效,待用户定常开时段)
+- **GSC 7d 全表落盘**(gsc-queries-7d-2026-10-16.csv,104 查询):7d=0 点击/328 展现/均位 48.2;3mo=1 点击/2,242/63.2。**结构性坏消息:10-09 复盘里的 p2-p9 新页层(hydroseed p2.0/sod p4.6/tree p8.5/windshield p9.4)在本窗口整体消失**——新鲜度衰减+零引用域,预判"赢排名=赢面包屑"进一步恶化为"排名本身也留不住"。**引用域=第一瓶颈实锤,内容端任何优化不解决此层**。
+- **唯一活排名层=sprinkler blowout 族**(near me p2.0/裸词 p4.0/how-much 问句 p12.2,合计约 20 展现,10 月旺季正当时)→ 当日推位(commit 17e8ff7):desc 价格锚+FAQ 两条 homeowner 精确问句+lawn-care-estimate 入链(此前该页零 contextual inlink=孤儿)。IndexNow 200,线上 desc/FAQ 实证生效。
+- **外联扫描(Gmail hk52,搜索实证)**:bhorn@gie.net 线程仅 2 封我方发出(10-09 pitch/10-15 跟进),Brian 10-05 承诺后无下文;其余 10 家(issa×2/bnpmedia/MRM/groupc/bobit/iron.markets/barkleigh/agrr/greenindustrypros)零来信。**10-22 引用域 0→1 判据当前趋势 MISS**,10-22 前不再 bump;老四线程 day-14 bump 维持 10-23 排期。
+- **意外信号(矩阵侧)**:GSC 通知 procurelink.store 28 天 20 点击(该站首次破蛋);AdSense 账号被上"ad serving limit"(pub-8535…,10-12,需用户在后台看原因)。
+- GSC 28d/Pages 视图受自绘控件阻塞未取(已试 4 法),明早巡检用 EXPORT 下载路径替代。
