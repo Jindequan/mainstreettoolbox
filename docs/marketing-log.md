@@ -222,3 +222,9 @@
 - **⑤UNITS 文案定稿**:HOOK=10 月刊 proptech 专题+NAA 10-14 运营成本研究注;素材验真=benchmarks-security-deposit-refund.md(WA 2023 年 21→30、AL 60 非 35 均 statute 坐实)+两 deposit 工具 200。走 naahq 表单,同批择机。
 - **Bing key 解锁**(见 outbox 挂账):验证层恢复,procurelink 基线首读 unit price calculator 176 strict/90d。
 - 纪律:零重复(两封均未 Sent,不计数),发送后按例 marketing-log 记一行+Sent 实证。
+
+### 10-17 早:巡检轮(自动化 53165b3c 首个当天首跑)
+- **GSC 7d 全表落盘**(docs/keyword-data/gsc-queries-7d-2026-10-17.csv):90 查询/约 166 展现/0 点击——展现较 10-16 的 328 腰斩,新鲜度衰减持续。**blowout 族守层**:sprinkler blowout near me + irrigation blowout near me 双双 p2.0(后者为新变体首次冒头)、sprinkler blowout p4.0、问句 how much does it cost to blow out sprinklers 5 展现@p12.2——昨日推位页无劣化。Tier 0:sprinkler-blowout-cost-calculator 7 天首次 1 使用/1 用户。
+- **三层判定:全部无可动目标**。前 10 层全是 1-2 展现查询(CTR 手术无归因意义,且该族 snippet 昨已改);中段唯一真需求词(问句族 5@p12.2)正处单变量归因周期,判据=下周同表(~10-23);其余 p>20 假展现层按定义不动。
+- **外联**:hk52 收件箱扫描零回复(与 10-16 jindeq52 21 天零回复扫描互证);bump 队列今日不动(day-14 排 10-23,Brian 上稿查证 10-22);CMM/UNITS 两封继续挂账待有人值守发送(IAB 输入通道未复测)。
+- 28d/Pages 视图仍受自绘控件阻塞,EXPORT 下载路径待做。
