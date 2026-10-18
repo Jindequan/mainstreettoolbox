@@ -233,3 +233,8 @@
 - **GSC 7d 全表落盘**(docs/keyword-data/gsc-queries-7d-2026-10-18.csv):86 查询/约 160 展现/0 点击,与昨日 166 持平(新鲜度衰减趋稳)。blowout 族:sprinkler blowout near me 掉出表外(昨日 1@p2.0),**irrigation blowout near me 守 p2.0**、sprinkler blowout p4.0;推位问句 4@p12.5(昨日 5@p12.2)稳,归因周期不动,判据=10-23 同表对比。
 - **三层全空(第 2 连续轮)→ 按技能升级上报:站内动作队列已排干**(前 10 层全是 1-2 展现查询,手术无归因;中段唯一真需求词在归因周期;假展现层不动)。**站级瓶颈=引用域 0,唯一上限杠杆在站外**:CMM/UNITS 两封定稿待有人值守发送、10-22 Brian 上稿查证、10-23 day-14 bump、11-07 总死线。
 - Tier 0:7 天 0 使用(sprinkler-blowout 那次使用已滚出窗口)。hk52 收件箱零回复(最新一封 10-16 全噪音)。28d/Pages 控件障碍未重试(EXPORT 路径待做)。
+
+### 10-18 推进轮:④CMM 实为已发(×2),⑤UNITS 双路被堵
+- **④CMM 反转确认:10-16 已发出——但重复两封**(20:11+20:16,同主题)。10-16 的"发送失败"是误判:第一次 Send 成功,验证错用了 compose 标题而非 Sent 文件夹,补发造成重复。处置:不追第三封;Jeff 若回复顺带致歉;10-23 若跟进加"apologies if twice"。**死规矩入册:判失败必先查 Sent(to: 搜索),标题/窗口状态不算数。**
+- **⑤UNITS 双路堵死**:naahq.org Cloudflare 硬拦本机 IP(Ray a4c4b507c932f9ad);Michael Miller 无公开邮箱。出路=LinkedIn(jindeq52)或换网络重试,文案在 outbox 待命。
+- 外联面板:AGRR/GIP/Brian(10-15)在飞;CMM 已触达(重复);UNITS 待新通道;四老线程 10-23 day-14;10-22 Brian 上稿查证。
