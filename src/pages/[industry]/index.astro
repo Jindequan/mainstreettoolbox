@@ -25,7 +25,7 @@ const HUB_CONTENT: Record<string, { question: string; intro: string; bands: [str
       ["Pressure washing, per sq ft", "$0.12–0.85", "Surface-dependent; MTB guide synthesis"],
       ["Gutter cleaning, per linear ft", "$0.95–2.50", "One to two-story (Angi; CrewNest)"],
     ],
-    more: "Deep-dive numbers: <a href=\"/guides/house-cleaning-prices/\">house cleaning prices guide</a> and the <a href=\"/benchmarks/service-pricing-2026/\">full 2026 benchmarks page</a>.",
+    more: "Deep-dive numbers: <a href=\"/guides/house-cleaning-prices/\">house cleaning prices guide</a> and the <a href=\"/benchmarks/service-pricing-2026/\">full 2026 benchmarks page</a>. Specialty jobs priced separately: <a href=\"/cleaning/mold-remediation-cost-calculator/\">mold remediation cost calculator</a>, <a href=\"/cleaning/junk-removal-estimator/\">junk removal estimator</a>, <a href=\"/cleaning/window-cleaning-price-calculator/\">window cleaning price calculator</a>, and the <a href=\"/guides/post-construction-cleaning-rates/\">post-construction cleaning rates guide</a>.",
   },
   lawn: {
     question: "How much does lawn care cost in 2026?",
@@ -37,7 +37,7 @@ const HUB_CONTENT: Record<string, { question: string; intro: string; bands: [str
       ["Aeration only, per 1,000 sq ft", "$15–30", "LawnStarter; Angi; LawnSite operators"],
       ["Snow removal, per push", "$30–75", "By driveway size (LawnLove; CrewNest; Thumbtack)"],
     ],
-    more: "Season pricing and contract structures: <a href=\"/benchmarks/service-pricing-2026/\">2026 benchmarks</a>.",
+    more: "Season pricing and contract structures: <a href=\"/benchmarks/service-pricing-2026/\">2026 benchmarks</a>. Price the add-ons before the season turns: <a href=\"/lawn/sprinkler-blowout-cost-calculator/\">sprinkler blowout cost calculator</a>, <a href=\"/lawn/tree-removal-cost-calculator/\">tree removal cost calculator</a>, and the <a href=\"/lawn/aeration-and-overseeding-calculator/\">aeration and overseeding calculator</a>.",
   },
   construction: {
     question: "How much do contractors charge in 2026?",
@@ -50,7 +50,7 @@ const HUB_CONTENT: Record<string, { question: string; intro: string; bands: [str
       ["Roll-off dumpster, 7-day rental", "$300–800", "By size 10–40 yard (Angi; HomeGuide; Rapid Haul)"],
       ["Popcorn ceiling removal, per sq ft", "$1.25–3.25", "Unpainted incl. skim + masking (Angi; CalcBuilt)"],
     ],
-    more: "Full construction bands: <a href=\"/benchmarks/service-pricing-2026/\">2026 benchmarks page</a>.",
+    more: "Build the whole bid: <a href=\"/construction/painting-estimate-calculator/\">painting estimate calculator</a>, <a href=\"/construction/popcorn-ceiling-removal-cost-calculator/\">popcorn ceiling removal cost calculator</a>, <a href=\"/construction/attic-insulation-cost-calculator/\">attic insulation cost calculator</a>, and the <a href=\"/construction/work-order-generator/\">work order generator</a> — full bands on the <a href=\"/benchmarks/service-pricing-2026/\">2026 benchmarks page</a>.",
   },
   restaurant: {
     question: "What food cost percentage should a restaurant target in 2026?",
@@ -73,7 +73,7 @@ const HUB_CONTENT: Record<string, { question: string; intro: string; bands: [str
       ["Booth rent, per month", "$400–1,200+", "MTB guide synthesis"],
       ["Commission keep, new stylists", "40–50%", "Toward 60% with an established book"],
     ],
-    more: "The pay-structure math: <a href=\"/guides/booth-rent-vs-commission/\">booth rent vs commission guide</a>.",
+    more: "The pay-structure math: <a href=\"/guides/booth-rent-vs-commission/\">booth rent vs commission guide</a>. Counter paperwork: the <a href=\"/salon/receipt-generator/\">salon receipt generator</a> and the <a href=\"/salon/service-price-list-builder/\">service price list builder</a>.",
   },
   retail: {
     question: "How do you calculate retail markup and margin?",
@@ -85,7 +85,7 @@ const HUB_CONTENT: Record<string, { question: string; intro: string; bands: [str
       ["20% discount at 40% margin", "~+100% volume — double", "Discount math"],
       ["Typical retail margin range", "25–50%", "Category-dependent; MTB guide synthesis"],
     ],
-    more: "Work the numbers: <a href=\"/retail/retail-math-calculator/\">retail math calculator</a>, the <a href=\"/retail/retail-markup-calculator/\">retail markup calculator</a> and the <a href=\"/retail/discount-profit-calculator/\">discount profit calculator</a>.",
+    more: "Work the numbers: <a href=\"/retail/retail-math-calculator/\">retail math calculator</a>, the <a href=\"/retail/retail-markup-calculator/\">retail markup calculator</a> and the <a href=\"/retail/discount-profit-calculator/\">discount profit calculator</a>. Counting what you actually stock: the <a href=\"/retail/inventory-count-sheet/\">inventory count sheet</a>.",
   },
   auto: {
     question: "How much does windshield replacement cost in 2026?",
@@ -98,6 +98,16 @@ const HUB_CONTENT: Record<string, { question: string; intro: string; bands: [str
       ["SUV / truck / laminated glass", "$300–400+", "Spirit Auto Glass; ERP SoCal"],
     ],
     more: "Compare any quote anonymously: <a href=\"/auto/windshield-replacement-cost-calculator/\">windshield replacement cost calculator</a> and the <a href=\"/benchmarks/service-pricing-2026/\">2026 benchmarks page</a>.",
+  },
+  landlord: {
+    question: "When must a landlord return a security deposit in 2026?",
+    intro: "Deposit deadlines are statute-driven — every state sets its own return window, and missing it can cost far more than the deposit itself.",
+    bands: [
+      ["Deposit return deadline", "14–90 days by state", "State statutes (per-state on the calculators)"],
+      ["Missing the deadline can cost", "Up to 2× the deposit", "Statutory forfeiture/penalty provisions"],
+      ["Itemized written deductions", "Expected in most states", "State statutes"],
+    ],
+    more: "Run your own dates: the <a href=\"/landlord/security-deposit-refund-calculator/\">security deposit refund calculator</a> and the <a href=\"/landlord/security-deposit-demand-letter/\">deposit demand letter generator</a>.",
   },
 };
 const hub = HUB_CONTENT[industry!];

@@ -57,7 +57,11 @@ export default {
     <h3>Should you mark up materials?</h3>
     <p>The estimator shows three numbers: the bare sum, the waste allowance, and a suggested bill at cost plus
     15% — because materials sitting on a job site are capital you fronted, and fronting capital is worth a
-    markup.</p>`,
+    markup.</p>
+    <h3>Quoting a paint job?</h3>
+    <p>Paint is the classic waste-factor material — and only half the bid. Turn the per-square-foot bands and
+    your labor hours into a full interior or exterior quote with the
+    <a href="/construction/painting-estimate-calculator/">painting estimate calculator</a>.</p>`,
   faq: [
     { q: 'How much waste should I budget?', a: 'Lumber and paint: 10%. Tile, stone and anything cut to pattern: 15–20%. Anything with a high failure rate on first fix: more. Track your actuals per job and adjust.' },
     { q: 'Should clients see the waste factor?', a: 'Show the total, not the arithmetic. "Materials including standard waste allowance" is an honest line item; a visible 10% surcharge reads as padding.' },

@@ -49,7 +49,11 @@ export default {
     <b>$75–125 service-call fee</b> — usually applied as the first hour — is standard practice: it prices
     the truck roll before any work starts. Emergency and after-hours calls run $150–250 (Angi). If your
     napkin rate lands under $50, you're pricing like a handyman while carrying an electrician's insurance
-    and license bill.</p>`,
+    and license bill.</p>
+    <h3>Bidding a labor-heavy job like painting?</h3>
+    <p>Painting crews live and die by the hourly math — interior labor runs <b>$20–75/hour</b> depending on
+    prep work and paint quality. Work out your crew rate here, then build the full per-square-foot quote in
+    the <a href="/construction/painting-estimate-calculator/">painting estimate calculator</a>.</p>`,
   faq: [
     { q: 'How many billable hours does a solo contractor really get?', a: 'Twenty to twenty-five is realistic for most trades — the rest of a 40-hour week goes to quotes, supply runs, site cleanup and driving. Anyone budgeting 40 billable hours is planning to work for free half the time.' },
     { q: 'What counts as overhead?', a: 'Everything that bills whether or not you worked: insurance, truck payment and fuel, tool replacement, licenses and permits, accounting, phone. Monthly it, and the calculator spreads it across your billable hours.' },
