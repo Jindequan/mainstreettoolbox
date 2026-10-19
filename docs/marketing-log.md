@@ -238,3 +238,9 @@
 - **④CMM 反转确认:10-16 已发出——但重复两封**(20:11+20:16,同主题)。10-16 的"发送失败"是误判:第一次 Send 成功,验证错用了 compose 标题而非 Sent 文件夹,补发造成重复。处置:不追第三封;Jeff 若回复顺带致歉;10-23 若跟进加"apologies if twice"。**死规矩入册:判失败必先查 Sent(to: 搜索),标题/窗口状态不算数。**
 - **⑤UNITS 双路堵死**:naahq.org Cloudflare 硬拦本机 IP(Ray a4c4b507c932f9ad);Michael Miller 无公开邮箱。出路=LinkedIn(jindeq52)或换网络重试,文案在 outbox 待命。
 - 外联面板:AGRR/GIP/Brian(10-15)在飞;CMM 已触达(重复);UNITS 待新通道;四老线程 10-23 day-14;10-22 Brian 上稿查证。
+
+### 10-19 早:巡检轮(周一,当天首跑;9 点档未触发 10:50 补跑)
+- **GSC 7d 全表落盘**(docs/keyword-data/gsc-queries-7d-2026-10-19.csv):89 查询/约 175 展现/0 点击(较 160 微回升)。blowout 族:irrigation near me 守 p2.0、sprinkler blowout p4.0、推位问句 4@p12.5 持平(归因周期不动,判据 10-23 同表);新拼写变体 sprinkler blow out cost 1@p85。
+- **三层全空(第 3 连续轮)**,升级结论不变:站内动作队列排干,瓶颈=引用域 0。10-23 判据出结果前站内不动。
+- **周一竞品研究已做(本制度首个周一)**:docs/studies/angi-2026-10-19.md——Angi 压制词的打法=分城市成本模板(Denver ~$58/DC ~$117,SERP 摘要取证;正文 Cloudflare 403 已记局限)。✅采纳形态层:10-23 判据后在现有页 FAQ 加"城市+均价"答法(只用页内溯源数字;Angi 数字口径不同,不采其数);❌否决建城市页族(违反停建定局+零引用域衰减实锤)。
+- 外联:hk52 零回复(最新 10-18 全噪音);CMM 已触达(×2)/UNITS 待新通道(见上节);10-22 Brian 查证、10-23 day-14 bump。Tier 0:7 天 0 使用。
