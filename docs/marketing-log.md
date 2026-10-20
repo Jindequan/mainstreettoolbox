@@ -262,3 +262,4 @@
 - **✅ Jeffrey Scott(lawn 顾问/资源中心)** Sent 实证 1 封。**死规矩首战生效:首击静默失败被 Sent 查验(0)拦住,重试后 1,无双发。** 流程定版:compose URL 预填→截图核验→cua 点 Send(91,1271)→**Sent to: 搜索计数**;点击前无截图核验=禁止。
 - **⛔ Fullerton 播客**:Gmail 三击全静默拒(对照实验排除验证失效)→转 Instagram DM 通道待登录态。
 - 触达计数(新版主指标):今日真人触达 1(完成)+1(受阻转通道);累计在飞线程:AGRR/GIP/Brian/CMM/Jeffrey Scott=5,MST 九线程+新触达=待回音清单见 outbox。
+| 2026-10-20 | 词簇二期 batch 1 上线（834ab84，已部署）：deposit 引擎 10→24 州（14 州 statute 逐条核对，IL/CT 两处二手源纠错）；bespoke 内联副本同步（已知坑：只改注册表到不了页）；60/60 测试+双页线上实证+IndexNow |
