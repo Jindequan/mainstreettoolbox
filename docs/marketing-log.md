@@ -245,3 +245,9 @@
 - **周一竞品研究已做(本制度首个周一)**:docs/studies/angi-2026-10-19.md——Angi 压制词的打法=分城市成本模板(Denver ~$58/DC ~$117,SERP 摘要取证;正文 Cloudflare 403 已记局限)。✅采纳形态层:10-23 判据后在现有页 FAQ 加"城市+均价"答法(只用页内溯源数字;Angi 数字口径不同,不采其数);❌否决建城市页族(违反停建定局+零引用域衰减实锤)。
 - 外联:hk52 零回复(最新 10-18 全噪音);CMM 已触达(×2)/UNITS 待新通道(见上节);10-22 Brian 查证、10-23 day-14 bump。Tier 0:7 天 0 使用。
 | 2026-10-19 | 内链专项轮上线（commit 603d191，已部署）：8 枢纽下沉深链+landlord HUB 从无到有+painting 救援双链；审计法=dist 内容链计数，painting 1→4、landlord 1→2、三孤儿 1→2；windshield 有意跳过（站内无自然捐款位，杠杆=AGRR 外联在飞）；vitest 51/51+80 页+IndexNow 10+Bing 79 URL（/json/ 路由坑入册） |
+
+### 10-20 早:巡检轮(当天首跑,9 点档准点触发)
+- **GSC 7d 全表落盘**(docs/keyword-data/gsc-queries-7d-2026-10-20.csv):76 查询/约 164 展现/0 点击。blowout 族:irrigation near me p2.0、sprinkler blowout p4.0 守;**how much to blow out sprinkler system 2@p10.5 首次进前 10**——该页 FAQ 已含其问句形态(17e8ff7),snippet 已对准,无新动作;推位问句回落 2@p15.5(日噪范围,10-23 判据不变);新词 sprinkler winterization cost 1@p46。
+- **三层全空(第 4 连续轮)**:内链专项轮(603d191)昨晚上线,其效果与推位归因一并挂 **10-23 同表判读**;出结果前站内不动。
+- **10-20 Ko-fi 销量判据今日到期**:读数由并行线按 e614f6b 排程认领,我线不重复拉;命/miss 须在记分牌向用户交账(判据合同)。
+- 外联:hk52 零回复(最新 10-19 GSC 通知属账号下其他站点,非 MST);Brian 查证明日 10-22;day-14 bump 排 10-23。Tier 0:**aeration-and-overseeding-calculator 首次 1 使用/1 用户**(第二个破零工具;sprinkler-blowout 上次使用已滚出 7 天窗)。
