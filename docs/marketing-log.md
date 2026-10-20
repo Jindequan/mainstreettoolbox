@@ -263,3 +263,9 @@
 - **⛔ Fullerton 播客**:Gmail 三击全静默拒(对照实验排除验证失效)→转 Instagram DM 通道待登录态。
 - 触达计数(新版主指标):今日真人触达 1(完成)+1(受阻转通道);累计在飞线程:AGRR/GIP/Brian/CMM/Jeffrey Scott=5,MST 九线程+新触达=待回音清单见 outbox。
 | 2026-10-20 | 词簇二期 batch 1 上线（834ab84，已部署）：deposit 引擎 10→24 州（14 州 statute 逐条核对，IL/CT 两处二手源纠错）；bespoke 内联副本同步（已知坑：只改注册表到不了页）；60/60 测试+双页线上实证+IndexNow |
+
+### 10-20 晚:20 人触达令执行——完成 6/20,Gmail 软拦发现
+- **已验证触达 6**(每发独立实证):①Turf Magazine 主编 Jessica(jessica@groupc.com,Sent ✓)②Indiana 草坪协会 admin@iplla.com(Sent ✓)③清洁业教练 Debbie Sardone contact@debbiesardone.com(Sent ✓)④ProfitCleaners 表单(提交+thanks 回执 ✓)⑤Jeffrey Scott(昨日 Sent ✓,今日复核在案)⑥CMM(前日 Sent ✓)。
+- **⛔ Gmail 软拦(重要发现)**:当日第 4-6 个邮箱目标(CleanGuru/Janitorial Store 等)多次尝试 Sent 全 0、零报错;对照实验(旧成功邮件可查)证明验证正常→**当日冷邮件量触发 Gmail 出站垃圾启发式,静默吞发**。处置:Gmail 冷邮件通道今日停,休整;表单通道(不经 Gmail)实测可用。
+- **流程资产(可复用)**:compose URL 参数预填→截图核验→cua 点 Send→**Sent to: 计数**;表单站=locator 填+DOM 直点 Submit+回执检查。未截图核验的点击失败率高。
+- **明日续**:20 人令未完部分转表单通道(ProfitCleaners 模式)+新邮箱目标(Grow My Cleaning 表单、NALP、更多州协会、procurement 媒体);回复计数另计。
