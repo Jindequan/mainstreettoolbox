@@ -103,3 +103,25 @@
 - Nolo 50 州 deadline 图：https://www.nolo.com/landlord-tenant/state-deadlines-for-returning-security-deposit.html（hub https://www.nolo.com/landlord-tenant/security-deposit-limits-deadlines-your-state.html，更新至 2024-04）
 - Westlaw Practical Law 50 州对照表（付费）：https://content.next.westlaw.com/practical-law/document/Ia5b0f087647111eaadfea82903531a62/Security-Deposit-Laws-Residential-Lease-State-Comparison-Chart
 - 房产 SaaS 群（Azibo/TransUnion/iPropertyManagement 等）：仅作 SERP 对照，多处含过期天数（WA 21、AL 35），已在矩阵中逐一证伪
+
+## 二期 14 州 statute 核对记录（2026-10-20，WebSearch 逐州官方源，引擎同步扩充 10→24 州）
+
+| 州 | 期限 | 起算点 | 罚则 | 核对源 |
+|---|---|---|---|---|
+| IL | 45 天（2024-01-01 由 30 天修正——旧指南 30 已过时） | vacate | 2×+费用；豁免 5+ 单元楼 | ilga.gov 765 ILCS 710 |
+| MA | 30 天 | termination | 3×+律师费（全国最重） | mass.gov c.186 §15B |
+| NJ | 30 天 | lease termination | 全额+法院 shall 加 2× 惩戒金+费用；<3 户豁免 | nj.gov/dca 2A:18-61.9 |
+| CT | 21 天（PA 23-207 由 30 改 21）或收转发地址后 15 天取后；驱逐判决后 30 天 | termination | 2×+费 | portal.ct.gov §47a-21 |
+| OH | 30 天 | 终止+交房二者后 | 扣款额+等额罚+律师费；>$50 计息 | codes.ohio.gov §5321.16 |
+| MI | 30 天（清单挂号信寄出+无争议余额） | termination of occupancy | 2×；租客 7 天异议期 | legislature.mi.gov 554.614 |
+| IN | 45 天 | 终止+交房二者后 | 全额+律师费（无倍数） | Justia 32-31-3-12 |
+| MO | 30 天 | termination | 2× 扣留额；押金上限 2 月租 | revisor.mo.gov 535.300 |
+| GA | 1 个月 | 终止+交房二者后 | 返还法条无倍数（2024 新法 §44-7-30.1 押金上限 2 月租） | Justia §44-7-55 |
+| NC | 30 天 | termination | 无自动倍数，按 Act 救济；地址不明走 §42-51 | lawhelpnc.org §42-52 |
+| SC | 30 天 | 终止/交房/书面索要三者最晚（与 AZ 同构） | 最高 3×+律师费 | scstatehouse.gov 27-40-410 |
+| MN | 21 天（终止+转发地址后） | termination+fwd | 无倍数；利息持续累积；5 天特殊件 | revisor.mn.gov 504B.178 |
+| MD | 45 天+利息（维修费未定须寄估计，否则丧失扣留权） | end of tenancy | 最高 3× 扣留额+律师费 | mgaleg.maryland.gov §8-203 |
+| VA | 45 天 | lease termination | 故意违规：实际损害或最高 2×；不计息 | law.lis.virginia.gov §55.1-1226 |
+
+纠错两处二手源记忆：IL 45 天（非 30）、CT 21 天（非 30）——「Nolo 初值+statute 终值」流程再次证明必要。
+剩余 26 州（含 OK/KS/IA/NV/UT/OR/ID/MT/WY/NM/AR/LA/MS/AL-have/ME/NH/RI/VT/DE/WV/AK/HI/DC 等）留下轮；KY/TN 无默认法定期限（租约约定优先），纳入需引擎支持「无法定期限」结果形态，单独立项。

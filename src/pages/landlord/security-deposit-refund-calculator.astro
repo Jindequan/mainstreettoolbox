@@ -2,8 +2,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 // Bespoke 页：引擎与 src/tools/security-deposit-refund-calculator/engine.ts 同款数学（内联 JS 副本）。
-// 10 州数据全部来自 docs/benchmarks-security-deposit-refund.md（statute 现行文本，2026-10-13 复核 CO/FL/AZ）。
-const REVIEWED = 'October 13, 2026';
+// 24 州数据全部来自 docs/benchmarks-security-deposit-refund.md（statute 现行文本，2026-10-13 复核 CO/FL/AZ，
+// 2026-10-20 二批核对 IL/MA/NJ/CT/OH/MI/IN/MO/GA/NC/SC/MN/MD/VA —— 二期 14 州记录见该文档）。
+const REVIEWED = 'October 13–20, 2026';
 const states = [
   { code: 'CA', name: 'California', days: '21 calendar days', trigger: 'Move-out (vacate)', cite: 'Cal. Civ. Code §1950.5' },
   { code: 'NY', name: 'New York', days: '14 calendar days', trigger: 'Move-out (vacate)', cite: 'N.Y. GOL §7-108(1-a)' },
@@ -15,6 +16,20 @@ const states = [
   { code: 'WI', name: 'Wisconsin', days: '21 calendar days', trigger: 'Earliest of termination, new tenant start, or knowledge of vacancy', cite: 'Wis. Adm. Code ATCP 134.06(2)' },
   { code: 'AL', name: 'Alabama', days: '60 calendar days', trigger: 'Later of termination and possession', cite: 'Ala. Code §35-9A-201' },
   { code: 'PA', name: 'Pennsylvania', days: '30 calendar days', trigger: 'Later of termination or surrender', cite: '68 P.S. §250.512' },
+  { code: 'IL', name: 'Illinois', days: '45 calendar days (30-day statement deadline; 30 before the 2024 amendment)', trigger: 'Move-out (vacate)', cite: '765 ILCS 710/1' },
+  { code: 'MA', name: 'Massachusetts', days: '30 calendar days', trigger: 'Termination of tenancy', cite: 'Mass. Gen. Laws c.186 §15B' },
+  { code: 'NJ', name: 'New Jersey', days: '30 calendar days', trigger: 'Lease termination', cite: 'N.J.S.A. 2A:18-61.9' },
+  { code: 'CT', name: 'Connecticut', days: '21 calendar days — or 15 days after your forwarding address, whichever is later', trigger: 'Termination of tenancy', cite: 'Conn. Gen. Stat. §47a-21' },
+  { code: 'OH', name: 'Ohio', days: '30 calendar days', trigger: 'Later of termination and possession', cite: 'Ohio Rev. Code §5321.16' },
+  { code: 'MI', name: 'Michigan', days: '30 calendar days', trigger: 'Termination of occupancy', cite: 'Mich. Comp. Laws §554.614' },
+  { code: 'IN', name: 'Indiana', days: '45 calendar days', trigger: 'Later of termination and possession', cite: 'Ind. Code §32-31-3-12' },
+  { code: 'MO', name: 'Missouri', days: '30 calendar days', trigger: 'Termination of tenancy', cite: 'Mo. Rev. Stat. §535.300' },
+  { code: 'GA', name: 'Georgia', days: '30 calendar days (one month)', trigger: 'Later of termination and possession', cite: 'O.C.G.A. §44-7-55' },
+  { code: 'NC', name: 'North Carolina', days: '30 calendar days', trigger: 'Termination of tenancy', cite: 'N.C.G.S. §42-52' },
+  { code: 'SC', name: 'South Carolina', days: '30 calendar days', trigger: 'Latest of termination, possession, or written demand', cite: 'S.C. Code §27-40-410' },
+  { code: 'MN', name: 'Minnesota', days: '21 calendar days', trigger: 'Tenancy end plus forwarding address', cite: 'Minn. Stat. §504B.178' },
+  { code: 'MD', name: 'Maryland', days: '45 calendar days plus interest', trigger: 'End of tenancy', cite: 'Md. Code, Real Prop. §8-203' },
+  { code: 'VA', name: 'Virginia', days: '45 calendar days', trigger: 'Lease termination', cite: 'Va. Code §55.1-1226' },
 ];
 ---
 <BaseLayout
@@ -99,10 +114,11 @@ const states = [
   </main>
 
   <section class="container">
-    <h2>The deadline in all ten verified states</h2>
+    <h2>The deadline in all 24 verified states</h2>
     <p class="section-sub">
       We publish only deadlines checked against the current statute text — several popular guides still
-      carry outdated numbers (Washington's 21 days became 30 in 2023; Alabama is 60 days, not the 35 many
+      carry outdated numbers (Washington's 21 days became 30 in 2023, Connecticut's 30 became 21 under the
+      2023 reform act, Illinois's 30 became 45 in 2024, and Alabama is 60 days, not the 35 many
       sites print). States outside this table are on the verification roadmap;
       meanwhile <a href="https://www.hud.gov/topics/rental_assistance/tenantrights" target="_blank" rel="noopener">HUD's tenant-rights portal</a>
       links each state's official resources, and
@@ -186,7 +202,7 @@ const states = [
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Any',
       url: 'https://mainstreettoolbox.com/landlord/security-deposit-refund-calculator/',
-      description: 'Computes the legal security-deposit refund deadline from state statute: trigger date, calendar/business-day rules, itemized-statement duty, and the penalty for missing it across ten statute-verified states.',
+      description: 'Computes the legal security-deposit refund deadline from state statute: trigger date, calendar/business-day rules, itemized-statement duty, and the penalty for missing it across 24 statute-verified states.',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     })} />
   </section>
@@ -236,6 +252,48 @@ const states = [
       PA: { name: 'Pennsylvania', days: 30, kind: 'cal', trigger: 'later', daysRule: '30 calendar days after the later of termination or surrender.', statute: '68 P.S. §250.512', url: 'https://www.palegis.us',
         statement: 'Refund and itemized list of deductions are due simultaneously. Deposits over $100 sit in escrow; from year three the landlord pays escrow interest (less a 1%/year admin fee).',
         penalty: 'Missing the window forfeits the right to withhold — tenants can recover 2× the wrongfully withheld amount.' },
+      IL: { name: 'Illinois', days: 45, kind: 'cal', trigger: 'vacate', daysRule: '45 calendar days after move-out (raised from 30 days by the 2024 amendment — older guides still print 30). A separate written itemized statement of damages is due sooner: within 30 days of vacate. The Act exempts buildings with 5 or more units.', statute: '765 ILCS 710/1', url: 'https://www.ilga.gov/Legislation/ILCS/Articles?ActID=2202&ChapterID=62',
+        statement: 'Written itemized statement of damages due within 30 days of vacate; the refund itself is due within 45.',
+        penalty: 'Willful non-compliance = 2× the deposit plus court costs and attorney\'s fees.' },
+      MA: { name: 'Massachusetts', days: 30, kind: 'cal', trigger: 'termElseVacate', daysRule: '30 calendar days after termination of the tenancy.', statute: 'Mass. Gen. Laws c.186 §15B', url: 'https://www.mass.gov/info-details/mass-general-laws-c186-ss-15b',
+        statement: 'Refund or an itemized list of damages due within the same 30 days; the deposit must sit in a separate escrow account earning 5% or the bank\'s rate.',
+        penalty: 'Violations expose the landlord to 3× the amount at issue plus attorney\'s fees and court costs — the harshest deposit statute in the country.' },
+      NJ: { name: 'New Jersey', days: 30, kind: 'cal', trigger: 'termElseVacate', daysRule: '30 calendar days after termination of the lease.', statute: 'N.J.S.A. 2A:18-61.9', url: 'https://www.nj.gov/dca/codes/publications/pdf_lti/evic_law.pdf',
+        statement: 'Any claim requires a written itemized list of damages delivered with the refund balance.',
+        penalty: 'Failure to return within 30 days: the tenant recovers the full amount plus court costs, and the court shall add 2× as punitive damages.' },
+      CT: { name: 'Connecticut', days: 21, kind: 'cal', trigger: 'termElseVacate', daysRule: '21 calendar days after termination — or within 15 days after the landlord receives your written forwarding address, whichever is later (raised under Public Act 23-207; the old 30-day rule is gone). In an eviction case: 30 days after judgment.', statute: 'Conn. Gen. Stat. §47a-21', url: 'https://portal.ct.gov/dob/rental-security-deposits/rental-security-deposits/rental-security-deposits',
+        statement: 'Refund with interest, or written notice of damages claimed, due inside the same window.',
+        penalty: 'Failure to comply = 2× the amount of the deposit, plus attorney\'s fees to the prevailing tenant.' },
+      OH: { name: 'Ohio', days: 30, kind: 'cal', trigger: 'later', daysRule: '30 calendar days after the later of lease termination and delivery of possession.', statute: 'Ohio Rev. Code §5321.16', url: 'https://codes.ohio.gov/ohio-revised-code/section-5321.16',
+        statement: 'Written itemized deduction list due with the balance; deposits over $50 (or one month\'s rent) bear interest on amounts held past six months.',
+        penalty: 'Wrongfully withholding any portion = the tenant recovers that portion plus an equal amount as damages, plus reasonable attorney\'s fees.' },
+      MI: { name: 'Michigan', days: 30, kind: 'cal', trigger: 'termElseVacate', daysRule: '30 calendar days after termination of occupancy.', statute: 'Mich. Comp. Laws §554.614', url: 'https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-554-614',
+        statement: 'Itemized damage list mailed first-class to your forwarding address with the undisputed balance enclosed; you have 7 days after receipt to dispute it in writing.',
+        penalty: 'Non-compliance = 2× the deposit amount in damages.' },
+      IN: { name: 'Indiana', days: 45, kind: 'cal', trigger: 'later', daysRule: '45 calendar days after the later of lease termination and delivery of possession.', statute: 'Ind. Code §32-31-3-12', url: 'https://codes.findlaw.com/in/title-32-property/in-code-sect-32-31-3-12/',
+        statement: 'Written itemized list of due deductions accompanies the refund.',
+        penalty: 'No statutory multiplier — the landlord owes the full deposit due plus reasonable attorney\'s fees.' },
+      MO: { name: 'Missouri', days: 30, kind: 'cal', trigger: 'termElseVacate', daysRule: '30 calendar days after termination of the tenancy. (Deposits are capped at two months\' rent.)', statute: 'Mo. Rev. Stat. §535.300', url: 'https://revisor.mo.gov/main/OneSection.aspx?section=535.300',
+        statement: 'Written itemized list of damages due with the refund balance.',
+        penalty: 'Wrongfully withholding — or failing to strictly comply — costs the landlord 2× the amount withheld, plus the tenant\'s actual damages.' },
+      GA: { name: 'Georgia', days: 30, kind: 'cal', trigger: 'later', daysRule: 'One month (30 calendar days) after the later of lease termination and delivery of possession. (A 2024 law caps deposits at two months\' rent.)', statute: 'O.C.G.A. §44-7-55', url: 'https://law.justia.com/codes/georgia/title-44/chapter-7/article-3/section-44-7-55/',
+        statement: 'Written itemized list of damages due with the refund; the deposit must sit in an escrow account at a regulated bank while held.',
+        penalty: 'The return statute sets no deadline penalty multiplier — disputes run through ordinary claims, and the escrow/inspection paperwork rules are strictly enforced.' },
+      NC: { name: 'North Carolina', days: 30, kind: 'cal', trigger: 'termElseVacate', daysRule: '30 calendar days after termination of the tenancy. If your address is unknown to the landlord, the deposit is disposed of under §42-51 after the 30 days.', statute: 'N.C.G.S. §42-52', url: 'https://www.lawhelpnc.org/resource/housing-your-security-deposit',
+        statement: 'Written itemized accounting of deductions mailed with the balance owed.',
+        penalty: 'No automatic multiplier in the return statute — tenants recover the wrongfully held deposit through the Tenant Security Deposit Act remedies.' },
+      SC: { name: 'South Carolina', days: 30, kind: 'cal', trigger: 'laterDemand', daysRule: '30 calendar days from the latest of: termination of the tenancy, surrender and delivery of possession, or your written demand for the deposit.', statute: 'S.C. Code §27-40-410', url: 'https://www.scstatehouse.gov/code/t27c040.php',
+        statement: 'Written itemized account of deductions due with the refund balance.',
+        penalty: 'Wrongful withholding exposes the landlord to up to 3× the wrongfully withheld amount plus attorney\'s fees.' },
+      MN: { name: 'Minnesota', days: 21, kind: 'cal', trigger: 'termElseVacate', daysRule: '21 days (three weeks) after the tenancy ends and you provide a forwarding address. A narrow 5-day rule applies in foreclosure-related evictions.', statute: 'Minn. Stat. §504B.178', url: 'https://www.revisor.mn.gov/statutes/cite/504b.178',
+        statement: 'Refund with interest (annual rate set by statute) or a written statement of deductions due inside the window.',
+        penalty: 'The return statute sets no penalty multiplier — interest keeps accruing while the deposit is wrongfully held.' },
+      MD: { name: 'Maryland', days: 45, kind: 'cal', trigger: 'termElseVacate', daysRule: '45 calendar days after the end of the tenancy, plus accrued interest of at least 3% yield. If repair costs cannot be determined in time, the landlord must send a written estimate — nothing can be withheld without it.', statute: 'Md. Code, Real Prop. §8-203', url: 'https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=grp&section=8-203',
+        statement: 'Written itemized statement of deductions with the balance; skipping the estimate provision forfeits the right to withhold.',
+        penalty: 'Failing to return any part without a reasonable basis exposes the landlord to up to 3× the amount withheld, plus reasonable attorney\'s fees.' },
+      VA: { name: 'Virginia', days: 45, kind: 'cal', trigger: 'termElseVacate', daysRule: '45 calendar days after lease termination. (Deposits are capped at two months\' periodic rent.)', statute: 'Va. Code §55.1-1226', url: 'https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1226',
+        statement: 'Written itemized notice of damages due with the refund; tenants owe the landlord written notice of their forwarding address.',
+        penalty: 'Willful failure to comply or wrongful withholding = the tenant recovers the deposit plus actual damages, or up to 2× the deposit. No interest is required.' },
     };
 
     const $ = (id) => document.getElementById(id);
@@ -249,7 +307,7 @@ const states = [
       const demand = $('demand').value;
       if (!vacate) { $('out-deadline').textContent = '—'; return; }
 
-      $('demand-field').hidden = code !== 'AZ';
+      $('demand-field').hidden = !(code === 'AZ' || code === 'SC');
       $('claim-field').hidden = code !== 'FL';
 
       let trigger, deadline, alt = null;
@@ -257,13 +315,13 @@ const states = [
       if (R.trigger === 'vacate') { trigger = vacate; deadline = addDays(vacate, R.days); }
       else if (R.trigger === 'termination') { trigger = term || vacate; deadline = addDays(trigger, claims ? R.claimDays : R.days); alt = claims ? { label: 'Tenant objection window closes', date: addDays(deadline, 15) } : { label: 'Claim-notice deadline if the landlord does claim', date: addDays(trigger, 30) }; }
       else if (R.trigger === 'later') { trigger = later(vacate, term); deadline = R.kind === 'month' ? monthClamp(trigger, R.days) : addDays(trigger, R.days); if (R.cap) alt = { label: 'Absolute cap with a lease extension (60 days)', date: addDays(trigger, R.cap) }; }
-      else if (R.trigger === 'laterDemand') { trigger = later(later(vacate, term), demand); deadline = biz(trigger, R.days); }
+      else if (R.trigger === 'laterDemand') { trigger = later(later(vacate, term), demand); deadline = R.kind === 'biz' ? biz(trigger, R.days) : addDays(trigger, R.days); }
       else { trigger = term || vacate; deadline = addDays(trigger, R.days); }
 
       $('out-deadline').textContent = fmt(deadline);
       const daysLeft = Math.round((p(deadline) - p(new Date().toISOString().slice(0, 10))) / MS);
       $('out-days').innerHTML = R.daysRule + (daysLeft >= 0 ? ' <em>(' + daysLeft + ' days from today)</em>' : ' <em>(' + (-daysLeft) + ' days ago)</em>');
-      $('out-trigger').textContent = fmt(trigger) + ' — ' + (R.trigger === 'vacate' ? 'the day tenants vacate' : R.trigger === 'termination' ? 'lease termination' : R.trigger === 'later' ? 'the later of termination / move-out' : R.trigger === 'laterDemand' ? 'the latest of termination / move-out / written demand' : 'the earlier applicable date');
+      $('out-trigger').textContent = fmt(trigger) + ' — ' + (R.trigger === 'vacate' ? 'the day tenants vacate' : R.trigger === 'termination' ? 'lease termination' : R.trigger === 'later' ? 'the later of termination / move-out' : R.trigger === 'laterDemand' ? 'the latest of termination / move-out / written demand' : 'lease termination (or move-out when no term applies)');
       if (alt) { $('out-alt-row').hidden = false; $('out-alt-label').textContent = alt.label; $('out-alt').textContent = fmt(alt.date); }
       else $('out-alt-row').hidden = true;
       $('out-penalty').innerHTML = '<strong>If the deadline slips:</strong> ' + R.penalty;

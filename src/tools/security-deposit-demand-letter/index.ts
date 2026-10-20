@@ -4,10 +4,14 @@ import { blank, buildLetter } from './engine';
 import type { Slug } from '../security-deposit-refund-calculator/engine';
 
 // 词形承接 R8 族（"security deposit demand letter / return letter / letter template"），
-// 法条数据复用 refund-calculator 十州引擎（534 strict/635 broad，2026-10-09 转正后词簇二期第 2 件）。
+// 法条数据复用 refund-calculator 24 州引擎（534 strict/635 broad，2026-10-09 转正后词簇二期第 2 件；
+// 二期 14 州 2026-10-20 逐州 statute 核对，见引擎头注）。
 const STATE_NAMES: Record<Slug, string> = {
   CA: 'California', NY: 'New York', TX: 'Texas', FL: 'Florida', WA: 'Washington',
   CO: 'Colorado', AZ: 'Arizona', WI: 'Wisconsin', AL: 'Alabama', PA: 'Pennsylvania',
+  IL: 'Illinois', MA: 'Massachusetts', NJ: 'New Jersey', CT: 'Connecticut', OH: 'Ohio',
+  MI: 'Michigan', IN: 'Indiana', MO: 'Missouri', GA: 'Georgia', NC: 'North Carolina',
+  SC: 'South Carolina', MN: 'Minnesota', MD: 'Maryland', VA: 'Virginia',
 };
 
 export default {
@@ -16,7 +20,7 @@ export default {
   name: 'Security Deposit Demand Letter Generator',
   tagline: 'A formal, printable demand letter with your state\'s legal deadline and statute citation filled in. No signup.',
   title: 'Security Deposit Demand Letter Template — Free Generator (State Deadlines Included)',
-  description: 'Generate a security deposit demand letter with your state\'s legal refund deadline and statute citation built in — 10 states verified against current statutes. Free, printable, no signup.',
+  description: 'Generate a security deposit demand letter with your state\'s legal refund deadline and statute citation built in — 24 states verified against current statutes. Free, printable, no signup.',
   result: { label: 'Amount to demand' },
   fields: [
     {
@@ -24,8 +28,8 @@ export default {
       options: (Object.keys(STATE_NAMES) as Slug[]).map((s) => ({ value: s, label: STATE_NAMES[s] })),
     },
     { id: 'vacate', label: 'Move-out date', kind: 'text', default: '2026-07-01', hint: 'YYYY-MM-DD — every state\'s clock starts here' },
-    { id: 'termination', label: 'Lease termination date (if different)', kind: 'text', default: '', hint: 'WA / CO / AL / PA take the later of the two' },
-    { id: 'demand', label: 'Your written demand date (Arizona)', kind: 'text', default: '', hint: 'Arizona\'s clock won\'t start until this' },
+    { id: 'termination', label: 'Lease termination date (if different)', kind: 'text', default: '', hint: 'WA / CO / AL / PA / OH / IN / GA / SC take the later of the two' },
+    { id: 'demand', label: 'Your written demand date (Arizona / South Carolina)', kind: 'text', default: '', hint: 'These states\' clocks won\'t start until this' },
     { id: 'letterDate', label: 'Letter date', kind: 'text', default: '2026-07-15' },
     { id: 'tenantName', label: 'Your name', kind: 'text', default: '', placeholder: 'Left blank prints a fill-in line' },
     { id: 'forwarding', label: 'Your forwarding address', kind: 'text', default: '', hint: 'Where the check must go — Texas ties the clock to it' },
@@ -125,6 +129,20 @@ export default {
         <tr><td>Wisconsin</td><td>21 days</td><td>No statutory penalty — small-claims 2× awards are common</td></tr>
         <tr><td>Alabama</td><td>60 days (not the 35 older guides print)</td><td>2× the entire deposit</td></tr>
         <tr><td>Pennsylvania</td><td>30 days</td><td>Forfeits withholding; 2× the wrongfully withheld amount</td></tr>
+        <tr><td>Illinois</td><td>45 days (30 before the 2024 amendment — statement due in 30)</td><td>2× the deposit plus fees</td></tr>
+        <tr><td>Massachusetts</td><td>30 days</td><td>3× damages plus fees — the harshest in the country</td></tr>
+        <tr><td>New Jersey</td><td>30 days</td><td>Court shall add 2× punitive damages plus costs</td></tr>
+        <tr><td>Connecticut</td><td>21 days (30 before the 2023 reform — or 15 days after your forwarding address, whichever is later)</td><td>2× the deposit plus fees</td></tr>
+        <tr><td>Ohio</td><td>30 days from termination and possession</td><td>The withheld amount plus an equal penalty plus fees</td></tr>
+        <tr><td>Michigan</td><td>30 days (dispute any itemized list within 7 days)</td><td>2× the deposit</td></tr>
+        <tr><td>Indiana</td><td>45 days from termination and possession</td><td>Full deposit plus attorney's fees</td></tr>
+        <tr><td>Missouri</td><td>30 days (deposit capped at 2 months' rent)</td><td>2× the amount withheld</td></tr>
+        <tr><td>Georgia</td><td>30 days from termination and possession</td><td>No statutory multiplier — but escrow and inspection rules are strictly enforced</td></tr>
+        <tr><td>North Carolina</td><td>30 days</td><td>Recovery of the wrongfully held deposit under the Tenant Security Deposit Act</td></tr>
+        <tr><td>South Carolina</td><td>30 days from the latest of termination, possession, or your written demand</td><td>Up to 3× the amount withheld plus fees</td></tr>
+        <tr><td>Minnesota</td><td>21 days after the tenancy ends and your forwarding address arrives</td><td>Interest keeps accruing while held</td></tr>
+        <tr><td>Maryland</td><td>45 days plus accrued interest</td><td>Up to 3× the amount withheld plus fees</td></tr>
+        <tr><td>Virginia</td><td>45 days (never longer, even by lease)</td><td>Willful withholding: actual damages or up to 2× the deposit</td></tr>
       </tbody>
     </table>
     <h3>What to put in the letter</h3>
@@ -150,7 +168,7 @@ export default {
     { q: 'When should I send a security deposit demand letter?', a: 'The day after your state\'s deadline passes — 14 days after move-out in New York, 21 in California and Wisconsin, 30 in Texas, Washington and Pennsylvania, 60 in Alabama, with Florida at 15 days (30 when deductions are claimed), Colorado at one calendar month, and Arizona at 14 business days that only start when you demand the deposit in writing. Sending a polite version a few days before the deadline also works and sometimes gets the check moving without any escalation.' },
     { q: 'What happens if my landlord ignores the demand letter?', a: 'You file in small-claims court with the letter as your first exhibit. The statutory penalties are the claim: Texas adds $100 plus 3× the wrongfully withheld amount plus attorney\'s fees, Colorado awards 3× the wrongfully withheld portion, Alabama 2× the entire deposit, and New York, Florida, Washington and Pennsylvania strip the landlord\'s right to withhold any of it once the deadline is missed.' },
     { q: 'Does a security deposit demand letter have to be sent by certified mail?', a: 'No statute requires it, but certified mail with return receipt is the cheap way to prove when the letter arrived — and in states like Texas where obligations hinge on the tenant\'s forwarding address, proof of delivery ends the "never got it" defense. Email a copy as a backup and keep the green card with your file copy.' },
-    { q: 'My state isn\'t listed — can I still use this?', a: 'Yes, with care: the generator only auto-fills deadlines for the ten states we verified against current statute text (an unverified deadline is worse than none — Washington\'s window changed from 21 to 30 days in 2023, and Alabama is 60, not the 35 many sites still print). For other states, HUD\'s tenant-rights page links each state\'s official resources; the letter structure stays the same.' },
+    { q: 'My state isn\'t listed — can I still use this?', a: 'Yes, with care: the generator only auto-fills deadlines for the twenty-four states we verified against current statute text (an unverified deadline is worse than none — Washington\'s window changed from 21 to 30 days in 2023, Connecticut\'s from 30 to 21 days in 2024, and Alabama is 60, not the 35 many sites still print). For other states, HUD\'s tenant-rights page links each state\'s official resources; the letter structure stays the same.' },
   ],
   related: ['security-deposit-refund-calculator', 'cleaning-estimate-calculator', 'work-order-generator'],
 } satisfies RegisteredTool;

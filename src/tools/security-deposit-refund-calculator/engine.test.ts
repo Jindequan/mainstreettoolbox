@@ -59,6 +59,52 @@ describe('security deposit deadline engine', () => {
     expect(computeDeadline('PA', { vacate: '2026-04-10', termination: '2026-04-30' }).deadline).toBe('2026-05-30');
   });
 
+  // ── 二期 14 州（2026-10-20 statute 核对批次）──
+  it('IL: +45 days (2024 amended value) with a separate 30-day statement deadline as alt', () => {
+    const r = computeDeadline('IL', { vacate: '2026-03-15' });
+    expect(r.deadline).toBe('2026-04-29');
+    expect(r.alt?.label).toContain('statement');
+    expect(r.alt?.date).toBe('2026-04-14');
+  });
+
+  it('MA: termination of tenancy +30', () => {
+    expect(computeDeadline('MA', { vacate: '2026-06-01', termination: '2026-05-20' }).deadline).toBe('2026-06-19');
+  });
+
+  it('NJ: lease termination +30', () => {
+    expect(computeDeadline('NJ', { vacate: '2026-02-10', termination: '2026-02-28' }).deadline).toBe('2026-03-30');
+  });
+
+  it('CT: 21 days under Public Act 23-207', () => {
+    expect(computeDeadline('CT', { vacate: '2026-07-01' }).deadline).toBe('2026-07-22');
+  });
+
+  it('OH: later of termination and possession +30', () => {
+    expect(computeDeadline('OH', { vacate: '2026-04-10', termination: '2026-04-30' }).deadline).toBe('2026-05-30');
+  });
+
+  it('IN: +45 days from the later trigger', () => {
+    expect(computeDeadline('IN', { vacate: '2026-01-15', termination: '2026-01-31' }).deadline).toBe('2026-03-17');
+  });
+
+  it('SC: demand moves the trigger like AZ — latest of three events', () => {
+    const r = computeDeadline('SC', { vacate: '2026-06-20', termination: '2026-06-25', demand: '2026-07-01' });
+    expect(r.triggerDate).toBe('2026-07-01');
+    expect(r.deadline).toBe('2026-07-31');
+  });
+
+  it('MN: +21 days from termination', () => {
+    expect(computeDeadline('MN', { vacate: '2026-05-31' }).deadline).toBe('2026-06-21');
+  });
+
+  it('MD and VA: +45 days — MD from end of tenancy (termination), VA from termination date', () => {
+    // MD「end of the tenancy」按租约终止日起算：termination 1-20 → +45 = 3-06
+    expect(computeDeadline('MD', { vacate: '2026-02-01', termination: '2026-01-20' }).deadline).toBe('2026-03-06');
+    // 无 termination 时回退 vacate：2-01 + 45 = 3-18
+    expect(computeDeadline('MD', { vacate: '2026-02-01' }).deadline).toBe('2026-03-18');
+    expect(computeDeadline('VA', { vacate: '2026-02-01' }).deadline).toBe('2026-03-18');
+  });
+
   it('helper: later() and addMonthsClamped() behave on edges', () => {
     expect(later('2026-01-01')).toBe('2026-01-01');
     expect(later('2026-01-01', '2026-03-01')).toBe('2026-03-01');
