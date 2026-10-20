@@ -269,3 +269,9 @@
 - **⛔ Gmail 软拦(重要发现)**:当日第 4-6 个邮箱目标(CleanGuru/Janitorial Store 等)多次尝试 Sent 全 0、零报错;对照实验(旧成功邮件可查)证明验证正常→**当日冷邮件量触发 Gmail 出站垃圾启发式,静默吞发**。处置:Gmail 冷邮件通道今日停,休整;表单通道(不经 Gmail)实测可用。
 - **流程资产(可复用)**:compose URL 参数预填→截图核验→cua 点 Send→**Sent to: 计数**;表单站=locator 填+DOM 直点 Submit+回执检查。未截图核验的点击失败率高。
 - **明日续**:20 人令未完部分转表单通道(ProfitCleaners 模式)+新邮箱目标(Grow My Cleaning 表单、NALP、更多州协会、procurement 媒体);回复计数另计。
+
+### 10-20 续:表单通道地形勘测(六连墙,全记录防重踩)
+- Grow My Cleaning /contact/ = 404;Janitorial Manager = reCAPTCHA+必填电话(轻触达不友好,跳过);RealGreen = 销售demo表单(公司名/人数/电话,填=假线索,跳过);ALCC = 会员登录墙;NALP = Cloudflare 硬拦(Ray a4d5fc68…);IGIN = 连接直接断。
+- **结构性结论:无账号冷触达的表单通道命中率低(约 1/7 可用)**,大多数行业站靠 WAF/登录/销售漏斗挡外联——这正是过去分发"第一次受阻就静默死亡"的地形真相。
+- **通道现状与解锁条件**:①Gmail 冷邮件=当日量触发软拦,**跨日自动恢复**(次日一早可烧剩余邮箱清单:Turf✓/IPLLA✓/Sardone✓已发,下一批=CleanGuru改站内表单/ServiceMonster已发/更多州协会邮箱)②目录/社区账号=老板拍板(AlternativeTo 等,一句话解锁永久外链)③LinkedIn/Instagram=需登录态。
+- 今日触达计数不变:6 验证(4 邮件+1 表单+昨日 Jeffrey Scott 复核 1)。
