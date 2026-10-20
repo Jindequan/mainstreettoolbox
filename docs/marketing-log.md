@@ -257,3 +257,8 @@
 - 处置:Ko-fi 降级「在架不动」(13 商品保留,零追加投入,退出判据日历);kofi_cta_click 归因 GA4 读数未完成(IAB/GA4 不稳),留作注脚不挡判决。
 - 收入记分牌:收入事件仍 0。唯一活路径=concierge 直销:outbox 触达 8/9(UNITS 待 LinkedIn/换网),10-22 Brian 上稿查证,10-23 四老线程 day-14 bump。
 - 状态文件已回写(检查点日历 10-20 行)。
+
+### 10-20 下午:无账号冷触达首批 2 发(1 成 1 堵)
+- **✅ Jeffrey Scott(lawn 顾问/资源中心)** Sent 实证 1 封。**死规矩首战生效:首击静默失败被 Sent 查验(0)拦住,重试后 1,无双发。** 流程定版:compose URL 预填→截图核验→cua 点 Send(91,1271)→**Sent to: 搜索计数**;点击前无截图核验=禁止。
+- **⛔ Fullerton 播客**:Gmail 三击全静默拒(对照实验排除验证失效)→转 Instagram DM 通道待登录态。
+- 触达计数(新版主指标):今日真人触达 1(完成)+1(受阻转通道);累计在飞线程:AGRR/GIP/Brian/CMM/Jeffrey Scott=5,MST 九线程+新触达=待回音清单见 outbox。
