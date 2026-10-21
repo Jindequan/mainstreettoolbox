@@ -12,6 +12,11 @@ const STATE_NAMES: Record<Slug, string> = {
   IL: 'Illinois', MA: 'Massachusetts', NJ: 'New Jersey', CT: 'Connecticut', OH: 'Ohio',
   MI: 'Michigan', IN: 'Indiana', MO: 'Missouri', GA: 'Georgia', NC: 'North Carolina',
   SC: 'South Carolina', MN: 'Minnesota', MD: 'Maryland', VA: 'Virginia',
+  ID: 'Idaho', MT: 'Montana', NE: 'Nebraska', IA: 'Iowa', KS: 'Kansas',
+  NV: 'Nevada', UT: 'Utah', OR: 'Oregon', NM: 'New Mexico', ND: 'North Dakota',
+  SD: 'South Dakota', OK: 'Oklahoma', AR: 'Arkansas', LA: 'Louisiana', MS: 'Mississippi',
+  ME: 'Maine', NH: 'New Hampshire', RI: 'Rhode Island', VT: 'Vermont', DE: 'Delaware',
+  WV: 'West Virginia', AK: 'Alaska', HI: 'Hawaii', DC: 'District of Columbia',
 };
 
 export default {
@@ -20,7 +25,7 @@ export default {
   name: 'Security Deposit Demand Letter Generator',
   tagline: 'A formal, printable demand letter with your state\'s legal deadline and statute citation filled in. No signup.',
   title: 'Security Deposit Demand Letter Template — Free Generator (State Deadlines Included)',
-  description: 'Generate a security deposit demand letter with your state\'s legal refund deadline and statute citation built in — 24 states verified against current statutes. Free, printable, no signup.',
+  description: 'Generate a security deposit demand letter with your state\'s legal refund deadline and statute citation built in — 48 states verified against current statutes. Free, printable, no signup.',
   result: { label: 'Amount to demand' },
   fields: [
     {
@@ -143,6 +148,30 @@ export default {
         <tr><td>Minnesota</td><td>21 days after the tenancy ends and your forwarding address arrives</td><td>Interest keeps accruing while held</td></tr>
         <tr><td>Maryland</td><td>45 days plus accrued interest</td><td>Up to 3× the amount withheld plus fees</td></tr>
         <tr><td>Virginia</td><td>45 days (never longer, even by lease)</td><td>Willful withholding: actual damages or up to 2× the deposit</td></tr>
+        <tr><td>Idaho</td><td>21 days (lease may set longer, never past 30)</td><td>No statutory multiplier</td></tr>
+        <tr><td>Montana</td><td>30 days (10 days when nothing is deducted)</td><td>Treble damages for bad-faith retention</td></tr>
+        <tr><td>Nebraska</td><td>14 days</td><td>Additional damages for bad-faith retention</td></tr>
+        <tr><td>Iowa</td><td>30 days</td><td>Punitive damages up to 2× the monthly rent</td></tr>
+        <tr><td>Kansas</td><td>14 days after deductions are set — never past 30 days</td><td>No statutory multiplier</td></tr>
+        <tr><td>Nevada</td><td>30 days</td><td>Deposit plus damages</td></tr>
+        <tr><td>Utah</td><td>30 days (or 15 days after your forwarding address, whichever is later)</td><td>Entire deposit plus statutory penalties</td></tr>
+        <tr><td>Oregon</td><td>31 days</td><td>No statutory multiplier</td></tr>
+        <tr><td>New Mexico</td><td>30 days</td><td>Forfeits withholding plus a $250 civil penalty for bad faith</td></tr>
+        <tr><td>North Dakota</td><td>30 days</td><td>No statutory multiplier</td></tr>
+        <tr><td>South Dakota</td><td>14 days (45 days when repair estimates are needed)</td><td>No statutory multiplier</td></tr>
+        <tr><td>Oklahoma</td><td>45 days for deposits over $125 (30 days at or under $125); request within 6 months</td><td>No statutory multiplier</td></tr>
+        <tr><td>Arkansas</td><td>60 days (statewide statute only since 2021)</td><td>No statutory multiplier</td></tr>
+        <tr><td>Louisiana</td><td>One calendar month</td><td>No statutory multiplier</td></tr>
+        <tr><td>Mississippi</td><td>45 days</td><td>No statutory multiplier</td></tr>
+        <tr><td>Maine</td><td>21 days for tenancies at will (written leases set their own)</td><td>No statutory multiplier</td></tr>
+        <tr><td>New Hampshire</td><td>30 days plus interest</td><td>Willful failure: 2× the deposit or $1,000, whichever is less</td></tr>
+        <tr><td>Rhode Island</td><td>20 days from the latest of termination, possession, or your forwarding address</td><td>No statutory multiplier</td></tr>
+        <tr><td>Vermont</td><td>14 days from when the landlord learns you left</td><td>Up to 2× the wrongfully withheld amount</td></tr>
+        <tr><td>Delaware</td><td>20 days</td><td>No statutory multiplier</td></tr>
+        <tr><td>West Virginia</td><td>60 days (45 without a forwarding address)</td><td>No statutory multiplier</td></tr>
+        <tr><td>Alaska</td><td>14 days (30 when deductions are claimed)</td><td>No statutory multiplier</td></tr>
+        <tr><td>Hawaii</td><td>14 days</td><td>No statutory multiplier</td></tr>
+        <tr><td>District of Columbia</td><td>45 days plus interest</td><td>Withholding without written itemization is forfeited</td></tr>
       </tbody>
     </table>
     <h3>What to put in the letter</h3>
@@ -168,7 +197,7 @@ export default {
     { q: 'When should I send a security deposit demand letter?', a: 'The day after your state\'s deadline passes — 14 days after move-out in New York, 21 in California and Wisconsin, 30 in Texas, Washington and Pennsylvania, 60 in Alabama, with Florida at 15 days (30 when deductions are claimed), Colorado at one calendar month, and Arizona at 14 business days that only start when you demand the deposit in writing. Sending a polite version a few days before the deadline also works and sometimes gets the check moving without any escalation.' },
     { q: 'What happens if my landlord ignores the demand letter?', a: 'You file in small-claims court with the letter as your first exhibit. The statutory penalties are the claim: Texas adds $100 plus 3× the wrongfully withheld amount plus attorney\'s fees, Colorado awards 3× the wrongfully withheld portion, Alabama 2× the entire deposit, and New York, Florida, Washington and Pennsylvania strip the landlord\'s right to withhold any of it once the deadline is missed.' },
     { q: 'Does a security deposit demand letter have to be sent by certified mail?', a: 'No statute requires it, but certified mail with return receipt is the cheap way to prove when the letter arrived — and in states like Texas where obligations hinge on the tenant\'s forwarding address, proof of delivery ends the "never got it" defense. Email a copy as a backup and keep the green card with your file copy.' },
-    { q: 'My state isn\'t listed — can I still use this?', a: 'Yes, with care: the generator only auto-fills deadlines for the twenty-four states we verified against current statute text (an unverified deadline is worse than none — Washington\'s window changed from 21 to 30 days in 2023, Connecticut\'s from 30 to 21 days in 2024, and Alabama is 60, not the 35 many sites still print). For other states, HUD\'s tenant-rights page links each state\'s official resources; the letter structure stays the same.' },
+    { q: 'My state isn\'t listed — can I still use this?', a: 'Possibly — 48 states plus the District of Columbia are in the generator, verified against current statute text (an unverified deadline is worse than none — Washington\'s window changed from 21 to 30 days in 2023, Connecticut\'s from 30 to 21 days in 2024, and Alabama is 60, not the 35 many sites still print). Only Kentucky, Tennessee and Wyoming have no statutory return deadline — there the lease terms govern, and HUD\'s tenant-rights page links each state\'s official resources; the letter structure stays the same.' },
   ],
   related: ['security-deposit-refund-calculator', 'cleaning-estimate-calculator', 'work-order-generator'],
 } satisfies RegisteredTool;

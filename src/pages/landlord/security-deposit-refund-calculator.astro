@@ -2,9 +2,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 // Bespoke 页：引擎与 src/tools/security-deposit-refund-calculator/engine.ts 同款数学（内联 JS 副本）。
-// 24 州数据全部来自 docs/benchmarks-security-deposit-refund.md（statute 现行文本，2026-10-13 复核 CO/FL/AZ，
-// 2026-10-20 二批核对 IL/MA/NJ/CT/OH/MI/IN/MO/GA/NC/SC/MN/MD/VA —— 二期 14 州记录见该文档）。
-const REVIEWED = 'October 13–20, 2026';
+// 48 州数据全部来自 docs/benchmarks-security-deposit-refund.md（statute 现行文本，2026-10-13 复核 CO/FL/AZ，
+// 2026-10-20 二批 14 州，2026-10-21 三批 24 辖区——记录见该文档；KY/TN/WY 无成文期限，缓办）。
+const REVIEWED = 'October 13–21, 2026';
 const states = [
   { code: 'CA', name: 'California', days: '21 calendar days', trigger: 'Move-out (vacate)', cite: 'Cal. Civ. Code §1950.5' },
   { code: 'NY', name: 'New York', days: '14 calendar days', trigger: 'Move-out (vacate)', cite: 'N.Y. GOL §7-108(1-a)' },
@@ -30,6 +30,30 @@ const states = [
   { code: 'MN', name: 'Minnesota', days: '21 calendar days', trigger: 'Tenancy end plus forwarding address', cite: 'Minn. Stat. §504B.178' },
   { code: 'MD', name: 'Maryland', days: '45 calendar days plus interest', trigger: 'End of tenancy', cite: 'Md. Code, Real Prop. §8-203' },
   { code: 'VA', name: 'Virginia', days: '45 calendar days', trigger: 'Lease termination', cite: 'Va. Code §55.1-1226' },
+  { code: 'ID', name: 'Idaho', days: '21 calendar days (lease may set longer, never past 30)', trigger: 'Surrender (move-out)', cite: 'Idaho Code §6-321' },
+  { code: 'MT', name: 'Montana', days: '30 calendar days (10 days when nothing is deducted)', trigger: 'Move-out (vacate)', cite: 'Mont. Code Ann. §70-25-202/206' },
+  { code: 'NE', name: 'Nebraska', days: '14 calendar days', trigger: 'Termination with demand or payment location', cite: 'Neb. Rev. Stat. §76-1416' },
+  { code: 'IA', name: 'Iowa', days: '30 calendar days', trigger: 'Later of termination and possession', cite: 'Iowa Code §562A.12' },
+  { code: 'KS', name: 'Kansas', days: '14 days after deductions are set — never past 30 days', trigger: 'Termination with possession or forwarding address', cite: 'K.S.A. §58-2550' },
+  { code: 'NV', name: 'Nevada', days: '30 calendar days', trigger: 'End of tenancy', cite: 'NRS §118A.242' },
+  { code: 'UT', name: 'Utah', days: '30 calendar days — or 15 days after your forwarding address, whichever is later', trigger: 'Vacate and possession', cite: 'Utah Code §57-17-3' },
+  { code: 'OR', name: 'Oregon', days: '31 calendar days', trigger: 'Later of termination and possession', cite: 'ORS §90.300' },
+  { code: 'NM', name: 'New Mexico', days: '30 calendar days', trigger: 'Lease termination', cite: 'NMSA §47-8-18' },
+  { code: 'ND', name: 'North Dakota', days: '30 calendar days', trigger: 'Move-out (vacate)', cite: 'N.D. Cent. Code §47-16-07.1' },
+  { code: 'SD', name: 'South Dakota', days: '14 days after termination and forwarding address (45 days when estimates are needed)', trigger: 'Termination and forwarding address', cite: 'S.D. Codified Laws §43-32-24' },
+  { code: 'OK', name: 'Oklahoma', days: '45 calendar days (30 for deposits under $125); request within 6 months', trigger: 'Termination and forwarding address', cite: '41 O.S. §115' },
+  { code: 'AR', name: 'Arkansas', days: '60 calendar days', trigger: 'Move-out (vacate)', cite: 'A.C.A. §18-16-305' },
+  { code: 'LA', name: 'Louisiana', days: 'One calendar month', trigger: 'Lease termination', cite: 'La. Rev. Stat. §9:3251' },
+  { code: 'MS', name: 'Mississippi', days: '45 calendar days', trigger: 'Later of end of tenancy and possession', cite: 'Miss. Code §89-8-21' },
+  { code: 'ME', name: 'Maine', days: '21 calendar days (tenancies at will; written leases set their own)', trigger: 'Later of termination or surrender', cite: '14 M.R.S. §6033' },
+  { code: 'NH', name: 'New Hampshire', days: '30 calendar days plus interest (20 extra days to itemize)', trigger: 'Termination of tenancy', cite: 'N.H. RSA 540-A' },
+  { code: 'RI', name: 'Rhode Island', days: '20 calendar days', trigger: 'Latest of termination, possession, or forwarding address', cite: 'R.I. Gen. Laws §34-18-19' },
+  { code: 'VT', name: 'Vermont', days: '14 calendar days (60 for seasonal rentals)', trigger: 'When the landlord learns you left', cite: '9 V.S.A. §4461' },
+  { code: 'DE', name: 'Delaware', days: '20 calendar days', trigger: 'Later of lease termination and vacating', cite: '25 Del. C. §5514' },
+  { code: 'WV', name: 'West Virginia', days: '60 calendar days (45 without a forwarding address)', trigger: 'Termination of tenancy', cite: 'W. Va. Code §37-6A-1' },
+  { code: 'AK', name: 'Alaska', days: '14 calendar days (30 when deductions are claimed)', trigger: 'Surrender and vacate', cite: 'Alaska Stat. §34.03.070' },
+  { code: 'HI', name: 'Hawaii', days: '14 calendar days', trigger: 'Later of termination or surrender', cite: 'HRS §521-44' },
+  { code: 'DC', name: 'District of Columbia', days: '45 calendar days plus interest', trigger: 'Termination of tenancy', cite: 'D.C. Code §42-3502.17' },
 ];
 ---
 <BaseLayout
@@ -114,13 +138,13 @@ const states = [
   </main>
 
   <section class="container">
-    <h2>The deadline in all 24 verified states</h2>
+    <h2>The deadline in all 48 verified states</h2>
     <p class="section-sub">
       We publish only deadlines checked against the current statute text — several popular guides still
       carry outdated numbers (Washington's 21 days became 30 in 2023, Connecticut's 30 became 21 under the
       2023 reform act, Illinois's 30 became 45 in 2024, and Alabama is 60 days, not the 35 many
-      sites print). States outside this table are on the verification roadmap;
-      meanwhile <a href="https://www.hud.gov/topics/rental_assistance/tenantrights" target="_blank" rel="noopener">HUD's tenant-rights portal</a>
+      sites print). Kentucky, Tennessee and Wyoming have no statutory return deadline — there the lease
+      terms govern. Meanwhile <a href="https://www.hud.gov/topics/rental_assistance/tenantrights" target="_blank" rel="noopener">HUD's tenant-rights portal</a>
       links each state's official resources, and
       <a href="https://www.usa.gov/state-consumer" target="_blank" rel="noopener">USA.gov</a> lists every state consumer-protection office for complaints.
     </p>
@@ -202,7 +226,7 @@ const states = [
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Any',
       url: 'https://mainstreettoolbox.com/landlord/security-deposit-refund-calculator/',
-      description: 'Computes the legal security-deposit refund deadline from state statute: trigger date, calendar/business-day rules, itemized-statement duty, and the penalty for missing it across 24 statute-verified states.',
+      description: 'Computes the legal security-deposit refund deadline from state statute: trigger date, calendar/business-day rules, itemized-statement duty, and the penalty for missing it across 48 statute-verified states.',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     })} />
   </section>
@@ -294,6 +318,81 @@ const states = [
       VA: { name: 'Virginia', days: 45, kind: 'cal', trigger: 'termElseVacate', daysRule: '45 calendar days after lease termination. (Deposits are capped at two months\' periodic rent.)', statute: 'Va. Code §55.1-1226', url: 'https://law.lis.virginia.gov/vacode/title55.1/chapter12/section55.1-1226',
         statement: 'Written itemized notice of damages due with the refund; tenants owe the landlord written notice of their forwarding address.',
         penalty: 'Willful failure to comply or wrongful withholding = the tenant recovers the deposit plus actual damages, or up to 2× the deposit. No interest is required.' },
+      ID: { name: 'Idaho', days: 21, kind: 'cal', trigger: 'vacate', daysRule: '21 calendar days after surrender unless the rental agreement fixes a different period — in any event never more than 30 days.', statute: 'Idaho Code §6-321', url: 'https://legislature.idaho.gov/statutesrules/idstat/title6/t6ch3/sect6-321',
+        statement: 'Refund or the balance plus an itemized statement of deductions due inside the window.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.',
+        altDays: 30, altLabel: 'Absolute cap when the lease sets a longer period (30 days)' },
+      MT: { name: 'Montana', days: 30, kind: 'cal', trigger: 'vacate', daysRule: '30 calendar days to refund with an itemized list of damages. When nothing is owed, the full deposit goes back within 10 days.', statute: 'Mont. Code Ann. §70-25-202 / §70-25-206', url: 'https://mca.legmt.gov/bills/mca/title_0700/chapter_0250/part_0020/section_0020/0700-0250-0020-0020.html',
+        statement: 'Written itemized list of damages due with the refund inside the 30 days.',
+        penalty: 'Bad-faith retention can expose the landlord to treble (3×) damages.',
+        altDays: 10, altLabel: 'Fast track when nothing is deducted (10 days)' },
+      NE: { name: 'Nebraska', days: 14, kind: 'cal', trigger: 'termElseVacate', daysRule: '14 calendar days after termination (with your demand or a payment location provided) to refund or send an itemized accounting. (Deposits are generally capped at one month\'s rent.)', statute: 'Neb. Rev. Stat. §76-1416', url: 'https://nebraskalegislature.gov/laws/statutes.php?statute=76-1416',
+        statement: 'Itemized accounting of deductions due inside the same 14 days.',
+        penalty: 'Bad-faith retention can trigger additional damages beyond the deposit.' },
+      IA: { name: 'Iowa', days: 30, kind: 'cal', trigger: 'later', daysRule: '30 calendar days after the later of termination and delivery of possession.', statute: 'Iowa Code §562A.12', url: 'https://www.legis.iowa.gov/docs/ico/chapter/562a.pdf',
+        statement: 'Written itemized statement due with the refund.',
+        penalty: 'Failure to comply can expose the landlord to punitive damages of up to 2× the monthly rent.' },
+      KS: { name: 'Kansas', days: 30, kind: 'cal', trigger: 'termElseVacate', daysRule: 'Never more than 30 days after termination and possession/forwarding address: once the landlord determines deductions, the balance is due within 14 days. (Caps: 1 month unfurnished, 1.5 furnished.)', statute: 'K.S.A. §58-2550', url: 'https://ksrevisor.gov/statutes/chapters/ch58/058_025_0050.html',
+        statement: 'Itemized deductions due when the balance is returned inside the 30-day outer limit.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.' },
+      NV: { name: 'Nevada', days: 30, kind: 'cal', trigger: 'termElseVacate', daysRule: '30 calendar days after the end of the tenancy.', statute: 'NRS §118A.242', url: 'https://www.leg.state.nv.us/nrs/nrs-118a.html',
+        statement: 'Written itemized accounting of deductions due with the balance.',
+        penalty: 'Failure to return the remainder within 30 days makes the landlord liable for the deposit plus damages.' },
+      UT: { name: 'Utah', days: 30, kind: 'cal', trigger: 'vacate', daysRule: '30 calendar days after you vacate — or within 15 days after the landlord receives your forwarding address, whichever is later.', statute: 'Utah Code §57-17-3', url: 'https://le.utah.gov/xcode/Title57/Chapter17/57-17-S3.html',
+        statement: 'Refund or a written itemized statement due inside the window.',
+        penalty: 'Failure requires refunding the entire deposit plus statutory penalties.' },
+      OR: { name: 'Oregon', days: 31, kind: 'cal', trigger: 'later', daysRule: '31 calendar days after the later of termination and delivery of possession. (A 4-day rule applies when the landlord terminates for cause.)', statute: 'ORS §90.300', url: 'https://oregon.public.law/statutes/ors_90.300',
+        statement: 'Written accounting for any withheld amount due inside the 31 days.',
+        penalty: 'The statute sets no deadline multiplier — disputes run through ordinary claims.' },
+      NM: { name: 'New Mexico', days: 30, kind: 'cal', trigger: 'termElseVacate', daysRule: '30 calendar days after lease termination.', statute: 'NMSA §47-8-18', url: 'https://law.justia.com/codes/new-mexico/chapter-47/article-8/section-47-8-18/',
+        statement: 'Itemized accounting due with any withheld-balance refund.',
+        penalty: 'Wrongful retention forfeits the right to withhold any amount and adds a $250 civil penalty for bad faith.' },
+      ND: { name: 'North Dakota', days: 30, kind: 'cal', trigger: 'vacate', daysRule: '30 calendar days after you vacate. (Caps: 1 month\'s rent unfurnished, 1.5 furnished.)', statute: 'N.D. Cent. Code §47-16-07.1', url: 'https://codes.findlaw.com/nd/title-47-property/nd-cent-code-sect-47-16-07-1.html',
+        statement: 'Itemized deductions due with the balance inside the 30 days.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.' },
+      SD: { name: 'South Dakota', days: 14, kind: 'cal', trigger: 'termElseVacate', daysRule: '14 days (two weeks) after termination and receipt of your forwarding address. Cleanup/repair estimates can extend the itemization to 45 days.', statute: 'S.D. Codified Laws §43-32-24', url: 'https://sdlegislature.gov/Statutes/Codified_Laws/2045459',
+        statement: 'Itemized list of damages due with the refund; up to 45 days when costs need estimating.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.' },
+      OK: { name: 'Oklahoma', days: 45, kind: 'cal', trigger: 'termElseVacate', daysRule: '45 calendar days for deposits over $125 (30 days for deposits of $125 or less) after termination and forwarding address. You must request the return within 6 months.', statute: '41 O.S. §115', url: 'https://law.justia.com/codes/oklahoma/title-41/section-41-115/',
+        statement: 'Itemized accounting of deductions due with the refund.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.' },
+      AR: { name: 'Arkansas', days: 60, kind: 'cal', trigger: 'vacate', daysRule: '60 calendar days after you vacate (the statewide deadline statute dates from 2021 — before that Arkansas had no fixed rule).', statute: 'A.C.A. §18-16-305', url: 'https://www.arkleg.state.ar.us',
+        statement: 'Itemized deduction list due with the refund inside the 60 days.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.' },
+      LA: { name: 'Louisiana', days: 1, kind: 'month', trigger: 'termElseVacate', daysRule: 'One calendar month after termination of the lease.', statute: 'La. Rev. Stat. §9:3251', url: 'https://www.legis.la.gov/legis/Law.aspx?d=79246',
+        statement: 'Itemized damages statement due with the refund balance inside the month.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.' },
+      MS: { name: 'Mississippi', days: 45, kind: 'cal', trigger: 'later', daysRule: '45 calendar days after the later of the end of tenancy and delivery of possession.', statute: 'Miss. Code §89-8-21', url: 'https://law.justia.com/codes/mississippi/title-89/chapter-8/article-3/section-89-8-21/',
+        statement: 'Written itemization of deductions due with the balance.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.' },
+      ME: { name: 'Maine', days: 21, kind: 'cal', trigger: 'later', daysRule: '21 calendar days for tenancies at will; a written lease sets its own period (commonly 30 days).', statute: '14 M.R.S. §6033', url: 'https://legislature.maine.gov/statutes/14/title14sec6033.html',
+        statement: 'Itemized written statement of deductions due with the refund.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.' },
+      NH: { name: 'New Hampshire', days: 30, kind: 'cal', trigger: 'termElseVacate', daysRule: '30 calendar days from termination, with any interest due. The landlord gets up to 20 additional days to itemize damages after sending a written statement.', statute: 'N.H. RSA 540-A', url: 'https://gc.nh.gov/rsa/html/LV/540-A/540-A-mrg.htm',
+        statement: 'Written itemization of damages due with the refund (with the 20-day extension where damages need estimating).',
+        penalty: 'Willful non-compliance can cost the landlord 2× the deposit or $1,000, whichever is less, plus damages.' },
+      RI: { name: 'Rhode Island', days: 20, kind: 'cal', trigger: 'later', daysRule: '20 calendar days from the later of termination, delivery of possession, or receipt of your forwarding address. (Deposits capped at one month\'s rent.)', statute: 'R.I. Gen. Laws §34-18-19', url: 'https://webserver.rilegislature.gov/statutes/title34/34-18/34-18-19.HTM',
+        statement: 'Itemized deductions due with the refund inside the 20 days.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.' },
+      VT: { name: 'Vermont', days: 14, kind: 'cal', trigger: 'vacate', daysRule: '14 calendar days from the landlord learning you left. (Seasonal rentals run on 60 days.)', statute: '9 V.S.A. §4461', url: 'https://legislature.vermont.gov/statutes/section/09/137/04461',
+        statement: 'Refund plus a written statement due inside the 14 days.',
+        penalty: 'Wrongful withholding can cost the landlord up to 2× the wrongfully withheld amount.' },
+      DE: { name: 'Delaware', days: 20, kind: 'cal', trigger: 'later', daysRule: '20 calendar days after the later of lease termination and your vacating. After a year of tenancy, any deposit over one month\'s rent must be returned as a credit immediately.', statute: '25 Del. C. §5514', url: 'https://delcode.delaware.gov/title25/c055/index.html',
+        statement: 'Itemized statement due with the refund inside the 20 days.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.' },
+      WV: { name: 'West Virginia', days: 60, kind: 'cal', trigger: 'termElseVacate', daysRule: '60 calendar days after termination when a forwarding address was provided (45 days when it was not); the landlord gets 15 additional days to itemize once notice is given.', statute: 'W. Va. Code §37-6A-1', url: 'https://code.wvlegislature.gov/37-6A-1',
+        statement: 'Itemized written notice of deductions due inside the window.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.' },
+      AK: { name: 'Alaska', days: 14, kind: 'cal', trigger: 'vacate', daysRule: '14 calendar days after surrender — extended to 30 days when the landlord has good cause to deduct for damages or unpaid rent.', statute: 'Alaska Stat. §34.03.070', url: 'https://codes.findlaw.com/ak/title-34-property/ak-st-sect-34-03-070/',
+        statement: 'Itemized deductions due with the refund inside the applicable window.',
+        penalty: 'The statute sets no multiplier — disputes run through ordinary claims.',
+        altDays: 30, altLabel: 'Extended window when the landlord claims deductions (30 days)' },
+      HI: { name: 'Hawaii', days: 14, kind: 'cal', trigger: 'later', daysRule: '14 calendar days after the later of termination of the rental agreement or surrender of the unit. (Deposits capped at one month\'s rent, plus a separate pet deposit.)', statute: 'HRS §521-44', url: 'https://law.justia.com/codes/hawaii/title-28/chapter-521/section-521-44/',
+        statement: 'Itemized list of deductions due with the refund inside the 14 days.',
+        penalty: 'The statute sets no deadline multiplier — disputes run through ordinary claims.' },
+      DC: { name: 'District of Columbia', days: 45, kind: 'cal', trigger: 'termElseVacate', daysRule: '45 calendar days after termination to return the unused portion with interest.', statute: 'D.C. Code §42-3502.17–.18', url: 'https://code.dccouncil.gov/us/dc/council/code/sections/42-3502.17',
+        statement: 'Written notice of deductions with an itemized list due inside the 45 days.',
+        penalty: 'Claiming deductions without the required written itemization forfeits the right to withhold.' },
     };
 
     const $ = (id) => document.getElementById(id);
@@ -312,9 +411,9 @@ const states = [
 
       let trigger, deadline, alt = null;
       const claims = code === 'FL' && $('claim').value === 'yes';
-      if (R.trigger === 'vacate') { trigger = vacate; deadline = addDays(vacate, R.days); }
+      if (R.trigger === 'vacate') { trigger = vacate; deadline = addDays(vacate, R.days); if (R.altDays) alt = { label: R.altLabel, date: addDays(vacate, R.altDays) }; }
       else if (R.trigger === 'termination') { trigger = term || vacate; deadline = addDays(trigger, claims ? R.claimDays : R.days); alt = claims ? { label: 'Tenant objection window closes', date: addDays(deadline, 15) } : { label: 'Claim-notice deadline if the landlord does claim', date: addDays(trigger, 30) }; }
-      else if (R.trigger === 'later') { trigger = later(vacate, term); deadline = R.kind === 'month' ? monthClamp(trigger, R.days) : addDays(trigger, R.days); if (R.cap) alt = { label: 'Absolute cap with a lease extension (60 days)', date: addDays(trigger, R.cap) }; }
+      else if (R.trigger === 'later') { trigger = later(vacate, term); deadline = R.kind === 'month' ? monthClamp(trigger, R.days) : addDays(trigger, R.days); if (R.cap) alt = { label: 'Absolute cap with a lease extension (60 days)', date: addDays(trigger, R.cap) }; else if (R.altDays) alt = { label: R.altLabel, date: addDays(trigger, R.altDays) }; }
       else if (R.trigger === 'laterDemand') { trigger = later(later(vacate, term), demand); deadline = R.kind === 'biz' ? biz(trigger, R.days) : addDays(trigger, R.days); }
       else { trigger = term || vacate; deadline = addDays(trigger, R.days); }
 

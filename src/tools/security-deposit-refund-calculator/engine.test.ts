@@ -105,6 +105,47 @@ describe('security deposit deadline engine', () => {
     expect(computeDeadline('VA', { vacate: '2026-02-01' }).deadline).toBe('2026-03-18');
   });
 
+  // ── 三期 24 辖区（2026-10-21 statute 核对批次）──
+  it('ID: +21 days with a 30-day lease-extension cap as alt', () => {
+    const r = computeDeadline('ID', { vacate: '2026-07-01' });
+    expect(r.deadline).toBe('2026-07-22');
+    expect(r.alt?.date).toBe('2026-07-31');
+  });
+
+  it('MT: +30 days with a 10-day no-deduction fast track as alt', () => {
+    const r = computeDeadline('MT', { vacate: '2026-07-01' });
+    expect(r.deadline).toBe('2026-07-31');
+    expect(r.alt?.label).toContain('Fast track');
+    expect(r.alt?.date).toBe('2026-07-11');
+  });
+
+  it('NE: +14 days — the shortest fixed deadline in the set', () => {
+    expect(computeDeadline('NE', { vacate: '2026-06-10', termination: '2026-05-31' }).deadline).toBe('2026-06-14');
+  });
+
+  it('KS: outer limit +30 days from termination', () => {
+    expect(computeDeadline('KS', { vacate: '2026-04-01', termination: '2026-04-15' }).deadline).toBe('2026-05-15');
+  });
+
+  it('LA: one calendar month clamped (Jan 31 → Feb 28), from lease termination', () => {
+    // LA 触发=租约终止日（termElseVacate）：termination 1-15 → 2-15
+    expect(computeDeadline('LA', { vacate: '2026-01-31', termination: '2026-01-15' }).deadline).toBe('2026-02-15');
+    // 无 termination 回退 vacate：1-31 进位钳到 2-28
+    expect(computeDeadline('LA', { vacate: '2026-01-31' }).deadline).toBe('2026-02-28');
+  });
+
+  it('RI: +20 days from the later trigger', () => {
+    expect(computeDeadline('RI', { vacate: '2026-03-20', termination: '2026-03-31' }).deadline).toBe('2026-04-20');
+  });
+
+  it('DC: +45 days from termination', () => {
+    expect(computeDeadline('DC', { vacate: '2026-05-01' }).deadline).toBe('2026-06-15');
+  });
+
+  it('OR: +31 days (not 30) from the later trigger', () => {
+    expect(computeDeadline('OR', { vacate: '2026-08-01' }).deadline).toBe('2026-09-01');
+  });
+
   it('helper: later() and addMonthsClamped() behave on edges', () => {
     expect(later('2026-01-01')).toBe('2026-01-01');
     expect(later('2026-01-01', '2026-03-01')).toBe('2026-03-01');

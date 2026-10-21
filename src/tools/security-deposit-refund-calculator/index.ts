@@ -30,11 +30,10 @@ const config = {
   explain: `
     <p>Every state sets its own clock for returning a residential security deposit after move-out —
     and the clocks start on different events, count different kinds of days, and carry very different
-    penalties. This calculator reads the current statute for twenty-four verified states (California,
-    Texas, Florida, New York, Pennsylvania, Washington, Colorado, Arizona, Wisconsin, Alabama, Illinois,
-    Massachusetts, New Jersey, Connecticut, Ohio, Michigan, Indiana, Missouri, Georgia, North Carolina,
-    South Carolina, Minnesota, Maryland, Virginia), each reviewed against the official statute text with
-    the citation and review date shown on the result.</p>
+    penalties. This calculator reads the current statute for 48 verified states plus the District of
+    Columbia (every state except Kentucky, Tennessee and Wyoming, which set no statutory return deadline —
+    the lease governs there), each reviewed against the official statute text with the citation and
+    review date shown on the result.</p>
     <p>Two things the engine deliberately does not do: it does not guess deadlines for states still on
     our verification roadmap (an unverified deadline is worse than none), and it does not compute
     interest — only a handful of states require it and the rules are conditional (Florida's applies
