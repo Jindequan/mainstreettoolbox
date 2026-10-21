@@ -275,3 +275,8 @@
 - **结构性结论:无账号冷触达的表单通道命中率低(约 1/7 可用)**,大多数行业站靠 WAF/登录/销售漏斗挡外联——这正是过去分发"第一次受阻就静默死亡"的地形真相。
 - **通道现状与解锁条件**:①Gmail 冷邮件=当日量触发软拦,**跨日自动恢复**(次日一早可烧剩余邮箱清单:Turf✓/IPLLA✓/Sardone✓已发,下一批=CleanGuru改站内表单/ServiceMonster已发/更多州协会邮箱)②目录/社区账号=老板拍板(AlternativeTo 等,一句话解锁永久外链)③LinkedIn/Instagram=需登录态。
 - 今日触达计数不变:6 验证(4 邮件+1 表单+昨日 Jeffrey Scott 复核 1)。
+
+### 10-21 早:巡检轮(当天首跑,9 点档准点)
+- **GSC 7d 全表落盘**(docs/keyword-data/gsc-queries-7d-2026-10-21.csv):69 查询/约 151 展现/0 点击(缓降)。GSC 拉数升级:`num_of_days=7` 参数直达(页面自产 URL,免日期 chip 坐标战)。blowout 族:irrigation near me p2.0/sprinkler blowout p4.0/how much to blow out sprinkler system 2@p10.5 守;推位问句本周窗内暂掉出表外(昨 2@p15.5),10-23 判据照常以当期表读数定命。
+- **三层全空(第 5 连续轮)**:全部挂明天(10-22 Brian 查证)与 10-23 大判据日(推位归因+day-14 bump+内链轮效果同表判读);出结果前站内不动。
+- 外联:hk52 零回复(最新为 girlip 测试收据,非 MST);day-14 bump 排 10-23。Tier 0:aeration 1 使用/1 用户(与昨持平)。
