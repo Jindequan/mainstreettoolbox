@@ -280,3 +280,4 @@
 - **GSC 7d 全表落盘**(docs/keyword-data/gsc-queries-7d-2026-10-21.csv):69 查询/约 151 展现/0 点击(缓降)。GSC 拉数升级:`num_of_days=7` 参数直达(页面自产 URL,免日期 chip 坐标战)。blowout 族:irrigation near me p2.0/sprinkler blowout p4.0/how much to blow out sprinkler system 2@p10.5 守;推位问句本周窗内暂掉出表外(昨 2@p15.5),10-23 判据照常以当期表读数定命。
 - **三层全空(第 5 连续轮)**:全部挂明天(10-22 Brian 查证)与 10-23 大判据日(推位归因+day-14 bump+内链轮效果同表判读);出结果前站内不动。
 - 外联:hk52 零回复(最新为 girlip 测试收据,非 MST);day-14 bump 排 10-23。Tier 0:aeration 1 使用/1 用户(与昨持平)。
+| 2026-10-21 | 10-21 判据日：retail 族 28d=7<100 不达→方向复盘（新页面冻结至 11-07）；batch 2 上线（d028ef2，已部署）：deposit 覆盖 24→48 辖区，5 处节号纠错，KY/TN/WY 无期限挂新形态；68/68 测试 |
