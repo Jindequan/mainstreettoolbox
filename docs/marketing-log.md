@@ -287,3 +287,9 @@
 - **10-22 Brian 判据裁定:MISS**。证据:①hk52 收件箱 bhorn 零回复(最新为用户其他项目测试收据);②品牌词全网检索仅回我们自己页面,零第三方引用,lawlandlandscape 无上线迹象。既定分支:Brian 并入明天 10-23 day-14 bump 批次(线程 7 天整,合规),由外联线执行。
 - 判据记分板逼近 11-07 总死线:10-20 Ko-fi(读数在并行线)/10-21 retail 族(miss,已入册 round 39)/10-22 Brian(miss)。引用域仍 0。
 - 外联:hk52 零回复。Tier 0:aeration 1/1 持平。
+
+### 10-22 判决日:Brian 上稿查证 = MISS(引用域 0→1 未达)
+- site:lawnandlandscape.com 全查:无 Main Street Toolbox、无新成本计算器文章(结果全为 2016-2025 旧文)。"We will get this posted" 承诺 17 天未兑现。
+- 处置:Brian 并入 **10-23 day-14 bump 批**(与四老线程同批,一封礼貌跟进信,附"可重发任何材料"话术);不提前第三次催。
+- 引用域计数:仍 0。下一引用域机会=CMM(Jeff Cross 收件箱)/Jeffrey Scott(资源页评审中)。
+- **Gmail 冷邮件通道第 2 日仍封**(CleanGuru 重发 Sent 0;OLCA 邮件未发出)——跨 24h 未恢复=可能进入更长冷却。当日转表单通道勘测:Grow My 404 / Janitorial Store 猜路径 404 / Procurement Insights 联系方式埋评论串——三墙再记。弹匣 7 发存 outbox 待通道恢复。
