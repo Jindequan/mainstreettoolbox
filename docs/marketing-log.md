@@ -281,3 +281,9 @@
 - **三层全空(第 5 连续轮)**:全部挂明天(10-22 Brian 查证)与 10-23 大判据日(推位归因+day-14 bump+内链轮效果同表判读);出结果前站内不动。
 - 外联:hk52 零回复(最新为 girlip 测试收据,非 MST);day-14 bump 排 10-23。Tier 0:aeration 1 使用/1 用户(与昨持平)。
 | 2026-10-21 | 10-21 判据日：retail 族 28d=7<100 不达→方向复盘（新页面冻结至 11-07）；batch 2 上线（d028ef2，已部署）：deposit 覆盖 24→48 辖区，5 处节号纠错，KY/TN/WY 无期限挂新形态；68/68 测试 |
+
+### 10-22 早:巡检轮(当天首跑,9 点档准点)+ Brian 判据裁定
+- **GSC 7d 全表落盘**(docs/keyword-data/gsc-queries-7d-2026-10-22.csv):60 查询/约 149 展现/0 点击。**推位问句 how much does it cost to blow out sprinklers 从 p15.5 跳到 p8.0,升入前 10 带**(10-16 推位+10-19 内链轮开始兑现);how much to blow out sprinkler system 1@p10.0;irrigation near me p2.0/sprinkler blowout p4.0 守。**站内今天不碰**(10-23 归因判据明天到期);若明日问句稳在前 10 且有展现积累,按单变量纪律做 title 子串核查后再议 CTR 手术。
+- **10-22 Brian 判据裁定:MISS**。证据:①hk52 收件箱 bhorn 零回复(最新为用户其他项目测试收据);②品牌词全网检索仅回我们自己页面,零第三方引用,lawlandlandscape 无上线迹象。既定分支:Brian 并入明天 10-23 day-14 bump 批次(线程 7 天整,合规),由外联线执行。
+- 判据记分板逼近 11-07 总死线:10-20 Ko-fi(读数在并行线)/10-21 retail 族(miss,已入册 round 39)/10-22 Brian(miss)。引用域仍 0。
+- 外联:hk52 零回复。Tier 0:aeration 1/1 持平。
