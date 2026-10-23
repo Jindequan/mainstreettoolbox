@@ -308,3 +308,9 @@
 - **通道状态:Gmail 解封**(冷却~24h 实测结束)。累计触达:8/20(Turf/IPLLA/Sardone/ProfitCleaners/Jeffrey Scott/CMM/OLCA/Savvy Cleaner)。
 - **待发队列**:CleanGuru/Janitorial Store/ServiceMonster 三家重试 + media@savvycleaner + GreenIndustryPodcast(Gmail 收件人,易吞,最后试)。
 - 10-22 判决:Brian 上稿查证=MISS(全站无我们内容,承诺 17 天未兑现)→ 已并入明日 10-23…(今日)day-14 bump 批,与四老线程同发。
+
+### 10-23 续:触达 8/20 收口+收件人黑名单确认
+- **累计验证触达 8**:Turf/IPLLA/Sardone/ProfitCleaners/Jeffrey Scott/CMM/OLCA/Savvy Cleaner(Angela Brown,Ask a House Cleaner 节目角度)。
+- **收件人黑名单(定向静默拒,实测确认,永久放弃邮箱通道)**:CleanGuru(5 击含健康窗口 1 击)、The Janitorial Store(健康窗口重试仍吞)、Fullerton(Gmail 收件人)。规律:清洁业老牌资源站过滤成熟;Gmail→Gmail 冷邮件易吞。
+- **余量队列**:ServiceMonster 重试(此前仅封锁窗口试过 1 次,健康窗口未试=合法重试)、media@savvycleaner、GreenIndustryPodcast@gmail(易吞,最后)、新邮箱补充(州协会连搜)。
+- 触达继续:明日起每日邮箱批次照旧,计数照报。
