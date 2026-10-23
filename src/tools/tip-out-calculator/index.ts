@@ -6,8 +6,8 @@ export default {
   industry: 'restaurant',
   name: 'Tip Out Calculator',
   tagline: 'Split tips fairly in 30 seconds. No signup.',
-  title: 'Tip Out Calculator — Free Tip Pool & Tip Sharing Split',
-  description: 'Tip pool and tip out calculator for restaurants: split tips across servers, bussers and bar staff by percentage and headcount, with instant per-person amounts. Free, no signup.',
+  title: 'Tip Out Calculator — Free Tip Pooling & Tip Share Split',
+  description: 'Tip out and tip pooling calculator for restaurants: split tips across servers, bussers and bar staff by percentage and headcount, with each role\'s tip share and per-person amounts. Free, no signup.',
   result: { label: 'Tips to distribute' },
   fields: [
     { id: 'totalTips', label: 'Total tips', kind: 'money', default: 847, hint: 'for the shift or period' },

@@ -1,1 +1,2 @@
 | 2026-10-13 | [执行] 第49工具 security-deposit-refund-calculator 上线（landlord 新行业；R8 词族 strict 534；闸3 十州 statute；12+27 测试；双宽门禁；IndexNow 200） |
+| 2026-10-23 | [方向+执行] round 41：精品化规划落盘（docs/精品化规划-2026-10-23.md，用户指令「完善+cover新词」解除新页冻结，四闸不变）；tip-out 词形对齐（tip pooling/tip share 入 title/desc）+ CSV 导出承接 spreadsheet/excel 词形（GSC 10 变体中唯一功能缺口，6 imp/wk 直指） | 68/68 测试+80 页构建绿；本地 commit 不推送（积累制）；判据：2-3 周 tip 族展现 20→40 或 p58→p4x |

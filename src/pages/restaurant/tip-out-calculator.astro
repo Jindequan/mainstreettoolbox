@@ -2,8 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 <BaseLayout
-  title="Tip Out Calculator — Free Tip Pool & Tip Sharing Split | Main Street Toolbox"
-  description="Tip pool and tip out calculator for restaurants: type your total tips, get every role's share and per-person amount instantly — by percentage, with preset splits and a printable close-out sheet. Free, no signup."
+  title="Tip Out Calculator — Free Tip Pooling & Tip Share Split | Main Street Toolbox"
+  description="Tip out and tip pooling calculator for restaurants: type your total tips, get every role's tip share and per-person amount instantly — with preset splits, a printable close-out sheet and a one-click CSV export for your spreadsheet. Free, no signup."
   path="/restaurant/tip-out-calculator/"
 >
   <div class="industry-hero">
@@ -46,6 +46,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <!-- 动作条 -->
     <div class="actions">
       <button class="act primary" id="do-print" type="button">Print close-out sheet</button>
+      <button class="act" id="do-csv" type="button">Download spreadsheet (CSV)</button>
       <button class="act" id="do-copy" type="button">Copy numbers</button>
     </div>
     <p class="fineprint">Counts as percentages of collected tips. Managers can't take a share of a mandatory pool (FLSA) — check your state's rules.</p>
@@ -61,6 +62,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p>"Print close-out sheet" produces a one-page record — date, total tips, each role's pool and per-person
     amount — the version you hand to whoever counts the drawer. For a PDF, choose "Save as PDF" in the print
     dialog.</p>
+    <h2>Export a tip pool spreadsheet</h2>
+    <p>"Download spreadsheet (CSV)" saves the same close-out as a CSV file — one row per role with the share,
+    headcount, pool and per-person amount — that opens directly in Excel or Google Sheets. Keep one file per
+    week and year-end tip totals are already done.</p>
     <h2>Related tools</h2>
     <p>Setting base pay instead? <a href="/restaurant/labor-cost-calculator/">Labor Cost Calculator</a> shows what
     an employee really costs. Checking whether tonight's volume paid the rent? <a
@@ -73,6 +78,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <details><summary>What is a typical tip out percentage?</summary><p>For full-service dining, servers commonly keep 70–80% of tips and pass 20–30% to support staff. Busy bar programs often tip out 5–10% of alcohol sales to the bar instead of a share of tips.</p></details>
     <details><summary>Should tip out be based on tips or on sales?</summary><p>Tips-based splits divide what was actually collected — simplest and most transparent. Sales-based splits (e.g. 3% of the server's sales) push risk onto servers but guarantee support staff earn on busy and slow days alike.</p></details>
     <details><summary>Can managers be part of a tip pool?</summary><p>In the US, federal law bars employers — including managers and supervisors — from keeping a share of a mandatory tip pool under the FLSA. Always check current federal and state rules for your exact setup.</p></details>
+    <details><summary>Can I export the split to Excel or Google Sheets?</summary><p>Yes. "Download spreadsheet (CSV)" saves the close-out as a CSV file — one row per role with the share, headcount, pool and per-person amounts — which opens directly in Excel or Google Sheets.</p></details>
   </section>
 
   <script type="application/ld+json" set:html={JSON.stringify({
@@ -82,6 +88,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       { '@type': 'Question', name: 'What is a typical tip out percentage?', acceptedAnswer: { '@type': 'Answer', text: 'For full-service dining, servers commonly keep 70–80% of tips and pass 20–30% to support staff. Busy bar programs often tip out 5–10% of alcohol sales to the bar instead.' } },
       { '@type': 'Question', name: 'Should tip out be based on tips or on sales?', acceptedAnswer: { '@type': 'Answer', text: 'Tips-based splits divide what was actually collected — simplest and most transparent. Sales-based splits (e.g. 3% of server sales) guarantee support staff earn on busy and slow days alike.' } },
       { '@type': 'Question', name: 'Can managers be part of a tip pool?', acceptedAnswer: { '@type': 'Answer', text: 'In the US, federal law bars employers — including managers and supervisors — from keeping a share of a mandatory tip pool under the FLSA. Check current federal and state rules for your setup.' } },
+      { '@type': 'Question', name: 'Can I export the split to Excel or Google Sheets?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Download spreadsheet (CSV) saves the close-out as a CSV file — one row per role with the share, headcount, pool and per-person amounts — which opens directly in Excel or Google Sheets.' } },
     ],
   })} />
   <script type="application/ld+json" set:html={JSON.stringify({
@@ -264,6 +271,22 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         return `${r.label || 'Role'} ${r.pct}% — ${money(pool)} pool, ${money(r.people > 0 ? pool / r.people : 0)} each (${r.people})`;
       });
       navigator.clipboard?.writeText(`Tip out — total ${money(total)}\n` + lines.join('\n')).catch(() => {});
+    });
+    document.getElementById('do-csv')!.addEventListener('click', () => {
+      const total = num((document.getElementById('total') as HTMLInputElement).value);
+      const rows: string[][] = [['Role', 'Share %', 'People', 'Pool', 'Each']];
+      for (const r of roles) {
+        const pool = (total * r.pct) / 100;
+        rows.push([r.label || 'Role', String(r.pct), String(r.people), pool.toFixed(2), (r.people > 0 ? pool / r.people : 0).toFixed(2)]);
+      }
+      rows.push(['Total tips', '', '', total.toFixed(2), '']);
+      const csv = rows.map((cells) => cells.map((c) => '"' + c.replace(/"/g, '""') + '"').join(',')).join('\r\n');
+      const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'tip-out-closeout.csv';
+      a.click();
+      URL.revokeObjectURL(url);
     });
 
     // 草稿恢复
