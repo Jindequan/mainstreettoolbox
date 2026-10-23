@@ -293,3 +293,4 @@
 - 处置:Brian 并入 **10-23 day-14 bump 批**(与四老线程同批,一封礼貌跟进信,附"可重发任何材料"话术);不提前第三次催。
 - 引用域计数:仍 0。下一引用域机会=CMM(Jeff Cross 收件箱)/Jeffrey Scott(资源页评审中)。
 - **Gmail 冷邮件通道第 2 日仍封**(CleanGuru 重发 Sent 0;OLCA 邮件未发出)——跨 24h 未恢复=可能进入更长冷却。当日转表单通道勘测:Grow My 404 / Janitorial Store 猜路径 404 / Procurement Insights 联系方式埋评论串——三墙再记。弹匣 7 发存 outbox 待通道恢复。
+| 2026-10-23 | menu 族位置推上线（排名独立型）：worked example+menu-cost 词形段+2FAQ（数字全页内推导，删无功能 claim）；推位归因=p8 兑现但 4 展现无动作；68/68+部署 3mv0d3ec0+IndexNow |
