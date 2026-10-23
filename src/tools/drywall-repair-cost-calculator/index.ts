@@ -9,7 +9,7 @@ export default {
   name: 'Drywall Repair Cost Calculator',
   tagline: 'Holes, ceilings, water damage or new hang — price the patch before you quote the paint. No signup.',
   title: 'Drywall Repair Cost Calculator — Free 2026 Repair & Install Pricing',
-  description: 'Price a drywall job in seconds: small holes, average repairs, ceiling and water damage, or new hang-and-finish per square foot — with fair 2026 US ranges. Free, no signup.',
+  description: 'How much does drywall repair cost? Get a free repair estimate in seconds — small holes, average jobs, ceiling and water damage, or new hang-and-finish per square foot, with fair 2026 US ranges for your quote. No signup.',
   result: { label: 'Suggested quote' },
   fields: [
     {
@@ -82,6 +82,14 @@ export default {
     residential drywall (Nedes Estimating, Mr. Handyman and Projul all land there); specialty level-5 or
     curved work runs $4–6 (Projul). That price is drywall only — texture and paint bill separately, and
     saying so in the quote is what keeps the margin.</p>
+    <h3>What does a real drywall repair quote look like?</h3>
+    <p>Worked example — a bathroom leak soaks the hallway ceiling below. Quote it as two lines:
+    <b>ceiling repair at $450–1,400</b> plus the wall section it ran down, an <b>average repair at
+    $200–750</b> — $650–2,150 all-in, with the leak's source (the plumbing fix) noted as the homeowner's
+    separate line item. If moisture testing finds mold, scope it before you price: remediation adds
+    $1,500–4,500+ (Angi) and it becomes a different job.</p>
+    <p>Second example — hanging and finishing a 200 sq ft garage conversion: <b>200 × $1.50–3.50 =
+    $300–700</b>, with texture and paint written as separate lines so the margin survives the walkthrough.</p>
     <table>
       <thead><tr><th>Quote model</th><th>Typical US range (2026)</th></tr></thead>
       <tbody>
@@ -98,6 +106,7 @@ export default {
     { q: 'How much should I charge per square foot for drywall?', a: '$1.50–3.50 per square foot for new hang-and-finish (Nedes Estimating, Mr. Handyman and Projul all agree). But effective per-square-foot pricing on small patches runs $75–100 (Angi) — under about 10 sq ft, quote a minimum service call instead.' },
     { q: 'How much is ceiling drywall repair?', a: 'Angi averages ceiling repair near $1,080 with a typical range of $438–1,724; Coastal Drywall books ceiling jobs at $250–1,400. The defensible quote band is $450–1,400, more if texture matching or water damage is involved.' },
     { q: 'Should paint and texture be included in a drywall quote?', a: 'No — the $1.50–3.50 per square foot national band is drywall only. Bill texture, paint and primer as separate lines. And if the damage is water-related, scope mold remediation first: it can add $1,500–4,500+ (Angi) and it changes the whole job.' },
+    { q: 'How do I write a drywall repair estimate or quote?', a: 'Describe the scope in the customer\'s words, price it from the band that matches — $50–150 for a patch, $200–750 for an average job, $450–1,400 for a ceiling, $500–2,500+ for water damage — then list texture and paint as separate lines. If the job could run long, note your $60–90 hourly rate in writing.' },
   ],
   related: ['painting-estimate-calculator', 'attic-insulation-cost-calculator', 'popcorn-ceiling-removal-cost-calculator', 'material-cost-estimator'],
 } as RegisteredTool;
