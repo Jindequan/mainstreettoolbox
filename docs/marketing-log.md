@@ -301,3 +301,10 @@
 - **今天站内动作位为空,原因**:①推位槽已被并行线 round 40 用于 menu 族(bd8b9bd);②CTR 手术无合格目标(唯一前 10 问句周展现 1)。下一个判据:问句展现积累周对比(~10-30 同表)。
 - **day-14 bump 批次**:归外联线(Gmail 冷却第 2 日,截至 12:51 未见执行 commit),我线不发信不重复。
 - Tier 0:**snow-removal-pricing-calculator 首次 1/1**(第三个破零工具,冬季季头)+aeration 1/1。GSC 表:54 查询/约 154 展现/0 点击。hk52 收件箱零回复。
+
+### 10-23 上午:触达 8/20(Gmail 解封,弹匣开烧)
+- **✅ 新增 2 发 Sent 实证**:OLCA 协会(info@OhioLawnCare.org)+ **Savvy Cleaner Angela Brown**(AngelaBrown@SavvyCleaner.com,Ask a House Cleaner 节目资源角度,绕开反 pitch 门户)。
+- **事故处置:10-20 失败会话残留的 Debbie 撰写窗标签复活=重复发送风险,站长目击;已立即关闭未发送**(CMM 死规矩再验证:残留 compose=定时炸弹,会话结束必须清标签)。
+- **通道状态:Gmail 解封**(冷却~24h 实测结束)。累计触达:8/20(Turf/IPLLA/Sardone/ProfitCleaners/Jeffrey Scott/CMM/OLCA/Savvy Cleaner)。
+- **待发队列**:CleanGuru/Janitorial Store/ServiceMonster 三家重试 + media@savvycleaner + GreenIndustryPodcast(Gmail 收件人,易吞,最后试)。
+- 10-22 判决:Brian 上稿查证=MISS(全站无我们内容,承诺 17 天未兑现)→ 已并入明日 10-23…(今日)day-14 bump 批,与四老线程同发。
