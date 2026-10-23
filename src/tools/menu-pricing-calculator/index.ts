@@ -59,6 +59,19 @@ export default {
     <p>Food cost is the share of the menu price that goes to ingredients. At <b>30%</b>, a dish that costs you
     $4.90 to plate should sell for about $16.95 — for every dollar a guest pays, roughly 30¢ covers the food and
     the rest covers labor, rent and (hopefully) profit.</p>
+    <h3>What goes into a menu cost?</h3>
+    <p>A dish's <b>menu cost</b> (the plate cost) is everything that gets consumed when it's fired: the protein,
+    the sides, the garnish, the sauce components — portioned at your actual recipe amounts. It deliberately
+    excludes labor, rent and utilities; those live in your overhead, and mixing them into the plate cost makes
+    menus impossible to compare. Price the plate on ingredients alone, then check the whole menu's health with
+    the food-cost bands below.</p>
+    <h3>Worked example: pricing a $4.90 plate</h3>
+    <p>Take the same dish through the calculator's two inputs. Plate cost: <b>$4.90</b>. Target food cost:
+    <b>30%</b> — the middle of the healthy band. The math is plate cost ÷ target percentage: $4.90 ÷ 0.30 =
+    $16.33, which rounds up to a <b>$16.95</b> charm price. Now tighten the target to <b>28%</b> for a
+    higher-margin section: $4.90 ÷ 0.28 = $17.50, charm-priced at <b>$17.95</b>. Sixty-two cents of menu price
+    buys four points of food-cost headroom on one dish — across a 12-dish menu that is the difference between
+    the healthy band and the tight one.</p>
     <h3>Should menu prices end in .95?</h3>
     <p>The calculator rounds up to a "charm price" ($X.95) because guests read $14.95 as meaningfully cheaper
     than $15 — while your food cost percentage barely moves.</p>
@@ -75,6 +88,8 @@ export default {
     { q: 'What is a good food cost percentage?', a: 'Most full-service restaurants run 28–35%. Quick-service spots usually sit lower, around 25–30%. What matters more is the trend: a menu creeping from 31% to 36% is a price rise or a supplier problem waiting to be found.' },
     { q: 'Should I price at $X.95 or a whole dollar?', a: 'Charm pricing ($14.95) is the safe default for casual dining. Whole-dollar pricing reads as premium and speeds up payment — some upscale rooms use it deliberately. Test one menu section at a time.' },
     { q: 'Does this include labor and overhead?', a: 'No — this prices by plate cost only. To see whether the price actually pays the bills, run the Break-Even Calculator with your monthly fixed costs.' },
+    { q: 'How do I calculate a menu price from food cost?', a: 'Divide the plate cost by the target food-cost percentage, then round to your charm price. A $4.90 plate at a 30% target: $4.90 ÷ 0.30 = $16.33, which prices at $16.95. The calculator above runs that division per dish and applies the $X.95 rounding for you.' },
+    { q: 'Is this a menu cost calculator or a menu price calculator?', a: 'Both words describe the same calculation. The menu cost is your plate cost — ingredients plus any shared sides — and the menu price is what the calculator suggests from it. Enter the costs and a target food-cost percentage, and the tool returns the price that protects the band you picked. The default example on this page is exactly that: a $4.40 ingredient list with $0.50 of shared sides makes a $4.90 plate, priced at $16.95 at a 30% target.' },
   ],
   related: ['food-cost-percentage-calculator', 'menu-engineering-matrix', 'break-even-calculator', 'prime-cost-calculator'],
 } as RegisteredTool;
