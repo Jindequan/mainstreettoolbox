@@ -137,3 +137,22 @@ aging in place 改造费（stair lift/ramp/walk-in tub，673 词/27 dual）为 c
 | 词族 | 裁决 | 证据与判据 |
 |---|---|---|
 | security deposit demand letter / return letter / letter template | ✅ 词形承接件上线 | 承接 534 strict/635 broad 转正族（10-09）：/landlord/security-deposit-demand-letter/，DocSpec 打印信+十州限期表，法条零新增（复用十州引擎）。**判据：10-29 该 URL GSC 曝光>0；11-12 demand letter 词形展现≥10 或族内点击+1，不达→记录池（与族同进退）** |
+
+## 2026-10-24 R10 记录池形态筛（7 族双 SERP 实查，规划 B 线 #1）
+
+| 词族 | 裁决 | 证据 |
+|---|---|---|
+| tile installation / countertop / epoxy garage floor / artificial turf / porch-pergola | **判死**（计算器位饱和） | 各族 4-6+ 在位计算器（Homewyse/InchCalculator/Lowe's/Marble.com/ProjectCalcs/MyQuoteIQ/ProjectCostPro 等具名证据见筛选报告）——消费服务带饱和扩散第 3 次实证 |
+| **garage door spring replacement cost** | **✅ 出线 ⏳ strict** | 计算器词形仅 2 承包商工具（DoorMatrix EMD=选型非成本/ServiceAgent SaaS）；头词 Reddit 询价焦虑帖居首；成本带 $150-500+/弹簧 四源收敛 |
+| **sump pump installation cost** | **✅ 出线 ⏳ strict** | 仅 Homewyse 通用器+指南墙；头词 Reddit $9,000 报价帖居首；replacement $250-600 vs 新装 $1,000-2,500 双轨模型 |
+
+出处：`keyword-research-R10-pool-screen-2026-10-24.md`。strict 待验（IAB 自取 key）；过线→闸 3 研究→立项评估，不过线→判死记录池清空。solar panel cleaning ⏳ 维持。
+
+## 2026-10-24 出线两族 strict 批验（IAB 自取 key，#apiKeyTitle 直读新路径）
+
+| 词族 | 裁决 | 证据 |
+|---|---|---|
+| **garage door spring replacement cost** | **✅ 转正 T1，立项** | **943 strict/90d**=windshield 后最强；闸 2 双查过（计算器位仅承包商工具）；四源成本带收敛；闸 4 应急比价器 |
+| sump pump | 记录池边缘偏正 | 头词 cost 36/installation 0 strict；family 价格意图层 ~722（installation 430+replacement 256）；SERP 仍真空，排后不阻塞 |
+
+出处：`keyword-data/bing-api-2026-10-24.md`。四词短语效应新例：量集中于五词 `replacement` 形态（`garage door spring cost`=0 而 `...replacement cost`=943）。
