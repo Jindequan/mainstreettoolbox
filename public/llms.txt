@@ -4,7 +4,7 @@
 
 ## Docs
 
-- [Home](https://mainstreettoolbox.com/): Overview of all 48 free tools with a live search box; the fastest way to find the right calculator.
+- [Home](https://mainstreettoolbox.com/): Overview of all 51 free tools with a live search box; the fastest way to find the right calculator.
 - [All Tools](https://mainstreettoolbox.com/tools/): Every calculator grouped by trade with one-line descriptions of what each answers.
 - [Restaurant tools](https://mainstreettoolbox.com/restaurant/): Food cost, menu pricing, menu engineering, tip out, prime cost and labor calculators for restaurant owners.
 - [Cleaning tools](https://mainstreettoolbox.com/cleaning/): House cleaning estimates, pressure washing and window cleaning pricing, junk removal, invoices and checklists.
@@ -50,6 +50,7 @@
 - [Drywall Repair Cost Calculator](https://mainstreettoolbox.com/construction/drywall-repair-cost-calculator/): Holes, ceilings, water damage or new hang — price the patch before you quote the paint. No signup.
 - [Dumpster Rental Cost Calculator](https://mainstreettoolbox.com/construction/dumpster-rental-cost-calculator/): Size the box, count the days, weigh the debris — see the full 2026 rental cost before you call a hauler. No signup.
 - [Popcorn Ceiling Removal Cost Calculator](https://mainstreettoolbox.com/construction/popcorn-ceiling-removal-cost-calculator/): Price the scrape before anyone sets foot on a ladder — per-sqft bands for painted and unpainted texture, asbestos caveat included. No signup.
+- [Garage Door Spring Replacement Cost Calculator](https://mainstreettoolbox.com/construction/garage-door-spring-replacement-cost-calculator/): The broken-spring quote, checked in 10 seconds — torsion or extension, one spring or both. No signup.
 - [Lawn Mowing Price Calculator](https://mainstreettoolbox.com/lawn/lawn-mowing-price-calculator/): Prices mowing jobs by lawn size, frequency and trim work against US averages.
 - [Lawn Care Estimate Generator](https://mainstreettoolbox.com/lawn/lawn-care-estimate-generator/): Builds a full lawn-care estimate line by line — mowing, trim, edging, cleanup, fertilization — with US pricing bands and a printable quote.
 - [Mulch Calculator](https://mainstreettoolbox.com/lawn/mulch-calculator/): Cubic yards of mulch needed for an area and depth, with bag-count conversion.
@@ -68,7 +69,9 @@
 - [Discount Profit Calculator](https://mainstreettoolbox.com/retail/discount-profit-calculator/): Enter your margin and planned discount; see how much more you must sell just to break even.
 - [Inventory Count Sheet](https://mainstreettoolbox.com/retail/inventory-count-sheet/): Stock counting with prices attached — item × quantity × unit cost totals live; prints for the stockroom.
 
-## Guides
+
+- [Security Deposit Demand Letter Generator](https://mainstreettoolbox.com/landlord/security-deposit-demand-letter/): A formal, printable demand letter with your state\## Guides
+- [Security Deposit Refund Calculator](https://mainstreettoolbox.com/landlord/security-deposit-refund-calculator/): Pick your state, enter your dates — see the exact legal deadline and what happens if it slips. No signup.
 
 - [Food Cost Percentage: Complete Guide](https://mainstreettoolbox.com/guides/food-cost-percentage/): How restaurant food cost percentage works, healthy ranges by service type, and how to fix a high number.
 - [House Cleaning Prices Guide](https://mainstreettoolbox.com/guides/house-cleaning-prices/): What cleaning companies charge across US markets by home size and clean type, and how to quote.
@@ -80,7 +83,7 @@
 
 ## Key Facts
 
-- 48 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
+- 51 free tools across 6 trades: restaurant, cleaning, construction, lawn care, salon and retail
 - US pricing benchmarks throughout; target market is United States small businesses
 - Every tool works instantly with no signup, no account and no ads
 - Independent, single-developer project; pricing benchmarks sourced from industry data and cross-checked guides
