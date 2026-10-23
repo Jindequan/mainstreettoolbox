@@ -294,3 +294,10 @@
 - 引用域计数:仍 0。下一引用域机会=CMM(Jeff Cross 收件箱)/Jeffrey Scott(资源页评审中)。
 - **Gmail 冷邮件通道第 2 日仍封**(CleanGuru 重发 Sent 0;OLCA 邮件未发出)——跨 24h 未恢复=可能进入更长冷却。当日转表单通道勘测:Grow My 404 / Janitorial Store 猜路径 404 / Procurement Insights 联系方式埋评论串——三墙再记。弹匣 7 发存 outbox 待通道恢复。
 | 2026-10-23 | menu 族位置推上线（排名独立型）：worked example+menu-cost 词形段+2FAQ（数字全页内推导，删无功能 claim）；推位归因=p8 兑现但 4 展现无动作；68/68+部署 3mv0d3ec0+IndexNow |
+
+### 10-23 午:巡检轮(当天首跑,9 点档未触发 12:51 补跑)+ 10-23 大判据裁定
+- **推位归因判据(位置):HIT**——how much does it cost to blow out sprinklers 从判据前基线 p12.2(10-17)→ **p8.0 连续两日守住前 10**(本周窗 1 展现/0 点击);how much to blow out sprinkler system 1@p10.0 同守。归因注记:10-16 推位(17e8ff7 desc/FAQ)与 10-19 内链轮(603d191)同期在途,**位置增益为双变量合效,无法单归因**——如实记。**CTR 判定:无法判**(周展现 1,样本为零)。
+- **Title 子串核查(零成本读)**:src/tools/sprinkler-blowout-cost-calculator/index.ts:11 title 含 sprinkler blowout cost+winterization,**不含问句词形与 near me**(排名由内容/FAQ 撑)。**武装为下一个单变量候选**(问句词形进 title 前 5 词),触发条件=该问句周展现 ≥10;在此之前不动,避免零样本手术。desc 价格锚($60-150/$85/$5-10 zone)已按手册在位。
+- **今天站内动作位为空,原因**:①推位槽已被并行线 round 40 用于 menu 族(bd8b9bd);②CTR 手术无合格目标(唯一前 10 问句周展现 1)。下一个判据:问句展现积累周对比(~10-30 同表)。
+- **day-14 bump 批次**:归外联线(Gmail 冷却第 2 日,截至 12:51 未见执行 commit),我线不发信不重复。
+- Tier 0:**snow-removal-pricing-calculator 首次 1/1**(第三个破零工具,冬季季头)+aeration 1/1。GSC 表:54 查询/约 154 展现/0 点击。hk52 收件箱零回复。
