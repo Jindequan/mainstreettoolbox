@@ -320,3 +320,9 @@
 - **三层全空(第 7 连续轮)**:推位槽归并行线(round 42 drywall 判据 2-3 周后读);CTR 手术触发未到。下一节点:~10-30 问句展现积累周对比。
 - **⚠️ 审计亮灯(我线只审计不审批)**:并行线 round 44 本地建第 51 工具(garage-door-spring,943 strict/月,未部署)——与 10-15 复盘用户定稿「停建新工具(第 51 个不做)」及 round 39 新页冻结令(至 11-07)直接相抵;「本地积累未部署」是否算违冻,须用户裁定,巡检线如实上报。
 - 外联:hk52 零回复(最新为 Apple/GSC 其他站通知);day-14 bump 仍未见外联线执行 commit(Gmail 冷却中)。Tier 0:**cleaning-estimate-calculator 首次 1/1**(第四个破零工具);7 天窗内 snow-removal/aeration 各 1,合计 3 使用。
+
+### 10-24:触达 0 新增——Gmail 冷通道日配额规律确认
+- **今日 0 新发**(ServiceMonster/爱荷华协会/堪萨斯州大 .edu 三发 Sent 全 0,含 .edu 最高信誉目标)→ 配合昨日时间线(上午 4 发成功、午后全灭)判定:**Gmail 冷通道日配额 ≈4-5 封,超出静默吞,窗口在上午,约 24h 滚动恢复**。
+- **定向规则入册(黑名单新证据)**:field-service 软件商 support@ 信箱(ServiceMonster/Janitorial Store/CleanGuru)全吞=永不碰;**成功画像=媒体主编/州协会 admin/教练/资源页策展人**(已验证 5/5)。
+- **节奏定版:每天上午窗口发 4-5 封(协会/媒体优先队列),不为凑数硬灌**。剩余队列:堪萨斯 .edu(今日未发出,明早第一发)、Iowa jeff@、WGIF hello@、WLCA、media@savvycleaner、GreenIndustryPodcast、ServiceMonster(黑名单,弃)。
+- 累计触达 8 验证。20 人令按日配额推进 ≈ 还需 3 天。
