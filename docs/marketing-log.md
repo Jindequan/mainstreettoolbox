@@ -314,3 +314,9 @@
 - **收件人黑名单(定向静默拒,实测确认,永久放弃邮箱通道)**:CleanGuru(5 击含健康窗口 1 击)、The Janitorial Store(健康窗口重试仍吞)、Fullerton(Gmail 收件人)。规律:清洁业老牌资源站过滤成熟;Gmail→Gmail 冷邮件易吞。
 - **余量队列**:ServiceMonster 重试(此前仅封锁窗口试过 1 次,健康窗口未试=合法重试)、media@savvycleaner、GreenIndustryPodcast@gmail(易吞,最后)、新邮箱补充(州协会连搜)。
 - 触达继续:明日起每日邮箱批次照旧,计数照报。
+
+### 10-24 早:巡检轮(当天首跑,9 点档准点)
+- **GSC 7d 全表落盘**(docs/keyword-data/gsc-queries-7d-2026-10-24.csv):44 查询/约 136 展现/0 点击(续降)。推位问句 p8.0 第三日守住(周展现仍 1,title 手术触发条件 ≥10 未到);how much to blow out sprinkler system 1@p10.0;irrigation near me 本窗掉出(1 展现级查询的常态抖动)。menu 族为最大展现块(19+18+18,p72-80——并行线 round 40 推位标的,判据归其线)。
+- **三层全空(第 7 连续轮)**:推位槽归并行线(round 42 drywall 判据 2-3 周后读);CTR 手术触发未到。下一节点:~10-30 问句展现积累周对比。
+- **⚠️ 审计亮灯(我线只审计不审批)**:并行线 round 44 本地建第 51 工具(garage-door-spring,943 strict/月,未部署)——与 10-15 复盘用户定稿「停建新工具(第 51 个不做)」及 round 39 新页冻结令(至 11-07)直接相抵;「本地积累未部署」是否算违冻,须用户裁定,巡检线如实上报。
+- 外联:hk52 零回复(最新为 Apple/GSC 其他站通知);day-14 bump 仍未见外联线执行 commit(Gmail 冷却中)。Tier 0:**cleaning-estimate-calculator 首次 1/1**(第四个破零工具);7 天窗内 snow-removal/aeration 各 1,合计 3 使用。
