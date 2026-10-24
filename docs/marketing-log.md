@@ -326,3 +326,4 @@
 - **定向规则入册(黑名单新证据)**:field-service 软件商 support@ 信箱(ServiceMonster/Janitorial Store/CleanGuru)全吞=永不碰;**成功画像=媒体主编/州协会 admin/教练/资源页策展人**(已验证 5/5)。
 - **节奏定版:每天上午窗口发 4-5 封(协会/媒体优先队列),不为凑数硬灌**。剩余队列:堪萨斯 .edu(今日未发出,明早第一发)、Iowa jeff@、WGIF hello@、WLCA、media@savvycleaner、GreenIndustryPodcast、ServiceMonster(黑名单,弃)。
 - 累计触达 8 验证。20 人令按日配额推进 ≈ 还需 3 天。
+| 2026-10-24 | GEO compare 重跑：内功 5/6 遗留闭环（问句标题 153/schema 铺满/CSP 上线），但 AI 引用初验两目标词缺席+SERP 竞争恶化→11-07 判负分支证据就位；转呈冻结令冲突（并行线建第 51 工具）待老板裁定 |
