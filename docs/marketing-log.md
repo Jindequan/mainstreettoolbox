@@ -340,3 +340,9 @@
 - **抄赢家手册第 3 条落地**:docs/outbox-edu-2026-10-26.md——.edu extension 首批 15 州投递名单(全部实查 URL)+文案模板+纪律(值守窗发送/每日≤2/单发制);判据=30 天 ≥1 个 .edu 落链。今日未发(新 pitch 走值守窗铁律)。
 - 外联:hk52 零回复(最新 8:34 AdSense 限流通知=已知账号级问题)。Tier 0:2 使用/7 天。
 | 2026-10-25 | deposit 覆盖 51/51 收官（KY/TN 翻案为 URLTA 条件法条州+WY noStatute 新形态；信件引租约条款变体）；71/71 测试+线上 51 选项实证；vcli 残缺重装法入册 |
+
+### 10-26:触达 9/20(WGIF 表单 ✓)+ Gmail 容量再确认
+- **✅ WGIF(威斯康星绿色产业联合会)表单提交+回执验证**(First/Last/Email/Message,无验证码)——表单通道第二单成功(ProfitCleaners 后)。
+- Iowa 邮箱重试仍 0;WLCA 连接断。**Gmail 冷通道容量再确认:当前实际 ≈1-2 封/天**(远低于周一窗口的 4-5),表单通道成为主力。
+- 累计触达 **9 验证**:Turf/IPLLA/Sardone/ProfitCleaners/Jeffrey Scott/CMM/OLCA/Savvy Cleaner/WGIF。黑名单:CleanGuru/Janitorial Store/ServiceMonster/Fullerton(定向拒或 Gmail 收件人)。
+- 雷达周末批:GPU 解锁浪潮(双仓 9000+★)进素材池;电视风暴 34874★ 维持必写;hatchzip/mccarbon/learnharness 素材池。
