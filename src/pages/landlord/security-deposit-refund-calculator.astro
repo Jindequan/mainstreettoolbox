@@ -2,9 +2,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 // Bespoke 页：引擎与 src/tools/security-deposit-refund-calculator/engine.ts 同款数学（内联 JS 副本）。
-// 48 州数据全部来自 docs/benchmarks-security-deposit-refund.md（statute 现行文本，2026-10-13 复核 CO/FL/AZ，
+// 51 辖区（50 州+DC）数据全部来自 docs/benchmarks-security-deposit-refund.md（statute 现行文本，2026-10-13 复核 CO/FL/AZ，
 // 2026-10-20 二批 14 州，2026-10-21 三批 24 辖区——记录见该文档；KY/TN/WY 无成文期限，缓办）。
-const REVIEWED = 'October 13–21, 2026';
+const REVIEWED = 'October 13–25, 2026';
 const states = [
   { code: 'CA', name: 'California', days: '21 calendar days', trigger: 'Move-out (vacate)', cite: 'Cal. Civ. Code §1950.5' },
   { code: 'NY', name: 'New York', days: '14 calendar days', trigger: 'Move-out (vacate)', cite: 'N.Y. GOL §7-108(1-a)' },
@@ -54,6 +54,9 @@ const states = [
   { code: 'AK', name: 'Alaska', days: '14 calendar days (30 when deductions are claimed)', trigger: 'Surrender and vacate', cite: 'Alaska Stat. §34.03.070' },
   { code: 'HI', name: 'Hawaii', days: '14 calendar days', trigger: 'Later of termination or surrender', cite: 'HRS §521-44' },
   { code: 'DC', name: 'District of Columbia', days: '45 calendar days plus interest', trigger: 'Termination of tenancy', cite: 'D.C. Code §42-3502.17' },
+  { code: 'KY', name: 'Kentucky', days: '30 calendar days — only where the URLTA is adopted; elsewhere the lease governs', trigger: 'Move-out (vacate)', cite: 'KRS §383.580' },
+  { code: 'TN', name: 'Tennessee', days: '30 calendar days (or 7 days after a new tenant moves in) — only in 75,000+ population counties; elsewhere the lease governs', trigger: 'Move-out (vacate)', cite: 'Tenn. Code Ann. §66-28-301' },
+  { code: 'WY', name: 'Wyoming', days: 'No state statute — your lease sets the deadline', trigger: 'Lease terms', cite: 'Wyo. Judicial Branch (no statute)' },
 ];
 ---
 <BaseLayout
@@ -138,13 +141,13 @@ const states = [
   </main>
 
   <section class="container">
-    <h2>The deadline in all 48 verified states</h2>
+    <h2>The deadline in all 50 states plus DC</h2>
     <p class="section-sub">
       We publish only deadlines checked against the current statute text — several popular guides still
       carry outdated numbers (Washington's 21 days became 30 in 2023, Connecticut's 30 became 21 under the
       2023 reform act, Illinois's 30 became 45 in 2024, and Alabama is 60 days, not the 35 many
-      sites print). Kentucky, Tennessee and Wyoming have no statutory return deadline — there the lease
-      terms govern. Meanwhile <a href="https://www.hud.gov/topics/rental_assistance/tenantrights" target="_blank" rel="noopener">HUD's tenant-rights portal</a>
+      sites print). Kentucky's and Tennessee's statutes apply only where their landlord-tenant acts are adopted,
+      and Wyoming sets no statutory deadline — the lease governs there. <a href="https://www.hud.gov/topics/rental_assistance/tenantrights" target="_blank" rel="noopener">HUD's tenant-rights portal</a>
       links each state's official resources, and
       <a href="https://www.usa.gov/state-consumer" target="_blank" rel="noopener">USA.gov</a> lists every state consumer-protection office for complaints.
     </p>
@@ -226,7 +229,7 @@ const states = [
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Any',
       url: 'https://mainstreettoolbox.com/landlord/security-deposit-refund-calculator/',
-      description: 'Computes the legal security-deposit refund deadline from state statute: trigger date, calendar/business-day rules, itemized-statement duty, and the penalty for missing it across 48 statute-verified states.',
+      description: 'Computes the legal security-deposit refund deadline from state statute: trigger date, calendar/business-day rules, itemized-statement duty, and the penalty for missing it across all 50 states plus DC, each verified against current statutes.',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     })} />
   </section>
@@ -393,6 +396,15 @@ const states = [
       DC: { name: 'District of Columbia', days: 45, kind: 'cal', trigger: 'termElseVacate', daysRule: '45 calendar days after termination to return the unused portion with interest.', statute: 'D.C. Code §42-3502.17–.18', url: 'https://code.dccouncil.gov/us/dc/council/code/sections/42-3502.17',
         statement: 'Written notice of deductions with an itemized list due inside the 45 days.',
         penalty: 'Claiming deductions without the required written itemization forfeits the right to withhold.' },
+      KY: { name: 'Kentucky', days: 30, kind: 'cal', trigger: 'vacate', daysRule: '30 calendar days after move-out — but the Kentucky URLTA applies only where a county or city has adopted it (e.g. Fayette and Jefferson counties); elsewhere your lease sets the deadline.', statute: 'KRS §383.580 (URLTA — adopted jurisdictions only)', url: 'https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=35733',
+        statement: 'Itemized list of deductions plus the balance due within the 30 days; tenants have 60 days to dispute the itemization in writing.',
+        penalty: 'A dispute upheld within 60 days recovers the deposit plus reasonable attorney\'s fees.' },
+      TN: { name: 'Tennessee', days: 30, kind: 'cal', trigger: 'vacate', daysRule: '30 calendar days after move-out (or 7 days after a new tenant takes possession) — the Tennessee URLTA applies only in counties with 75,000+ residents (e.g. Davidson, Shelby, Knox, Hamilton); elsewhere your lease sets the deadline.', statute: 'Tenn. Code Ann. §66-28-301 (URLTA — qualifying counties only)', url: 'https://law.justia.com/codes/tennessee/title-66/chapter-28/part-3/section-66-28-301/',
+        statement: 'Refund with an itemized list of any deductions due inside the window.',
+        penalty: 'No statutory multiplier — outside URLTA counties, disputes run through breach-of-contract claims on the lease.' },
+      WY: { name: 'Wyoming', days: 0, kind: 'cal', trigger: 'none', daysRule: 'Wyoming has no state security-deposit return statute — your lease sets the deadline, and the demand letter should cite the lease clause. (Court practice treats about 30 days as reasonable, but that is case law, not a statute.)', statute: 'Wyoming Judicial Branch — Security Deposits (no state statute)', url: 'https://www.wyocourts.gov/legal-help-by-topic/security-deposits',
+        statement: 'Your lease dictates what must be returned and when — quote its deposit clause.',
+        penalty: 'Recourse is a breach-of-contract claim on the lease, not a statutory penalty.' },
     };
 
     const $ = (id) => document.getElementById(id);
@@ -411,15 +423,21 @@ const states = [
 
       let trigger, deadline, alt = null;
       const claims = code === 'FL' && $('claim').value === 'yes';
-      if (R.trigger === 'vacate') { trigger = vacate; deadline = addDays(vacate, R.days); if (R.altDays) alt = { label: R.altLabel, date: addDays(vacate, R.altDays) }; }
+      if (R.trigger === 'none') { trigger = vacate; deadline = null; }
+      else if (R.trigger === 'vacate') { trigger = vacate; deadline = addDays(vacate, R.days); if (R.altDays) alt = { label: R.altLabel, date: addDays(vacate, R.altDays) }; }
       else if (R.trigger === 'termination') { trigger = term || vacate; deadline = addDays(trigger, claims ? R.claimDays : R.days); alt = claims ? { label: 'Tenant objection window closes', date: addDays(deadline, 15) } : { label: 'Claim-notice deadline if the landlord does claim', date: addDays(trigger, 30) }; }
       else if (R.trigger === 'later') { trigger = later(vacate, term); deadline = R.kind === 'month' ? monthClamp(trigger, R.days) : addDays(trigger, R.days); if (R.cap) alt = { label: 'Absolute cap with a lease extension (60 days)', date: addDays(trigger, R.cap) }; else if (R.altDays) alt = { label: R.altLabel, date: addDays(trigger, R.altDays) }; }
       else if (R.trigger === 'laterDemand') { trigger = later(later(vacate, term), demand); deadline = R.kind === 'biz' ? biz(trigger, R.days) : addDays(trigger, R.days); }
       else { trigger = term || vacate; deadline = addDays(trigger, R.days); }
 
-      $('out-deadline').textContent = fmt(deadline);
-      const daysLeft = Math.round((p(deadline) - p(new Date().toISOString().slice(0, 10))) / MS);
-      $('out-days').innerHTML = R.daysRule + (daysLeft >= 0 ? ' <em>(' + daysLeft + ' days from today)</em>' : ' <em>(' + (-daysLeft) + ' days ago)</em>');
+      if (deadline === null) {
+        $('out-deadline').textContent = 'No statutory deadline — your lease governs';
+        $('out-days').innerHTML = R.daysRule;
+      } else {
+        $('out-deadline').textContent = fmt(deadline);
+        const daysLeft = Math.round((p(deadline) - p(new Date().toISOString().slice(0, 10))) / MS);
+        $('out-days').innerHTML = R.daysRule + (daysLeft >= 0 ? ' <em>(' + daysLeft + ' days from today)</em>' : ' <em>(' + (-daysLeft) + ' days ago)</em>');
+      }
       $('out-trigger').textContent = fmt(trigger) + ' — ' + (R.trigger === 'vacate' ? 'the day tenants vacate' : R.trigger === 'termination' ? 'lease termination' : R.trigger === 'later' ? 'the later of termination / move-out' : R.trigger === 'laterDemand' ? 'the latest of termination / move-out / written demand' : 'lease termination (or move-out when no term applies)');
       if (alt) { $('out-alt-row').hidden = false; $('out-alt-label').textContent = alt.label; $('out-alt').textContent = fmt(alt.date); }
       else $('out-alt-row').hidden = true;

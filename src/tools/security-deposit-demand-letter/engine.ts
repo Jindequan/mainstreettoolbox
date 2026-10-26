@@ -27,6 +27,7 @@ export interface LetterResult {
   overdueDays: number;            // >0 = 信寄出时已逾期
   daysLeft: number;               // >0 = 距截止日的剩余天数（与 overdueDays 互斥）
   escalate: boolean;              // 逾期 → 信中点名法定后果
+  noStatute?: boolean;            // 州无成文期限（WY）：信件引租约条款而非法条日
 }
 
 const MS_DAY = 86_400_000;
@@ -49,6 +50,11 @@ export function buildLetter(input: LetterInput): LetterResult | { error: 'missin
   const deduction =
     input.statementReceived === 'statement' ? Math.max(0, input.deductionAmount || 0) : 0;
   const demanded = Math.max(0, deposit - deduction);
+
+  // 无成文期限州（WY）：跳过日期数学——信件引租约条款，无从逾期也无从倒计时
+  if (deadline.noStatute) {
+    return { deadline, demanded, overdueDays: 0, daysLeft: 0, escalate: false, noStatute: true };
+  }
 
   const letterDate = input.letterDate && ISO.test(input.letterDate)
     ? input.letterDate

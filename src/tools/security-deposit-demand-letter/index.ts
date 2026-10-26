@@ -17,6 +17,7 @@ const STATE_NAMES: Record<Slug, string> = {
   SD: 'South Dakota', OK: 'Oklahoma', AR: 'Arkansas', LA: 'Louisiana', MS: 'Mississippi',
   ME: 'Maine', NH: 'New Hampshire', RI: 'Rhode Island', VT: 'Vermont', DE: 'Delaware',
   WV: 'West Virginia', AK: 'Alaska', HI: 'Hawaii', DC: 'District of Columbia',
+  KY: 'Kentucky', TN: 'Tennessee', WY: 'Wyoming',
 };
 
 export default {
@@ -25,7 +26,7 @@ export default {
   name: 'Security Deposit Demand Letter Generator',
   tagline: 'A formal, printable demand letter with your state\'s legal deadline and statute citation filled in. No signup.',
   title: 'Security Deposit Demand Letter Template — Free Generator (State Deadlines Included)',
-  description: 'Generate a security deposit demand letter with your state\'s legal refund deadline and statute citation built in — 48 states verified against current statutes. Free, printable, no signup.',
+  description: 'Generate a security deposit demand letter with your state\'s legal refund deadline and statute citation built in — all 50 states plus DC covered, each verified against current statutes. Free, printable, no signup.',
   result: { label: 'Amount to demand' },
   fields: [
     {
@@ -71,6 +72,40 @@ export default {
     }
 
     const d = r.deadline;
+    if (r.noStatute) {
+      return {
+        primary: { label: 'Amount to demand', value: `${money(r.demanded)} — per your lease` },
+        secondary: [
+          { label: 'State rule', value: `${d.state}: ${d.daysRule}` },
+          { label: 'Clock started', value: `${d.triggerDate} — ${d.triggerRule}` },
+          { label: 'Letter status', value: 'No statutory deadline — the letter cites your lease\'s deposit clause instead' },
+          { label: 'How to send', value: 'Certified mail, return receipt requested — keep the receipt with your copy' },
+        ],
+        verdict: {
+          level: 'info' as const,
+          text: `${d.state} sets no statutory return deadline, so the letter quotes your lease agreement instead of a statute. Attach or reference the lease's deposit clause, demand the ${money(r.demanded)} balance in writing, and keep the certified-mail receipt — your claim is breach of contract, and a dated letter is still the cheapest leverage.`,
+        },
+        doc: {
+          title: 'SECURITY DEPOSIT DEMAND LETTER',
+          fields: [
+            { label: 'Date', value: blank(v.letterDate) },
+            { label: 'From', value: `${blank(v.tenantName)} · forwarding: ${blank(v.forwarding)}` },
+            { label: 'To', value: blank(v.landlordName) },
+            { label: 'Re', value: `${blank(v.property)} — residential security deposit` },
+            { label: 'Deposit held', value: money(num(v.deposit)) },
+            { label: 'Deadline', value: `Per our lease agreement — ${d.state} sets no statutory return deadline` },
+            {
+              label: 'Notice',
+              value: v.statementReceived === 'statement'
+                ? `Your itemized statement claimed ${money(num(v.deductionAmount))}; the balance of ${money(r.demanded)} remains due.`
+                : 'As of this letter, no refund and no itemized statement of deductions has been received.',
+            },
+          ],
+          total: { label: 'Demand', value: `${money(r.demanded)} per the lease` },
+          footnote: `Send by certified mail, return receipt requested, and keep a copy. Deadline per the lease agreement — ${d.state} has no statutory return deadline. Template — not legal advice.`,
+        },
+      };
+    }
     const statusValue = r.escalate
       ? `Overdue by ${r.overdueDays} day${r.overdueDays === 1 ? '' : 's'}`
       : `${r.daysLeft} day${r.daysLeft === 1 ? '' : 's'} before the deadline`;
@@ -172,6 +207,9 @@ export default {
         <tr><td>Alaska</td><td>14 days (30 when deductions are claimed)</td><td>No statutory multiplier</td></tr>
         <tr><td>Hawaii</td><td>14 days</td><td>No statutory multiplier</td></tr>
         <tr><td>District of Columbia</td><td>45 days plus interest</td><td>Withholding without written itemization is forfeited</td></tr>
+        <tr><td>Kentucky</td><td>30 days (only where the URLTA is adopted — e.g. Fayette and Jefferson counties; elsewhere your lease governs)</td><td>Deposit plus attorney's fees when a 60-day dispute is upheld</td></tr>
+        <tr><td>Tennessee</td><td>30 days (or 7 days after a new tenant moves in) — only in counties with 75,000+ residents; elsewhere your lease governs</td><td>No statutory multiplier — breach-of-contract claim on the lease</td></tr>
+        <tr><td>Wyoming</td><td><b>No state statute — your lease sets the deadline</b></td><td>Breach-of-contract claim on the lease; the letter cites the lease clause</td></tr>
       </tbody>
     </table>
     <h3>What to put in the letter</h3>
@@ -197,7 +235,7 @@ export default {
     { q: 'When should I send a security deposit demand letter?', a: 'The day after your state\'s deadline passes — 14 days after move-out in New York, 21 in California and Wisconsin, 30 in Texas, Washington and Pennsylvania, 60 in Alabama, with Florida at 15 days (30 when deductions are claimed), Colorado at one calendar month, and Arizona at 14 business days that only start when you demand the deposit in writing. Sending a polite version a few days before the deadline also works and sometimes gets the check moving without any escalation.' },
     { q: 'What happens if my landlord ignores the demand letter?', a: 'You file in small-claims court with the letter as your first exhibit. The statutory penalties are the claim: Texas adds $100 plus 3× the wrongfully withheld amount plus attorney\'s fees, Colorado awards 3× the wrongfully withheld portion, Alabama 2× the entire deposit, and New York, Florida, Washington and Pennsylvania strip the landlord\'s right to withhold any of it once the deadline is missed.' },
     { q: 'Does a security deposit demand letter have to be sent by certified mail?', a: 'No statute requires it, but certified mail with return receipt is the cheap way to prove when the letter arrived — and in states like Texas where obligations hinge on the tenant\'s forwarding address, proof of delivery ends the "never got it" defense. Email a copy as a backup and keep the green card with your file copy.' },
-    { q: 'My state isn\'t listed — can I still use this?', a: 'Possibly — 48 states plus the District of Columbia are in the generator, verified against current statute text (an unverified deadline is worse than none — Washington\'s window changed from 21 to 30 days in 2023, Connecticut\'s from 30 to 21 days in 2024, and Alabama is 60, not the 35 many sites still print). Only Kentucky, Tennessee and Wyoming have no statutory return deadline — there the lease terms govern, and HUD\'s tenant-rights page links each state\'s official resources; the letter structure stays the same.' },
+    { q: 'My state isn\'t listed — can I still use this?', a: 'Every state is: the generator covers all 50 states plus the District of Columbia, each verified against current statute text (an unverified deadline is worse than none — Washington\'s window changed from 21 to 30 days in 2023, Connecticut\'s from 30 to 21 days in 2024, and Alabama is 60, not the 35 many sites still print). Kentucky and Tennessee\'s statutes apply only where their landlord-tenant acts are adopted, and Wyoming has no statutory deadline at all — in those cases the letter cites your lease\'s deposit clause instead of a statute, which is exactly what a local court expects to see.' },
   ],
   related: ['security-deposit-refund-calculator', 'cleaning-estimate-calculator', 'work-order-generator'],
 } satisfies RegisteredTool;

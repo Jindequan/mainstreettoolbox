@@ -18,7 +18,9 @@
 // VT 9 V.S.A. §4461（14 天自发现起）、DE 25 Del. C. §5514（20 天）、WV §37-6A-1（60 天/45 天双轨）、
 // AK §34.03.070（14 天/30 天 good-cause 双轨）、HI §521-44（14 天）、DC §42-3502.17（45 天+利息）、
 // ID §6-321（21 天/租约可延至 30 上限）、MT §70-25-202/206（30 天+无扣款 10 天快轨+恶意 3×）、NE §76-1416（14 天）。
-// KY/TN/WY 无成文退还期限（租约约定优先），需「无法定期限」结果形态，缓办（见 benchmarks 三期节）。
+// 四期 3 州（2026-10-25 逐州核对）：KY KRS 383.580（apps.legislature.ky.gov，30 天；**URLTA 仅在采纳县适用**，乡村=租约优先——
+// 此前「KY/TN 无成文期限」的分类是二手记忆错误，本轮 statute 核对翻案）、TN §66-28-301（Justia，30 天或新租客入住后 7 天；
+// URLTA 仅 7.5 万人口以上县适用）、WY 无成文期限（wyocourts.gov 官方法务帮助页；判例实践 30 天但非立法）→ 全矩阵 51 辖区覆盖完成。
 
 export interface DepositInput {
   vacate: string;        // YYYY-MM-DD 搬出/交还日
@@ -29,7 +31,8 @@ export interface DepositInput {
 
 export interface DepositResult {
   state: string;
-  deadline: string;      // ISO：法定退款截止日
+  deadline: string;      // ISO：法定退款截止日（noStatute 时为 ''）
+  noStatute?: boolean;   // 该州无成文退还期限（WY）：租约优先
   triggerDate: string;   // ISO：时钟起算日
   triggerRule: string;   // 人话：起算规则
   daysRule: string;      // 人话：天数与口径
@@ -71,7 +74,7 @@ export type Slug =
   | 'SC' | 'MN' | 'MD' | 'VA'
   | 'ID' | 'MT' | 'NE' | 'IA' | 'KS' | 'NV' | 'UT' | 'OR' | 'NM' | 'ND'
   | 'SD' | 'OK' | 'AR' | 'LA' | 'MS' | 'ME' | 'NH' | 'RI' | 'VT' | 'DE'
-  | 'WV' | 'AK' | 'HI' | 'DC';
+  | 'WV' | 'AK' | 'HI' | 'DC' | 'KY' | 'TN' | 'WY';
 
 export const VERIFIED_STATES: Slug[] = [
   'CA', 'NY', 'TX', 'FL', 'WA', 'CO', 'AZ', 'WI', 'AL', 'PA',
@@ -79,7 +82,7 @@ export const VERIFIED_STATES: Slug[] = [
   'SC', 'MN', 'MD', 'VA',
   'ID', 'MT', 'NE', 'IA', 'KS', 'NV', 'UT', 'OR', 'NM', 'ND',
   'SD', 'OK', 'AR', 'LA', 'MS', 'ME', 'NH', 'RI', 'VT', 'DE',
-  'WV', 'AK', 'HI', 'DC',
+  'WV', 'AK', 'HI', 'DC', 'KY', 'TN', 'WY',
 ];
 
 export function computeDeadline(state: Slug, input: DepositInput): DepositResult {
@@ -718,6 +721,43 @@ export function computeDeadline(state: Slug, input: DepositInput): DepositResult
         deadline: addDays(trigger, 45),
         statuteUrl: 'https://code.dccouncil.gov/us/dc/council/code/sections/42-3502.17',
         statuteCite: 'D.C. Code §42-3502.17–.18',
+      };
+    }
+    case 'KY': {
+      return {
+        ...base, state: 'Kentucky', triggerDate: vacate,
+        triggerRule: 'Clock starts the day tenants vacate.',
+        daysRule: '30 calendar days after move-out (with an itemized list) — but the Kentucky Uniform Residential Landlord and Tenant Act applies only where a county or city has adopted it (e.g. Fayette and Jefferson counties). Outside those jurisdictions the lease sets the deadline.',
+        statement: 'Itemized list of deductions plus the balance due within the 30 days; tenants have 60 days to dispute the itemization in writing.',
+        penalty: 'A tenant who disputes within 60 days can recover the deposit plus reasonable attorney\'s fees when the landlord cannot justify the deduction.',
+        deadline: addDays(vacate, 30),
+        statuteUrl: 'https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=35733',
+        statuteCite: 'KRS §383.580 (URLTA — adopted jurisdictions only)',
+      };
+    }
+    case 'TN': {
+      return {
+        ...base, state: 'Tennessee', triggerDate: vacate,
+        triggerRule: 'Clock starts the day tenants vacate.',
+        daysRule: '30 calendar days after move-out (or 7 days after a new tenant takes possession) — but the Tennessee Uniform Residential Landlord and Tenant Act applies only in counties with 75,000+ residents (e.g. Davidson, Shelby, Knox, Hamilton). Elsewhere the lease sets the deadline.',
+        statement: 'Refund with an itemized list of any deductions due inside the window.',
+        penalty: 'The statute sets no multiplier — outside URLTA counties, disputes run through breach-of-contract claims on the lease.',
+        deadline: addDays(vacate, 30),
+        statuteUrl: 'https://law.justia.com/codes/tennessee/title-66/chapter-28/part-3/section-66-28-301/',
+        statuteCite: 'Tenn. Code Ann. §66-28-301 (URLTA — qualifying counties only)',
+      };
+    }
+    case 'WY': {
+      return {
+        ...base, state: 'Wyoming', triggerDate: vacate,
+        triggerRule: 'No statutory clock — the deadline lives in your lease.',
+        daysRule: 'Wyoming has no state security-deposit return statute: the lease agreement sets the deadline, and the demand letter should cite the lease clause instead. (Court practice in the state treats about 30 days as reasonable, but that is case law, not a statute.)',
+        statement: 'Your lease dictates what the landlord must return and when — quote its deposit clause in the letter.',
+        penalty: 'Recourse is a breach-of-contract claim on the lease, not a statutory penalty.',
+        noStatute: true,
+        deadline: '',
+        statuteUrl: 'https://www.wyocourts.gov/legal-help-by-topic/security-deposits',
+        statuteCite: 'Wyoming Judicial Branch — Security Deposits (no state statute)',
       };
     }
   }

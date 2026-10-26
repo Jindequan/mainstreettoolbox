@@ -146,6 +146,28 @@ describe('security deposit deadline engine', () => {
     expect(computeDeadline('OR', { vacate: '2026-08-01' }).deadline).toBe('2026-09-01');
   });
 
+  // ── 四期 KY/TN/WY（2026-10-25 statute 核对批次）──
+  it('KY: +30 days with the URLTA-adoption caveat documented', () => {
+    const r = computeDeadline('KY', { vacate: '2026-04-01' });
+    expect(r.deadline).toBe('2026-05-01');
+    expect(r.daysRule).toContain('Uniform Residential Landlord and Tenant Act');
+    expect(r.daysRule).toContain('lease sets the deadline');
+  });
+
+  it('TN: +30 days with the county-population caveat documented', () => {
+    const r = computeDeadline('TN', { vacate: '2026-04-01' });
+    expect(r.deadline).toBe('2026-05-01');
+    expect(r.daysRule).toContain('75,000');
+  });
+
+  it('WY: no statutory deadline — empty date, noStatute flag, lease-governs guidance', () => {
+    const r = computeDeadline('WY', { vacate: '2026-04-01' });
+    expect(r.noStatute).toBe(true);
+    expect(r.deadline).toBe('');
+    expect(r.daysRule).toContain('lease');
+    expect(r.statuteCite).toContain('no state statute');
+  });
+
   it('helper: later() and addMonthsClamped() behave on edges', () => {
     expect(later('2026-01-01')).toBe('2026-01-01');
     expect(later('2026-01-01', '2026-03-01')).toBe('2026-03-01');
