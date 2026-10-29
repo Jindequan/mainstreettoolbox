@@ -363,3 +363,9 @@
 - **流程学习入册:GSC 数据窗每日约太平洋零点滚动(≈北京 15-16 点)**——上午补跑会读到昨日数据窗(本轮与 10-27 晚抽取逐行一致,实测确认)。处置:未写重复 CSV 污染台账;今日新窗数据留待 21:00 档拉取。**推论:9 点档只适合做外联/动作,数据判读以 21:00 档为准**——后续 10-30 积累对比等判据读数一律以晚间窗数据计。
 - 其余:Gmail 零媒体回复(最新 10-27 用户其他项目测试收据;Oct 26 退信仍挂账外联线);Tier 0:2 使用/7 天(网络偶抖,curl 重试一次成功)。
 | 2026-10-28 | solar panel cleaning 过闸转正（Google 侧验证+闸2双查 0/6 计算器+多源带齐）；冻结解冻后双首选=garage+solar；registry 转正回写 |
+
+### 10-29 晚:巡检轮(当天首跑;10-28 全天无数据闭环,断档声明见下)
+- **断档声明:10-28 全天无数据闭环**(晨档读窗未滚动只入册学习,21:00 档未触发疑主机未开机),距上次数据闭环 2 天。本档恢复。
+- **GSC 7d 全表落盘**(docs/keyword-data/gsc-queries-7d-2026-10-29.csv,新滚动窗):47 查询/约 165 展现/0 点击。**blowout 问句新变体 how much does it cost to have your sprinkler system blowout 冒出 p6.0**(家族问句历史最好位);**broken torquemaster price quote 2@p25.5 进中段**(torquemaster=garage 门族,叠加 p88-95 的 garage 词族——#51 疑似实际已部署,审计项持续挂);新面:home repair/food cost/construction 系 cost 词成批冒头(p78-100 假展现层)。
+- **10-30 积累对比判据预读**:问句族周展现仍 1(变体分散),title 手术触发 ≥10 未到——明日正式读数大概率维持 MISS,如实报。
+- 外联:hk52 零媒体回复;⚠️今日 18:23 Google「Critical security alert」账号级警报(疑似用户其他项目新登录),提请用户留意。Tier 0:1 使用/7 天(cleaning-estimate;snow 已滚出窗)。
