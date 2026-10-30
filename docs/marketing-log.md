@@ -369,3 +369,11 @@
 - **GSC 7d 全表落盘**(docs/keyword-data/gsc-queries-7d-2026-10-29.csv,新滚动窗):47 查询/约 165 展现/0 点击。**blowout 问句新变体 how much does it cost to have your sprinkler system blowout 冒出 p6.0**(家族问句历史最好位);**broken torquemaster price quote 2@p25.5 进中段**(torquemaster=garage 门族,叠加 p88-95 的 garage 词族——#51 疑似实际已部署,审计项持续挂);新面:home repair/food cost/construction 系 cost 词成批冒头(p78-100 假展现层)。
 - **10-30 积累对比判据预读**:问句族周展现仍 1(变体分散),title 手术触发 ≥10 未到——明日正式读数大概率维持 MISS,如实报。
 - 外联:hk52 零媒体回复;⚠️今日 18:23 Google「Critical security alert」账号级警报(疑似用户其他项目新登录),提请用户留意。Tier 0:1 使用/7 天(cleaning-estimate;snow 已滚出窗)。
+
+### 10-30 早:巡检轮(判据日)+ 逾期 bump 批次开始执行(新规"自线事项不外抛"生效)
+- **🔴→✅ 逾期 7 天的 bump 批次今日开火(新规:自线事项禁止再外抛,本轮直接执行)**。今日 2 封(≤2/日上限用尽):
+  - **Brian(bhorn@gie.net)Sent 实证 10:37**,线程计数→4(10-04 首发/10-05 承诺"We will get this posted"/10-15 跟进/今日 bump)。文案:体谅排期+表格随时可交+可改角度长度+若错过雪季可留.spring。
+  - **Cleanfax(elizabethc@issa.com)Sent 实证 10:46**,线程计数→3(10-02 首发/10-09 bump/今日 bump,21 天)。文案:Q4 深度清洁季钩子+页内溯源三档价(标准 $120-280/深度 $200-450/move-out $200-600)+sidebar 代写邀约。
+  - 剩余队列:R&R/MRM/FCP 三线程排 10-31(≤2 封)与 11-01(1 封),发前重核线程末条日期。
+- **10-30 积累对比判据:MISS(正式裁定)**——判据窗(10/23-29,b756643 落盘 CSV)问句族周展现仍 1(变体分散于 p6/p8/p10),title 手术触发 ≥10 未到。今日 GSC 窗未滚动(10-28 学习),不写重复 CSV;正式对比以 10-29 窗为准。
+- 外联扫描:hk52 零媒体回复。Tier 0:0 使用/7 天(旧使用全部滚出窗)。
