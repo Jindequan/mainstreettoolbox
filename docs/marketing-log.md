@@ -378,3 +378,9 @@
 - **10-30 积累对比判据:MISS(正式裁定)**——判据窗(10/23-29,b756643 落盘 CSV)问句族周展现仍 1(变体分散于 p6/p8/p10),title 手术触发 ≥10 未到。今日 GSC 窗未滚动(10-28 学习),不写重复 CSV;正式对比以 10-29 窗为准。
 - 外联扫描:hk52 零媒体回复。Tier 0:0 使用/7 天(旧使用全部滚出窗)。
 | 2026-10-30 | demand letter 10-29 检查点 MISS（双窗曝光 0）；11-12 终判照常；凌晨补账对账：MST Indexed 66 首破线/procurelink 点击 57/全矩阵 Indexed -44 异动已点名 |
+
+### 10-31:触达 10/20(Devon ✓ + NCNLA 入黑名单)
+- **✅ Devon Phillips(佐治亚 UAC 会员营销总监)Sent 实证**——队列队首发出不落空;具名+职能对口画像再次验证。
+- **⛔ NCNLA(info@ncnla.com)两击全吞入黑名单**——与 CleanGuru/Janitorial Store 同模式:部分收件域被 Gmail 定向静默拒,与当日配额无关。**黑名单累计 3 域名+Fullerton(Gmail 收件人);命中率规律:协会 org/教练 com 域名 ≈ 高,行业站 info@ ≈ 低。**
+- 雷达:10-31 五词条(Mika 手机 AI 助理/unslop 反 AI 味 UI/nvzhuang 女装试穿进素材池;totk-pc-recomp 法律灰区跳过);电视风暴 46678★+手机去广告 5047★ 双线维持。
+- **余量队列**:info@vnla.org(明首发)、media@savvycleaner、GreenIndustryPodcast@gmail(易吞,最后);黑名单不再重试。
