@@ -390,3 +390,4 @@
 - **今日 2 封 bump Sent 实证(≤2/日用尽)**:R&R(mcgowank,To:3,10:35,冻结管季钩子)/MRM(bcastiglia,To:3,10:44,年末毛利复盘钩子)。FCP 留 11-01。
 - **🔴 审计红灯:Brian 线程疑双发**——我方 10-30 10:37 第 4 触(Sent 实证)后,Sent 计数显示 "To: Brian 6"(Oct 30 多 2 封非我方发出),疑并行线同队列重复执行(CMM ×2 同款)。处置:Brian 线程全域禁发(任何线), Jimmy 已回信更不可再扰;待并行线/用户核账。mcgowank/elizabethc 计数核验无误(各 3)。
 - GSC 7d 新窗落盘(61 查询):问句双变体守 p6.0/p11.0,tip pooling 升 9 展现,garage 门族持续冒头。Tier 0:leaf-removal 首次 1/1(第五个破零工具)。hk52 零媒体新回复(Jimmy 回复走的是 to:bhorn 线程)。
+| 2026-10-31 | 引用域 0→1 HIT 对账入册（L&L 上线+Jimmy Miller 确认=首个真人回复链）；Brian 双发疑云全域禁发待核；问句 p8→p6 再升；观察日 |
