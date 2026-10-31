@@ -384,3 +384,9 @@
 - **⛔ NCNLA(info@ncnla.com)两击全吞入黑名单**——与 CleanGuru/Janitorial Store 同模式:部分收件域被 Gmail 定向静默拒,与当日配额无关。**黑名单累计 3 域名+Fullerton(Gmail 收件人);命中率规律:协会 org/教练 com 域名 ≈ 高,行业站 info@ ≈ 低。**
 - 雷达:10-31 五词条(Mika 手机 AI 助理/unslop 反 AI 味 UI/nvzhuang 女装试穿进素材池;totk-pc-recomp 法律灰区跳过);电视风暴 46678★+手机去广告 5047★ 双线维持。
 - **余量队列**:info@vnla.org(明首发)、media@savvycleaner、GreenIndustryPodcast@gmail(易吞,最后);黑名单不再重试。
+
+### 10-31 早:巡检轮(bump 批次第 2 日)+ 🔴→🎉 Brian 判据 HIT:文章上线
+- **🎉 引用域 0→1:10-22 判据 HIT(迟 8 天兑现)**。证据链:①Jimmy Miller(jmiller@gie.net,L&L 编辑)今日 1:21 AM 回复我们 10-30 的第 4 触:"This is now live on our website" + URL(lawnandlandscape.com/news/main-street-toolbox-launches-free-snow-lawn-pricing-calculators/),cc 抄送在案;②直验被 Imperva hCaptcha 拦(用户侧能力边界,已记录);③搜索索引滞后未收录(不构成反证)。**引用域判据升为 1,待爬虫确认链接后在记分牌转正**。
+- **今日 2 封 bump Sent 实证(≤2/日用尽)**:R&R(mcgowank,To:3,10:35,冻结管季钩子)/MRM(bcastiglia,To:3,10:44,年末毛利复盘钩子)。FCP 留 11-01。
+- **🔴 审计红灯:Brian 线程疑双发**——我方 10-30 10:37 第 4 触(Sent 实证)后,Sent 计数显示 "To: Brian 6"(Oct 30 多 2 封非我方发出),疑并行线同队列重复执行(CMM ×2 同款)。处置:Brian 线程全域禁发(任何线), Jimmy 已回信更不可再扰;待并行线/用户核账。mcgowank/elizabethc 计数核验无误(各 3)。
+- GSC 7d 新窗落盘(61 查询):问句双变体守 p6.0/p11.0,tip pooling 升 9 展现,garage 门族持续冒头。Tier 0:leaf-removal 首次 1/1(第五个破零工具)。hk52 零媒体新回复(Jimmy 回复走的是 to:bhorn 线程)。
