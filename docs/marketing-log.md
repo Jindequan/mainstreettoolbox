@@ -391,3 +391,9 @@
 - **🔴 审计红灯:Brian 线程疑双发**——我方 10-30 10:37 第 4 触(Sent 实证)后,Sent 计数显示 "To: Brian 6"(Oct 30 多 2 封非我方发出),疑并行线同队列重复执行(CMM ×2 同款)。处置:Brian 线程全域禁发(任何线), Jimmy 已回信更不可再扰;待并行线/用户核账。mcgowank/elizabethc 计数核验无误(各 3)。
 - GSC 7d 新窗落盘(61 查询):问句双变体守 p6.0/p11.0,tip pooling 升 9 展现,garage 门族持续冒头。Tier 0:leaf-removal 首次 1/1(第五个破零工具)。hk52 零媒体新回复(Jimmy 回复走的是 to:bhorn 线程)。
 | 2026-10-31 | 引用域 0→1 HIT 对账入册（L&L 上线+Jimmy Miller 确认=首个真人回复链）；Brian 双发疑云全域禁发待核；问句 p8→p6 再升；观察日 |
+
+### 11-01 早:巡检轮 + bump 批次收官(FCP Sent 实证)
+- **✅ FCP(mmayer@iron.markets)Sent 实证 10:36**,线程计数→3(10-02 邀约pitch/10-09 bump/今日第3触,23天)。文案:冬季安装+年末投标钩子+tools item 可按 FCP 格式定制。**day-14 bump 批次 5 线程全部执行完毕**:Brian(4)/Cleanfax(3)/R&R(3)/MRM(3)/FCP(3)。FCP 也入全域禁发(刚触达完)。
+- GSC 7d 新窗落盘(docs/keyword-data/gsc-queries-7d-2026-11-01.csv):62 查询/约 155 展现/0 点击。**Tier 0 亮点:snow-removal + leaf-removal 双双 1/1 破零**(第五/六个破零工具;snow 的使用时序与 L&L 文章上线吻合,来源待 GA 确认);问句双变体守 p6.0/p11.0;food cost calculator 升 9 展现;construction cost estimator 4@p46.8 进中段(并行线内链轮效果迹象)。
+- 判据:引用域 1(L&L)待爬虫转正;**11-07 总死线还剩 6 天**——死线建议框架按"1 真实引用域+bump 管道验证有效+工具使用零星破零"的真实轨迹撰写。
+- 外联扫描:hk52 零新媒体回复(Jimmy 10-31 回复已处理)。
