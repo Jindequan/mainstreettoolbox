@@ -397,3 +397,8 @@
 - GSC 7d 新窗落盘(docs/keyword-data/gsc-queries-7d-2026-11-01.csv):62 查询/约 155 展现/0 点击。**Tier 0 亮点:snow-removal + leaf-removal 双双 1/1 破零**(第五/六个破零工具;snow 的使用时序与 L&L 文章上线吻合,来源待 GA 确认);问句双变体守 p6.0/p11.0;food cost calculator 升 9 展现;construction cost estimator 4@p46.8 进中段(并行线内链轮效果迹象)。
 - 判据:引用域 1(L&L)待爬虫转正;**11-07 总死线还剩 6 天**——死线建议框架按"1 真实引用域+bump 管道验证有效+工具使用零星破零"的真实轨迹撰写。
 - 外联扫描:hk52 零新媒体回复(Jimmy 10-31 回复已处理)。
+
+### 11-01:触达 0 新增(NCNLA/VNLA 入黑名单);procurelink GSC 权限发现
+- NCNLA+VNLA 各 2 击 Sent 全 0=定向拒黑名单第 3/4 例。**规律定版:媒体主编/教练/具名总监 ≈ 100% 送达;行业站 info@ ≈ 0%。**后续目标选择只打前一类。
+- procurelink 双实验首读延至明日:GSC 两个属性形式(www/非www)jindeqhk52 均无权限(实测"don't have access")——procurelink GSC 属主为其他账号(疑 jindeq52 Chrome);10-19 的读数来自那条线。明日矩阵读数日由数据监控线出数,判据不变。
+- 累计触达 10 验证。余量:media@savvycleaner、GreenIndustryPodcast(易吞)、新目标只打主编/教练/总监具名邮箱。
