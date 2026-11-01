@@ -402,3 +402,4 @@
 - NCNLA+VNLA 各 2 击 Sent 全 0=定向拒黑名单第 3/4 例。**规律定版:媒体主编/教练/具名总监 ≈ 100% 送达;行业站 info@ ≈ 0%。**后续目标选择只打前一类。
 - procurelink 双实验首读延至明日:GSC 两个属性形式(www/非www)jindeqhk52 均无权限(实测"don't have access")——procurelink GSC 属主为其他账号(疑 jindeq52 Chrome);10-19 的读数来自那条线。明日矩阵读数日由数据监控线出数,判据不变。
 - 累计触达 10 验证。余量:media@savvycleaner、GreenIndustryPodcast(易吞)、新目标只打主编/教练/总监具名邮箱。
+| 2026-11-01 | 纯观察日：bump 批次收官（5 线程全触达）；Tier 0 snow+leaf 双破零（L&L 季节需求到站）；11-07 剩 6 天 |
