@@ -415,3 +415,4 @@
 - **访问权限谜底**:procurelink GSC 属主=jindeqhk52 可见(sc-domain:procurelink.store 在属性列表),昨天的"无权限"=URL 双重编码假象;直达路径已验证可用(GSC 性能报告深链)。
 - 索引现状:48 indexed / 82 not indexed(工件实验新页入库后待收录)。
 - 首读数据已入 radar ledger(11-01 行)。
+| 2026-11-02 | 周一监控第 2 周：全矩阵点击 70→77(+10%)、Indexed 295 走平止跌、MST 排名 60.2 历史最佳（引用域破零后首周加速）；AdSense/GA4 IAB 争用 fail 延下周；carecost 月度任务顺延 |
