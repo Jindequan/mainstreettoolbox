@@ -403,3 +403,9 @@
 - procurelink 双实验首读延至明日:GSC 两个属性形式(www/非www)jindeqhk52 均无权限(实测"don't have access")——procurelink GSC 属主为其他账号(疑 jindeq52 Chrome);10-19 的读数来自那条线。明日矩阵读数日由数据监控线出数,判据不变。
 - 累计触达 10 验证。余量:media@savvycleaner、GreenIndustryPodcast(易吞)、新目标只打主编/教练/总监具名邮箱。
 | 2026-11-01 | 纯观察日：bump 批次收官（5 线程全触达）；Tier 0 snow+leaf 双破零（L&L 季节需求到站）；11-07 剩 6 天 |
+
+### 11-02 早:巡检轮(周一,当天首跑,9 点准点)+ 周一竞品研究连续第三周
+- **GSC 7d 全表落盘**(docs/keyword-data/gsc-queries-7d-2026-11-02.csv):67 查询/约 165 展现/0 点击(走平)。**Tier 0 起量:snow-removal 升 3 使用/3 用户**(较昨日 +2,与 L&L 文章 10-30/31 上线时序吻合)+"gutter-cleaning 首次 1/1"(第七个破零工具)+leaf 1/1——合计 5 使用/7 天,开站以来最高周读数。问句双变体守 p6.0/p11.0;food cost calculator 升 11 展现;**construction cost estimator 5@p49.2 持续爬升**(并行线内链轮效果,判据归其线)。
+- **周一竞品研究连续第三周**:docs/studies/yardledger-2026-11-02.md——YardLedger(SERP#3,商家 SaaS 小站)全页取证:问句 H1(第三次验证此模式)+**失效成本框架**(不做的代价 $170-2,500 冻裂维修=服务价 5-10 倍损失厌恶叙事)+extension 三校引用+密集簇内链。✅采纳:失效成本框架(数字须先双源溯源,落点 11-07 后推位周期)+extension 引用节(与 .edu pitch 互引);❌否决:ZIP 初霜工具(违冻结令)。
+- 外联:hk52 零新媒体回复;**Google Security alert 连续第二天(Nov 1)**——再次提请用户查账号安全(疑似非 MST 账号新登录)。Tier 0 见上。
+- 引用域:L&L 文章待爬虫转正(引用域 1);感谢 Jimmy 回复草稿仍待值守窗(已等 1 天,置顶)。
