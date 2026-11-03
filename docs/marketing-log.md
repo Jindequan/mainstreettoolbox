@@ -421,3 +421,4 @@
 - **🔴 Google 强制登出**:GSC 打开停在账号选择器,两个账号(jindeq52/jindeqhk52)均 Signed out——连续两天 Security alert 的后果(风控检测自动化访问)。登录需密码/2FA=用户侧边界,巡检线无法自愈。**需用户在 IAB 浏览器重新登录 jindeqhk52**(选 Devin Jin),恢复后下轮自动继续。
 - 本轮降级完成:GSC 无新窗数据(不写 CSV)、Gmail 无法扫(bump 批次已收官无待发件,影响限于回复扫描)。Tier 0 正常:**retail-math-calculator 首次 1/1**(第八个破零工具,零售族首例)+ snow 3/3 + leaf/gutter 各 1 = **6 使用/7 天,再创新高**。
 - 判据:引用域 1 待爬虫转正;**11-07 总死线还剩 4 天**。用户重新登录后,今晚 21:00 档自动补拉数据窗。
+| 2026-11-03 | Google 风控踢 session：GSC/Gmail 全阻塞待用户重登（menu/周读/letter 终判连带）；carecost 再顺延；11-07 判读不受阻（数据已齐） |
