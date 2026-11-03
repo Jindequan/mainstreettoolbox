@@ -278,8 +278,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     import { beaconUse } from '../../scripts/stats';
 
     const money = (v: number) => '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    const $id = (s: string) => document.getElementById(s) as HTMLInputElement;
-    const num = (el: HTMLInputElement) => { const n = parseFloat(el.value.replace(/[^0-9.]/g, '')); return Number.isFinite(n) ? n : 0; };
+    const $id = (s: string) => document.getElementById(s)! as HTMLInputElement | HTMLSelectElement;
+    const num = (el: HTMLInputElement | HTMLSelectElement) => { const n = parseFloat(el.value.replace(/[^0-9.]/g, '')); return Number.isFinite(n) ? n : 0; };
     let counted = false;
     const countUse = () => { if (!counted) { counted = true; beaconUse('retail-math-calculator'); } };
 

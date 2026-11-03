@@ -12,7 +12,7 @@ const config = {
   description: 'Enter your move-out and lease-termination dates to get the legal security-deposit refund deadline for your state, the itemized-statement requirement, and the penalty for missing it — sourced from each state\'s current statute.',
   result: { label: 'Refund deadline' },
   fields: [
-    { id: 'state', label: 'State', kind: 'select', default: 'CA', options: ['CA', 'NY', 'TX', 'FL', 'WA', 'CO', 'AZ', 'WI', 'AL', 'PA', 'IL', 'MA', 'NJ', 'CT', 'OH', 'MI', 'IN', 'MO', 'GA', 'NC', 'SC', 'MN', 'MD', 'VA'] },
+    { id: 'state', label: 'State', kind: 'select', default: 'CA', options: ['CA', 'NY', 'TX', 'FL', 'WA', 'CO', 'AZ', 'WI', 'AL', 'PA', 'IL', 'MA', 'NJ', 'CT', 'OH', 'MI', 'IN', 'MO', 'GA', 'NC', 'SC', 'MN', 'MD', 'VA'].map(state => ({ value: state, label: state })) },
     { id: 'vacate', label: 'Move-out (vacate) date', kind: 'text', default: '2026-07-01' },
     { id: 'termination', label: 'Lease termination date (if different)', kind: 'text', default: '', hint: 'WA / CO / AL / PA / OH / IN / GA / SC take the later of the two' },
     { id: 'demand', label: 'Tenant written demand date (Arizona / South Carolina)', kind: 'text', default: '' },
@@ -25,7 +25,18 @@ const config = {
       termination: (v.termination as string) || undefined,
       demand: (v.demand as string) || undefined,
     } satisfies DepositInput);
-    return { primary: r.deadline, sub: r.daysRule, result: r };
+    return {
+      primary: { label: 'Refund deadline', value: r.deadline || 'Consult your lease' },
+      secondary: [
+        { label: 'State', value: r.state },
+        { label: 'Deadline rule', value: r.daysRule },
+        { label: 'Relevant statute', value: r.statuteCite },
+      ],
+      verdict: {
+        level: r.noStatute ? 'warn' : 'info',
+        text: r.triggerRule + ' ' + r.daysRule,
+      },
+    };
   },
   explain: `
     <p>Every state sets its own clock for returning a residential security deposit after move-out —

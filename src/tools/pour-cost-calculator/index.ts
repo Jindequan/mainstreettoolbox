@@ -41,8 +41,8 @@ export default {
   compute: (values, _rows, p) => {
     const cat = (values.category as string) in BANDS ? (values.category as string) : 'spirits';
     const band = BANDS[cat];
-    const cost = num(values.drinkCost as number);
-    const price = num(values.menuPrice as number);
+    const cost = num(values.drinkCost);
+    const price = num(values.menuPrice);
     const pct = price > 0 ? (cost / price) * 100 : 0;
     const catNames: Record<string, string> = { spirits: 'spirits', draft: 'draft beer', wine: 'wine' };
 

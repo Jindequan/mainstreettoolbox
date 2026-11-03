@@ -2,7 +2,7 @@
 // 每个工具 = config(声明) + engine(isomorphic compute)；页面/交互/SEO 由模板产出。
 
 export type FieldType = 'money' | 'number' | 'slider' | 'select' | 'text';
-export type Industry = 'restaurant' | 'cleaning' | 'lawn' | 'construction' | 'salon' | 'retail' | 'landlord' | 'universal';
+export type Industry = 'restaurant' | 'cleaning' | 'lawn' | 'construction' | 'salon' | 'retail' | 'landlord' | 'universal' | 'auto';
 
 export interface FieldDef {
   id: string;
@@ -90,7 +90,7 @@ export interface RegisteredTool extends ToolConfig {
 }
 
 // —— 数值小工具（引擎共用）——
-export const num = (v: string | number | undefined): number => {
+export const num = (v: unknown): number => {
   const n = typeof v === 'number' ? v : parseFloat(String(v ?? '').replace(/[^0-9.\-]/g, ''));
   return Number.isFinite(n) ? n : 0;
 };
