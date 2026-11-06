@@ -6,8 +6,8 @@ export default {
   industry: 'restaurant',
   name: 'Restaurant Profit Margin Calculator',
   tagline: 'Where did the money actually go. No signup.',
-  title: 'Restaurant Profit Margin Calculator — Free tool',
-  description: 'A free restaurant profit margin calculator: enter monthly revenue and costs to see your restaurant\'s true net profit, margin percentage and annualized profit — and what a healthy margin looks like. Free, instant, no signup.',
+  title: 'Restaurant Profit Margin Calculator — Free, vs the Healthy 3–9% Band',
+  description: 'Typical restaurants net 3–9% (quick-service 6–15%). Enter revenue and costs to see your true net profit, margin % and annualized rate. Free, no signup.',
   result: { label: 'Net profit / month' },
   fields: [
     { id: 'revenue', label: 'Revenue / month', kind: 'money', default: 45000 },
