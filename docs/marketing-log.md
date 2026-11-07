@@ -441,3 +441,11 @@
 - **落地链**：vitest 71/71 + check 本轮文件 0 错（存量 47 条，本地 node_modules 因并行线 pnpm 迁移漂移）+ build 81 页绿 → commit e2af7b1 → push → IndexNow 200 → 线上 curl 200+新 title/desc 实证。
 - **置顶升级**：①感谢 Jimmy 草稿待值守窗发送（已等 7 天，第 3 次上报）；②jindeqhk52 重登（Gmail/Indexed/carecost 解锁，已等 4 天）。
 | 2026-11-07 | 11-07 总死线判定=判负未触发（排名 58.0/51.9+点击已启动）；leaf-removal CTR 手术 #2 上线（判据 11-21）；周点击 1 持平/引用域 1 |
+
+### 11-07 11:30 运营循环轮（同日双班；round 55）
+- **主线=solar panel cleaning 立项+构建上线**（/cleaning/solar-panel-cleaning-cost-calculator/，cleaning 第 9 族、第 52 工具，SEO 型新周期 1/3）。依据：round 46 四闸转正 T1 × 11-07 判负未触发解冻（round 54 下一步④）。
+- **闸 3 构建前重新具名核数**（round 46 只留 band 未落源名）：per-panel $10–20（HomeGuide ∩ SolarReviews $5–15 大系统下沿）；上门 $150–500（HomeGuide 均值 $325 ∩ SolarCleanHub 2026 指南 ∩ Yelp $200/Thumbtack $209）；最低 ~$150（SolarCleanHub ∩ r/solar 实价）；高难整单 $500–1,000（SolarCleanHub）；**UCSD「多雨区清洗常不回本」反向真相进 verdict + NREL soiling 3–4%/yr**=对 SERP 纯成本文章群的差异化。基准文档=docs/benchmarks-solar-panel-cleaning.md。
+- **模型**：每块清洗价×面板数三档（10–15/16–25/26–40）×污秽子带（HomeGuide 带内拆分）→$150 上门钳位→access=hard 整单钳位 $500–1,000；默认态 $160–500/visit。
+- **落地链**：vitest **79/79**（+8 新增，desc≤160+锚点≤80 meta 纪律测试固化 leaf 教训）+ astro check 存量 47 原值新文件 0 错 + build 93 index.html + llms-audit 52 工具 0 缺口 → vercel 26s → 线上 curl 200+新 title+SSR 默认值+hub 挂链实证 → IndexNow 3×200。**Bing SubmitUrlBatch 缺 key → 周一 11-09 对账补提交**。commit 本地（本线积累制不 push）。
+- **判据**：11-21 该 URL 曝现 >0；12-05 solar 词族展现 ≥10 或族内点击 +1（不达→记录池与族同进退）。
+| 2026-11-07 | solar 立项+上线（第 52 工具，六源闸 3 重验+UCSD 反向真相差异化；vitest 79/79+线上实证+IndexNow；Bing 补提交挂周一；判据 11-21/12-05） |

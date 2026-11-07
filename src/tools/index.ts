@@ -51,6 +51,7 @@ import menuProfitSheet from './menu-profit-sheet';
 import securityDeposit from './security-deposit-refund-calculator';
 import depositDemandLetter from './security-deposit-demand-letter';
 import garageSpring from './garage-door-spring-replacement-cost-calculator';
+import solarPanel from './solar-panel-cleaning-cost-calculator';
 
 export const TOOLS: RegisteredTool[] = [
   menuPricing,
@@ -104,6 +105,7 @@ export const TOOLS: RegisteredTool[] = [
   securityDeposit,
   depositDemandLetter,
   garageSpring,
+  solarPanel,
 ];
 
 export const bySlug = (slug: string): RegisteredTool | undefined => TOOLS.find((t) => t.slug === slug);

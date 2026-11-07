@@ -42,6 +42,7 @@ export const SLUGS = new Set([
   'windshield-replacement-cost-calculator',
   'mold-remediation-cost-calculator',
   'leaf-removal-cost-calculator',
+  'solar-panel-cleaning-cost-calculator',
   // lawn
   'lawn-mowing-price-calculator',
   'lawn-care-estimate-generator',
