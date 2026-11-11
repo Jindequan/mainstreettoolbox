@@ -350,12 +350,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <script>
     // Calculator logic
     const inputs = {
-      interior: document.getElementById('p-interior'),
-      exterior: document.getElementById('p-exterior'),
-      rate: document.getElementById('p-rate'),
-      laborInt: document.getElementById('p-labor-int'),
-      laborExt: document.getElementById('p-labor-ext'),
-      material: document.getElementById('p-material')
+      interior: document.getElementById('p-interior') as HTMLInputElement,
+      exterior: document.getElementById('p-exterior') as HTMLInputElement,
+      rate: document.getElementById('p-rate') as HTMLInputElement,
+      laborInt: document.getElementById('p-labor-int') as HTMLInputElement,
+      laborExt: document.getElementById('p-labor-ext') as HTMLInputElement,
+      material: document.getElementById('p-material') as HTMLInputElement
     };
 
     const outputs = {
@@ -377,7 +377,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       const materialRate = parseFloat(inputs.material.value) || 0;
 
       // Mode gates which areas are priced — an unselected area contributes $0 everywhere
-      const mode = document.querySelector('input[name="paintMode"]:checked').value;
+      const mode = document.querySelector<HTMLInputElement>('input[name="paintMode"]:checked')?.value ?? 'both';
       const effInterior = mode === 'exterior' ? 0 : interiorSqft;
       const effExterior = mode === 'interior' ? 0 : exteriorSqft;
 
@@ -436,9 +436,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       const modeLabels = { interior: 'Interior only', exterior: 'Exterior only', both: 'Interior + exterior' };
       document.getElementById('es-date').textContent = new Date().toLocaleDateString();
       document.getElementById('es-mode').textContent = modeLabels[mode];
-      document.getElementById('es-interior').textContent = effInterior;
-      document.getElementById('es-exterior').textContent = effExterior;
-      document.getElementById('es-total-area').textContent = effInterior + effExterior;
+      document.getElementById('es-interior').textContent = String(effInterior);
+      document.getElementById('es-exterior').textContent = String(effExterior);
+      document.getElementById('es-total-area').textContent = String(effInterior + effExterior);
       document.getElementById('es-bi').textContent = formatMoney(budgetInteriorWithFees);
       document.getElementById('es-be').textContent = formatMoney(budgetExteriorWithFees);
       document.getElementById('es-b-total').textContent = formatMoney(budgetTotal);
