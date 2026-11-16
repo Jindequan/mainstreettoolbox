@@ -347,7 +347,18 @@ export function initEstimateApp(root: HTMLElement): void {
     saveAndRender();
   });
 
-  $('#printBtn').addEventListener('click', () => window.print());
+  $('#printBtn').addEventListener('click', () => {
+    // Count explicit export intent, not a completed print, PDF save or paid order.
+    // Never transmit business/client names, line items or estimate amounts.
+    const gtag = (window as Window & { gtag?: (...args: unknown[]) => void }).gtag;
+    if (typeof gtag === 'function') {
+      gtag('event', 'estimate_print_initiated', {
+        tool_slug: 'estimate-generator',
+        trade: state.trade || 'custom',
+      });
+    }
+    window.print();
+  });
 
   function renderAll() {
     renderLinesEditor();
